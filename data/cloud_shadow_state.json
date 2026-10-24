@@ -5,7 +5,7 @@
   "cloud_region": "asia-south1 (Mumbai Cloud Mirror)",
   "whatsapp_helpline": "+91 78747 19139",
   "system_mode": "ONLINE_MASTER",
-  "last_heartbeat": "2026-10-24 21:55:19",
+  "last_heartbeat": "2026-10-24 22:01:11",
   "last_snapshot_time": "2026-09-17 23:08:17",
   "snapshot_data": {
     "total_parts_skus": 4469,
@@ -1646,6 +1646,6 @@
   "local_ip": "10.182.73.178",
   "mobile_url": "http://10.141.204.178:8081",
   "local_mobile_url": "http://10.182.73.178:8081",
-  "public_tunnel_url": "https://berkeley-understanding-protein-cradle.trycloudflare.com",
+  "public_tunnel_url": "Initializing...",
   "permanent_mdns_url": "http://alpesh-Inspiron-3542.local:8081"
 }
