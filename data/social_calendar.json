@@ -1,0 +1,46 @@
+[
+  {
+    "day": "Monday",
+    "title": "Maintenance Monday: Valve Tappet Acoustic Check",
+    "channels": [
+      "instagram",
+      "youtube",
+      "whatsapp"
+    ],
+    "scheduled_time": "10:00 AM",
+    "content_type": "Reel & Short Video"
+  },
+  {
+    "day": "Wednesday",
+    "title": "Workshop Wisdom: Genuine vs Duplicate RE Spares",
+    "channels": [
+      "google_business",
+      "facebook",
+      "whatsapp"
+    ],
+    "scheduled_time": "02:00 PM",
+    "content_type": "Local SEO & Photo Post"
+  },
+  {
+    "day": "Friday",
+    "title": "Thump Friday: Resto-Mod Vintage Standard 350 Dyno Run",
+    "channels": [
+      "youtube",
+      "instagram",
+      "facebook"
+    ],
+    "scheduled_time": "06:00 PM",
+    "content_type": "Acoustic Audio & Video"
+  },
+  {
+    "day": "Sunday",
+    "title": "Weekend RE Rider Club: Highway Breakfast Ride Announcement",
+    "channels": [
+      "whatsapp",
+      "facebook",
+      "instagram"
+    ],
+    "scheduled_time": "07:00 AM",
+    "content_type": "Community Event & SOS Coverage"
+  }
+]

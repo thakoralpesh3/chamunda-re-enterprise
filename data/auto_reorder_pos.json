@@ -1,0 +1,1327 @@
+[
+  {
+    "po_number": "AUTO-PO-20260917-6738",
+    "timestamp": "2026-09-17 11:08 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260917-6738",
+    "timestamp": "2026-09-17 11:08 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260917-6737",
+    "timestamp": "2026-09-17 11:08 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260914-7775",
+    "timestamp": "2026-09-14 11:12 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260914-7775",
+    "timestamp": "2026-09-14 11:12 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260914-7774",
+    "timestamp": "2026-09-14 11:12 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260914-5046",
+    "timestamp": "2026-09-14 12:14 AM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260914-5046",
+    "timestamp": "2026-09-14 12:14 AM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260914-5045",
+    "timestamp": "2026-09-14 12:14 AM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260913-0405",
+    "timestamp": "2026-09-13 10:56 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260913-0405",
+    "timestamp": "2026-09-13 10:56 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260913-0404",
+    "timestamp": "2026-09-13 10:56 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260912-6041",
+    "timestamp": "2026-09-12 11:30 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260912-6041",
+    "timestamp": "2026-09-12 11:30 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260912-6040",
+    "timestamp": "2026-09-12 11:30 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260912-5153",
+    "timestamp": "2026-09-12 11:15 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260912-5153",
+    "timestamp": "2026-09-12 11:15 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260912-5152",
+    "timestamp": "2026-09-12 11:15 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260912-5093",
+    "timestamp": "2026-09-12 11:14 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260912-5089",
+    "timestamp": "2026-09-12 11:14 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260912-5087",
+    "timestamp": "2026-09-12 11:14 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260912-4939",
+    "timestamp": "2026-09-12 11:12 PM",
+    "supplier_name": "Royal Enfield Central Spares Distribution Depot",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element with O-Ring",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 75,
+        "cost_price": 1850,
+        "total_cost": 138750
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads Set",
+        "category": "Braking System",
+        "current_stock": 8,
+        "reorder_qty": 62,
+        "cost_price": 475,
+        "total_cost": 29450
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "category": "Intake & Air System",
+        "current_stock": 11,
+        "reorder_qty": 50,
+        "cost_price": 260,
+        "total_cost": 13000
+      },
+      {
+        "part_number": "W16EPR-U",
+        "name": "NGK Resistor High-Performance Spark Plug",
+        "category": "Ignition & Electrical",
+        "current_stock": 18,
+        "reorder_qty": 87,
+        "cost_price": 145,
+        "total_cost": 12615
+      }
+    ],
+    "total_units": 424,
+    "total_po_valuation_inr": 215565.0,
+    "status": "Generated & Queued for Wholesale Dispatch",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  },
+  {
+    "po_number": "AUTO-PO-20260912-001",
+    "timestamp": "2026-09-12 10:00 AM",
+    "supplier_name": "Royal Enfield Central Spares Depot (OEM Direct)",
+    "season_profile": "Diwali & Dhanteras Festive Rush",
+    "multiplier_applied": 2.5,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "category": "Periodic Service & Maintenance",
+        "current_stock": 14,
+        "reorder_qty": 150,
+        "cost_price": 145,
+        "total_cost": 21750
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter",
+        "category": "Intake & Air System",
+        "current_stock": 8,
+        "reorder_qty": 60,
+        "cost_price": 260,
+        "total_cost": 15600
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Brake Pads",
+        "category": "Braking System",
+        "current_stock": 5,
+        "reorder_qty": 40,
+        "cost_price": 475,
+        "total_cost": 19000
+      },
+      {
+        "part_number": "LM-15W50-4T",
+        "name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "category": "Engine Oil & Lubricants",
+        "current_stock": 6,
+        "reorder_qty": 50,
+        "cost_price": 1850,
+        "total_cost": 92500
+      }
+    ],
+    "total_units": 300,
+    "total_po_valuation_inr": 148850.0,
+    "status": "Approved by CEO Aradhya & Dispatched to Supplier",
+    "expected_delivery": "Within 48 Hours via Chamunda Logistics"
+  }
+]

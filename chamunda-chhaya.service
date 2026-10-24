@@ -1,0 +1,16 @@
+[Unit]
+Description=Chamunda Automobile • Project Chhaya 24/7 Cloud Shadow Mirror & Watchdog
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/alpesh/chamunda_re_enterprise
+ExecStart=/usr/bin/python3 /home/alpesh/chamunda_re_enterprise/chhaya_watchdog.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+StandardOutput=append:/home/alpesh/chamunda_re_enterprise/data/chhaya_systemd.log
+StandardError=append:/home/alpesh/chamunda_re_enterprise/data/chhaya_systemd.log
+
+[Install]
+WantedBy=default.target

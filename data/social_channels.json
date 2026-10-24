@@ -1,0 +1,87 @@
+[
+  {
+    "id": "whatsapp",
+    "name": "WhatsApp Business & 24/7 AI Bot",
+    "handle": "+91 78747 19139",
+    "icon": "fa-brands fa-whatsapp text-success",
+    "status": "Active (24/7 AI Bot)",
+    "badge_color": "success",
+    "subscribers": "3,420 Active Customers",
+    "engagement": "94.2% Open Rate",
+    "url": "https://wa.me/917874719139",
+    "features": [
+      "24/7 AI Chatbot",
+      "Job Card Alerts",
+      "Broadcast Engine",
+      "QR Invoicing"
+    ]
+  },
+  {
+    "id": "instagram",
+    "name": "Instagram Business & RE Customs",
+    "handle": "@chamunda_automobile_re",
+    "icon": "fa-brands fa-instagram text-danger",
+    "status": "Active (Reels & Story Sync)",
+    "badge_color": "danger",
+    "subscribers": "18,650 Followers",
+    "engagement": "8.4% Engagement",
+    "url": "https://instagram.com/chamunda_automobile_re",
+    "features": [
+      "Reels Generator",
+      "DM Auto-Responder",
+      "Resto-Mod Showcase",
+      "Hashtag Engine"
+    ]
+  },
+  {
+    "id": "facebook",
+    "name": "Facebook Official Page & RE Club",
+    "handle": "fb.com/chamundaautomobile",
+    "icon": "fa-brands fa-facebook text-primary",
+    "status": "Active (Community Hub)",
+    "badge_color": "primary",
+    "subscribers": "12,800 Followers",
+    "engagement": "6.1% Engagement",
+    "url": "https://facebook.com/chamundaautomobile",
+    "features": [
+      "Page Feed Updates",
+      "RE Rider Club Events",
+      "Messenger Auto-Bot",
+      "Customer Reviews"
+    ]
+  },
+  {
+    "id": "google_business",
+    "name": "Google Business Profile (Local SEO)",
+    "handle": "Chamunda Automobile Parts & Service",
+    "icon": "fa-brands fa-google text-warning",
+    "status": "Active (Verified 4.9\u2605)",
+    "badge_color": "warning",
+    "subscribers": "842 Reviews (4.9 \u2605)",
+    "engagement": "14,200 Monthly Search Impressions",
+    "url": "https://maps.google.com/?q=Chamunda+Automobile+Royal+Enfield",
+    "features": [
+      "Review AI Auto-Reply",
+      "Local SEO Posts",
+      "Q&A Auto-Responder",
+      "Live Bay Timings"
+    ]
+  },
+  {
+    "id": "youtube",
+    "name": "YouTube Shorts & Workshop Customs",
+    "handle": "@ChamundaAutomobileRE",
+    "icon": "fa-brands fa-youtube text-danger",
+    "status": "Active (Shorts AI Commander)",
+    "badge_color": "danger",
+    "subscribers": "9,450 Subscribers",
+    "engagement": "125K Monthly Views",
+    "url": "https://youtube.com/@ChamundaAutomobileRE",
+    "features": [
+      "Shorts Video Pipeline",
+      "Acoustic Sound Showcase",
+      "SEO Descriptions",
+      "Comment AI"
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1b4d3e" />
+      <stop offset="70%" stop-color="#0d2b22" />
+      <stop offset="100%" stop-color="#051510" />
+    </radialGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe29a" />
+      <stop offset="50%" stop-color="#c5a059" />
+      <stop offset="100%" stop-color="#8c6d2d" />
+    </linearGradient>
+    <linearGradient id="crimson-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d32f2f" />
+      <stop offset="100%" stop-color="#7b1113" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="256" cy="256" r="248" fill="url(#bg-grad)" stroke="url(#gold-grad)" stroke-width="12" />
+  <circle cx="256" cy="256" r="226" fill="none" stroke="url(#gold-grad)" stroke-width="3" stroke-dasharray="8 6" />
+
+  <!-- Inner Crimson Banner Shield -->
+  <circle cx="256" cy="256" r="160" fill="url(#crimson-grad)" stroke="url(#gold-grad)" stroke-width="6" />
+
+  <!-- Center Motorcycle Graphic / Wings -->
+  <g fill="url(#gold-grad)">
+    <!-- Stylized Wings -->
+    <path d="M120,230 Q180,180 256,210 Q332,180 392,230 Q332,210 256,225 Q180,210 120,230 Z" />
+    <path d="M140,250 Q190,210 256,235 Q322,210 372,250 Q322,230 256,245 Q190,230 140,250 Z" />
+    
+    <!-- Crossed Wrench & Piston -->
+    <path d="M246,150 L266,150 L266,350 L246,350 Z" transform="rotate(45 256 250)" />
+    <path d="M246,150 L266,150 L266,350 L246,350 Z" transform="rotate(-45 256 250)" />
+
+    <!-- Center Bullet Silhouette -->
+    <circle cx="256" cy="250" r="32" fill="#0d2b22" stroke="url(#gold-grad)" stroke-width="5" />
+    <text x="256" y="258" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="900" text-anchor="middle" fill="url(#gold-grad)">RE</text>
+  </g>
+
+  <!-- Top Text Curved -->
+  <path id="textPathTop" d="M 90,256 A 166,166 0 0,1 422,256" fill="none" />
+  <text font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="900" fill="url(#gold-grad)" letter-spacing="4">
+    <textPath href="#textPathTop" startOffset="50%" text-anchor="middle">CHAMUNDA AUTOMOBILE</textPath>
+  </text>
+
+  <!-- Bottom Text Curved -->
+  <path id="textPathBottom" d="M 422,256 A 166,166 0 0,1 90,256" fill="none" />
+  <text font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff" letter-spacing="3">
+    <textPath href="#textPathBottom" startOffset="50%" text-anchor="middle">★ ROYAL ENFIELD SPECIALIST ★</textPath>
+  </text>
+</svg>

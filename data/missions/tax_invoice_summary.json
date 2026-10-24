@@ -1,0 +1,12 @@
+{
+  "dealership": "Chamunda Automobile Parts & Service",
+  "founder": "Alpesh Sir (Master Automobile Engineer)",
+  "helpline": "+91 78747 19139",
+  "invoice_no": "CH-INV-1791919086",
+  "date": "14-10-2026 00:48",
+  "parts_taxable": 3790.0,
+  "parts_gst_28pct": 1061.2,
+  "labor_taxable": 1250.0,
+  "labor_gst_18pct": 225.0,
+  "grand_total": 6326.2
+}

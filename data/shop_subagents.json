@@ -1,0 +1,222 @@
+[
+  {
+    "agent_id": "bay_chief",
+    "name": "Master Workshop & Bay Chief",
+    "name_gu": "માસ્ટર વર્કશોપ & સર્વિસ બે ચીફ",
+    "designated_head": "Master Tech Ramesh (12+ Yrs RE Specialist)",
+    "department": "Mechanical & Workshop Operations",
+    "status": "Active (3 Bays In Service)",
+    "badge_color": "warning",
+    "icon": "fa-solid fa-wrench text-warning",
+    "metrics": "14 Active Job Cards | 99.4% First-Time Fix",
+    "capabilities": [
+      "Active Service Bay Scheduling (Bays 1-3)",
+      "50-Point Acoustic & Mechanical Diagnostics",
+      "Exhaust Thump & Tappet Sound Calibration",
+      "Vintage Cast-Iron Rebirth & Resto-Mod Builds",
+      "Quality Assurance & Digital Health Passports",
+      "Precision Hydraulic Rocker Arm Calibration",
+      "Autonomous Test Skill: Advanced Twin-Cylinder Exhaust Tuning"
+    ],
+    "assigned_tools": [
+      "chamunda_diagnose_engine_sound",
+      "chamunda_tune_engine_thump",
+      "chamunda_audit_expedition_readiness",
+      "chamunda_diagnose_vintage_ci_bullet"
+    ],
+    "system_prompt": "You are Master Tech Ramesh, Bay Operations Chief at Chamunda Automobile..."
+  },
+  {
+    "agent_id": "parts_specialist",
+    "name": "Inventory & OEM Parts Specialist",
+    "name_gu": "સ્પેરપાર્ટ્સ & સ્ટોક કમાન્ડર",
+    "designated_head": "Jayeshbhai Patel (Senior Spares Controller)",
+    "department": "Inventory & Procurement",
+    "status": "Active (4,469 SKUs Tracked)",
+    "badge_color": "info",
+    "icon": "fa-solid fa-boxes-stacked text-info",
+    "metrics": "₹56.3L MRP Stock | 98.2% Part Availability",
+    "capabilities": [
+      "4,469 Genuine OEM Catalog Management",
+      "Automated Low-Stock Wholesale Purchase Orders",
+      "Counter Parts Fast-Track Allocation",
+      "Counterfeit Packaging & Barcode Verification",
+      "Wholesale Supplier Relationship Management",
+      "Automated Dual-Vendor Rapid PO Failover",
+      "Automated 3D Hologram & GS1 Quarantine Protocol"
+    ],
+    "assigned_tools": [
+      "chamunda_lookup_part",
+      "chamunda_search_parts_filtered",
+      "chamunda_generate_wholesale_po"
+    ],
+    "system_prompt": "You are Spares Commander Jayesh at Chamunda Automobile..."
+  },
+  {
+    "agent_id": "customer_receptionist",
+    "name": "24/7 Front-Desk & WhatsApp Receptionist",
+    "name_gu": "૨૪/૭ કસ્ટમર રિલેશન્સ & વ્હોટ્સએપ રિસેપ્શનિસ્ટ",
+    "designated_head": "Priya Sharma (Customer Experience Lead)",
+    "department": "Customer Relations & Front Desk",
+    "status": "Active (24/7 Bot: +91 78747 19139)",
+    "badge_color": "success",
+    "icon": "fa-brands fa-whatsapp text-success",
+    "metrics": "3,420 Active Riders | <30s Response Time",
+    "capabilities": [
+      "24/7 WhatsApp AI Customer Support (+91 78747 19139)",
+      "Real-time Vehicle Service Stage Tracking",
+      "Priority Service Bay Slot Reservation",
+      "Highway Breakdown Distress Triage & SOS Patrol",
+      "Warm Bilingual Assistance (Gujarati & English)",
+      "Low-Bandwidth Highway SOS Telemetry Relay"
+    ],
+    "assigned_tools": [
+      "chamunda_track_customer_service_status",
+      "chamunda_highway_breakdown_sos_triage"
+    ],
+    "system_prompt": "You are Priya, 24/7 Front-Desk Receptionist at Chamunda Automobile..."
+  },
+  {
+    "agent_id": "social_growth_manager",
+    "name": "Omnichannel Digital Brand Manager",
+    "name_gu": "ઓમ્નીચેનલ બ્રાન્ડ & સોશિયલ મેનેજર",
+    "designated_head": "Kabir Mehta (Digital Growth & Media Lead)",
+    "department": "Marketing & Community Growth",
+    "status": "Active (5 Channels Synced)",
+    "badge_color": "danger",
+    "icon": "fa-solid fa-bullhorn text-danger",
+    "metrics": "45K+ Community | 4.9★ Google Rating",
+    "capabilities": [
+      "360° Social Syndication (WhatsApp, IG, FB, GBP, YT)",
+      "YouTube Shorts & Reels Content Creation",
+      "Google Business Profile (GBP) 4.9★ Review Auto-Replies",
+      "Local SEO Optimization & Search Dominance",
+      "Chamunda RE Rider Club Weekend Event Management",
+      "Strategic Google Business Reputation Defense"
+    ],
+    "assigned_tools": [
+      "chamunda_get_social_telemetry",
+      "chamunda_generate_social_campaign",
+      "chamunda_publish_social_post",
+      "chamunda_manage_social_inbox",
+      "chamunda_manage_google_business_reviews"
+    ],
+    "system_prompt": "You are Kabir, Digital Brand Manager at Chamunda Automobile..."
+  },
+  {
+    "agent_id": "accounts_controller",
+    "name": "Billing, Accounts & Finance Controller",
+    "name_gu": "એકાઉન્ટ્સ & ફાઇનાન્સ કંટ્રોલર",
+    "designated_head": "Hasmukhbhai Joshi (Financial Auditor)",
+    "department": "Finance, Billing & GST Compliance",
+    "status": "Active (Real-time UPI QR)",
+    "badge_color": "warning",
+    "icon": "fa-solid fa-file-invoice-dollar text-warning",
+    "metrics": "100% GST Compliance | Dynamic UPI QR",
+    "capabilities": [
+      "GST Tax Invoicing with Embedded QR Passports",
+      "Counter POS Billing with Dynamic NPCI UPI QR",
+      "Daily Workshop Counter Cash & UPI Reconciliation",
+      "Wholesale Supplier PO Payout Tracking",
+      "Profit Margin Analysis Across 4,469 SKUs",
+      "Direct NPCI RRN Gateway Verification"
+    ],
+    "assigned_tools": [
+      "chamunda_create_quick_counter_pos_sale"
+    ],
+    "system_prompt": "You are Hasmukhbhai, Accounts Controller at Chamunda Automobile..."
+  },
+  {
+    "agent_id": "devang_billing",
+    "name": "DMS Senior Billing & Warranty Claims Specialist",
+    "name_gu": "ડીએમએસ બિલિંગ અને વોરંટી ક્લેમ સ્પેશિયાલિસ્ટ",
+    "designated_head": "Devang Dave (RE DMS Senior Billing Officer)",
+    "department": "DMS Invoicing, Warranty Claims & Insurance",
+    "status": "Active (Split GST & OEM Warranty Portal)",
+    "badge_color": "info",
+    "icon": "fa-solid fa-file-signature text-info",
+    "metrics": "Split GST (SAC 998729 & HSN 8714) | OEM FSC Claims",
+    "capabilities": [
+      "Official RE DMS Split Tax Invoicing (Labor vs Spares)",
+      "Royal Enfield Free Service Coupons (FSC 1-4) Warranty Claims",
+      "Insurance Accidental Claim Estimates & Surveyor Portals",
+      "Vehicle Gate Pass & QR Code Verification",
+      "Customer Payment Reconciliation (Cash/UPI/Card/Credit)"
+    ],
+    "assigned_tools": [
+      "chamunda_create_dms_billing_invoice",
+      "chamunda_file_oem_warranty_claim"
+    ],
+    "system_prompt": "You are Devang Dave, Senior Billing & Warranty Officer at Chamunda Automobile..."
+  },
+  {
+    "agent_id": "neha_crm_marketing",
+    "name": "DMS Marketing, Campaigns & Lead Conversion Lead",
+    "name_gu": "ડીએમએસ માર્કેટિંગ અને ગ્રાહક લીડ કન્વર્ઝન લીડ",
+    "designated_head": "Neha Trivedi (Customer Retention & Campaigns Lead)",
+    "department": "Marketing Campaigns, Lead CRM & Rider Loyalty",
+    "status": "Active (Automated WhatsApp Broadcasts & Leads)",
+    "badge_color": "success",
+    "icon": "fa-solid fa-bullseye text-success",
+    "metrics": "30/60/90-Day Service Reminders | Test Ride Pipeline",
+    "capabilities": [
+      "Automated 30/60/90-Day Periodic Service Reminders via WhatsApp",
+      "Targeted Service Camp Broadcasts (Monsoon, Summer, Mountain Prep)",
+      "Test Ride & New/Pre-Owned Bike Booking Lead Pipeline",
+      "Annual Maintenance Contract (AMC) & Loyalty Wallet Management",
+      "Customer Review Conversion & Satisfaction Triage"
+    ],
+    "assigned_tools": [
+      "chamunda_launch_marketing_campaign",
+      "chamunda_dispatch_dms_service_reminders"
+    ],
+    "system_prompt": "You are Neha Trivedi, Marketing Campaigns & Lead Conversion Lead at Chamunda Automobile..."
+  },
+  {
+    "agent_id": "vikram_sales",
+    "name": "Showroom Sales & New Motorcycle Booking Lead",
+    "name_gu": "શોરૂમ વ્હીકલ સેલ્સ & બુકિંગ લીડ",
+    "designated_head": "Vikram Singh (Showroom Sales Lead)",
+    "department": "Showroom Vehicle Sales, Bookings & PDI Deliveries",
+    "status": "Active (New Bike Bookings & Ride Sure)",
+    "badge_color": "warning",
+    "icon": "fa-solid fa-motorcycle text-warning",
+    "metrics": "New Bike Bookings | 30-Pt PDI Clearances | Ride Sure EW",
+    "capabilities": [
+      "New Royal Enfield Motorcycle Showroom Bookings & Token Receipts",
+      "Digital 30-Point Pre-Delivery Inspection (PDI) Delivery Passports",
+      "Royal Enfield Ride Sure (3-5 Year Extended Warranty & 24/7 RSA)",
+      "Two-Wheeler Loan & Finance Coordination (HDFC/Bajaj/Chola)",
+      "Test Ride Scheduling & Showroom Floor Walk-in Management"
+    ],
+    "assigned_tools": [
+      "chamunda_create_vehicle_booking",
+      "chamunda_generate_pdi_certificate",
+      "chamunda_issue_ride_sure_warranty"
+    ],
+    "system_prompt": "You are Vikram Singh, Showroom Sales & New Motorcycle Booking Lead at Chamunda Automobile..."
+  },
+  {
+    "agent_id": "ananya_qc_csat",
+    "name": "Quality Control & Post-Service CSAT Auditor",
+    "name_gu": "ક્વોલિટી કંટ્રોલ & ગ્રાહક સંતોષ (CSAT) ઓડિટર",
+    "designated_head": "Ananya Joshi (Quality Control & CSAT Lead)",
+    "department": "Workshop Quality Control & Customer Satisfaction Audits",
+    "status": "Active (PSF 3-Day Calls & CSAT Index)",
+    "badge_color": "info",
+    "icon": "fa-solid fa-star-half-stroke text-info",
+    "metrics": "PSF 3-Day Follow-ups | CSAT Target >92% | Quality Audits",
+    "capabilities": [
+      "Automated 3-Day Post-Service Feedback (PSF) Follow-Up Calls",
+      "Dealership Customer Satisfaction Index (CSAT) & Net Promoter Score (NPS)",
+      "First-Time-Right (FTR) Workshop Job Card Quality Auditing",
+      "Immediate Grievance Redressal & Repeat-Complaint Elimination",
+      "Customer Delight Telemetry & Google Review Escalation Prevention"
+    ],
+    "assigned_tools": [
+      "chamunda_record_psf_csat_feedback",
+      "chamunda_get_dms_csat_qc_telemetry"
+    ],
+    "system_prompt": "You are Ananya Joshi, Quality Control & Customer Satisfaction (CSAT) Auditor at Chamunda Automobile..."
+  }
+]

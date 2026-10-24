@@ -1,0 +1,1413 @@
+{
+  "bay_chief": {
+    "agent_id": "bay_chief",
+    "agent_name": "Master Workshop & Bay Chief",
+    "designated_head": "Master Tech Ramesh (12+ Yrs RE Specialist)",
+    "level": 5,
+    "title": "Autonomous Master Authority",
+    "xp": 3530,
+    "xp_to_next_level": 1500,
+    "issues_resolved_autonomously": 83,
+    "autonomous_healing_rate": "99.4%",
+    "learned_capabilities": [
+      "Acoustic Decompressor Tappet Calibration for J-Series",
+      "High-Altitude Air-Fuel Map Optimization for Himalayan 450",
+      "Cast-Iron 1982 Vintage Heavy Crank Rebalancing",
+      "Precision Hydraulic Rocker Arm Calibration",
+      "Autonomous Test Skill: Advanced Twin-Cylinder Exhaust Tuning"
+    ],
+    "incident_history": [
+      {
+        "incident_id": "INC-BAY_-20260917-232308",
+        "timestamp": "2026-09-17 11:23 PM",
+        "issue": "Pushrod tappet clearance out of spec by 0.05 mm under cold test",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260917-230854",
+        "timestamp": "2026-09-17 11:08 PM",
+        "issue": "Tappet valve noise simulation",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260917-230854",
+        "timestamp": "2026-09-17 11:08 PM",
+        "issue": "Exhaust thump noise exceeded 88 dB threshold on Hunter 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-20260917230853",
+        "timestamp": "2026-09-17 11:08 PM",
+        "issue": "Test exhaust rumble anomaly",
+        "root_cause": "Diagnosed and neutralized autonomously",
+        "applied_solution": "Recalibrated test dual-channel manifold",
+        "new_skill_unlocked": "Autonomous Test Skill: Advanced Twin-Cylinder Exhaust Tuning",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260917-230853",
+        "timestamp": "2026-09-17 11:08 PM",
+        "issue": "Abnormal valve tappet tick noise at 2800 RPM on Classic 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260917-230832",
+        "timestamp": "2026-09-17 11:08 PM",
+        "issue": "Pushrod tappet clearance out of spec by 0.05 mm under cold test",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260917-012752",
+        "timestamp": "2026-09-17 01:27 AM",
+        "issue": "Tappet valve noise simulation",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260917-012752",
+        "timestamp": "2026-09-17 01:27 AM",
+        "issue": "Exhaust thump noise exceeded 88 dB threshold on Hunter 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-20260917012752",
+        "timestamp": "2026-09-17 01:27 AM",
+        "issue": "Test exhaust rumble anomaly",
+        "root_cause": "Diagnosed and neutralized autonomously",
+        "applied_solution": "Recalibrated test dual-channel manifold",
+        "new_skill_unlocked": "Autonomous Test Skill: Advanced Twin-Cylinder Exhaust Tuning",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260917-012752",
+        "timestamp": "2026-09-17 01:27 AM",
+        "issue": "Abnormal valve tappet tick noise at 2800 RPM on Classic 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260917-012552",
+        "timestamp": "2026-09-17 01:25 AM",
+        "issue": "Tappet valve noise simulation",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260917-012552",
+        "timestamp": "2026-09-17 01:25 AM",
+        "issue": "Exhaust thump noise exceeded 88 dB threshold on Hunter 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-20260917012552",
+        "timestamp": "2026-09-17 01:25 AM",
+        "issue": "Test exhaust rumble anomaly",
+        "root_cause": "Diagnosed and neutralized autonomously",
+        "applied_solution": "Recalibrated test dual-channel manifold",
+        "new_skill_unlocked": "Autonomous Test Skill: Advanced Twin-Cylinder Exhaust Tuning",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260917-012552",
+        "timestamp": "2026-09-17 01:25 AM",
+        "issue": "Abnormal valve tappet tick noise at 2800 RPM on Classic 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260916-011134",
+        "timestamp": "2026-09-16 01:11 AM",
+        "issue": "Pushrod tappet clearance out of spec by 0.05 mm under cold test",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260916-003220",
+        "timestamp": "2026-09-16 12:32 AM",
+        "issue": "Pushrod tappet clearance out of spec by 0.05 mm under cold test",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260916-002753",
+        "timestamp": "2026-09-16 12:27 AM",
+        "issue": "Pushrod tappet clearance out of spec by 0.05 mm under cold test",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260914-231252",
+        "timestamp": "2026-09-14 11:12 PM",
+        "issue": "Tappet valve noise simulation",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260914-231252",
+        "timestamp": "2026-09-14 11:12 PM",
+        "issue": "Exhaust thump noise exceeded 88 dB threshold on Hunter 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-20260914231251",
+        "timestamp": "2026-09-14 11:12 PM",
+        "issue": "Test exhaust rumble anomaly",
+        "root_cause": "Diagnosed and neutralized autonomously",
+        "applied_solution": "Recalibrated test dual-channel manifold",
+        "new_skill_unlocked": "Autonomous Test Skill: Advanced Twin-Cylinder Exhaust Tuning",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260914-231251",
+        "timestamp": "2026-09-14 11:12 PM",
+        "issue": "Abnormal valve tappet tick noise at 2800 RPM on Classic 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260914-231236",
+        "timestamp": "2026-09-14 11:12 PM",
+        "issue": "Pushrod tappet clearance out of spec by 0.05 mm under cold test",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260914-001400",
+        "timestamp": "2026-09-14 12:14 AM",
+        "issue": "Tappet valve noise simulation",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260914-001400",
+        "timestamp": "2026-09-14 12:14 AM",
+        "issue": "Exhaust thump noise exceeded 88 dB threshold on Hunter 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-20260914001359",
+        "timestamp": "2026-09-14 12:13 AM",
+        "issue": "Test exhaust rumble anomaly",
+        "root_cause": "Diagnosed and neutralized autonomously",
+        "applied_solution": "Recalibrated test dual-channel manifold",
+        "new_skill_unlocked": "Autonomous Test Skill: Advanced Twin-Cylinder Exhaust Tuning",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260914-001359",
+        "timestamp": "2026-09-14 12:13 AM",
+        "issue": "Abnormal valve tappet tick noise at 2800 RPM on Classic 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260914-001335",
+        "timestamp": "2026-09-14 12:13 AM",
+        "issue": "Pushrod tappet clearance out of spec by 0.05 mm under cold test",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260913-233808",
+        "timestamp": "2026-09-13 11:38 PM",
+        "issue": "Pushrod tappet clearance out of spec by 0.05 mm under cold test",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260913-225639",
+        "timestamp": "2026-09-13 10:56 PM",
+        "issue": "Tappet valve noise simulation",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260913-225639",
+        "timestamp": "2026-09-13 10:56 PM",
+        "issue": "Exhaust thump noise exceeded 88 dB threshold on Hunter 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-20260913225638",
+        "timestamp": "2026-09-13 10:56 PM",
+        "issue": "Test exhaust rumble anomaly",
+        "root_cause": "Diagnosed and neutralized autonomously",
+        "applied_solution": "Recalibrated test dual-channel manifold",
+        "new_skill_unlocked": "Autonomous Test Skill: Advanced Twin-Cylinder Exhaust Tuning",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260913-225638",
+        "timestamp": "2026-09-13 10:56 PM",
+        "issue": "Abnormal valve tappet tick noise at 2800 RPM on Classic 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260913-225604",
+        "timestamp": "2026-09-13 10:56 PM",
+        "issue": "Pushrod tappet clearance out of spec by 0.05 mm under cold test",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260913-225513",
+        "timestamp": "2026-09-13 10:55 PM",
+        "issue": "Pushrod tappet clearance out of spec by 0.05 mm under cold test",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260913-223421",
+        "timestamp": "2026-09-13 10:34 PM",
+        "issue": "Pushrod tappet clearance out of spec by 0.05 mm under cold test",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260913-193408",
+        "timestamp": "2026-09-13 07:34 PM",
+        "issue": "Pushrod tappet clearance out of spec by 0.05 mm under cold test",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260913-193336",
+        "timestamp": "2026-09-13 07:33 PM",
+        "issue": "Pushrod tappet clearance out of spec by 0.05 mm under cold test",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-233036",
+        "timestamp": "2026-09-12 11:30 PM",
+        "issue": "Tappet valve noise simulation",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-233035",
+        "timestamp": "2026-09-12 11:30 PM",
+        "issue": "Exhaust thump noise exceeded 88 dB threshold on Hunter 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-20260912233034",
+        "timestamp": "2026-09-12 11:30 PM",
+        "issue": "Test exhaust rumble anomaly",
+        "root_cause": "Diagnosed and neutralized autonomously",
+        "applied_solution": "Recalibrated test dual-channel manifold",
+        "new_skill_unlocked": "Autonomous Test Skill: Advanced Twin-Cylinder Exhaust Tuning",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-233034",
+        "timestamp": "2026-09-12 11:30 PM",
+        "issue": "Abnormal valve tappet tick noise at 2800 RPM on Classic 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-231548",
+        "timestamp": "2026-09-12 11:15 PM",
+        "issue": "Tappet valve noise simulation",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-231548",
+        "timestamp": "2026-09-12 11:15 PM",
+        "issue": "Exhaust thump noise exceeded 88 dB threshold on Hunter 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-20260912231548",
+        "timestamp": "2026-09-12 11:15 PM",
+        "issue": "Test exhaust rumble anomaly",
+        "root_cause": "Diagnosed and neutralized autonomously",
+        "applied_solution": "Recalibrated test dual-channel manifold",
+        "new_skill_unlocked": "Autonomous Test Skill: Advanced Twin-Cylinder Exhaust Tuning",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-231548",
+        "timestamp": "2026-09-12 11:15 PM",
+        "issue": "Abnormal valve tappet tick noise at 2800 RPM on Classic 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-230044",
+        "timestamp": "2026-09-12 11:00 PM",
+        "issue": "Tappet valve noise simulation",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-230044",
+        "timestamp": "2026-09-12 11:00 PM",
+        "issue": "Exhaust thump noise exceeded 88 dB threshold on Hunter 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-20260912230044",
+        "timestamp": "2026-09-12 11:00 PM",
+        "issue": "Test exhaust rumble anomaly",
+        "root_cause": "Diagnosed and neutralized autonomously",
+        "applied_solution": "Recalibrated test dual-channel manifold",
+        "new_skill_unlocked": "Autonomous Test Skill: Advanced Twin-Cylinder Exhaust Tuning",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-230044",
+        "timestamp": "2026-09-12 11:00 PM",
+        "issue": "Abnormal valve tappet tick noise at 2800 RPM on Classic 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-001333",
+        "timestamp": "2026-09-12 12:13 AM",
+        "issue": "Cold-start valve tappet tick noise on Classic 350 J-Series at 2,800 RPM",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-001300",
+        "timestamp": "2026-09-12 12:13 AM",
+        "issue": "Tappet valve noise simulation",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-001300",
+        "timestamp": "2026-09-12 12:13 AM",
+        "issue": "Exhaust thump noise exceeded 88 dB threshold on Hunter 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-20260912001259",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Test exhaust rumble anomaly",
+        "root_cause": "Diagnosed and neutralized autonomously",
+        "applied_solution": "Recalibrated test dual-channel manifold",
+        "new_skill_unlocked": "Autonomous Test Skill: Advanced Twin-Cylinder Exhaust Tuning",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-001259",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Abnormal valve tappet tick noise at 2800 RPM on Classic 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-001228",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Tappet valve noise simulation",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-001228",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Exhaust thump noise exceeded 88 dB threshold on Hunter 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-20260912001227",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Test exhaust rumble anomaly",
+        "root_cause": "Diagnosed and neutralized autonomously",
+        "applied_solution": "Recalibrated test dual-channel manifold",
+        "new_skill_unlocked": "Autonomous Test Skill: Advanced Twin-Cylinder Exhaust Tuning",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-001227",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Abnormal valve tappet tick noise at 2800 RPM on Classic 350",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY_-20260912-000658",
+        "timestamp": "2026-09-12 12:06 AM",
+        "issue": "Cold-start valve tappet tick noise on Classic 350 J-Series at 2,800 RPM",
+        "root_cause": "Exhaust rocker arm clearance expanded beyond 0.18 mm tolerance due to thermal expansion.",
+        "applied_solution": "Micrometer calibration applied; hydraulic lifter bled; tappet gap set to intake 0.08 mm, exhaust 0.18 mm. Sound normalized <82 dB.",
+        "new_skill_unlocked": "Precision Hydraulic Rocker Arm Calibration",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-BAY-001",
+        "timestamp": "2026-09-10 11:20 AM",
+        "issue": "Abnormal metallic cadence at 2,800 RPM in Classic 350",
+        "root_cause": "Exhaust rocker arm end-float clearance widened beyond 0.18 mm",
+        "applied_solution": "Micrometer shimming applied with 0.05 mm spacer; acoustic FFT normalized <82 dB.",
+        "new_skill_unlocked": "Rocker Arm Micro-Shimming Calibration",
+        "xp_awarded": 50
+      }
+    ]
+  },
+  "parts_specialist": {
+    "agent_id": "parts_specialist",
+    "agent_name": "Inventory & OEM Parts Specialist",
+    "designated_head": "Jayeshbhai Patel (Senior Spares Controller)",
+    "level": 5,
+    "title": "Autonomous Master Authority",
+    "xp": 1690,
+    "xp_to_next_level": 1500,
+    "issues_resolved_autonomously": 42,
+    "autonomous_healing_rate": "98.9%",
+    "learned_capabilities": [
+      "Cross-Brand OEM Spark Plug Substitution Matrix",
+      "Hologram Holographic Security Validation (Anti-Counterfeit)",
+      "Automated Wholesale Lead-Time Buffer Recalibration",
+      "Automated Dual-Vendor Rapid PO Failover",
+      "Automated 3D Hologram & GS1 Quarantine Protocol"
+    ],
+    "incident_history": [
+      {
+        "incident_id": "INC-PART-20260917-230854",
+        "timestamp": "2026-09-17 11:08 PM",
+        "issue": "Counterfeit barcode scan detected on shipment batch #RE-990",
+        "root_cause": "Supplier batch #RE-889 failed 3D hologram reflection test and 13-digit GS1 barcode verification.",
+        "applied_solution": "Batch quarantined immediately; vendor RMA return issued; supplier flagged in procurement ledger.",
+        "new_skill_unlocked": "Automated 3D Hologram & GS1 Quarantine Protocol",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260917-230853",
+        "timestamp": "2026-09-17 11:08 PM",
+        "issue": "Out of stock warning for NGK BPR6ES spark plug",
+        "root_cause": "Primary distributor shipment delayed; inventory buffer fell below critical 5-unit threshold.",
+        "applied_solution": "Triggered automated secondary OEM supplier PO; allocated cross-brand verified substitute for walk-in counter.",
+        "new_skill_unlocked": "Automated Dual-Vendor Rapid PO Failover",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260917-012752",
+        "timestamp": "2026-09-17 01:27 AM",
+        "issue": "Counterfeit barcode scan detected on shipment batch #RE-990",
+        "root_cause": "Supplier batch #RE-889 failed 3D hologram reflection test and 13-digit GS1 barcode verification.",
+        "applied_solution": "Batch quarantined immediately; vendor RMA return issued; supplier flagged in procurement ledger.",
+        "new_skill_unlocked": "Automated 3D Hologram & GS1 Quarantine Protocol",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260917-012752",
+        "timestamp": "2026-09-17 01:27 AM",
+        "issue": "Out of stock warning for NGK BPR6ES spark plug",
+        "root_cause": "Primary distributor shipment delayed; inventory buffer fell below critical 5-unit threshold.",
+        "applied_solution": "Triggered automated secondary OEM supplier PO; allocated cross-brand verified substitute for walk-in counter.",
+        "new_skill_unlocked": "Automated Dual-Vendor Rapid PO Failover",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260917-012552",
+        "timestamp": "2026-09-17 01:25 AM",
+        "issue": "Counterfeit barcode scan detected on shipment batch #RE-990",
+        "root_cause": "Supplier batch #RE-889 failed 3D hologram reflection test and 13-digit GS1 barcode verification.",
+        "applied_solution": "Batch quarantined immediately; vendor RMA return issued; supplier flagged in procurement ledger.",
+        "new_skill_unlocked": "Automated 3D Hologram & GS1 Quarantine Protocol",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260917-012552",
+        "timestamp": "2026-09-17 01:25 AM",
+        "issue": "Out of stock warning for NGK BPR6ES spark plug",
+        "root_cause": "Primary distributor shipment delayed; inventory buffer fell below critical 5-unit threshold.",
+        "applied_solution": "Triggered automated secondary OEM supplier PO; allocated cross-brand verified substitute for walk-in counter.",
+        "new_skill_unlocked": "Automated Dual-Vendor Rapid PO Failover",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260914-231252",
+        "timestamp": "2026-09-14 11:12 PM",
+        "issue": "Counterfeit barcode scan detected on shipment batch #RE-990",
+        "root_cause": "Supplier batch #RE-889 failed 3D hologram reflection test and 13-digit GS1 barcode verification.",
+        "applied_solution": "Batch quarantined immediately; vendor RMA return issued; supplier flagged in procurement ledger.",
+        "new_skill_unlocked": "Automated 3D Hologram & GS1 Quarantine Protocol",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260914-231251",
+        "timestamp": "2026-09-14 11:12 PM",
+        "issue": "Out of stock warning for NGK BPR6ES spark plug",
+        "root_cause": "Primary distributor shipment delayed; inventory buffer fell below critical 5-unit threshold.",
+        "applied_solution": "Triggered automated secondary OEM supplier PO; allocated cross-brand verified substitute for walk-in counter.",
+        "new_skill_unlocked": "Automated Dual-Vendor Rapid PO Failover",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260914-001400",
+        "timestamp": "2026-09-14 12:14 AM",
+        "issue": "Counterfeit barcode scan detected on shipment batch #RE-990",
+        "root_cause": "Supplier batch #RE-889 failed 3D hologram reflection test and 13-digit GS1 barcode verification.",
+        "applied_solution": "Batch quarantined immediately; vendor RMA return issued; supplier flagged in procurement ledger.",
+        "new_skill_unlocked": "Automated 3D Hologram & GS1 Quarantine Protocol",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260914-001359",
+        "timestamp": "2026-09-14 12:13 AM",
+        "issue": "Out of stock warning for NGK BPR6ES spark plug",
+        "root_cause": "Primary distributor shipment delayed; inventory buffer fell below critical 5-unit threshold.",
+        "applied_solution": "Triggered automated secondary OEM supplier PO; allocated cross-brand verified substitute for walk-in counter.",
+        "new_skill_unlocked": "Automated Dual-Vendor Rapid PO Failover",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260913-225639",
+        "timestamp": "2026-09-13 10:56 PM",
+        "issue": "Counterfeit barcode scan detected on shipment batch #RE-990",
+        "root_cause": "Supplier batch #RE-889 failed 3D hologram reflection test and 13-digit GS1 barcode verification.",
+        "applied_solution": "Batch quarantined immediately; vendor RMA return issued; supplier flagged in procurement ledger.",
+        "new_skill_unlocked": "Automated 3D Hologram & GS1 Quarantine Protocol",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260913-225638",
+        "timestamp": "2026-09-13 10:56 PM",
+        "issue": "Out of stock warning for NGK BPR6ES spark plug",
+        "root_cause": "Primary distributor shipment delayed; inventory buffer fell below critical 5-unit threshold.",
+        "applied_solution": "Triggered automated secondary OEM supplier PO; allocated cross-brand verified substitute for walk-in counter.",
+        "new_skill_unlocked": "Automated Dual-Vendor Rapid PO Failover",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260912-233035",
+        "timestamp": "2026-09-12 11:30 PM",
+        "issue": "Counterfeit barcode scan detected on shipment batch #RE-990",
+        "root_cause": "Supplier batch #RE-889 failed 3D hologram reflection test and 13-digit GS1 barcode verification.",
+        "applied_solution": "Batch quarantined immediately; vendor RMA return issued; supplier flagged in procurement ledger.",
+        "new_skill_unlocked": "Automated 3D Hologram & GS1 Quarantine Protocol",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260912-233034",
+        "timestamp": "2026-09-12 11:30 PM",
+        "issue": "Out of stock warning for NGK BPR6ES spark plug",
+        "root_cause": "Primary distributor shipment delayed; inventory buffer fell below critical 5-unit threshold.",
+        "applied_solution": "Triggered automated secondary OEM supplier PO; allocated cross-brand verified substitute for walk-in counter.",
+        "new_skill_unlocked": "Automated Dual-Vendor Rapid PO Failover",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260912-231548",
+        "timestamp": "2026-09-12 11:15 PM",
+        "issue": "Counterfeit barcode scan detected on shipment batch #RE-990",
+        "root_cause": "Supplier batch #RE-889 failed 3D hologram reflection test and 13-digit GS1 barcode verification.",
+        "applied_solution": "Batch quarantined immediately; vendor RMA return issued; supplier flagged in procurement ledger.",
+        "new_skill_unlocked": "Automated 3D Hologram & GS1 Quarantine Protocol",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260912-231548",
+        "timestamp": "2026-09-12 11:15 PM",
+        "issue": "Out of stock warning for NGK BPR6ES spark plug",
+        "root_cause": "Primary distributor shipment delayed; inventory buffer fell below critical 5-unit threshold.",
+        "applied_solution": "Triggered automated secondary OEM supplier PO; allocated cross-brand verified substitute for walk-in counter.",
+        "new_skill_unlocked": "Automated Dual-Vendor Rapid PO Failover",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260912-230044",
+        "timestamp": "2026-09-12 11:00 PM",
+        "issue": "Counterfeit barcode scan detected on shipment batch #RE-990",
+        "root_cause": "Supplier batch #RE-889 failed 3D hologram reflection test and 13-digit GS1 barcode verification.",
+        "applied_solution": "Batch quarantined immediately; vendor RMA return issued; supplier flagged in procurement ledger.",
+        "new_skill_unlocked": "Automated 3D Hologram & GS1 Quarantine Protocol",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260912-230044",
+        "timestamp": "2026-09-12 11:00 PM",
+        "issue": "Out of stock warning for NGK BPR6ES spark plug",
+        "root_cause": "Primary distributor shipment delayed; inventory buffer fell below critical 5-unit threshold.",
+        "applied_solution": "Triggered automated secondary OEM supplier PO; allocated cross-brand verified substitute for walk-in counter.",
+        "new_skill_unlocked": "Automated Dual-Vendor Rapid PO Failover",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260912-001300",
+        "timestamp": "2026-09-12 12:13 AM",
+        "issue": "Counterfeit barcode scan detected on shipment batch #RE-990",
+        "root_cause": "Supplier batch #RE-889 failed 3D hologram reflection test and 13-digit GS1 barcode verification.",
+        "applied_solution": "Batch quarantined immediately; vendor RMA return issued; supplier flagged in procurement ledger.",
+        "new_skill_unlocked": "Automated 3D Hologram & GS1 Quarantine Protocol",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260912-001259",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Out of stock warning for NGK BPR6ES spark plug",
+        "root_cause": "Primary distributor shipment delayed; inventory buffer fell below critical 5-unit threshold.",
+        "applied_solution": "Triggered automated secondary OEM supplier PO; allocated cross-brand verified substitute for walk-in counter.",
+        "new_skill_unlocked": "Automated Dual-Vendor Rapid PO Failover",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260912-001228",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Counterfeit barcode scan detected on shipment batch #RE-990",
+        "root_cause": "Supplier batch #RE-889 failed 3D hologram reflection test and 13-digit GS1 barcode verification.",
+        "applied_solution": "Batch quarantined immediately; vendor RMA return issued; supplier flagged in procurement ledger.",
+        "new_skill_unlocked": "Automated 3D Hologram & GS1 Quarantine Protocol",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260912-001227",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Out of stock warning for NGK BPR6ES spark plug",
+        "root_cause": "Primary distributor shipment delayed; inventory buffer fell below critical 5-unit threshold.",
+        "applied_solution": "Triggered automated secondary OEM supplier PO; allocated cross-brand verified substitute for walk-in counter.",
+        "new_skill_unlocked": "Automated Dual-Vendor Rapid PO Failover",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PART-20260912-000658",
+        "timestamp": "2026-09-12 12:06 AM",
+        "issue": "OEM NGK Spark Plug (BPR6ES) out-of-stock warning across primary suppliers",
+        "root_cause": "Primary distributor shipment delayed; inventory buffer fell below critical 5-unit threshold.",
+        "applied_solution": "Triggered automated secondary OEM supplier PO; allocated cross-brand verified substitute for walk-in counter.",
+        "new_skill_unlocked": "Automated Dual-Vendor Rapid PO Failover",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-PARTS-001",
+        "timestamp": "2026-09-10 02:15 PM",
+        "issue": "NGK BPR6ES OEM spark plug stock depletion across North Gujarat distributors",
+        "root_cause": "Port supply chain disruption at Mundra Hub",
+        "applied_solution": "Auto-mapped verified Bosch WR7DC+ equivalent; placed emergency stock buffer PO.",
+        "new_skill_unlocked": "Automated Cross-OEM Substitution Protocol",
+        "xp_awarded": 50
+      }
+    ]
+  },
+  "customer_receptionist": {
+    "agent_id": "customer_receptionist",
+    "agent_name": "24/7 Front-Desk & WhatsApp Receptionist",
+    "designated_head": "Priya Sharma (Customer Experience Lead)",
+    "level": 5,
+    "title": "Autonomous Master Authority",
+    "xp": 1760,
+    "xp_to_next_level": 1500,
+    "issues_resolved_autonomously": 54,
+    "autonomous_healing_rate": "99.8%",
+    "learned_capabilities": [
+      "Dead-Zone Highway Breakdown SMS/IVR Fallback",
+      "De-escalation & Goodwill Chain Lube Compensation Protocol",
+      "Dynamic Bay Slot Re-allocation for Emergency Arrivals",
+      "Low-Bandwidth Highway SOS Telemetry Relay"
+    ],
+    "incident_history": [
+      {
+        "incident_id": "INC-CUST-20260917-230854",
+        "timestamp": "2026-09-17 11:08 PM",
+        "issue": "Highway breakdown SOS signal near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260917-230853",
+        "timestamp": "2026-09-17 11:08 PM",
+        "issue": "Stranded rider breakdown SOS on highway near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260917-012752",
+        "timestamp": "2026-09-17 01:27 AM",
+        "issue": "Highway breakdown SOS signal near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260917-012752",
+        "timestamp": "2026-09-17 01:27 AM",
+        "issue": "Stranded rider breakdown SOS on highway near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260917-012552",
+        "timestamp": "2026-09-17 01:25 AM",
+        "issue": "Highway breakdown SOS signal near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260917-012552",
+        "timestamp": "2026-09-17 01:25 AM",
+        "issue": "Stranded rider breakdown SOS on highway near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260914-231252",
+        "timestamp": "2026-09-14 11:12 PM",
+        "issue": "Highway breakdown SOS signal near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260914-231251",
+        "timestamp": "2026-09-14 11:12 PM",
+        "issue": "Stranded rider breakdown SOS on highway near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260914-001400",
+        "timestamp": "2026-09-14 12:14 AM",
+        "issue": "Highway breakdown SOS signal near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260914-001359",
+        "timestamp": "2026-09-14 12:13 AM",
+        "issue": "Stranded rider breakdown SOS on highway near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260913-225640",
+        "timestamp": "2026-09-13 10:56 PM",
+        "issue": "Highway breakdown SOS signal near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260913-225638",
+        "timestamp": "2026-09-13 10:56 PM",
+        "issue": "Stranded rider breakdown SOS on highway near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260912-233036",
+        "timestamp": "2026-09-12 11:30 PM",
+        "issue": "Highway breakdown SOS signal near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260912-233034",
+        "timestamp": "2026-09-12 11:30 PM",
+        "issue": "Stranded rider breakdown SOS on highway near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260912-231548",
+        "timestamp": "2026-09-12 11:15 PM",
+        "issue": "Highway breakdown SOS signal near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260912-231548",
+        "timestamp": "2026-09-12 11:15 PM",
+        "issue": "Stranded rider breakdown SOS on highway near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260912-230044",
+        "timestamp": "2026-09-12 11:00 PM",
+        "issue": "Highway breakdown SOS signal near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260912-230044",
+        "timestamp": "2026-09-12 11:00 PM",
+        "issue": "Stranded rider breakdown SOS on highway near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260912-001300",
+        "timestamp": "2026-09-12 12:13 AM",
+        "issue": "Highway breakdown SOS signal near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260912-001259",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Stranded rider breakdown SOS on highway near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260912-001228",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Highway breakdown SOS signal near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260912-001227",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Stranded rider breakdown SOS on highway near Mehsana",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-20260912-000658",
+        "timestamp": "2026-09-12 12:06 AM",
+        "issue": "Highway breakdown SOS signal received from stranded rider near Mehsana with weak 2G network",
+        "root_cause": "Rider stranded in low network dead-zone with intermittent mobile connectivity.",
+        "applied_solution": "Engaged low-bandwidth emergency SMS telemetry relay; dispatched Chamunda mobile roadside patrol van with GPS coords.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-CUST-001",
+        "timestamp": "2026-09-10 04:45 PM",
+        "issue": "Stranded rider near Mehsana Highway with unstable 2G cellular network",
+        "root_cause": "WhatsApp media transmission failure due to high latency packet loss",
+        "applied_solution": "Switched to low-bandwidth text SMS & GPS coordinates relay; dispatched Chamunda Patrol van.",
+        "new_skill_unlocked": "Low-Bandwidth Highway SOS Telemetry Relay",
+        "xp_awarded": 50
+      }
+    ]
+  },
+  "social_growth_manager": {
+    "agent_id": "social_growth_manager",
+    "agent_name": "Omnichannel Digital Brand Manager",
+    "designated_head": "Kabir Mehta (Digital Growth & Media Lead)",
+    "level": 5,
+    "title": "Autonomous Master Authority",
+    "xp": 1120,
+    "xp_to_next_level": 1500,
+    "issues_resolved_autonomously": 28,
+    "autonomous_healing_rate": "98.5%",
+    "learned_capabilities": [
+      "Bilingual 5-Star Recovery Protocol for Negative Google Reviews",
+      "YouTube Shorts Algorithmic Hook Retargeting (Vintage RE Thump)",
+      "Automated Multi-Platform Token Refresh & Health Ping",
+      "Strategic Google Business Reputation Defense"
+    ],
+    "incident_history": [
+      {
+        "incident_id": "INC-SOCI-20260917-230853",
+        "timestamp": "2026-09-17 11:08 PM",
+        "issue": "Negative 1-star Google Business review on parts delivery",
+        "root_cause": "Customer left critical 1-star review regarding perceived pricing on custom chrome crash guard.",
+        "applied_solution": "Synthesized respectful bilingual owner response explaining 100% OEM tensile strength warranty & transparent bill; invited customer for free safety check.",
+        "new_skill_unlocked": "Strategic Google Business Reputation Defense",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-SOCI-20260917-012752",
+        "timestamp": "2026-09-17 01:27 AM",
+        "issue": "Negative 1-star Google Business review on parts delivery",
+        "root_cause": "Customer left critical 1-star review regarding perceived pricing on custom chrome crash guard.",
+        "applied_solution": "Synthesized respectful bilingual owner response explaining 100% OEM tensile strength warranty & transparent bill; invited customer for free safety check.",
+        "new_skill_unlocked": "Strategic Google Business Reputation Defense",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-SOCI-20260917-012552",
+        "timestamp": "2026-09-17 01:25 AM",
+        "issue": "Negative 1-star Google Business review on parts delivery",
+        "root_cause": "Customer left critical 1-star review regarding perceived pricing on custom chrome crash guard.",
+        "applied_solution": "Synthesized respectful bilingual owner response explaining 100% OEM tensile strength warranty & transparent bill; invited customer for free safety check.",
+        "new_skill_unlocked": "Strategic Google Business Reputation Defense",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-SOCI-20260914-231251",
+        "timestamp": "2026-09-14 11:12 PM",
+        "issue": "Negative 1-star Google Business review on parts delivery",
+        "root_cause": "Customer left critical 1-star review regarding perceived pricing on custom chrome crash guard.",
+        "applied_solution": "Synthesized respectful bilingual owner response explaining 100% OEM tensile strength warranty & transparent bill; invited customer for free safety check.",
+        "new_skill_unlocked": "Strategic Google Business Reputation Defense",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-SOCI-20260914-001359",
+        "timestamp": "2026-09-14 12:13 AM",
+        "issue": "Negative 1-star Google Business review on parts delivery",
+        "root_cause": "Customer left critical 1-star review regarding perceived pricing on custom chrome crash guard.",
+        "applied_solution": "Synthesized respectful bilingual owner response explaining 100% OEM tensile strength warranty & transparent bill; invited customer for free safety check.",
+        "new_skill_unlocked": "Strategic Google Business Reputation Defense",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-SOCI-20260913-225638",
+        "timestamp": "2026-09-13 10:56 PM",
+        "issue": "Negative 1-star Google Business review on parts delivery",
+        "root_cause": "Customer left critical 1-star review regarding perceived pricing on custom chrome crash guard.",
+        "applied_solution": "Synthesized respectful bilingual owner response explaining 100% OEM tensile strength warranty & transparent bill; invited customer for free safety check.",
+        "new_skill_unlocked": "Strategic Google Business Reputation Defense",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-SOCI-20260912-233034",
+        "timestamp": "2026-09-12 11:30 PM",
+        "issue": "Negative 1-star Google Business review on parts delivery",
+        "root_cause": "Customer left critical 1-star review regarding perceived pricing on custom chrome crash guard.",
+        "applied_solution": "Synthesized respectful bilingual owner response explaining 100% OEM tensile strength warranty & transparent bill; invited customer for free safety check.",
+        "new_skill_unlocked": "Strategic Google Business Reputation Defense",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-SOCI-20260912-231548",
+        "timestamp": "2026-09-12 11:15 PM",
+        "issue": "Negative 1-star Google Business review on parts delivery",
+        "root_cause": "Customer left critical 1-star review regarding perceived pricing on custom chrome crash guard.",
+        "applied_solution": "Synthesized respectful bilingual owner response explaining 100% OEM tensile strength warranty & transparent bill; invited customer for free safety check.",
+        "new_skill_unlocked": "Strategic Google Business Reputation Defense",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-SOCI-20260912-230044",
+        "timestamp": "2026-09-12 11:00 PM",
+        "issue": "Negative 1-star Google Business review on parts delivery",
+        "root_cause": "Customer left critical 1-star review regarding perceived pricing on custom chrome crash guard.",
+        "applied_solution": "Synthesized respectful bilingual owner response explaining 100% OEM tensile strength warranty & transparent bill; invited customer for free safety check.",
+        "new_skill_unlocked": "Strategic Google Business Reputation Defense",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-SOCI-20260912-001259",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Negative 1-star Google Business review on parts delivery",
+        "root_cause": "Customer left critical 1-star review regarding perceived pricing on custom chrome crash guard.",
+        "applied_solution": "Synthesized respectful bilingual owner response explaining 100% OEM tensile strength warranty & transparent bill; invited customer for free safety check.",
+        "new_skill_unlocked": "Strategic Google Business Reputation Defense",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-SOCI-20260912-001227",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Negative 1-star Google Business review on parts delivery",
+        "root_cause": "Customer left critical 1-star review regarding perceived pricing on custom chrome crash guard.",
+        "applied_solution": "Synthesized respectful bilingual owner response explaining 100% OEM tensile strength warranty & transparent bill; invited customer for free safety check.",
+        "new_skill_unlocked": "Strategic Google Business Reputation Defense",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-SOCI-20260912-000658",
+        "timestamp": "2026-09-12 12:06 AM",
+        "issue": "1-star critical review on Google Business Profile regarding custom parts delivery time",
+        "root_cause": "Customer left critical 1-star review regarding perceived pricing on custom chrome crash guard.",
+        "applied_solution": "Synthesized respectful bilingual owner response explaining 100% OEM tensile strength warranty & transparent bill; invited customer for free safety check.",
+        "new_skill_unlocked": "Strategic Google Business Reputation Defense",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-SOC-001",
+        "timestamp": "2026-09-10 06:10 PM",
+        "issue": "1-Star Google Review complaining about repair time during peak festival rush",
+        "root_cause": "Customer bay allocation delayed by 40 minutes on Dhanteras rush",
+        "applied_solution": "Published empathetic bilingual owner reply with complimentary 1-year Teflon coat offer; customer updated rating to 5 stars.",
+        "new_skill_unlocked": "Google Business Reputation Recovery Protocol",
+        "xp_awarded": 50
+      }
+    ]
+  },
+  "accounts_controller": {
+    "agent_id": "accounts_controller",
+    "agent_name": "Billing, Accounts & Finance Controller",
+    "designated_head": "Hasmukhbhai Joshi (Financial Auditor)",
+    "level": 5,
+    "title": "Autonomous Master Authority",
+    "xp": 1160,
+    "xp_to_next_level": 1500,
+    "issues_resolved_autonomously": 34,
+    "autonomous_healing_rate": "100.0%",
+    "learned_capabilities": [
+      "NPCI Bank Gateway RRN Query for Failed Counter UPI QR",
+      "Automated 18% vs 28% HSN Tax Mapping Validation",
+      "Daily Split-Ledger Counter Cash Variance Auto-Reconciliation",
+      "Direct NPCI RRN Gateway Verification"
+    ],
+    "incident_history": [
+      {
+        "incident_id": "INC-ACCO-20260917-230853",
+        "timestamp": "2026-09-17 11:08 PM",
+        "issue": "Counter POS dynamic UPI QR transaction timeout",
+        "root_cause": "Bank switch latency caused 60-second delay in NPCI payment settlement callback.",
+        "applied_solution": "Queried banking switch API with 12-digit RRN; payment verified and marked cleared in POS; invoice receipt issued.",
+        "new_skill_unlocked": "Direct NPCI RRN Gateway Verification",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-ACCO-20260917-012752",
+        "timestamp": "2026-09-17 01:27 AM",
+        "issue": "Counter POS dynamic UPI QR transaction timeout",
+        "root_cause": "Bank switch latency caused 60-second delay in NPCI payment settlement callback.",
+        "applied_solution": "Queried banking switch API with 12-digit RRN; payment verified and marked cleared in POS; invoice receipt issued.",
+        "new_skill_unlocked": "Direct NPCI RRN Gateway Verification",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-ACCO-20260917-012552",
+        "timestamp": "2026-09-17 01:25 AM",
+        "issue": "Counter POS dynamic UPI QR transaction timeout",
+        "root_cause": "Bank switch latency caused 60-second delay in NPCI payment settlement callback.",
+        "applied_solution": "Queried banking switch API with 12-digit RRN; payment verified and marked cleared in POS; invoice receipt issued.",
+        "new_skill_unlocked": "Direct NPCI RRN Gateway Verification",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-ACCO-20260914-231251",
+        "timestamp": "2026-09-14 11:12 PM",
+        "issue": "Counter POS dynamic UPI QR transaction timeout",
+        "root_cause": "Bank switch latency caused 60-second delay in NPCI payment settlement callback.",
+        "applied_solution": "Queried banking switch API with 12-digit RRN; payment verified and marked cleared in POS; invoice receipt issued.",
+        "new_skill_unlocked": "Direct NPCI RRN Gateway Verification",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-ACCO-20260914-001359",
+        "timestamp": "2026-09-14 12:13 AM",
+        "issue": "Counter POS dynamic UPI QR transaction timeout",
+        "root_cause": "Bank switch latency caused 60-second delay in NPCI payment settlement callback.",
+        "applied_solution": "Queried banking switch API with 12-digit RRN; payment verified and marked cleared in POS; invoice receipt issued.",
+        "new_skill_unlocked": "Direct NPCI RRN Gateway Verification",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-ACCO-20260913-225638",
+        "timestamp": "2026-09-13 10:56 PM",
+        "issue": "Counter POS dynamic UPI QR transaction timeout",
+        "root_cause": "Bank switch latency caused 60-second delay in NPCI payment settlement callback.",
+        "applied_solution": "Queried banking switch API with 12-digit RRN; payment verified and marked cleared in POS; invoice receipt issued.",
+        "new_skill_unlocked": "Direct NPCI RRN Gateway Verification",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-ACCO-20260912-233034",
+        "timestamp": "2026-09-12 11:30 PM",
+        "issue": "Counter POS dynamic UPI QR transaction timeout",
+        "root_cause": "Bank switch latency caused 60-second delay in NPCI payment settlement callback.",
+        "applied_solution": "Queried banking switch API with 12-digit RRN; payment verified and marked cleared in POS; invoice receipt issued.",
+        "new_skill_unlocked": "Direct NPCI RRN Gateway Verification",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-ACCO-20260912-231548",
+        "timestamp": "2026-09-12 11:15 PM",
+        "issue": "Counter POS dynamic UPI QR transaction timeout",
+        "root_cause": "Bank switch latency caused 60-second delay in NPCI payment settlement callback.",
+        "applied_solution": "Queried banking switch API with 12-digit RRN; payment verified and marked cleared in POS; invoice receipt issued.",
+        "new_skill_unlocked": "Direct NPCI RRN Gateway Verification",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-ACCO-20260912-230044",
+        "timestamp": "2026-09-12 11:00 PM",
+        "issue": "Counter POS dynamic UPI QR transaction timeout",
+        "root_cause": "Bank switch latency caused 60-second delay in NPCI payment settlement callback.",
+        "applied_solution": "Queried banking switch API with 12-digit RRN; payment verified and marked cleared in POS; invoice receipt issued.",
+        "new_skill_unlocked": "Direct NPCI RRN Gateway Verification",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-ACCO-20260912-001259",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Counter POS dynamic UPI QR transaction timeout",
+        "root_cause": "Bank switch latency caused 60-second delay in NPCI payment settlement callback.",
+        "applied_solution": "Queried banking switch API with 12-digit RRN; payment verified and marked cleared in POS; invoice receipt issued.",
+        "new_skill_unlocked": "Direct NPCI RRN Gateway Verification",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-ACCO-20260912-001227",
+        "timestamp": "2026-09-12 12:12 AM",
+        "issue": "Counter POS dynamic UPI QR transaction timeout",
+        "root_cause": "Bank switch latency caused 60-second delay in NPCI payment settlement callback.",
+        "applied_solution": "Queried banking switch API with 12-digit RRN; payment verified and marked cleared in POS; invoice receipt issued.",
+        "new_skill_unlocked": "Direct NPCI RRN Gateway Verification",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-ACCO-20260912-000658",
+        "timestamp": "2026-09-12 12:06 AM",
+        "issue": "Counter POS dynamic UPI QR transaction timed out while customer waiting to collect bike",
+        "root_cause": "Bank switch latency caused 60-second delay in NPCI payment settlement callback.",
+        "applied_solution": "Queried banking switch API with 12-digit RRN; payment verified and marked cleared in POS; invoice receipt issued.",
+        "new_skill_unlocked": "Direct NPCI RRN Gateway Verification",
+        "xp_awarded": 50
+      },
+      {
+        "incident_id": "INC-ACC-001",
+        "timestamp": "2026-09-10 07:30 PM",
+        "issue": "UPI QR transaction timed out at counter for \u20b94,200 while customer waiting",
+        "root_cause": "Bank NPCI switch network lag during evening settlement",
+        "applied_solution": "Auto-queried bank RRN reference; confirmed credit in secondary gateway; generated stamped GST receipt.",
+        "new_skill_unlocked": "Real-time NPCI RRN Gateway Auto-Settlement",
+        "xp_awarded": 50
+      }
+    ]
+  },
+  "devang_billing": {
+    "agent_id": "devang_billing",
+    "agent_name": "DMS Senior Billing & Warranty Claims Specialist",
+    "designated_head": "Devang Dave (RE DMS Senior Billing Officer)",
+    "level": 3,
+    "title": "Senior DMS Billing Officer",
+    "xp": 590,
+    "xp_to_next_level": 700,
+    "issues_resolved_autonomously": 26,
+    "autonomous_healing_rate": "100.0%",
+    "learned_capabilities": [
+      "Split-GST SAC 998729 Labor vs HSN 8714 Spares Mapping",
+      "OEM Free Service Coupon (FSC) Instant Credit Settlement",
+      "Surveyor Claim Estimate Automated Tariff Computation"
+    ],
+    "incident_history": [
+      {
+        "incident_id": "INC-BIL-001",
+        "timestamp": "2026-09-16 02:15 PM",
+        "issue": "Free service coupon #2 disputed by customer for paid engine oil",
+        "root_cause": "Customer unaware OEM FSC covers labor free but oil/consumables are chargeable",
+        "applied_solution": "Generated split itemized invoice clearly distinguishing zero-charge OEM labor and discounted Liquid Gun 15W-50.",
+        "new_skill_unlocked": "OEM Warranty Consumable Transparency Protocol",
+        "xp_awarded": 50
+      }
+    ]
+  },
+  "neha_crm_marketing": {
+    "agent_id": "neha_crm_marketing",
+    "agent_name": "DMS Marketing, Campaigns & Lead Conversion Lead",
+    "designated_head": "Neha Trivedi (Customer Retention & Campaigns Lead)",
+    "level": 3,
+    "title": "Lead Acquisition & Retention Specialist",
+    "xp": 570,
+    "xp_to_next_level": 700,
+    "issues_resolved_autonomously": 25,
+    "autonomous_healing_rate": "98.8%",
+    "learned_capabilities": [
+      "Predictive 90-Day WhatsApp Service Reminder Blast",
+      "High-Altitude Expedition Camp WhatsApp Lead Nurturing",
+      "Pre-Owned RE 100-Point Digital Passport Lead Conversion"
+    ],
+    "incident_history": [
+      {
+        "incident_id": "INC-MKT-001",
+        "timestamp": "2026-09-16 04:45 PM",
+        "issue": "Monsoon checkup campaign WhatsApp broadcast reply surge (40+ inquiries in 10 mins)",
+        "root_cause": "High customer response to free brake inspection offer",
+        "applied_solution": "Auto-scheduled slot bookings across Bays 1, 2, and 3 with zero queue clash.",
+        "new_skill_unlocked": "Automated High-Concurrency Campaign Booking Balancing",
+        "xp_awarded": 50
+      }
+    ]
+  },
+  "vikram_sales": {
+    "agent_id": "vikram_sales",
+    "agent_name": "Showroom Sales & New Motorcycle Booking Lead",
+    "designated_head": "Vikram Singh (Showroom Sales Lead)",
+    "level": 3,
+    "title": "Senior Sales & Vehicle Delivery Master",
+    "xp": 580,
+    "xp_to_next_level": 700,
+    "issues_resolved_autonomously": 24,
+    "autonomous_healing_rate": "100.0%",
+    "learned_capabilities": [
+      "Instant Token Advance Verification & Chassis Allocation",
+      "Zero-Defect 30-Point PDI Digital Passport Generation",
+      "Ride Sure 5-Year Extended Warranty Policy Underwriting"
+    ],
+    "incident_history": [
+      {
+        "incident_id": "INC-SLS-001",
+        "timestamp": "2026-09-16 05:30 PM",
+        "issue": "Bank finance approval document delay for Hunter 350 Dapper buyer",
+        "root_cause": "HDFC two-wheeler loan API server sync lag",
+        "applied_solution": "Auto-triggered offline proforma invoice with pre-approved credit voucher; delivery date honored on schedule.",
+        "new_skill_unlocked": "Rapid Multi-Financier Automated Loan Failover",
+        "xp_awarded": 50
+      }
+    ]
+  },
+  "ananya_qc_csat": {
+    "agent_id": "ananya_qc_csat",
+    "agent_name": "Quality Control & Post-Service CSAT Auditor",
+    "designated_head": "Ananya Joshi (Quality Control & CSAT Lead)",
+    "level": 3,
+    "title": "Master CSAT & Quality Assurance Auditor",
+    "xp": 590,
+    "xp_to_next_level": 700,
+    "issues_resolved_autonomously": 28,
+    "autonomous_healing_rate": "100.0%",
+    "learned_capabilities": [
+      "3-Day Automated PSF Calling & Sentiment Parsing",
+      "Repeat Complaint Zero-Tolerance Escalation Protocol",
+      "Dealership CSAT Index Auto-Optimization (>95%)"
+    ],
+    "incident_history": [
+      {
+        "incident_id": "INC-QCS-001",
+        "timestamp": "2026-09-16 06:10 PM",
+        "issue": "Customer reported mild front disc squeal 2 days post brake-pad replacement",
+        "root_cause": "Brake rotor bed-in period required additional acoustic deglazing",
+        "applied_solution": "Initiated priority express bay slot with Master Tech Ramesh for 5-min ultrasonic rotor deglazing; customer awarded 5-star rating.",
+        "new_skill_unlocked": "Express Service Bed-In Customer Reassurance Protocol",
+        "xp_awarded": 50
+      }
+    ]
+  }
+}

@@ -1,0 +1,1100 @@
+[
+  {
+    "order_id": "B2B-20260917-6743",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-17 11:09 PM",
+    "tracking_code": "CHAM-B2B-TRK-8743",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFNUlEQVR4nO3dS44VOxBFUQrRZqqMhakyAIombrClCEWcdCLt1ayXN9OvOPJ1+RP58fn5+UX6l6+3G6D3MhxChkPIcAgZDiHDIWQ4hL7Rf/j+4/f6w379/JtFun/lmsr13Wed6D50TaVtlc/S9d3ndtFz7TmEDIeQ4RDCMcep8l1IJuOGicp9utec7ZyMRbrtoWel/13sOYQMh5DhECqNOU6Tv+8r95zMPUzaM5kL6T5rMgdDEv8u9hxChkPIcAi1xxxbJmsop+68QmXe4rxm6/6T+ZLJfMaEPYeQ4RAyHELXxhzdvRek8tnKzyvjgK7J+s6tccbpfgv0WoZDyHAItcccW9+Fkz0Kk/2nk7WSxBxGpW0ViTGKPYeQ4RAyHEKlMUfirET3+7v781Pi+sTPT1tnZybsOYQMh5DhEPr4X2qCTb6Dt/aObLXtDesmFf9HK3WF4RAyHEKl+hxP/p3dnZOY3GfrXGu3zem1oa0xlj2HkOEQMhxCpXmOyfcr3ef05LnQ9FxIYl8I2dpv65hDbYZDyHAIrdXn2Pq7P10fbKt+Bt2/24Zbay6VZ9lzCBkOIcMhhPMct/Y9VD5Lbdian3iybvqTe0e6/y/2HEKGQ8hwCLXXVk6JOYn0eVe6vruWka7hkX5Xi/McGjEcQoZDqDTPkajVXXkWXdO19X2caMPW2dqt557sOYQMh5DhEIrXIU3v1ei2gaTPjGytuTy5nmXPIWQ4hAyHUHs/x9acx9Y6xa29mYl1ma2xUZfzHGozHEKGQwjnObbOdyTqVbx5b+Zk3LM1Fqmo3NOeQ8hwCBkOobVzK1vjBrI1dqncMzEGIok9s5VnVdhzCBkOIcMhVNrPsbWPgWyt0XQ/273PVl3UyXO79yfuIdWI4RAyHELttZWtfY5btbYqEvU6n6z7XrmeTNppzyFkOIQMh1D7rCx58jvyyXobiX2yt2q3u7aiNYZDyHAIrY05Kp9N7D9I1+2gZ6XnQhLjM2uCaY3hEDIcQvF32W/9XZ6oRUbS8xBb0ueB7TmEDIeQ4RAanVupSK9ZVJ679f65STsn8w2JMZl7SDViOIQMh9BonuPJOtzpNrxBurZ65frTe39Tus5wCBkOobV5jvTf8bfaRs+9tbby5P4Vew4hwyFkOIQi71tJfMfT/Sef7a7RbNUWm6y5JM6/uLaiNsMhZDiERu+yr5ic70jUSk/XL7/1XGpDhWMOtRkOIcMhhPMcifHB1vrCpObppI4ZSdTh6N6/Mh9D9yT2HEKGQ8hwCJXWVibvP9uqEU7Pqki8r3Uy97M1DpvMl7iHVCOGQ8hwCLX3c2y922xict41MWeztae10gZqT+XndI1rK2ozHEKGQ2i0h/RWrfGt79TJHMyTZ3S3xjTd+9hzCBkOIcMh1B5zbH2fbUnUIE/XP03PFfm+FcUZDiHDIRSvfU4StUQr96m0IXH9k++d2Tr/Ys8hZDiEDIdQ6dzKlsR+yYrJes3WuCRxn8rvc/I7t+cQMhxChkOotLaS3otQWa+hMxeJWh0T6b2fiX0z7iFVm+EQMhxCo3MrZKumeGW/yNZ8w6QG6GStJ30ud3Ifew4hwyFkOIQitc8ntuqIn7ZqfkxqiZJ0bdNJ2+w5hAyHkOEQujbmqMxPdNdNtsYEibMqZKt2amL/jT2HkOEQMhxCo7OyT5rMYUzWSsiT72Oj51buMxmL2HMIGQ4hwyHUrn2+JbEmktgfmlhzOW2ND7q/Q2ufa8RwCBkOoWv1OfR+9hxChkPIcAgZDiHDIWQ4hAyH0B/pkJT8pGGzugAAAABJRU5ErkJggg==",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260917-6743",
+    "garage_id": "GAR-VISN-003",
+    "garage_name": "Mahadev RE Clinic",
+    "city": "Visnagar",
+    "tier": "Platinum",
+    "discount_pct": 25.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 157.5,
+        "total_rate": 787.5
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 262.5,
+    "subtotal_inr": 787.5,
+    "gst_amount_inr": 141.75,
+    "net_payable_inr": 929.25,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 2: East Industrial Loop",
+    "created_at": "2026-09-17 11:09 PM",
+    "tracking_code": "CHAM-B2B-TRK-8743",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFPUlEQVR4nO3dQY4UOxBFURoxZqusha2yAIohHnClCEU8Z7W4Z9jf5TT1n5wu2+n8eL1eX6R/+fp0A/S+DIeQ4RAyHEKGQ8hwCBkOoW/0H77/+L1+sV8//2aR6j/LkMpnK+2na52frZSZ1F8p371uF13XnkPIcAgZDiEcc5wq90LSvTdX7veVz261rdKeSRsq7alcd+taJ3sOIcMhZDiESmOO0+T3faXOyVxI4h5caU9inDT5DivXrbDnEDIcQoZDqD3m2JJeZ6lc6/w7lemOhyrl6bqVem6y5xAyHEKGQ+ixMUf3Xk6644BKG7pzFaS7dtOtP+35FuhtGQ4hwyHUHnNs3Qsn6yOTdZDJvs7EHEalbRWJMYo9h5DhEDIcQqUxR+JZie79u/v3U6J84u+nrWdnJuw5hAyHkOEQ+vgsZ4JN7sFbz9Bute0d1k0qPkcr9QjDIWQ4hErnc9z8nT15brZbz9Zzrd02p9eGtsZY9hxChkPIcAiV5jkSz3PePPOj8tnEeWKV+idjrK39to451GY4hAyH0GgP6eT+ekrMQ1TqJ902TM4We2rNpXItew4hwyFkOIRwnmPyG7pi6zd9+rzzrTWObhmSGMM5z6E2wyFkOITW1lYmZ3NNynTbSeW7456tOYn0v5E+6zyHRgyHkOEQKs1zJM7q7pqss9ycR+m2YevZ2q3rnuw5hAyHkOEQip9Dmniegsp0zyGt1LO1lrG15nJz3649h5DhEDIcQu39HOn3pGytEaT3ZibWZbbWp7qc51Cb4RAyHEI4z5GYY9g67zyx1rM1nzF5JmVrLFJRqdOeQ8hwCBkOodKZYGTr3rxla5yx9QwwXatSJ5Xp1k/1uIdUI4ZDyHAIlfZzbO1jIE+dw1GROBf19M7ntdtzCBkOIcMh1F5bSayVVNqQOBu0e93EXorKdSvlyaSd9hxChkPIcAi1n5UliXvk1nmm3WtRmVNiD0ql/vQazcmeQ8hwCBkOofizsjfPt6j8vVInlZnsk008Y1JZw5qsDdlzCBkOIcMhtDbmSO9XuHkW2dZaDJVJmDwXQ+w5hAyHkOEQao85Eu91o3oq9U/aQ3/fOvdzMi9C5bvX8hxSRRgOIcMh1H7fSuIMia13nlWk5xsmbq49ubaiEcMhZDiERntI3+FdId16br7TldowkX7vzMmeQ8hwCBkOodG77J96d9pTZ413r5U+tzQ9t2TPIWQ4hAyH0GhtJf1+kK19qU+NA25el9pQ4ZhDbYZDyHAIlc4+T7wrJLFPc/K7f7L2kTiHo1t/91xz37eiEcMhZDiERu+VpfI392mmz71IlKHyp63vf/L/xZ5DyHAIGQ6h0bOyiT2eW22olE/c1yvS73Xrnnfi2oraDIeQ4RAanQn21FnjW9eavKft5jO6N9eeTvYcQoZDyHAItcccW/ez09bv8nebhyDps9J934riDIeQ4RBqv1e2W4bcnCfYelaWxljp7yH9PjlizyFkOIQMh1DpuZUtN+/NW+Unez7S9aTHhfYcQoZDyHAIldZWPstYYfLZrWdt0ns/E/tm3EOqNsMhZDiE1t7xdkqfKT5ZR5jMH2yd777V5i73kGqN4RAyHEJr77Lfkj73s1LP1rXe4Wz1SdvsOYQMh5DhEHpszNGdz6DPdu+viT0cE1tnpyb239hzCBkOIcMhNHpW9qbJGRuTtRIyWYvptpOuW6nH51YUYTiEDIdQacyR+A29dWZX4sxvqj/Rhq3xQfc7rHwn9hxChkPIcAiV3iur/5M9h5DhEDIcQoZDyHAIGQ4hwyH0B/IZmDYPpbtkAAAAAElFTkSuQmCC",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260917-6743",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-17 11:09 PM",
+    "tracking_code": "CHAM-B2B-TRK-8743",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFNUlEQVR4nO3dS44VOxBFUQrRZqqMhakyAIombrClCEWcdCLt1ayXN9OvOPJ1+RP58fn5+UX6l6+3G6D3MhxChkPIcAgZDiHDIWQ4hL7Rf/j+4/f6w379/JtFun/lmsr13Wed6D50TaVtlc/S9d3ndtFz7TmEDIeQ4RDCMcep8l1IJuOGicp9utec7ZyMRbrtoWel/13sOYQMh5DhECqNOU6Tv+8r95zMPUzaM5kL6T5rMgdDEv8u9hxChkPIcAi1xxxbJmsop+68QmXe4rxm6/6T+ZLJfMaEPYeQ4RAyHELXxhzdvRek8tnKzyvjgK7J+s6tccbpfgv0WoZDyHAItcccW9+Fkz0Kk/2nk7WSxBxGpW0ViTGKPYeQ4RAyHEKlMUfirET3+7v781Pi+sTPT1tnZybsOYQMh5DhEPr4X2qCTb6Dt/aObLXtDesmFf9HK3WF4RAyHEKl+hxP/p3dnZOY3GfrXGu3zem1oa0xlj2HkOEQMhxCpXmOyfcr3ef05LnQ9FxIYl8I2dpv65hDbYZDyHAIrdXn2Pq7P10fbKt+Bt2/24Zbay6VZ9lzCBkOIcMhhPMct/Y9VD5Lbdian3iybvqTe0e6/y/2HEKGQ8hwCLXXVk6JOYn0eVe6vruWka7hkX5Xi/McGjEcQoZDqDTPkajVXXkWXdO19X2caMPW2dqt557sOYQMh5DhEIrXIU3v1ei2gaTPjGytuTy5nmXPIWQ4hAyHUHs/x9acx9Y6xa29mYl1ma2xUZfzHGozHEKGQwjnObbOdyTqVbx5b+Zk3LM1Fqmo3NOeQ8hwCBkOobVzK1vjBrI1dqncMzEGIok9s5VnVdhzCBkOIcMhVNrPsbWPgWyt0XQ/273PVl3UyXO79yfuIdWI4RAyHELttZWtfY5btbYqEvU6n6z7XrmeTNppzyFkOIQMh1D7rCx58jvyyXobiX2yt2q3u7aiNYZDyHAIrY05Kp9N7D9I1+2gZ6XnQhLjM2uCaY3hEDIcQvF32W/9XZ6oRUbS8xBb0ueB7TmEDIeQ4RAanVupSK9ZVJ679f65STsn8w2JMZl7SDViOIQMh9BonuPJOtzpNrxBurZ65frTe39Tus5wCBkOobV5jvTf8bfaRs+9tbby5P4Vew4hwyFkOIQi71tJfMfT/Sef7a7RbNUWm6y5JM6/uLaiNsMhZDiERu+yr5ic70jUSk/XL7/1XGpDhWMOtRkOIcMhhPMcifHB1vrCpObppI4ZSdTh6N6/Mh9D9yT2HEKGQ8hwCJXWVibvP9uqEU7Pqki8r3Uy97M1DpvMl7iHVCOGQ8hwCLX3c2y922xict41MWeztae10gZqT+XndI1rK2ozHEKGQ2i0h/RWrfGt79TJHMyTZ3S3xjTd+9hzCBkOIcMh1B5zbH2fbUnUIE/XP03PFfm+FcUZDiHDIRSvfU4StUQr96m0IXH9k++d2Tr/Ys8hZDiEDIdQ6dzKlsR+yYrJes3WuCRxn8rvc/I7t+cQMhxChkOotLaS3otQWa+hMxeJWh0T6b2fiX0z7iFVm+EQMhxCo3MrZKumeGW/yNZ8w6QG6GStJ30ud3Ifew4hwyFkOIQitc8ntuqIn7ZqfkxqiZJ0bdNJ2+w5hAyHkOEQujbmqMxPdNdNtsYEibMqZKt2amL/jT2HkOEQMhxCo7OyT5rMYUzWSsiT72Oj51buMxmL2HMIGQ4hwyHUrn2+JbEmktgfmlhzOW2ND7q/Q2ufa8RwCBkOoWv1OfR+9hxChkPIcAgZDiHDIWQ4hAyH0B/pkJT8pGGzugAAAABJRU5ErkJggg==",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260917-6742",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 10,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 1680.0
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter",
+        "quantity": 5,
+        "mrp": 380.0,
+        "unit_rate": 304.0,
+        "total_rate": 1520.0
+      }
+    ],
+    "mrp_total_inr": 4000.0,
+    "discount_amount_inr": 800.0,
+    "subtotal_inr": 3200.0,
+    "gst_amount_inr": 576.0,
+    "net_payable_inr": 3776.0,
+    "payment_mode": "Credit (15 Days)",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-17 11:09 PM",
+    "tracking_code": "CHAM-B2B-TRK-8742",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFHUlEQVR4nO3dTXLVMBBFYUIxZqusha1mAYSpBpyiu7qvrcH5hsFPFi+3ZEV//vj6+vom/cv3tyugexkOIcMhZDiEDIeQ4RAyHEI/6B9+/vqzfrPP3//P4nnf8/rKzyv3peu7ZdJnSbr+E1R/Ww4hwyFkOISwz3GqPFNJ5RlJ13R/XtH9v2z937v9nor078WWQ8hwCBkOoVKf49T9u7xbTndso/vc7X520j/YGqep2Pq9nGw5hAyHkOEQavc5nkTPyEk/o3LNk32mm9lyCBkOIcMhdEWfY2tsozsmMZn36ZY5WUcymUOZsOUQMhxChkOo3edIPP+e7GfQNZO5icm6jck8UaVuE7YcQoZDyHAIlfoc6bmArXGO9FqQU2J/TaV8uibBlkPIcAgZDiHsczw5nj9ZS7FVz0n/hiT2wT75e7HlEDIcQoZDqHQ+x9b6x7OcSpndOnTL6d4rMRfT9eQ+YVsOIcMhZDiEPipnn6fPmbhtz0i3X1KROIusYjKvZMshZDiEDIdQe5zj9NY8SLcOlevTYyRka92J53PoUYZDyHAIjcY5tkz2o27VJzFmQ9Jlbn0/thxChkPIcAhhnyNx3uhb+y9OW+s56LN0ryfXh27t0bXlEDIcQoZDqDTOsSU9nrFVfnr9SqIOVJ9JX8eWQ8hwCBkOobX3ym6dRTEps9u3uO3dLl2Jc9JOthxChkPIcAiVzud469zuxPN+ct55t/zuWahd6fkaWw4hwyFkOITW1nPccL7FZI4mvT8l/Z2QSd/IlkPIcAgZDqG1961srYdInA+2VYdK+RXp9R+Vz1bYcggZDiHDIdQe50i856xrUrduHdLjH1SfrTp3P3uy5RAyHEKGQ6h9PgeZPL8T54puzaFUvNV/Sl9jyyFkOIQMh1DkfI5EH2Vy38R5WXTf9BhPl+s5FGE4hAyH0Oi9sjf3LSrXd8tMjDFMpPtSthxChkPIcAi1zwTbOpezUj55qx/w5J6RG84FseUQMhxChkPotfetpOdBttZ+pudftiTmcWw5hAyHkOEQau+VTc8LdCXezZY+D21ypntlr3KlnMpnbTmEDIeQ4RBam1u57V1o6f2riXGRRH+uci/7HGozHEKGQ6i0b2XyfE3scaXrt+ZiyA1lVsrfGl+x5RAyHEKGQ2h0PseTcxBk65wPum/6fTGJ+riGVHGGQ8hwCLXHOeia01vvFunWja5PnJVObuj3EFsOIcMhZDiE2mtIu7prHivvT6ncK91PSp/pvrUGhcqvXG/LIWQ4hAyH0Gicg64nifmFxJxO977pMY9JfSZsOYQMh5DhEFob50ifn1H5+Vb5p8RZGltjJ5Xvx/etKMJwCBkOoVGfI/Geka11o1Qmzb90xwkm61K731tif2+FLYeQ4RAyHELt8zm2PPnOkcS+30QdyNZeFddzaI3hEDIcQjjOsdUnOHXHGCbvZuvWp1Lm1hzQZA3Kk/tmbTmEDIeQ4RAqza0k9qxu/d3f7XOk+1KVe3XXc1TuRfedjOvYcggZDiHDIRR538qkj9JdD1H5bOKsLVKpQ6Iv0r1XhS2HkOEQMhxC8fM5Eib7UCoS+34TZ35szUm5nkNthkPIcAhd0edIz48k3rlaudfWXphTep3syZZDyHAIGQ6hdp9j67yK9F6MbpmVsYf0mWBksrfW9RyKMBxChkOo1Oe47TlKEueBJvbObM2/bO27IbYcQoZDyHAIvXY+h+5nyyFkOIQMh5DhEDIcQoZDyHAI/QWyda/EQdea2gAAAABJRU5ErkJggg==",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260914-7780",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-14 11:13 PM",
+    "tracking_code": "CHAM-B2B-TRK-1780",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFK0lEQVR4nO3dTY7VMBBFYUCM2SprYassgGaIBxypSlXXCeJ8w0ee426uHLf/8vnj4+OT9Ddfnq6A3stwCBkOIcMhZDiEDIeQ4RD6Sv/w7fuv9Zv9/PEni1R+5ZrK9d17nagcuqZSt8p36frufbvovrYcQoZDyHAIYZ/jVHkWkkm/YVJ+pf/R7fecn0/6IqTbF0n/v9hyCBkOIcMhVOpznCZ/31fKTDzLSbcvUqlP5WefjMF06zMp05ZDyHAIGQ6hdp9jS3deYzKH0q1PZeyEVOrWHS+ZjGdM2HIIGQ4hwyH0WJ9ja2xjck23H9CVHi9Je74Gei3DIWQ4hNp9jq1n4WSNwqS/Mrk+MYZRqVtFoo9iyyFkOIQMh1Cpz5FYS9F9fnc/PyWuT3x+emqNy8mWQ8hwCBkOoc//yplgW2Mbb1gD+4Z5k4p/o5Z6hOEQMhxCpfM53rCXpPucTq85nYy7TPpG3T7NpI9lyyFkOIQMh1B7bmVrHUblu1t9nfRZZCQxT0TlVz7v/oy2HEKGQ8hwCK2dz7F1LufWOESlfNKtQ2IPbVrlXrYcQoZDyHAItc8hnZwv3t3fMSl/cp5pYh5n616T8rvjTLYcQoZDyHAIldaQbu0jrUjMNWw9+xNjEok9vZV7Oc6hEcMhZDiERu94S69L2Lqe3KzzZE5nq7/VLd+WQ8hwCBkOodHcSvf6xLvc6L6T7yb2jGzNuSTmYogth5DhEDIcQji3ktjPSeVv7QEhN+szuX6rb9TlOIfaDIeQ4RDCcY6t/R2Jc8or0nM6ib2vW32RCvfKasRwCBkOofY4x2lr30rFG87R2jr7q1ImXdMtv1IOseUQMhxChkOovZ7j1F3HQBLnZ6T7NJP9tJP7dssnriHViOEQMhxC7bmVxJmk6bPVE/t1b577XrmeTOppyyFkOIQMh1BpbiU9tp9+fpP0WpPEutf02t6TLYeQ4RAyHELts89PkzmXrb2gdN+tcYL0Otmu7hzWZG7IlkPIcAgZDqH2u+wT52be/Nu9Ij0OsSX9rhZbDiHDIWQ4hCLnc9D13fJJ4lyyp+ZWts4YTZz7bsshZDiEDIfQ2jhHRfqdZ5M6vEH6d1u5/vTe35QeZziEDIfQ6HyO01PvZkvXje771NxKol9CbDmEDIeQ4RBq71u5+bd4txwqM32+59b5pIn3zDm3ogjDIWQ4hErnc9xcP0Flnm6usejutbnZ/6j8fjyfQxGGQ8hwCEXWczy1TrNSn65u/bf22tw8S95xDrUZDiHDIYTjHJM1FjfPCK+Us/Xek0l96LuT/tBkvMQ1pBoxHEKGQ6h9JlhizUHF1p6Xm++ES9SB6lP5nK5xnENthkPIcAiNziGd9D8mfYitZ+pkDObmHt2tPk23HFsOIcMhZDiE2n2OrefZlsT72NLnn6bPSvd9K4ozHEKGQ6j9XtnuNWRrjCT9DpRKHys9hpF+nxyx5RAyHEKGQ6i9hnQicU5Gt/+R+G7l+kQ56X6hLYeQ4RAyHEKluZWbaxHou1trL7bO3qjcl0zWft5cN2PLIWQ4hAyH0GjfCkns/9zqH3THDyafk5v7cifl2HIIGQ4hwyE02reStrWWYmtPb7r/kbjvpG62HEKGQ8hwCD3W50is66xck1jDMZFeyzJhyyFkOIQMh9Bor+xNkzM2Ju9JIW9bCzK5L7HlEDIcQoZDqNTnSPwNvXVm19b75CrlJ+qw1T/o/g49+1wjhkPIcAi13/Gm/4cth5DhEDIcQoZDyHAIGQ4hwyH0G4uUoShjiEZoAAAAAElFTkSuQmCC",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260914-7780",
+    "garage_id": "GAR-VISN-003",
+    "garage_name": "Mahadev RE Clinic",
+    "city": "Visnagar",
+    "tier": "Platinum",
+    "discount_pct": 25.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 157.5,
+        "total_rate": 787.5
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 262.5,
+    "subtotal_inr": 787.5,
+    "gst_amount_inr": 141.75,
+    "net_payable_inr": 929.25,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 2: East Industrial Loop",
+    "created_at": "2026-09-14 11:13 PM",
+    "tracking_code": "CHAM-B2B-TRK-1780",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFNklEQVR4nO3dTY4UOxBFYRoxZqusha2yAIohOeBIcRURdjU637CfK236Xbnc/suP1+v1RfqXr7cboPdlOIQMh5DhEDIcQoZDyHAIfaP/8P3H7/HKfv38m0V6/rMMqXy20n6q6/nZSpnO8yvl03pTVK89h5DhEDIcQjjmeKp8F5L0u7nyfZ/WRc9Py1N70rEOScci2/9f7DmEDIeQ4RAqjTmeOn/fV57Z+f5O603HIpWfV9owNd9TaVvnmfYcQoZDyHAIxWOOKVPrGlPf3+lz0vEH/bzze9hmzyFkOIQMh9C1McfUnolOmXQc8DS192JqnmPD/RbobRkOIcMhFI85pr4LO3sUOuOVTvmNOYxK2yo2xij2HEKGQ8hwCJXGHBtnJdLv7/TnTxvlN37+NDUP1GHPIWQ4hAyH0MdnuRNsam7j5B7YtMy7+Ryt1BWGQ8hwCJXu5zj5d/bUudnOHENFZ96lMzaa2ldbeaY9h5DhEDIcQjjPcWs+IH0OuTUXsrEvhHTOElfqsucQMhxChkOotYd06v6MjXmIyvNJ2oa0zNRcTkelLnsOIcMhZDiE4ntIt8cZab3pvV5kex1nqq6T95fYcwgZDiHDIVTaQ7qxXjB173jaTio/dUY3tXGmt1KX8xxqMRxChkOo9Y63qfOrqak1l6k9m2ldaXumxlvu59AYwyFkOIRKe0hvnaeomNprefLfuPG+FdIZF9pzCBkOIcMhFJ9bmfq+3L4ntNOeW+WnxkYpxxyKGQ4hwyGEaytT5zs21lm2xz2V8htnX6fGIhWVZ9pzCBkOIcMh1NrP0Vlr2NjPMfW+klv7W7fHT5V3wTzZcwgZDiHDIRSflX2qjC2m9qJSe6iuqf0QG/eiPr3zfe32HEKGQ8hwCMVrK1NrJVP3c1Tq3biv8+S975XypNNOew4hwyFkOITicytUpmL7b/1KXVTvyfswbt3dns6F2HMIGQ4hwyHUGnNQ+aeNvZZpG8jUesTGXMj2GWD3c6jFcAgZDqH4fSvbd2d19nZs3w1KTt63UWlDp8yTPYeQ4RAyHEIr73jbWLNI96h25lem1nQ6vx8qn9bV2ZdjzyFkOIQMh9DK+1bI1HtPKm1L2/AONtZiOvMu7/ub0nWGQ8hwCI3tId3Y33DyHErF9p7TtA0p11Y0xnAIGQ6h1vtWttcgKp8lG3eNp3Vt31u6PbdkzyFkOIQMh1C8tjL1nVoxdV701jjgZL3UhgrHHIoZDiHDIVQac5CpvY0n7/xOTa0xpe3ZuH+dnu+YQzHDIWQ4hOL3rVTOd0y924zakz6zc49FpT2pqftIps7mEHsOIcMhZDiEWvdznJyH2HjvydT50lv3eVTO4lY+6zyHYoZDyHAIxWOOp6m9DmmZjfe5VGzveyVTY5r0OfYcQoZDyHAIjd0JNrXWUCnzWeYhyMa7bCqf9aysxhgOIcMhFL9XNi1DKuODjX0P1IbKZzfadvK8bsqeQ8hwCBkOoXgPaUfnuz9dK5naNzr1fpmN52yPC+05hAyHkOEQKq2tnNyL0NEZZ2yMY0hn7+fJfTP2HEKGQ8hwCI29V/bp1jpIRTp/sHHv2clzuZ3n2HMIGQ4hwyHUOrdyS+XOiY0zvdvjj416O22z5xAyHEKGQ+jamGNjX2elzMYejo7OuGRqryix5xAyHEKGQ6h1Vvakzh0b6Xf2xv0f23tBOvUSew4hwyFkOIRKY46Nv6G37/46eZa104ap8UH6O/Tuc7UYDiHDIdR6x5v+b/YcQoZDyHAIGQ4hwyFkOIQMh9AfRX6waEPTiuoAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260914-7780",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-14 11:13 PM",
+    "tracking_code": "CHAM-B2B-TRK-1780",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFK0lEQVR4nO3dTY7VMBBFYUCM2SprYassgGaIBxypSlXXCeJ8w0ee426uHLf/8vnj4+OT9Ddfnq6A3stwCBkOIcMhZDiEDIeQ4RD6Sv/w7fuv9Zv9/PEni1R+5ZrK9d17nagcuqZSt8p36frufbvovrYcQoZDyHAIYZ/jVHkWkkm/YVJ+pf/R7fecn0/6IqTbF0n/v9hyCBkOIcMhVOpznCZ/31fKTDzLSbcvUqlP5WefjMF06zMp05ZDyHAIGQ6hdp9jS3deYzKH0q1PZeyEVOrWHS+ZjGdM2HIIGQ4hwyH0WJ9ja2xjck23H9CVHi9Je74Gei3DIWQ4hNp9jq1n4WSNwqS/Mrk+MYZRqVtFoo9iyyFkOIQMh1Cpz5FYS9F9fnc/PyWuT3x+emqNy8mWQ8hwCBkOoc//yplgW2Mbb1gD+4Z5k4p/o5Z6hOEQMhxCpfM53rCXpPucTq85nYy7TPpG3T7NpI9lyyFkOIQMh1B7bmVrHUblu1t9nfRZZCQxT0TlVz7v/oy2HEKGQ8hwCK2dz7F1LufWOESlfNKtQ2IPbVrlXrYcQoZDyHAItc8hnZwv3t3fMSl/cp5pYh5n616T8rvjTLYcQoZDyHAIldaQbu0jrUjMNWw9+xNjEok9vZV7Oc6hEcMhZDiERu94S69L2Lqe3KzzZE5nq7/VLd+WQ8hwCBkOodHcSvf6xLvc6L6T7yb2jGzNuSTmYogth5DhEDIcQji3ktjPSeVv7QEhN+szuX6rb9TlOIfaDIeQ4RDCcY6t/R2Jc8or0nM6ib2vW32RCvfKasRwCBkOofY4x2lr30rFG87R2jr7q1ImXdMtv1IOseUQMhxChkOovZ7j1F3HQBLnZ6T7NJP9tJP7dssnriHViOEQMhxC7bmVxJmk6bPVE/t1b577XrmeTOppyyFkOIQMh1BpbiU9tp9+fpP0WpPEutf02t6TLYeQ4RAyHELts89PkzmXrb2gdN+tcYL0Otmu7hzWZG7IlkPIcAgZDqH2u+wT52be/Nu9Ij0OsSX9rhZbDiHDIWQ4hCLnc9D13fJJ4lyyp+ZWts4YTZz7bsshZDiEDIfQ2jhHRfqdZ5M6vEH6d1u5/vTe35QeZziEDIfQ6HyO01PvZkvXje771NxKol9CbDmEDIeQ4RBq71u5+bd4txwqM32+59b5pIn3zDm3ogjDIWQ4hErnc9xcP0Flnm6usejutbnZ/6j8fjyfQxGGQ8hwCEXWczy1TrNSn65u/bf22tw8S95xDrUZDiHDIYTjHJM1FjfPCK+Us/Xek0l96LuT/tBkvMQ1pBoxHEKGQ6h9JlhizUHF1p6Xm++ES9SB6lP5nK5xnENthkPIcAiNziGd9D8mfYitZ+pkDObmHt2tPk23HFsOIcMhZDiE2n2OrefZlsT72NLnn6bPSvd9K4ozHEKGQ6j9XtnuNWRrjCT9DpRKHys9hpF+nxyx5RAyHEKGQ6i9hnQicU5Gt/+R+G7l+kQ56X6hLYeQ4RAyHEKluZWbaxHou1trL7bO3qjcl0zWft5cN2PLIWQ4hAyH0GjfCkns/9zqH3THDyafk5v7cifl2HIIGQ4hwyE02reStrWWYmtPb7r/kbjvpG62HEKGQ8hwCD3W50is66xck1jDMZFeyzJhyyFkOIQMh9Bor+xNkzM2Ju9JIW9bCzK5L7HlEDIcQoZDqNTnSPwNvXVm19b75CrlJ+qw1T/o/g49+1wjhkPIcAi13/Gm/4cth5DhEDIcQoZDyHAIGQ4hwyH0G4uUoShjiEZoAAAAAElFTkSuQmCC",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260914-7779",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 10,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 1680.0
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter",
+        "quantity": 5,
+        "mrp": 380.0,
+        "unit_rate": 304.0,
+        "total_rate": 1520.0
+      }
+    ],
+    "mrp_total_inr": 4000.0,
+    "discount_amount_inr": 800.0,
+    "subtotal_inr": 3200.0,
+    "gst_amount_inr": 576.0,
+    "net_payable_inr": 3776.0,
+    "payment_mode": "Credit (15 Days)",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-14 11:12 PM",
+    "tracking_code": "CHAM-B2B-TRK-1779",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFJklEQVR4nO3dS44UMRBFURoxZqusha32AiimHvSVIhTxXCm4Z0qW01X95DT+5cfr9fomfeX7uyug5zIcQoZDyHAIGQ4hwyFkOIR+0D/8/PVn/Wafv7/OIt3rvH5Sn0o5k3vR9zqdZXbvtfU7VMo/2XIIGQ4hwyGEfY5T5ZlKJs/vrecxPe+79enq9jPeVTdiyyFkOIQMh1Cpz3Hq9gO65Uyex5NnMNmqz2Sco2Lr73Ky5RAyHEKGQ6jd50ioPJsnuvMpkz7TzX5Gmi2HkOEQMhxCj+hzVFT6BN0xicqzf6vMyTqSxPhNhS2HkOEQMhxC7T5Hev6iO/aQmPuoXE91mKxXnfy2ib+LLYeQ4RAyHEKlPkd6LqA7H0HP161yKrrld3/DSX9riy2HkOEQMhxC2Oe4OZ4/WUuxVc9J/4Yk9sHe/LvYcggZDiHDIVQ6nyNxTsZkj2t3zUR3zGBr3CIxPrH1+1fYcggZDiHDIdSeW0nvMTltnbW1dd7X5PtO1pAmzkOr1N+WQ8hwCBkOodHcys31E5U6TK5Pj5GQrd/N8zl0leEQMhxC7bPP02dlPmEfR7cOiTUZTzgf3ZZDyHAIGQ6hj8p7ZbfeUTJZ37D1DN5az0GfrdSBPO0MNFsOIcMhZDiE2n2OxPvMEmdv3Fw3+rQ9t1t9HVsOIcMhZDiE2nMrTz7rs7IvpnvN1rrRm2tZtvpGthxChkPIcAjF51Zurqvoltn1tDPHKiZ1sOUQMhxChkOoPc5RkX7P2WRcJHHN5HyRSTkVk76RLYeQ4RAyHEI4zpFYS7H1Ltab53B0Pztxs85UzsmWQ8hwCBkOobU+xxPWXW59Nv3dydbv5noOxRkOIcMhNFrPcfrf9pIk7lUpMz1PdLLlEDIcQoZDqD3Ocdp6n0hivIGuT69LTfdRulzPoQjDIWQ4hNpnn5/Pqq2zuSp7WakOdK/K9d0yE2MME+m+lC2HkOEQMhxCpbmVrnedSZruB9zcM/KEc0FsOYQMh5DhEBqdQ7r1XDzdPI8rfcZGtz5b5Z/scyjCcAgZDqHSu+wruuME7zqro1LOZH9vpQ5bZ8lX7kXlVD5ryyFkOIQMh1B7buXm2AZJnBFSudfNs0cntvoxthxChkPIcAiV9q1Mnq9bezpuzsWQJ5RZKX9rfMWWQ8hwCBkOocjcSncOJbG/Y7JHJrH2InGWxtb1xJZDyHAIGQ6h0b6V9FndW+MrVCZdv7WeoyKxb2WrHFsOIcMhZDiERmefv2s+onKv9DtfKnXoete7Y1zPoTbDIWQ4hNrrOcjWmRw3z96YrA/d6h9QfcjN/b22HEKGQ8hwCK2t50icn3Fz/qJbtwn6XlvrXXzfiuIMh5DhEBr1ORLvGZms86iUs7VudDIe0/3dEvt7K2w5hAyHkOEQar9vpXLNzXeYTeY7EutSE+M3ibpV2HIIGQ4hwyGEfY6t86lO3TGGybvZuvWplDmZ4+iWn+gnOc6hNYZDyHAIleZWEudWpecRuvWZ2Fq7evMMVs8E04jhEDIcQu31HOn9olTO5P/9ifeekMl8yqQv0r1XhS2HkOEQMhxCa/tWJrb6KFtjGDf3/W7tW5mM97hvRW2GQ8hwCD2iz9HtK0z+398ts9sfSuyFOW2dI1JhyyFkOIQMh1C7z5F+/8hpct5Xt8zK2EP6TDCytR/H9RxaYziEDIdQqc/xtOcoSZwhlliXujX/srXvhthyCBkOIcMhNHrHm/5tthxChkPIcAgZDiHDIWQ4hAyH0F9or7AML+xbUwAAAABJRU5ErkJggg==",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260914-5054",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-14 12:14 AM",
+    "tracking_code": "CHAM-B2B-TRK-9054",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFKklEQVR4nO3dQY7VOhCFYUCM2SprYassgGaIB/xSlaqOE8T/De9LO6bfka/bsSufPz4+Pkl/8+XpDui9DIeQ4RAyHEKGQ8hwCBkOoa/0H759/7V+s58//mSR2q9cU7m+e68TtUPXVPpW+Vm6vnvfLrqvI4eQ4RAyHEI45zhVvgvJZN4wuX4yb6jMYyZzEdKdi6T/vzhyCBkOIcMhVJpznCZ/31fa3JofdO91ft5th/pDJmsw3f5M2nTkEDIcQoZDqD3n2FL5vq+sK6T7c9qa03TXS9L/duLIIWQ4hAyH0GNzjq31hu69Kn3Y+o5Pr5ekPd8DvZbhEDIcQu05x9Z34WSPwtazmO71iTWMSt8qEnMURw4hwyFkOIRKc47EWYnu93f381Pi+sTnp62zMxOOHEKGQ8hwCH3+V2qC3dxnmt4D+4bnJhX/Ri/1CMMhZDiESvU5bv6d3V2TmLSzda612+fJ3Kg7p5nMsRw5hAyHkOEQKq1zJGptVa6v9Ic8tRaS2BdCunOm7r0cOYQMh5DhEGrXIU3X9Nxah+j24TSp+dHtw1PPXCr3cuQQMhxChkMI1zkS35FbP3tKrE/crJt+c+9I99/iyCFkOIQMh9BafY7JuYxTYj8HmZxhmdx3qw7ppL6I6xwaMRxChkNoNOe4uS/hbftVJ3spbvaH5iLu59CI4RAyHEKROqTpMyPd+3YlzoxsPXO5+TzLkUPIcAgZDqHSfo5T+rnAzT5MTNYhJmePE/M21znUZjiEDIcQrnNs7Uu4WctrYmtv5uT5yNZcpKLSpiOHkOEQMhxC7XWOU3e94alzK4nzHTfXLbZqsvlsRWsMh5DhECrt59jax1CxVa8iPafZOkfz5nrtjhxChkPIcAi1n61s7XOcnFVJ1OyqtP+2PbCJ8zUnRw4hwyFkOITaNcHIG/Y/3tzXOWn/qdrtPlvRGsMhZDiE2mdlE+8T2fper3zebT+9T7ar+wxrMidz5BAyHEKGQ2h0bqXys5M5QeX6xJnYrWcxdE3CVu3RkyOHkOEQMhxCj51bqbRJJn3bOnuy9Wxlq8Zo4r0wjhxChkPIcAiV3mV/mjwjSL/zbNKHN0j/bivXn977m9LjDIeQ4RAqzTm21hW67SfqUtx8pyv1YSIxLyGOHEKGQ8hwCL1unWPSDrWZru+5VZ80fVaIftZnK2ozHEKGQ6h0biX93dxt8+Yei249kpvzj8rvx/ocijAcQoZDKPJe2dNWXdGtd7dO6phN+kYS86StNRJHDiHDIWQ4hHDOkd6TQRK1NRP1yibrB4n67ol5iSOHkOEQMhxCo2cr6drbkz0Z3fOl3XtNaqq+oR6a+zk0YjiEDIfQ6NlKutb4Vq30rTMjW/OMrq05TbcdRw4hwyFkOITac46t77Ot+95ca6H+TNpM1Er3fSuKMxxChkNoVPs8/b1L11c+P22dle0+i6m4uc+0y5FDyHAIGQ6hUe3zrsQ+hvS+isrPUt+22knU9qhw5BAyHEKGQ6j0bOWpv+MnZy7eVoOr0s7NOijuIdWI4RAyHEJr77I/Jd6ZsnXetfL5Vi2vST+pbxPuIdUawyFkOITiNcG6Ensqt9Yw0vOPxH0nfXPkEDIcQoZD6LE5x819nd3v3fR72ir3qtx3a68oceQQMhxChkNodFb2pknN8sl7UsjkPSzdftJ9K+14bkURhkPIcAitveOta/JulEo7N8+yJt4P15V4v4wjh5DhEDIcQu132ev/4cghZDiEDIeQ4RAyHEKGQ8hwCP0G6bqHmYJJSjcAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260914-5054",
+    "garage_id": "GAR-VISN-003",
+    "garage_name": "Mahadev RE Clinic",
+    "city": "Visnagar",
+    "tier": "Platinum",
+    "discount_pct": 25.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 157.5,
+        "total_rate": 787.5
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 262.5,
+    "subtotal_inr": 787.5,
+    "gst_amount_inr": 141.75,
+    "net_payable_inr": 929.25,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 2: East Industrial Loop",
+    "created_at": "2026-09-14 12:14 AM",
+    "tracking_code": "CHAM-B2B-TRK-9054",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFRUlEQVR4nO3dQY7QSAyFYRqx5qqchatyAJolteCXbNmvEqT/W/akk8zMU8VdqXI+Pj8/v0j/8vXpG9B7GQ4hwyFkOIQMh5DhEDIcQt/oH3z/8Xv9Yr9+/s0inf88hlR+t3L/dK3zdyvHTM5fOb573S66riOHkOEQMhxCWHOcKs9C0n02V573dHz3Wd6tXbr309W9//T/F0cOIcMhZDiESjXHafL3feWc3bmQxLXoupWfV+5na76ncm+TczpyCBkOIcMh1K45tlSe91vP3UQd0K0/6OeT9ztpjhxChkPIcAg9VnNM5hsm16rcQ7dG6V63csxTdcbp+TvQaxkOIcMh1K45tp6FkzUKkzWeibUdkzmMyr1VJGoURw4hwyFkOIRKNUdir0T3+d39+SlxfOLnp629MxOOHEKGQ8hwCH38Lz3BtuY2bq6B7R7zNv/HXeoRhkPIcAiV+nPc/Du7OycxOc/WvtbuPU9qo25NM6mxHDmEDIeQ4RAqzXNs9bHY+ls/3Y/r5vknNVa3Zupey5FDyHAIGQ6hdh/SRJ2RmIfo3sOpew/dY7bmciYq13LkEDIcQoZDqN2HdPK39Wmrv+fWPtv0e5ytayVqOOc51GY4hAyH0Kg/x9b7gsQcwNae28T608R3ZxL9RRw5hAyHkOEQGtUcW/tXu9fasrVms3ut7v1M1nZQLeJ6Do0YDiHDIRTpQ5reM0LXOt1cC9Ltqbr1vqliMlfkyCFkOIQMhxDuW0ns59w6f+X49HrMyTzEpE66Wbc5cggZDiHDIYTzHFvrEiZ/u9+cL0msO5nsl6Hrdn+XVM7pyCFkOIQMh1B7nuM02VeSeEZuvXdI7BMmb1tTcnLkEDIcQoZDqL1X9pT4Nmy6z1VXeh/Nm/u1O3IIGQ4hwyHUfreytc5xa61Gokf7zXc6letWjieT+3TkEDIcQoZDqP29lZtrDki3/tiqRbb2r07WvlT2wkzW9p4cOYQMh5DhEGrvlX1qzqBbN9zs35WYa+neT2I9jSOHkOEQMhxCa/05EjVB5fjEntituoqOSdjqPXpy5BAyHEKGQ2it9/kpMZ+R+Pu+8i4mUX8keoxO9ry4hlRthkPIcAhFvmVPJs+/7r117+ENJu9fJvtiyHv/S+lxhkPIcAiVag4y6ZFVcXMfSsVk3UZi/WyX71a0xnAIGQ6hds2RqCcScxWJnl3da6X7lqbnlhw5hAyHkOEQar9bST8jT1t9tJ6qA25el+6hwppDbYZDyHAIRb4re9paC9LteTr5tktXYs1s9/yVfiR0TuLIIWQ4hAyHULsn2Glrj2h6XefWd0+656z87uTffWtvDnHkEDIcQoZDqDTPMaknEmsOJt95mcyR3FzLkuhzSsf4bkVthkPIcAiN3q1srXWoHJP4vlpXet0r2appuudx5BAyHEKGQ6hdc2w9z06JvuBb50/sfU33Svd7K4ozHEKGQ2jUn2Ni8n2y9D6ard4b6T4l3WtZc2iN4RAyHEJYc2zNPZwmtUXlnKfEutGt63bPk95bSxw5hAyHkOEQKr1bSa9F2FqfMakz0uthK+dJ763tHuPIIWQ4hAyHUORb9ls9rG6uHUn08iI39+VOzuPIIWQ4hAyHULwnWFe6XwXZ6kv2hp5glT3A9gTTiOEQMhxCj9UcifcjWzVB+jttlWtVrjtZj1LhyCFkOIQMh9Bor+xNk57l3Wf21pqJ9JxH5TyTWsSRQ8hwCBkOoVEf0onJt1Eq59nax5F453Laqg8S35dx5BAyHEKGQ+ix/hx6P0cOIcMhZDiEDIeQ4RAyHEKGQ+gPZBmeYPM+lcUAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260914-5054",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-14 12:14 AM",
+    "tracking_code": "CHAM-B2B-TRK-9054",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFKklEQVR4nO3dQY7VOhCFYUCM2SprYassgGaIB/xSlaqOE8T/De9LO6bfka/bsSufPz4+Pkl/8+XpDui9DIeQ4RAyHEKGQ8hwCBkOoa/0H759/7V+s58//mSR2q9cU7m+e68TtUPXVPpW+Vm6vnvfLrqvI4eQ4RAyHEI45zhVvgvJZN4wuX4yb6jMYyZzEdKdi6T/vzhyCBkOIcMhVJpznCZ/31fa3JofdO91ft5th/pDJmsw3f5M2nTkEDIcQoZDqD3n2FL5vq+sK6T7c9qa03TXS9L/duLIIWQ4hAyH0GNzjq31hu69Kn3Y+o5Pr5ekPd8DvZbhEDIcQu05x9Z34WSPwtazmO71iTWMSt8qEnMURw4hwyFkOIRKc47EWYnu93f381Pi+sTnp62zMxOOHEKGQ8hwCH3+V2qC3dxnmt4D+4bnJhX/Ri/1CMMhZDiESvU5bv6d3V2TmLSzda612+fJ3Kg7p5nMsRw5hAyHkOEQKq1zJGptVa6v9Ic8tRaS2BdCunOm7r0cOYQMh5DhEGrXIU3X9Nxah+j24TSp+dHtw1PPXCr3cuQQMhxChkMI1zkS35FbP3tKrE/crJt+c+9I99/iyCFkOIQMh9BafY7JuYxTYj8HmZxhmdx3qw7ppL6I6xwaMRxChkNoNOe4uS/hbftVJ3spbvaH5iLu59CI4RAyHEKROqTpMyPd+3YlzoxsPXO5+TzLkUPIcAgZDqHSfo5T+rnAzT5MTNYhJmePE/M21znUZjiEDIcQrnNs7Uu4WctrYmtv5uT5yNZcpKLSpiOHkOEQMhxC7XWOU3e94alzK4nzHTfXLbZqsvlsRWsMh5DhECrt59jax1CxVa8iPafZOkfz5nrtjhxChkPIcAi1n61s7XOcnFVJ1OyqtP+2PbCJ8zUnRw4hwyFkOITaNcHIG/Y/3tzXOWn/qdrtPlvRGsMhZDiE2mdlE+8T2fper3zebT+9T7ar+wxrMidz5BAyHEKGQ2h0bqXys5M5QeX6xJnYrWcxdE3CVu3RkyOHkOEQMhxCj51bqbRJJn3bOnuy9Wxlq8Zo4r0wjhxChkPIcAiV3mV/mjwjSL/zbNKHN0j/bivXn977m9LjDIeQ4RAqzTm21hW67SfqUtx8pyv1YSIxLyGOHEKGQ8hwCL1unWPSDrWZru+5VZ80fVaIftZnK2ozHEKGQ6h0biX93dxt8+Yei249kpvzj8rvx/ocijAcQoZDKPJe2dNWXdGtd7dO6phN+kYS86StNRJHDiHDIWQ4hHDOkd6TQRK1NRP1yibrB4n67ol5iSOHkOEQMhxCo2cr6drbkz0Z3fOl3XtNaqq+oR6a+zk0YjiEDIfQ6NlKutb4Vq30rTMjW/OMrq05TbcdRw4hwyFkOITac46t77Ot+95ca6H+TNpM1Er3fSuKMxxChkNoVPs8/b1L11c+P22dle0+i6m4uc+0y5FDyHAIGQ6hUe3zrsQ+hvS+isrPUt+22knU9qhw5BAyHEKGQ6j0bOWpv+MnZy7eVoOr0s7NOijuIdWI4RAyHEJr77I/Jd6ZsnXetfL5Vi2vST+pbxPuIdUawyFkOITiNcG6Ensqt9Yw0vOPxH0nfXPkEDIcQoZD6LE5x819nd3v3fR72ir3qtx3a68oceQQMhxChkNodFb2pknN8sl7UsjkPSzdftJ9K+14bkURhkPIcAitveOta/JulEo7N8+yJt4P15V4v4wjh5DhEDIcQu132ev/4cghZDiEDIeQ4RAyHEKGQ8hwCP0G6bqHmYJJSjcAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260914-5053",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 10,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 1680.0
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter",
+        "quantity": 5,
+        "mrp": 380.0,
+        "unit_rate": 304.0,
+        "total_rate": 1520.0
+      }
+    ],
+    "mrp_total_inr": 4000.0,
+    "discount_amount_inr": 800.0,
+    "subtotal_inr": 3200.0,
+    "gst_amount_inr": 576.0,
+    "net_payable_inr": 3776.0,
+    "payment_mode": "Credit (15 Days)",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-14 12:14 AM",
+    "tracking_code": "CHAM-B2B-TRK-9053",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFOUlEQVR4nO3dTY7VMBBFYRoxZqusha2yAJohHnCkKlXdOEjnGz7yHNN95bj9l4/Pz88v0r98vV0BvZfhEDIcQoZDyHAIGQ4hwyH0jf7h+4/f6zf79fNvFivld6+flDO51/ldcpZ56+dQKf9kyyFkOIQMhxD2OU6VZyrpPlMr19Dzm+7b7WdUyiRUDpU5uVf692LLIWQ4hAyHUKnPcUr0ISblT66v9DMqKmMYk7GQbh1It0xbDiHDIWQ4hNp9ji2JZ2S3H9PtH2zNcVTq8wbvqo1exXAIGQ6ha32OyvO+2w84TeZBun2Cbh8lPe6y5X4N9FqGQ8hwCLX7HIlnYeV5PxkXmZS/9f9Nj50kfi+2HEKGQ8hwCJX6HIm9EpO5jPR+lsSajK3P6V4JthxChkPIcAh93DoTrPtMTY8HTJ7x3b5IhXMrejXDIWQ4hLDPMVnrMJkHSawtfXLOYqtvsTX+MVmnYsshZDiEDIdQe25l8gzrll+5nu67dQZXt55ba1onn1dUfs62HEKGQ8hwCJXmVhLP6TesV0jfd7IuhOqT7ledbDmEDIeQ4RBqz63QNafJOAHZqs/kDLHEcz2xRmTr92XLIWQ4hAyHEM6tbK3hSIxnTK7fqkO3//HmM9CILYeQ4RAyHEKRNaTkf9kvmniPydb+Wyqzq1IHWw4hwyFkOIRK4xyVa7bmLCa23g17a14pvW6my5ZDyHAIGQ6h0RrSxB6WSh3Sf99v7YtJvzeuYlIHWw4hwyFkOIRGZ59P3mlSub5bZnrspFufism7XVxDqmsMh5DhEBqdQ5o4+2urX5I4x3Nrz+obxksqbDmEDIeQ4RDCcY7K83LruUv37a4pIenxgK7EvptJ+cSWQ8hwCBkOodK+ldPW/pSu9HtSEuMK3Xulz0Ajzq2ozXAIGQ6h9tzK1hlZT743hCTmRLq21ucm1pbacggZDiHDITRaQ9q9vntuWHouI7H2gr5bqU/3GrK1XsSWQ8hwCBkOofiZYOmzwyv36l5D15Ot876ePHvDcQ6NGA4hwyG0Ns4xGaug5+it/SmVe1E9b/U/Kip1PtlyCBkOIcMh1H7fSneuZKv8J9+TMhlvSK9BebKPZcshZDiEDIdQaa/sZKwifYZYpZxT5aytyudbZ5dt7Umu1KHLlkPIcAgZDqH23MpkDIPKSey/mIzNTPo66bPI6PPE+JAth5DhEDIcQu0+xymxnzN9PX33VHlmT9ZnTMYtnjzT3ZZDyHAIGQ6hUp9ja81Eep8IXTMxWZ+RfhdM+oxXWw4hwyFkOIRGa0i716fnArbGCbrrQ8nWuaKTOnfLOdlyCBkOIcMhtLaGNLFOYuu7JN2vmtSt8t30OIoth5DhEDIcQqOzz0/pcykq1yfO/67ct/tdqsOT55xWyrHlEDIcQoZDqNTnSJyTQd7wDJ7Uje6bfn9Kl+s5NGI4hAyHUHucY8utPkpifetWHUjiDNNK+bYcQoZDyHAIldZzbJmskzh113Wm+wSTOZdu/+DJc0RsOYQMh5DhECrtlU2cB9r97tY5oek+Qbecrq1+hu9b0YjhEDIcQvFzSLeu6f7dn167WvGG9SiTvpcth5DhEDIcQqNzSCe29r9szUH8j2tBqPzJ+taTLYeQ4RAyHELX+hynxDtK0ntYqMxb72arnGPWZcshZDiEDIdQu8/xhnUJZOtdslvP++69EmeLTfo9thxChkPIcAjhXtn0vpXJupDEvtMn3ynTvW/i3A77HBoxHEKGQ+ja+Rx6P1sOIcMhZDiEDIeQ4RAyHEKGQ+gPU46u64JDy5cAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260913-0413",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-13 10:56 PM",
+    "tracking_code": "CHAM-B2B-TRK-4413",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFLUlEQVR4nO3dTY7VMBBFYUCM2SprYassgGaIBxypSlXXCeJ8wybt+DVXjl/89/nj4+OT9Ddfnq6A3stwCBkOIcMhZDiEDIeQ4RD6Sv/w7fuv9Zv9/PEni1R+5ZrK9d17nagcuqZSt8rv0vXd+3bRfW05hAyHkOEQwj7HqfIsJN1n5Nb1lXImz+9JX4R0+yLp/xdbDiHDIWQ4hEp9jtPk+31X951HpRyy1dep3GvyDqZbn0mZthxChkPIcAi1+xxbus+/rX4DjZtQP2DSF6mM+0zGd9JsOYQMh5DhEHqsz5GeM1Epp9sP6JqM7zzVzzg9XwO9luEQMhxC7T5HYtyke81k/ulWmVvvMCp1q0j0UWw5hAyHkOEQKvU5Emslus/v7s9PiesTPz9tvQeasOUQMhxChkPo87+yJ9jkGTxZf5uo2xvGTSr+jVrqEYZDyHAIlfbnuPk9u/tOYlLO1rrWbp3TY0NbfSxbDiHDIWQ4hNpjK+l5GJNyKvW5+S4kMU5E5Vd+3v2MthxChkPIcAiVxla29txMfEev1GfyvmTr+X2zbpX7VthyCBkOIcMhhH2OxHf0Nzz7t/o9iT5WRaIP59iK2gyHkOEQKvU5SGKeR3q9K10/GSuZSH9G+t3K9bYcQoZDyHAItc9boT06J2eCTM5ym0jMpajc62Z9Knut+p5DbYZDyHAIRfYh3VozsnV9+iyVymfcGnNJjMUQWw4hwyFkOITaYytb55NtjWtsjXekx1kSe70n3vecbDmEDIeQ4RDC9xyTsYDT1n4VFel9t9JrX9PnznTLtOUQMhxChkNobQ7p5LySikTfZbK+4+Z7i8Q+JRW2HEKGQ8hwCLXnkJ668xhIeg3tVjlb+6JO7tstnziHVCOGQ8hwCLXHVtJrVSZ9lEmZp/S+6d37Vq4nk3racggZDiHDIdQ+byU95+DmHMmb80a7P6/UeWvvL2LLIWQ4hAyHUHsf0orJXMvT2/YC3/pcW3WbzBdxTzCNGA4hwyHUPss+PU+Tytzql1Qk9mC9uY5miy2HkOEQMhxCo/05bl5f+V0qZ+uMmEk903uMJvZ9t+UQMhxChkOo/Z7jlDhX5W3jKTclxmImfab3/qX0OMMhZDiEImfZJ77Hd+uzVTe671NjK+k5IidbDiHDIWQ4hNbmc1Tc3NsqsWdX917pfUu35p04tqI2wyFkOITiZ7yd0nuB3+wf0H1v9j+662m7bDmEDIeQ4RAq9TnesMaku+dp9zmdrhtJ9JO23pHYcggZDiHDIVTaE+y09Q6DTPYVneyN0f3dyfuD9N9qq19iyyFkOIQMh1B7bGVrnkRF9/v65H1M93Ol+zdP7R9/suUQMhxChkNoNJ8jsXf4U2tD0vuyb43ddO81mdthyyFkOIQMh1C7z7H1PNuyNXchvS975V50zaT8k2tltcZwCBkOofa5st1rSPeZmpinmR6Lqbg5z7TLlkPIcAgZDqH2HNKJyZqRxHM9sf5lMu+1W07672bLIWQ4hAyHUGlsJf09fmuPrFP6vJXKfclk7ufNeTO2HEKGQ8hwCI3WrZBEH6W75rP7XE/s/UVursudlGPLIWQ4hAyHUGQf0onu3ppb4wuJ9zFv2Ft9UjdbDiHDIWQ4hB7rcyTmdVau2dpzbMukX7I1V5TYcggZDiHDITRaK3tTYv7p1vlqW32CxLlurltRhOEQMhxCa+etdE3WhlTKubmWNXE+XFfifBlbDiHDIWQ4hNpn2ev/YcshZDiEDIeQ4RAyHEKGQ8hwCP0GDO+MIvEJVxMAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260913-0413",
+    "garage_id": "GAR-VISN-003",
+    "garage_name": "Mahadev RE Clinic",
+    "city": "Visnagar",
+    "tier": "Platinum",
+    "discount_pct": 25.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 157.5,
+        "total_rate": 787.5
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 262.5,
+    "subtotal_inr": 787.5,
+    "gst_amount_inr": 141.75,
+    "net_payable_inr": 929.25,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 2: East Industrial Loop",
+    "created_at": "2026-09-13 10:56 PM",
+    "tracking_code": "CHAM-B2B-TRK-4413",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFQElEQVR4nO3dQa4UORBFUT5izFZZC1tlAXyGeMCVIhTxnIl0z/B3lp3d/eRype3Ij8/Pzy/Sv3x9+gb0XoZDyHAIGQ4hwyFkOIQMh9A3+gfff/xe7+zXz79ZpPbPa0jls5X7p77Oz1aumbRfub7bbxf168ghZDiEDIcQzjlOle9C0v2OrHzfJ/qa6M51SHcukv7/4sghZDiEDIdQac5xmvy+T/S11W+lL7qmO0/aet5TubdJm44cQoZDyHAIteccW7bmJafumsv5d7qGru/OPyr9Vtq5yZFDyHAIGQ6hx+Yc6T0TlXa684CtfivXPDXPOD1/B3otwyFkOITac46t78LJ9/pkD+lWm1vPMCr3VpGYozhyCBkOIcMhVJpzJM5KdL+/u38/Ja5P/P209RxowpFDyHAIGQ6hj/+lJtjkO3jrDO3Wvb1h3aTi/7hLPcJwCBkOoVJ9jpu/s7vPJCbtbJ1r7d5zem1oa47lyCFkOIQMhxA+5+h+V938rZ+ux3Wz/ckca3KWuNKXI4eQ4RAyHEL4nGPrO3JyzdZzlET9DGq/ew9PrblU+nLkEDIcQoZDqPScI7EfYus3fbre+dYaR/cakpjD+ZxDbYZDyHAIra2tVD7b/f5LnHel6xPzpIr0vyN91uccGjEcQoZDqP2+lUqNTvps5e/de5hIzG8qfXXvZ+s5kPs5tMZwCBkOoUgd0q0zI1tzgsT5lMo13fnZZA5HJs9mHDmEDIeQ4RBqr61svZ/s5ppCRXqdJVHrPfG85+TIIWQ4hAyHUOncSuWaST3NxDpL4gxIokbqaWsuUlFp05FDyHAIGQ6hUk0wMllrSMwJttYdJjU2Kn1V2qRruu1TO+4h1YjhEDIcQu09pKfuPgayVZ8jMadJ1EU9vbleuyOHkOEQMhxC7fetPFVL9OYzAPrsZD50s2Y5td9tx5FDyHAIGQ6h9vtW0nsOtuYxW/dcab9yfffv3fM4iT0ujhxChkPIcAhFzsqeunstu/MGkpgDbc0VJrprWJO1IUcOIcMhZDiE2nOOrVqfk2cM1G+6Nih56hxNt32fc2iN4RAyHELtOUe6RnjlPO3W7/vKM5XE/OMNZ17cQ6oRwyFkOIRKe0gTawdb50ESNcifMll/SdRSe+9/KT3OcAgZDqH2uZXTpEZWxZvnN2+ol9rl2orWGA4hwyG0dlY2sQZR+SxJ1Brv9pWuW5o4A3xy5BAyHEKGQ2jtOccp8Xyi2+8b5gE3+6V7qHDOoTbDIWQ4hEp7SLvvTEm8q2zr3a1b73zp3htJzGO2npE4cggZDiHDIbT2vpWbdcG795P47GRfxVYt162zOcSRQ8hwCBkOoVF9jvQaSrpeePcZyc29LIk6p3SNaytqMxxChkNoVId0a69D95rE+shWTdJJ+2RrTtNtx5FDyHAIGQ6hUU2wyffZaet3eaL9xNnXdK1037eiOMMhZDiERudWJp46H1u5h63aG+k6Jd2+nHNojeEQMhxCoz2kXZN9G4n6Y4nzL909FpN2Eu9YOTlyCBkOIcMhVFpbSe9F2DrHkThrk34m0e3r5r4ZRw4hwyFkOITW3it7ulnrYuuM66QGyc3aJBPuIdUawyFkOIRG51YSJr/j03XE0+s7iX4n9+bIIWQ4hAyH0GNzjq13oGzVQa/cQ+KdtJN5yWRfaoUjh5DhEDIcQqOzsjdNanJM1kpIuh58pd9KO5O5iCOHkOEQMhxC7fetbJmcDam0c3Nf6uQetuYHifppjhxChkPIcAg9Vp9D7+fIIWQ4hAyHkOEQMhxChkPIcAj9AfwSluktFWxNAAAAAElFTkSuQmCC",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260913-0413",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-13 10:56 PM",
+    "tracking_code": "CHAM-B2B-TRK-4413",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFLUlEQVR4nO3dTY7VMBBFYUCM2SprYassgGaIBxypSlXXCeJ8wybt+DVXjl/89/nj4+OT9Ddfnq6A3stwCBkOIcMhZDiEDIeQ4RD6Sv/w7fuv9Zv9/PEni1R+5ZrK9d17nagcuqZSt8rv0vXd+3bRfW05hAyHkOEQwj7HqfIsJN1n5Nb1lXImz+9JX4R0+yLp/xdbDiHDIWQ4hEp9jtPk+31X951HpRyy1dep3GvyDqZbn0mZthxChkPIcAi1+xxbus+/rX4DjZtQP2DSF6mM+0zGd9JsOYQMh5DhEHqsz5GeM1Epp9sP6JqM7zzVzzg9XwO9luEQMhxC7T5HYtyke81k/ulWmVvvMCp1q0j0UWw5hAyHkOEQKvU5Emslus/v7s9PiesTPz9tvQeasOUQMhxChkPo87+yJ9jkGTxZf5uo2xvGTSr+jVrqEYZDyHAIlfbnuPk9u/tOYlLO1rrWbp3TY0NbfSxbDiHDIWQ4hNpjK+l5GJNyKvW5+S4kMU5E5Vd+3v2MthxChkPIcAiVxla29txMfEev1GfyvmTr+X2zbpX7VthyCBkOIcMhhH2OxHf0Nzz7t/o9iT5WRaIP59iK2gyHkOEQKvU5SGKeR3q9K10/GSuZSH9G+t3K9bYcQoZDyHAItc9boT06J2eCTM5ym0jMpajc62Z9Knut+p5DbYZDyHAIRfYh3VozsnV9+iyVymfcGnNJjMUQWw4hwyFkOITaYytb55NtjWtsjXekx1kSe70n3vecbDmEDIeQ4RDC9xyTsYDT1n4VFel9t9JrX9PnznTLtOUQMhxChkNobQ7p5LySikTfZbK+4+Z7i8Q+JRW2HEKGQ8hwCLXnkJ668xhIeg3tVjlb+6JO7tstnziHVCOGQ8hwCLXHVtJrVSZ9lEmZp/S+6d37Vq4nk3racggZDiHDIdQ+byU95+DmHMmb80a7P6/UeWvvL2LLIWQ4hAyHUHsf0orJXMvT2/YC3/pcW3WbzBdxTzCNGA4hwyHUPss+PU+Tytzql1Qk9mC9uY5miy2HkOEQMhxCo/05bl5f+V0qZ+uMmEk903uMJvZ9t+UQMhxChkOo/Z7jlDhX5W3jKTclxmImfab3/qX0OMMhZDiEImfZJ77Hd+uzVTe671NjK+k5IidbDiHDIWQ4hNbmc1Tc3NsqsWdX917pfUu35p04tqI2wyFkOITiZ7yd0nuB3+wf0H1v9j+662m7bDmEDIeQ4RAq9TnesMaku+dp9zmdrhtJ9JO23pHYcggZDiHDIVTaE+y09Q6DTPYVneyN0f3dyfuD9N9qq19iyyFkOIQMh1B7bGVrnkRF9/v65H1M93Ol+zdP7R9/suUQMhxChkNoNJ8jsXf4U2tD0vuyb43ddO81mdthyyFkOIQMh1C7z7H1PNuyNXchvS975V50zaT8k2tltcZwCBkOofa5st1rSPeZmpinmR6Lqbg5z7TLlkPIcAgZDqH2HNKJyZqRxHM9sf5lMu+1W07672bLIWQ4hAyHUGlsJf09fmuPrFP6vJXKfclk7ufNeTO2HEKGQ8hwCI3WrZBEH6W75rP7XE/s/UVursudlGPLIWQ4hAyHUGQf0onu3ppb4wuJ9zFv2Ft9UjdbDiHDIWQ4hB7rcyTmdVau2dpzbMukX7I1V5TYcggZDiHDITRaK3tTYv7p1vlqW32CxLlurltRhOEQMhxCa+etdE3WhlTKubmWNXE+XFfifBlbDiHDIWQ4hNpn2ev/YcshZDiEDIeQ4RAyHEKGQ8hwCP0GDO+MIvEJVxMAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260913-0412",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 10,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 1680.0
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter",
+        "quantity": 5,
+        "mrp": 380.0,
+        "unit_rate": 304.0,
+        "total_rate": 1520.0
+      }
+    ],
+    "mrp_total_inr": 4000.0,
+    "discount_amount_inr": 800.0,
+    "subtotal_inr": 3200.0,
+    "gst_amount_inr": 576.0,
+    "net_payable_inr": 3776.0,
+    "payment_mode": "Credit (15 Days)",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-13 10:56 PM",
+    "tracking_code": "CHAM-B2B-TRK-4412",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFMUlEQVR4nO3dQXLVMBBFUUIxZqusha1mAYQhHnCruqv7SR7cMwyO7f/zShZSS/74+vr6Jv3P99s3oPcyHEKGQ8hwCBkOIcMhZDiEftA//Pz1Z/1in7//ZfF5/u7Pt67bPaZyfjL5XFvfQ+X8T7YcQoZDyHAIYZ/jqfJMJVvP70q/hK7bPb5yDKHzVD5X91rpv4sth5DhEDIcQqU+x9PWs7A7NrB1P5Vxjq7umE33PN17IN1z2nIIGQ4hwyHU7nNsqTz7t57T3fmU7lhLV6Lfk/Cuu9GrGA4hwyF0rc9ReX53+wH0u6RbY9G9h26dymScI+H+Hei1DIeQ4RBq9zkSz8Ju/6Nynq3zb33e9NhJ4u9iyyFkOIQMh1Cpz5FYKzGZy0ivZ0nUZGz9nK6VYMshZDiEDIfQx609wSZrSRLjAVt1ISSx/jbt/h3otQyHkOEQwj7HpNZhMg+SWH9xcs5iq2+xNf4xqVOx5RAyHEKGQ6g9t5JYdzqZv6Drbu3B1b3PrZrWyc8rKt+zLYeQ4RAyHEKlcY6KyVjIrXqF9HUndSF0P+l+1ZMth5DhEDIcQqV6jq1xjsRzl46h+5nsIZZ4ridqRLbqUWw5hAyHkOEQGu1Dmt6zq3JOkh5T6fY/EnUq6b6XLYeQ4RAyHEKRuRWSXi+a6E90bc0rdc/ZVbkHWw4hwyFkOIRwnCOxfvXku0i2xi225im2+kYn1xXbcggZDiHDIdSu53g6+e60yjlPrmfZ2kOMbPUhJvdgyyFkOIQMh9Bo7/PJO00qx0/OOamNeMP7YCd7pVtDqjjDIWQ4hEp9jsn/lRN7elbO072fyjHdsYet/sSkXzXpD9lyCBkOIcMhhH2OyvNyMmdBx0yeken+zdZ+5JN1OolaFmLLIWQ4hAyHUHvdytb6lK70viCJd7zRvSW+nwnnVtRmOIQMh1D7HW8n161s1WOSrbGZk2tru8cQ9yHViOEQMhxC7RrSrkTdQ3o9S+WYRC1n9xiytb7GlkPIcAgZDqHRe2XT8yzp/dG3aiPSa17Sc1XElkPIcAgZDqHIWtlKnWnlnIl+yUS37vVk/6OiW6tryyFkOIQMh1BpH9L0Xt1be59XJGpRu/2PyrXIyT6WLYeQ4RAyHELtuRU6hiTqIbr30L2fikRfh46n6ybmhp5sOYQMh5DhEBq9b2VyfHpv78n+XYk90CYm3+Gkv2jLIWQ4hAyHUGlPsK19uCfjIlvH0+8+pfcAnYy1bPVprCHViOEQMhxC8bWyJ2tBEibzQYn9POje6B7oePscGjEcQoZDqL0nWEV3zD9dV5Hes2vyu1ufPVGvasshZDiEDIfQaG6Fjp+cZ+Lk+1Ym9SiTsZlEv43YcggZDiHDIRSpIb01j5B4lnc/V+J7u1XXYsshZDiEDIdQaW4lsU8GubXX+Na90XXT70/psp5DI4ZDyHAIReo5KhJ7oqfrSLbGKhJ7wE/6hY5zqM1wCBkOoVI9x5aT9Rb080SfYDKXtLWvSZfjHBoxHEKGQ6i0Vjax7qNy/sTcRLpP0D1P11Y/w/etaMRwCBkOofb+HFtzAek+xNZ8BB1f8YZ6lEnfy5ZDyHAIGQ6h+J5gZGv9S/qdrm+uBaHzT763J1sOIcMhZDiErvU5nhL7dpzctzSxx/nWO+Qmn9eWQ8hwCBkOoXaf4w11CWRr/iXxztitmhX63e69ObeiEcMhZDiESu+y33JyTezknBW39m5P7DVCbDmEDIeQ4RC6tj+H3s+WQ8hwCBkOIcMhZDiEDIeQ4RD6C+JCrvVpZBQaAAAAAElFTkSuQmCC",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-6047",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-12 11:30 PM",
+    "tracking_code": "CHAM-B2B-TRK-1047",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFMElEQVR4nO3dTY7VMBBFYRoxZqusha2yAJohHnCkKlXdOEjnG0Je4u6+cvz8+/H5+flF+pevtwug9zIcQoZDyHAIGQ4hwyFkOIS+0X98//F7/WG/fv7NYuX+dP3Wfbac9yf/Y/mtOYQMh5DhEMI2x6nyTiXddyQ9q/Lvk2fRZyvXVD7b/bm6bZGuyv2tOYQMh5DhECq1OU5b70J6l1N/AJWB3uuT/oBK/0qlPJXPVu5TkWijWHMIGQ4hwyHUbnNs2WoTTK7pPisxrkHPeoN3lUavYjiEDIfQtTZHd8xi0vdQeW7l37tl2OovueV+CfRahkPIcAi12xyJd2HlHTx5H0/mZGxJtyES97fmEDIcQoZDqNTmSLyPu30M3b6QikmfB5n8XFt9OVusOYQMh5DhEPq4tSdYYm7mZB7l1ngN2Vq/86T7JdBrGQ4hwyGEbY7ue33r3U9l6H62cp+K9LMSa2Emf7uTNYeQ4RAyHEI4tjJpZ3T7CbrvwsR7d+u5k3GQ7u8n3Zay5hAyHEKGQ2jUz5Ho2+iWoXL/reu7JvNCqDxP/i2sOYQMh5DhECrN59ga4+iazN88vWHPdZJoD221vaw5hAyHkOEQKp23sjWn4cl+iPQakG77Y6vMifmqxJpDyHAIGQ6h0XwOur5yn8n5KVtrWSsS+7hP+k4mc0roPsSaQ8hwCBkOofZa2fR+FfTZLbfWgKTPbUmMAVlzCBkOIcMhFD/Lfqs/o6LbHkqfCUfXJO5/2tpD3ZpDyHAIGQ6h0Vn2iTNNJmfMViTaJYk1KZPyOIdUcYZDyHAIrY2tPLkWtHKfivQc1USbrGtyH2sOIcMhZDiERmMrk37+ybkqE1tjHGTr90bXu25Fr2A4hAyHUGlPMJKYd/nkOEXls4nxi8l8zwTHVtRmOIQMh9DaGW+Jvaros+m9QxLraakMt9oi7kOqEcMhZDiE1s54I0/ut7HV91CR6AtJ6/6erTmEDIeQ4RAqrVshib29K7r9BIn2wdZ+GG/bI+RkzSFkOIQMh9BobCW9r8akf2LrvZuem5I4I6bCfg6NGA4hwyFU6udIz9WoXL817yHRXunud155Fkm0k4g1h5DhEDIcQpH5HIn9uen+W5/dmovafW7lenru1nwXYs0hZDiEDIfQ2lrZrf7/SX/Ak+MUiXLSfSbrXCZ9LdYcQoZDyHAIjfY+715feedtfXfv7iOeuH93Tmu638J+Dq0xHEKGQ2h0ln2lrZCYs5nYI3xSntOTbQvPW9E1hkPIcAi118p22xaJMQKy1Y9SuX9iD/LuutxTYr6qNYeQ4RAyHELtOaRdk+/rFVv9KyTR7tlam5Pu77HmEDIcQoZDaHSu7CmxHuQN7/itsqX7byrXE8dW1GY4hAyHUKnNkeir2DpPJLGOY1KGisRe7F3uQ6oRwyFkOITWznjrSn/Xn5QhsedHYvzolJhzas0hZDiEDIcQziFNfM/eGrNIzCe9de7aqVKerXkb9nNoxHAIGQ6hyP4cp8SZZ5VnTdbXVK6v7Hd+Ss+96H7W81Y0YjiEDIdQe63s1j6eiTUXif05Jn0hW+Mskz6YyZiUNYeQ4RAyHEKjs+wnKmMHp8R5KIk1q1vlmaypIfZzaI3hEDIcQtfaHFu6e5G9oQyVdkNiHZDnymqN4RAyHEJr+5BO7pMeg0j0kdD9J3tpdH/2rWcRaw4hwyFkOIRKbY5EP0F3XUZ6X9H02Ee3bKdb62usOYQMh5DhELq2P4fez5pDyHAIGQ4hwyFkOIQMh5DhEPoDT9/Ay4ALGoEAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-6047",
+    "garage_id": "GAR-VISN-003",
+    "garage_name": "Mahadev RE Clinic",
+    "city": "Visnagar",
+    "tier": "Platinum",
+    "discount_pct": 25.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 157.5,
+        "total_rate": 787.5
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 262.5,
+    "subtotal_inr": 787.5,
+    "gst_amount_inr": 141.75,
+    "net_payable_inr": 929.25,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 2: East Industrial Loop",
+    "created_at": "2026-09-12 11:30 PM",
+    "tracking_code": "CHAM-B2B-TRK-1047",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFSUlEQVR4nO3dTY7QOhBFYRoxZqusha2yAJohHnCkKlVdJ0jnG/LSTnhcOW7/VD4+Pz+/SP/y9ekH0HsZDiHDIWQ4hAyHkOEQMhxC3+g/fP/xe/1mv37+zSK1f15DKj9beX661/mzlWsm7Veu7963i+5rzyFkOIQMhxCOOU6VdyFJvCNPk3HG1rNttdkdi6T/Xew5hAyHkOEQKo05TpPf7yvXT97ZiftWnqcyL9K9b/fvkvh3secQMhxChkOoPebYsvW7+2Ru4/zz7jigMkbp3rfSzk32HEKGQ8hwCD025qi8mysmcxXdcQDdl3TnSLrtpz3/BHotwyFkOITaY46td+FknmMyDzHZ15mYw6g8W0VijGLPIWQ4hAyHUGnMkdgH2n1/d//8lLg+8eenrbMzE/YcQoZDyHAIffwvNcEm7+CtM7Rbz/aGdZOK/+Mp9QjDIWQ4hEr1OW7+nt2dk5i0s3WutfvM6bWhrTGWPYeQ4RAyHEKleY7Eec50bYmn5kIS+0LI1n5bxxxqMxxChkNoVBNs8s6jdhI1uxL1M6j97jM8teZSuZc9h5DhEDIcQu21lcnv8ZX2K21WrumOV9LrOFv3mrTfna+y5xAyHEKGQwjXVrZqbaXHLqetPRCV9rfmJBJneiv3cp5DI4ZDyHAIlcYciVrdE4ln2NrnQSZzEls10yr3PdlzCBkOIcMhFK9Dmn53Jvaa0BrNZNyQWG+qmMzN2HMIGQ4hwyHUXlvZmvNIrxGk92Ym1mUm61kTznOozXAIGQ4hnOfYOt8x+d19sufjqb2Zk/0oW2ORikqb9hxChkPIcAhF9pBWrtmqo0X3qrh5NockvhFTuVeFPYeQ4RAyHEJr9TkmZ1a3zmgk1lMSdVFPb67Xbs8hZDiEDIdQ+3sriVqiW2drK/ci6XplN2uWU/vdduw5hAyHkOEQatcE23rv3tzXubU2sVUvZLL3pXIWZusssT2HkOEQMhxC7foc5OZ3RrrPQBL7P9L1POh5Ku1YE0xrDIeQ4RBq1+dI73Oc/O6erg1K3lAzbXIuhthzCBkOIcMh1B5zTM7HTvYWdPeoTuZXttaPJmsodH33XtYhVYThEDIcQu1v2SfOsm5986ziZo32rnRt9cr1p/f+n9LjDIeQ4RBqn1s5petmpuuap+uG0TNMpPeInOw5hAyHkOEQas9znNJrEJWfJTfrjG3VJ91aczm5tqIIwyFkOIRG51YS78hToib6zXHAzfvSM1Q45lCb4RAyHEKlPaSJ919ijmTybZd0fTOSGMdsjf/sOYQMh5DhEBrVPt86I7q1VkLXV3THCpN9FVv1SLbO5hB7DiHDIWQ4hNrzHKf0noNKm1vzBJO1pKfqeXTrnNI1rq2ozXAIGQ6hdn2O09a7n64h3THB1pmR9L5Xklh7qrDnEDIcQoZDaK0m2NZaw8TW2drKzyb2f1Tu223/5FlZrTEcQoZDaFSfYyJRYyNR33Pr+qfOBk/2jthzCBkOIcMhVPqu7JbumZHJmZStemVb45JEO4lvrJzsOYQMh5DhEBqdW6mYfOOtcs3WOCOx54NM9n4m9s24h1RthkPIcAitfVf2dLOGx9aYZjKPkphfoWebcA+p1hgOIcMhNDq38gY3a6ROaomSdG3TybPZcwgZDiHDIfTYmKO7h4N+dqsOOj0DtbllMi6Z7EutsOcQMhxChkNodFb2pknN8slaCUnvaa3ct9LOZCxizyFkOIQMh9CoDunE5NsolXa29ocm1lxOW+ODxPdl7DmEDIeQ4RB6rD6H3s+eQ8hwCBkOIcMhZDiEDIeQ4RD6A4u1mcnVRs52AAAAAElFTkSuQmCC",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-6046",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-12 11:30 PM",
+    "tracking_code": "CHAM-B2B-TRK-1046",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFQ0lEQVR4nO3dTY7VMBBFYRoxZqusha2yAB5DPOBIVaq6zmtxviGExMCV4/ZP5eP1en2R/uXr0w3Q+zIcQoZDyHAIGQ4hwyFkOIS+0W98//F7/WG/fv7N4nn/89crbahcT8+a3KfStu79K9d3n9tFz7XnEDIcQoZDCMccp8q7kFTekZP3KP3Zynt98tzJWIR0xyLp/xd7DiHDIWQ4hEpjjtPk5/vK9ZW5iu57vXv/09bcSaU93fucEv8v9hxChkPIcAi1xxxbuvMNiXmFbnu6czaVsc5kfSfNnkPIcAgZDqHHxhyJ+YzKsypt2HrHT9aVnhpnnJ5vgd6W4RAyHELtMcfWu3CyRyG9/5SuT8xhVNpWkRij2HMIGQ4hwyFUGnMkzkp039/dXz8lrk/8+mnr7MyEPYeQ4RAyHEIfn6Um2NbcRmKvZbdt77BuUvE5WqlHGA4hwyFUqs9x8+fs7pzE5D5b51oTdUfStUkq97TnEDIcQoZDqDTPMXm/0n1ON8+FpudCEvtCSOLM8MmeQ8hwCBkOIRxzbNXLmqw73GwDSdQWS7et8twKew4hwyFkOITa8xynxL6HSRu25idu1k2/uXek+3ex5xAyHEKGQ2itPsfkXMYpUeuTTM6wTJ679Xec1BepXGPPIWQ4hAyH0Nrayta3P7a+qTbZG5HYMzuZk9hax6k892TPIWQ4hAyHUPsbb9133uTdufXenYxX6Bq6f6Wm6mQccHM9y55DyHAIGQ6h9jxHel2gK1Fvo/vcm/MoW3ts6Z4new4hwyFkOIRwnmNrX0JizWJrDoDakFgHmeyxSNcxI/YcQoZDyHAIjfZzdOc8njq3kjjfcXPeIj1WI/YcQoZDyHAItfdznLr7GEj3Xbt1LqPbhq26qJPndu9P3EOqEcMhZDiE2msrW/scJ+OVd6jXebPue+V6MmmnPYeQ4RAyHELt761srSPc/M7ZVm2urbHO1t6XrdpfxJ5DyHAIGQ6h0n6OrXn7p/ZCJp6VngvZmsOYrA3ZcwgZDiHDIdT+ln16nyPdc+tn94r0N962bJ03JvYcQoZDyHAIRepz0PUksT9j6yxrogbJ1t83/V0Yew4hwyFkOITa8xynxBxGem3l5j6SrnRt9cr1p/f9l9LjDIeQ4RCKfG8l8XP8U22j5z61tnJz/4o9h5DhEDIcQqNv2Z8mc/iJuYpEza7us9J1S9P/L/YcQoZDyHAItc/Kbn2bLVEL/Ob4gJ57c/zRPU/bZc8hZDiEDIdQqQ7p5L2VOFsxqXl681stT82jbM2R2HMIGQ4hwyE0qn1+2trHMKlvsTUWmdRrr9gah03mS9xDqhHDIWQ4hEbzHOna25VnJcYlW9+E67aBriHdOqd0jfs51GY4hAyHUGnMQRK1wxNzDOk1nXQbbs73nOw5hAyHkOEQao85tt5n3Wd1r9mqQZ44+5o4y1P5s56V1RrDIWQ4hNrfle1eQ9LfSzttnZXtrsVU3Nxn2mXPIWQ4hAyHUOms7JbEfsmKSe3wrXplifukx4X2HEKGQ8hwCK2dWyHp8x03a3BVPDVnQ/exJpgiDIeQ4RBq7+fYei9OnjvZwzGZP+iOY8jNc7mT+9hzCBkOIcMhNDq3sqW79tFdp9g60zuZRyHp2qmTttlzCBkOIcMh9NiYY1K3e/J+TezhmNiqnZrYf2PPIWQ4hAyH0Ois7E2TOYzJWgnZWuuptJOeW7mP51YUYTiEDIdQ/HsrlXturYkk9oemv2m3NT7o/hta+1wjhkPIcAiVvmWv/5M9h5DhEDIcQoZDyHAIGQ4hwyH0B2uiio3pEC2EAAAAAElFTkSuQmCC",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-6045",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 10,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 1680.0
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter",
+        "quantity": 5,
+        "mrp": 380.0,
+        "unit_rate": 304.0,
+        "total_rate": 1520.0
+      }
+    ],
+    "mrp_total_inr": 4000.0,
+    "discount_amount_inr": 800.0,
+    "subtotal_inr": 3200.0,
+    "gst_amount_inr": 576.0,
+    "net_payable_inr": 3776.0,
+    "payment_mode": "Credit (15 Days)",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-12 11:30 PM",
+    "tracking_code": "CHAM-B2B-TRK-1045",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFI0lEQVR4nO3dQXLVMBBFUUIxZqusha1mAYQhHnCruqv7yRrcMww/tkNeyYrcan98fX19k/7n+9sXoHsZDiHDIWQ4hAyHkOEQMhxCP+gffv76s36yz9//svg8/tbXu+ftfqZyfJK+/gm6fkcOIcMhZDiEcM7xVLmnkq37d2X+QeftzjMqxyR0nMrP1T1X+vfiyCFkOIQMh1BpzvG0dS/srg0krqcyz6jors10j9O9BtI9piOHkOEQMhxC7TnHlsraw9ZcYWudY+sZR+V6bnDX1egqhkPIcAi9Nueo3L+7zynoeyuf6dZ8dL9eOdfWusuW969A1zIcQoZDqD3nSNwLu/OPynG2jr/186bXThK/F0cOIcMhZDiESnOOxF6JybOMxH06XZOx9XU6V4Ijh5DhEDIcQh9v9QTr3lPT6wGTe/zWs57uMdPevwJdy3AIGQ4hnHNMah229pJ0v5ecfGaxNbfYWv+Y1Kk4cggZDiHDIVSaczxN7mHk5D6Ut/bWJnqRVUyeEzlyCBkOIcMhVHq2snUvvK1eIX3eyf2eric9r3py5BAyHEKGQ2hUz5Goi+yeiz7ztNVrPHFfT9SIbNWjOHIIGQ4hwyE02reS6FM+uZ7K57euoTv/SNSppOdejhxChkPIcAjFa0gT+0LTc5rEe0y29t/SMbsq1+DIIWQ4hAyHEK5zdN+Z0u0lml7/mKwZJPbNbv28J/cVO3IIGQ4hwyE0qiFN7GFJS9SFbNWsVK7z5JrNXb85XcVwCBkOoVHv88k7TbqfTzyzqHjrfbCTXunWkCrOcAgZDqG1fSsk0dMzcZzuuSZ7W25YL6lw5BAyHEKGQwjXOSr3y8R9N92DfGLr+Ok6la3+Io4cQoZDyHAIjfqQkq2eFom/9W8+V7oHGvHZitoMh5DhEGo/W9l6d0miH0aiv2flGk7OUbqfIfYh1YjhEDIcQu0a0q6tvmHd4z8l7uuJWs7uZ8hWvYgjh5DhEDIcQqOeYCefs1RMeotVjkkS/z+Vz2zNS4gjh5DhEDIcQqN1jm6dKanUk1a+N61b93py/lHRrdV15BAyHEKGQ6jUhzTxPpRET/SKrWcik/lH5Vzk5BzLkUPIcAgZDqEr3iu7tUemYquOJP1OuLeeDT05cggZDiHDIdTuz9E1eQ9LxVYNxNY+lHQvMvp6Yn3IkUPIcAgZDqFSPcfJ5yBb/TwqJmsJk/qMyVrLyZ7ujhxChkPIcAiN3itbcXKfSMLkeVD6XTBb9SjEkUPIcAgZDqHSOsfk7/4bakUrX6fPdPd6PG3NhybX3D3OkyOHkOEQMhxCpXqOdK1iWmLPyKQeZTIXSb8T7smRQ8hwCBkOobXe57f1DUv0Ak/sc3mrz2nlOI4cQoZDyHAIleYciWcf5Oaaj8nzoPT7U7qs59CI4RAyHEKj/hwTib7dW/1CyNZaRaIH/GRe6DqH2gyHkOEQivfneErsBe3WtybmBIl31N3QR8SRQ8hwCBkOoXZ/jq5EveTkvOk5Qfc4XVvzDN+3ohHDIWQ4hNrveNt6FjDZ/1l5h1yiJnTy3pmTNaGV73WdQyOGQ8hwCI3eKztxssf51t6Z22pB6Phb76d15BAyHEKGQ+i1OcdT4u/79P4aOuZWH9Ktd8hNfl5HDiHDIWQ4hNpzjhvqEkj3OUKiVmOrH/lWb7HJvMeRQ8hwCBkOIdwrm963knif+1s9xBK1rpVzTTjn0IjhEDIcQq/159D9HDmEDIeQ4RAyHEKGQ8hwCBkOob+AIZbpetLSogAAAABJRU5ErkJggg==",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-5157",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-12 11:15 PM",
+    "tracking_code": "CHAM-B2B-TRK-9157",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFM0lEQVR4nO3dQY7VOhCFYRoxZqusha2yAC5DPOCXqlR14tvi/4a8dGJ4R47bscsfr9fri/QvX283QO/LcAgZDiHDIWQ4hAyHkOEQ+kb/4fuP3+sP+/Xzbxbp/pVrKtd3n3Wi+9A1lbZVfpau7z63i55rzyFkOIQMhxCOOU6VdyHpviO33qlbYxoyGYuQ7lgk/f/FnkPIcAgZDqHSmOM0+f2+cn1lrmJy/8pzT1tzJ93ndv+Oif8v9hxChkPIcAi1xxxbEuOSCvrZ7vije//Kcyv3eZI9h5DhEDIcQtfGHFtrJrrPqrRh6x3fHaOcbo0zTvdboLdlOIQMh1B7zLH1LpysUZis1Zis60zMYVTaVpEYo9hzCBkOIcMhVBpzJPZKdN/fk3UeiesTf356ch6I2HMIGQ4hwyH08Vlqgk3ewZP9t4m2vcN3k4rP0UpdYTiEDIdQqT7Hk79nJ/aqdOcYKibzLulvQ1tjLHsOIcMhZDiE2t9WuntB6T6V67fGOulaZCTxnYjuX/nz7t/RnkPIcAgZDqF2TbBJja/E7+hbbTh125DYQ5tWeZY9h5DhEDIcQqX1HIl5/q2aV1vzE7fqpj+5dqT7d7HnEDIcQoZDqL2GNL3OI/GtYevdn5iTSOzprTzLeQ6NGA4hwyE0OuNtq6bW1pksifPhum2oPOvJ9lRqrTrPoTbDIWQ4hK6t50jXlthqM92Trqfnbn1zSXyLIfYcQoZDyHAI4beVxH5Ouv/W2giSWJuZ+C4zmZuZcJ5DbYZDyHAI4TzH1v6ORL2KyX5dsrU2M9HmdB0zYs8hZDiEDIdQe57jNKl78eS+lcT+jifnLRJ1SirsOYQMh5DhEGqv5zh11zFsSc9z0H226qJOntu9P3ENqUYMh5DhEGp/W9la5ziZJ9haE0rSddO7z61cTybttOcQMhxChkOofd7K5L1762yzW/U5umOm7jhsq/YXsecQMhxChkOo9G2lYrKmMlHnY2ueIL1Otqv7DWvybcieQ8hwCBkOofhZ9omapHTNlq0a6pXrJ9JntdhzCBkOIcMhNNq3UvHkeaqJ5yZqkCRqjCbqvttzCBkOIcMhNJrnuHWuyqQNt9aUVGz9e1bu6bcVjRgOIcMhtDbPcetstnTb6Lm3vq0kxiXEnkPIcAgZDqHRubKnd6tt9WTd9K01s+lvTPSzfltRm+EQMhxCpX0rlXfb1vkpp3dYY9GtR/Lk+KO7n7bLnkPIcAgZDqG1c2W3xhmT9kx+75+0bVI3LDFO2pojsecQMhxChkOoVBPslF7HkDi7JHFe62T+YGsclq59Ys8hZDiEDIdQuyZYYs3B5Flb60npmkp7nmwDtafy53SN6znUZjiEDIfQqA5ponZ44r1eMVm3kWjPaWtM072PPYeQ4RAyHELtMceT58c+ub+j+7OJ9R+V53bvf3KvrNYYDiHDIdQ+V7Z7DUnsByHpNSLpOYytdaZd9hxChkPIcAjFa5+fEmOF9LqKSdu27pOo7VFhzyFkOIQMh1B7r2zXrbmEd6vBVblPes6je409h5DhEDIcQqN9K2Rr/WZlvUh3zmNyn8S3nvS+3Ml97DmEDIeQ4RAa7VtJ6L7Lt9adTPaXvltNsMpckTXBNGI4hAyH0LUxx6Rud3cssjUXkjiTdqt2amL9jT2HkOEQMhxCo72yT5rULJ/siyGJeh6JNSXuW1GE4RAyHEJrZ7x1Tc4wq9znyb2sifPhurr/htY+14jhEDIcQu2z7PX/sOcQMhxChkPIcAgZDiHDIWQ4hP4A1YqSKJHbijkAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-5157",
+    "garage_id": "GAR-VISN-003",
+    "garage_name": "Mahadev RE Clinic",
+    "city": "Visnagar",
+    "tier": "Platinum",
+    "discount_pct": 25.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 157.5,
+        "total_rate": 787.5
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 262.5,
+    "subtotal_inr": 787.5,
+    "gst_amount_inr": 141.75,
+    "net_payable_inr": 929.25,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 2: East Industrial Loop",
+    "created_at": "2026-09-12 11:15 PM",
+    "tracking_code": "CHAM-B2B-TRK-9157",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFRElEQVR4nO3dTY7VMBBFYRoxZqusha2yAJohHnCkKlXdOEjnGz7cdrq5cvzin3x8fn5+kf7l6+0L0HsZDiHDIWQ4hAyHkOEQMhxC3+gfvv/4vd7Yr59/s0j1n2VI5Wcr109tnT9bKTOpv1K+224XtWvPIWQ4hAyHEI45TpV7IeneIyv3+9NknLF1/96qszsWSf+/2HMIGQ4hwyFUGnOcJt/vK+XP+tP34MpYofL7JsZJ3d8l8f9izyFkOIQMh1B7zLGle28+0T2+O+dyfj6pp3tt1G6lnifZcwgZDiHDIXRtzLG1ZqLbVuUaJuOhSruVMrfGGaf7V6DXMhxChkOoPebYuhdO5kcmzyEm6zoTzzAq11aRGKPYcwgZDiHDIVQacyT2SnTv393PT4nyic9PTz4HIvYcQoZDyHAIffwvZ4JN7sFbe2i3ru0N8yYV/8dV6grDIWQ4hErnczz5Pbv7TGJSz9a+1u41p+eGtsZY9hxChkPIcAjhc47JWRfp7/rp87ierH8yxuqOmbpt2XMIGQ4hwyE0OhNs6+yKxHOI7jWcutcw+TvcmnOptGXPIWQ4hAyHUGk9xxueedw673xrjqNbhiTGcD7nUJvhEDIcQu01pE+uV0iMS6h8t/6tZxKJPb2VtnzOoRHDIWQ4hEbrOU6JeYHEeaOVtip1dk2eSUyuYTLesucQMhxChkOovZ5j651tifer0eeJ/SmVMvTumMk4IDEXQ+w5hAyHkOEQap8J1r2nJt67VrlOqnPL5GyxSpnEc5dueXsOIcMhZDiEcMyxtb9j8t19Mtdwa23mZH5nsj9o8vsSew4hwyFkOIQi53NUyiTukVvjjK3fJfE37NZfqYfYcwgZDiHDIbR2Pkd3jqAivQ+lInEu6unN57XbcwgZDiHDIRTZK5uoJ3E2aPdnn9w/sjXO8OxzRRgOIcMh1H7fSuK+u6W7jnVrD06lfPfzyjWn17jYcwgZDiHDIVSaW5nYWmvZvcdvPSfYWieb2Bs82efimWAaMRxChkOotIZ0aw6lK/HdvSIxj3Nrv+6EPYeQ4RAyHELt5xyT79Nbzzm2vt+n548mz0WofLctzyFVhOEQMhxC7Xe8JfZtpvfQUrtvkz5bvVL+9N6/lK4zHEKGQ2g0t/KGd4V069ka39yaW0mMS4g9h5DhEDIcQo++V/aU3v+SuM5uW+lzSxN7gE/2HEKGQ8hwCI3mVm6dm/nkmpLJOODJdukaKhxzqM1wCBkOodE5pJUyiXeVTc48nezFJU+e69VdA1upk9hzCBkOIcMhVDoT7NTd3zEZr9D1bO1tqfxs5Xq6tva4bu3NIfYcQoZDyHAIjfbK3lpzsPXek639pYn9tIlzTqmMcytqMxxChkNodA7p1lqHSpluW4k9KbfOfX9y7ulkzyFkOIQMh1B7zLF1PztNvq9P6p/8bGL9R6Xdbv0n98pqjeEQMhxC7b2yWxLvJ0uc77lV/tbe4Mk8lD2HkOEQMhxCpTPBtkzuu5U6T7fOCEnUk95bS+w5hAyHkOEQWtsrS9L3/q220uthK/Wk99Z2y9hzCBkOIcMhtPaOt9OTZ4p3xyjd964lznd/cl/upB57DiHDIWQ4hEb7VhK29qcknmGkxx+JdifXZs8hZDiEDIfQtTFHZawwOcN0MiZIv6et0lal3cT6mJM9h5DhEDIcQqO9sk+anFnevWenz0XtXie1W6lnMhax5xAyHEKGQ6g05kh8h+7es7v1bO3jSMy5nLbGB92/oWefa8RwCBkOoWvnc+j97DmEDIeQ4RAyHEKGQ8hwCBkOoT9CUKogCsGVxwAAAABJRU5ErkJggg==",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-5157",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-12 11:15 PM",
+    "tracking_code": "CHAM-B2B-TRK-9157",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFM0lEQVR4nO3dQY7VOhCFYRoxZqusha2yAC5DPOCXqlR14tvi/4a8dGJ4R47bscsfr9fri/QvX283QO/LcAgZDiHDIWQ4hAyHkOEQ+kb/4fuP3+sP+/Xzbxbp/pVrKtd3n3Wi+9A1lbZVfpau7z63i55rzyFkOIQMhxCOOU6VdyHpviO33qlbYxoyGYuQ7lgk/f/FnkPIcAgZDqHSmOM0+f2+cn1lrmJy/8pzT1tzJ93ndv+Oif8v9hxChkPIcAi1xxxbEuOSCvrZ7vije//Kcyv3eZI9h5DhEDIcQtfGHFtrJrrPqrRh6x3fHaOcbo0zTvdboLdlOIQMh1B7zLH1LpysUZis1Zis60zMYVTaVpEYo9hzCBkOIcMhVBpzJPZKdN/fk3UeiesTf356ch6I2HMIGQ4hwyH08Vlqgk3ewZP9t4m2vcN3k4rP0UpdYTiEDIdQqT7Hk79nJ/aqdOcYKibzLulvQ1tjLHsOIcMhZDiE2t9WuntB6T6V67fGOulaZCTxnYjuX/nz7t/RnkPIcAgZDqF2TbBJja/E7+hbbTh125DYQ5tWeZY9h5DhEDIcQqX1HIl5/q2aV1vzE7fqpj+5dqT7d7HnEDIcQoZDqL2GNL3OI/GtYevdn5iTSOzprTzLeQ6NGA4hwyE0OuNtq6bW1pksifPhum2oPOvJ9lRqrTrPoTbDIWQ4hK6t50jXlthqM92Trqfnbn1zSXyLIfYcQoZDyHAI4beVxH5Ouv/W2giSWJuZ+C4zmZuZcJ5DbYZDyHAI4TzH1v6ORL2KyX5dsrU2M9HmdB0zYs8hZDiEDIdQe57jNKl78eS+lcT+jifnLRJ1SirsOYQMh5DhEGqv5zh11zFsSc9z0H226qJOntu9P3ENqUYMh5DhEGp/W9la5ziZJ9haE0rSddO7z61cTybttOcQMhxChkOofd7K5L1762yzW/U5umOm7jhsq/YXsecQMhxChkOo9G2lYrKmMlHnY2ueIL1Otqv7DWvybcieQ8hwCBkOofhZ9omapHTNlq0a6pXrJ9JntdhzCBkOIcMhNNq3UvHkeaqJ5yZqkCRqjCbqvttzCBkOIcMhNJrnuHWuyqQNt9aUVGz9e1bu6bcVjRgOIcMhtDbPcetstnTb6Lm3vq0kxiXEnkPIcAgZDqHRubKnd6tt9WTd9K01s+lvTPSzfltRm+EQMhxCpX0rlXfb1vkpp3dYY9GtR/Lk+KO7n7bLnkPIcAgZDqG1c2W3xhmT9kx+75+0bVI3LDFO2pojsecQMhxChkOoVBPslF7HkDi7JHFe62T+YGsclq59Ys8hZDiEDIdQuyZYYs3B5Flb60npmkp7nmwDtafy53SN6znUZjiEDIfQqA5ponZ44r1eMVm3kWjPaWtM072PPYeQ4RAyHELtMceT58c+ub+j+7OJ9R+V53bvf3KvrNYYDiHDIdQ+V7Z7DUnsByHpNSLpOYytdaZd9hxChkPIcAjFa5+fEmOF9LqKSdu27pOo7VFhzyFkOIQMh1B7r2zXrbmEd6vBVblPes6je409h5DhEDIcQqN9K2Rr/WZlvUh3zmNyn8S3nvS+3Ml97DmEDIeQ4RAa7VtJ6L7Lt9adTPaXvltNsMpckTXBNGI4hAyH0LUxx6Rud3cssjUXkjiTdqt2amL9jT2HkOEQMhxCo72yT5rULJ/siyGJeh6JNSXuW1GE4RAyHEJrZ7x1Tc4wq9znyb2sifPhurr/htY+14jhEDIcQu2z7PX/sOcQMhxChkPIcAgZDiHDIWQ4hP4A1YqSKJHbijkAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-5156",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 10,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 1680.0
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter",
+        "quantity": 5,
+        "mrp": 380.0,
+        "unit_rate": 304.0,
+        "total_rate": 1520.0
+      }
+    ],
+    "mrp_total_inr": 4000.0,
+    "discount_amount_inr": 800.0,
+    "subtotal_inr": 3200.0,
+    "gst_amount_inr": 576.0,
+    "net_payable_inr": 3776.0,
+    "payment_mode": "Credit (15 Days)",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-12 11:15 PM",
+    "tracking_code": "CHAM-B2B-TRK-9156",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFEklEQVR4nO3dQbLWNhBF4ZBinK1mLWyVBfAy1SCn6K7uq1+pnG8Ixja8W3JjqeVvX19ff0j/5s9P34DeZTiEDIeQ4RAyHEKGQ8hwCH2n3/jr71/rF/v54/dZPK97Hl/59cp16fjuOenPkvT9T9D9O3IIGQ4hwyGENcep8kwllWckHdP99Yru32Xr796teyrSPxdHDiHDIWQ4hEo1x6n7//LKeSbvISbP3YpJfbD1nqZi6+dycuQQMhxChkOoXXPcRM/Ibv2RqGMm50zMjyQ4cggZDiHDIfR0zXHaqi0qxyfOOVlHkn6XQxw5hAyHkOEQatcciedfd91oxWTuo3vOF+aJEj8XRw4hwyFkOIRKNUd6LqA7HzGZc9l6xif6ayrnp2MSHDmEDIeQ4RDCmuPm+/zJWoqt+5zUNyTRB3vz5+LIIWQ4hAyHUGl/jq31j+d5Kufs3kP3PN1rJeZium72CTtyCBkOIcMh9K2y93l6n4nXeka6dUlFYi+yism8kiOHkOEQMhxC7fccp63+kYmttaXpdyRka92J+3PoKsMhZDiESus50v0jpxf6OLr3kFiT8cL+6I4cQoZDyHAIleZWTp9a35BYU0L3kN5zrHtvXVs9uo4cQoZDyHAIjdZzdI/f2l8rcfxkLchrPbdbtY4jh5DhEDIcQu3vyn5qr8/zmMnxld6ZrXml9Hdh0utpHDmEDIeQ4RBqr+eYHLMl8V2VT639TH8bdnJ+Rw4hwyFkOIRwbmXyDv+F/S0mazIS/SnpfxMyqY0cOYQMh5DhEGrXHIn1HOTmc33rPifS/z6V85wcOYQMh5DhEFqrOW6uu+xKr6u4WWNt7ZlW4cghZDiEDIdQu2+FpPtZEr0wL9RPN++/e4wjh5DhEDIcQqP1HKfE3MRWX+hWHwr5L77jsebQiOEQMhxC7e/KTnpo0/23N/t1t94xTKRrKUcOIcMhZDiE2vuQViTWItB5btYBN3tGXtgXxJFDyHAIGQ6h0XqOm3MTiedu4rqT+9k6/8maQxGGQ8hwCOHcCnmhp/S09axN9NZuvcOoHJ/oZ3HkEDIcQoZDKPKNtxe+hZbuX028F0ms86hcy5pDbYZDyHAIrc2tJHpMJvcwec9BXjhn5fxb71ccOYQMh5DhECrNrXxqn6vJ//u77yTS6zkSe2lsHU8cOYQMh5DhECrtz5HYOyvRn0L3Ruek49N7pU/up2tyHkcOIcMhZDiE1moOkpiP6ErveUrn6XrhOzUnRw4hwyFkOIRGNQcdTxI9q1v1QfcetuoDuh9ys7/XkUPIcAgZDqF2ryxJ71vV3Uv0U/MRFVQrbK138XsrijMcQoZDaFRzJL4zkn7fULmH7jHdZ3z3nhP9vRWOHEKGQ8hwCLW/t1I5JrF3J/36pP5IrEvt7t+V2I9kcq2TI4eQ4RAyHEJYc6TXck7qkpv9q5PjJ9+0S9RJvufQGsMhZDiE2vtzdG3NF9Cffa0vpnKt7nqOyrXoupN5FkcOIcMhZDiE2us50v2idJ7JdRPfPZncQ6IW6V6rwpFDyHAIGQ6htb6Via3aYusdxs2+362+le6/oX0rGjEcQoZD6ImaY2s9BEnsW1q5Vvc9ymQ9R2LfDkcOIcMhZDiERt+yn9ha/9itP7rfW7m5JxjZ6sdxPYfWGA4hwyFUqjlee46SxH6g3XmKiq35l62+G+LIIWQ4hAyHUOlb9vp/cuQQMhxChkPIcAgZDiHDIWQ4hP4BgquwGhlh1jIAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-4250",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-12 11:00 PM",
+    "tracking_code": "CHAM-B2B-TRK-8250",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFJklEQVR4nO3dTXLVMBBFYUIxZqusha1mAYQhGnCquqv7Wh6cbxj8LOVxS1b054+vr69v0v98v10BvZfhEDIcQoZDyHAIGQ4hwyH0g/7h568/64V9/v6Xxcr9u9en71O5PznLvfU9VO5/suUQMhxChkMI+xynyjOVdJ+RVBb9vHJ/et5X7lN53lc+m/i90v8vthxChkPIcAiV+hynrWchPcu7/YPJNd26dcvq1mFS50QfxZZDyHAIGQ6hdp9jy+T5WrHVF0nPa1BZb/Cu2uhVDIeQ4RC61ueojAdsjTFsldut29bvcsv9Gui1DIeQ4RBq9zmeHJM4JeZK6P4J6T5E4v62HEKGQ8hwCJX6HInncXeModJXSKzb2FqTsfVzKivBlkPIcAgZDqGPW2eCJdZmTtZRbu1tIVv7d550vwZ6LcMhZDiEsM+xtU6CTJ7TiT0dJF1WYi/M5P/uZMshZDiEDIfQaG5lay6g+yxMPHe3yt06R2Ty84pKX8qWQ8hwCBkOodE4R2IOoluHyv23ru+arAuh+qTnmE62HEKGQ8hwCK3tlX1yn+fWWaJb+2krJnXeWkvbPXvNlkPIcAgZDiHsc3TnDk5vG4dI7AHp9j8m71WpnKHeLavClkPIcAgZDqHSvpXEmtD0vANdU5F4j8lk7GTru6J6Os6hNsMhZDiE2u94S59XUTGZX5iMT2ytKZmcuZ5YM0tsOYQMh5DhECqtISVb6zYSZU36RpU6bPVFqA5vGLOx5RAyHEKGQ2j0LvvEO0221mo8+Y639NxQtz5b62ZsOYQMh5DhEGqfQ5qYK9kqK72XhD6bWJ/x5LoNYsshZDiEDIcQjnNs7cV4w3tVTunPbn1vdL37VvQKhkPIcAhF1nOk92U8uf4jMX+RWO854dyK2gyHkOEQWnvH29Z8BN0zvV41MUdTqcOtvojnkGrEcAgZDqG1s8/T551Prk/3M26drd7V7fPZcggZDiHDIdQ++3zybrNb7x9J9A+23nWSOHtja9zIlkPIcAgZDqHRvhXy5FqK9HP31tqUST+mwnEOjRgOIcMhNHqX/SnxbhS6f2KMga6hutF90nNPiX4SseUQMhxChkNotJ6DpM/nTnx26/z1brmV66ncrfUuxJZDyHAIGQ6h0bvst87VmIwHbM3FvOH8DzJZzzv5bm05hAyHkOEQap/PkV4DUTFZl/rkHt1EfU7p+ttyCBkOIcMh1B7nSI/tJ/6mT/QbKv2ASX3SfZHK9bYcQoZDyHAIYZ9ja31DYi6gUofunt6t+9P13ft3y02MJ9lyCBkOIcMh1F5D2pXeL5oY26C6TfoZW79LelznZMshZDiEDIfQ2vkc6f0gt84YpbIS80SV+3TrWeHcitoMh5DhECr1OSZjFSR99hfVLfEek/Q8VILnkGrEcAgZDqG1d7x1PXnORPeeiTM/Jn2IW2tObTmEDIeQ4RDCNaSJv7Nv7XOhOqT7Cl1vO0fElkPIcAgZDqHSXtmtNaSVa26dh1Ept3veOX2W6lOx1c/wfSsaMRxChkNodD4HmTy/u3VInPt5StRzaw/t5LOOc2jEcAgZDqHR2ecTW+Mfk+d6Ys9qtyy6ZnK+KnGcQ2sMh5DhELrW5yCJvSTpNRmV+ZpuvyGxD6h7T1sOIcMhZDiE2n2OrbmM9DmkVNbkPmSypzc9TlMpi9hyCBkOIcMhVOpzJMYJuvsybr0/5VbdTrf20dhyCBkOIcMhdO18Dr2fLYeQ4RAyHEKGQ8hwCBkOIcMh9Be6IsUApgGFPQAAAABJRU5ErkJggg==",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-4250",
+    "garage_id": "GAR-VISN-003",
+    "garage_name": "Mahadev RE Clinic",
+    "city": "Visnagar",
+    "tier": "Platinum",
+    "discount_pct": 25.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 157.5,
+        "total_rate": 787.5
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 262.5,
+    "subtotal_inr": 787.5,
+    "gst_amount_inr": 141.75,
+    "net_payable_inr": 929.25,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 2: East Industrial Loop",
+    "created_at": "2026-09-12 11:00 PM",
+    "tracking_code": "CHAM-B2B-TRK-8250",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFLklEQVR4nO3dQY7QOhBFUUCM2SprYassgGaIB1ypSlUvDuKeIT84pv+T43bsyuePj49P0t98ud0BvZfhEDIcQoZDyHAIGQ4hwyH0lf7Dt++/1m/288efLFL75zUVZzuV9iv3ojbpmkn7leu79+2i+zpyCBkOIcMhhHOOU3cecEo8I6nNyrP8vGarb925DunORdL/Xxw5hAyHkOEQKs05TpPf7yvXd5/Zk+du5b6V/lTWRbr3naz3VO5b4cghZDiEDIdQe86xZfLc7a5VJOYBlTkKXX/++eT9Tpojh5DhEDIcQtfmHFt7Jrr3qvShO0fp3rdyza15xul+D/RahkPIcAi15xxbz8LJc30yX5lcn1jDqPStIjFHceQQMhxChkOoNOdI7wOdPNcr84/E9Yk/Pz25DkQcOYQMh5DhEPr8r9QE21rbSOy17PbtDe9NKv6NXuoKwyFkOIRK9Tme/D27uyYxaWfrXGu3z5O5UXdOM5ljOXIIGQ4hwyGE6xy31gO67ZBbayGJfSFkcq64ci9HDiHDIWQ4hHCdo/vMu/U7ekWifga13+3DrXculXs5cggZDiHDIVTazzF59m/tb3hyfSIxf+peQybtd/8tjhxChkPIcAiN6nNM1kIq12zt55j0LbH/dKsOabq+iCOHkOEQMhxCpf0ckxqdT36rJXGvrXc9W/OtrZ+J+zk0YjiEDIdQpA7p1rMzsR7QtbVOs/XO5cl9u44cQoZDyHAItc+tpOcB6fpgWyb7USZnjxN7bF3nUJvhEDIcQqNzK1v1NBNnZLoS+04m52Xovt2/SyptOnIIGQ4hwyFUqglG0ntCb9UPTexZubVuRO24h1QjhkPIcAiV9nNs7WPoqqydVPozkT5H8+Z67Y4cQoZDyHAItd+tPPmuZOv9RaJe55N13yvXk0k/HTmEDIeQ4RBqn5WlayreVmtr69so3fZv1W733IrWGA4hwyEUOSt7SrzjqHiyfldiftbtT2IPiiOHkOEQMhxCa3OO9NpD5Zm6Nb95cv1my1bt0ZMjh5DhEDIcQu05R+J7ZpMa5Ik6H1t1P7f2uibep7iHVCOGQ8hwCLW/8ZaoIbH1zbOK9HrDRLq2euX603t/UrrOcAgZDqHSnIOk62Y+eQ6lIr3ntNuHLt+taI3hEDIcQu05x9Y3yRJzkUo/6ZrEvdJ1S9NrS44cQoZDyHAIRb63Mrme/u6kb7fmAbe+HbP1c3bkEDIcQoZDqFQTbDK3SK9zdGueTuqYkUQdjm773fM7fm9FI4ZDyHAIrX1vJVEXfCK9HrNV033yb986m0McOYQMh5DhEBqdlU3s8ey2s7W+MqlzequeR/d7NHSN71bUZjiEDIfQqCZYutb4ZB1lq8bo5Ppuf8iT755OjhxChkPIcAi15xxbz7NT4ntpW+0nzr6ma6X7vRXFGQ4hwyHU/q5s9xqytf5fkX53k/45pL8nRxw5hAyHkOEQGu0h7UqfDUmftaG/S/2s/PmknfS80JFDyHAIGQ6h0ruVN+xFqLSZOGuTrlfWvVd638zJkUPIcAgZDqHIN97etp5B7Vfue0qvr5CtNSf3kGqN4RAyHEJr37LfkvjO6laNrPT7ncR9J31z5BAyHEKGQ+janOPJfZ3d527irArZqp2a2H/jyCFkOIQMh9DorOyTJjXLJ+9KyORdTLefdN9KO55bUYThEDIcQqU5R+J36O4zu9vOk2dZJ33Ymh90f4bWPteI4RAyHELtb9nr/+HIIWQ4hAyHkOEQMhxChkPIcAj9BsaOj0ykyE8/AAAAAElFTkSuQmCC",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-4250",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-12 11:00 PM",
+    "tracking_code": "CHAM-B2B-TRK-8250",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFJklEQVR4nO3dTXLVMBBFYUIxZqusha1mAYQhGnCquqv7Wh6cbxj8LOVxS1b054+vr69v0v98v10BvZfhEDIcQoZDyHAIGQ4hwyH0g/7h568/64V9/v6Xxcr9u9en71O5PznLvfU9VO5/suUQMhxChkMI+xynyjOVdJ+RVBb9vHJ/et5X7lN53lc+m/i90v8vthxChkPIcAiV+hynrWchPcu7/YPJNd26dcvq1mFS50QfxZZDyHAIGQ6hdp9jy+T5WrHVF0nPa1BZb/Cu2uhVDIeQ4RC61ueojAdsjTFsldut29bvcsv9Gui1DIeQ4RBq9zmeHJM4JeZK6P4J6T5E4v62HEKGQ8hwCJX6HInncXeModJXSKzb2FqTsfVzKivBlkPIcAgZDqGPW2eCJdZmTtZRbu1tIVv7d550vwZ6LcMhZDiEsM+xtU6CTJ7TiT0dJF1WYi/M5P/uZMshZDiEDIfQaG5lay6g+yxMPHe3yt06R2Ty84pKX8qWQ8hwCBkOodE4R2IOoluHyv23ru+arAuh+qTnmE62HEKGQ8hwCK3tlX1yn+fWWaJb+2krJnXeWkvbPXvNlkPIcAgZDiHsc3TnDk5vG4dI7AHp9j8m71WpnKHeLavClkPIcAgZDqHSvpXEmtD0vANdU5F4j8lk7GTru6J6Os6hNsMhZDiE2u94S59XUTGZX5iMT2ytKZmcuZ5YM0tsOYQMh5DhECqtISVb6zYSZU36RpU6bPVFqA5vGLOx5RAyHEKGQ2j0LvvEO0221mo8+Y639NxQtz5b62ZsOYQMh5DhEGqfQ5qYK9kqK72XhD6bWJ/x5LoNYsshZDiEDIcQjnNs7cV4w3tVTunPbn1vdL37VvQKhkPIcAhF1nOk92U8uf4jMX+RWO854dyK2gyHkOEQWnvH29Z8BN0zvV41MUdTqcOtvojnkGrEcAgZDqG1s8/T551Prk/3M26drd7V7fPZcggZDiHDIdQ++3zybrNb7x9J9A+23nWSOHtja9zIlkPIcAgZDqHRvhXy5FqK9HP31tqUST+mwnEOjRgOIcMhNHqX/SnxbhS6f2KMga6hutF90nNPiX4SseUQMhxChkNotJ6DpM/nTnx26/z1brmV66ncrfUuxJZDyHAIGQ6h0bvst87VmIwHbM3FvOH8DzJZzzv5bm05hAyHkOEQap/PkV4DUTFZl/rkHt1EfU7p+ttyCBkOIcMh1B7nSI/tJ/6mT/QbKv2ASX3SfZHK9bYcQoZDyHAIYZ9ja31DYi6gUofunt6t+9P13ft3y02MJ9lyCBkOIcMh1F5D2pXeL5oY26C6TfoZW79LelznZMshZDiEDIfQ2vkc6f0gt84YpbIS80SV+3TrWeHcitoMh5DhECr1OSZjFSR99hfVLfEek/Q8VILnkGrEcAgZDqG1d7x1PXnORPeeiTM/Jn2IW2tObTmEDIeQ4RDCNaSJv7Nv7XOhOqT7Cl1vO0fElkPIcAgZDqHSXtmtNaSVa26dh1Ept3veOX2W6lOx1c/wfSsaMRxChkNodD4HmTy/u3VInPt5StRzaw/t5LOOc2jEcAgZDqHR2ecTW+Mfk+d6Ys9qtyy6ZnK+KnGcQ2sMh5DhELrW5yCJvSTpNRmV+ZpuvyGxD6h7T1sOIcMhZDiE2n2OrbmM9DmkVNbkPmSypzc9TlMpi9hyCBkOIcMhVOpzJMYJuvsybr0/5VbdTrf20dhyCBkOIcMhdO18Dr2fLYeQ4RAyHEKGQ8hwCBkOIcMh9Be6IsUApgGFPQAAAABJRU5ErkJggg==",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-4249",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 10,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 1680.0
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter",
+        "quantity": 5,
+        "mrp": 380.0,
+        "unit_rate": 304.0,
+        "total_rate": 1520.0
+      }
+    ],
+    "mrp_total_inr": 4000.0,
+    "discount_amount_inr": 800.0,
+    "subtotal_inr": 3200.0,
+    "gst_amount_inr": 576.0,
+    "net_payable_inr": 3776.0,
+    "payment_mode": "Credit (15 Days)",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-12 11:00 PM",
+    "tracking_code": "CHAM-B2B-TRK-8249",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFKklEQVR4nO3dTW7VQBBFYYIYs1XWwlZZAGFIDzhSlapu20jnGwbH9gtX7Xr954/Pz88v0r98ffoG9F6GQ8hwCBkOIcMhZDiEDIfQN/qH7z9+r1/s18+/WTzP3/351nW7x1TOTyafa+vvUDn/yZZDyHAIGQ4hrDlOlWcq2XpGVuoSum63zqick9B56JyTa6X/X2w5hAyHkOEQKtUcp61nYeW7+1afROW5vvX87tYxW/eTqFFsOYQMh5DhEGrXHFsq9URXt8+gWx9sjXEkPnvCu+5Gr2I4hAyH0GM1R7efIzE20Z1j0b2H7jyVrX6XLc/fgV7LcAgZDqF2zZF4Fk7GWeg8W+ff+rzpvpPE/4sth5DhEDIcQqWaI7FWYjKWkV7PkpiTsfVzulaCLYeQ4RAyHEIfT+0J1n2mpvsDJs/4bi1S4diKXs1wCBkOIaw5JnMdttaSdH+X3Byz2Kottvo/JvNUbDmEDIeQ4RAq1RynyTOMTMYvKvf2hrW1ib3IKibjRLYcQoZDyHAIlcZWtvbKfNt8hfR1J897up90XXWy5RAyHEKGQ2g0n2NSiyT6QhLjPunnemKOyNZ8FFsOIcMhZDiERutWuvuOb83h6PZDJPpUuveTmKeSrr1sOYQMh5DhEIrPIb25XjRRT3RtjSt1z9lVuQdbDiHDIWQ4hLCfI/HOlKfeRVKxNdckXRvdXFdsyyFkOIQMh9BoDmliDctEes5HYg8xslVDTO7BlkPIcAgZDqHR3ueTd5p0j7/5TrjuMek1tPRz55DqMYZDyHAIXV23Qr+b2Hfrqb6H/6W/pMKWQ8hwCBkOIeznqDwvt567dN3Kd/2KrWf51jhRYt3N5PzElkPIcAgZDqHRPqQkXX8kxhQS/Qrda6X3QCOOrajNcAgZDqH22Mob9shK77n+5hqlewxxH1KNGA4hwyHUnkPatTWfceLmWhX63cr9dI8hW/NFbDmEDIeQ4RBq7wk2OaYrvT/61tyI9L4jibEY+zk0YjiEDIfQWj8HPRcndUNiv/AJet7f3Pdsa72P/RwaMRxChkOotA/pZJ1F9/xb+4F2r0vH0LUm9UflWuRmjWXLIWQ4hAyH0NrYCknMh+jeQ/d+KtLvhHtqbOhkyyFkOIQMh1B7bGWrzyO9t3f3/FvrUG7OgU33D9lyCBkOIcMhtPYu+3S/yNbx9LunrX3JKnNcurXOVk3jHFKNGA4hwyEUXyt7c50IHTMxGQ9K7OdB90b3QMdbc2jEcAgZDqHRu+zp+Ml7SdL7cnb7ErprPU5b9z+55+55TrYcQoZDyHAIld63Mnm+Jr7fVyTW2W7VSZNaJP1OuJMth5DhEDIcQu1+jpv7gpOb/SXdz5X4uz01r8WWQ8hwCBkOodL7VtL7jZ6e2mt8697ouun3p3Q5n0MjhkPIcAi13/G2JbFv99Y8ErLVV7G1Vwfd29Y7bmw5hAyHkOEQKs3n2DJZd0q64x2JmmAyltStD27uI2LLIWQ4hAyHUGmt7FZNMDlma55muibonqdrq87wfSsaMRxChkMosg/pZG3n1t4SW+MRdHzFG+ajTGovWw4hwyFkOITie4KRytjBafI+lEn98ea5IHT+rRrOlkPIcAgZDqHHao7T5Pt9ZX/x7jm7Enucb71DbvJ5bTmEDIeQ4RBq1xxvmJdAun0kibkaW/uRp+fBOLaiEcMhZDiESu+y37K1RjSx7nSrzpiMAXWvNWHNoRHDIWQ4hB7bn0PvZ8shZDiEDIeQ4RAyHEKGQ8hwCP0BMl+bVkuu+nUAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-4195",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-12 10:59 PM",
+    "tracking_code": "CHAM-B2B-TRK-8195",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFCUlEQVR4nO3dTa7UMBBFYR5izFZZC1tlATyGeMCRqlR1EyOdb/hIO+nmyrH8+/H5+flF+pevbz+A7mU4hAyHkOEQMhxChkPIcAh9o3/4/uP3+s1+/fybxbP8rb9377vlLJ/8j89vzSFkOIQMhxC2OU6VdyrZekdO3rt0faXMyjWVz9JvSH/vtkW6KuVbcwgZDiHDIVRqc5y23oXdd3D3mkS/QqV90P1spZyKRBvFmkPIcAgZDqF2m2PL1juS3tOTPgB6hsS4Bt3rBnc9ja5iOIQMh9BrbY7E3I5Td6yk8vfuM2z1l7zl/SfQtQyHkOEQarc5Eu/C9LjDZE7GlnQbIlG+NYeQ4RAyHEKlNkfifby1PiXRFknMyXiyL2eLNYeQ4RAyHEIfb+0JlpibOZkjsjVeQ7rtA8dWdDXDIWQ4hLDN0X2vb7376Rm6n62UU5G+V2ItzOT/7mTNIWQ4hAyH0GhsZWssoPsuTLx3t+47GQfp/j7ptpQ1h5DhEDIcQu2xlfQYROVekzbK5PquybwQep70GNPJmkPIcAgZDqHS2ApJzzmYzN88JfYEe2v8aKufpnK9NYeQ4RAyHEKRtbK39UMk1oB02x9bbZ3EfFVizSFkOIQMh1BpbCW9Z2h6f/En14xs7UXW/ezkOe3nUJvhEDIcQu0z3tL7VdBnJ38/TfontuaUdM+USc+ZJdYcQoZDyHAIxc+y7+4L3i3n1G0HPDnOMumT2GondVlzCBkOIcMh1N6fg645pfff7D4nXV+RaBvR82ztBeIcUsUZDiHDIbS2VvattaCTcYSttSGJ+RlPztsg1hxChkPIcAiNxlYS8yEm96rYGuMgW78bXe+6FV3BcAgZDqHI/hy39UNUPLn/WGK+54RjK2ozHEKGQwj7ObbmFqTXhSbmQEz6b7b2SUu3RdyHVCOGQ8hwCI3OeHtrb4nKc9I1lWerSPSFpHX/L6w5hAyHkOEQGq1bqXjr/LatfTK25pNWyt8aq9r67tYcQoZDyHAIRcZWJnt1T/pO0ui+T677nez/YT+H1hgOIcMh1D7LPr3veHoOZqKfoNv+qNyLJNpwxJpDyHAIGQ6h0XyO05PvwsRnt+aidu9buZ7um9gz7WTNIWQ4hAyH0OiMtxv2L+9+9ubnpHLSe6Y5tqI2wyFkOITa+3M8OZ+0Uk5iDumTe4Am5nB43oriDIeQ4RCKnCubHn+5Ye/wyne8bT6p/RxaYziEDIdQ+7wV8tbZIuk9SSdlPrkvSGK+qjWHkOEQMhxCpfNWuuswJ+Uk9quoSKx3PW3tn5bu1zlZcwgZDiHDITQ6V/b0Vr9FYt1suv2UaMdUrieOrajNcAgZDqH2upXEe+6GvoGJrXbVk3uduQ+pRgyHkOEQWpvP0fXkPhPdMp+cY9EtnyTmnFpzCBkOIcMhVJrPsWWrrXBKryu5YW/101bby34OjRgOIcMh1F4r25V4Z0/ex5NzYbr7ndNn6XkqttoZnreiEcMhZDiESm2O09Y60q21nYm+Eyp/cnbMVjldk9/WmkPIcAgZDqF2m2NL5T2aXv/y5J4ik++7NYfXfg6tMRxChkPotTbHlspYSXpORvcZKu2GxDqgbpnWHEKGQ8hwCLXbHFtjGYn5m4nzXCom40ST754+h8WaQ8hwCBkOoVKb44Z5oG+dn/LWs53eWkdjzSFkOIQMh9Br+3PoftYcQoZDyHAIGQ4hwyFkOIQMh9AfxIu9f69eZnIAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-4192",
+    "garage_id": "GAR-VISN-003",
+    "garage_name": "Mahadev RE Clinic",
+    "city": "Visnagar",
+    "tier": "Platinum",
+    "discount_pct": 25.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 157.5,
+        "total_rate": 787.5
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 262.5,
+    "subtotal_inr": 787.5,
+    "gst_amount_inr": 141.75,
+    "net_payable_inr": 929.25,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 2: East Industrial Loop",
+    "created_at": "2026-09-12 10:59 PM",
+    "tracking_code": "CHAM-B2B-TRK-8192",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFHElEQVR4nO3dTY7VMBBFYRoxZqusha2yAJohGXCkKlVdO0jnGzZ5SR595bj9U/n4/Pz8Iv3L19s3oPcyHEKGQ8hwCBkOIcMhZDiEvtE/fP/xe/1iv37+zeLz/PTz7mcr0t+rct3K96Xzn7x/Ww4hwyFkOISwz/HUfa4/VZ6RledxpZ9R6a9MPjvpJ9F1u/dT+WxF5fy2HEKGQ8hwCJX6HE9bz8Ktv/W7z/KKybjCZDwmPX7TPacth5DhEDIcQu0+xxZ6Rk76E4nn+mQcomvST0p4193oVQyHkOEQutbn6M5ZTNZ8bF2XVPpA3bmhN/Q/7t+BXstwCBkOoXafI/EsTM87VPoiiXELuof/5fy2HEKGQ8hwCJX6HInn8dbYRqIvkliTsfVzulaCLYeQ4RAyHEIft2qCTeYatvadTu6ncs7KZ4lzK3o1wyFkOISwz5FYS0HHk8kzvnKeivS1tvpb3c9W7sGWQ8hwCBkOoVKf42lr3qFia0zi5FgI2eqrdU1+X7YcQoZDyHAIjfocleMrnyVbf68nvktFonZqeo7pyZZDyHAIGQ6h9nqOrXGC7vFbczFb9cduzR+d/P+35RAyHEKGQ6j0vpVKDe/KeZ4Sa0Qqn90a2+je21ZfJzGHRWw5hAyHkOEQKo1zJMYG0uMWW+sk0n2sk++3o/t0nENthkPIcAi13/HWrU2erkuRqA+21T94mtQ2Ta+ZJbYcQoZDyHAItdeQPiVqSGyNbZy8h617S88BddlyCBkOIcMh1K7PQcc8pZ/N3XuoHE8S60bpfm59d+dW1GY4hAyH0GjfSmKdQfdaTyf3yqbXZ5xct0FsOYQMh5DhECrtW9k6pvs8Pln/NL33tXsMHe++Fb2C4RAyHEKR9RzpdZfp9Rx0D5VrJeab0pxbUZvhEDIcQqN3vL3hvWW36obRZysSdUW7rEOqEcMhZDiE1taQptd2TJysOUbHVO4nrfs7uv+b02sZDiHDIRR/l/1kHCLR10msjdiqe3ZrrorYcggZDiHDIVSqCZaowZXY95FG103UXd3ag0PHOM6hEcMhZDiEjo5zTPyPtdVP1gqrHG99Dq0xHEKGQ6j9vpXEc7Tr5LvfyK3aYomxE2LLIWQ4hAyHULs+x616XN13u3SP2Vr3enJvTmKu6smWQ8hwCBkOodJ6DpJ439jW3+7d9Q2J89N50ms+iOMcWmM4hAyHEPY5tvaDbNXc3Pp5V6KO6q31pI5zaI3hEDIcQqNxDnJynKNy3e75K9dNrFnZ+l5bdVptOYQMh5DhEBrVBKs4WQ+jcnzlum/bC3NyXOfJlkPIcAgZDqHS3MrT5HnZ1a2HQU7WtNjqD03Os1W73ZZDyHAIGQ6h0V5ZOqZiay9o5bPp95hs7bM9WevMOqQaMRxChkMoXhOMbNUpT9RBT9T82KpHQhJrTm05hAyHkOEQatfnmNgaI+nWDpnsWX1DbfWnk3VEbDmEDIeQ4RAq7VvZWkNaOX96zUSl/9E9z2S/zNacVPezvm9FI4ZDyHAItffKbu0T2RpjSO/dSNca6Z6na7J+1pZDyHAIGQ6hSH2Oiq3a6nRM5Tmd2LPavRYdM1mbQhzn0BrDIWQ4hK71ObZ012q84R4q/YbEO+S657TlEDIcQoZDqN3nSM9ZJOYgtvaykkkN0Ml337oWseUQMhxChkOo1OdIjBN092Xcen/KrXt7urWPxpZDyHAIGQ6ha/U59H62HEKGQ8hwCBkOIcMhZDiEDIfQH0mZw8mYSD68AAAAAElFTkSuQmCC",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-4192",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Royal Enfield Genuine Part",
+        "quantity": 5,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 840.0
+      }
+    ],
+    "mrp_total_inr": 1050.0,
+    "discount_amount_inr": 210.0,
+    "subtotal_inr": 840.0,
+    "gst_amount_inr": 151.2,
+    "net_payable_inr": 991.2,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-12 10:59 PM",
+    "tracking_code": "CHAM-B2B-TRK-8192",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFE0lEQVR4nO3dQY7VMBBFURoxZqusha2yAJohHnClKlW9OEj3DJv8xL95ctyOXfn4/Pz8Iv3L19sN0HsZDiHDIWQ4hAyHkOEQMhxC3+gfvv/4vX6xXz//ZvE8f/fnW9fdcp6fTL7XrfbbcwgZDiHDIYRjjlPlnkoq90i6H3fb0L1/Vz5bud9XPtv9XpPvUlE5vz2HkOEQMhxCpTHHaeteOPnbncYo6XmRyvig+9nKeSoSYxR7DiHDIWQ4hNpjji2VOYPJnEd3fFA5T+K5Bl3rDd7VGr2K4RAyHELXxhyJtR2TYyo/785hbM2X3HK/BXotwyFkOITaY47EvTD93GGyJmNLegyROL89h5DhEDIcQqUxR+J+vDW3kRiLJNZkbP2crpVgzyFkOIQMh9DHrZpgibWZW/tWJntbSHd84LMVvZrhEDIcQjjmSKyloOPJ5B5fOU9F+lqJvTCT/7uTPYeQ4RAyHEKjZytbNSe650/cd7euO3kO0v39pMdS9hxChkPIcAiV5jlIYm6D2jD5e33r+K7JuhBqT/oZ08meQ8hwCBkOofZ6jq21lpNrVY4/bdUaf8Pzo3St1ZM9h5DhEDIcQqX3rWzV8E7UHSfpPSDdtm2NdRLrVYk9h5DhEDIcQjjmSM8NdOtoTdp2SuwfofYknok8+W4aew4hwyFkOITa73jbqr+ZWI+ZqGWeWFMyaWdizSyx5xAyHEKGQ2htDenEk9eq2KqbTp+tXDfxDKjLnkPIcAgZDqF2fQ465pSuv9ltQ+V4cmtvTvezlTa4hlRrDIeQ4RD6L/etbD1H2NobslU/LfH7nJzHnkPIcAgZDqHSvpWtYxI1Nrom9++ttZmTda/uW9ErGA4hwyEUWc+RWOuw1bbKOdP1xxLrPSd8tqI2wyFkOIRG73hLr2ec7NeonJPadut7PTkWsQ6pRgyHkOEQiqwhPT2534Q8WXOMjqm0J627XuT+/5xey3AIGQ6h0ZijYjIPMXl2k54XOW3tu0k/q+q2zZ5DyHAIGQ6hUh3Sikqt7q1nCrfWQGzVGyVb+5OJ8xxaYziEDIdQaT3H1rzCxK3aHk8eU2nn5Hjrc2iN4RAyHEKj+hwkXZ878dnE3pnKdSvH03UT45WTPYeQ4RAyHEKj+hxb97zJ3+Jb8w1b61cSa2a3ark6z6E1hkPIcAiV3vF2Ss/tJ8YxZDKXMGlnes0HcZ5DawyHkOEQar/L/sn3pzz53pZJe05Pji1834quMRxChkPo2jzHrXeL3Nr32z1/97qJeq/2HEKGQ8hwCL2iPsdkb0t6b8gb9sI8OW472XMIGQ4hwyG0tm8lsR9k61671eb0c6LKeU5bYzifrajNcAgZDqFRfQ46piJdA2Oyj6Nra5/tk7XOrEOqEcMhZDiERu94m3hyv0b3nImaH1vPj0hizak9h5DhEDIcQqP6HF1P7r/Y2lfyhtrqpyfriNhzCBkOIcMhVNq3srWGtHL+yfGTNRndeh7d66bXXnQ/6/tWNGI4hAyHUHuv7FZ90lt1sbomcx5bcyeTuZbJXh57DiHDIWQ4hNpjji2VZwenxPtQEutSt9qztTfn5DyH1hgOIcMhdG3MsaVbX/wNbaiMGxL7gLrntOcQMhxChkMoUoe0e570M4jEHAmdf7Ietvvdt65F7DmEDIeQ4RAqjTkS8wTdfRm33p9yq22nW/to7DmEDIeQ4RC6Vp9D72fPIWQ4hAyHkOEQMhxChkPIcAj9ATTXy0pB2w8GAAAAAElFTkSuQmCC",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-4191",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 10,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 1680.0
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter",
+        "quantity": 5,
+        "mrp": 380.0,
+        "unit_rate": 304.0,
+        "total_rate": 1520.0
+      }
+    ],
+    "mrp_total_inr": 4000.0,
+    "discount_amount_inr": 800.0,
+    "subtotal_inr": 3200.0,
+    "gst_amount_inr": 576.0,
+    "net_payable_inr": 3776.0,
+    "payment_mode": "Credit (15 Days)",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-12 10:59 PM",
+    "tracking_code": "CHAM-B2B-TRK-8191",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFGUlEQVR4nO3dQY7kNhBEUY/hta/qs/iqcwC3t1r4w5nICHUZ/m85o2KxuwMUIZHJH19fX79I/+TX7+6APpfhEDIcQoZDyHAIGQ4hwyH0G/3H73/8Ff+yn3/+exaf3/u8fvLvqb5t20z9XI2+TVD/HTmEDIeQ4RDCOcfT5J5KJvdIuiZ1P57MXSbtb23nGdvvav9dHDmEDIeQ4RAazTmetvOAbTvb+UF7DnGZH7z5nCb1d3ly5BAyHEKGQ2g952ige2FqDtF4/nFps/F+pMGRQ8hwCBkOoY+Yczw11nNMnpFM+nNpcztHmXxXmyOHkOEQMhxC6zlH4/63nWdMXN59bNu8rNu4/IyTvl04cggZDiHDITSac7TfBWyfZ0zexTTmMU/t/TXbtSwNjhxChkPIcAjhnOPN5/mXtRSpfl7mN6SxD/bNv4sjh5DhEDIcQqP6HKn1j892Jm1u+7BtZ/tdb64jIanf/4Qjh5DhEDIcQj8mtc/bdSY+bc9Ial8ufZa+q13va9t/Rw4hwyFkOIRO+1bofvbm/ovU2tL2MxKSWndifQ69ynAIGQ4hfM7RWDNBLvtRU31rPLMh7TZTvx9HDiHDIWQ4hEZzDpLaJ/LmmSOp9Rz0WfquN9eHpvboOnIIGQ4hwyE0Ws+Rkqqvldrbklo3+ml7blNzHUcOIcMhZDiEYufKpmpRTNpM1bpo1/Nov59qzNWeHDmEDIeQ4RAa1ef4tLrdl+cc2/lHqn3SPhvW9RyqMBxChkPo29ZzNOpbXNactventH8n5DI3cuQQMhxChkModt5Kaj1Eoz5Yqg+T9ifa6z8mn51w5BAyHEKGQyh2rmxq3eWl1vj2+tR3pWq2pn5vrudQneEQMhxC6zqkJLXGgtp884zW79q3Mmmz/Z7oyZFDyHAIGQ6h2HqONz9L7bw5L3l6c46y5XoOVRgOIcMhFDtXNlV7Y/vZVM2x1Hwl1Z+J9lzKkUPIcAgZDqF1TbB2zc1Gne9GLdSJVG3T76oL4sghZDiEDIdQ7FzZxjlk7ftuow7YpT+p9p+cc6jCcAgZDqHKvhXSeNfQOJutXQ/tMle77LXZ9tORQ8hwCBkOofW5sv+Vs9Da+1fb+2UuUvMYRw4hwyFkOIRO6zna+2OpHbo+9S6GfEKbk/ZTz1ccOYQMh5DhEIqd8dZ+B7GVOm8ltfaiUUsjdT1x5BAyHEKGQyi2hvSpcbZIar1q6iyVy/uaS3+2Lu04cggZDiHDITR6znG5523XPDbODWnMk9o1SVNrUKj9yfWOHEKGQ8hwCK3XkJLUvpV2TfRJf7Z9az/zuPTnwpFDyHAIGQ6h2F7ZRv2M7TOGS9/erFOeenZC13veiuoMh5DhEDrNORrnjKTWeVz6sL1me4/f9rmxv3fCkUPIcAgZDqHTeSuX+lQXqfcdjXWpl+c3pNG3CUcOIcMhZDiEYntlJyZ7U7fttPeMXK7f/nt7nuRzDsUYDiHDITR6t9KoW3VZg9molX6RqmP2Zg1Wa4LpxHAIGQ6h9XqOdr3OxnlsjXNPyOV9SmPN7GWO5cghZDiEDIdQbN/KRWr9R+oZRnvfb2PfyuVZkftWtGY4hAyH0EfMOVJ11smbe2Uv7zIu6zkadTscOYQMh5DhEFrPOdrnjzxt37lMbM9bebMmGEntx3E9h2IMh5DhEBrNOT7tPkoa+1kaa1pT719S+26II4eQ4RAyHELrs+z1/+HIIWQ4hAyHkOEQMhxChkPIcAj9DQbasaHviNG8AAAAAElFTkSuQmCC",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-3916",
+    "garage_id": "GAR-PATAN-001",
+    "garage_name": "Siddheshwar Bullet Works",
+    "city": "Patan",
+    "tier": "Gold",
+    "discount_pct": 20.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Oil Filter",
+        "quantity": 10,
+        "mrp": 210.0,
+        "unit_rate": 168.0,
+        "total_rate": 1680.0
+      }
+    ],
+    "mrp_total_inr": 2100.0,
+    "discount_amount_inr": 420.0,
+    "subtotal_inr": 1680.0,
+    "gst_amount_inr": 302.4,
+    "net_payable_inr": 1982.4,
+    "payment_mode": "Credit",
+    "order_status": "Dispatched to Warehouse Bay for Packing",
+    "delivery_route": "Route 1: North Highway Corridor",
+    "created_at": "2026-09-12 10:55 PM",
+    "tracking_code": "CHAM-B2B-TRK-7916",
+    "qr_code_b64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFDElEQVR4nO3dPW7dQAxF4ThIna1mLdmqFxCnncIHIEHekYrzlY7wpGdfjJj5/fj6+vohfefn0w+g9zIcQoZDyHAIGQ4hwyFkOIR+0T/8/vNv/Waff7/PIt2rcn33msq9ut+dnmHyPFvPVkHPb8shZDiEDIcQ1hynyjuVTN6p3frg/HnlmbeuIZO6pyL9d7HlEDIcQoZDqFRznLo1ROJzJv/X776nK3UDfWbl+q1+i62/y8mWQ8hwCBkOoXbNkbD1Dt4aT+nWOt26JDE+kmDLIWQ4hAyH0Ctqjoru+3tSQ1SumdQl9DlbYy5bbDmEDIeQ4RBq1xyJ999k/IJ052psjfUk+lcqEn8XWw4hwyFkOIRKNUd6LKA7HrE1fyI9P3QynrLVTzNhyyFkOIQMhxDWHDf787t1wFbdcJrUNySxDvbm38WWQ8hwCBkOodL+HFvzH2kt62RuJl1f+ZzuvRJjMV031+zYcggZDiHDIfSR2Pt88v6e9B/crBUma27pXun9vrrPb8shZDiEDIfQqJ/jqXGQ09bc0nQfCUnXYSf7ObTGcAgZDqF2P8fWes6n+hu6z3Pze2195tbvx5ZDyHAIGQ6hUc0xGct425jCpL9h6zverJ8q38uWQ8hwCBkOocfmc5xunv22dX3leSrSc1cntY4th5DhEDIcQmvnyqb3kEj0PXTroa2zWrZs1WrElkPIcAgZDqHS/hzpfbsTZ6x0r39q7mf6bFjncyjCcAgZDqG1fo5T+pyzyV4dW2M9W/uLbJ0dQya1kS2HkOEQMhxCOJ9jq98i0ReSniOyNa7UNblvYq8wWw4hwyFkOITWao5ETZCoGxLzKrb6ctJjVc7n0BrDIWQ4hErrVrbmDSTWo3af52ZtVJGuySbX2HIIGQ4hwyEUmc/x1NgEPUNiLufW3iRb+6h2n63ClkPIcAgZDqHSWfaJdRndvpP0vuBb+2gl+mxIYu/Rky2HkOEQMhxCpfkciXNGtmqRm3XAzTUjibUqXbYcQoZDyHAItedzpNeabv3fPb3feVd6f7DEnFlbDiHDIWQ4hCL7kCbOTyGJs9nS+6El9mhPrGex5RAyHEKGQ6i9VvaUPmdkct/0+tVEv0hinkflXtYcajMcQoZDaG2tbFfi/JStsRjyhs+sfP5W/4oth5DhEDIcQpGz7E8353XeXHtScXMvjcn1xJZDyHAIGQ6hUc2RdnP+ZmI+R8Ub6h5iyyFkOIQMh9Bo7/PEWon02pZJX8ib57jQM0ye2ZZDyHAIGQ6h0f4cdD1Jjx0k5oemn4GeZ3Jf9wRTnOEQMhxCpX1IK9L7ZW3NI5k8wxa612RODP3c81YUYTiEDIfQqOZIzCet/JxMzjqZ7Onefcd3f283+29OthxChkPIcAi155BuuXkuyekNc0Fu7kdC11Q+35ZDyHAIGQ6hyLmyJNHHULHV77LVTzOZn3tz3awth5DhEDIcQu1zZbu23p2JORxbtvYxu7kHq3uCacRwCBkOofZ8jqf21qy8R+maxHoZUjkPJVGLdO9VYcshZDiEDIfQ2rqVLVtzOybv2sS6327NtHUv4roVjRgOIcMh9IqaI11PJM5crdwrMX6U3jPtZMshZDiEDIdQu+bY2q8ivRaj+5nd8ZrEnmBksrbW+RyKMBxChkOoVHO87T1KEvuBdscpKrbGX7bW3RBbDiHDIWQ4hB7bn0PvZ8shZDiEDIeQ4RAyHEKGQ8hwCP0H4c2y9lG8JUYAAAAASUVORK5CYII=",
+    "notes": ""
+  },
+  {
+    "order_id": "B2B-20260912-001",
+    "garage_id": "GAR-VISN-003",
+    "garage_name": "Mahadev RE Clinic",
+    "city": "Visnagar",
+    "tier": "Platinum",
+    "discount_pct": 25.0,
+    "items": [
+      {
+        "part_number": "574050/C",
+        "name": "Genuine Oil Filter Element",
+        "quantity": 20,
+        "mrp": 210,
+        "unit_rate": 157.5,
+        "total_rate": 3150
+      },
+      {
+        "part_number": "147008/A",
+        "name": "OEM Pleated Air Filter Element",
+        "quantity": 10,
+        "mrp": 380,
+        "unit_rate": 285.0,
+        "total_rate": 2850
+      },
+      {
+        "part_number": "592188/B",
+        "name": "Bybre Front Disc Brake Pads",
+        "quantity": 5,
+        "mrp": 680,
+        "unit_rate": 510.0,
+        "total_rate": 2550
+      }
+    ],
+    "mrp_total_inr": 11400.0,
+    "discount_amount_inr": 2850.0,
+    "subtotal_inr": 8550.0,
+    "gst_amount_inr": 1539.0,
+    "net_payable_inr": 10089.0,
+    "payment_mode": "Credit (30 Days)",
+    "order_status": "Packed & Ready for Route 2 Dispatch",
+    "delivery_route": "Route 2: East Industrial Loop",
+    "created_at": "2026-09-12 11:30 AM",
+    "tracking_code": "CHAM-B2B-TRK-9901"
+  }
+]

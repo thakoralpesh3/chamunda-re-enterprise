@@ -1,0 +1,688 @@
+[
+  {
+    "agent_id": "aradhya_ceo",
+    "name": "Autonomous Dealership Orchestrator & Supreme Executive AI",
+    "name_gu": "ચીફ એક્ઝિક્યુટિવ ઓફિસર & માસ્ટર બ્રેઈન (૧૦૦% ઑફલાઇન ઓટોનોમસ)",
+    "designated_head": "Aradhya (આરાધ્યા - Dealership CEO & Supreme AI)",
+    "department": "Supreme Executive Leadership & Laptop-Wide Autonomous Matrix",
+    "category": "DEALERSHIP_OFFICER",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-crown",
+    "color": "#f1c40f",
+    "level": 10,
+    "xp": 10000,
+    "capabilities": [
+      "100% Offline Autonomous Operations across Entire Laptop",
+      "🛡️ Cyber-Defense Shield & Anti-Hacker Sentry (Port scanner, reverse-shell hunter, lockdown)",
+      "🧬 Self-Evolution & Dynamic Skill Synthesis (Autonomous growth & memory)",
+      "🌐 Universal Polyglot NLU (Any language input: Gujarati, Hindi, English, French, Spanish...)",
+      "Hardware Control: Audio Volume, Screen Brightness, Battery & Display Lock",
+      "Filesystem & Terminal: High-Speed Search, Read/Write, Shell Execution",
+      "Process & System Tuning: Turbo Speed, Lag Buster & App Launcher",
+      "Multi-Agent Matrix: Jarvis, YouTube Shorts, Web2APK, Web2IPA & Dealership Officers"
+    ],
+    "quick_chips": [
+      {
+        "label": "🛡️ Audit Cyber-Defense & Hackers",
+        "query": "audit security"
+      },
+      {
+        "label": "🧬 Run Autonomous Evolution",
+        "query": "evolve"
+      },
+      {
+        "label": "🚀 Turbo Speed & Lag Buster",
+        "query": "turbo speed laptop"
+      },
+      {
+        "label": "📸 Capture Laptop Screenshot",
+        "query": "take screenshot"
+      },
+      {
+        "label": "🔋 Battery Telemetry",
+        "query": "check battery status"
+      }
+    ]
+  },
+  {
+    "agent_id": "bay_chief",
+    "name": "Master Workshop & Bay Chief",
+    "name_gu": "માસ્ટર વર્કશોપ & સર્વિસ બે ચીફ",
+    "designated_head": "Master Tech Ramesh (12+ Yrs RE Specialist)",
+    "department": "Mechanical & Workshop Operations",
+    "category": "DEALERSHIP_OFFICER",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-wrench",
+    "color": "#e67e22",
+    "level": 5,
+    "xp": 4200,
+    "capabilities": [
+      "J-Series, 650 Twin & Sherpa 450 Diagnostics",
+      "Cylinder Head Torque Sequences & Tappet Clearance",
+      "Fast Fourier Transform (FFT) Sound Analysis",
+      "Digital Borescope Combustion Inspection"
+    ],
+    "quick_chips": [
+      {
+        "label": "🔩 J350 Head Torque",
+        "query": "J-Series 350 cylinder head torque sequence and stage specs"
+      },
+      {
+        "label": "🔊 FFT Sound Check",
+        "query": "Diagnose tapping noise on Classic 350 engine"
+      },
+      {
+        "label": "🔍 Borescope Audit",
+        "query": "Review latest borescope cylinder wall inspection"
+      }
+    ]
+  },
+  {
+    "agent_id": "parts_specialist",
+    "name": "Inventory & OEM Parts Specialist",
+    "name_gu": "સ્પેરપાર્ટ્સ & સ્ટોક કમાન્ડર",
+    "designated_head": "Jayeshbhai Patel (Senior Spares Controller)",
+    "department": "Inventory & Procurement",
+    "category": "DEALERSHIP_OFFICER",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-boxes-stacked",
+    "color": "#3498db",
+    "level": 5,
+    "xp": 3950,
+    "capabilities": [
+      "4,469 SKU Genuine RE Catalog Indexing",
+      "Warehouse Bin Allocation (Radhanpur Road)",
+      "Automated Reorder Thresholds & Distributorship DOs",
+      "B2B Wholesale Garage Spares Dispatch"
+    ],
+    "quick_chips": [
+      {
+        "label": "📦 Oil Filter Stock",
+        "query": "Check stock for Classic 350 oil filter 574050/C"
+      },
+      {
+        "label": "⚙️ Clutch Plates",
+        "query": "Check availability of 650 Twin clutch plates"
+      },
+      {
+        "label": "📋 Low Stock Alert",
+        "query": "List all spare parts below minimum reorder threshold"
+      }
+    ]
+  },
+  {
+    "agent_id": "customer_receptionist",
+    "name": "24/7 Front-Desk & WhatsApp Receptionist",
+    "name_gu": "૨૪/૭ કસ્ટમર રિલેશન્સ & વ્હોટ્સએપ રિસેપ્શનિસ્ટ",
+    "designated_head": "Priya Sharma (Customer Experience Lead)",
+    "department": "Customer Relations & Front Desk",
+    "category": "DEALERSHIP_OFFICER",
+    "status": "ONLINE",
+    "icon": "fa-brands fa-whatsapp",
+    "color": "#2ecc71",
+    "level": 5,
+    "xp": 3800,
+    "capabilities": [
+      "24/7 WhatsApp Customer Service (+91 78747 19139)",
+      "Instant Job Card Ingestion & Estimated Ready Time",
+      "Bilingual Customer Support (Gujarati & English)",
+      "Service Slot Booking & Drop-off Reminders"
+    ],
+    "quick_chips": [
+      {
+        "label": "📋 Active Job Cards",
+        "query": "Status of currently open job cards in workshop"
+      },
+      {
+        "label": "📅 Book Service Slot",
+        "query": "Book service slot for Himalayan 450 tomorrow 10 AM"
+      },
+      {
+        "label": "💬 WhatsApp Status",
+        "query": "Latest customer queries on WhatsApp +91 78747 19139"
+      }
+    ]
+  },
+  {
+    "agent_id": "social_growth_manager",
+    "name": "Omnichannel Digital Brand Manager",
+    "name_gu": "ઓમ્નીચેનલ બ્રાન્ડ & સોશિયલ મેનેજર",
+    "designated_head": "Kabir Mehta (Digital Growth & Media Lead)",
+    "department": "Marketing & Community Growth",
+    "category": "DEALERSHIP_OFFICER",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-bullhorn",
+    "color": "#9b59b6",
+    "level": 5,
+    "xp": 3650,
+    "capabilities": [
+      "Instagram, Facebook & Google Business Management",
+      "Weekend Breakfast Rides & Himalayan Expeditions",
+      "Automated 5-Star Review Solicitations",
+      "Riders Club AMC Memberships & Road Captaining"
+    ],
+    "quick_chips": [
+      {
+        "label": "📢 Social Campaign",
+        "query": "Launch Instagram post for Royal Enfield Monsoon Camp"
+      },
+      {
+        "label": "⭐ Google Reviews",
+        "query": "Review latest 5-star customer feedback on Google Maps"
+      },
+      {
+        "label": "🏍️ Riders Club AMC",
+        "query": "Status of North Gujarat Riders Club enrollments"
+      }
+    ]
+  },
+  {
+    "agent_id": "accounts_controller",
+    "name": "Billing, Accounts & Finance Controller",
+    "name_gu": "એકાઉન્ટ્સ & ફાઇનાન્સ કંટ્રોલર",
+    "designated_head": "Hasmukhbhai Joshi (Financial Auditor)",
+    "department": "Finance, Billing & GST Compliance",
+    "category": "DEALERSHIP_OFFICER",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-file-invoice-dollar",
+    "color": "#1abc9c",
+    "level": 5,
+    "xp": 4100,
+    "capabilities": [
+      "Double-Entry Daybook & Cash Register Audit",
+      "GSTR-1 Tax Computation (SAC 998729 vs HSN 8714)",
+      "B2B Partner Garage Credit Tracking (AR/AP)",
+      "Daily Profit & Loss and Net Cash Inflow Reconciliation"
+    ],
+    "quick_chips": [
+      {
+        "label": "🧾 Daybook Inflow",
+        "query": "Today total credits and cash/UPI reconciliations"
+      },
+      {
+        "label": "📑 Accounts Receivable",
+        "query": "Outstanding receivables from Patan and Unjha partner garages"
+      },
+      {
+        "label": "📊 GSTR-1 Summary",
+        "query": "Current month taxable turnover and GST tax liability"
+      }
+    ]
+  },
+  {
+    "agent_id": "devang_billing",
+    "name": "DMS Senior Billing & Warranty Claims Specialist",
+    "name_gu": "ડીએમએસ બિલિંગ અને વોરંટી ક્લેમ સ્પેશિયાલિસ્ટ",
+    "designated_head": "Devang Dave (RE DMS Senior Billing Officer)",
+    "department": "DMS Invoicing, Warranty Claims & Insurance",
+    "category": "DEALERSHIP_OFFICER",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-shield-halved",
+    "color": "#e74c3c",
+    "level": 5,
+    "xp": 3900,
+    "capabilities": [
+      "Split-GST Tax Invoicing & Digital Gate Pass Codes",
+      "Dynamic NPCI UPI QR Code Generation",
+      "OEM Free Service Coupon (FSC 1-4) Submissions",
+      "RE India Credit Notes & Accidental Insurance DOs"
+    ],
+    "quick_chips": [
+      {
+        "label": "📑 Split GST Invoice",
+        "query": "Devang generate split GST invoice for Classic 350"
+      },
+      {
+        "label": "🛡️ OEM FSC Claim",
+        "query": "File 1st Free Service Coupon warranty claim to RE India"
+      },
+      {
+        "label": "🚗 Insurance DO",
+        "query": "Create cashless accidental repair estimate for ICICI Lombard"
+      }
+    ]
+  },
+  {
+    "agent_id": "neha_crm_marketing",
+    "name": "DMS Marketing, Campaigns & Lead Conversion Lead",
+    "name_gu": "ડીએમએસ માર્કેટિંગ અને ગ્રાહક લીડ કન્વર્ઝન લીડ",
+    "designated_head": "Neha Trivedi (Customer Retention & Campaigns Lead)",
+    "department": "Marketing Campaigns, Lead CRM & Rider Loyalty",
+    "category": "DEALERSHIP_OFFICER",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-paper-plane",
+    "color": "#34495e",
+    "level": 5,
+    "xp": 3750,
+    "capabilities": [
+      "30/60/90-Day Predictive Maintenance Service Reminders",
+      "Automated WhatsApp Broadcast Campaigns (+91 78747 19139)",
+      "Test Ride Booking & Prospect Pipeline Follow-Ups",
+      "Customer Churn Mitigation & Seasonal Camps"
+    ],
+    "quick_chips": [
+      {
+        "label": "📢 WhatsApp Camp",
+        "query": "Launch Royal Enfield Monsoon Care WhatsApp campaign"
+      },
+      {
+        "label": "⏰ 90-Day Reminders",
+        "query": "Dispatch 90-day periodic maintenance reminders to riders"
+      },
+      {
+        "label": "🏍️ Test Ride Leads",
+        "query": "Review active test ride leads for Himalayan 450"
+      }
+    ]
+  },
+  {
+    "agent_id": "vikram_sales",
+    "name": "Showroom Sales & New Motorcycle Booking Lead",
+    "name_gu": "શોરૂમ વ્હીકલ સેલ્સ & બુકિંગ લીડ",
+    "designated_head": "Vikram Singh (Showroom Sales Lead)",
+    "department": "Showroom Vehicle Sales, Bookings & PDI Deliveries",
+    "category": "DEALERSHIP_OFFICER",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-motorcycle",
+    "color": "#f39c12",
+    "level": 5,
+    "xp": 3850,
+    "capabilities": [
+      "New Royal Enfield Bookings & Advance Token Receipts",
+      "HDFC, Bajaj & Cholamandalam Two-Wheeler Finance Tie-ups",
+      "30-Point Digital Pre-Delivery Inspection (PDI)",
+      "Ride Sure Extended Warranty (3-5 Yrs) & 24/7 Roadside Assistance"
+    ],
+    "quick_chips": [
+      {
+        "label": "🏍️ New Bike Booking",
+        "query": "Vikram book new Classic 350 with HDFC finance token ₹10000"
+      },
+      {
+        "label": "📋 30-Pt Digital PDI",
+        "query": "Generate 30-point digital PDI certificate for delivery"
+      },
+      {
+        "label": "🛡️ Issue Ride Sure",
+        "query": "Issue 4-year Ride Sure Extended Warranty and 24/7 RSA"
+      }
+    ]
+  },
+  {
+    "agent_id": "ananya_qc_csat",
+    "name": "Quality Control & Post-Service CSAT Auditor",
+    "name_gu": "ક્વોલિટી કંટ્રોલ & ગ્રાહક સંતોષ (CSAT) ઓડિટર",
+    "designated_head": "Ananya Joshi (Quality Control & CSAT Lead)",
+    "department": "Workshop Quality Control & Customer Satisfaction Audits",
+    "category": "DEALERSHIP_OFFICER",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-star",
+    "color": "#e91e63",
+    "level": 5,
+    "xp": 3800,
+    "capabilities": [
+      "First-Time-Right (FTR) Quality Inspection Auditing",
+      "3-Day Post-Service Feedback (PSF) Follow-up Calls",
+      "Dealership CSAT Index Monitoring (>92% OEM Green Standard)",
+      "Voice-of-Customer Resolution & Service Bay Recalls"
+    ],
+    "quick_chips": [
+      {
+        "label": "⭐ Record 3D PSF",
+        "query": "Ananya record 5 star CSAT feedback for serviced Classic 350"
+      },
+      {
+        "label": "📊 CSAT Quality Index",
+        "query": "Show dealership CSAT percentage and FTR pass rate"
+      },
+      {
+        "label": "🔍 Audit Resolution",
+        "query": "Verify all customer reported complaints resolved 100%"
+      }
+    ]
+  },
+  {
+    "agent_id": "jarvis_master",
+    "name": "Jarvis Master System Commander",
+    "name_gu": "જાર્વિસ માસ્ટર સિસ્ટમ કમાન્ડર & કોર AI",
+    "designated_head": "Jarvis Core (Autonomous Multi-Agent Supervisor)",
+    "department": "Operating System & AI Orchestration",
+    "category": "SYSTEM_ENGINEERING",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-robot",
+    "color": "#00d2d3",
+    "level": 10,
+    "xp": 12500,
+    "workspace_path": "/home/alpesh/jarvis-agent",
+    "capabilities": [
+      "Full System Resource Monitoring & Self-Healing",
+      "Cross-Agent Natural Language Directive Dispatch",
+      "Autonomous Background Maintenance & Lag Optimization",
+      "Hardware Watchdog & Linux Systemd Health Check"
+    ],
+    "quick_chips": [
+      {
+        "label": "🩺 System Health",
+        "query": "Jarvis run full system resource and RAM optimization"
+      },
+      {
+        "label": "📋 Agent Fleet Audit",
+        "query": "Jarvis audit status of all autonomous agents on laptop"
+      },
+      {
+        "label": "🧹 Clean Lag & Memory",
+        "query": "Jarvis execute lag cleanup and garbage collection"
+      }
+    ]
+  },
+  {
+    "agent_id": "web2apk_agent",
+    "name": "Web2APK Android App Packager",
+    "name_gu": "વેબ ટુ એન્ડ્રોઇડ એપીકે બિલ્ડર એજન્ટ",
+    "designated_head": "Web2APK Engine (Mobile App Deployment Lead)",
+    "department": "Mobile Application Engineering",
+    "category": "SYSTEM_ENGINEERING",
+    "status": "ONLINE",
+    "icon": "fa-brands fa-android",
+    "color": "#10ac84",
+    "level": 8,
+    "xp": 7200,
+    "workspace_path": "/home/alpesh/web-to-apk-agent",
+    "capabilities": [
+      "Convert Web Apps & PWAs into Native Android APKs",
+      "Automated Android Manifest & Icon Asset Generation",
+      "Local Wi-Fi Sideload HTTP Server on Port 8990",
+      "Dropzone Watcher & Auto-Build Pipeline"
+    ],
+    "quick_chips": [
+      {
+        "label": "📱 Build APK",
+        "query": "Web2APK package Chamunda RE into Android APK with offline PWA"
+      },
+      {
+        "label": "📂 Dropzone Status",
+        "query": "Check Web2APK dropzone folder for pending web apps"
+      },
+      {
+        "label": "📡 Wi-Fi Sideload",
+        "query": "Check status of Wi-Fi sideload server for mobile install"
+      }
+    ]
+  },
+  {
+    "agent_id": "web2ipa_agent",
+    "name": "Web2IPA Apple iOS App Packager",
+    "name_gu": "વેબ ટુ એપલ આઇઓએસ આઇપીએ પેકેજર",
+    "designated_head": "Web2IPA Engine (Apple Ecosystem Packaging Lead)",
+    "department": "Apple iOS Application Engineering",
+    "category": "SYSTEM_ENGINEERING",
+    "status": "ONLINE",
+    "icon": "fa-brands fa-apple",
+    "color": "#576574",
+    "level": 7,
+    "xp": 5900,
+    "workspace_path": "/home/alpesh/web-to-ipa-agent",
+    "capabilities": [
+      "Package Web Projects into iOS IPA Bundles",
+      "Generate Apple App Store Info.plist & Asset Catalogs",
+      "Local Xcode Build Script & TestFlight Staging",
+      "Web2IPA Dropzone Automation"
+    ],
+    "quick_chips": [
+      {
+        "label": "🍏 Build iOS IPA",
+        "query": "Web2IPA check iOS packaging readiness for Chamunda OS"
+      },
+      {
+        "label": "📦 iOS Dropzone",
+        "query": "Check Web2IPA dropzone for queued iOS project builds"
+      },
+      {
+        "label": "⚙️ Info.plist Config",
+        "query": "Verify bundle identifier and URL schemes for iOS build"
+      }
+    ]
+  },
+  {
+    "agent_id": "youtube_agent",
+    "name": "YouTube Production & Video Growth Agent",
+    "name_gu": "યૂટ્યૂબ વિડીયો પ્રોડક્શન & ગ્રોથ એજન્ટ",
+    "designated_head": "YouTube Commander (Digital Video Production Lead)",
+    "department": "Digital Media & Video Production",
+    "category": "MEDIA_CREATIVE",
+    "status": "ONLINE",
+    "icon": "fa-brands fa-youtube",
+    "color": "#ff4757",
+    "level": 7,
+    "xp": 6100,
+    "workspace_path": "/home/alpesh/youtube-agent",
+    "capabilities": [
+      "Automated Video Script Writing & Audio Voiceover",
+      "Render HD Video Assets & Thumbnail Automation",
+      "YouTube Channel Analytics & Upload Pipeline",
+      "Motorcycle Maintenance Educational Video Workflows"
+    ],
+    "quick_chips": [
+      {
+        "label": "🎬 Create Video",
+        "query": "YouTube Agent generate script for Classic 350 oil change guide"
+      },
+      {
+        "label": "📊 Channel Stats",
+        "query": "Check latest YouTube video performance and upload pipeline"
+      },
+      {
+        "label": "🖼️ Generate Thumbnail",
+        "query": "Create thumbnail concept for Himalayan 450 review"
+      }
+    ]
+  },
+  {
+    "agent_id": "book_publishing_agent",
+    "name": "Book Publishing & Kindle Authoring Agent",
+    "name_gu": "બુક પબ્લિશિંગ & કિન્ડલ ઓથરિંગ એજન્ટ",
+    "designated_head": "Publisher Engine (Authoring & Formatting Specialist)",
+    "department": "Publishing & Literary Content",
+    "category": "MEDIA_CREATIVE",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-book",
+    "color": "#5f27cd",
+    "level": 6,
+    "xp": 4800,
+    "workspace_path": "/home/alpesh/book-publishing-agent",
+    "capabilities": [
+      "Automated Multi-Chapter Book Generation & Formatting",
+      "EPUB & Print-Ready PDF Compilation (Trim Size: 6x9)",
+      "Amazon KDP & Kindle Direct Publishing Automation",
+      "Motorcycle Workshop Manual & Technical Guides Authoring"
+    ],
+    "quick_chips": [
+      {
+        "label": "📖 Draft RE Manual",
+        "query": "Book Agent generate outline for Royal Enfield Master Technical Guide"
+      },
+      {
+        "label": "📄 Export EPUB/PDF",
+        "query": "Check status of print-ready PDF book compilation"
+      },
+      {
+        "label": "📚 KDP Publishing",
+        "query": "Verify manuscript metadata and Amazon Kindle formatting"
+      }
+    ]
+  },
+  {
+    "agent_id": "game_studio_agent",
+    "name": "Kids Game Studio & Interactive Engine",
+    "name_gu": "કિડ્સ ગેમ સ્ટુડિયો & ઇન્ટરેક્ટિવ એન્જિન",
+    "designated_head": "Game Engine (HTML5 Interactive Entertainment Lead)",
+    "department": "Interactive Entertainment & Gamification",
+    "category": "MEDIA_CREATIVE",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-gamepad",
+    "color": "#ff9f43",
+    "level": 6,
+    "xp": 4500,
+    "workspace_path": "/home/alpesh/kids-game-studio",
+    "capabilities": [
+      "HTML5 / Canvas Mini-Game Generation & Hosting",
+      "Educational Puzzles & Motorcycle Assembly Mini-Games",
+      "Standalone Game Server Management on Port 8899",
+      "Mobile Touch Controls & Responsive Canvas Physics"
+    ],
+    "quick_chips": [
+      {
+        "label": "🎮 Game Server Status",
+        "query": "Check Kids Game Studio status and port 8899 deployment"
+      },
+      {
+        "label": "🧩 RE Puzzle Game",
+        "query": "Launch Royal Enfield engine assembly interactive game"
+      },
+      {
+        "label": "🕹️ Play Mini-Games",
+        "query": "List available HTML5 games in the studio catalog"
+      }
+    ]
+  },
+  {
+    "agent_id": "web_to_apk_agent",
+    "name": "Web To Apk Agent",
+    "name_gu": "નવો સ્વાયત્ત એજન્ટ (Web To Apk Agent)",
+    "designated_head": "Web To Apk Agent Controller",
+    "department": "Autonomous Laptop Agent",
+    "category": "CUSTOM_FUTURE",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-microchip",
+    "color": "#0984e3",
+    "level": 1,
+    "xp": 100,
+    "workspace_path": "/home/alpesh/web-to-apk-agent",
+    "capabilities": [
+      "Autonomous execution in web-to-apk-agent",
+      "Dynamic mobile task delegation",
+      "Self-monitoring & CLI execution"
+    ],
+    "quick_chips": [
+      {
+        "label": "⚡ Check Status",
+        "query": "Check status of web_to_apk_agent"
+      },
+      {
+        "label": "🛠️ Execute Task",
+        "query": "Run automated diagnostic in web-to-apk-agent"
+      }
+    ]
+  },
+  {
+    "agent_id": "jarvis_agent",
+    "name": "Jarvis Agent",
+    "name_gu": "નવો સ્વાયત્ત એજન્ટ (Jarvis Agent)",
+    "designated_head": "Jarvis Agent Controller",
+    "department": "Autonomous Laptop Agent",
+    "category": "CUSTOM_FUTURE",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-microchip",
+    "color": "#0984e3",
+    "level": 1,
+    "xp": 100,
+    "workspace_path": "/home/alpesh/jarvis-agent",
+    "capabilities": [
+      "Autonomous execution in jarvis-agent",
+      "Dynamic mobile task delegation",
+      "Self-monitoring & CLI execution"
+    ],
+    "quick_chips": [
+      {
+        "label": "⚡ Check Status",
+        "query": "Check status of jarvis_agent"
+      },
+      {
+        "label": "🛠️ Execute Task",
+        "query": "Run automated diagnostic in jarvis-agent"
+      }
+    ]
+  },
+  {
+    "agent_id": "web_to_ipa_agent",
+    "name": "Web To Ipa Agent",
+    "name_gu": "નવો સ્વાયત્ત એજન્ટ (Web To Ipa Agent)",
+    "designated_head": "Web To Ipa Agent Controller",
+    "department": "Autonomous Laptop Agent",
+    "category": "CUSTOM_FUTURE",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-microchip",
+    "color": "#0984e3",
+    "level": 1,
+    "xp": 100,
+    "workspace_path": "/home/alpesh/web-to-ipa-agent",
+    "capabilities": [
+      "Autonomous execution in web-to-ipa-agent",
+      "Dynamic mobile task delegation",
+      "Self-monitoring & CLI execution"
+    ],
+    "quick_chips": [
+      {
+        "label": "⚡ Check Status",
+        "query": "Check status of web_to_ipa_agent"
+      },
+      {
+        "label": "🛠️ Execute Task",
+        "query": "Run automated diagnostic in web-to-ipa-agent"
+      }
+    ]
+  },
+  {
+    "agent_id": "test_future_drone_agent",
+    "name": "Aerial Drone Inspection Agent",
+    "name_gu": "ડ્રોન ઇન્સ્પેક્શન એજન્ટ",
+    "designated_head": "SkyHawk Drone Controller",
+    "department": "Aerial Facility Surveillance",
+    "category": "CUSTOM_FUTURE",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-helicopter",
+    "color": "#e056fd",
+    "level": 1,
+    "xp": 100,
+    "workspace_path": "",
+    "capabilities": [
+      "Aerial Yard Inspection",
+      "Roof Solar Array Audit"
+    ],
+    "quick_chips": [
+      {
+        "label": "🚁 Drone Survey",
+        "query": "Launch aerial surveillance of workshop"
+      }
+    ]
+  },
+  {
+    "agent_id": "apk_tv_converter_agent",
+    "name": "Apk Tv Converter Agent",
+    "name_gu": "નવો સ્વાયત્ત એજન્ટ (Apk Tv Converter Agent)",
+    "designated_head": "Apk Tv Converter Agent Controller",
+    "department": "Autonomous Laptop Agent",
+    "category": "CUSTOM_FUTURE",
+    "status": "ONLINE",
+    "icon": "fa-solid fa-microchip",
+    "color": "#0984e3",
+    "level": 1,
+    "xp": 100,
+    "workspace_path": "/home/alpesh/apk-tv-converter-agent",
+    "capabilities": [
+      "Autonomous execution in apk-tv-converter-agent",
+      "Dynamic mobile task delegation",
+      "Self-monitoring & CLI execution"
+    ],
+    "quick_chips": [
+      {
+        "label": "⚡ Check Status",
+        "query": "Check status of apk_tv_converter_agent"
+      },
+      {
+        "label": "🛠️ Execute Task",
+        "query": "Run automated diagnostic in apk-tv-converter-agent"
+      }
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments & Virtual Envs
+.venv/
+venv/
+ENV/
+env/
+
+# Sensitive Credentials & Private Keys
+data/gemini_keys_pool.json
+data/cloudflare_config.json
+data/chamunda_ai_config.json
+data/whatsapp_config.json
+.env
+*.pem
+*.key
+
+# Heavy Binary Executables
+bin/cloudflared
+
+# Heavy Runtime Logs & Volatile State
+*.log
+data/*.log
+data/*.pid
+data/chhaya_public_url.txt
+data/whatsapp_last_delivery.png
+data/whatsapp_outbox.json
+
+# Browser Profiles & Session Cookies
+data/whatsapp_bot_firefox/
+data/whatsapp_bot_session.json
+
+# Audio Caches & Dynamic Media
+data/aradhya_voice_cache/
+data/recordings/
+data/invoices/
+data/pos_receipts/
+data/purchase_orders/
+
+# OS and Editor metadata
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~

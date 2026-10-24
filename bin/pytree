@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+# Pure Python standalone tree utility for Aradhya & Alpesh Sir
+import os, sys
+from pathlib import Path
+
+def print_tree(directory: Path, prefix: str = "", max_depth: int = 3, current_depth: int = 0):
+    if current_depth >= max_depth:
+        return
+    try:
+        entries = sorted(list(directory.iterdir()), key=lambda e: (not e.is_dir(), e.name.lower()))
+    except PermissionError:
+        return
+
+    # Filter out hidden files/dirs unless requested
+    entries = [e for e in entries if not e.name.startswith(".")]
+    total = len(entries)
+
+    for idx, entry in enumerate(entries):
+        is_last = (idx == total - 1)
+        connector = "└── " if is_last else "├── "
+        child_prefix = "    " if is_last else "│   "
+
+        if entry.is_dir():
+            print(f"{prefix}{connector}\033[1;34m{entry.name}/\033[0m")
+            print_tree(entry, prefix + child_prefix, max_depth, current_depth + 1)
+        else:
+            size_kb = entry.stat().st_size / 1024
+            size_str = f"({size_kb:.1f} KB)" if size_kb >= 1.0 else f"({entry.stat().st_size} B)"
+            print(f"{prefix}{connector}{entry.name} \033[2m{size_str}\033[0m")
+
+def main():
+    args = sys.argv[1:]
+    target = Path(args[0]) if args and not args[0].startswith("-") else Path.cwd()
+    depth = 3
+    for i, a in enumerate(args):
+        if a in ["-L", "--depth"] and i + 1 < len(args) and args[i+1].isdigit():
+            depth = int(args[i+1])
+
+    print(f"\033[1;32m{target.resolve()}\033[0m")
+    print_tree(target, max_depth=depth)
+
+if __name__ == "__main__":
+    main()

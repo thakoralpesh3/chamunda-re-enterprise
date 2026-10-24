@@ -1,0 +1,32 @@
+[
+  {
+    "expedition_id": "EXP-POLO-2026",
+    "title": "Polo Forest Monsoon Thump & Heritage Ride",
+    "title_gu": "પોળો ફોરેસ્ટ મોનસૂન થમ્પ રાઇડ",
+    "date": "2026-10-04",
+    "distance_km": 185,
+    "route": "Mehsana Hub -> Idar -> Polo Forest Sanctuary -> Harnav River -> Return",
+    "escort_vehicle": "Chamunda Expedition SOS Patrol Van (Tools, Spares & Medical Box)",
+    "lead_rider": "Master Tech Ramesh (RE Veteran)",
+    "max_riders": 35,
+    "registered_riders_count": 30,
+    "status": "Registration Open",
+    "participation_fee_inr": 850,
+    "amc_platinum_free": true
+  },
+  {
+    "expedition_id": "EXP-NADABET-2026",
+    "title": "Nadabet Indo-Pak Border Seema Darshan Run",
+    "title_gu": "નડાબેટ ભારત-પાક સીમા દર્શન રાઇડ",
+    "date": "2026-11-15",
+    "distance_km": 310,
+    "route": "Mehsana Hub -> Radhanpur -> Suigam -> Nadabet T-Junction -> Zero Point",
+    "escort_vehicle": "Chamunda Expedition SOS Patrol Van (Twin Fuel Cans & High-Altitude Kit)",
+    "lead_rider": "Master Tech Ramesh",
+    "max_riders": 25,
+    "registered_riders_count": 18,
+    "status": "Registration Open",
+    "participation_fee_inr": 1500,
+    "amc_platinum_free": true
+  }
+]

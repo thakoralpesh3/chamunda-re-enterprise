@@ -1,0 +1,100 @@
+{
+  "updated_at": "2026-10-18 14:22:55",
+  "files": {
+    "/home/alpesh/chamunda_re_enterprise/aradhya_autonomous_core.py": {
+      "sha256": "cbea2f1aa1c925182c857376927e51f66c1f849e53982546059acd81197e5c36",
+      "size_bytes": 114897,
+      "mtime": 1792312496.490599
+    },
+    "/home/alpesh/chamunda_re_enterprise/aradhya_security_sentry.py": {
+      "sha256": "64d1326cf9ea0a1a9eb4e0bb686ff98bf1b1752c83b8f727cc54a5a3208f00ce",
+      "size_bytes": 33195,
+      "mtime": 1792312942.3603795
+    },
+    "/home/alpesh/chamunda_re_enterprise/aradhya_polyglot_nlu.py": {
+      "sha256": "6b0046d572eaadaa78432d31e6bcd15a3768c3aa540e6f90f495cf9818e809ce",
+      "size_bytes": 18002,
+      "mtime": 1792311682.419944
+    },
+    "/home/alpesh/chamunda_re_enterprise/aradhya_self_evolution.py": {
+      "sha256": "c4ac3e28b9dae7ff96d0463ec9acfc58fa15428df07a6ad91d4802196a405f57",
+      "size_bytes": 12993,
+      "mtime": 1791661893.8864918
+    },
+    "/home/alpesh/chamunda_re_enterprise/aradhya_voice_engine.py": {
+      "sha256": "f785fe0de95c0f080072c85c880b16ed139dca013dd946a8b392ce88b8c50f21",
+      "size_bytes": 24362,
+      "mtime": 1791743649.990099
+    },
+    "/home/alpesh/chamunda_re_enterprise/aradhya_startup_greeting.py": {
+      "sha256": "c423bc974800ffd9fd6591a782a8390be861dc957e74ec026cabf7d428af1178",
+      "size_bytes": 5580,
+      "mtime": 1792019784.2648168
+    },
+    "/home/alpesh/chamunda_re_enterprise/chhaya_agent_gateway.py": {
+      "sha256": "b6312ec32255d925d0c0f60340389461bd406b5a83f728c93e2463fc1688a172",
+      "size_bytes": 101104,
+      "mtime": 1791662370.6891806
+    },
+    "/home/alpesh/chamunda_re_enterprise/cloud_mirror_server.py": {
+      "sha256": "0fd5abbc38a192b2111b73d1a4f1de5dc4bc40d789d01b9626006bb186937588",
+      "size_bytes": 76877,
+      "mtime": 1791726444.74173
+    },
+    "/home/alpesh/chamunda_re_enterprise/chhaya_watchdog.py": {
+      "sha256": "701373bb4270a7fe54bd47ced29e3fc1dd9b3d0fe2b6743ada0639213c82c978",
+      "size_bytes": 23050,
+      "mtime": 1792313560.217587
+    },
+    "/home/alpesh/chamunda_re_enterprise/whatsapp_dispatch_engine.py": {
+      "sha256": "a16451113817bdca6ba31b0097670d52545059556db710e0b9a7cfd391fa7202",
+      "size_bytes": 18260,
+      "mtime": 1791728439.736035
+    },
+    "/home/alpesh/chamunda_re_enterprise/whatsapp_web_sender.py": {
+      "sha256": "a39ab52522fdced7d307f1eecd09ca9a207c237374643b1feaf42e32a0fdeda3",
+      "size_bytes": 17983,
+      "mtime": 1792313490.7260923
+    },
+    "/home/alpesh/chamunda_re_enterprise/aradhya_model_updater.py": {
+      "sha256": "1f1aaa2834409b48da6a0cde3a9549437557c192f18a2b5bcad74cb53ad4c704",
+      "size_bytes": 12270,
+      "mtime": 1791999815.838365
+    },
+    "/home/alpesh/chamunda_re_enterprise/chamunda_llm_engine.py": {
+      "sha256": "d3a1371adc2e0c8449b940860c588a6e22b1e8a4f5cddfcee73a2f1c249ae153",
+      "size_bytes": 31987,
+      "mtime": 1792311454.857334
+    },
+    "/home/alpesh/chamunda_re_enterprise/aradhya_offline_knowledge.py": {
+      "sha256": "09e449e5bedc5cdcefcde4be333088b905dd36781b6e8e03935406c04f0aad5c",
+      "size_bytes": 51003,
+      "mtime": 1791832521.1024292
+    },
+    "/home/alpesh/chamunda_re_enterprise/aradhya_independent_worker.py": {
+      "sha256": "006e78cde006d15318772abc3cd9b1a59c5321eb3f08c4c5ee9653891c68b5cd",
+      "size_bytes": 32272,
+      "mtime": 1792311609.8266563
+    },
+    "/home/alpesh/chamunda_re_enterprise/aradhya_resource_downloader.py": {
+      "sha256": "c21c102e7e160faa67ebfe182cbd0d8f22ec825fdaed22d52e2cb8601bed0aa4",
+      "size_bytes": 13781,
+      "mtime": 1791917437.194184
+    },
+    "/home/alpesh/chamunda_re_enterprise/aradhya_autostart_boot.sh": {
+      "sha256": "2f26afbe72cf025aa5f4c6a3d4f6f58b0877ed4b3a0010b92b579e85905ccab7",
+      "size_bytes": 4591,
+      "mtime": 1792100651.1482155
+    },
+    "/home/alpesh/chamunda_re_enterprise/aradhya_reboot_guardian.sh": {
+      "sha256": "b2abfb2f2238470de4739ecff5804498bcfcaaa0235633ed65cc0cbab7caa3f7",
+      "size_bytes": 1693,
+      "mtime": 1792086887.0012376
+    },
+    "/home/alpesh/bin/aradhya": {
+      "sha256": "2ed6f0b6f88512525a66d781efe5a7bd7b3ddd284be9b312ef8485df25385bd7",
+      "size_bytes": 17123,
+      "mtime": 1792312556.4822607
+    }
+  }
+}

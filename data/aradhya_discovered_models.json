@@ -1,0 +1,416 @@
+{
+  "gemini-2.5-flash": {
+    "model_id": "gemini-2.5-flash",
+    "name": "Gemini 2.5 Flash (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Stable version of Gemini 2.5 Flash, our mid-size multimodal model that supports up to 1 million tokens, released in June of 2025.",
+    "badge": "⚡ Gemini 2.5 Flash",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-2.5-pro": {
+    "model_id": "gemini-2.5-pro",
+    "name": "Gemini 2.5 Pro (Auto-Discovered)",
+    "tag": "PRO_REASONING",
+    "description": "Stable release (June 17th, 2025) of Gemini 2.5 Pro",
+    "badge": "🔬 Gemini 2.5 Pro",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-2.5-flash-preview-tts": {
+    "model_id": "gemini-2.5-flash-preview-tts",
+    "name": "Gemini 2.5 Flash Preview TTS (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini 2.5 Flash Preview TTS",
+    "badge": "⚡ Gemini 2.5 Flash Preview TTS",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-2.5-pro-preview-tts": {
+    "model_id": "gemini-2.5-pro-preview-tts",
+    "name": "Gemini 2.5 Pro Preview TTS (Auto-Discovered)",
+    "tag": "PRO_REASONING",
+    "description": "Gemini 2.5 Pro Preview TTS",
+    "badge": "🔬 Gemini 2.5 Pro Preview TTS",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemma-4-26b-a4b-it": {
+    "model_id": "gemma-4-26b-a4b-it",
+    "name": "Gemma 4 26B A4B IT (Auto-Discovered)",
+    "tag": "OPEN_WEIGHTS",
+    "description": "Gemma 4 26B A4B IT",
+    "badge": "💎 Gemma 4 26B A4B IT",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemma-4-31b-it": {
+    "model_id": "gemma-4-31b-it",
+    "name": "Gemma 4 31B IT (Auto-Discovered)",
+    "tag": "OPEN_WEIGHTS",
+    "description": "Gemma 4 31B IT",
+    "badge": "💎 Gemma 4 31B IT",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-flash-latest": {
+    "model_id": "gemini-flash-latest",
+    "name": "Gemini Flash Latest (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Latest release of Gemini Flash",
+    "badge": "⚡ Gemini Flash Latest",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-flash-lite-latest": {
+    "model_id": "gemini-flash-lite-latest",
+    "name": "Gemini Flash-Lite Latest (Auto-Discovered)",
+    "tag": "FLASH_LITE",
+    "description": "Latest release of Gemini Flash-Lite",
+    "badge": "🌱 Gemini Flash-Lite Latest",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-pro-latest": {
+    "model_id": "gemini-pro-latest",
+    "name": "Gemini Pro Latest (Auto-Discovered)",
+    "tag": "PRO_REASONING",
+    "description": "Latest release of Gemini Pro",
+    "badge": "🔬 Gemini Pro Latest",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-2.5-flash-lite": {
+    "model_id": "gemini-2.5-flash-lite",
+    "name": "Gemini 2.5 Flash-Lite (Auto-Discovered)",
+    "tag": "FLASH_LITE",
+    "description": "Stable version of Gemini 2.5 Flash-Lite, released in July of 2025",
+    "badge": "🌱 Gemini 2.5 Flash-Lite",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-2.5-flash-image": {
+    "model_id": "gemini-2.5-flash-image",
+    "name": "Nano Banana (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini 2.5 Flash Preview Image",
+    "badge": "⚡ Nano Banana",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3-flash-preview": {
+    "model_id": "gemini-3-flash-preview",
+    "name": "Gemini 3 Flash Preview (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini 3 Flash Preview",
+    "badge": "⚡ Gemini 3 Flash Preview",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.1-pro-preview": {
+    "model_id": "gemini-3.1-pro-preview",
+    "name": "Gemini 3.1 Pro Preview (Auto-Discovered)",
+    "tag": "PRO_REASONING",
+    "description": "Gemini 3.1 Pro Preview",
+    "badge": "🔬 Gemini 3.1 Pro Preview",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.1-pro-preview-customtools": {
+    "model_id": "gemini-3.1-pro-preview-customtools",
+    "name": "Gemini 3.1 Pro Preview Custom Tools (Auto-Discovered)",
+    "tag": "PRO_REASONING",
+    "description": "Gemini 3.1 Pro Preview optimized for custom tool usage",
+    "badge": "🔬 Gemini 3.1 Pro Preview Custom Tools",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.1-flash-lite-preview": {
+    "model_id": "gemini-3.1-flash-lite-preview",
+    "name": "Gemini 3.1 Flash Lite Preview (Auto-Discovered)",
+    "tag": "FLASH_LITE",
+    "description": "Gemini 3.1 Flash Lite Preview",
+    "badge": "🌱 Gemini 3.1 Flash Lite Preview",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.1-flash-lite": {
+    "model_id": "gemini-3.1-flash-lite",
+    "name": "Gemini 3.1 Flash Lite (Auto-Discovered)",
+    "tag": "FLASH_LITE",
+    "description": "Gemini 3.1 Flash Lite",
+    "badge": "🌱 Gemini 3.1 Flash Lite",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3-pro-image-preview": {
+    "model_id": "gemini-3-pro-image-preview",
+    "name": "Nano Banana Pro (Auto-Discovered)",
+    "tag": "PRO_REASONING",
+    "description": "Gemini 3 Pro Image Preview",
+    "badge": "🔬 Nano Banana Pro",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3-pro-image": {
+    "model_id": "gemini-3-pro-image",
+    "name": "Nano Banana Pro (Auto-Discovered)",
+    "tag": "PRO_REASONING",
+    "description": "Gemini 3 Pro Image",
+    "badge": "🔬 Nano Banana Pro",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "nano-banana-pro-preview": {
+    "model_id": "nano-banana-pro-preview",
+    "name": "Nano Banana Pro (Auto-Discovered)",
+    "tag": "PRO_REASONING",
+    "description": "Gemini 3 Pro Image Preview",
+    "badge": "🔬 Nano Banana Pro",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.1-flash-image-preview": {
+    "model_id": "gemini-3.1-flash-image-preview",
+    "name": "Nano Banana 2 (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini 3.1 Flash Image Preview.",
+    "badge": "⚡ Nano Banana 2",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.1-flash-image": {
+    "model_id": "gemini-3.1-flash-image",
+    "name": "Nano Banana 2 (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini 3.1 Flash Image.",
+    "badge": "⚡ Nano Banana 2",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.1-flash-lite-image": {
+    "model_id": "gemini-3.1-flash-lite-image",
+    "name": "Nano Banana 2 Lite (Auto-Discovered)",
+    "tag": "FLASH_LITE",
+    "description": "Gemini 3.1 Flash Lite Image.",
+    "badge": "🌱 Nano Banana 2 Lite",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-nano-banana-2.1": {
+    "model_id": "gemini-nano-banana-2.1",
+    "name": "Nano Banana 2.1 (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini Nano Banana 2.1.",
+    "badge": "⚡ Nano Banana 2.1",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.5-flash": {
+    "model_id": "gemini-3.5-flash",
+    "name": "Gemini 3.5 Flash (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini 3.5 Flash",
+    "badge": "⚡ Gemini 3.5 Flash",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.5-flash-lite": {
+    "model_id": "gemini-3.5-flash-lite",
+    "name": "Gemini 3.5 Flash Lite (Auto-Discovered)",
+    "tag": "FLASH_LITE",
+    "description": "Gemini 3.5 Flash Lite",
+    "badge": "🌱 Gemini 3.5 Flash Lite",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-omni-flash-preview": {
+    "model_id": "gemini-omni-flash-preview",
+    "name": "Gemini Omni Flash Preview (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini Omni Flash Preview",
+    "badge": "⚡ Gemini Omni Flash Preview",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-omni-1.1-flash": {
+    "model_id": "gemini-omni-1.1-flash",
+    "name": "Gemini Omni 1.1 Flash (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini Omni 1.1 Flash ",
+    "badge": "⚡ Gemini Omni 1.1 Flash",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.5-transcribe": {
+    "model_id": "gemini-3.5-transcribe",
+    "name": "Gemini 3.5 Transcribe (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini 3.5 Transcribe",
+    "badge": "⚡ Gemini 3.5 Transcribe",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.6-flash": {
+    "model_id": "gemini-3.6-flash",
+    "name": "Gemini 3.6 Flash (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini 3.6 Flash",
+    "badge": "⚡ Gemini 3.6 Flash",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.7-flash": {
+    "model_id": "gemini-3.7-flash",
+    "name": "Gemini 3.7 Flash (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini 3.7 Flash",
+    "badge": "⚡ Gemini 3.7 Flash",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.8-flash": {
+    "model_id": "gemini-3.8-flash",
+    "name": "Gemini 3.8 Flash (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini 3.8 Flash",
+    "badge": "⚡ Gemini 3.8 Flash",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "lyria-3-clip-preview": {
+    "model_id": "lyria-3-clip-preview",
+    "name": "Lyria 3 Clip Preview (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Lyria 3 30s model Preview",
+    "badge": "⚡ Lyria 3 Clip Preview",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "lyria-3-pro-preview": {
+    "model_id": "lyria-3-pro-preview",
+    "name": "Lyria 3 Pro Preview (Auto-Discovered)",
+    "tag": "PRO_REASONING",
+    "description": "Lyria 3 Pro Preview",
+    "badge": "🔬 Lyria 3 Pro Preview",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "lyria-3.5": {
+    "model_id": "lyria-3.5",
+    "name": "Lyria 3.5 (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Music Generation model",
+    "badge": "⚡ Lyria 3.5",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.1-flash-tts-preview": {
+    "model_id": "gemini-3.1-flash-tts-preview",
+    "name": "Gemini 3.1 Flash TTS Preview (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini 3.1 Flash TTS Preview",
+    "badge": "⚡ Gemini 3.1 Flash TTS Preview",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.8-flash-tts": {
+    "model_id": "gemini-3.8-flash-tts",
+    "name": "Gemini 3.8 Flash TTS (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini 3.8 Flash TTS",
+    "badge": "⚡ Gemini 3.8 Flash TTS",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-3.8-flash-lite-tts": {
+    "model_id": "gemini-3.8-flash-lite-tts",
+    "name": "Gemini 3.8 Flash Lite TTS (Auto-Discovered)",
+    "tag": "FLASH_LITE",
+    "description": "Gemini 3.8 Flash Lite TTS",
+    "badge": "🌱 Gemini 3.8 Flash Lite TTS",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-robotics-er-2-preview": {
+    "model_id": "gemini-robotics-er-2-preview",
+    "name": "Gemini Robotics-ER 2 Preview (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini Robotics-ER 2 Preview",
+    "badge": "⚡ Gemini Robotics-ER 2 Preview",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-2.5-computer-use-preview-10-2025": {
+    "model_id": "gemini-2.5-computer-use-preview-10-2025",
+    "name": "Gemini 2.5 Computer Use Preview 10-2025 (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini 2.5 Computer Use Preview 10-2025",
+    "badge": "⚡ Gemini 2.5 Computer Use Preview 10-2025",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "antigravity-preview-05-2026": {
+    "model_id": "antigravity-preview-05-2026",
+    "name": "Antigravity Agent Preview (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Preview release of Antigravity Agent (05-2026)",
+    "badge": "⚡ Antigravity Agent Preview",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "antigravity-preview-09-2026": {
+    "model_id": "antigravity-preview-09-2026",
+    "name": "Antigravity Agent Preview (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Preview release of Antigravity Agent (09-2026)",
+    "badge": "⚡ Antigravity Agent Preview",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "antigravity-preview-latest": {
+    "model_id": "antigravity-preview-latest",
+    "name": "Antigravity Agent Preview Latest (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Latest preview release of Antigravity Agent",
+    "badge": "⚡ Antigravity Agent Preview Latest",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "deep-research-max-preview-04-2026": {
+    "model_id": "deep-research-max-preview-04-2026",
+    "name": "Deep Research Max Preview (Apr-21-2026) (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Preview release (April 21st, 2026) of Deep Research Max",
+    "badge": "⚡ Deep Research Max Preview (Apr-21-2026)",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "deep-research-preview-04-2026": {
+    "model_id": "deep-research-preview-04-2026",
+    "name": "Deep Research Preview (Apr-21-2026) (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Preview release (April 21th, 2026) of Deep Research",
+    "badge": "⚡ Deep Research Preview (Apr-21-2026)",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "deep-research-pro-preview-12-2025": {
+    "model_id": "deep-research-pro-preview-12-2025",
+    "name": "Deep Research Pro Preview (Dec-12-2025) (Auto-Discovered)",
+    "tag": "PRO_REASONING",
+    "description": "Preview release (December 12th, 2025) of Deep Research Pro",
+    "badge": "🔬 Deep Research Pro Preview (Dec-12-2025)",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-11 20:32:36"
+  },
+  "gemini-4-argon": {
+    "model_id": "gemini-4-argon",
+    "name": "Gemini 4 Argon (Auto-Discovered)",
+    "tag": "FRONTIER_ARGON",
+    "description": "Gemini 4 Argon",
+    "badge": "👑 Gemini 4 Argon",
+    "source": "google_genai_api",
+    "discovered_at": "2026-10-15 00:30:57"
+  }
+}

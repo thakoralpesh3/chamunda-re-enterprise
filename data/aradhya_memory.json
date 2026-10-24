@@ -1,0 +1,165 @@
+{
+  "owner": "Alpesh Sir (Founder & Chairman)",
+  "learned_habits": {},
+  "recent_actions": [
+    {
+      "action": "HACKER_DEFENSE_SHIELD",
+      "details": "hacker defense scan",
+      "timestamp": "2026-10-11 20:36:24"
+    },
+    {
+      "action": "AI_MODEL_SELF_UPDATE",
+      "details": "update ai models",
+      "timestamp": "2026-10-11 20:37:32"
+    },
+    {
+      "action": "HACKER_DEFENSE_SHIELD",
+      "details": "hacker defense scan",
+      "timestamp": "2026-10-11 20:37:39"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "Tell me about Royal Enfield Hunter 350 engine",
+      "timestamp": "2026-10-11 20:56:48"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "Explain Royal Enfield Super Meteor 650 engine oil capacity and grade",
+      "timestamp": "2026-10-12 00:14:52"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "Interceptor 650 engine oil capacity and grade",
+      "timestamp": "2026-10-13 00:58:28"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "Himalayan 450 tappet clearance cold valve lash",
+      "timestamp": "2026-10-13 00:58:28"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "J-series 350 cylinder head torque specification",
+      "timestamp": "2026-10-13 00:58:28"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "EFI MIL blink code P0117 engine coolant temperature",
+      "timestamp": "2026-10-13 00:58:28"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "Hunter 350 clutch free play adjustment",
+      "timestamp": "2026-10-13 00:58:28"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "ABS brake fluid DOT 4 bleeding procedure",
+      "timestamp": "2026-10-13 00:58:28"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "Continental GT 650 tyre pressure and chain slack",
+      "timestamp": "2026-10-13 00:58:28"
+    },
+    {
+      "action": "GENERAL_EXECUTIVE",
+      "details": "Calculate GST for 15000 parts and 2500 labor",
+      "timestamp": "2026-10-13 00:58:29"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "Write a python script to monitor cpu and memory",
+      "timestamp": "2026-10-13 00:58:29"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "જે-સિરીઝ ૩૫૦ એન્જિન ઓઇલ કેટલું જોઈએ?",
+      "timestamp": "2026-10-13 00:58:29"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "Himalayan 450 tappet clearance",
+      "timestamp": "2026-10-13 00:59:16"
+    },
+    {
+      "action": "AUTONOMOUS_WORKER_MISSION",
+      "details": "create a chart comparing Royal Enfield bike sales",
+      "timestamp": "2026-10-14 00:48:40"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "What is your architecture and active model?",
+      "timestamp": "2026-10-15 00:10:43"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "fix inbuilt camera",
+      "timestamp": "2026-10-15 22:54:41"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "fix inbuilt camera in this laptop",
+      "timestamp": "2026-10-15 22:55:01"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "status",
+      "timestamp": "2026-10-16 03:11:01"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "fix inbuilt camera in this laptop",
+      "timestamp": "2026-10-18 13:39:32"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "fix inbuilt camera in this laptop",
+      "timestamp": "2026-10-18 13:45:10"
+    },
+    {
+      "action": "HARDWARE_DIAGNOSTIC",
+      "details": "fix inbuilt camera in this laptop",
+      "timestamp": "2026-10-18 13:53:09"
+    },
+    {
+      "action": "FILE_OPERATIONS",
+      "details": "find large files in /home/alpesh",
+      "timestamp": "2026-10-18 13:53:30"
+    },
+    {
+      "action": "AUTONOMOUS_WORKER_MISSION",
+      "details": "find large files in /home/alpesh",
+      "timestamp": "2026-10-18 13:55:54"
+    },
+    {
+      "action": "HARDWARE_DIAGNOSTIC",
+      "details": "fix inbuilt camera in this laptop",
+      "timestamp": "2026-10-18 13:56:12"
+    },
+    {
+      "action": "HARDWARE_DIAGNOSTIC",
+      "details": "કેમેરા ફિક્સ કરો",
+      "timestamp": "2026-10-18 13:56:18"
+    },
+    {
+      "action": "NEUTRALIZED_THREATS_LOG",
+      "details": "show neutralized threats",
+      "timestamp": "2026-10-18 14:08:09"
+    },
+    {
+      "action": "NEUTRALIZED_THREATS_LOG",
+      "details": "show neutralized threats",
+      "timestamp": "2026-10-18 14:11:56"
+    }
+  ],
+  "custom_aliases": {},
+  "last_updated": "2026-10-11 01:21:48",
+  "facts": {
+    "preferred_assistant": {
+      "value": "Aradhya",
+      "category": "ai_preference",
+      "timestamp": "2026-10-11 01:21:48"
+    }
+  }
+}

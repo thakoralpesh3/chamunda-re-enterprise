@@ -1,0 +1,594 @@
+[
+  {
+    "token_id": "TKN-20260917-030",
+    "timestamp": "2026-09-17 11:08 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Foam Wash"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260917-040",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260917-030`\n📋 *જોબ કાર્ડ:* `JOB-20260917-040`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260917-029",
+    "timestamp": "2026-09-17 11:08 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260917-039",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260917-029`\n📋 *જોબ કાર્ડ:* `JOB-20260917-039`\n🏍️ *વાહન:* Classic 350 (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260917-028",
+    "timestamp": "2026-09-17 11:08 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 Reborn",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260917-038",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260917-028`\n📋 *જોબ કાર્ડ:* `JOB-20260917-038`\n🏍️ *વાહન:* Classic 350 Reborn (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260917-027",
+    "timestamp": "2026-09-17 11:08 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 14200,
+    "selected_issues": [
+      "Periodic Service",
+      "Acoustic Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260917-037",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260917-027`\n📋 *જોબ કાર્ડ:* `JOB-20260917-037`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260914-026",
+    "timestamp": "2026-09-14 11:12 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Foam Wash"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260914-036",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260914-026`\n📋 *જોબ કાર્ડ:* `JOB-20260914-036`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260914-025",
+    "timestamp": "2026-09-14 11:12 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260914-035",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260914-025`\n📋 *જોબ કાર્ડ:* `JOB-20260914-035`\n🏍️ *વાહન:* Classic 350 (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260914-024",
+    "timestamp": "2026-09-14 11:12 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 Reborn",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260914-034",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260914-024`\n📋 *જોબ કાર્ડ:* `JOB-20260914-034`\n🏍️ *વાહન:* Classic 350 Reborn (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260914-023",
+    "timestamp": "2026-09-14 11:12 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 14200,
+    "selected_issues": [
+      "Periodic Service",
+      "Acoustic Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260914-033",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260914-023`\n📋 *જોબ કાર્ડ:* `JOB-20260914-033`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260914-022",
+    "timestamp": "2026-09-14 12:14 AM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Foam Wash"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260914-032",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260914-022`\n📋 *જોબ કાર્ડ:* `JOB-20260914-032`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260914-021",
+    "timestamp": "2026-09-14 12:14 AM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260914-031",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260914-021`\n📋 *જોબ કાર્ડ:* `JOB-20260914-031`\n🏍️ *વાહન:* Classic 350 (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260914-020",
+    "timestamp": "2026-09-14 12:14 AM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 Reborn",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260914-030",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260914-020`\n📋 *જોબ કાર્ડ:* `JOB-20260914-030`\n🏍️ *વાહન:* Classic 350 Reborn (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260914-019",
+    "timestamp": "2026-09-14 12:14 AM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 14200,
+    "selected_issues": [
+      "Periodic Service",
+      "Acoustic Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260914-029",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260914-019`\n📋 *જોબ કાર્ડ:* `JOB-20260914-029`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260913-018",
+    "timestamp": "2026-09-13 10:56 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Foam Wash"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260913-028",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260913-018`\n📋 *જોબ કાર્ડ:* `JOB-20260913-028`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260913-017",
+    "timestamp": "2026-09-13 10:56 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260913-027",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260913-017`\n📋 *જોબ કાર્ડ:* `JOB-20260913-027`\n🏍️ *વાહન:* Classic 350 (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260913-016",
+    "timestamp": "2026-09-13 10:56 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 Reborn",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260913-026",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260913-016`\n📋 *જોબ કાર્ડ:* `JOB-20260913-026`\n🏍️ *વાહન:* Classic 350 Reborn (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260913-015",
+    "timestamp": "2026-09-13 10:56 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 14200,
+    "selected_issues": [
+      "Periodic Service",
+      "Acoustic Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260913-025",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260913-015`\n📋 *જોબ કાર્ડ:* `JOB-20260913-025`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-014",
+    "timestamp": "2026-09-12 11:30 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Foam Wash"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260912-024",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260912-014`\n📋 *જોબ કાર્ડ:* `JOB-20260912-024`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-013",
+    "timestamp": "2026-09-12 11:30 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260912-023",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260912-013`\n📋 *જોબ કાર્ડ:* `JOB-20260912-023`\n🏍️ *વાહન:* Classic 350 (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-012",
+    "timestamp": "2026-09-12 11:30 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 Reborn",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260912-022",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260912-012`\n📋 *જોબ કાર્ડ:* `JOB-20260912-022`\n🏍️ *વાહન:* Classic 350 Reborn (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-011",
+    "timestamp": "2026-09-12 11:30 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 14200,
+    "selected_issues": [
+      "Periodic Service",
+      "Acoustic Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260912-021",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260912-011`\n📋 *જોબ કાર્ડ:* `JOB-20260912-021`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-010",
+    "timestamp": "2026-09-12 11:15 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Foam Wash"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260912-020",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260912-010`\n📋 *જોબ કાર્ડ:* `JOB-20260912-020`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-009",
+    "timestamp": "2026-09-12 11:15 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260912-019",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260912-009`\n📋 *જોબ કાર્ડ:* `JOB-20260912-019`\n🏍️ *વાહન:* Classic 350 (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-008",
+    "timestamp": "2026-09-12 11:15 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 Reborn",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260912-018",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260912-008`\n📋 *જોબ કાર્ડ:* `JOB-20260912-018`\n🏍️ *વાહન:* Classic 350 Reborn (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-007",
+    "timestamp": "2026-09-12 11:15 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 14200,
+    "selected_issues": [
+      "Periodic Service",
+      "Acoustic Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260912-017",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260912-007`\n📋 *જોબ કાર્ડ:* `JOB-20260912-017`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-006",
+    "timestamp": "2026-09-12 11:14 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Foam Wash"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260912-016",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260912-006`\n📋 *જોબ કાર્ડ:* `JOB-20260912-016`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-005",
+    "timestamp": "2026-09-12 11:14 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service",
+      "Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260912-015",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260912-005`\n📋 *જોબ કાર્ડ:* `JOB-20260912-015`\n🏍️ *વાહન:* Classic 350 (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-004",
+    "timestamp": "2026-09-12 11:14 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 Reborn",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260912-014",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260912-004`\n📋 *જોબ કાર્ડ:* `JOB-20260912-014`\n🏍️ *વાહન:* Classic 350 Reborn (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-003",
+    "timestamp": "2026-09-12 11:14 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 14200,
+    "selected_issues": [
+      "Periodic Service",
+      "Acoustic Tappet Check"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260912-013",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260912-003`\n📋 *જોબ કાર્ડ:* `JOB-20260912-013`\n🏍️ *વાહન:* Classic 350 (Reborn) (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-002",
+    "timestamp": "2026-09-12 11:12 PM",
+    "customer_name": "Alpesh Sir",
+    "phone": "+91 78747 19139",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "selected_issues": [
+      "Periodic Service"
+    ],
+    "assigned_bay": "Bay 1 (J-Series Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 20,
+    "job_card_id": "JOB-20260912-012",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true,
+    "whatsapp_message": "👑 *ચામુંડા ઓટોમોબાઇલ પાર્ટ્સ એન્ડ સર્વિસ*\nનમસ્તે Alpesh Sir! આપનો એક્સપ્રેસ સર્વિસ ટોકન જનરેટ થઈ ગયો છે:\n\n🎫 *ટોકન નંબર:* `TKN-20260912-002`\n📋 *જોબ કાર્ડ:* `JOB-20260912-012`\n🏍️ *વાહન:* Classic 350 (`GJ-02-BQ-1234`)\n🛠️ *સર્વિસ બે:* Bay 1 (J-Series Platform)\n👨‍🔧 *મુખ્ય મિકેનિક:* Master Tech Ramesh\n⏳ *અંદાજિત સમય:* 45 મિનિટ\n\nલાઈવ સ્ટેજ ટ્રેકિંગ લિંક: http://127.0.0.1:8080/#job-cards\nસહાયતા માટે સત્તાવાર વોટ્સએપ હેલ્પલાઇન: +91 78747 19139"
+  },
+  {
+    "token_id": "TKN-20260912-001",
+    "timestamp": "2026-09-12 09:30 AM",
+    "customer_name": "Hardikbhai Patel",
+    "phone": "+91 98250 11999",
+    "bike_model": "Interceptor 650 (Mark 2 Chrome)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 14250,
+    "selected_issues": [
+      "Periodic 10,000 km Service",
+      "50-Point Acoustic Sound Inspection",
+      "Chain Slack & Lube"
+    ],
+    "assigned_bay": "Bay 1 (J-Series & Twins Platform)",
+    "assigned_mechanic": "Master Tech Ramesh",
+    "estimated_wait_mins": 15,
+    "job_card_id": "JOB-20260912-001",
+    "status": "In Service Bay",
+    "whatsapp_slip_sent": true
+  }
+]

@@ -1,0 +1,45 @@
+name: Run Autonomous Agent Cycle in Cloud
+
+on:
+  workflow_dispatch:
+    inputs:
+      action_type:
+        description: 'Action to execute'
+        required: true
+        default: 'health_and_threat_audit'
+        type: choice
+        options:
+          - health_and_threat_audit
+          - optimize_system_audit
+          - generate_state_snapshot
+  schedule:
+    # Run daily health & snapshot audit at midnight UTC
+    - cron: '0 0 * * *'
+
+jobs:
+  run-agent:
+    name: Execute Autonomous Core (${{ github.event.inputs.action_type || 'scheduled_audit' }})
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Diagnostic Cycle
+        run: |
+          python3 -c "
+          from cloud_shadow_engine import get_cloud_shadow_manager
+          mgr = get_cloud_shadow_manager()
+          snap = mgr.generate_state_snapshot()
+          print('Cloud Shadow Snapshot generated successfully:', snap.get('timestamp'))
+          "

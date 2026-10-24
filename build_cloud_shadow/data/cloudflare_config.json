@@ -1,0 +1,7 @@
+{
+  "use_named_tunnel": false,
+  "tunnel_token": "",
+  "permanent_domain": "",
+  "permanent_cloud_url": "",
+  "description": "Configure tunnel_token from Cloudflare Zero Trust (dash.cloudflare.com -> Zero Trust -> Networks -> Tunnels) for a 100% permanent unchanging link, or permanent_cloud_url for 24/7 cloud mirror hosting."
+}

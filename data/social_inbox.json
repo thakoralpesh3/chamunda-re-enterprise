@@ -1,0 +1,47 @@
+[
+  {
+    "item_id": "INB-WA-001",
+    "channel": "whatsapp",
+    "sender_name": "Parthivbhai Patel",
+    "sender_contact": "+91 98250 88776",
+    "message": "\u0aae\u0abe\u0ab0\u0ac7 Classic 350 \u0aa8\u0ac1\u0a82 \u0aab\u0ac1\u0ab2 \u0a8f\u0aa8\u0acd\u0a9c\u0abf\u0aa8 \u0a93\u0ab5\u0ab0\u0ab9\u0acb\u0ab2 \u0a95\u0ab0\u0abe\u0ab5\u0ab5\u0ac1\u0a82 \u0a9b\u0ac7, \u0a85\u0a82\u0aa6\u0abe\u0a9c\u0abf\u0aa4 \u0ab8\u0aae\u0aaf \u0a85\u0aa8\u0ac7 \u0a96\u0ab0\u0acd\u0a9a \u0a95\u0ac7\u0a9f\u0ab2\u0acb \u0aa5\u0ab6\u0ac7?",
+    "received_at": "Today 10:15 AM",
+    "status": "Responded",
+    "ai_draft_reply": "Confirmed via REST API",
+    "reply_sent": true,
+    "responded_at": "2026-09-17 23:08:31"
+  },
+  {
+    "item_id": "INB-IG-002",
+    "channel": "instagram",
+    "sender_name": "@rahul_bullet_rider",
+    "sender_contact": "Direct Message",
+    "message": "Hey! Do you have genuine Motul 15W-50 oil and RE oil filters in stock right now?",
+    "received_at": "Today 11:40 AM",
+    "status": "Pending",
+    "ai_draft_reply": "Hey Rahul! Yes, 100% authentic Motul 15W-50 4T & OEM oil filters are in live stock at Chamunda Automobile! Visit us or WhatsApp at +91 78747 19139.",
+    "reply_sent": false
+  },
+  {
+    "item_id": "INB-FB-003",
+    "channel": "facebook",
+    "sender_name": "Vikramsinh Vaghela",
+    "sender_contact": "Messenger",
+    "message": "Are you organizing the Polo Forest RE group ride this Sunday?",
+    "received_at": "Today 01:20 PM",
+    "status": "Pending",
+    "ai_draft_reply": "Namaste Vikramsinh ji! Yes, Chamunda RE Club ride departs this Sunday 06:00 AM from SG Highway workshop. Pre-ride 48-pt audit is complimentary!",
+    "reply_sent": false
+  },
+  {
+    "item_id": "INB-YT-004",
+    "channel": "youtube",
+    "sender_name": "BikerLife_Ahmedabad",
+    "sender_contact": "Comment on Reel #42",
+    "message": "Alpesh Sir's acoustic sound tuning is next level. That heavy cast-iron thump is unmatched!",
+    "received_at": "Today 02:05 PM",
+    "status": "Pending",
+    "ai_draft_reply": "Thank you brother! Visit Chamunda Automobile anytime to experience the authentic acoustic thump tuning for your Bullet!",
+    "reply_sent": false
+  }
+]

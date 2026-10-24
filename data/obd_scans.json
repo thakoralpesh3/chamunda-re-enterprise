@@ -1,0 +1,1676 @@
+[
+  {
+    "scan_id": "OBD-20260917-6738",
+    "timestamp": "2026-09-17 11:08 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 977,
+      "throttle_position_pct": 0.8,
+      "battery_voltage": 12.75,
+      "engine_temp_c": 114,
+      "o2_sensor_v": 0.25,
+      "manifold_pressure_kpa": 72
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260917-6738",
+    "timestamp": "2026-09-17 11:08 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 994,
+      "throttle_position_pct": 2.6,
+      "battery_voltage": 11.9,
+      "engine_temp_c": 113,
+      "o2_sensor_v": 0.19,
+      "manifold_pressure_kpa": 64
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0115",
+        "system": "Engine Temperature Sensor Circuit",
+        "severity": "Warning",
+        "title": "Engine Coolant / Oil Temperature Sensor Malfunction",
+        "title_gu": "એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી",
+        "symptom": "Cold start hesitation, rich exhaust smoke, check engine lamp ON.",
+        "root_cause": "Thermistor resistance reading open-circuit or ground wire corrosion.",
+        "recommended_fix": "Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+        "mechanic_notes": "Master Tech Ramesh: Clean socket rust with contact cleaner spray before installing new sensor.",
+        "oem_part_needed": {
+          "part_number": "586044/A",
+          "name": "Genuine Engine Oil Temperature (EOT) Sensor",
+          "category": "Sensors & Electricals",
+          "mrp": 480
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0115 (એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Thermistor resistance reading open-circuit or ground wire corrosion. સોલ્યુશન: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0115 (Engine Coolant / Oil Temperature Sensor Malfunction). Root Cause: Thermistor resistance reading open-circuit or ground wire corrosion. Solution: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe."
+  },
+  {
+    "scan_id": "OBD-20260917-6738",
+    "timestamp": "2026-09-17 11:08 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1255,
+      "throttle_position_pct": 1.7,
+      "battery_voltage": 12.29,
+      "engine_temp_c": 110,
+      "o2_sensor_v": 0.25,
+      "manifold_pressure_kpa": 75
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0300",
+        "system": "Ignition System",
+        "severity": "Critical",
+        "title": "Random / Multiple Cylinder Misfire Detected",
+        "title_gu": "રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)",
+        "symptom": "Engine jerks on sudden acceleration, RPM dips, metallic popping sound from silencer.",
+        "root_cause": "Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown.",
+        "recommended_fix": "Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+        "mechanic_notes": "Master Tech Ramesh: Calibrate spark plug gap to exact 0.75 mm using wire feeler gauge.",
+        "oem_part_needed": {
+          "part_number": "W16EPR-U",
+          "name": "NGK Resistor High-Performance Spark Plug",
+          "category": "Ignition & Electrical",
+          "mrp": 220
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0300 (રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)) ડિટેક્ટ થયો છે. મૂળ કારણ: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. સોલ્યુશન: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0300 (Random / Multiple Cylinder Misfire Detected). Root Cause: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. Solution: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω)."
+  },
+  {
+    "scan_id": "OBD-20260917-6737",
+    "timestamp": "2026-09-17 11:08 PM",
+    "bike_model": "Interceptor 650",
+    "registration_no": "GJ-02-EF-9012",
+    "platform": "Parallel-Twin 648cc Bosch EFI",
+    "ecu_id": "RE-BOSCH-ME17-TWIN",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1116,
+      "throttle_position_pct": 0.0,
+      "battery_voltage": 14.35,
+      "engine_temp_c": 90,
+      "o2_sensor_v": 0.67,
+      "manifold_pressure_kpa": 44
+    },
+    "overall_ecu_health": "Optimal (Zero DTCs)",
+    "dtc_count": 0,
+    "active_dtcs": [],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Interceptor 650 (GJ-02-EF-9012) નું ECU સ્કેન ૧૦૦% પરફેક્ટ છે. તમામ સેન્સર્સ સામાન્ય રેન્જમાં છે. બેટરી ચાર્જિંગ 14.35V ઉત્કૃષ્ટ છે.",
+    "diagnosis_en": "Master Tech Ramesh: ECU scan for Interceptor 650 (GJ-02-EF-9012) passed 100%. All sensors within factory specs. Charging steady at 14.35V."
+  },
+  {
+    "scan_id": "OBD-20260917-6737",
+    "timestamp": "2026-09-17 11:08 PM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-02-CD-5678",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1103,
+      "throttle_position_pct": 2.5,
+      "battery_voltage": 12.57,
+      "engine_temp_c": 103,
+      "o2_sensor_v": 0.18,
+      "manifold_pressure_kpa": 75
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0130",
+        "system": "Fuel & Air Metering (O2 Sensor)",
+        "severity": "Critical",
+        "title": "Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)",
+        "title_gu": "ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ",
+        "symptom": "Drop in fuel mileage (3-5 km/l loss), sluggish throttle response, black sooty spark plug.",
+        "root_cause": "Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V).",
+        "recommended_fix": "Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+        "mechanic_notes": "Master Tech Ramesh: Apply high-temperature anti-seize copper grease to O2 sensor threads; torque to 25 Nm.",
+        "oem_part_needed": {
+          "part_number": "571052/B",
+          "name": "Bosch OEM Heated Oxygen (O2) Lambda Sensor",
+          "category": "Fuel Injection & Sensors",
+          "mrp": 1850
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Hunter 350 માં ફોલ્ટ કોડ P0130 (ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). સોલ્યુશન: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0130 (Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)). Root Cause: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). Solution: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor."
+  },
+  {
+    "scan_id": "OBD-20260917-6737",
+    "timestamp": "2026-09-17 11:08 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1297,
+      "throttle_position_pct": 2.0,
+      "battery_voltage": 12.35,
+      "engine_temp_c": 105,
+      "o2_sensor_v": 0.26,
+      "manifold_pressure_kpa": 71
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260914-7775",
+    "timestamp": "2026-09-14 11:12 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1203,
+      "throttle_position_pct": 2.0,
+      "battery_voltage": 11.42,
+      "engine_temp_c": 110,
+      "o2_sensor_v": 0.24,
+      "manifold_pressure_kpa": 56
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260914-7775",
+    "timestamp": "2026-09-14 11:12 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1107,
+      "throttle_position_pct": 2.8,
+      "battery_voltage": 12.56,
+      "engine_temp_c": 106,
+      "o2_sensor_v": 0.16,
+      "manifold_pressure_kpa": 76
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0115",
+        "system": "Engine Temperature Sensor Circuit",
+        "severity": "Warning",
+        "title": "Engine Coolant / Oil Temperature Sensor Malfunction",
+        "title_gu": "એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી",
+        "symptom": "Cold start hesitation, rich exhaust smoke, check engine lamp ON.",
+        "root_cause": "Thermistor resistance reading open-circuit or ground wire corrosion.",
+        "recommended_fix": "Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+        "mechanic_notes": "Master Tech Ramesh: Clean socket rust with contact cleaner spray before installing new sensor.",
+        "oem_part_needed": {
+          "part_number": "586044/A",
+          "name": "Genuine Engine Oil Temperature (EOT) Sensor",
+          "category": "Sensors & Electricals",
+          "mrp": 480
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0115 (એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Thermistor resistance reading open-circuit or ground wire corrosion. સોલ્યુશન: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0115 (Engine Coolant / Oil Temperature Sensor Malfunction). Root Cause: Thermistor resistance reading open-circuit or ground wire corrosion. Solution: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe."
+  },
+  {
+    "scan_id": "OBD-20260914-7775",
+    "timestamp": "2026-09-14 11:12 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1054,
+      "throttle_position_pct": 0.4,
+      "battery_voltage": 11.5,
+      "engine_temp_c": 114,
+      "o2_sensor_v": 0.19,
+      "manifold_pressure_kpa": 62
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0300",
+        "system": "Ignition System",
+        "severity": "Critical",
+        "title": "Random / Multiple Cylinder Misfire Detected",
+        "title_gu": "રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)",
+        "symptom": "Engine jerks on sudden acceleration, RPM dips, metallic popping sound from silencer.",
+        "root_cause": "Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown.",
+        "recommended_fix": "Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+        "mechanic_notes": "Master Tech Ramesh: Calibrate spark plug gap to exact 0.75 mm using wire feeler gauge.",
+        "oem_part_needed": {
+          "part_number": "W16EPR-U",
+          "name": "NGK Resistor High-Performance Spark Plug",
+          "category": "Ignition & Electrical",
+          "mrp": 220
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0300 (રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)) ડિટેક્ટ થયો છે. મૂળ કારણ: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. સોલ્યુશન: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0300 (Random / Multiple Cylinder Misfire Detected). Root Cause: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. Solution: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω)."
+  },
+  {
+    "scan_id": "OBD-20260914-7774",
+    "timestamp": "2026-09-14 11:12 PM",
+    "bike_model": "Interceptor 650",
+    "registration_no": "GJ-02-EF-9012",
+    "platform": "Parallel-Twin 648cc Bosch EFI",
+    "ecu_id": "RE-BOSCH-ME17-TWIN",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1090,
+      "throttle_position_pct": 0.0,
+      "battery_voltage": 14.26,
+      "engine_temp_c": 91,
+      "o2_sensor_v": 0.73,
+      "manifold_pressure_kpa": 43
+    },
+    "overall_ecu_health": "Optimal (Zero DTCs)",
+    "dtc_count": 0,
+    "active_dtcs": [],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Interceptor 650 (GJ-02-EF-9012) નું ECU સ્કેન ૧૦૦% પરફેક્ટ છે. તમામ સેન્સર્સ સામાન્ય રેન્જમાં છે. બેટરી ચાર્જિંગ 14.26V ઉત્કૃષ્ટ છે.",
+    "diagnosis_en": "Master Tech Ramesh: ECU scan for Interceptor 650 (GJ-02-EF-9012) passed 100%. All sensors within factory specs. Charging steady at 14.26V."
+  },
+  {
+    "scan_id": "OBD-20260914-7774",
+    "timestamp": "2026-09-14 11:12 PM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-02-CD-5678",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 969,
+      "throttle_position_pct": 0.9,
+      "battery_voltage": 12.25,
+      "engine_temp_c": 118,
+      "o2_sensor_v": 0.19,
+      "manifold_pressure_kpa": 61
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0130",
+        "system": "Fuel & Air Metering (O2 Sensor)",
+        "severity": "Critical",
+        "title": "Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)",
+        "title_gu": "ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ",
+        "symptom": "Drop in fuel mileage (3-5 km/l loss), sluggish throttle response, black sooty spark plug.",
+        "root_cause": "Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V).",
+        "recommended_fix": "Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+        "mechanic_notes": "Master Tech Ramesh: Apply high-temperature anti-seize copper grease to O2 sensor threads; torque to 25 Nm.",
+        "oem_part_needed": {
+          "part_number": "571052/B",
+          "name": "Bosch OEM Heated Oxygen (O2) Lambda Sensor",
+          "category": "Fuel Injection & Sensors",
+          "mrp": 1850
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Hunter 350 માં ફોલ્ટ કોડ P0130 (ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). સોલ્યુશન: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0130 (Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)). Root Cause: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). Solution: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor."
+  },
+  {
+    "scan_id": "OBD-20260914-7774",
+    "timestamp": "2026-09-14 11:12 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1164,
+      "throttle_position_pct": 3.5,
+      "battery_voltage": 12.4,
+      "engine_temp_c": 113,
+      "o2_sensor_v": 0.24,
+      "manifold_pressure_kpa": 69
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260914-5046",
+    "timestamp": "2026-09-14 12:14 AM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1066,
+      "throttle_position_pct": 2.2,
+      "battery_voltage": 12.45,
+      "engine_temp_c": 117,
+      "o2_sensor_v": 0.14,
+      "manifold_pressure_kpa": 56
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260914-5046",
+    "timestamp": "2026-09-14 12:14 AM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1056,
+      "throttle_position_pct": 2.3,
+      "battery_voltage": 12.34,
+      "engine_temp_c": 102,
+      "o2_sensor_v": 0.24,
+      "manifold_pressure_kpa": 55
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0115",
+        "system": "Engine Temperature Sensor Circuit",
+        "severity": "Warning",
+        "title": "Engine Coolant / Oil Temperature Sensor Malfunction",
+        "title_gu": "એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી",
+        "symptom": "Cold start hesitation, rich exhaust smoke, check engine lamp ON.",
+        "root_cause": "Thermistor resistance reading open-circuit or ground wire corrosion.",
+        "recommended_fix": "Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+        "mechanic_notes": "Master Tech Ramesh: Clean socket rust with contact cleaner spray before installing new sensor.",
+        "oem_part_needed": {
+          "part_number": "586044/A",
+          "name": "Genuine Engine Oil Temperature (EOT) Sensor",
+          "category": "Sensors & Electricals",
+          "mrp": 480
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0115 (એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Thermistor resistance reading open-circuit or ground wire corrosion. સોલ્યુશન: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0115 (Engine Coolant / Oil Temperature Sensor Malfunction). Root Cause: Thermistor resistance reading open-circuit or ground wire corrosion. Solution: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe."
+  },
+  {
+    "scan_id": "OBD-20260914-5046",
+    "timestamp": "2026-09-14 12:14 AM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1220,
+      "throttle_position_pct": 0.9,
+      "battery_voltage": 12.28,
+      "engine_temp_c": 117,
+      "o2_sensor_v": 0.24,
+      "manifold_pressure_kpa": 63
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0300",
+        "system": "Ignition System",
+        "severity": "Critical",
+        "title": "Random / Multiple Cylinder Misfire Detected",
+        "title_gu": "રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)",
+        "symptom": "Engine jerks on sudden acceleration, RPM dips, metallic popping sound from silencer.",
+        "root_cause": "Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown.",
+        "recommended_fix": "Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+        "mechanic_notes": "Master Tech Ramesh: Calibrate spark plug gap to exact 0.75 mm using wire feeler gauge.",
+        "oem_part_needed": {
+          "part_number": "W16EPR-U",
+          "name": "NGK Resistor High-Performance Spark Plug",
+          "category": "Ignition & Electrical",
+          "mrp": 220
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0300 (રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)) ડિટેક્ટ થયો છે. મૂળ કારણ: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. સોલ્યુશન: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0300 (Random / Multiple Cylinder Misfire Detected). Root Cause: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. Solution: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω)."
+  },
+  {
+    "scan_id": "OBD-20260914-5045",
+    "timestamp": "2026-09-14 12:14 AM",
+    "bike_model": "Interceptor 650",
+    "registration_no": "GJ-02-EF-9012",
+    "platform": "Parallel-Twin 648cc Bosch EFI",
+    "ecu_id": "RE-BOSCH-ME17-TWIN",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1092,
+      "throttle_position_pct": 0.0,
+      "battery_voltage": 14.46,
+      "engine_temp_c": 93,
+      "o2_sensor_v": 0.62,
+      "manifold_pressure_kpa": 42
+    },
+    "overall_ecu_health": "Optimal (Zero DTCs)",
+    "dtc_count": 0,
+    "active_dtcs": [],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Interceptor 650 (GJ-02-EF-9012) નું ECU સ્કેન ૧૦૦% પરફેક્ટ છે. તમામ સેન્સર્સ સામાન્ય રેન્જમાં છે. બેટરી ચાર્જિંગ 14.46V ઉત્કૃષ્ટ છે.",
+    "diagnosis_en": "Master Tech Ramesh: ECU scan for Interceptor 650 (GJ-02-EF-9012) passed 100%. All sensors within factory specs. Charging steady at 14.46V."
+  },
+  {
+    "scan_id": "OBD-20260914-5045",
+    "timestamp": "2026-09-14 12:14 AM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-02-CD-5678",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1025,
+      "throttle_position_pct": 2.4,
+      "battery_voltage": 11.83,
+      "engine_temp_c": 112,
+      "o2_sensor_v": 0.14,
+      "manifold_pressure_kpa": 76
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0130",
+        "system": "Fuel & Air Metering (O2 Sensor)",
+        "severity": "Critical",
+        "title": "Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)",
+        "title_gu": "ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ",
+        "symptom": "Drop in fuel mileage (3-5 km/l loss), sluggish throttle response, black sooty spark plug.",
+        "root_cause": "Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V).",
+        "recommended_fix": "Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+        "mechanic_notes": "Master Tech Ramesh: Apply high-temperature anti-seize copper grease to O2 sensor threads; torque to 25 Nm.",
+        "oem_part_needed": {
+          "part_number": "571052/B",
+          "name": "Bosch OEM Heated Oxygen (O2) Lambda Sensor",
+          "category": "Fuel Injection & Sensors",
+          "mrp": 1850
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Hunter 350 માં ફોલ્ટ કોડ P0130 (ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). સોલ્યુશન: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0130 (Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)). Root Cause: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). Solution: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor."
+  },
+  {
+    "scan_id": "OBD-20260914-5045",
+    "timestamp": "2026-09-14 12:14 AM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1241,
+      "throttle_position_pct": 3.0,
+      "battery_voltage": 11.57,
+      "engine_temp_c": 113,
+      "o2_sensor_v": 0.26,
+      "manifold_pressure_kpa": 64
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260913-0405",
+    "timestamp": "2026-09-13 10:56 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1054,
+      "throttle_position_pct": 3.2,
+      "battery_voltage": 12.71,
+      "engine_temp_c": 107,
+      "o2_sensor_v": 0.15,
+      "manifold_pressure_kpa": 74
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260913-0405",
+    "timestamp": "2026-09-13 10:56 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1277,
+      "throttle_position_pct": 1.6,
+      "battery_voltage": 12.16,
+      "engine_temp_c": 114,
+      "o2_sensor_v": 0.21,
+      "manifold_pressure_kpa": 61
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0115",
+        "system": "Engine Temperature Sensor Circuit",
+        "severity": "Warning",
+        "title": "Engine Coolant / Oil Temperature Sensor Malfunction",
+        "title_gu": "એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી",
+        "symptom": "Cold start hesitation, rich exhaust smoke, check engine lamp ON.",
+        "root_cause": "Thermistor resistance reading open-circuit or ground wire corrosion.",
+        "recommended_fix": "Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+        "mechanic_notes": "Master Tech Ramesh: Clean socket rust with contact cleaner spray before installing new sensor.",
+        "oem_part_needed": {
+          "part_number": "586044/A",
+          "name": "Genuine Engine Oil Temperature (EOT) Sensor",
+          "category": "Sensors & Electricals",
+          "mrp": 480
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0115 (એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Thermistor resistance reading open-circuit or ground wire corrosion. સોલ્યુશન: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0115 (Engine Coolant / Oil Temperature Sensor Malfunction). Root Cause: Thermistor resistance reading open-circuit or ground wire corrosion. Solution: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe."
+  },
+  {
+    "scan_id": "OBD-20260913-0405",
+    "timestamp": "2026-09-13 10:56 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1039,
+      "throttle_position_pct": 0.7,
+      "battery_voltage": 12.48,
+      "engine_temp_c": 118,
+      "o2_sensor_v": 0.26,
+      "manifold_pressure_kpa": 75
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0300",
+        "system": "Ignition System",
+        "severity": "Critical",
+        "title": "Random / Multiple Cylinder Misfire Detected",
+        "title_gu": "રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)",
+        "symptom": "Engine jerks on sudden acceleration, RPM dips, metallic popping sound from silencer.",
+        "root_cause": "Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown.",
+        "recommended_fix": "Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+        "mechanic_notes": "Master Tech Ramesh: Calibrate spark plug gap to exact 0.75 mm using wire feeler gauge.",
+        "oem_part_needed": {
+          "part_number": "W16EPR-U",
+          "name": "NGK Resistor High-Performance Spark Plug",
+          "category": "Ignition & Electrical",
+          "mrp": 220
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0300 (રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)) ડિટેક્ટ થયો છે. મૂળ કારણ: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. સોલ્યુશન: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0300 (Random / Multiple Cylinder Misfire Detected). Root Cause: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. Solution: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω)."
+  },
+  {
+    "scan_id": "OBD-20260913-0404",
+    "timestamp": "2026-09-13 10:56 PM",
+    "bike_model": "Interceptor 650",
+    "registration_no": "GJ-02-EF-9012",
+    "platform": "Parallel-Twin 648cc Bosch EFI",
+    "ecu_id": "RE-BOSCH-ME17-TWIN",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1072,
+      "throttle_position_pct": 0.0,
+      "battery_voltage": 14.47,
+      "engine_temp_c": 90,
+      "o2_sensor_v": 0.6,
+      "manifold_pressure_kpa": 44
+    },
+    "overall_ecu_health": "Optimal (Zero DTCs)",
+    "dtc_count": 0,
+    "active_dtcs": [],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Interceptor 650 (GJ-02-EF-9012) નું ECU સ્કેન ૧૦૦% પરફેક્ટ છે. તમામ સેન્સર્સ સામાન્ય રેન્જમાં છે. બેટરી ચાર્જિંગ 14.47V ઉત્કૃષ્ટ છે.",
+    "diagnosis_en": "Master Tech Ramesh: ECU scan for Interceptor 650 (GJ-02-EF-9012) passed 100%. All sensors within factory specs. Charging steady at 14.47V."
+  },
+  {
+    "scan_id": "OBD-20260913-0404",
+    "timestamp": "2026-09-13 10:56 PM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-02-CD-5678",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1141,
+      "throttle_position_pct": 0.6,
+      "battery_voltage": 12.22,
+      "engine_temp_c": 105,
+      "o2_sensor_v": 0.22,
+      "manifold_pressure_kpa": 61
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0130",
+        "system": "Fuel & Air Metering (O2 Sensor)",
+        "severity": "Critical",
+        "title": "Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)",
+        "title_gu": "ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ",
+        "symptom": "Drop in fuel mileage (3-5 km/l loss), sluggish throttle response, black sooty spark plug.",
+        "root_cause": "Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V).",
+        "recommended_fix": "Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+        "mechanic_notes": "Master Tech Ramesh: Apply high-temperature anti-seize copper grease to O2 sensor threads; torque to 25 Nm.",
+        "oem_part_needed": {
+          "part_number": "571052/B",
+          "name": "Bosch OEM Heated Oxygen (O2) Lambda Sensor",
+          "category": "Fuel Injection & Sensors",
+          "mrp": 1850
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Hunter 350 માં ફોલ્ટ કોડ P0130 (ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). સોલ્યુશન: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0130 (Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)). Root Cause: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). Solution: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor."
+  },
+  {
+    "scan_id": "OBD-20260913-0403",
+    "timestamp": "2026-09-13 10:56 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1022,
+      "throttle_position_pct": 1.8,
+      "battery_voltage": 12.46,
+      "engine_temp_c": 113,
+      "o2_sensor_v": 0.12,
+      "manifold_pressure_kpa": 56
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260912-6041",
+    "timestamp": "2026-09-12 11:30 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1092,
+      "throttle_position_pct": 3.2,
+      "battery_voltage": 11.51,
+      "engine_temp_c": 115,
+      "o2_sensor_v": 0.23,
+      "manifold_pressure_kpa": 68
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260912-6041",
+    "timestamp": "2026-09-12 11:30 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1238,
+      "throttle_position_pct": 3.3,
+      "battery_voltage": 12.46,
+      "engine_temp_c": 107,
+      "o2_sensor_v": 0.23,
+      "manifold_pressure_kpa": 57
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0115",
+        "system": "Engine Temperature Sensor Circuit",
+        "severity": "Warning",
+        "title": "Engine Coolant / Oil Temperature Sensor Malfunction",
+        "title_gu": "એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી",
+        "symptom": "Cold start hesitation, rich exhaust smoke, check engine lamp ON.",
+        "root_cause": "Thermistor resistance reading open-circuit or ground wire corrosion.",
+        "recommended_fix": "Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+        "mechanic_notes": "Master Tech Ramesh: Clean socket rust with contact cleaner spray before installing new sensor.",
+        "oem_part_needed": {
+          "part_number": "586044/A",
+          "name": "Genuine Engine Oil Temperature (EOT) Sensor",
+          "category": "Sensors & Electricals",
+          "mrp": 480
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0115 (એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Thermistor resistance reading open-circuit or ground wire corrosion. સોલ્યુશન: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0115 (Engine Coolant / Oil Temperature Sensor Malfunction). Root Cause: Thermistor resistance reading open-circuit or ground wire corrosion. Solution: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe."
+  },
+  {
+    "scan_id": "OBD-20260912-6041",
+    "timestamp": "2026-09-12 11:30 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1071,
+      "throttle_position_pct": 0.8,
+      "battery_voltage": 11.8,
+      "engine_temp_c": 114,
+      "o2_sensor_v": 0.16,
+      "manifold_pressure_kpa": 72
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0300",
+        "system": "Ignition System",
+        "severity": "Critical",
+        "title": "Random / Multiple Cylinder Misfire Detected",
+        "title_gu": "રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)",
+        "symptom": "Engine jerks on sudden acceleration, RPM dips, metallic popping sound from silencer.",
+        "root_cause": "Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown.",
+        "recommended_fix": "Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+        "mechanic_notes": "Master Tech Ramesh: Calibrate spark plug gap to exact 0.75 mm using wire feeler gauge.",
+        "oem_part_needed": {
+          "part_number": "W16EPR-U",
+          "name": "NGK Resistor High-Performance Spark Plug",
+          "category": "Ignition & Electrical",
+          "mrp": 220
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0300 (રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)) ડિટેક્ટ થયો છે. મૂળ કારણ: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. સોલ્યુશન: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0300 (Random / Multiple Cylinder Misfire Detected). Root Cause: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. Solution: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω)."
+  },
+  {
+    "scan_id": "OBD-20260912-6040",
+    "timestamp": "2026-09-12 11:30 PM",
+    "bike_model": "Interceptor 650",
+    "registration_no": "GJ-02-EF-9012",
+    "platform": "Parallel-Twin 648cc Bosch EFI",
+    "ecu_id": "RE-BOSCH-ME17-TWIN",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1089,
+      "throttle_position_pct": 0.0,
+      "battery_voltage": 14.32,
+      "engine_temp_c": 93,
+      "o2_sensor_v": 0.73,
+      "manifold_pressure_kpa": 38
+    },
+    "overall_ecu_health": "Optimal (Zero DTCs)",
+    "dtc_count": 0,
+    "active_dtcs": [],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Interceptor 650 (GJ-02-EF-9012) નું ECU સ્કેન ૧૦૦% પરફેક્ટ છે. તમામ સેન્સર્સ સામાન્ય રેન્જમાં છે. બેટરી ચાર્જિંગ 14.32V ઉત્કૃષ્ટ છે.",
+    "diagnosis_en": "Master Tech Ramesh: ECU scan for Interceptor 650 (GJ-02-EF-9012) passed 100%. All sensors within factory specs. Charging steady at 14.32V."
+  },
+  {
+    "scan_id": "OBD-20260912-6040",
+    "timestamp": "2026-09-12 11:30 PM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-02-CD-5678",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1124,
+      "throttle_position_pct": 2.9,
+      "battery_voltage": 12.29,
+      "engine_temp_c": 105,
+      "o2_sensor_v": 0.24,
+      "manifold_pressure_kpa": 67
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0130",
+        "system": "Fuel & Air Metering (O2 Sensor)",
+        "severity": "Critical",
+        "title": "Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)",
+        "title_gu": "ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ",
+        "symptom": "Drop in fuel mileage (3-5 km/l loss), sluggish throttle response, black sooty spark plug.",
+        "root_cause": "Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V).",
+        "recommended_fix": "Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+        "mechanic_notes": "Master Tech Ramesh: Apply high-temperature anti-seize copper grease to O2 sensor threads; torque to 25 Nm.",
+        "oem_part_needed": {
+          "part_number": "571052/B",
+          "name": "Bosch OEM Heated Oxygen (O2) Lambda Sensor",
+          "category": "Fuel Injection & Sensors",
+          "mrp": 1850
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Hunter 350 માં ફોલ્ટ કોડ P0130 (ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). સોલ્યુશન: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0130 (Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)). Root Cause: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). Solution: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor."
+  },
+  {
+    "scan_id": "OBD-20260912-6040",
+    "timestamp": "2026-09-12 11:30 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1144,
+      "throttle_position_pct": 2.4,
+      "battery_voltage": 12.22,
+      "engine_temp_c": 102,
+      "o2_sensor_v": 0.15,
+      "manifold_pressure_kpa": 57
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260912-5192",
+    "timestamp": "2026-09-12 11:16 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1266,
+      "throttle_position_pct": 0.2,
+      "battery_voltage": 12.53,
+      "engine_temp_c": 108,
+      "o2_sensor_v": 0.26,
+      "manifold_pressure_kpa": 58
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260912-5153",
+    "timestamp": "2026-09-12 11:15 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1317,
+      "throttle_position_pct": 2.2,
+      "battery_voltage": 12.44,
+      "engine_temp_c": 106,
+      "o2_sensor_v": 0.27,
+      "manifold_pressure_kpa": 64
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260912-5153",
+    "timestamp": "2026-09-12 11:15 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1184,
+      "throttle_position_pct": 2.2,
+      "battery_voltage": 11.6,
+      "engine_temp_c": 116,
+      "o2_sensor_v": 0.16,
+      "manifold_pressure_kpa": 74
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0115",
+        "system": "Engine Temperature Sensor Circuit",
+        "severity": "Warning",
+        "title": "Engine Coolant / Oil Temperature Sensor Malfunction",
+        "title_gu": "એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી",
+        "symptom": "Cold start hesitation, rich exhaust smoke, check engine lamp ON.",
+        "root_cause": "Thermistor resistance reading open-circuit or ground wire corrosion.",
+        "recommended_fix": "Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+        "mechanic_notes": "Master Tech Ramesh: Clean socket rust with contact cleaner spray before installing new sensor.",
+        "oem_part_needed": {
+          "part_number": "586044/A",
+          "name": "Genuine Engine Oil Temperature (EOT) Sensor",
+          "category": "Sensors & Electricals",
+          "mrp": 480
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0115 (એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Thermistor resistance reading open-circuit or ground wire corrosion. સોલ્યુશન: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0115 (Engine Coolant / Oil Temperature Sensor Malfunction). Root Cause: Thermistor resistance reading open-circuit or ground wire corrosion. Solution: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe."
+  },
+  {
+    "scan_id": "OBD-20260912-5153",
+    "timestamp": "2026-09-12 11:15 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1074,
+      "throttle_position_pct": 3.4,
+      "battery_voltage": 11.6,
+      "engine_temp_c": 105,
+      "o2_sensor_v": 0.19,
+      "manifold_pressure_kpa": 55
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0300",
+        "system": "Ignition System",
+        "severity": "Critical",
+        "title": "Random / Multiple Cylinder Misfire Detected",
+        "title_gu": "રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)",
+        "symptom": "Engine jerks on sudden acceleration, RPM dips, metallic popping sound from silencer.",
+        "root_cause": "Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown.",
+        "recommended_fix": "Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+        "mechanic_notes": "Master Tech Ramesh: Calibrate spark plug gap to exact 0.75 mm using wire feeler gauge.",
+        "oem_part_needed": {
+          "part_number": "W16EPR-U",
+          "name": "NGK Resistor High-Performance Spark Plug",
+          "category": "Ignition & Electrical",
+          "mrp": 220
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0300 (રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)) ડિટેક્ટ થયો છે. મૂળ કારણ: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. સોલ્યુશન: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0300 (Random / Multiple Cylinder Misfire Detected). Root Cause: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. Solution: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω)."
+  },
+  {
+    "scan_id": "OBD-20260912-5152",
+    "timestamp": "2026-09-12 11:15 PM",
+    "bike_model": "Interceptor 650",
+    "registration_no": "GJ-02-EF-9012",
+    "platform": "Parallel-Twin 648cc Bosch EFI",
+    "ecu_id": "RE-BOSCH-ME17-TWIN",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1082,
+      "throttle_position_pct": 0.0,
+      "battery_voltage": 14.29,
+      "engine_temp_c": 88,
+      "o2_sensor_v": 0.58,
+      "manifold_pressure_kpa": 38
+    },
+    "overall_ecu_health": "Optimal (Zero DTCs)",
+    "dtc_count": 0,
+    "active_dtcs": [],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Interceptor 650 (GJ-02-EF-9012) નું ECU સ્કેન ૧૦૦% પરફેક્ટ છે. તમામ સેન્સર્સ સામાન્ય રેન્જમાં છે. બેટરી ચાર્જિંગ 14.29V ઉત્કૃષ્ટ છે.",
+    "diagnosis_en": "Master Tech Ramesh: ECU scan for Interceptor 650 (GJ-02-EF-9012) passed 100%. All sensors within factory specs. Charging steady at 14.29V."
+  },
+  {
+    "scan_id": "OBD-20260912-5152",
+    "timestamp": "2026-09-12 11:15 PM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-02-CD-5678",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1277,
+      "throttle_position_pct": 1.7,
+      "battery_voltage": 12.4,
+      "engine_temp_c": 102,
+      "o2_sensor_v": 0.22,
+      "manifold_pressure_kpa": 61
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0130",
+        "system": "Fuel & Air Metering (O2 Sensor)",
+        "severity": "Critical",
+        "title": "Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)",
+        "title_gu": "ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ",
+        "symptom": "Drop in fuel mileage (3-5 km/l loss), sluggish throttle response, black sooty spark plug.",
+        "root_cause": "Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V).",
+        "recommended_fix": "Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+        "mechanic_notes": "Master Tech Ramesh: Apply high-temperature anti-seize copper grease to O2 sensor threads; torque to 25 Nm.",
+        "oem_part_needed": {
+          "part_number": "571052/B",
+          "name": "Bosch OEM Heated Oxygen (O2) Lambda Sensor",
+          "category": "Fuel Injection & Sensors",
+          "mrp": 1850
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Hunter 350 માં ફોલ્ટ કોડ P0130 (ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). સોલ્યુશન: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0130 (Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)). Root Cause: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). Solution: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor."
+  },
+  {
+    "scan_id": "OBD-20260912-5152",
+    "timestamp": "2026-09-12 11:15 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1048,
+      "throttle_position_pct": 3.1,
+      "battery_voltage": 12.1,
+      "engine_temp_c": 111,
+      "o2_sensor_v": 0.2,
+      "manifold_pressure_kpa": 61
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260912-5093",
+    "timestamp": "2026-09-12 11:14 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 979,
+      "throttle_position_pct": 2.1,
+      "battery_voltage": 12.04,
+      "engine_temp_c": 104,
+      "o2_sensor_v": 0.21,
+      "manifold_pressure_kpa": 75
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260912-5089",
+    "timestamp": "2026-09-12 11:14 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1073,
+      "throttle_position_pct": 0.8,
+      "battery_voltage": 11.51,
+      "engine_temp_c": 116,
+      "o2_sensor_v": 0.15,
+      "manifold_pressure_kpa": 60
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0115",
+        "system": "Engine Temperature Sensor Circuit",
+        "severity": "Warning",
+        "title": "Engine Coolant / Oil Temperature Sensor Malfunction",
+        "title_gu": "એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી",
+        "symptom": "Cold start hesitation, rich exhaust smoke, check engine lamp ON.",
+        "root_cause": "Thermistor resistance reading open-circuit or ground wire corrosion.",
+        "recommended_fix": "Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+        "mechanic_notes": "Master Tech Ramesh: Clean socket rust with contact cleaner spray before installing new sensor.",
+        "oem_part_needed": {
+          "part_number": "586044/A",
+          "name": "Genuine Engine Oil Temperature (EOT) Sensor",
+          "category": "Sensors & Electricals",
+          "mrp": 480
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0115 (એન્જિન ઓઇલ / કૂલન્ટ ટેમ્પરેચર સેન્સર ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Thermistor resistance reading open-circuit or ground wire corrosion. સોલ્યુશન: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0115 (Engine Coolant / Oil Temperature Sensor Malfunction). Root Cause: Thermistor resistance reading open-circuit or ground wire corrosion. Solution: Inspect wiring harness to EOT sensor; check resistance with multimeter (2.5kΩ at 20°C); replace OEM temperature sensor probe."
+  },
+  {
+    "scan_id": "OBD-20260912-5089",
+    "timestamp": "2026-09-12 11:14 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1270,
+      "throttle_position_pct": 0.5,
+      "battery_voltage": 12.59,
+      "engine_temp_c": 107,
+      "o2_sensor_v": 0.22,
+      "manifold_pressure_kpa": 68
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0300",
+        "system": "Ignition System",
+        "severity": "Critical",
+        "title": "Random / Multiple Cylinder Misfire Detected",
+        "title_gu": "રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)",
+        "symptom": "Engine jerks on sudden acceleration, RPM dips, metallic popping sound from silencer.",
+        "root_cause": "Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown.",
+        "recommended_fix": "Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+        "mechanic_notes": "Master Tech Ramesh: Calibrate spark plug gap to exact 0.75 mm using wire feeler gauge.",
+        "oem_part_needed": {
+          "part_number": "W16EPR-U",
+          "name": "NGK Resistor High-Performance Spark Plug",
+          "category": "Ignition & Electrical",
+          "mrp": 220
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0300 (રેન્ડમ સિલિન્ડર મિસફાયર ખામી (ઝટકા મારવા)) ડિટેક્ટ થયો છે. મૂળ કારણ: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. સોલ્યુશન: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω).",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0300 (Random / Multiple Cylinder Misfire Detected). Root Cause: Fouled spark plug electrode gap widened beyond 0.85 mm, or weak secondary HT ignition coil insulation breakdown. Solution: Replace spark plug with NGK Resistor plug; inspect HT ignition coil lead for spark jump; test coil primary resistance (0.8Ω)."
+  },
+  {
+    "scan_id": "OBD-20260912-5086",
+    "timestamp": "2026-09-12 11:14 PM",
+    "bike_model": "Interceptor 650",
+    "registration_no": "GJ-02-EF-9012",
+    "platform": "Parallel-Twin 648cc Bosch EFI",
+    "ecu_id": "RE-BOSCH-ME17-TWIN",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1082,
+      "throttle_position_pct": 0.0,
+      "battery_voltage": 14.4,
+      "engine_temp_c": 91,
+      "o2_sensor_v": 0.57,
+      "manifold_pressure_kpa": 40
+    },
+    "overall_ecu_health": "Optimal (Zero DTCs)",
+    "dtc_count": 0,
+    "active_dtcs": [],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Interceptor 650 (GJ-02-EF-9012) નું ECU સ્કેન ૧૦૦% પરફેક્ટ છે. તમામ સેન્સર્સ સામાન્ય રેન્જમાં છે. બેટરી ચાર્જિંગ 14.4V ઉત્કૃષ્ટ છે.",
+    "diagnosis_en": "Master Tech Ramesh: ECU scan for Interceptor 650 (GJ-02-EF-9012) passed 100%. All sensors within factory specs. Charging steady at 14.4V."
+  },
+  {
+    "scan_id": "OBD-20260912-5086",
+    "timestamp": "2026-09-12 11:14 PM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-02-CD-5678",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1308,
+      "throttle_position_pct": 0.5,
+      "battery_voltage": 11.44,
+      "engine_temp_c": 115,
+      "o2_sensor_v": 0.19,
+      "manifold_pressure_kpa": 67
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0130",
+        "system": "Fuel & Air Metering (O2 Sensor)",
+        "severity": "Critical",
+        "title": "Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)",
+        "title_gu": "ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ",
+        "symptom": "Drop in fuel mileage (3-5 km/l loss), sluggish throttle response, black sooty spark plug.",
+        "root_cause": "Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V).",
+        "recommended_fix": "Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+        "mechanic_notes": "Master Tech Ramesh: Apply high-temperature anti-seize copper grease to O2 sensor threads; torque to 25 Nm.",
+        "oem_part_needed": {
+          "part_number": "571052/B",
+          "name": "Bosch OEM Heated Oxygen (O2) Lambda Sensor",
+          "category": "Fuel Injection & Sensors",
+          "mrp": 1850
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Hunter 350 માં ફોલ્ટ કોડ P0130 (ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). સોલ્યુશન: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0130 (Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)). Root Cause: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). Solution: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor."
+  },
+  {
+    "scan_id": "OBD-20260912-5086",
+    "timestamp": "2026-09-12 11:14 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1239,
+      "throttle_position_pct": 3.3,
+      "battery_voltage": 11.59,
+      "engine_temp_c": 114,
+      "o2_sensor_v": 0.25,
+      "manifold_pressure_kpa": 59
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Classic 350 (Reborn) માં ફોલ્ટ કોડ P0505 (આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. સોલ્યુશન: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0505 (Idle Air Control Valve (IACV) / Stepper Motor Performance). Root Cause: Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement. Solution: Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset."
+  },
+  {
+    "scan_id": "OBD-20260912-4939",
+    "timestamp": "2026-09-12 11:12 PM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-02-CD-5678",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1318,
+      "throttle_position_pct": 0.1,
+      "battery_voltage": 11.63,
+      "engine_temp_c": 104,
+      "o2_sensor_v": 0.15,
+      "manifold_pressure_kpa": 73
+    },
+    "overall_ecu_health": "Critical",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0130",
+        "system": "Fuel & Air Metering (O2 Sensor)",
+        "severity": "Critical",
+        "title": "Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)",
+        "title_gu": "ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ",
+        "symptom": "Drop in fuel mileage (3-5 km/l loss), sluggish throttle response, black sooty spark plug.",
+        "root_cause": "Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V).",
+        "recommended_fix": "Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+        "mechanic_notes": "Master Tech Ramesh: Apply high-temperature anti-seize copper grease to O2 sensor threads; torque to 25 Nm.",
+        "oem_part_needed": {
+          "part_number": "571052/B",
+          "name": "Bosch OEM Heated Oxygen (O2) Lambda Sensor",
+          "category": "Fuel Injection & Sensors",
+          "mrp": 1850
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: Hunter 350 માં ફોલ્ટ કોડ P0130 (ઓક્સિજન (O2) લેમ્બડા સેન્સર સર્કિટ ફોલ્ટ) ડિટેક્ટ થયો છે. મૂળ કારણ: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). સોલ્યુશન: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor.",
+    "diagnosis_en": "Master Tech Ramesh: Detected DTC P0130 (Oxygen (O2) Lambda Sensor Circuit Malfunction (Bank 1)). Root Cause: Carbon buildup on lambda zirconium sensor tip causing delayed voltage switching (<0.2V to >0.8V). Solution: Remove O2 sensor from exhaust manifold header, ultrasonic clean tip, test heater element resistance (9Ω). If defective, replace with Bosch OEM Lambda sensor."
+  },
+  {
+    "scan_id": "OBD-20260912-001",
+    "timestamp": "2026-09-12 11:45 AM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "platform": "J-Series Single-Cylinder EFI",
+    "ecu_id": "RE-BOSCH-MSE6.0-J1",
+    "firmware_version": "v1.4.2-2026",
+    "live_telemetry": {
+      "engine_rpm": 1080,
+      "throttle_position_pct": 0.0,
+      "battery_voltage": 14.3,
+      "engine_temp_c": 92,
+      "o2_sensor_v": 0.68,
+      "manifold_pressure_kpa": 42
+    },
+    "overall_ecu_health": "Warning",
+    "dtc_count": 1,
+    "active_dtcs": [
+      {
+        "dtc_code": "P0505",
+        "system": "Idle Speed Control",
+        "severity": "Warning",
+        "title": "Idle Air Control Valve (IACV) / Stepper Motor Performance",
+        "title_gu": "આઇડલ સ્પીડ કંટ્રોલ વાલ્વ (સ્ટેપર મોટર) ખામી",
+        "symptom": "Bike dies when closing throttle at traffic signals, cold start idle hunts erratically between 800 - 1800 RPM.",
+        "root_cause": "Carbon sludge accumulation blocking throttle body air bypass port preventing stepper plunger movement.",
+        "recommended_fix": "Dismantle throttle body assembly, flush IACV air passages with throttle cleaner spray, lubricate stepper plunger O-ring, run ECU TPS reset.",
+        "mechanic_notes": "Master Tech Ramesh: Do not push stepper motor plunger manually; use ECU calibration routine.",
+        "oem_part_needed": {
+          "part_number": "KXA00112",
+          "name": "OEM Stepper Motor / Idle Air Control Assembly",
+          "category": "Throttle Body & Fuel Injection",
+          "mrp": 950
+        }
+      }
+    ],
+    "diagnosis_gu": "માસ્ટર ટેક રમેશ: ક્લાસિક 350 ના થ્રોટલ બોડીમાં કાર્બન જમા થવાને કારણે આઇડલ સ્પીડ અસ્થિર થઈ છે (DTC P0505). થ્રોટલ બોડી સફાઈ અને સ્ટેપર મોટર સેટિંગ જરૂરી છે.",
+    "diagnosis_en": "Master Tech Ramesh: Erratic cold idle caused by carbon accumulation on Stepper Motor bypass orifice (DTC P0505). Throttle body ultrasonic flush recommended."
+  }
+]

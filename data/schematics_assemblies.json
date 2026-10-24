@@ -1,0 +1,288 @@
+[
+  {
+    "assembly_id": "ASM-J350-HEAD",
+    "title": "J-Series 350 SOHC Cylinder Head & Valvetrain",
+    "title_gu": "J-સિરીઝ ૩૫૦ સિલિન્ડર હેડ અને વાલ્વટ્રેન સ્કીમેટિક",
+    "platform": "J-Series (Classic 350 Reborn, Hunter 350, Meteor 350)",
+    "badge_color": "warning",
+    "icon": "fa-solid fa-gears text-warning",
+    "schematic_diagram": "jseries_head_exploded_3d",
+    "key_specifications": {
+      "valvetrain_type": "SOHC, 2-Valve with Hydraulic Roller Tappets",
+      "intake_clearance": "0.08 mm (Engine Stone Cold)",
+      "exhaust_clearance": "0.18 mm (Engine Stone Cold)",
+      "spark_plug_gap": "0.70 - 0.80 mm",
+      "combustion_chamber_volume": "34.2 cc"
+    },
+    "components": [
+      {
+        "item_no": 1,
+        "part_number": "574012/A",
+        "name": "SOHC Camshaft Assembly with Decompressor",
+        "name_gu": "SOHC કેમશાફ્ટ એસેમ્બલી",
+        "category": "Engine & Valvetrain",
+        "mrp": 2450,
+        "stock": 12,
+        "bin": "Rack C-04",
+        "torque_nm": "12 Nm (Cam Carrier Bolts)",
+        "master_tech_advice": "Master Tech Ramesh: Align timing mark punch dot flush with cylinder head gasket face before torquing sprocket."
+      },
+      {
+        "item_no": 2,
+        "part_number": "586033/B",
+        "name": "Hydraulic Roller Rocker Arm (Intake)",
+        "name_gu": "ઇનટેક રોલર રોકર આર્મ",
+        "category": "Engine & Valvetrain",
+        "mrp": 780,
+        "stock": 24,
+        "bin": "Rack C-05",
+        "torque_nm": "14 Nm (Rocker Pivot Shaft)",
+        "master_tech_advice": "Master Tech Ramesh: Pre-prime hydraulic lifter cartridge in clean engine oil before assembly."
+      },
+      {
+        "item_no": 3,
+        "part_number": "586034/B",
+        "name": "Hydraulic Roller Rocker Arm (Exhaust)",
+        "name_gu": "એક્ઝોસ્ટ રોલર રોકર આર્મ",
+        "category": "Engine & Valvetrain",
+        "mrp": 820,
+        "stock": 18,
+        "bin": "Rack C-06",
+        "torque_nm": "14 Nm (Rocker Pivot Shaft)",
+        "master_tech_advice": "Master Tech Ramesh: Check end-float clearance with micrometer feeler (<0.18 mm)."
+      },
+      {
+        "item_no": 4,
+        "part_number": "586010/C",
+        "name": "Cylinder Head Main Studs & Washers (4 Pcs Set)",
+        "name_gu": "સિલિન્ડર હેડ મેઇન સ્ટડ્સ (૪ નંગ)",
+        "category": "Fasteners & Hardware",
+        "mrp": 340,
+        "stock": 45,
+        "bin": "Bin S-12",
+        "torque_nm": "45 Nm (Stage 1: 20 Nm, Stage 2: 45 Nm Criss-Cross)",
+        "master_tech_advice": "Master Tech Ramesh: Always torque in diagonal criss-cross pattern; apply engine oil to threads and under washer face."
+      },
+      {
+        "item_no": 5,
+        "part_number": "574044/D",
+        "name": "Genuine MLS 3-Layer Metal Cylinder Head Gasket",
+        "name_gu": "MLS મેટલ સિલિન્ડર હેડ ગાસ્કેટ",
+        "category": "Gaskets & Seals",
+        "mrp": 550,
+        "stock": 35,
+        "bin": "Rack G-02",
+        "torque_nm": "Seated under 45 Nm Stud Torque",
+        "master_tech_advice": "Master Tech Ramesh: Single-use MLS gasket; never use liquid gasket maker on metal gasket face."
+      },
+      {
+        "item_no": 6,
+        "part_number": "574088/B",
+        "name": "Automatic Hydraulic Cam Chain Tensioner",
+        "name_gu": "ઓટોમેટિક કેમ ચેઇન ટેન્શનર",
+        "category": "Timing & Drive",
+        "mrp": 1150,
+        "stock": 16,
+        "bin": "Rack T-01",
+        "torque_nm": "10 Nm (Tensioner Body Bolts)",
+        "master_tech_advice": "Master Tech Ramesh: Retract ratchet plunger with screwdriver clip before bolting to cylinder block."
+      }
+    ]
+  },
+  {
+    "assembly_id": "ASM-TWIN650-CLUTCH",
+    "title": "650 Parallel-Twin Slipper & Assist Clutch Assembly",
+    "title_gu": "૬૫૦ ટ્વિન સ્લીપર & આસિસ્ટ ક્લચ સ્કીમેટિક",
+    "platform": "Parallel-Twin 648cc (Interceptor 650, Continental GT 650, Super Meteor 650)",
+    "badge_color": "danger",
+    "icon": "fa-solid fa-circle-notch text-danger",
+    "schematic_diagram": "twin650_clutch_exploded_3d",
+    "key_specifications": {
+      "clutch_type": "Wet Multi-Plate Slipper & Assist System",
+      "friction_plates_count": "7 Friction Plates (Kevlar Composite)",
+      "steel_plates_count": "6 Steel Separator Plates",
+      "free_play_at_lever": "2 - 3 mm",
+      "oil_grade_spec": "Motul 7100 15W-50 Synthetic (JASO MA2 Certified)"
+    },
+    "components": [
+      {
+        "item_no": 1,
+        "part_number": "147055/E",
+        "name": "Outer Clutch Basket with Primary Driven Gear",
+        "name_gu": "આઉટર ક્લચ બાસ્કેટ અને પ્રાઇમરી ગિયર",
+        "category": "Transmission & Clutch",
+        "mrp": 5800,
+        "stock": 6,
+        "bin": "Rack CL-01",
+        "torque_nm": "Driven by Crank Primary Gear",
+        "master_tech_advice": "Master Tech Ramesh: Inspect basket fingers for notch grooves caused by hard launches; deburr with needle file if minor."
+      },
+      {
+        "item_no": 2,
+        "part_number": "147056/C",
+        "name": "Slipper & Assist Inner Clutch Hub (Cam Ramp)",
+        "name_gu": "સ્લીપર & આસિસ્ટ ઇનર ક્લચ હબ",
+        "category": "Transmission & Clutch",
+        "mrp": 3400,
+        "stock": 8,
+        "bin": "Rack CL-02",
+        "torque_nm": "100 Nm (Left-Hand Reverse Thread Hub Nut)",
+        "master_tech_advice": "Master Tech Ramesh: CAUTION: Hub nut is reverse-threaded (left-hand thread). Lock basket with special holding tool before torquing to 100 Nm."
+      },
+      {
+        "item_no": 3,
+        "part_number": "586119/D",
+        "name": "Kevlar Friction Clutch Plates Pack (Set of 7)",
+        "name_gu": "કેવલર ફ્રિક્શન ક્લચ પ્લેટ્સ (૭ નંગ સેટ)",
+        "category": "Transmission & Clutch",
+        "mrp": 1450,
+        "stock": 28,
+        "bin": "Rack CL-03",
+        "torque_nm": "Slotted into Basket Fingers",
+        "master_tech_advice": "Master Tech Ramesh: Must soak friction plates in fresh 15W-50 oil for minimum 30 minutes before installing."
+      },
+      {
+        "item_no": 4,
+        "part_number": "586120/A",
+        "name": "Steel Clutch Separator Plates (Set of 6)",
+        "name_gu": "સ્ટીલ ક્લચ સેપરેટર પ્લેટ્સ (૬ નંગ)",
+        "category": "Transmission & Clutch",
+        "mrp": 650,
+        "stock": 30,
+        "bin": "Rack CL-04",
+        "torque_nm": "Alternated with Friction Plates",
+        "master_tech_advice": "Master Tech Ramesh: Lay plates on flat glass sheet with feeler gauge to check warpage (<0.10 mm tolerance)."
+      },
+      {
+        "item_no": 5,
+        "part_number": "147060/A",
+        "name": "Assist Clutch Springs & Bolts Set (3 Pcs)",
+        "name_gu": "આસિસ્ટ ક્લચ સ્પ્રિંગ્સ & બોલ્ટ્સ",
+        "category": "Transmission & Clutch",
+        "mrp": 280,
+        "stock": 40,
+        "bin": "Bin S-18",
+        "torque_nm": "10 Nm (Torqued Evenly in Rotational Order)",
+        "master_tech_advice": "Master Tech Ramesh: Tighten spring bolts 1 turn each sequentially to avoid cocking the pressure plate."
+      }
+    ]
+  },
+  {
+    "assembly_id": "ASM-VINTAGE-CRANK",
+    "title": "Vintage 1982 Cast-Iron Bullet 350 Heavy Crankshaft",
+    "title_gu": "વિન્ટેજ ૧૯૮૨ કાસ્ટ-આયર્ન હેવી ક્રેન્કશાફ્ટ & ફ્લાયવ્હીલ્સ",
+    "platform": "Vintage Cast-Iron Standard / Deluxe 350 (Heavy Crank)",
+    "badge_color": "info",
+    "icon": "fa-solid fa-weight-hanging text-info",
+    "schematic_diagram": "vintage_crank_exploded_3d",
+    "key_specifications": {
+      "flywheel_weight": "11.2 kg (Heavy Cast-Iron Inertia for Iconic Thump)",
+      "connecting_rod_bearing": "Phosphor Bronze Small End Bush & Roller Big End",
+      "runout_tolerance": "<0.03 mm on V-Blocks with Dial Indicator",
+      "balancing_factor": "60% Reciprocating Mass Balance"
+    },
+    "components": [
+      {
+        "item_no": 1,
+        "part_number": "110012/V",
+        "name": "Heavy Cast-Iron Flywheels Pair (11.2 kg Matched Set)",
+        "name_gu": "હેવી કાસ્ટ-આયર્ન ફ્લાયવ્હીલ્સ (૧૧.૨ કિલો સેટ)",
+        "category": "Vintage Heritage Engine",
+        "mrp": 8500,
+        "stock": 4,
+        "bin": "Heavy Bay Rack V-01",
+        "torque_nm": "Balanced on Lathe Mandrel",
+        "master_tech_advice": "Master Tech Ramesh: True the twin flywheels between dead centers on lathe; radial and axial runout must not exceed 0.025 mm."
+      },
+      {
+        "item_no": 2,
+        "part_number": "110015/V",
+        "name": "Forged Connecting Rod with Phosphor Bronze Bush",
+        "name_gu": "કનેક્ટિંગ રોડ અને બ્રોન્ઝ બુશ",
+        "category": "Vintage Heritage Engine",
+        "mrp": 2800,
+        "stock": 9,
+        "bin": "Rack V-02",
+        "torque_nm": "Fitted over Big-End Rollers",
+        "master_tech_advice": "Master Tech Ramesh: Ream the small-end bronze bush with hand adjustable reamer for exact 16.00 mm gudgeon pin fit."
+      },
+      {
+        "item_no": 3,
+        "part_number": "110020/V",
+        "name": "Hardened Precision Ground Crankpin & Taper Lock Nuts",
+        "name_gu": "હાર્ડન ક્રેન્કપિન અને લોક નટ્સ",
+        "category": "Vintage Heritage Engine",
+        "mrp": 1200,
+        "stock": 14,
+        "bin": "Rack V-03",
+        "torque_nm": "140 Nm (Taper Lock Pin Nuts)",
+        "master_tech_advice": "Master Tech Ramesh: Clean taper bore with surgical spirit before press fit; torque nuts to 140 Nm and peen lock washers."
+      },
+      {
+        "item_no": 4,
+        "part_number": "110045/V",
+        "name": "Timing Drive Half-Time Pinion & Nut",
+        "name_gu": "ટાઈમિંગ ડ્રાઈવ હાફ-ટાઈમ પીનિયન",
+        "category": "Vintage Heritage Engine",
+        "mrp": 680,
+        "stock": 12,
+        "bin": "Rack V-04",
+        "torque_nm": "40 Nm (Right-Hand Drive Pinion Nut)",
+        "master_tech_advice": "Master Tech Ramesh: Use pinion puller tool only; never hit pinion with hammer which knocks crankshaft out of true."
+      }
+    ]
+  },
+  {
+    "assembly_id": "ASM-SHERPA450-COOLING",
+    "title": "Sherpa 450 Liquid-Cooled Water Pump & Thermostat Loop",
+    "title_gu": "શેરપા ૪૫૦ લિક્વિડ-કૂલ્ડ વોટર પમ્પ & થર્મોસ્ટેટ લૂપ",
+    "platform": "Sherpa 450 Liquid-Cooled (Himalayan 450, Guerrilla 450)",
+    "badge_color": "success",
+    "icon": "fa-solid fa-snowflake text-success",
+    "schematic_diagram": "sherpa_cooling_exploded_3d",
+    "key_specifications": {
+      "cooling_type": "Pressurized Liquid Cooling with Integrated Water Pump",
+      "thermostat_opening_temp": "82°C (Fully Open at 95°C)",
+      "coolant_capacity": "1.7 Litres (50:50 Ethylene Glycol Pre-mix)",
+      "radiator_cap_pressure": "1.1 Bar (16 PSI)"
+    },
+    "components": [
+      {
+        "item_no": 1,
+        "part_number": "KXA00301",
+        "name": "High-Flow Water Pump Impeller & Shaft",
+        "name_gu": "હાઇ-ફ્લો વોટર પમ્પ ઇમ્પેલર & શાફ્ટ",
+        "category": "Cooling System",
+        "mrp": 1450,
+        "stock": 10,
+        "bin": "Rack SH-01",
+        "torque_nm": "10 Nm (Pump Cover Hex Bolts)",
+        "master_tech_advice": "Master Tech Ramesh: Inspect impeller PPS blades for cavitation wear; ensure smooth spin with zero shaft play."
+      },
+      {
+        "item_no": 2,
+        "part_number": "KXA00305",
+        "name": "Ceramic Mechanical Water Seal & Oil Seal Set",
+        "name_gu": "સિરામિક મિકેનિકલ વોટર સીલ & ઓઇલ સીલ",
+        "category": "Cooling System",
+        "mrp": 680,
+        "stock": 20,
+        "bin": "Rack SH-02",
+        "torque_nm": "Press-Fit using Mandrel Tool",
+        "master_tech_advice": "Master Tech Ramesh: CAUTION: Never touch the white ceramic seal face with bare fingers; oil contamination causes weep hole leak."
+      },
+      {
+        "item_no": 3,
+        "part_number": "KXA00310",
+        "name": "82°C Wax Pellet Thermostat Unit & Housing",
+        "name_gu": "૮૨°C વેક્સ થર્મોસ્ટેટ યુનિટ",
+        "category": "Cooling System",
+        "mrp": 890,
+        "stock": 15,
+        "bin": "Rack SH-03",
+        "torque_nm": "9 Nm (Thermostat Housing Bolts)",
+        "master_tech_advice": "Master Tech Ramesh: Test thermostat in boiling water with thermometer; valve must lift >7 mm at 95°C."
+      }
+    ]
+  }
+]

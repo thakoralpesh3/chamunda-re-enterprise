@@ -1,0 +1,1441 @@
+[
+  {
+    "inspection_id": "BORE-20260917-6739",
+    "timestamp": "2026-09-17 11:08 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260917-6739",
+    "timestamp": "2026-09-17 11:08 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260917-6739",
+    "timestamp": "2026-09-17 11:08 PM",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "moderate_carbon",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.45,
+      "carbon_density": "Medium Dry Soot",
+      "piston_top_visibility_pct": 60,
+      "status": "Acceptable"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 85,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Mild Glazing",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Light Carbon Dust",
+      "exhaust_valve_carbon_deposit": "Mild Carbon on Rim",
+      "valve_face_burn_signs": false,
+      "status": "Good Seal"
+    },
+    "combustion_health_score": 80,
+    "chamber_grade": "Grade B (Normal Serviceable Condition)",
+    "prescribed_treatment": "Routine Motul Fuel System Clean tank treatment to disperse carbon during next 200 km ride.",
+    "cost_estimate_inr": 450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: સામાન્ય વપરાશ અનુસાર હળવો કાર્બન છે. ફ્યુઅલ એડિટિવ સારવારથી એન્જિન ક્લીન થઈ જશે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Mild carbon buildup consistent with normal mileage. Fuel system cleaner recommended."
+  },
+  {
+    "inspection_id": "BORE-20260917-6738",
+    "timestamp": "2026-09-17 11:08 PM",
+    "bike_model": "Himalayan 450",
+    "registration_no": "GJ-02-ZZ-4567",
+    "odometer_km": 32000,
+    "scenario": "bore_score_damage",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.85,
+      "carbon_density": "Dense Flaky Soot",
+      "piston_top_visibility_pct": 35,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 48,
+      "micro_scratch_detected": true,
+      "thrust_face_glazing": "Severe Friction Glaze on Thrust Face",
+      "status": "Scored Cylinder"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Carbon Sludge on Stem",
+      "exhaust_valve_carbon_deposit": "Pitted Valve Seat Margin",
+      "valve_face_burn_signs": true,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 44,
+    "chamber_grade": "Grade D (Severe Bore Scratches / Rebore Needed)",
+    "prescribed_treatment": "Mechanical cylinder block removal required. Precision rebore to +0.25 mm oversize with new Royal Enfield OEM Mahle piston & ring pack.",
+    "cost_estimate_inr": 6800,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: સાહેબ, સિલિન્ડર સ્લીવ પર વર્ટિકલ સ્ક્રેચ (Bore Score) દેખાયા છે. ઓઇલ કંજમ્પશન વધશે, તેથી સિલિન્ડર કિટ અથવા રી-બોર જરૂરી છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Vertical scoring detected on cylinder thrust face. Teardown and rebore / cylinder block replacement required."
+  },
+  {
+    "inspection_id": "BORE-20260917-6738",
+    "timestamp": "2026-09-17 11:08 PM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-01-XX-9999",
+    "odometer_km": 1200,
+    "scenario": "pristine_showroom",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.12,
+      "carbon_density": "Light Golden Oil Film",
+      "piston_top_visibility_pct": 95,
+      "status": "Acceptable"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 96,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Zero Glaze (Original Factory Honing Crosshatch)",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Pristine Factory Clean",
+      "exhaust_valve_carbon_deposit": "Minimal Heat Tint",
+      "valve_face_burn_signs": false,
+      "status": "Good Seal"
+    },
+    "combustion_health_score": 96,
+    "chamber_grade": "Grade A (Showroom Factory Spec)",
+    "prescribed_treatment": "No treatment required. Engine combustion chamber in showroom condition.",
+    "cost_estimate_inr": 0,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: Hunter 350 (GJ-01-XX-9999) નું સિલિન્ડર અને પિસ્ટન ૧૦૦% શોરૂમ કન્ડિશનમાં છે. હોનિંગ ક્રોસહેચ સંપૂર્ણ સચવાયેલું છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Cylinder and piston for Hunter 350 are in immaculate factory showroom condition. Optimal compression."
+  },
+  {
+    "inspection_id": "BORE-20260917-6738",
+    "timestamp": "2026-09-17 11:08 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 16500,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260914-7776",
+    "timestamp": "2026-09-14 11:12 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260914-7776",
+    "timestamp": "2026-09-14 11:12 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260914-7776",
+    "timestamp": "2026-09-14 11:12 PM",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "moderate_carbon",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.45,
+      "carbon_density": "Medium Dry Soot",
+      "piston_top_visibility_pct": 60,
+      "status": "Acceptable"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 85,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Mild Glazing",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Light Carbon Dust",
+      "exhaust_valve_carbon_deposit": "Mild Carbon on Rim",
+      "valve_face_burn_signs": false,
+      "status": "Good Seal"
+    },
+    "combustion_health_score": 80,
+    "chamber_grade": "Grade B (Normal Serviceable Condition)",
+    "prescribed_treatment": "Routine Motul Fuel System Clean tank treatment to disperse carbon during next 200 km ride.",
+    "cost_estimate_inr": 450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: સામાન્ય વપરાશ અનુસાર હળવો કાર્બન છે. ફ્યુઅલ એડિટિવ સારવારથી એન્જિન ક્લીન થઈ જશે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Mild carbon buildup consistent with normal mileage. Fuel system cleaner recommended."
+  },
+  {
+    "inspection_id": "BORE-20260914-7775",
+    "timestamp": "2026-09-14 11:12 PM",
+    "bike_model": "Himalayan 450",
+    "registration_no": "GJ-02-ZZ-4567",
+    "odometer_km": 32000,
+    "scenario": "bore_score_damage",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.85,
+      "carbon_density": "Dense Flaky Soot",
+      "piston_top_visibility_pct": 35,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 48,
+      "micro_scratch_detected": true,
+      "thrust_face_glazing": "Severe Friction Glaze on Thrust Face",
+      "status": "Scored Cylinder"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Carbon Sludge on Stem",
+      "exhaust_valve_carbon_deposit": "Pitted Valve Seat Margin",
+      "valve_face_burn_signs": true,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 44,
+    "chamber_grade": "Grade D (Severe Bore Scratches / Rebore Needed)",
+    "prescribed_treatment": "Mechanical cylinder block removal required. Precision rebore to +0.25 mm oversize with new Royal Enfield OEM Mahle piston & ring pack.",
+    "cost_estimate_inr": 6800,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: સાહેબ, સિલિન્ડર સ્લીવ પર વર્ટિકલ સ્ક્રેચ (Bore Score) દેખાયા છે. ઓઇલ કંજમ્પશન વધશે, તેથી સિલિન્ડર કિટ અથવા રી-બોર જરૂરી છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Vertical scoring detected on cylinder thrust face. Teardown and rebore / cylinder block replacement required."
+  },
+  {
+    "inspection_id": "BORE-20260914-7775",
+    "timestamp": "2026-09-14 11:12 PM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-01-XX-9999",
+    "odometer_km": 1200,
+    "scenario": "pristine_showroom",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.12,
+      "carbon_density": "Light Golden Oil Film",
+      "piston_top_visibility_pct": 95,
+      "status": "Acceptable"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 96,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Zero Glaze (Original Factory Honing Crosshatch)",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Pristine Factory Clean",
+      "exhaust_valve_carbon_deposit": "Minimal Heat Tint",
+      "valve_face_burn_signs": false,
+      "status": "Good Seal"
+    },
+    "combustion_health_score": 96,
+    "chamber_grade": "Grade A (Showroom Factory Spec)",
+    "prescribed_treatment": "No treatment required. Engine combustion chamber in showroom condition.",
+    "cost_estimate_inr": 0,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: Hunter 350 (GJ-01-XX-9999) નું સિલિન્ડર અને પિસ્ટન ૧૦૦% શોરૂમ કન્ડિશનમાં છે. હોનિંગ ક્રોસહેચ સંપૂર્ણ સચવાયેલું છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Cylinder and piston for Hunter 350 are in immaculate factory showroom condition. Optimal compression."
+  },
+  {
+    "inspection_id": "BORE-20260914-7775",
+    "timestamp": "2026-09-14 11:12 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 16500,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260914-5048",
+    "timestamp": "2026-09-14 12:14 AM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260914-5048",
+    "timestamp": "2026-09-14 12:14 AM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260914-5048",
+    "timestamp": "2026-09-14 12:14 AM",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "moderate_carbon",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.45,
+      "carbon_density": "Medium Dry Soot",
+      "piston_top_visibility_pct": 60,
+      "status": "Acceptable"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 85,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Mild Glazing",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Light Carbon Dust",
+      "exhaust_valve_carbon_deposit": "Mild Carbon on Rim",
+      "valve_face_burn_signs": false,
+      "status": "Good Seal"
+    },
+    "combustion_health_score": 80,
+    "chamber_grade": "Grade B (Normal Serviceable Condition)",
+    "prescribed_treatment": "Routine Motul Fuel System Clean tank treatment to disperse carbon during next 200 km ride.",
+    "cost_estimate_inr": 450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: સામાન્ય વપરાશ અનુસાર હળવો કાર્બન છે. ફ્યુઅલ એડિટિવ સારવારથી એન્જિન ક્લીન થઈ જશે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Mild carbon buildup consistent with normal mileage. Fuel system cleaner recommended."
+  },
+  {
+    "inspection_id": "BORE-20260914-5047",
+    "timestamp": "2026-09-14 12:14 AM",
+    "bike_model": "Himalayan 450",
+    "registration_no": "GJ-02-ZZ-4567",
+    "odometer_km": 32000,
+    "scenario": "bore_score_damage",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.85,
+      "carbon_density": "Dense Flaky Soot",
+      "piston_top_visibility_pct": 35,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 48,
+      "micro_scratch_detected": true,
+      "thrust_face_glazing": "Severe Friction Glaze on Thrust Face",
+      "status": "Scored Cylinder"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Carbon Sludge on Stem",
+      "exhaust_valve_carbon_deposit": "Pitted Valve Seat Margin",
+      "valve_face_burn_signs": true,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 44,
+    "chamber_grade": "Grade D (Severe Bore Scratches / Rebore Needed)",
+    "prescribed_treatment": "Mechanical cylinder block removal required. Precision rebore to +0.25 mm oversize with new Royal Enfield OEM Mahle piston & ring pack.",
+    "cost_estimate_inr": 6800,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: સાહેબ, સિલિન્ડર સ્લીવ પર વર્ટિકલ સ્ક્રેચ (Bore Score) દેખાયા છે. ઓઇલ કંજમ્પશન વધશે, તેથી સિલિન્ડર કિટ અથવા રી-બોર જરૂરી છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Vertical scoring detected on cylinder thrust face. Teardown and rebore / cylinder block replacement required."
+  },
+  {
+    "inspection_id": "BORE-20260914-5047",
+    "timestamp": "2026-09-14 12:14 AM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-01-XX-9999",
+    "odometer_km": 1200,
+    "scenario": "pristine_showroom",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.12,
+      "carbon_density": "Light Golden Oil Film",
+      "piston_top_visibility_pct": 95,
+      "status": "Acceptable"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 96,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Zero Glaze (Original Factory Honing Crosshatch)",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Pristine Factory Clean",
+      "exhaust_valve_carbon_deposit": "Minimal Heat Tint",
+      "valve_face_burn_signs": false,
+      "status": "Good Seal"
+    },
+    "combustion_health_score": 96,
+    "chamber_grade": "Grade A (Showroom Factory Spec)",
+    "prescribed_treatment": "No treatment required. Engine combustion chamber in showroom condition.",
+    "cost_estimate_inr": 0,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: Hunter 350 (GJ-01-XX-9999) નું સિલિન્ડર અને પિસ્ટન ૧૦૦% શોરૂમ કન્ડિશનમાં છે. હોનિંગ ક્રોસહેચ સંપૂર્ણ સચવાયેલું છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Cylinder and piston for Hunter 350 are in immaculate factory showroom condition. Optimal compression."
+  },
+  {
+    "inspection_id": "BORE-20260914-5047",
+    "timestamp": "2026-09-14 12:14 AM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 16500,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260913-0407",
+    "timestamp": "2026-09-13 10:56 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260913-0406",
+    "timestamp": "2026-09-13 10:56 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260913-0406",
+    "timestamp": "2026-09-13 10:56 PM",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "moderate_carbon",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.45,
+      "carbon_density": "Medium Dry Soot",
+      "piston_top_visibility_pct": 60,
+      "status": "Acceptable"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 85,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Mild Glazing",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Light Carbon Dust",
+      "exhaust_valve_carbon_deposit": "Mild Carbon on Rim",
+      "valve_face_burn_signs": false,
+      "status": "Good Seal"
+    },
+    "combustion_health_score": 80,
+    "chamber_grade": "Grade B (Normal Serviceable Condition)",
+    "prescribed_treatment": "Routine Motul Fuel System Clean tank treatment to disperse carbon during next 200 km ride.",
+    "cost_estimate_inr": 450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: સામાન્ય વપરાશ અનુસાર હળવો કાર્બન છે. ફ્યુઅલ એડિટિવ સારવારથી એન્જિન ક્લીન થઈ જશે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Mild carbon buildup consistent with normal mileage. Fuel system cleaner recommended."
+  },
+  {
+    "inspection_id": "BORE-20260913-0405",
+    "timestamp": "2026-09-13 10:56 PM",
+    "bike_model": "Himalayan 450",
+    "registration_no": "GJ-02-ZZ-4567",
+    "odometer_km": 32000,
+    "scenario": "bore_score_damage",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.85,
+      "carbon_density": "Dense Flaky Soot",
+      "piston_top_visibility_pct": 35,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 48,
+      "micro_scratch_detected": true,
+      "thrust_face_glazing": "Severe Friction Glaze on Thrust Face",
+      "status": "Scored Cylinder"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Carbon Sludge on Stem",
+      "exhaust_valve_carbon_deposit": "Pitted Valve Seat Margin",
+      "valve_face_burn_signs": true,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 44,
+    "chamber_grade": "Grade D (Severe Bore Scratches / Rebore Needed)",
+    "prescribed_treatment": "Mechanical cylinder block removal required. Precision rebore to +0.25 mm oversize with new Royal Enfield OEM Mahle piston & ring pack.",
+    "cost_estimate_inr": 6800,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: સાહેબ, સિલિન્ડર સ્લીવ પર વર્ટિકલ સ્ક્રેચ (Bore Score) દેખાયા છે. ઓઇલ કંજમ્પશન વધશે, તેથી સિલિન્ડર કિટ અથવા રી-બોર જરૂરી છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Vertical scoring detected on cylinder thrust face. Teardown and rebore / cylinder block replacement required."
+  },
+  {
+    "inspection_id": "BORE-20260913-0405",
+    "timestamp": "2026-09-13 10:56 PM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-01-XX-9999",
+    "odometer_km": 1200,
+    "scenario": "pristine_showroom",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.12,
+      "carbon_density": "Light Golden Oil Film",
+      "piston_top_visibility_pct": 95,
+      "status": "Acceptable"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 96,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Zero Glaze (Original Factory Honing Crosshatch)",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Pristine Factory Clean",
+      "exhaust_valve_carbon_deposit": "Minimal Heat Tint",
+      "valve_face_burn_signs": false,
+      "status": "Good Seal"
+    },
+    "combustion_health_score": 96,
+    "chamber_grade": "Grade A (Showroom Factory Spec)",
+    "prescribed_treatment": "No treatment required. Engine combustion chamber in showroom condition.",
+    "cost_estimate_inr": 0,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: Hunter 350 (GJ-01-XX-9999) નું સિલિન્ડર અને પિસ્ટન ૧૦૦% શોરૂમ કન્ડિશનમાં છે. હોનિંગ ક્રોસહેચ સંપૂર્ણ સચવાયેલું છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Cylinder and piston for Hunter 350 are in immaculate factory showroom condition. Optimal compression."
+  },
+  {
+    "inspection_id": "BORE-20260913-0405",
+    "timestamp": "2026-09-13 10:56 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 16500,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260912-6121",
+    "timestamp": "2026-09-12 11:32 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260912-6042",
+    "timestamp": "2026-09-12 11:30 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260912-6042",
+    "timestamp": "2026-09-12 11:30 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260912-6042",
+    "timestamp": "2026-09-12 11:30 PM",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "moderate_carbon",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.45,
+      "carbon_density": "Medium Dry Soot",
+      "piston_top_visibility_pct": 60,
+      "status": "Acceptable"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 85,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Mild Glazing",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Light Carbon Dust",
+      "exhaust_valve_carbon_deposit": "Mild Carbon on Rim",
+      "valve_face_burn_signs": false,
+      "status": "Good Seal"
+    },
+    "combustion_health_score": 80,
+    "chamber_grade": "Grade B (Normal Serviceable Condition)",
+    "prescribed_treatment": "Routine Motul Fuel System Clean tank treatment to disperse carbon during next 200 km ride.",
+    "cost_estimate_inr": 450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: સામાન્ય વપરાશ અનુસાર હળવો કાર્બન છે. ફ્યુઅલ એડિટિવ સારવારથી એન્જિન ક્લીન થઈ જશે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Mild carbon buildup consistent with normal mileage. Fuel system cleaner recommended."
+  },
+  {
+    "inspection_id": "BORE-20260912-6041",
+    "timestamp": "2026-09-12 11:30 PM",
+    "bike_model": "Himalayan 450",
+    "registration_no": "GJ-02-ZZ-4567",
+    "odometer_km": 32000,
+    "scenario": "bore_score_damage",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.85,
+      "carbon_density": "Dense Flaky Soot",
+      "piston_top_visibility_pct": 35,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 48,
+      "micro_scratch_detected": true,
+      "thrust_face_glazing": "Severe Friction Glaze on Thrust Face",
+      "status": "Scored Cylinder"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Carbon Sludge on Stem",
+      "exhaust_valve_carbon_deposit": "Pitted Valve Seat Margin",
+      "valve_face_burn_signs": true,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 44,
+    "chamber_grade": "Grade D (Severe Bore Scratches / Rebore Needed)",
+    "prescribed_treatment": "Mechanical cylinder block removal required. Precision rebore to +0.25 mm oversize with new Royal Enfield OEM Mahle piston & ring pack.",
+    "cost_estimate_inr": 6800,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: સાહેબ, સિલિન્ડર સ્લીવ પર વર્ટિકલ સ્ક્રેચ (Bore Score) દેખાયા છે. ઓઇલ કંજમ્પશન વધશે, તેથી સિલિન્ડર કિટ અથવા રી-બોર જરૂરી છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Vertical scoring detected on cylinder thrust face. Teardown and rebore / cylinder block replacement required."
+  },
+  {
+    "inspection_id": "BORE-20260912-6041",
+    "timestamp": "2026-09-12 11:30 PM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-01-XX-9999",
+    "odometer_km": 1200,
+    "scenario": "pristine_showroom",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.12,
+      "carbon_density": "Light Golden Oil Film",
+      "piston_top_visibility_pct": 95,
+      "status": "Acceptable"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 96,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Zero Glaze (Original Factory Honing Crosshatch)",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Pristine Factory Clean",
+      "exhaust_valve_carbon_deposit": "Minimal Heat Tint",
+      "valve_face_burn_signs": false,
+      "status": "Good Seal"
+    },
+    "combustion_health_score": 96,
+    "chamber_grade": "Grade A (Showroom Factory Spec)",
+    "prescribed_treatment": "No treatment required. Engine combustion chamber in showroom condition.",
+    "cost_estimate_inr": 0,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: Hunter 350 (GJ-01-XX-9999) નું સિલિન્ડર અને પિસ્ટન ૧૦૦% શોરૂમ કન્ડિશનમાં છે. હોનિંગ ક્રોસહેચ સંપૂર્ણ સચવાયેલું છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Cylinder and piston for Hunter 350 are in immaculate factory showroom condition. Optimal compression."
+  },
+  {
+    "inspection_id": "BORE-20260912-6041",
+    "timestamp": "2026-09-12 11:30 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 16500,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260912-5996",
+    "timestamp": "2026-09-12 11:29 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260912-5996",
+    "timestamp": "2026-09-12 11:29 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260912-5996",
+    "timestamp": "2026-09-12 11:29 PM",
+    "bike_model": "Classic 350",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "moderate_carbon",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.45,
+      "carbon_density": "Medium Dry Soot",
+      "piston_top_visibility_pct": 60,
+      "status": "Acceptable"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 85,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Mild Glazing",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Light Carbon Dust",
+      "exhaust_valve_carbon_deposit": "Mild Carbon on Rim",
+      "valve_face_burn_signs": false,
+      "status": "Good Seal"
+    },
+    "combustion_health_score": 80,
+    "chamber_grade": "Grade B (Normal Serviceable Condition)",
+    "prescribed_treatment": "Routine Motul Fuel System Clean tank treatment to disperse carbon during next 200 km ride.",
+    "cost_estimate_inr": 450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: સામાન્ય વપરાશ અનુસાર હળવો કાર્બન છે. ફ્યુઅલ એડિટિવ સારવારથી એન્જિન ક્લીન થઈ જશે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Mild carbon buildup consistent with normal mileage. Fuel system cleaner recommended."
+  },
+  {
+    "inspection_id": "BORE-20260912-5995",
+    "timestamp": "2026-09-12 11:29 PM",
+    "bike_model": "Himalayan 450",
+    "registration_no": "GJ-02-ZZ-4567",
+    "odometer_km": 32000,
+    "scenario": "bore_score_damage",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.85,
+      "carbon_density": "Dense Flaky Soot",
+      "piston_top_visibility_pct": 35,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 48,
+      "micro_scratch_detected": true,
+      "thrust_face_glazing": "Severe Friction Glaze on Thrust Face",
+      "status": "Scored Cylinder"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Carbon Sludge on Stem",
+      "exhaust_valve_carbon_deposit": "Pitted Valve Seat Margin",
+      "valve_face_burn_signs": true,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 44,
+    "chamber_grade": "Grade D (Severe Bore Scratches / Rebore Needed)",
+    "prescribed_treatment": "Mechanical cylinder block removal required. Precision rebore to +0.25 mm oversize with new Royal Enfield OEM Mahle piston & ring pack.",
+    "cost_estimate_inr": 6800,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: સાહેબ, સિલિન્ડર સ્લીવ પર વર્ટિકલ સ્ક્રેચ (Bore Score) દેખાયા છે. ઓઇલ કંજમ્પશન વધશે, તેથી સિલિન્ડર કિટ અથવા રી-બોર જરૂરી છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Vertical scoring detected on cylinder thrust face. Teardown and rebore / cylinder block replacement required."
+  },
+  {
+    "inspection_id": "BORE-20260912-5995",
+    "timestamp": "2026-09-12 11:29 PM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-01-XX-9999",
+    "odometer_km": 1200,
+    "scenario": "pristine_showroom",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.12,
+      "carbon_density": "Light Golden Oil Film",
+      "piston_top_visibility_pct": 95,
+      "status": "Acceptable"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 96,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Zero Glaze (Original Factory Honing Crosshatch)",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Pristine Factory Clean",
+      "exhaust_valve_carbon_deposit": "Minimal Heat Tint",
+      "valve_face_burn_signs": false,
+      "status": "Good Seal"
+    },
+    "combustion_health_score": 96,
+    "chamber_grade": "Grade A (Showroom Factory Spec)",
+    "prescribed_treatment": "No treatment required. Engine combustion chamber in showroom condition.",
+    "cost_estimate_inr": 0,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: Hunter 350 (GJ-01-XX-9999) નું સિલિન્ડર અને પિસ્ટન ૧૦૦% શોરૂમ કન્ડિશનમાં છે. હોનિંગ ક્રોસહેચ સંપૂર્ણ સચવાયેલું છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Cylinder and piston for Hunter 350 are in immaculate factory showroom condition. Optimal compression."
+  },
+  {
+    "inspection_id": "BORE-20260912-5995",
+    "timestamp": "2026-09-12 11:29 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 16500,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260912-5963",
+    "timestamp": "2026-09-12 11:29 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260912-5963",
+    "timestamp": "2026-09-12 11:29 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260912-5962",
+    "timestamp": "2026-09-12 11:29 PM",
+    "bike_model": "Himalayan 450",
+    "registration_no": "GJ-02-ZZ-4567",
+    "odometer_km": 32000,
+    "scenario": "bore_score_damage",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.85,
+      "carbon_density": "Dense Flaky Soot",
+      "piston_top_visibility_pct": 35,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 48,
+      "micro_scratch_detected": true,
+      "thrust_face_glazing": "Severe Friction Glaze on Thrust Face",
+      "status": "Scored Cylinder"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Carbon Sludge on Stem",
+      "exhaust_valve_carbon_deposit": "Pitted Valve Seat Margin",
+      "valve_face_burn_signs": true,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 44,
+    "chamber_grade": "Grade D (Severe Bore Scratches / Rebore Needed)",
+    "prescribed_treatment": "Mechanical cylinder block removal required. Precision rebore to +0.25 mm oversize with new Royal Enfield OEM Mahle piston & ring pack.",
+    "cost_estimate_inr": 6800,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: સાહેબ, સિલિન્ડર સ્લીવ પર વર્ટિકલ સ્ક્રેચ (Bore Score) દેખાયા છે. ઓઇલ કંજમ્પશન વધશે, તેથી સિલિન્ડર કિટ અથવા રી-બોર જરૂરી છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Vertical scoring detected on cylinder thrust face. Teardown and rebore / cylinder block replacement required."
+  },
+  {
+    "inspection_id": "BORE-20260912-5962",
+    "timestamp": "2026-09-12 11:29 PM",
+    "bike_model": "Hunter 350",
+    "registration_no": "GJ-01-XX-9999",
+    "odometer_km": 1200,
+    "scenario": "pristine_showroom",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.12,
+      "carbon_density": "Light Golden Oil Film",
+      "piston_top_visibility_pct": 95,
+      "status": "Acceptable"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 96,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Zero Glaze (Original Factory Honing Crosshatch)",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Pristine Factory Clean",
+      "exhaust_valve_carbon_deposit": "Minimal Heat Tint",
+      "valve_face_burn_signs": false,
+      "status": "Good Seal"
+    },
+    "combustion_health_score": 96,
+    "chamber_grade": "Grade A (Showroom Factory Spec)",
+    "prescribed_treatment": "No treatment required. Engine combustion chamber in showroom condition.",
+    "cost_estimate_inr": 0,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: Hunter 350 (GJ-01-XX-9999) નું સિલિન્ડર અને પિસ્ટન ૧૦૦% શોરૂમ કન્ડિશનમાં છે. હોનિંગ ક્રોસહેચ સંપૂર્ણ સચવાયેલું છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: Cylinder and piston for Hunter 350 are in immaculate factory showroom condition. Optimal compression."
+  },
+  {
+    "inspection_id": "BORE-20260912-5962",
+    "timestamp": "2026-09-12 11:29 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 16500,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260912-5653",
+    "timestamp": "2026-09-12 11:24 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260912-5623",
+    "timestamp": "2026-09-12 11:23 PM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 15000,
+    "scenario": "heavy_carbon_crust",
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 1.15,
+      "carbon_density": "Heavy Baked Crust with Edge Flaking",
+      "piston_top_visibility_pct": 20,
+      "status": "Excessive Carbon"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 72,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Noticeable Ring Glaze at TDC",
+      "status": "Intact Crosshatch"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Dry Black Crust",
+      "exhaust_valve_carbon_deposit": "Heavy Carbon Margin Lip",
+      "valve_face_burn_signs": false,
+      "status": "Valve Leak Risk"
+    },
+    "combustion_health_score": 58,
+    "chamber_grade": "Grade C (Immediate Chemical De-Carb Needed)",
+    "prescribed_treatment": "Liqui Moly Combustion Chamber Pro-Line Foam Treatment (30 min soak) + Italian Seafoam Flush + New Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન પર ૧.૧૫ mm જાડું કાર્બન જામ્યું છે જેનાથી એન્જિન ગરમ થાય છે અને નોકિંગ થાય છે. કેમિકલ ડી-કાર્બોનાઇઝેશન કરવું અનિવાર્ય છે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 1.15 mm hardened carbon encrustation causing thermal hot-spots and pre-ignition knock. Deep chemical decarb treatment strongly advised."
+  },
+  {
+    "inspection_id": "BORE-20260912-001",
+    "timestamp": "2026-09-12 11:30 AM",
+    "bike_model": "Classic 350 (Reborn)",
+    "registration_no": "GJ-02-BQ-1234",
+    "odometer_km": 16400,
+    "piston_crown": {
+      "carbon_crust_thickness_mm": 0.95,
+      "carbon_density": "Hardened Baked Encrustation",
+      "piston_top_visibility_pct": 25,
+      "status": "Excessive Carbon Buildup"
+    },
+    "cylinder_wall": {
+      "honing_crosshatch_retention_pct": 76,
+      "micro_scratch_detected": false,
+      "thrust_face_glazing": "Moderate Glaze at Top Dead Center (TDC)",
+      "status": "Hone Preserved, De-glaze Recommended"
+    },
+    "valve_seals": {
+      "intake_valve_carbon_deposit": "Light Dry Powder",
+      "exhaust_valve_carbon_deposit": "Thick Carbon Margin with Seating Carbon Lip",
+      "valve_face_burn_signs": false,
+      "status": "Exhaust Valve Sealing Compromised"
+    },
+    "combustion_health_score": 64,
+    "chamber_grade": "Grade C (De-Carbonization Required)",
+    "prescribed_treatment": "Deep Chemical Combustion Chamber Soak with Liqui Moly Pro-Line Carbon Cleaner + Throttle Flush + New NGK Spark Plug.",
+    "cost_estimate_inr": 1450,
+    "master_tech_verdict_gu": "માસ્ટર ટેક રમેશ: પિસ્ટન ક્રાઉન પર ૦.૯૫ mm જાડું કાર્બન જામી ગયું છે અને એક્ઝોસ્ટ વાલ્વ સીટિંગ લીક થાય છે. એન્જિન ખોલ્યા વગર કેમિકલ ડી-કાર્બોનાઇઝેશન કરવાથી પિક-અપ અને માઇલેજ ૪-૫ km/l વધી જશે.",
+    "master_tech_verdict_en": "Master Tech Ramesh: 0.95 mm baked carbon layer on piston crown causing pre-ignition knock. Chemical combustion chamber decarb recommended to restore compression."
+  }
+]

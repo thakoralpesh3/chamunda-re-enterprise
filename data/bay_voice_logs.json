@@ -1,0 +1,1345 @@
+[
+  {
+    "log_id": "VOX-20260917-6743",
+    "timestamp": "2026-09-17 11:09 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260917-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260917-6743",
+    "timestamp": "2026-09-17 11:09 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260917-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260917-6743",
+    "timestamp": "2026-09-17 11:09 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા, GJ-02-BQ-1234 માં લિક્વી મોલી ઓઇલ નાખી દીધું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260917-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Engine Oil Replacement",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      }
+    ],
+    "parts_total_inr": 2450,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 2900,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Engine Oil Replacement' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 1 genuine RE items (₹2,450.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹2,900.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Engine Oil Replacement' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260917-6742",
+    "timestamp": "2026-09-17 11:09 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260917-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260914-7780",
+    "timestamp": "2026-09-14 11:13 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260914-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260914-7780",
+    "timestamp": "2026-09-14 11:13 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260914-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260914-7780",
+    "timestamp": "2026-09-14 11:13 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા, GJ-02-BQ-1234 માં લિક્વી મોલી ઓઇલ નાખી દીધું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260914-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Engine Oil Replacement",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      }
+    ],
+    "parts_total_inr": 2450,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 2900,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Engine Oil Replacement' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 1 genuine RE items (₹2,450.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹2,900.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Engine Oil Replacement' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260914-7779",
+    "timestamp": "2026-09-14 11:12 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260914-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260914-5054",
+    "timestamp": "2026-09-14 12:14 AM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260914-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260914-5054",
+    "timestamp": "2026-09-14 12:14 AM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260914-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260914-5054",
+    "timestamp": "2026-09-14 12:14 AM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા, GJ-02-BQ-1234 માં લિક્વી મોલી ઓઇલ નાખી દીધું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260914-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Engine Oil Replacement",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      }
+    ],
+    "parts_total_inr": 2450,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 2900,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Engine Oil Replacement' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 1 genuine RE items (₹2,450.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹2,900.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Engine Oil Replacement' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260914-5053",
+    "timestamp": "2026-09-14 12:14 AM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260914-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260913-0413",
+    "timestamp": "2026-09-13 10:56 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260913-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260913-0413",
+    "timestamp": "2026-09-13 10:56 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260913-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260913-0413",
+    "timestamp": "2026-09-13 10:56 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા, GJ-02-BQ-1234 માં લિક્વી મોલી ઓઇલ નાખી દીધું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260913-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Engine Oil Replacement",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      }
+    ],
+    "parts_total_inr": 2450,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 2900,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Engine Oil Replacement' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 1 genuine RE items (₹2,450.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹2,900.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Engine Oil Replacement' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260913-0411",
+    "timestamp": "2026-09-13 10:56 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260913-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-6047",
+    "timestamp": "2026-09-12 11:30 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-6047",
+    "timestamp": "2026-09-12 11:30 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-6046",
+    "timestamp": "2026-09-12 11:30 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા, GJ-02-BQ-1234 માં લિક્વી મોલી ઓઇલ નાખી દીધું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Engine Oil Replacement",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      }
+    ],
+    "parts_total_inr": 2450,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 2900,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Engine Oil Replacement' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 1 genuine RE items (₹2,450.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹2,900.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Engine Oil Replacement' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-6045",
+    "timestamp": "2026-09-12 11:30 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-5157",
+    "timestamp": "2026-09-12 11:15 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-5157",
+    "timestamp": "2026-09-12 11:15 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-5157",
+    "timestamp": "2026-09-12 11:15 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા, GJ-02-BQ-1234 માં લિક્વી મોલી ઓઇલ નાખી દીધું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Engine Oil Replacement",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      }
+    ],
+    "parts_total_inr": 2450,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 2900,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Engine Oil Replacement' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 1 genuine RE items (₹2,450.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹2,900.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Engine Oil Replacement' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-5156",
+    "timestamp": "2026-09-12 11:15 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-4309",
+    "timestamp": "2026-09-12 11:01 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા, ગાડી નંબર GJ-02-BQ-1234 માં લિક્વી મોલી 15W-50 એન્જિન ઓઇલ અને નવું ઓઇલ ફિલ્ટર નાખી દીધું છે, બિલમાં એડ કરી દો",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Complete Service & Ready for Delivery",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_5",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Complete Service & Ready for Delivery' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Complete Service & Ready for Delivery' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-4250",
+    "timestamp": "2026-09-12 11:00 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-4250",
+    "timestamp": "2026-09-12 11:00 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-4250",
+    "timestamp": "2026-09-12 11:00 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા, GJ-02-BQ-1234 માં લિક્વી મોલી ઓઇલ નાખી દીધું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Engine Oil Replacement",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      }
+    ],
+    "parts_total_inr": 2450,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 2900,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Engine Oil Replacement' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 1 genuine RE items (₹2,450.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹2,900.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Engine Oil Replacement' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-4249",
+    "timestamp": "2026-09-12 11:00 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-4195",
+    "timestamp": "2026-09-12 10:59 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-4192",
+    "timestamp": "2026-09-12 10:59 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-4192",
+    "timestamp": "2026-09-12 10:59 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા, GJ-02-BQ-1234 માં લિક્વી મોલી ઓઇલ નાખી દીધું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Engine Oil Replacement",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      }
+    ],
+    "parts_total_inr": 2450,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 2900,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Engine Oil Replacement' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 1 genuine RE items (₹2,450.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹2,900.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Engine Oil Replacement' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-4191",
+    "timestamp": "2026-09-12 10:59 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-3998",
+    "timestamp": "2026-09-12 10:56 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા GJ-02-BQ-1234 માં ઓઇલ ફિલ્ટર બદલી નાખ્યું છે",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Service",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_3",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Oil & Filter Service' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Oil & Filter Service' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-3878",
+    "timestamp": "2026-09-12 10:54 PM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા, ગાડી નંબર GJ-02-BQ-1234 માં લિક્વી મોલી 15W-50 એન્જિન ઓઇલ અને નવું ઓઇલ ફિલ્ટર નાખી દીધું છે, બિલમાં એડ કરી દો",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Complete Service & Ready for Delivery",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450,
+        "category": "Engine Oil & Lubricants"
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210,
+        "category": "Periodic Service & Maintenance"
+      }
+    ],
+    "parts_total_inr": 2660,
+    "labor_charges_inr": 450,
+    "total_bill_impact_inr": 3110,
+    "job_stage_updated": "STAGE_5",
+    "subagent_sync": {
+      "bay_chief": "Master Tech Ramesh logged 'Complete Service & Ready for Delivery' for vehicle GJ-02-BQ-1234 in Bay 1 (J-Series Platform).",
+      "parts_specialist": "Jayeshbhai Patel allocated 2 genuine RE items (₹2,660.00) and verified OEM inventory.",
+      "accounts_controller": "Hasmukhbhai Joshi synced GST invoice ledger (+₹3,110.00 total impact).",
+      "customer_receptionist": "Priya Sharma queued WhatsApp stage milestone notification for GJ-02-BQ-1234 via +91 78747 19139."
+    },
+    "audio_response_gu": "Master Tech Ramesh, GJ-02-BQ-1234 માટે Liqui Moly 15W-50 Street Synthetic (2.5L) અને Genuine Engine Oil Filter Element with O-Ring જોબકાર્ડમાં સફળતાપૂર્વક ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Master Tech Ramesh, logged 'Complete Service & Ready for Delivery' for GJ-02-BQ-1234. Inventory deducted, billing updated, and WhatsApp alert sent."
+  },
+  {
+    "log_id": "VOX-20260912-0001",
+    "timestamp": "2026-09-12 10:15 AM",
+    "mechanic_name": "Master Tech Ramesh",
+    "bay_id": "Bay 1 (J-Series Platform)",
+    "spoken_text": "આરાધ્યા, ગાડી નંબર GJ-02-BQ-1234 માં લિક્વી મોલી 15W-50 એન્જિન ઓઇલ અને નવું ઓઇલ ફિલ્ટર નાખી દીધું છે, બિલમાં એડ કરી દો.",
+    "language_detected": "gu",
+    "job_card_id": "JOB-20260912-001",
+    "registration_no": "GJ-02-BQ-1234",
+    "action_detected": "Oil & Filter Replacement",
+    "parts_allocated": [
+      {
+        "part_name": "Liqui Moly 15W-50 Street Synthetic (2.5L)",
+        "part_number": "LM-15W50-4T",
+        "quantity": 1,
+        "mrp": 2450
+      },
+      {
+        "part_name": "Genuine Engine Oil Filter Element with O-Ring",
+        "part_number": "574050/C",
+        "quantity": 1,
+        "mrp": 210
+      }
+    ],
+    "job_stage_updated": "STAGE_3: Service Bay Engine & Spares Calibration",
+    "subagent_sync": {
+      "bay_chief": "Job Card GJ-02-BQ-1234 advanced to Bay Calibration stage",
+      "parts_specialist": "Deducted 1x LM-15W50-4T and 1x 574050/C from inventory bin Rack A-01",
+      "accounts_controller": "Added ₹2,660 parts + ₹350 service labor to draft GST invoice",
+      "customer_receptionist": "WhatsApp milestone update sent to rider via +91 78747 19139"
+    },
+    "audio_response_gu": "રમેશભાઈ, GJ-02-BQ-1234 માટે એન્જિન ઓઇલ અને ઓઇલ ફિલ્ટર જોબકાર્ડમાં ઉમેરી દીધા છે. સ્ટોક અપડેટ થઈ ગયો છે અને ગ્રાહકને વોટ્સએપ મોકલી દીધો છે.",
+    "audio_response_en": "Ramesh, Engine Oil & Oil Filter added to GJ-02-BQ-1234. Inventory deducted and customer notified via WhatsApp."
+  }
+]

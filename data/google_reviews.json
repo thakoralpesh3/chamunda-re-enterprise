@@ -1,0 +1,36 @@
+[
+  {
+    "review_id": "REV-GBP-001",
+    "customer_name": "Amit Shah",
+    "rating": 5,
+    "time_ago": "2 days ago",
+    "comment": "Best Royal Enfield workshop in Ahmedabad! Alpesh Sir diagnosed my Hunter 350 tapping noise within 5 minutes and calibrated the valves perfectly. Transparent billing & genuine spares.",
+    "sentiment": "Positive",
+    "status": "Responded",
+    "owner_reply": "Thank you via API! - Alpesh Sir",
+    "owner_reply_gu": "\u0a86\u0aad\u0abe\u0ab0 \u0a85\u0aae\u0abf\u0aa4\u0aad\u0abe\u0a88! \u0a86\u0aaa\u0aa8\u0ac0 \u0ab9\u0aa8\u0acd\u0a9f\u0ab0 350 \u0aa8\u0ac0 \u0ab6\u0acd\u0ab0\u0ac7\u0ab7\u0acd\u0aa0 \u0a95\u0abe\u0ab3\u0a9c\u0ac0 \u0ab0\u0abe\u0a96\u0ab5\u0ac0 \u0a8f \u0a85\u0aae\u0abe\u0ab0\u0acb \u0ab8\u0a82\u0a95\u0ab2\u0acd\u0aaa \u0a9b\u0ac7. \u0a9a\u0abe\u0aae\u0ac1\u0a82\u0aa1\u0abe \u0a93\u0a9f\u0acb\u0aae\u0acb\u0aac\u0abe\u0a87\u0ab2 \u0aaa\u0ab0 \u0aaa\u0aa7\u0abe\u0ab0\u0ab5\u0abe \u0aac\u0aa6\u0ab2 \u0a96\u0ac2\u0aac \u0a96\u0ac2\u0aac \u0a86\u0aad\u0abe\u0ab0! - \u0a85\u0ab2\u0acd\u0aaa\u0ac7\u0ab6 \u0ab8\u0abe\u0ab9\u0ac7\u0aac",
+    "responded_at": "2026-09-17 23:08:31"
+  },
+  {
+    "review_id": "REV-GBP-002",
+    "customer_name": "Hitesh Prajapati",
+    "rating": 5,
+    "time_ago": "Yesterday",
+    "comment": "Restored my 1994 Cast-Iron 350 Standard Bullet here. The heavy original thump and brass fittings look breathtaking. The digital health passport is an awesome touch!",
+    "sentiment": "Positive",
+    "status": "Responded",
+    "owner_reply": "Honored to bring your vintage legend back to glory, Hiteshbhai! The signature thump will turn heads on every ride. - Alpesh Sir (Master Tech)",
+    "owner_reply_gu": "\u0aa7\u0aa8\u0acd\u0aaf\u0ab5\u0abe\u0aa6 \u0ab9\u0abf\u0aa4\u0ac7\u0ab6\u0aad\u0abe\u0a88! \u0ae7\u0aef\u0aef\u0aea \u0aae\u0acb\u0aa1\u0ac7\u0ab2 \u0aac\u0ac1\u0ab2\u0ac7\u0a9f\u0aa8\u0acb \u0a93\u0ab0\u0abf\u0a9c\u0abf\u0aa8\u0ab2 \u0aa1\u0ac1\u0a97-\u0aa1\u0ac1\u0a97 \u0a85\u0ab5\u0abe\u0a9c \u0aaa\u0abe\u0a9b\u0acb \u0ab2\u0abe\u0ab5\u0ab5\u0abe\u0aae\u0abe\u0a82 \u0a98\u0aa3\u0acb \u0a86\u0aa8\u0a82\u0aa6 \u0aa5\u0aaf\u0acb. - \u0a85\u0ab2\u0acd\u0aaa\u0ac7\u0ab6 \u0ab8\u0abe\u0ab9\u0ac7\u0aac"
+  },
+  {
+    "review_id": "REV-GBP-003",
+    "customer_name": "Krunal Patel",
+    "rating": 5,
+    "time_ago": "3 hours ago",
+    "comment": "Super fast service bay work. Got 50-point inspection and oil change done in 45 minutes with live WhatsApp tracking on +91 78747 19139. 10/10 recommended for RE owners!",
+    "sentiment": "Positive",
+    "status": "Pending",
+    "owner_reply": "Thank you Krunalbhai! Our 24/7 WhatsApp bot (+91 78747 19139) ensures total transparency for all RE riders. Ride safe! - Alpesh Sir & Aradhya AI",
+    "owner_reply_gu": "\u0a96\u0ac2\u0aac \u0a96\u0ac2\u0aac \u0a86\u0aad\u0abe\u0ab0 \u0a95\u0ac3\u0aa3\u0abe\u0ab2\u0aad\u0abe\u0a88! \u0a85\u0aae\u0abe\u0ab0\u0ac1\u0a82 \u0ae8\u0aea/\u0aed \u0ab5\u0acd\u0ab9\u0acb\u0a9f\u0acd\u0ab8\u0a8f\u0aaa \u0aac\u0acb\u0a9f (+91 78747 19139) \u0aa6\u0ab0\u0ac7\u0a95 \u0ab0\u0abe\u0a87\u0aa1\u0ab0\u0aa8\u0ac7 \u0aaa\u0abe\u0ab0\u0aa6\u0ab0\u0acd\u0ab6\u0a95 \u0ab8\u0ab0\u0acd\u0ab5\u0abf\u0ab8 \u0a86\u0aaa\u0ab5\u0abe \u0aae\u0abe\u0a9f\u0ac7 \u0ab8\u0a95\u0acd\u0ab0\u0abf\u0aaf \u0a9b\u0ac7. - \u0a85\u0ab2\u0acd\u0aaa\u0ac7\u0ab6 \u0ab8\u0abe\u0ab9\u0ac7\u0aac"
+  }
+]

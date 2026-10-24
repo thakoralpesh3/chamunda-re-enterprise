@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamunda Automobile • Digital Acoustic Health Passport [CHAMUNDA-HP-2026-8888-F7EF11]</title>
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-bright: #F5D76E;
+            --dark-bg: #0d0f12;
+            --card-bg: #161a22;
+            --border: #2d333b;
+            --text: #e6edf3;
+            --text-dim: #8b949e;
+            --green: #2ea043;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            padding: 24px 16px;
+            display: flex;
+            justify-content: center;
+        }
+        .passport-container {
+            max-width: 820px;
+            width: 100%;
+            background: var(--card-bg);
+            border: 2px solid var(--gold);
+            border-radius: 16px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
+            overflow: hidden;
+            position: relative;
+        }
+        .gold-banner {
+            background: linear-gradient(90deg, #1f1a0d, #574413, #1f1a0d);
+            border-bottom: 1px solid var(--gold);
+            padding: 24px;
+            text-align: center;
+            position: relative;
+        }
+        .logo-title {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--gold-bright);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .logo-subtitle {
+            font-size: 13px;
+            color: #d8c385;
+            letter-spacing: 1.5px;
+            margin-top: 4px;
+        }
+        .passport-tag {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.15);
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+        .content-body { padding: 28px; }
+        .vehicle-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 24px;
+        }
+        .meta-item { display: flex; flex-direction: column; }
+        .meta-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px; }
+        .meta-value { font-size: 15px; font-weight: 700; color: var(--text); margin-top: 4px; }
+        .score-hero {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(0, 0, 0, 0.3));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+        }
+        .score-number {
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--gold-bright);
+            line-height: 1;
+        }
+        .score-grade {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--gold);
+            margin-top: 6px;
+        }
+        .stamp-badge {
+            border: 3px double var(--gold);
+            border-radius: 8px;
+            padding: 8px 16px;
+            text-align: center;
+            color: var(--gold);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            transform: rotate(-3deg);
+        }
+        .section-heading {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .metrics-grid { display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px; }
+        .metric-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 14px;
+        }
+        .metric-header { display: flex; justify-content: space-between; align-items: flex-start; }
+        .metric-title { font-size: 14px; font-weight: 600; color: var(--text); }
+        .metric-subtitle { font-size: 11px; color: var(--text-dim); }
+        .metric-score { font-size: 16px; font-weight: 800; color: var(--gold); }
+        .progress-bar-bg {
+            height: 6px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 4px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #9a7d25, var(--gold-bright));
+            border-radius: 4px;
+        }
+        .metric-details {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: var(--text-dim);
+        }
+        .metric-status { color: var(--green); font-weight: 600; }
+        .footer-cert {
+            border-top: 1px solid var(--border);
+            padding-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: var(--text-dim);
+        }
+        .print-btn {
+            background: var(--gold);
+            color: #000;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        @media print {
+            body { background: #fff; color: #000; padding: 0; }
+            .passport-container { border: 2px solid #333; box-shadow: none; }
+            .print-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="passport-container">
+        <div class="gold-banner">
+            <div class="logo-title">👑 Chamunda Automobile</div>
+            <div class="logo-subtitle">Specialized Royal Enfield Parts & Master Service Hub</div>
+            <div class="passport-tag">CERTIFIED DIGITAL ACOUSTIC HEALTH PASSPORT</div>
+        </div>
+
+        <div class="content-body">
+            <div class="vehicle-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Customer Name</span>
+                    <span class="meta-value">Alpesh Patel</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Motorcycle Model</span>
+                    <span class="meta-value">Hunter 350</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Registration Plate</span>
+                    <span class="meta-value">GJ-01-RE-8888</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Odometer Reading</span>
+                    <span class="meta-value">5,000 KM</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Passport ID</span>
+                    <span class="meta-value">CHAMUNDA-HP-2026-8888-F7EF11</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Certification Date</span>
+                    <span class="meta-value">14/09/2026</span>
+                </div>
+            </div>
+
+            <div class="score-hero">
+                <div>
+                    <div style="font-size: 12px; color: var(--text-dim); text-transform: uppercase;">Overall Acoustic Health Score</div>
+                    <div class="score-number">97.6<span style="font-size: 24px; color: var(--text-dim);"> / 100</span></div>
+                    <div class="score-grade">GOLD MINT (શોરૂમ કન્ડિશન - બેસ્ટ પર્ફોર્મન્સ)</div>
+                </div>
+                <div style="display: flex; gap: 16px; align-items: center;">
+                    <div style="text-align: center;">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAIAAAD6XpeDAAADs0lEQVR4nO2dwZHUQAwAOYoU4MGTUEiHeEiHhEiC73xUJyHJdu91P8H2GHdpxXg08tu37z8+CZPPd9+A/D/KA6M8MMoDozwwygOjPDBfor/48/vr+GA/f/199/qZY6LjIzJjZc7tjNUhGtfIA6M8MMoDE+a8k8xvfUQ132zkuUwereaqTC7ceG4nRh4Y5YFRHphUzju5cu6VyU/VfNOZa1bnfCdTz+3EyAOjPDDKA1POeVNkft+j3JOZI1bnkRtjbWPkgVEeGOWBuS3nnXTWzKbyTSdf3oWRB0Z5YJQHppzz7soxT1hT7NzDxlzQyAOjPDDKA5PKeVfObzK1J1N/Xh03c3x0zAZGHhjlgVEemLcn7Emv5q3MdU425nOu50kL5YFRHpgw512Zh6bqSqJxKWuE1X+vkQdGeWCUByZ8t9mpxT/PnXrv13mf2Rk3c+5UzWf13ow8MMoDozww5fW86m/0XXsDtt89Tu1D7zxbIw+M8sAoD8zYet6VuW17Pndlj7HqO94TIw+M8sAoD0yr3+bUO8xObWSGjXrOzlhTGHlglAdGeWBS63md+v7OetXUuZlrbvQwO9nIf0YeGOWBUR6Yco/pK/MfpT/1VO9N1/M+EMoDozwwrd5j1Xd9mWM663lTvVo69xwdUx0rcw9GHhjlgVEemPJ63tTegKnay6l9hFUy427Xmhp5YJQHRnlg1ntMZ/LBFFO1mhu1M1Xck/7iKA+M8sCMfTN2uz5lqoZle4/BlfvTjTwwygOjPDAr/TanakA2vm8Q0al/2eivlhnXyAOjPDDKA5Pqt3myUTO5MVaV7d5mGz2yjTwwygOjPDBj+/OicyOeUJ8ZMXX/G/PCEyMPjPLAKA/MWB+WzHU6fVum8sRGLt/4P0EGIw+M8sAoD0xrPW/7+3ZT43bOfVrNy4mRB0Z5YJQHpryeN8VUr5aNPtQbfdSi60e4V+HFUR4Y5YEZ+35elaleJNXcs9Ebc+o+/X7eB0J5YJQHprWeV+XKd5iZ62zvi7eGRUKUB0Z5YMb2pEdM9aKcyhMRU/1iqs/K9bwPivLAKA9MuffYVD1ndM3OHu1OTWbE9jUjXM97cZQHRnlg1vttVqn2bj6Z+mZexEb/sOj6vtt8cZQHRnlgbst529/P265/ecL6opEHRnlglAemnPOm6jk3ckZmPrfx3vWuZ2LkgVEeGOWBSeW8J9Q3bvTe7OyXmHqH2bk3Iw+M8sAoD8zKdxXkGow8MMoDozwwygOjPDDKA6M8MP8AolTLVO4UShkAAAAASUVORK5CYII=" style="width: 82px; height: 82px; border-radius: 6px; border: 1px solid var(--gold); display: block;" alt="Verification QR Code" />
+                        <div style="font-size: 8px; color: var(--gold-bright); font-weight: 700; margin-top: 3px; letter-spacing: 0.5px;">SCAN TO VERIFY</div>
+                    </div>
+                    <div class="stamp-badge">
+                        CHAMUNDA AI<br>
+                        VERIFIED<br>
+                        ★ MINT ★
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-heading">
+                <span>🔊 Engine Mechanical & Harmonic Acoustic Telemetry</span>
+            </div>
+
+            <div class="metrics-grid">
+                
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div>
+                        <span class="metric-title">Tappet & Valve Clearance Stability</span>
+                        <div class="metric-subtitle">ટેપેટ અને વાલ્વ ક્લિયરન્સ સ્ટેબિલિટી</div>
+                    </div>
+                    <span class="metric-score">96%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 96%;"></div>
+                </div>
+                <div class="metric-details">
+                    <span>Factory Tolerance: <strong>0.08 mm (±0.02mm) (In) / 0.18 mm (±0.02mm) (Ex)</strong></span>
+                    <span class="metric-status">✔ Optimal OEM Tolerance</span>
+                </div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div>
+                        <span class="metric-title">Cam Timing Chain Tension & Resonance</span>
+                        <div class="metric-subtitle">કેમ ટાઇમિંગ ચેઈન ટેન્શન અને હાર્મોનિક્સ</div>
+                    </div>
+                    <span class="metric-score">98%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 98%;"></div>
+                </div>
+                <div class="metric-details">
+                    <span>Factory Tolerance: <strong>128 - 135 Hz</strong></span>
+                    <span class="metric-status">✔ Zero Rattle / Balanced</span>
+                </div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div>
+                        <span class="metric-title">Combustion & Cylinder Compression Beat</span>
+                        <div class="metric-subtitle">સિલિન્ડર કમ્પ્રેશન અને દહન ક્ષમતા</div>
+                    </div>
+                    <span class="metric-score">99%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 99%;"></div>
+                </div>
+                <div class="metric-details">
+                    <span>Factory Tolerance: <strong>9.5 : 1</strong></span>
+                    <span class="metric-status">✔ Peak Volumetric Efficiency</span>
+                </div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div>
+                        <span class="metric-title">Exhaust Thump & Backpressure Rhythm</span>
+                        <div class="metric-subtitle">એક્ઝોસ્ટ થમ્પ અને બેકપ્રેશર રિધમ</div>
+                    </div>
+                    <span class="metric-score">98%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 98%;"></div>
+                </div>
+                <div class="metric-details">
+                    <span>Factory Tolerance: <strong>82 dB @ idle</strong></span>
+                    <span class="metric-status">✔ Iconic Royal Enfield Thump</span>
+                </div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div>
+                        <span class="metric-title">Primary Drive & Clutch Whine Suppression</span>
+                        <div class="metric-subtitle">પ્રાઇમરી ડ્રાઇવ અને ક્લચ સ્મૂથનેસ</div>
+                    </div>
+                    <span class="metric-score">97%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 97%;"></div>
+                </div>
+                <div class="metric-details">
+                    <span>Factory Tolerance: <strong>1050 ± 50 RPM</strong></span>
+                    <span class="metric-status">✔ Smooth Engagement</span>
+                </div>
+            </div>
+            
+            </div>
+
+            <div class="vehicle-meta" style="margin-bottom: 0;">
+                <div class="meta-item">
+                    <span class="meta-label">Next Service Milestone</span>
+                    <span class="meta-value" style="color: var(--gold-bright);">9,000 KM</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Recommended Date</span>
+                    <span class="meta-value">13/12/2026</span>
+                </div>
+                <div class="meta-item" style="grid-column: span 2;">
+                    <span class="meta-label">Master Technician</span>
+                    <span class="meta-value">Master Tech Alpesh (Chamunda Automobile)</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 16px 28px; background: rgba(0,0,0,0.2); border-top: 1px solid var(--border);" class="footer-cert">
+            <div>
+                Verified by Chamunda AI • Specialized Royal Enfield Diagnostic Suite<br>
+                Official Verification Key: <code>CHAMUNDA-HP-2026-8888-F7EF11</code>
+            </div>
+            <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "acd349f51b854d07ce51451bd72fbfea": {
+    "cached_at": 1792429811.7720091,
+    "data": {
+      "success": true,
+      "used_llm": true,
+      "model_used": "gemini-3.5-flash-lite",
+      "badge": "🌱 Flash Lite",
+      "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite",
+      "response_en": "जय माताજી Alpesh Sir. As Aradhya, your CEO and AI Orchestrator at Chamunda Automobile Parts & Service (Project Chhaya), I am here to streamline our elite Royal Enfield enterprise and workshop operations. \n\nI can assist you across multiple domains:\n1. **Workshop & Inventory Management:** Tracking genuine Royal Enfield parts, stock optimization, and service schedules.\n2. **System & Technical Operations:** Monitoring our Dell Inspiron 3542 Linux workstation, network links, and diagnostics using native Linux utilities.\n3. **Business Growth & Customer Relations:** Managing VIP customer workflows, boosting cash flow, and driving workshop efficiency.\n4. **Agent Coordination:** Orchestrating our specialized AI team to ensure peak performance across all dealership verticals.\n\nHow shall we direct our focus today, Sir?",
+      "response_gu": "જય માતાજી અલ્પેશ સાહેબ. ચામુંડા ઓટોમોબાઈલ પાર્ટ્સ એન્ડ સર્વિસ (પ્રોજેક્ટ છાયા) ખાતે તમારા CEO અને AI ઓર્કેસ્ટ્રેટર તરીકે, હું આપણી રોયલ એનફિલ્ડ વર્કશોપ અને એન્ટરપ્રાઈઝની કામગીરીને વધુ વેગ આપવા માટે અહીં હાજર છું.\n\nહું નીચેના ક્ષેત્રોમાં આપને મદદ કરી શકું છું:\n૧. **વર્કશોપ અને ઇન્વેન્ટરી મેનેજમેન્ટ:** અસલી રોયલ એનફિલ્ડ સ્પેરપાર્ટ્સની દેખરેખ અને સર્વિસ શેડ્યુલ.\n૨. **સિસ્ટમ અને ટેકનિકલ ઓપરેશન્સ:** આપણું ડેલ ઇન્સ્પિરોન ૩૫૪૨ લિનક્સ વર્કસ્ટેશન, નેટવર્ક લિંક્સ અને સિસ્ટમ ડાયગ્નોસ્ટિક્સનું સંચાલન.\n૩. **વ્યવસાયિક વૃદ્ધિ અને ગ્રાહક સેવા:** વીઆઈપી ગ્રાહકોનું સંચાલન, કેશ ફ્લો અને વર્કશોપની કાર્યક્ષમતા વધારવી.\n૪. **એજન્ટ સમન્વય:** તમામ ઓટોમોબાઈલ અને ટેકનિકલ કાર્યોમાં સર્વોચ્ચ પ્રદર્શન સુનિશ્ચિત કરવું.\n\nઆજે આપણે કયા વિષય પર ધ્યાન કેન્દ્રિત કરવું છે, સાહેબ?",
+      "latency_ms": 17291
+    }
+  }
+}
