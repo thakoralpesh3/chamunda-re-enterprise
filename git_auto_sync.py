@@ -26,7 +26,20 @@ logging.basicConfig(
 )
 logger = logging.getLogger("GitAutoSync")
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).resolve().parent
+
+
+def get_git_executable() -> str:
+    for candidate in [
+        "/home/alpesh/.local/bin/git",
+        "/usr/bin/git",
+        "/usr/local/bin/git",
+        "/bin/git"
+    ]:
+        if os.path.exists(candidate) and os.access(candidate, os.X_OK):
+            return candidate
+    import shutil
+    return shutil.which("git") or "git"
 
 
 class GitAutoSyncEngine:
@@ -35,6 +48,9 @@ class GitAutoSyncEngine:
     def __init__(self, repo_dir: Path = BASE_DIR):
         self.repo_dir = repo_dir
         self.last_sync_time = 0.0
+        self.git_bin = get_git_executable()
+        self.env = os.environ.copy()
+        self.env["PATH"] = f"/home/alpesh/.local/bin:/home/alpesh/bin:{self.env.get('PATH', '/usr/bin:/bin')}"
 
     def is_git_repo(self) -> bool:
         return (self.repo_dir / ".git").exists()
@@ -46,8 +62,9 @@ class GitAutoSyncEngine:
 
         try:
             res = subprocess.run(
-                ["git", "status", "--porcelain"],
+                [self.git_bin, "status", "--porcelain"],
                 cwd=str(self.repo_dir),
+                env=self.env,
                 capture_output=True,
                 text=True,
                 timeout=10
@@ -79,23 +96,31 @@ class GitAutoSyncEngine:
 
         try:
             # 1. Stage changes (respects .gitignore)
-            subprocess.run(["git", "add", "."], cwd=str(self.repo_dir), check=True, timeout=15)
+            subprocess.run(
+                [self.git_bin, "add", "."],
+                cwd=str(self.repo_dir),
+                env=self.env,
+                check=True,
+                timeout=20
+            )
 
             # 2. Check if staged changes exist
             diff_check = subprocess.run(
-                ["git", "diff", "--cached", "--quiet"],
-                cwd=str(self.repo_dir)
+                [self.git_bin, "diff", "--cached", "--quiet"],
+                cwd=str(self.repo_dir),
+                env=self.env
             )
             if diff_check.returncode == 0:
                 return True, "No staged modifications to commit."
 
             # 3. Commit
             commit_res = subprocess.run(
-                ["git", "commit", "-m", commit_msg],
+                [self.git_bin, "commit", "-m", commit_msg],
                 cwd=str(self.repo_dir),
+                env=self.env,
                 capture_output=True,
                 text=True,
-                timeout=15
+                timeout=20
             )
             if commit_res.returncode != 0:
                 logger.warning("Commit failed: %s", commit_res.stderr)
@@ -105,11 +130,12 @@ class GitAutoSyncEngine:
 
             # 4. Push to remote origin main
             push_res = subprocess.run(
-                ["git", "push", "origin", "main"],
+                [self.git_bin, "push", "origin", "main"],
                 cwd=str(self.repo_dir),
+                env=self.env,
                 capture_output=True,
                 text=True,
-                timeout=40
+                timeout=60
             )
             if push_res.returncode == 0:
                 self.last_sync_time = time.time()
