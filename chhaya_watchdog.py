@@ -491,6 +491,16 @@ class Chhaya247Watchdog:
                 except Exception as e:
                     logger.debug("Model updater auto-discovery error: %s", e)
 
+            # 8. Autonomous Git Cloud Auto-Sync to GitHub (Runs every 60s)
+            if iteration % 12 == 0:
+                try:
+                    from git_auto_sync import get_git_sync_engine
+                    synced, sync_msg = get_git_sync_engine().sync_changes(reason="Autonomous Watchdog Auto-Sync")
+                    if synced and "Working directory clean" not in sync_msg and "No staged" not in sync_msg:
+                        logger.info("☁️ [Git Cloud Auto-Sync] %s", sync_msg)
+                except Exception as ge:
+                    logger.debug("Git auto-sync loop error: %s", ge)
+
 
 
 

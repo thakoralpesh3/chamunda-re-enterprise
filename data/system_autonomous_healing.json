@@ -1,75 +1,5 @@
 [
   {
-    "timestamp": "2026-10-23 00:06:59",
-    "trigger_source": "autonomous_watchdog",
-    "duration_seconds": 1.05,
-    "freed_memory_mb": 1.0,
-    "temp_files_deleted": 0,
-    "temp_space_freed_mb": 0.0,
-    "closed_processes_count": 0,
-    "ram_after_percent": 42.6,
-    "reasons": [
-      "Laptop Performance Acceleration"
-    ],
-    "status": "COMPLETED"
-  },
-  {
-    "timestamp": "2026-10-23 00:10:02",
-    "trigger_source": "autonomous_watchdog",
-    "duration_seconds": 1.13,
-    "freed_memory_mb": 47.9,
-    "temp_files_deleted": 1,
-    "temp_space_freed_mb": 0.0,
-    "closed_processes_count": 1,
-    "ram_after_percent": 43.4,
-    "reasons": [
-      "Laptop Performance Acceleration"
-    ],
-    "status": "COMPLETED"
-  },
-  {
-    "timestamp": "2026-10-23 00:16:07",
-    "trigger_source": "autonomous_watchdog",
-    "duration_seconds": 1.12,
-    "freed_memory_mb": 65.0,
-    "temp_files_deleted": 0,
-    "temp_space_freed_mb": 0.0,
-    "closed_processes_count": 1,
-    "ram_after_percent": 45.2,
-    "reasons": [
-      "Laptop Performance Acceleration"
-    ],
-    "status": "COMPLETED"
-  },
-  {
-    "timestamp": "2026-10-23 00:20:22",
-    "trigger_source": "autonomous_watchdog",
-    "duration_seconds": 1.08,
-    "freed_memory_mb": 0.0,
-    "temp_files_deleted": 0,
-    "temp_space_freed_mb": 0.0,
-    "closed_processes_count": 0,
-    "ram_after_percent": 53.3,
-    "reasons": [
-      "Laptop Performance Acceleration"
-    ],
-    "status": "COMPLETED"
-  },
-  {
-    "timestamp": "2026-10-23 00:23:33",
-    "trigger_source": "autonomous_watchdog",
-    "duration_seconds": 1.26,
-    "freed_memory_mb": 7.3,
-    "temp_files_deleted": 0,
-    "temp_space_freed_mb": 0.0,
-    "closed_processes_count": 0,
-    "ram_after_percent": 68.6,
-    "reasons": [
-      "Laptop Performance Acceleration"
-    ],
-    "status": "COMPLETED"
-  },
-  {
     "timestamp": "2026-10-23 00:27:31",
     "trigger_source": "autonomous_watchdog",
     "duration_seconds": 0.99,
@@ -694,6 +624,76 @@
     "temp_space_freed_mb": 1.13,
     "closed_processes_count": 0,
     "ram_after_percent": 79.1,
+    "reasons": [
+      "Laptop Performance Acceleration"
+    ],
+    "status": "COMPLETED"
+  },
+  {
+    "timestamp": "2026-10-24 21:41:56",
+    "trigger_source": "autonomous_watchdog",
+    "duration_seconds": 116.0,
+    "freed_memory_mb": 162.7,
+    "temp_files_deleted": 5,
+    "temp_space_freed_mb": 0.62,
+    "closed_processes_count": 0,
+    "ram_after_percent": 78.0,
+    "reasons": [
+      "Laptop Performance Acceleration"
+    ],
+    "status": "COMPLETED"
+  },
+  {
+    "timestamp": "2026-10-24 21:44:08",
+    "trigger_source": "autonomous_watchdog",
+    "duration_seconds": 61.46,
+    "freed_memory_mb": 127.7,
+    "temp_files_deleted": 3,
+    "temp_space_freed_mb": 0.0,
+    "closed_processes_count": 0,
+    "ram_after_percent": 75.7,
+    "reasons": [
+      "Laptop Performance Acceleration"
+    ],
+    "status": "COMPLETED"
+  },
+  {
+    "timestamp": "2026-10-24 21:47:52",
+    "trigger_source": "autonomous_watchdog",
+    "duration_seconds": 72.2,
+    "freed_memory_mb": 0.0,
+    "temp_files_deleted": 3,
+    "temp_space_freed_mb": 0.06,
+    "closed_processes_count": 0,
+    "ram_after_percent": 79.5,
+    "reasons": [
+      "Laptop Performance Acceleration"
+    ],
+    "status": "COMPLETED"
+  },
+  {
+    "timestamp": "2026-10-24 21:50:49",
+    "trigger_source": "autonomous_watchdog",
+    "duration_seconds": 67.89,
+    "freed_memory_mb": 297.5,
+    "temp_files_deleted": 1,
+    "temp_space_freed_mb": 0.22,
+    "closed_processes_count": 1,
+    "ram_after_percent": 76.1,
+    "reasons": [
+      "Laptop Performance Acceleration"
+    ],
+    "status": "COMPLETED"
+  },
+  {
+    "timestamp": "2026-10-24 21:53:26",
+    "trigger_source": "autonomous_watchdog",
+    "duration_seconds": 44.28,
+    "freed_memory_mb": 124.3,
+    "temp_files_deleted": 0,
+    "temp_space_freed_mb": 0.0,
+    "closed_processes_count": 0,
+    "ram_after_percent": 75.6,
     "reasons": [
       "Laptop Performance Acceleration"
     ],
