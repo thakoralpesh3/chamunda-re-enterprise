@@ -47,3 +47,4 @@ data/purchase_orders/
 .vscode/
 *.swp
 *~
+data/cloud_shadow_state.json
