@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-25 23:56:46",
+  "timestamp": "2026-10-26 00:38:06",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 85,
+  "overall_score": 79,
   "grade": "B (Hardened with Warnings)",
-  "total_agents_audited": 9,
+  "total_agents_audited": 10,
   "threats_summary": {
-    "total_threats": 5,
+    "total_threats": 7,
     "critical": 0,
-    "high": 0,
+    "high": 1,
     "medium": 5,
-    "low": 0
+    "low": 1
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 23,
+    "active_listening_sockets": 20,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
@@ -48,7 +48,7 @@
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8550)",
-        "details": "Port 8550 (python3 (PID 1496)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "details": "Port 8550 (python3 (PID 28945)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       }
     ]
@@ -214,6 +214,29 @@
       "status": "PASS",
       "findings_count": 0,
       "findings": []
+    },
+    {
+      "agent_id": "agent_town",
+      "name": "\u2728 Auto-Discovered: Agent Town",
+      "path": "/media/alpesh/Software & Work/Agents/Agent Town",
+      "status": "WARNING",
+      "findings_count": 2,
+      "findings": [
+        {
+          "severity": "HIGH",
+          "category": "ORIGIN_CLOAKING",
+          "title": "Missing .gitignore Security Boundary",
+          "details": "Agent \u2728 Auto-Discovered: Agent Town lacks a .gitignore file. Local configs and session state risk being pushed to public repos.",
+          "remediation": "Create a comprehensive .gitignore file excluding .env, credentials, and virtualenvs."
+        },
+        {
+          "severity": "LOW",
+          "category": "EDGE_CONTAINER",
+          "title": "Codespaces Sandbox Not Configured",
+          "details": "\u2728 Auto-Discovered: Agent Town does not have a .devcontainer configuration for isolated cloud sandbox execution.",
+          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
+        }
+      ]
     }
   ],
   "defensive_solutions": [
@@ -231,7 +254,29 @@
         "Service Bound to All Interfaces (0.0.0.0:8550)"
       ],
       "can_autofix": true
+    },
+    {
+      "id": "SOL-GITIGNORE-HARDEN",
+      "severity": "HIGH",
+      "title": "Automated .gitignore Hardening",
+      "solution_gu": ".gitignore \u0aae\u0abe\u0a82 \u0a9c\u0ab0\u0ac2\u0ab0\u0ac0 \u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0a89\u0aae\u0ac7\u0ab0\u0acb.",
+      "action_required": "Inject standard rules (.env, .venv, *.key) into repository .gitignore.",
+      "affected_items": [
+        "Missing .gitignore Security Boundary"
+      ],
+      "can_autofix": true
+    },
+    {
+      "id": "SOL-GEN-3",
+      "severity": "LOW",
+      "title": "Zero-Trust Defensive Policy Enforcement",
+      "solution_gu": "\u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0ab2\u0abe\u0a97\u0ac1 \u0a95\u0ab0\u0ac0 \u0aa5\u0acd\u0ab0\u0ac7\u0a9f \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
+      "action_required": "Generate .devcontainer/devcontainer.json for secure cloud runtime.",
+      "affected_items": [
+        "Codespaces Sandbox Not Configured"
+      ],
+      "can_autofix": false
     }
   ],
-  "duration_seconds": 123.16
+  "duration_seconds": 63.64
 }
