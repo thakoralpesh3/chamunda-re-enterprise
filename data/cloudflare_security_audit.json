@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-25 23:16:32",
+  "timestamp": "2026-10-25 23:22:36",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 82,
+  "overall_score": 85,
   "grade": "B (Hardened with Warnings)",
   "total_agents_audited": 9,
   "threats_summary": {
-    "total_threats": 6,
+    "total_threats": 5,
     "critical": 0,
     "high": 0,
-    "medium": 6,
+    "medium": 5,
     "low": 0
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 21,
+    "active_listening_sockets": 20,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
@@ -35,13 +35,6 @@
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8085)",
         "details": "Port 8085 (python3 (PID 1087)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
-        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "ORIGIN_EXPOSURE",
-        "title": "Service Bound to All Interfaces (0.0.0.0:8877)",
-        "details": "Port 8877 (python3 (PID 4542)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       },
       {
@@ -234,12 +227,11 @@
         "Service Bound to All Interfaces (0.0.0.0:8080)",
         "Service Bound to All Interfaces (0.0.0.0:8081)",
         "Service Bound to All Interfaces (0.0.0.0:8085)",
-        "Service Bound to All Interfaces (0.0.0.0:8877)",
         "Service Bound to All Interfaces (0.0.0.0:8899)",
         "Service Bound to All Interfaces (0.0.0.0:8550)"
       ],
       "can_autofix": true
     }
   ],
-  "duration_seconds": 22.98
+  "duration_seconds": 25.43
 }
