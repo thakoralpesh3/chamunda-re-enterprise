@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-10-25 15:09:37",
+  "timestamp": "2026-10-25 15:32:41",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 0,
+  "overall_score": 6,
   "grade": "F (High Cyber Risk)",
-  "total_agents_audited": 17,
+  "total_agents_audited": 9,
   "threats_summary": {
-    "total_threats": 31,
-    "critical": 5,
-    "high": 7,
+    "total_threats": 13,
+    "critical": 2,
+    "high": 0,
     "medium": 11,
-    "low": 8
+    "low": 0
   },
   "host_os_audit": {
     "status": "WARNING",
@@ -185,207 +185,6 @@
       "status": "PASS",
       "findings_count": 0,
       "findings": []
-    },
-    {
-      "agent_id": "apk_tv_converter_agent",
-      "name": "\u2728 Auto-Discovered: apk-tv-converter-agent",
-      "path": "/media/alpesh/Software & Work/Agents/apk-tv-converter-agent",
-      "status": "WARNING",
-      "findings_count": 2,
-      "findings": [
-        {
-          "severity": "HIGH",
-          "category": "ORIGIN_CLOAKING",
-          "title": "Missing .gitignore Security Boundary",
-          "details": "Agent \u2728 Auto-Discovered: apk-tv-converter-agent lacks a .gitignore file. Local configs and session state risk being pushed to public repos.",
-          "remediation": "Create a comprehensive .gitignore file excluding .env, credentials, and virtualenvs."
-        },
-        {
-          "severity": "LOW",
-          "category": "EDGE_CONTAINER",
-          "title": "Codespaces Sandbox Not Configured",
-          "details": "\u2728 Auto-Discovered: apk-tv-converter-agent does not have a .devcontainer configuration for isolated cloud sandbox execution.",
-          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
-        }
-      ]
-    },
-    {
-      "agent_id": "book_publishing_agent",
-      "name": "\u2728 Auto-Discovered: book-publishing-agent",
-      "path": "/media/alpesh/Software & Work/Agents/book-publishing-agent",
-      "status": "WARNING",
-      "findings_count": 2,
-      "findings": [
-        {
-          "severity": "HIGH",
-          "category": "ORIGIN_CLOAKING",
-          "title": "Missing .gitignore Security Boundary",
-          "details": "Agent \u2728 Auto-Discovered: book-publishing-agent lacks a .gitignore file. Local configs and session state risk being pushed to public repos.",
-          "remediation": "Create a comprehensive .gitignore file excluding .env, credentials, and virtualenvs."
-        },
-        {
-          "severity": "LOW",
-          "category": "EDGE_CONTAINER",
-          "title": "Codespaces Sandbox Not Configured",
-          "details": "\u2728 Auto-Discovered: book-publishing-agent does not have a .devcontainer configuration for isolated cloud sandbox execution.",
-          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
-        }
-      ]
-    },
-    {
-      "agent_id": "chamunda_re_enterprise",
-      "name": "\u2728 Auto-Discovered: chamunda_re_enterprise",
-      "path": "/media/alpesh/Software & Work/Agents/chamunda_re_enterprise",
-      "status": "WARNING",
-      "findings_count": 2,
-      "findings": [
-        {
-          "severity": "HIGH",
-          "category": "ORIGIN_CLOAKING",
-          "title": "Missing .gitignore Security Boundary",
-          "details": "Agent \u2728 Auto-Discovered: chamunda_re_enterprise lacks a .gitignore file. Local configs and session state risk being pushed to public repos.",
-          "remediation": "Create a comprehensive .gitignore file excluding .env, credentials, and virtualenvs."
-        },
-        {
-          "severity": "LOW",
-          "category": "EDGE_CONTAINER",
-          "title": "Codespaces Sandbox Not Configured",
-          "details": "\u2728 Auto-Discovered: chamunda_re_enterprise does not have a .devcontainer configuration for isolated cloud sandbox execution.",
-          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
-        }
-      ]
-    },
-    {
-      "agent_id": "jarvis_agent",
-      "name": "\u2728 Auto-Discovered: jarvis-agent",
-      "path": "/media/alpesh/Software & Work/Agents/jarvis-agent",
-      "status": "WARNING",
-      "findings_count": 2,
-      "findings": [
-        {
-          "severity": "HIGH",
-          "category": "ORIGIN_CLOAKING",
-          "title": "Missing .gitignore Security Boundary",
-          "details": "Agent \u2728 Auto-Discovered: jarvis-agent lacks a .gitignore file. Local configs and session state risk being pushed to public repos.",
-          "remediation": "Create a comprehensive .gitignore file excluding .env, credentials, and virtualenvs."
-        },
-        {
-          "severity": "LOW",
-          "category": "EDGE_CONTAINER",
-          "title": "Codespaces Sandbox Not Configured",
-          "details": "\u2728 Auto-Discovered: jarvis-agent does not have a .devcontainer configuration for isolated cloud sandbox execution.",
-          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
-        }
-      ]
-    },
-    {
-      "agent_id": "kids_game_studio",
-      "name": "\u2728 Auto-Discovered: kids-game-studio",
-      "path": "/media/alpesh/Software & Work/Agents/kids-game-studio",
-      "status": "WARNING",
-      "findings_count": 2,
-      "findings": [
-        {
-          "severity": "HIGH",
-          "category": "ORIGIN_CLOAKING",
-          "title": "Missing .gitignore Security Boundary",
-          "details": "Agent \u2728 Auto-Discovered: kids-game-studio lacks a .gitignore file. Local configs and session state risk being pushed to public repos.",
-          "remediation": "Create a comprehensive .gitignore file excluding .env, credentials, and virtualenvs."
-        },
-        {
-          "severity": "LOW",
-          "category": "EDGE_CONTAINER",
-          "title": "Codespaces Sandbox Not Configured",
-          "details": "\u2728 Auto-Discovered: kids-game-studio does not have a .devcontainer configuration for isolated cloud sandbox execution.",
-          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
-        }
-      ]
-    },
-    {
-      "agent_id": "web_to_apk_agent",
-      "name": "\u2728 Auto-Discovered: web-to-apk-agent",
-      "path": "/media/alpesh/Software & Work/Agents/web-to-apk-agent",
-      "status": "FAIL",
-      "findings_count": 4,
-      "findings": [
-        {
-          "severity": "CRITICAL",
-          "category": "SECRET_LEAK",
-          "title": "Leaked Credential: Live Stripe Secret Key",
-          "file": "tests/test_cyber_security.py",
-          "details": "Found 1 potential secret occurrence(s) in test_cyber_security.py",
-          "remediation": "Redact secret from test_cyber_security.py, add to .gitignore, and load via environment variable."
-        },
-        {
-          "severity": "CRITICAL",
-          "category": "SECRET_LEAK",
-          "title": "Leaked Credential: AWS Access Key Leaked",
-          "file": "tests/test_cyber_security.py",
-          "details": "Found 1 potential secret occurrence(s) in test_cyber_security.py",
-          "remediation": "Redact secret from test_cyber_security.py, add to .gitignore, and load via environment variable."
-        },
-        {
-          "severity": "HIGH",
-          "category": "ORIGIN_CLOAKING",
-          "title": "Missing .gitignore Security Boundary",
-          "details": "Agent \u2728 Auto-Discovered: web-to-apk-agent lacks a .gitignore file. Local configs and session state risk being pushed to public repos.",
-          "remediation": "Create a comprehensive .gitignore file excluding .env, credentials, and virtualenvs."
-        },
-        {
-          "severity": "LOW",
-          "category": "EDGE_CONTAINER",
-          "title": "Codespaces Sandbox Not Configured",
-          "details": "\u2728 Auto-Discovered: web-to-apk-agent does not have a .devcontainer configuration for isolated cloud sandbox execution.",
-          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
-        }
-      ]
-    },
-    {
-      "agent_id": "web_to_ipa_agent",
-      "name": "\u2728 Auto-Discovered: web-to-ipa-agent",
-      "path": "/media/alpesh/Software & Work/Agents/web-to-ipa-agent",
-      "status": "FAIL",
-      "findings_count": 3,
-      "findings": [
-        {
-          "severity": "CRITICAL",
-          "category": "SECRET_LEAK",
-          "title": "Leaked Credential: AWS Access Key Leaked",
-          "file": "tests/test_gui_server.py",
-          "details": "Found 1 potential secret occurrence(s) in test_gui_server.py",
-          "remediation": "Redact secret from test_gui_server.py, add to .gitignore, and load via environment variable."
-        },
-        {
-          "severity": "HIGH",
-          "category": "ORIGIN_CLOAKING",
-          "title": "Missing .gitignore Security Boundary",
-          "details": "Agent \u2728 Auto-Discovered: web-to-ipa-agent lacks a .gitignore file. Local configs and session state risk being pushed to public repos.",
-          "remediation": "Create a comprehensive .gitignore file excluding .env, credentials, and virtualenvs."
-        },
-        {
-          "severity": "LOW",
-          "category": "EDGE_CONTAINER",
-          "title": "Codespaces Sandbox Not Configured",
-          "details": "\u2728 Auto-Discovered: web-to-ipa-agent does not have a .devcontainer configuration for isolated cloud sandbox execution.",
-          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
-        }
-      ]
-    },
-    {
-      "agent_id": "youtube_agent",
-      "name": "\u2728 Auto-Discovered: youtube-agent",
-      "path": "/media/alpesh/Software & Work/Agents/youtube-agent",
-      "status": "WARNING",
-      "findings_count": 1,
-      "findings": [
-        {
-          "severity": "LOW",
-          "category": "EDGE_CONTAINER",
-          "title": "Codespaces Sandbox Not Configured",
-          "details": "\u2728 Auto-Discovered: youtube-agent does not have a .devcontainer configuration for isolated cloud sandbox execution.",
-          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
-        }
-      ]
     }
   ],
   "defensive_solutions": [
@@ -487,34 +286,7 @@
       "solution_gu": "\u0a95\u0acb\u0aa1\u0aae\u0abe\u0a82\u0aa5\u0ac0 \u0aaa\u0acd\u0ab0\u0abe\u0a87\u0ab5\u0ac7\u0a9f API \u0a95\u0ac0 \u0ab9\u0a9f\u0abe\u0ab5\u0ac0\u0aa8\u0ac7 .env \u0a85\u0aa5\u0ab5\u0abe Cloudflare Secrets \u0aae\u0abe\u0a82 \u0ab8\u0abe\u0a9a\u0ab5\u0acb.",
       "action_required": "Move leaked credentials to .env file and ensure tests/test_cyber_security.py uses os.environ.",
       "can_autofix": true
-    },
-    {
-      "id": "SOL-GITIGNORE-HARDEN",
-      "threat": "Missing .gitignore Security Boundary",
-      "severity": "HIGH",
-      "title": "Automated .gitignore Hardening",
-      "solution_gu": ".gitignore \u0aae\u0abe\u0a82 \u0a9c\u0ab0\u0ac2\u0ab0\u0ac0 \u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0a89\u0aae\u0ac7\u0ab0\u0acb.",
-      "action_required": "Inject standard rules (.env, .venv, *.key) into repository .gitignore.",
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-GEN-13",
-      "threat": "Codespaces Sandbox Not Configured",
-      "severity": "LOW",
-      "title": "Zero-Trust Defensive Policy Enforcement",
-      "solution_gu": "\u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0ab2\u0abe\u0a97\u0ac1 \u0a95\u0ab0\u0ac0 \u0aa5\u0acd\u0ab0\u0ac7\u0a9f \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
-      "action_required": "Generate .devcontainer/devcontainer.json for secure cloud runtime.",
-      "can_autofix": false
-    },
-    {
-      "id": "SOL-SECRET-REDACT",
-      "threat": "Leaked Credential: Live Stripe Secret Key",
-      "severity": "CRITICAL",
-      "title": "Zero-Trust Secret Redaction & Environment Vault",
-      "solution_gu": "\u0a95\u0acb\u0aa1\u0aae\u0abe\u0a82\u0aa5\u0ac0 \u0aaa\u0acd\u0ab0\u0abe\u0a87\u0ab5\u0ac7\u0a9f API \u0a95\u0ac0 \u0ab9\u0a9f\u0abe\u0ab5\u0ac0\u0aa8\u0ac7 .env \u0a85\u0aa5\u0ab5\u0abe Cloudflare Secrets \u0aae\u0abe\u0a82 \u0ab8\u0abe\u0a9a\u0ab5\u0acb.",
-      "action_required": "Move leaked credentials to .env file and ensure tests/test_cyber_security.py uses os.environ.",
-      "can_autofix": true
     }
   ],
-  "duration_seconds": 26.87
+  "duration_seconds": 2.01
 }
