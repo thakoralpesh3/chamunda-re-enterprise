@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-25 15:54:06",
+  "timestamp": "2026-10-25 15:56:40",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 11,
-  "grade": "F (High Cyber Risk)",
+  "overall_score": 80,
+  "grade": "B (Hardened with Warnings)",
   "total_agents_audited": 9,
   "threats_summary": {
-    "total_threats": 32,
-    "critical": 1,
-    "high": 9,
-    "medium": 13,
-    "low": 9
+    "total_threats": 6,
+    "critical": 0,
+    "high": 1,
+    "medium": 5,
+    "low": 0
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 19,
+    "active_listening_sockets": 16,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
@@ -50,196 +50,14 @@
         "title": "Service Bound to All Interfaces (0.0.0.0:8899)",
         "details": "Port 8899 (uvicorn (PID 1198)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
-      },
-      {
-        "severity": "CRITICAL",
-        "category": "HOST_INTEGRITY",
-        "title": "Volatile Execution Detected from /tmp/",
-        "details": "Suspicious process running from volatile memory directory: 20942 alpesh   /usr/lib/firefox/crashhelper 20936 9 /tmp/ 11 20261019185856",
-        "remediation": "Investigate and terminate process. Disallow execution permissions on temporary filesystems."
       }
     ]
   },
   "github_cloud_audit": {
     "status": "WARNING",
     "total_repositories_audited": 9,
-    "findings_count": 26,
+    "findings_count": 1,
     "findings": [
-      {
-        "severity": "HIGH",
-        "category": "GITHUB_PUSH_PROTECTION",
-        "title": "Missing Pre-Push Secret Hook: Chamunda RE Enterprise & Aradhya CEO",
-        "repo": "Chamunda RE Enterprise & Aradhya CEO",
-        "details": "Repository Chamunda RE Enterprise & Aradhya CEO lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-        "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "GITHUB_ACTIONS_HARDENING",
-        "title": "Unrestricted GitHub Actions Permissions in ci.yml (Chamunda RE Enterprise & Aradhya CEO)",
-        "repo": "Chamunda RE Enterprise & Aradhya CEO",
-        "file": ".github/workflows/ci.yml",
-        "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-        "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-      },
-      {
-        "severity": "LOW",
-        "category": "GITHUB_SUPPLY_CHAIN",
-        "title": "Dependabot Not Configured: Chamunda RE Enterprise & Aradhya CEO",
-        "repo": "Chamunda RE Enterprise & Aradhya CEO",
-        "details": "Repository Chamunda RE Enterprise & Aradhya CEO does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-        "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-      },
-      {
-        "severity": "HIGH",
-        "category": "GITHUB_PUSH_PROTECTION",
-        "title": "Missing Pre-Push Secret Hook: Jarvis Mark VII System Commander",
-        "repo": "Jarvis Mark VII System Commander",
-        "details": "Repository Jarvis Mark VII System Commander lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-        "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "GITHUB_ACTIONS_HARDENING",
-        "title": "Unrestricted GitHub Actions Permissions in ci.yml (Jarvis Mark VII System Commander)",
-        "repo": "Jarvis Mark VII System Commander",
-        "file": ".github/workflows/ci.yml",
-        "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-        "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-      },
-      {
-        "severity": "LOW",
-        "category": "GITHUB_SUPPLY_CHAIN",
-        "title": "Dependabot Not Configured: Jarvis Mark VII System Commander",
-        "repo": "Jarvis Mark VII System Commander",
-        "details": "Repository Jarvis Mark VII System Commander does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-        "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-      },
-      {
-        "severity": "HIGH",
-        "category": "GITHUB_PUSH_PROTECTION",
-        "title": "Missing Pre-Push Secret Hook: Web2APK Autonomous Android Packager",
-        "repo": "Web2APK Autonomous Android Packager",
-        "details": "Repository Web2APK Autonomous Android Packager lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-        "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "GITHUB_ACTIONS_HARDENING",
-        "title": "Unrestricted GitHub Actions Permissions in ci.yml (Web2APK Autonomous Android Packager)",
-        "repo": "Web2APK Autonomous Android Packager",
-        "file": ".github/workflows/ci.yml",
-        "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-        "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-      },
-      {
-        "severity": "LOW",
-        "category": "GITHUB_SUPPLY_CHAIN",
-        "title": "Dependabot Not Configured: Web2APK Autonomous Android Packager",
-        "repo": "Web2APK Autonomous Android Packager",
-        "details": "Repository Web2APK Autonomous Android Packager does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-        "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-      },
-      {
-        "severity": "HIGH",
-        "category": "GITHUB_PUSH_PROTECTION",
-        "title": "Missing Pre-Push Secret Hook: Web2IPA Autonomous iOS Packager",
-        "repo": "Web2IPA Autonomous iOS Packager",
-        "details": "Repository Web2IPA Autonomous iOS Packager lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-        "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "GITHUB_ACTIONS_HARDENING",
-        "title": "Unrestricted GitHub Actions Permissions in ci.yml (Web2IPA Autonomous iOS Packager)",
-        "repo": "Web2IPA Autonomous iOS Packager",
-        "file": ".github/workflows/ci.yml",
-        "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-        "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-      },
-      {
-        "severity": "LOW",
-        "category": "GITHUB_SUPPLY_CHAIN",
-        "title": "Dependabot Not Configured: Web2IPA Autonomous iOS Packager",
-        "repo": "Web2IPA Autonomous iOS Packager",
-        "details": "Repository Web2IPA Autonomous iOS Packager does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-        "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-      },
-      {
-        "severity": "HIGH",
-        "category": "GITHUB_PUSH_PROTECTION",
-        "title": "Missing Pre-Push Secret Hook: APK TV Converter Agent",
-        "repo": "APK TV Converter Agent",
-        "details": "Repository APK TV Converter Agent lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-        "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "GITHUB_ACTIONS_HARDENING",
-        "title": "Unrestricted GitHub Actions Permissions in ci.yml (APK TV Converter Agent)",
-        "repo": "APK TV Converter Agent",
-        "file": ".github/workflows/ci.yml",
-        "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-        "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-      },
-      {
-        "severity": "LOW",
-        "category": "GITHUB_SUPPLY_CHAIN",
-        "title": "Dependabot Not Configured: APK TV Converter Agent",
-        "repo": "APK TV Converter Agent",
-        "details": "Repository APK TV Converter Agent does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-        "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-      },
-      {
-        "severity": "HIGH",
-        "category": "GITHUB_PUSH_PROTECTION",
-        "title": "Missing Pre-Push Secret Hook: PublisheR AI Book Publishing Agent",
-        "repo": "PublisheR AI Book Publishing Agent",
-        "details": "Repository PublisheR AI Book Publishing Agent lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-        "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "GITHUB_ACTIONS_HARDENING",
-        "title": "Unrestricted GitHub Actions Permissions in ci.yml (PublisheR AI Book Publishing Agent)",
-        "repo": "PublisheR AI Book Publishing Agent",
-        "file": ".github/workflows/ci.yml",
-        "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-        "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-      },
-      {
-        "severity": "LOW",
-        "category": "GITHUB_SUPPLY_CHAIN",
-        "title": "Dependabot Not Configured: PublisheR AI Book Publishing Agent",
-        "repo": "PublisheR AI Book Publishing Agent",
-        "details": "Repository PublisheR AI Book Publishing Agent does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-        "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-      },
-      {
-        "severity": "HIGH",
-        "category": "GITHUB_PUSH_PROTECTION",
-        "title": "Missing Pre-Push Secret Hook: KidsPlay AI Studio",
-        "repo": "KidsPlay AI Studio",
-        "details": "Repository KidsPlay AI Studio lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-        "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "GITHUB_ACTIONS_HARDENING",
-        "title": "Unrestricted GitHub Actions Permissions in ci.yml (KidsPlay AI Studio)",
-        "repo": "KidsPlay AI Studio",
-        "file": ".github/workflows/ci.yml",
-        "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-        "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-      },
-      {
-        "severity": "LOW",
-        "category": "GITHUB_SUPPLY_CHAIN",
-        "title": "Dependabot Not Configured: KidsPlay AI Studio",
-        "repo": "KidsPlay AI Studio",
-        "details": "Repository KidsPlay AI Studio does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-        "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-      },
       {
         "severity": "HIGH",
         "category": "GITHUB_PUSH_PROTECTION",
@@ -247,39 +65,6 @@
         "repo": "YouTube Production & Growth Agent",
         "details": "Repository YouTube Production & Growth Agent lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
         "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-      },
-      {
-        "severity": "LOW",
-        "category": "GITHUB_SUPPLY_CHAIN",
-        "title": "Dependabot Not Configured: YouTube Production & Growth Agent",
-        "repo": "YouTube Production & Growth Agent",
-        "details": "Repository YouTube Production & Growth Agent does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-        "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-      },
-      {
-        "severity": "HIGH",
-        "category": "GITHUB_PUSH_PROTECTION",
-        "title": "Missing Pre-Push Secret Hook: MicroCorp AI Autonomous Enterprise",
-        "repo": "MicroCorp AI Autonomous Enterprise",
-        "details": "Repository MicroCorp AI Autonomous Enterprise lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-        "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "GITHUB_ACTIONS_HARDENING",
-        "title": "Unrestricted GitHub Actions Permissions in ci.yml (MicroCorp AI Autonomous Enterprise)",
-        "repo": "MicroCorp AI Autonomous Enterprise",
-        "file": ".github/workflows/ci.yml",
-        "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-        "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-      },
-      {
-        "severity": "LOW",
-        "category": "GITHUB_SUPPLY_CHAIN",
-        "title": "Dependabot Not Configured: MicroCorp AI Autonomous Enterprise",
-        "repo": "MicroCorp AI Autonomous Enterprise",
-        "details": "Repository MicroCorp AI Autonomous Enterprise does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-        "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
       }
     ],
     "repositories": [
@@ -287,254 +72,72 @@
         "agent_id": "chamunda_re_enterprise",
         "name": "Chamunda RE Enterprise & Aradhya CEO",
         "remote_url": "https://github.com/thakoralpesh3/chamunda-re-enterprise.git",
-        "has_pre_push_hook": false,
-        "has_dependabot": false,
-        "findings_count": 3,
-        "findings": [
-          {
-            "severity": "HIGH",
-            "category": "GITHUB_PUSH_PROTECTION",
-            "title": "Missing Pre-Push Secret Hook: Chamunda RE Enterprise & Aradhya CEO",
-            "repo": "Chamunda RE Enterprise & Aradhya CEO",
-            "details": "Repository Chamunda RE Enterprise & Aradhya CEO lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-            "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-          },
-          {
-            "severity": "MEDIUM",
-            "category": "GITHUB_ACTIONS_HARDENING",
-            "title": "Unrestricted GitHub Actions Permissions in ci.yml (Chamunda RE Enterprise & Aradhya CEO)",
-            "repo": "Chamunda RE Enterprise & Aradhya CEO",
-            "file": ".github/workflows/ci.yml",
-            "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-            "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-          },
-          {
-            "severity": "LOW",
-            "category": "GITHUB_SUPPLY_CHAIN",
-            "title": "Dependabot Not Configured: Chamunda RE Enterprise & Aradhya CEO",
-            "repo": "Chamunda RE Enterprise & Aradhya CEO",
-            "details": "Repository Chamunda RE Enterprise & Aradhya CEO does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-            "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-          }
-        ]
+        "has_pre_push_hook": true,
+        "has_dependabot": true,
+        "findings_count": 0,
+        "findings": []
       },
       {
         "agent_id": "jarvis_agent",
         "name": "Jarvis Mark VII System Commander",
         "remote_url": "https://github.com/thakoralpesh3/jarvis-agent.git",
-        "has_pre_push_hook": false,
-        "has_dependabot": false,
-        "findings_count": 3,
-        "findings": [
-          {
-            "severity": "HIGH",
-            "category": "GITHUB_PUSH_PROTECTION",
-            "title": "Missing Pre-Push Secret Hook: Jarvis Mark VII System Commander",
-            "repo": "Jarvis Mark VII System Commander",
-            "details": "Repository Jarvis Mark VII System Commander lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-            "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-          },
-          {
-            "severity": "MEDIUM",
-            "category": "GITHUB_ACTIONS_HARDENING",
-            "title": "Unrestricted GitHub Actions Permissions in ci.yml (Jarvis Mark VII System Commander)",
-            "repo": "Jarvis Mark VII System Commander",
-            "file": ".github/workflows/ci.yml",
-            "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-            "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-          },
-          {
-            "severity": "LOW",
-            "category": "GITHUB_SUPPLY_CHAIN",
-            "title": "Dependabot Not Configured: Jarvis Mark VII System Commander",
-            "repo": "Jarvis Mark VII System Commander",
-            "details": "Repository Jarvis Mark VII System Commander does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-            "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-          }
-        ]
+        "has_pre_push_hook": true,
+        "has_dependabot": true,
+        "findings_count": 0,
+        "findings": []
       },
       {
         "agent_id": "web_to_apk_agent",
         "name": "Web2APK Autonomous Android Packager",
         "remote_url": "https://github.com/thakoralpesh3/web-to-apk-agent.git",
-        "has_pre_push_hook": false,
-        "has_dependabot": false,
-        "findings_count": 3,
-        "findings": [
-          {
-            "severity": "HIGH",
-            "category": "GITHUB_PUSH_PROTECTION",
-            "title": "Missing Pre-Push Secret Hook: Web2APK Autonomous Android Packager",
-            "repo": "Web2APK Autonomous Android Packager",
-            "details": "Repository Web2APK Autonomous Android Packager lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-            "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-          },
-          {
-            "severity": "MEDIUM",
-            "category": "GITHUB_ACTIONS_HARDENING",
-            "title": "Unrestricted GitHub Actions Permissions in ci.yml (Web2APK Autonomous Android Packager)",
-            "repo": "Web2APK Autonomous Android Packager",
-            "file": ".github/workflows/ci.yml",
-            "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-            "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-          },
-          {
-            "severity": "LOW",
-            "category": "GITHUB_SUPPLY_CHAIN",
-            "title": "Dependabot Not Configured: Web2APK Autonomous Android Packager",
-            "repo": "Web2APK Autonomous Android Packager",
-            "details": "Repository Web2APK Autonomous Android Packager does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-            "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-          }
-        ]
+        "has_pre_push_hook": true,
+        "has_dependabot": true,
+        "findings_count": 0,
+        "findings": []
       },
       {
         "agent_id": "web_to_ipa_agent",
         "name": "Web2IPA Autonomous iOS Packager",
         "remote_url": "https://github.com/thakoralpesh3/web-to-ipa-agent.git",
-        "has_pre_push_hook": false,
-        "has_dependabot": false,
-        "findings_count": 3,
-        "findings": [
-          {
-            "severity": "HIGH",
-            "category": "GITHUB_PUSH_PROTECTION",
-            "title": "Missing Pre-Push Secret Hook: Web2IPA Autonomous iOS Packager",
-            "repo": "Web2IPA Autonomous iOS Packager",
-            "details": "Repository Web2IPA Autonomous iOS Packager lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-            "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-          },
-          {
-            "severity": "MEDIUM",
-            "category": "GITHUB_ACTIONS_HARDENING",
-            "title": "Unrestricted GitHub Actions Permissions in ci.yml (Web2IPA Autonomous iOS Packager)",
-            "repo": "Web2IPA Autonomous iOS Packager",
-            "file": ".github/workflows/ci.yml",
-            "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-            "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-          },
-          {
-            "severity": "LOW",
-            "category": "GITHUB_SUPPLY_CHAIN",
-            "title": "Dependabot Not Configured: Web2IPA Autonomous iOS Packager",
-            "repo": "Web2IPA Autonomous iOS Packager",
-            "details": "Repository Web2IPA Autonomous iOS Packager does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-            "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-          }
-        ]
+        "has_pre_push_hook": true,
+        "has_dependabot": true,
+        "findings_count": 0,
+        "findings": []
       },
       {
         "agent_id": "apk_tv_converter_agent",
         "name": "APK TV Converter Agent",
         "remote_url": "https://github.com/thakoralpesh3/apk-tv-converter-agent.git",
-        "has_pre_push_hook": false,
-        "has_dependabot": false,
-        "findings_count": 3,
-        "findings": [
-          {
-            "severity": "HIGH",
-            "category": "GITHUB_PUSH_PROTECTION",
-            "title": "Missing Pre-Push Secret Hook: APK TV Converter Agent",
-            "repo": "APK TV Converter Agent",
-            "details": "Repository APK TV Converter Agent lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-            "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-          },
-          {
-            "severity": "MEDIUM",
-            "category": "GITHUB_ACTIONS_HARDENING",
-            "title": "Unrestricted GitHub Actions Permissions in ci.yml (APK TV Converter Agent)",
-            "repo": "APK TV Converter Agent",
-            "file": ".github/workflows/ci.yml",
-            "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-            "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-          },
-          {
-            "severity": "LOW",
-            "category": "GITHUB_SUPPLY_CHAIN",
-            "title": "Dependabot Not Configured: APK TV Converter Agent",
-            "repo": "APK TV Converter Agent",
-            "details": "Repository APK TV Converter Agent does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-            "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-          }
-        ]
+        "has_pre_push_hook": true,
+        "has_dependabot": true,
+        "findings_count": 0,
+        "findings": []
       },
       {
         "agent_id": "book_publishing_agent",
         "name": "PublisheR AI Book Publishing Agent",
         "remote_url": "https://github.com/thakoralpesh3/book-publishing-agent.git",
-        "has_pre_push_hook": false,
-        "has_dependabot": false,
-        "findings_count": 3,
-        "findings": [
-          {
-            "severity": "HIGH",
-            "category": "GITHUB_PUSH_PROTECTION",
-            "title": "Missing Pre-Push Secret Hook: PublisheR AI Book Publishing Agent",
-            "repo": "PublisheR AI Book Publishing Agent",
-            "details": "Repository PublisheR AI Book Publishing Agent lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-            "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-          },
-          {
-            "severity": "MEDIUM",
-            "category": "GITHUB_ACTIONS_HARDENING",
-            "title": "Unrestricted GitHub Actions Permissions in ci.yml (PublisheR AI Book Publishing Agent)",
-            "repo": "PublisheR AI Book Publishing Agent",
-            "file": ".github/workflows/ci.yml",
-            "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-            "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-          },
-          {
-            "severity": "LOW",
-            "category": "GITHUB_SUPPLY_CHAIN",
-            "title": "Dependabot Not Configured: PublisheR AI Book Publishing Agent",
-            "repo": "PublisheR AI Book Publishing Agent",
-            "details": "Repository PublisheR AI Book Publishing Agent does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-            "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-          }
-        ]
+        "has_pre_push_hook": true,
+        "has_dependabot": true,
+        "findings_count": 0,
+        "findings": []
       },
       {
         "agent_id": "kids_game_studio",
         "name": "KidsPlay AI Studio",
         "remote_url": "https://github.com/thakoralpesh3/kidsplay-ai-studio.git",
-        "has_pre_push_hook": false,
-        "has_dependabot": false,
-        "findings_count": 3,
-        "findings": [
-          {
-            "severity": "HIGH",
-            "category": "GITHUB_PUSH_PROTECTION",
-            "title": "Missing Pre-Push Secret Hook: KidsPlay AI Studio",
-            "repo": "KidsPlay AI Studio",
-            "details": "Repository KidsPlay AI Studio lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-            "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-          },
-          {
-            "severity": "MEDIUM",
-            "category": "GITHUB_ACTIONS_HARDENING",
-            "title": "Unrestricted GitHub Actions Permissions in ci.yml (KidsPlay AI Studio)",
-            "repo": "KidsPlay AI Studio",
-            "file": ".github/workflows/ci.yml",
-            "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-            "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-          },
-          {
-            "severity": "LOW",
-            "category": "GITHUB_SUPPLY_CHAIN",
-            "title": "Dependabot Not Configured: KidsPlay AI Studio",
-            "repo": "KidsPlay AI Studio",
-            "details": "Repository KidsPlay AI Studio does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-            "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-          }
-        ]
+        "has_pre_push_hook": true,
+        "has_dependabot": true,
+        "findings_count": 0,
+        "findings": []
       },
       {
         "agent_id": "youtube_agent",
         "name": "YouTube Production & Growth Agent",
         "remote_url": "https://github.com/thakoralpesh3/youtube-agent.git",
         "has_pre_push_hook": false,
-        "has_dependabot": false,
-        "findings_count": 2,
+        "has_dependabot": true,
+        "findings_count": 1,
         "findings": [
           {
             "severity": "HIGH",
@@ -543,14 +146,6 @@
             "repo": "YouTube Production & Growth Agent",
             "details": "Repository YouTube Production & Growth Agent lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
             "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-          },
-          {
-            "severity": "LOW",
-            "category": "GITHUB_SUPPLY_CHAIN",
-            "title": "Dependabot Not Configured: YouTube Production & Growth Agent",
-            "repo": "YouTube Production & Growth Agent",
-            "details": "Repository YouTube Production & Growth Agent does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-            "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
           }
         ]
       },
@@ -558,36 +153,10 @@
         "agent_id": "microcorp_agent",
         "name": "MicroCorp AI Autonomous Enterprise",
         "remote_url": "https://github.com/thakoralpesh3/microcorp-agent.git",
-        "has_pre_push_hook": false,
-        "has_dependabot": false,
-        "findings_count": 3,
-        "findings": [
-          {
-            "severity": "HIGH",
-            "category": "GITHUB_PUSH_PROTECTION",
-            "title": "Missing Pre-Push Secret Hook: MicroCorp AI Autonomous Enterprise",
-            "repo": "MicroCorp AI Autonomous Enterprise",
-            "details": "Repository MicroCorp AI Autonomous Enterprise lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-            "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-          },
-          {
-            "severity": "MEDIUM",
-            "category": "GITHUB_ACTIONS_HARDENING",
-            "title": "Unrestricted GitHub Actions Permissions in ci.yml (MicroCorp AI Autonomous Enterprise)",
-            "repo": "MicroCorp AI Autonomous Enterprise",
-            "file": ".github/workflows/ci.yml",
-            "details": "Workflow ci.yml executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
-            "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
-          },
-          {
-            "severity": "LOW",
-            "category": "GITHUB_SUPPLY_CHAIN",
-            "title": "Dependabot Not Configured: MicroCorp AI Autonomous Enterprise",
-            "repo": "MicroCorp AI Autonomous Enterprise",
-            "details": "Repository MicroCorp AI Autonomous Enterprise does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-            "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-          }
-        ]
+        "has_pre_push_hook": true,
+        "has_dependabot": true,
+        "findings_count": 0,
+        "findings": []
       }
     ]
   },
@@ -682,72 +251,16 @@
       "can_autofix": true
     },
     {
-      "id": "SOL-GEN-2",
-      "severity": "CRITICAL",
-      "title": "Zero-Trust Defensive Policy Enforcement",
-      "solution_gu": "\u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0ab2\u0abe\u0a97\u0ac1 \u0a95\u0ab0\u0ac0 \u0aa5\u0acd\u0ab0\u0ac7\u0a9f \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
-      "action_required": "Investigate and terminate process. Disallow execution permissions on temporary filesystems.",
-      "affected_items": [
-        "Volatile Execution Detected from /tmp/"
-      ],
-      "can_autofix": false
-    },
-    {
-      "id": "SOL-SECRET-REDACT",
+      "id": "SOL-GH-PREPUSH-HOOK",
       "severity": "HIGH",
-      "title": "Zero-Trust Secret Redaction & Environment Vault",
-      "solution_gu": "\u0a95\u0acb\u0aa1\u0aae\u0abe\u0a82\u0aa5\u0ac0 \u0aaa\u0acd\u0ab0\u0abe\u0a87\u0ab5\u0ac7\u0a9f API \u0a95\u0ac0 \u0ab9\u0a9f\u0abe\u0ab5\u0ac0\u0aa8\u0ac7 .env \u0a85\u0aa5\u0ab5\u0abe Cloudflare Secrets \u0aae\u0abe\u0a82 \u0ab8\u0abe\u0a9a\u0ab5\u0acb.",
-      "action_required": "Move leaked credentials to .env file and ensure source files load secrets via os.environ.",
+      "title": "Cloudflare Pre-Push Secret Guard Hook Enforcement",
+      "solution_gu": "\u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0a97\u0ac0\u0a9f\u0ab9\u0aac \u0aaa\u0ab0 \u0aaa\u0ac1\u0ab6 \u0a95\u0ab0\u0aa4\u0abe\u0a82 \u0aaa\u0ab9\u0ac7\u0ab2\u0abe\u0a82 \u0a95\u0acd\u0ab0\u0ac7\u0aa1\u0ac7\u0aa8\u0acd\u0ab6\u0abf\u0aaf\u0ab2\u0acd\u0ab8 \u0a86\u0aaa\u0acb\u0a86\u0aaa \u0aac\u0acd\u0ab2\u0acb\u0a95 \u0a95\u0ab0\u0ab5\u0abe \u0aaa\u0acd\u0ab0\u0ac0-\u0aaa\u0ac1\u0ab6 \u0ab9\u0ac2\u0a95 \u0a87\u0aa8\u0acd\u0ab8\u0acd\u0a9f\u0acb\u0ab2 \u0a95\u0ab0\u0acb.",
+      "action_required": "Install executable .git/hooks/pre-push script across all repositories to intercept secrets.",
       "affected_items": [
-        "file: Missing Pre-Push Secret Hook: Chamunda RE Enterprise & Aradhya CEO",
-        "file: Missing Pre-Push Secret Hook: Jarvis Mark VII System Commander",
-        "file: Missing Pre-Push Secret Hook: Web2APK Autonomous Android Packager",
-        "file: Missing Pre-Push Secret Hook: Web2IPA Autonomous iOS Packager",
-        "file: Missing Pre-Push Secret Hook: APK TV Converter Agent",
-        "file: Missing Pre-Push Secret Hook: PublisheR AI Book Publishing Agent",
-        "file: Missing Pre-Push Secret Hook: KidsPlay AI Studio",
-        "file: Missing Pre-Push Secret Hook: YouTube Production & Growth Agent",
-        "file: Missing Pre-Push Secret Hook: MicroCorp AI Autonomous Enterprise"
-      ],
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-GH-WORKFLOW-HARDEN",
-      "severity": "MEDIUM",
-      "title": "GitHub Actions Least-Privilege Permission Boundary",
-      "solution_gu": "\u0ab5\u0ab0\u0acd\u0a95\u0aab\u0acd\u0ab2\u0acb\u0aae\u0abe\u0a82 'permissions: contents: read' \u0a89\u0aae\u0ac7\u0ab0\u0ac0 \u0a85\u0aa8\u0aa7\u0abf\u0a95\u0ac3\u0aa4 \u0ab0\u0abe\u0a87\u0a9f \u0a8f\u0a95\u0acd\u0ab8\u0ac7\u0ab8 \u0ab0\u0acb\u0a95\u0acb.",
-      "action_required": "Inject permissions: contents: read into all GitHub Actions workflow files.",
-      "affected_items": [
-        "Unrestricted GitHub Actions Permissions in ci.yml (Chamunda RE Enterprise & Aradhya CEO)",
-        "Unrestricted GitHub Actions Permissions in ci.yml (Jarvis Mark VII System Commander)",
-        "Unrestricted GitHub Actions Permissions in ci.yml (Web2APK Autonomous Android Packager)",
-        "Unrestricted GitHub Actions Permissions in ci.yml (Web2IPA Autonomous iOS Packager)",
-        "Unrestricted GitHub Actions Permissions in ci.yml (APK TV Converter Agent)",
-        "Unrestricted GitHub Actions Permissions in ci.yml (PublisheR AI Book Publishing Agent)",
-        "Unrestricted GitHub Actions Permissions in ci.yml (KidsPlay AI Studio)",
-        "Unrestricted GitHub Actions Permissions in ci.yml (MicroCorp AI Autonomous Enterprise)"
-      ],
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-GH-DEPENDABOT",
-      "severity": "LOW",
-      "title": "GitHub Dependabot Supply Chain Vulnerability Patching",
-      "solution_gu": "\u0ab8\u0aaa\u0acd\u0ab2\u0abe\u0aaf \u0a9a\u0ac7\u0a87\u0aa8 \u0ab8\u0ac1\u0ab0\u0a95\u0acd\u0ab7\u0abe \u0aae\u0abe\u0a9f\u0ac7 .github/dependabot.yml \u0a95\u0acb\u0aa8\u0acd\u0aab\u0abf\u0a97\u0ab0 \u0a95\u0ab0\u0acb.",
-      "action_required": "Deploy .github/dependabot.yml to enable weekly automated vulnerability monitoring.",
-      "affected_items": [
-        "Dependabot Not Configured: Chamunda RE Enterprise & Aradhya CEO",
-        "Dependabot Not Configured: Jarvis Mark VII System Commander",
-        "Dependabot Not Configured: Web2APK Autonomous Android Packager",
-        "Dependabot Not Configured: Web2IPA Autonomous iOS Packager",
-        "Dependabot Not Configured: APK TV Converter Agent",
-        "Dependabot Not Configured: PublisheR AI Book Publishing Agent",
-        "Dependabot Not Configured: KidsPlay AI Studio",
-        "Dependabot Not Configured: YouTube Production & Growth Agent",
-        "Dependabot Not Configured: MicroCorp AI Autonomous Enterprise"
+        "Missing Pre-Push Secret Hook: YouTube Production & Growth Agent"
       ],
       "can_autofix": true
     }
   ],
-  "duration_seconds": 105.83
+  "duration_seconds": 0.47
 }

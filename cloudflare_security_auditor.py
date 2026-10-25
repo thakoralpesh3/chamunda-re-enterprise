@@ -601,6 +601,19 @@ class CloudflareSecurityAuditor:
                         "can_autofix": True
                     }
                 solutions_map[sol_id]["affected_items"].append(title)
+            elif "Pre-Push" in title or cat == "GITHUB_PUSH_PROTECTION":
+                sol_id = "SOL-GH-PREPUSH-HOOK"
+                if sol_id not in solutions_map:
+                    solutions_map[sol_id] = {
+                        "id": sol_id,
+                        "severity": sev,
+                        "title": "Cloudflare Pre-Push Secret Guard Hook Enforcement",
+                        "solution_gu": "પબ્લિક ગીટહબ પર પુશ કરતાં પહેલાં ક્રેડેન્શિયલ્સ આપોઆપ બ્લોક કરવા પ્રી-પુશ હૂક ઇન્સ્ટોલ કરો.",
+                        "action_required": "Install executable .git/hooks/pre-push script across all repositories to intercept secrets.",
+                        "affected_items": [],
+                        "can_autofix": True
+                    }
+                solutions_map[sol_id]["affected_items"].append(title)
             elif "Secret" in title or "Leaked" in title:
                 sol_id = "SOL-SECRET-REDACT"
                 if sol_id not in solutions_map:
@@ -636,19 +649,6 @@ class CloudflareSecurityAuditor:
                         "title": "Automated .gitignore Hardening",
                         "solution_gu": ".gitignore માં જરૂરી સિક્યોરિટી નિયમો ઉમેરો.",
                         "action_required": "Inject standard rules (.env, .venv, *.key) into repository .gitignore.",
-                        "affected_items": [],
-                        "can_autofix": True
-                    }
-                solutions_map[sol_id]["affected_items"].append(title)
-            elif "Pre-Push" in title or cat == "GITHUB_PUSH_PROTECTION":
-                sol_id = "SOL-GH-PREPUSH-HOOK"
-                if sol_id not in solutions_map:
-                    solutions_map[sol_id] = {
-                        "id": sol_id,
-                        "severity": sev,
-                        "title": "Cloudflare Pre-Push Secret Guard Hook Enforcement",
-                        "solution_gu": "પબ્લિક ગીટહબ પર પુશ કરતાં પહેલાં ક્રેડેન્શિયલ્સ આપોઆપ બ્લોક કરવા પ્રી-પુશ હૂક ઇન્સ્ટોલ કરો.",
-                        "action_required": "Install executable .git/hooks/pre-push script across all repositories to intercept secrets.",
                         "affected_items": [],
                         "can_autofix": True
                     }
@@ -715,8 +715,9 @@ class CloudflareSecurityAuditor:
         # 1. Auto-install Pre-Push Secret Guard Hook in all git repos
         for agent in agents:
             p = Path(agent["path"])
-            git_hooks = p / ".git" / "hooks"
-            if git_hooks.exists():
+            if (p / ".git").exists():
+                git_hooks = p / ".git" / "hooks"
+                git_hooks.mkdir(parents=True, exist_ok=True)
                 hook_file = git_hooks / "pre-push"
                 try:
                     hook_file.write_text(PRE_PUSH_HOOK_SCRIPT, encoding="utf-8")

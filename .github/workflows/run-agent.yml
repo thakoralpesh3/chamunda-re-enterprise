@@ -16,6 +16,9 @@ on:
     # Run daily health & snapshot audit at midnight UTC
     - cron: '0 0 * * *'
 
+permissions:
+  contents: read
+
 jobs:
   run-agent:
     name: Execute Autonomous Core (${{ github.event.inputs.action_type || 'scheduled_audit' }})

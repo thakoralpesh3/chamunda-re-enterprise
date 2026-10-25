@@ -48,3 +48,7 @@ data/purchase_orders/
 *.swp
 *~
 data/cloud_shadow_state.json
+
+# Cloudflare Security Auditor Hardening
+*.pyc
+*.token
