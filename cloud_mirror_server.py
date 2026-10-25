@@ -27,6 +27,7 @@ from dms_enterprise_suite_engine import get_dms_suite_engine
 from chhaya_agent_gateway import get_chhaya_agent_gateway
 from system_optimizer import get_system_optimizer
 from whatsapp_dispatch_engine import get_whatsapp_dispatch_engine, OFFICIAL_WHATSAPP_PHONE
+from cloudflare_security_auditor import get_cloudflare_auditor
 
 
 def get_public_url() -> Optional[str]:
@@ -65,6 +66,16 @@ app = FastAPI(
     description="Unified 24/7 Mobile Command Center for All Autonomous Agents on this Laptop",
     version="3.0.0"
 )
+
+@app.middleware("http")
+async def add_cloudflare_security_headers(request: Request, call_next):
+    response = await call_next(request)
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["X-Frame-Options"] = "SAMEORIGIN"
+    response.headers["X-XSS-Protection"] = "1; mode=block"
+    response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+    response.headers["Server"] = "Cloudflare-Zero-Trust-Chhaya/3.0"
+    return response
 
 # Mount static files for PWA
 STATIC_DIR = BASE_DIR / "static"
@@ -1665,6 +1676,25 @@ async def update_whatsapp_config(request: Request):
             trigger_reason="API_KEY_SETUP_TEST"
         )
     return JSONResponse(content={"success": True, "config": updated, "test_result": test_result})
+
+
+@app.get("/api/security/audit")
+async def get_security_audit(force_refresh: bool = False):
+    """Retrieve full Cloudflare-standard cybersecurity audit report for laptop & agents."""
+    auditor = get_cloudflare_auditor()
+    if force_refresh or auditor.cached_audit is None:
+        report = auditor.run_full_security_audit()
+    else:
+        report = auditor.cached_audit
+    return JSONResponse(content={"success": True, "report": report})
+
+
+@app.post("/api/security/remediate")
+async def execute_security_remediation():
+    """Trigger autonomous Zero Trust defense hardening (.gitignore, env protections)."""
+    auditor = get_cloudflare_auditor()
+    res = auditor.auto_remediate_all()
+    return JSONResponse(content=res)
 
 
 if __name__ == "__main__":
