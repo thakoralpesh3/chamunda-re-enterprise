@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-25 19:36:26",
+  "timestamp": "2026-10-25 19:45:52",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 94,
-  "grade": "A (Zero Trust Compliant)",
-  "total_agents_audited": 8,
+  "overall_score": 85,
+  "grade": "B (Hardened with Warnings)",
+  "total_agents_audited": 9,
   "threats_summary": {
-    "total_threats": 2,
+    "total_threats": 5,
     "critical": 0,
     "high": 0,
-    "medium": 2,
+    "medium": 5,
     "low": 0
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 9,
+    "active_listening_sockets": 17,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
@@ -21,6 +21,27 @@
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8899)",
         "details": "Port 8899 (uvicorn (PID 1192)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
+      },
+      {
+        "severity": "MEDIUM",
+        "category": "ORIGIN_EXPOSURE",
+        "title": "Service Bound to All Interfaces (0.0.0.0:8550)",
+        "details": "Port 8550 (python3 (PID 1191)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
+      },
+      {
+        "severity": "MEDIUM",
+        "category": "ORIGIN_EXPOSURE",
+        "title": "Service Bound to All Interfaces (0.0.0.0:8085)",
+        "details": "Port 8085 (python3 (PID 1085)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
+      },
+      {
+        "severity": "MEDIUM",
+        "category": "ORIGIN_EXPOSURE",
+        "title": "Service Bound to All Interfaces (0.0.0.0:8080)",
+        "details": "Port 8080 (python3 (PID 1744)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       },
       {
@@ -34,7 +55,7 @@
   },
   "github_cloud_audit": {
     "status": "PASS",
-    "total_repositories_audited": 8,
+    "total_repositories_audited": 9,
     "findings_count": 0,
     "findings": [],
     "repositories": [
@@ -109,6 +130,15 @@
         "has_dependabot": true,
         "findings_count": 0,
         "findings": []
+      },
+      {
+        "agent_id": "microcorp_agent",
+        "name": "MicroCorp AI Autonomous Enterprise",
+        "remote_url": "https://github.com/thakoralpesh3/microcorp-agent.git",
+        "has_pre_push_hook": true,
+        "has_dependabot": true,
+        "findings_count": 0,
+        "findings": []
       }
     ]
   },
@@ -176,6 +206,14 @@
       "status": "PASS",
       "findings_count": 0,
       "findings": []
+    },
+    {
+      "agent_id": "microcorp_agent",
+      "name": "MicroCorp AI Autonomous Enterprise",
+      "path": "/media/alpesh/Software & Work/Agents/microcorp-agent",
+      "status": "PASS",
+      "findings_count": 0,
+      "findings": []
     }
   ],
   "defensive_solutions": [
@@ -187,10 +225,13 @@
       "action_required": "Configure microservices to bind strictly to 127.0.0.1 and expose securely via Cloudflare Tunnel.",
       "affected_items": [
         "Service Bound to All Interfaces (0.0.0.0:8899)",
+        "Service Bound to All Interfaces (0.0.0.0:8550)",
+        "Service Bound to All Interfaces (0.0.0.0:8085)",
+        "Service Bound to All Interfaces (0.0.0.0:8080)",
         "Service Bound to All Interfaces (0.0.0.0:8081)"
       ],
       "can_autofix": true
     }
   ],
-  "duration_seconds": 25.23
+  "duration_seconds": 10.02
 }
