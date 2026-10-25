@@ -57,6 +57,17 @@ SECRET_REGEX_PATTERNS = [
     ("HIGH", "OpenAI API Secret Key", r"sk-[a-zA-Z0-9]{32,}")
 ]
 
+DUMMY_SECRET_PATTERNS = [
+    r"1234567890",
+    r"EXAMPLE",
+    r"0000000000",
+    r"XXXXX",
+    r"TESTKEY",
+    r"dummy",
+    r"fake",
+    r"placeholder"
+]
+
 SUSPICIOUS_PORTS = {
     4444: "Metasploit Default Reverse Shell Listener",
     1337: "Classic Backdoor Listener",
@@ -133,21 +144,27 @@ class CloudflareSecurityAuditor:
         
         try:
             res = subprocess.run(
-                ["ss", "-tulpn"],
+                ["ss", "-tlpn"],
                 capture_output=True,
                 text=True,
                 timeout=5
             )
             for line in res.stdout.splitlines()[1:]:
                 parts = line.split()
-                if len(parts) >= 5:
-                    local_addr = parts[4]
+                if len(parts) >= 4:
+                    local_addr = parts[3]
+                    proc_info = parts[5] if len(parts) > 5 else ""
+                    proc_name = ""
+                    if proc_info:
+                        m_proc = re.findall(r'"([^"]+)",pid=(\d+)', proc_info)
+                        if m_proc:
+                            proc_name = f"{m_proc[0][0]} (PID {m_proc[0][1]})"
                     if ":" in local_addr:
                         try:
                             port_str = local_addr.rsplit(":", 1)[1]
                             port = int(port_str)
                             ip_bind = local_addr.rsplit(":", 1)[0]
-                            listening_ports.append({"ip": ip_bind, "port": port, "raw": local_addr})
+                            listening_ports.append({"ip": ip_bind, "port": port, "raw": local_addr, "process": proc_name})
 
                             # Check for hostile known backdoor ports
                             if port in SUSPICIOUS_PORTS:
@@ -155,17 +172,18 @@ class CloudflareSecurityAuditor:
                                     "severity": "CRITICAL",
                                     "category": "HOST_INTEGRITY",
                                     "title": f"Hostile Backdoor Port Listening: {port}",
-                                    "details": f"Port {port} ({SUSPICIOUS_PORTS[port]}) is open on local socket: {local_addr}",
+                                    "details": f"Port {port} ({SUSPICIOUS_PORTS[port]}) is open on local socket: {local_addr} ({proc_name})",
                                     "remediation": f"Immediately terminate process listening on port {port} and check origin binary."
                                 })
 
                             # Check for uncloaked 0.0.0.0 bindings on non-standard ports
                             if ip_bind in ["0.0.0.0", "*", "[::]"] and port > 1024:
+                                details_desc = f"Port {port} ({proc_name or 'Process'}) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust."
                                 findings.append({
                                     "severity": "MEDIUM",
                                     "category": "ORIGIN_EXPOSURE",
                                     "title": f"Service Bound to All Interfaces (0.0.0.0:{port})",
-                                    "details": f"Port {port} accepts raw connections from all local network interfaces instead of binding strictly to loopback or routing through Cloudflare Zero Trust.",
+                                    "details": details_desc,
                                     "remediation": f"Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
                                 })
                         except Exception:
