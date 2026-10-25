@@ -273,14 +273,20 @@ class CloudflareSecurityAuditor:
                                 continue
                             matches = re.findall(pat, content)
                             if matches:
-                                findings.append({
-                                    "severity": sev,
-                                    "category": "SECRET_LEAK",
-                                    "title": f"Leaked Credential: {title}",
-                                    "file": str(filepath.relative_to(path)),
-                                    "details": f"Found {len(matches)} potential secret occurrence(s) in {file}",
-                                    "remediation": f"Redact secret from {file}, add to .gitignore, and load via environment variable."
-                                })
+                                # Filter out dummy mock values in tests
+                                valid_matches = [
+                                    m for m in matches
+                                    if not any(re.search(d_pat, m, re.IGNORECASE) for d_pat in DUMMY_SECRET_PATTERNS)
+                                ]
+                                if valid_matches:
+                                    findings.append({
+                                        "severity": sev,
+                                        "category": "SECRET_LEAK",
+                                        "title": f"Leaked Credential: {title}",
+                                        "file": str(filepath.relative_to(path)),
+                                        "details": f"Found {len(valid_matches)} potential real secret occurrence(s) in {file}",
+                                        "remediation": f"Redact secret from {file}, add to .gitignore, and load via environment variable."
+                                    })
                     except Exception:
                         pass
 
@@ -396,70 +402,78 @@ class CloudflareSecurityAuditor:
 
     def generate_defensive_solutions(self, threats: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Map discovered threat vectors to concrete Cloudflare Zero Trust solutions."""
-        solutions = []
-        seen = set()
+        solutions_map: Dict[str, Dict[str, Any]] = {}
 
         for threat in threats:
             title = threat.get("title", "")
-            if title in seen:
-                continue
-            seen.add(title)
-
             cat = threat.get("category", "")
             sev = threat.get("severity", "LOW")
 
             if "0.0.0.0" in title:
-                solutions.append({
-                    "id": "SOL-ORIGIN-CLOAK",
-                    "threat": title,
-                    "severity": sev,
-                    "title": "Cloudflare Origin Cloaking (Bind Loopback)",
-                    "solution_gu": "સર્વિસને 127.0.0.1 પર બાઇન્ડ કરી પબ્લિક પોર્ટ એક્સપોઝર અટકાવો.",
-                    "action_required": "Configure microservice to bind strictly to 127.0.0.1 and expose via Cloudflare Tunnel.",
-                    "can_autofix": True
-                })
+                sol_id = "SOL-ORIGIN-CLOAK"
+                if sol_id not in solutions_map:
+                    solutions_map[sol_id] = {
+                        "id": sol_id,
+                        "severity": sev,
+                        "title": "Cloudflare Origin Cloaking (Bind Loopback)",
+                        "solution_gu": "સર્વિસને 127.0.0.1 પર બાઇન્ડ કરી પબ્લિક પોર્ટ એક્સપોઝર અટકાવો.",
+                        "action_required": "Configure microservices to bind strictly to 127.0.0.1 and expose securely via Cloudflare Tunnel.",
+                        "affected_items": [],
+                        "can_autofix": True
+                    }
+                solutions_map[sol_id]["affected_items"].append(title)
             elif "Secret" in title or "Leaked" in title:
-                solutions.append({
-                    "id": "SOL-SECRET-REDACT",
-                    "threat": title,
-                    "severity": sev,
-                    "title": "Zero-Trust Secret Redaction & Environment Vault",
-                    "solution_gu": "કોડમાંથી પ્રાઇવેટ API કી હટાવીને .env અથવા Cloudflare Secrets માં સાચવો.",
-                    "action_required": f"Move leaked credentials to .env file and ensure {threat.get('file', 'file')} uses os.environ.",
-                    "can_autofix": True
-                })
+                sol_id = "SOL-SECRET-REDACT"
+                if sol_id not in solutions_map:
+                    solutions_map[sol_id] = {
+                        "id": sol_id,
+                        "severity": sev,
+                        "title": "Zero-Trust Secret Redaction & Environment Vault",
+                        "solution_gu": "કોડમાંથી પ્રાઇવેટ API કી હટાવીને .env અથવા Cloudflare Secrets માં સાચવો.",
+                        "action_required": "Move leaked credentials to .env file and ensure source files load secrets via os.environ.",
+                        "affected_items": [],
+                        "can_autofix": True
+                    }
+                solutions_map[sol_id]["affected_items"].append(f"{threat.get('file', 'file')}: {title}")
             elif "Tunnel" in title:
-                solutions.append({
-                    "id": "SOL-TUNNEL-RESILIENCE",
-                    "threat": title,
-                    "severity": sev,
-                    "title": "Cloudflare Tunnel Auto-Restart & Fallback",
-                    "solution_gu": "Cloudflare ટનલ બંધ હોય તો watchdog દ્વારા આપોઆપ રીસ્ટાર્ટ કરો.",
-                    "action_required": "Verify chamunda-chhaya.service is running with quick-tunnel fallback.",
-                    "can_autofix": True
-                })
+                sol_id = "SOL-TUNNEL-RESILIENCE"
+                if sol_id not in solutions_map:
+                    solutions_map[sol_id] = {
+                        "id": sol_id,
+                        "severity": sev,
+                        "title": "Cloudflare Tunnel Auto-Restart & Fallback",
+                        "solution_gu": "Cloudflare ટનલ બંધ હોય તો watchdog દ્વારા આપોઆપ રીસ્ટાર્ટ કરો.",
+                        "action_required": "Verify chamunda-chhaya.service is running with quick-tunnel fallback.",
+                        "affected_items": [],
+                        "can_autofix": True
+                    }
+                solutions_map[sol_id]["affected_items"].append(title)
             elif ".gitignore" in title:
-                solutions.append({
-                    "id": "SOL-GITIGNORE-HARDEN",
-                    "threat": title,
-                    "severity": sev,
-                    "title": "Automated .gitignore Hardening",
-                    "solution_gu": ".gitignore માં જરૂરી સિક્યોરિટી નિયમો ઉમેરો.",
-                    "action_required": "Inject standard rules (.env, .venv, *.key) into repository .gitignore.",
-                    "can_autofix": True
-                })
+                sol_id = "SOL-GITIGNORE-HARDEN"
+                if sol_id not in solutions_map:
+                    solutions_map[sol_id] = {
+                        "id": sol_id,
+                        "severity": sev,
+                        "title": "Automated .gitignore Hardening",
+                        "solution_gu": ".gitignore માં જરૂરી સિક્યોરિટી નિયમો ઉમેરો.",
+                        "action_required": "Inject standard rules (.env, .venv, *.key) into repository .gitignore.",
+                        "affected_items": [],
+                        "can_autofix": True
+                    }
+                solutions_map[sol_id]["affected_items"].append(title)
             else:
-                solutions.append({
-                    "id": f"SOL-GEN-{len(solutions)+1}",
-                    "threat": title,
+                sol_id = f"SOL-GEN-{len(solutions_map)+1}"
+                solutions_map[sol_id] = {
+                    "id": sol_id,
                     "severity": sev,
                     "title": "Zero-Trust Defensive Policy Enforcement",
                     "solution_gu": "સિક્યોરિટી નિયમો લાગુ કરી થ્રેટ અટકાવો.",
                     "action_required": threat.get("remediation", "Apply defensive patches."),
+                    "affected_items": [title],
                     "can_autofix": False
-                })
+                }
 
-        return solutions
+        return list(solutions_map.values())
 
     def auto_remediate_all(self) -> Dict[str, Any]:
         """Automatically execute safe defensive mitigations."""
@@ -546,4 +560,9 @@ if __name__ == "__main__":
             print(f"  [{s['severity']}] {s['title']}")
             print(f"       👉 Solution: {s['solution_gu']}")
             print(f"       🔧 Action: {s['action_required']}")
+            if s.get("affected_items"):
+                items_str = ", ".join(s["affected_items"][:4])
+                if len(s["affected_items"]) > 4:
+                    items_str += f" (+{len(s['affected_items']) - 4} more)"
+                print(f"       🎯 Targets: {items_str}")
     print("=" * 76 + "\n")

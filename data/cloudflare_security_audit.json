@@ -1,96 +1,54 @@
 {
-  "timestamp": "2026-10-25 15:33:09",
+  "timestamp": "2026-10-25 15:36:35",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 6,
-  "grade": "F (High Cyber Risk)",
+  "overall_score": 80,
+  "grade": "B (Hardened with Warnings)",
   "total_agents_audited": 9,
   "threats_summary": {
-    "total_threats": 13,
-    "critical": 2,
+    "total_threats": 5,
+    "critical": 0,
     "high": 0,
-    "medium": 11,
+    "medium": 5,
     "low": 0
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 25,
+    "active_listening_sockets": 17,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
-        "title": "Service Bound to All Interfaces (0.0.0.0:5353)",
-        "details": "Port 5353 accepts raw connections from all local network interfaces instead of binding strictly to loopback or routing through Cloudflare Zero Trust.",
-        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "ORIGIN_EXPOSURE",
-        "title": "Service Bound to All Interfaces (0.0.0.0:49499)",
-        "details": "Port 49499 accepts raw connections from all local network interfaces instead of binding strictly to loopback or routing through Cloudflare Zero Trust.",
-        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "ORIGIN_EXPOSURE",
-        "title": "Service Bound to All Interfaces (0.0.0.0:47942)",
-        "details": "Port 47942 accepts raw connections from all local network interfaces instead of binding strictly to loopback or routing through Cloudflare Zero Trust.",
-        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "ORIGIN_EXPOSURE",
-        "title": "Service Bound to All Interfaces (0.0.0.0:54177)",
-        "details": "Port 54177 accepts raw connections from all local network interfaces instead of binding strictly to loopback or routing through Cloudflare Zero Trust.",
-        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "ORIGIN_EXPOSURE",
-        "title": "Service Bound to All Interfaces (0.0.0.0:54333)",
-        "details": "Port 54333 accepts raw connections from all local network interfaces instead of binding strictly to loopback or routing through Cloudflare Zero Trust.",
-        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "ORIGIN_EXPOSURE",
-        "title": "Service Bound to All Interfaces (0.0.0.0:5353)",
-        "details": "Port 5353 accepts raw connections from all local network interfaces instead of binding strictly to loopback or routing through Cloudflare Zero Trust.",
-        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8081)",
-        "details": "Port 8081 accepts raw connections from all local network interfaces instead of binding strictly to loopback or routing through Cloudflare Zero Trust.",
+        "details": "Port 8081 (python3 (PID 7875)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       },
       {
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8080)",
-        "details": "Port 8080 accepts raw connections from all local network interfaces instead of binding strictly to loopback or routing through Cloudflare Zero Trust.",
+        "details": "Port 8080 (python3 (PID 1838)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       },
       {
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8085)",
-        "details": "Port 8085 accepts raw connections from all local network interfaces instead of binding strictly to loopback or routing through Cloudflare Zero Trust.",
+        "details": "Port 8085 (python3 (PID 1098)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       },
       {
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8550)",
-        "details": "Port 8550 accepts raw connections from all local network interfaces instead of binding strictly to loopback or routing through Cloudflare Zero Trust.",
+        "details": "Port 8550 (python3 (PID 14631)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       },
       {
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8899)",
-        "details": "Port 8899 accepts raw connections from all local network interfaces instead of binding strictly to loopback or routing through Cloudflare Zero Trust.",
+        "details": "Port 8899 (uvicorn (PID 1198)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       }
     ]
@@ -116,35 +74,17 @@
       "agent_id": "web_to_apk_agent",
       "name": "Web2APK Autonomous Android Packager",
       "path": "/home/alpesh/web-to-apk-agent",
-      "status": "FAIL",
-      "findings_count": 1,
-      "findings": [
-        {
-          "severity": "CRITICAL",
-          "category": "SECRET_LEAK",
-          "title": "Leaked Credential: AWS Access Key Leaked",
-          "file": "tests/test_cyber_security.py",
-          "details": "Found 1 potential secret occurrence(s) in test_cyber_security.py",
-          "remediation": "Redact secret from test_cyber_security.py, add to .gitignore, and load via environment variable."
-        }
-      ]
+      "status": "PASS",
+      "findings_count": 0,
+      "findings": []
     },
     {
       "agent_id": "web_to_ipa_agent",
       "name": "Web2IPA Autonomous iOS Packager",
       "path": "/home/alpesh/web-to-ipa-agent",
-      "status": "FAIL",
-      "findings_count": 1,
-      "findings": [
-        {
-          "severity": "CRITICAL",
-          "category": "SECRET_LEAK",
-          "title": "Leaked Credential: AWS Access Key Leaked",
-          "file": "tests/test_gui_server.py",
-          "details": "Found 1 potential secret occurrence(s) in test_gui_server.py",
-          "remediation": "Redact secret from test_gui_server.py, add to .gitignore, and load via environment variable."
-        }
-      ]
+      "status": "PASS",
+      "findings_count": 0,
+      "findings": []
     },
     {
       "agent_id": "apk_tv_converter_agent",
@@ -190,103 +130,19 @@
   "defensive_solutions": [
     {
       "id": "SOL-ORIGIN-CLOAK",
-      "threat": "Service Bound to All Interfaces (0.0.0.0:5353)",
       "severity": "MEDIUM",
       "title": "Cloudflare Origin Cloaking (Bind Loopback)",
       "solution_gu": "\u0ab8\u0ab0\u0acd\u0ab5\u0abf\u0ab8\u0aa8\u0ac7 127.0.0.1 \u0aaa\u0ab0 \u0aac\u0abe\u0a87\u0aa8\u0acd\u0aa1 \u0a95\u0ab0\u0ac0 \u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0aaa\u0acb\u0ab0\u0acd\u0a9f \u0a8f\u0a95\u0acd\u0ab8\u0aaa\u0acb\u0a9d\u0ab0 \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
-      "action_required": "Configure microservice to bind strictly to 127.0.0.1 and expose via Cloudflare Tunnel.",
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-ORIGIN-CLOAK",
-      "threat": "Service Bound to All Interfaces (0.0.0.0:49499)",
-      "severity": "MEDIUM",
-      "title": "Cloudflare Origin Cloaking (Bind Loopback)",
-      "solution_gu": "\u0ab8\u0ab0\u0acd\u0ab5\u0abf\u0ab8\u0aa8\u0ac7 127.0.0.1 \u0aaa\u0ab0 \u0aac\u0abe\u0a87\u0aa8\u0acd\u0aa1 \u0a95\u0ab0\u0ac0 \u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0aaa\u0acb\u0ab0\u0acd\u0a9f \u0a8f\u0a95\u0acd\u0ab8\u0aaa\u0acb\u0a9d\u0ab0 \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
-      "action_required": "Configure microservice to bind strictly to 127.0.0.1 and expose via Cloudflare Tunnel.",
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-ORIGIN-CLOAK",
-      "threat": "Service Bound to All Interfaces (0.0.0.0:47942)",
-      "severity": "MEDIUM",
-      "title": "Cloudflare Origin Cloaking (Bind Loopback)",
-      "solution_gu": "\u0ab8\u0ab0\u0acd\u0ab5\u0abf\u0ab8\u0aa8\u0ac7 127.0.0.1 \u0aaa\u0ab0 \u0aac\u0abe\u0a87\u0aa8\u0acd\u0aa1 \u0a95\u0ab0\u0ac0 \u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0aaa\u0acb\u0ab0\u0acd\u0a9f \u0a8f\u0a95\u0acd\u0ab8\u0aaa\u0acb\u0a9d\u0ab0 \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
-      "action_required": "Configure microservice to bind strictly to 127.0.0.1 and expose via Cloudflare Tunnel.",
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-ORIGIN-CLOAK",
-      "threat": "Service Bound to All Interfaces (0.0.0.0:54177)",
-      "severity": "MEDIUM",
-      "title": "Cloudflare Origin Cloaking (Bind Loopback)",
-      "solution_gu": "\u0ab8\u0ab0\u0acd\u0ab5\u0abf\u0ab8\u0aa8\u0ac7 127.0.0.1 \u0aaa\u0ab0 \u0aac\u0abe\u0a87\u0aa8\u0acd\u0aa1 \u0a95\u0ab0\u0ac0 \u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0aaa\u0acb\u0ab0\u0acd\u0a9f \u0a8f\u0a95\u0acd\u0ab8\u0aaa\u0acb\u0a9d\u0ab0 \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
-      "action_required": "Configure microservice to bind strictly to 127.0.0.1 and expose via Cloudflare Tunnel.",
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-ORIGIN-CLOAK",
-      "threat": "Service Bound to All Interfaces (0.0.0.0:54333)",
-      "severity": "MEDIUM",
-      "title": "Cloudflare Origin Cloaking (Bind Loopback)",
-      "solution_gu": "\u0ab8\u0ab0\u0acd\u0ab5\u0abf\u0ab8\u0aa8\u0ac7 127.0.0.1 \u0aaa\u0ab0 \u0aac\u0abe\u0a87\u0aa8\u0acd\u0aa1 \u0a95\u0ab0\u0ac0 \u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0aaa\u0acb\u0ab0\u0acd\u0a9f \u0a8f\u0a95\u0acd\u0ab8\u0aaa\u0acb\u0a9d\u0ab0 \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
-      "action_required": "Configure microservice to bind strictly to 127.0.0.1 and expose via Cloudflare Tunnel.",
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-ORIGIN-CLOAK",
-      "threat": "Service Bound to All Interfaces (0.0.0.0:8081)",
-      "severity": "MEDIUM",
-      "title": "Cloudflare Origin Cloaking (Bind Loopback)",
-      "solution_gu": "\u0ab8\u0ab0\u0acd\u0ab5\u0abf\u0ab8\u0aa8\u0ac7 127.0.0.1 \u0aaa\u0ab0 \u0aac\u0abe\u0a87\u0aa8\u0acd\u0aa1 \u0a95\u0ab0\u0ac0 \u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0aaa\u0acb\u0ab0\u0acd\u0a9f \u0a8f\u0a95\u0acd\u0ab8\u0aaa\u0acb\u0a9d\u0ab0 \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
-      "action_required": "Configure microservice to bind strictly to 127.0.0.1 and expose via Cloudflare Tunnel.",
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-ORIGIN-CLOAK",
-      "threat": "Service Bound to All Interfaces (0.0.0.0:8080)",
-      "severity": "MEDIUM",
-      "title": "Cloudflare Origin Cloaking (Bind Loopback)",
-      "solution_gu": "\u0ab8\u0ab0\u0acd\u0ab5\u0abf\u0ab8\u0aa8\u0ac7 127.0.0.1 \u0aaa\u0ab0 \u0aac\u0abe\u0a87\u0aa8\u0acd\u0aa1 \u0a95\u0ab0\u0ac0 \u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0aaa\u0acb\u0ab0\u0acd\u0a9f \u0a8f\u0a95\u0acd\u0ab8\u0aaa\u0acb\u0a9d\u0ab0 \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
-      "action_required": "Configure microservice to bind strictly to 127.0.0.1 and expose via Cloudflare Tunnel.",
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-ORIGIN-CLOAK",
-      "threat": "Service Bound to All Interfaces (0.0.0.0:8085)",
-      "severity": "MEDIUM",
-      "title": "Cloudflare Origin Cloaking (Bind Loopback)",
-      "solution_gu": "\u0ab8\u0ab0\u0acd\u0ab5\u0abf\u0ab8\u0aa8\u0ac7 127.0.0.1 \u0aaa\u0ab0 \u0aac\u0abe\u0a87\u0aa8\u0acd\u0aa1 \u0a95\u0ab0\u0ac0 \u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0aaa\u0acb\u0ab0\u0acd\u0a9f \u0a8f\u0a95\u0acd\u0ab8\u0aaa\u0acb\u0a9d\u0ab0 \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
-      "action_required": "Configure microservice to bind strictly to 127.0.0.1 and expose via Cloudflare Tunnel.",
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-ORIGIN-CLOAK",
-      "threat": "Service Bound to All Interfaces (0.0.0.0:8550)",
-      "severity": "MEDIUM",
-      "title": "Cloudflare Origin Cloaking (Bind Loopback)",
-      "solution_gu": "\u0ab8\u0ab0\u0acd\u0ab5\u0abf\u0ab8\u0aa8\u0ac7 127.0.0.1 \u0aaa\u0ab0 \u0aac\u0abe\u0a87\u0aa8\u0acd\u0aa1 \u0a95\u0ab0\u0ac0 \u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0aaa\u0acb\u0ab0\u0acd\u0a9f \u0a8f\u0a95\u0acd\u0ab8\u0aaa\u0acb\u0a9d\u0ab0 \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
-      "action_required": "Configure microservice to bind strictly to 127.0.0.1 and expose via Cloudflare Tunnel.",
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-ORIGIN-CLOAK",
-      "threat": "Service Bound to All Interfaces (0.0.0.0:8899)",
-      "severity": "MEDIUM",
-      "title": "Cloudflare Origin Cloaking (Bind Loopback)",
-      "solution_gu": "\u0ab8\u0ab0\u0acd\u0ab5\u0abf\u0ab8\u0aa8\u0ac7 127.0.0.1 \u0aaa\u0ab0 \u0aac\u0abe\u0a87\u0aa8\u0acd\u0aa1 \u0a95\u0ab0\u0ac0 \u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0aaa\u0acb\u0ab0\u0acd\u0a9f \u0a8f\u0a95\u0acd\u0ab8\u0aaa\u0acb\u0a9d\u0ab0 \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
-      "action_required": "Configure microservice to bind strictly to 127.0.0.1 and expose via Cloudflare Tunnel.",
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-SECRET-REDACT",
-      "threat": "Leaked Credential: AWS Access Key Leaked",
-      "severity": "CRITICAL",
-      "title": "Zero-Trust Secret Redaction & Environment Vault",
-      "solution_gu": "\u0a95\u0acb\u0aa1\u0aae\u0abe\u0a82\u0aa5\u0ac0 \u0aaa\u0acd\u0ab0\u0abe\u0a87\u0ab5\u0ac7\u0a9f API \u0a95\u0ac0 \u0ab9\u0a9f\u0abe\u0ab5\u0ac0\u0aa8\u0ac7 .env \u0a85\u0aa5\u0ab5\u0abe Cloudflare Secrets \u0aae\u0abe\u0a82 \u0ab8\u0abe\u0a9a\u0ab5\u0acb.",
-      "action_required": "Move leaked credentials to .env file and ensure tests/test_cyber_security.py uses os.environ.",
+      "action_required": "Configure microservices to bind strictly to 127.0.0.1 and expose securely via Cloudflare Tunnel.",
+      "affected_items": [
+        "Service Bound to All Interfaces (0.0.0.0:8081)",
+        "Service Bound to All Interfaces (0.0.0.0:8080)",
+        "Service Bound to All Interfaces (0.0.0.0:8085)",
+        "Service Bound to All Interfaces (0.0.0.0:8550)",
+        "Service Bound to All Interfaces (0.0.0.0:8899)"
+      ],
       "can_autofix": true
     }
   ],
-  "duration_seconds": 0.86
+  "duration_seconds": 1.15
 }
