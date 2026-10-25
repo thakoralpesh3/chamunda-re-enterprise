@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-25 16:29:53",
+  "timestamp": "2026-10-25 16:40:15",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
   "overall_score": 85,
   "grade": "B (Hardened with Warnings)",
@@ -13,7 +13,7 @@
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 16,
+    "active_listening_sockets": 17,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
@@ -233,5 +233,5 @@
       "can_autofix": true
     }
   ],
-  "duration_seconds": 0.67
+  "duration_seconds": 8.79
 }
