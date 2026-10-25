@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-26 01:04:47",
+  "timestamp": "2026-10-26 01:10:13",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
   "overall_score": 76,
   "grade": "C (Remediation Required)",
@@ -160,7 +160,7 @@
       {
         "agent_id": "agent_town",
         "name": "\u2728 Auto-Discovered: Agent Town",
-        "remote_url": "",
+        "remote_url": "https://github.com/thakoralpesh3/agent-town.git",
         "has_pre_push_hook": false,
         "has_dependabot": false,
         "findings_count": 2,
@@ -351,5 +351,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 8.21
+  "duration_seconds": 0.35
 }
