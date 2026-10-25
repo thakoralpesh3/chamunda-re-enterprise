@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-10-26 00:53:41",
+  "timestamp": "2026-10-26 00:59:05",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 73,
+  "overall_score": 76,
   "grade": "C (Remediation Required)",
   "total_agents_audited": 10,
   "threats_summary": {
-    "total_threats": 9,
+    "total_threats": 10,
     "critical": 0,
-    "high": 2,
+    "high": 1,
     "medium": 5,
-    "low": 2
+    "low": 4
   },
   "host_os_audit": {
     "status": "WARNING",
@@ -263,14 +263,21 @@
       "name": "\u2728 Auto-Discovered: Agent Town",
       "path": "/media/alpesh/Software & Work/Agents/Agent Town",
       "status": "WARNING",
-      "findings_count": 2,
+      "findings_count": 3,
       "findings": [
         {
-          "severity": "HIGH",
+          "severity": "LOW",
           "category": "ORIGIN_CLOAKING",
-          "title": "Missing .gitignore Security Boundary",
-          "details": "Agent \u2728 Auto-Discovered: Agent Town lacks a .gitignore file. Local configs and session state risk being pushed to public repos.",
-          "remediation": "Create a comprehensive .gitignore file excluding .env, credentials, and virtualenvs."
+          "title": "Incomplete .gitignore: Missing .env",
+          "details": ".gitignore does not explicitly exclude .env.",
+          "remediation": "Add .env to \u2728 Auto-Discovered: Agent Town/.gitignore."
+        },
+        {
+          "severity": "LOW",
+          "category": "ORIGIN_CLOAKING",
+          "title": "Incomplete .gitignore: Missing .venv",
+          "details": ".gitignore does not explicitly exclude .venv.",
+          "remediation": "Add .venv to \u2728 Auto-Discovered: Agent Town/.gitignore."
         },
         {
           "severity": "LOW",
@@ -322,12 +329,13 @@
     },
     {
       "id": "SOL-GITIGNORE-HARDEN",
-      "severity": "HIGH",
+      "severity": "LOW",
       "title": "Automated .gitignore Hardening",
       "solution_gu": ".gitignore \u0aae\u0abe\u0a82 \u0a9c\u0ab0\u0ac2\u0ab0\u0ac0 \u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0a89\u0aae\u0ac7\u0ab0\u0acb.",
       "action_required": "Inject standard rules (.env, .venv, *.key) into repository .gitignore.",
       "affected_items": [
-        "Missing .gitignore Security Boundary"
+        "Incomplete .gitignore: Missing .env",
+        "Incomplete .gitignore: Missing .venv"
       ],
       "can_autofix": true
     },
@@ -343,5 +351,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 37.66
+  "duration_seconds": 0.33
 }
