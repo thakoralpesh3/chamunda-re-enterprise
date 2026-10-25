@@ -80,7 +80,8 @@ class CloudflareSecurityAuditor:
         Returns registered agents plus auto-discovers ANY new agent directories
         created in user workspace or external storage.
         """
-        agents_map = {str(a["path"].resolve()): a for a in self.known_agents if a["path"].exists()}
+        known_resolved_paths = {str(a["path"].resolve()): a for a in self.known_agents if a["path"].exists()}
+        agents_map = dict(known_resolved_paths)
 
         search_roots = [
             Path("/home/alpesh"),
@@ -94,7 +95,7 @@ class CloudflareSecurityAuditor:
                 for item in root.iterdir():
                     if item.is_dir() and not item.name.startswith("."):
                         item_resolved = str(item.resolve())
-                        if item_resolved in agents_map:
+                        if item_resolved in known_resolved_paths:
                             continue
 
                         # Check if directory name suggests an agent
@@ -117,7 +118,7 @@ class CloudflareSecurityAuditor:
                                 "is_dynamically_discovered": True
                             }
                             agents_map[item_resolved] = detected_agent
-                            logger.info("🧬 [Dynamic Discovery] Ingested new agent directory: %s", item.name)
+                            logger.info("🧬 [Dynamic Discovery] Ingested new future agent directory: %s", item.name)
             except Exception as e:
                 logger.debug("Directory discovery error in %s: %s", root, e)
 
@@ -230,13 +231,21 @@ class CloudflareSecurityAuditor:
             }
 
         # 1. Secret & Key Leak Audit (Static Analysis)
+        EXCLUDED_DIRS = {
+            ".venv", "venv", ".git", "__pycache__", "node_modules", ".pytest_cache",
+            "deliverables", "assets", "static", "build", "dist", "data", "output",
+            "samples", "browser_profiles", "downloads", "tmp", "videos", "music"
+        }
         for root, dirs, files in os.walk(path):
-            # Prune virtualenvs and git metadata
-            dirs[:] = [d for d in dirs if d not in [".venv", "venv", ".git", "__pycache__", "node_modules", ".pytest_cache"]]
+            # Prune virtualenvs and heavy asset/data directories
+            dirs[:] = [d for d in dirs if d not in EXCLUDED_DIRS]
             for file in files:
-                if file.endswith((".py", ".json", ".md", ".yaml", ".yml", ".sh", ".toml")):
+                if file.endswith((".py", ".json", ".md", ".yaml", ".yml", ".sh", ".toml", ".env.example")):
                     filepath = Path(root) / file
                     try:
+                        # Skip huge generated data or binary files
+                        if filepath.stat().st_size > 80_000:
+                            continue
                         content = filepath.read_text(encoding="utf-8", errors="ignore")
                         for sev, title, pat in SECRET_REGEX_PATTERNS:
                             # Skip scanning scanner definitions themselves!
