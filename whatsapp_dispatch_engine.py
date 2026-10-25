@@ -104,6 +104,7 @@ class WhatsAppDispatchEngine:
         self,
         public_url: str,
         mdns_url: str = DEFAULT_MDNS_URL,
+        lan_url: str = "",
         reason: str = "લાઈવ લિંક અપડેટ (Live Link Active)",
         permanent_cloud_url: str = ""
     ) -> str:
@@ -113,29 +114,37 @@ class WhatsAppDispatchEngine:
             "🏍️ *CHAMUNDA AUTOMOBILE • PROJECT CHHAYA* 🏍️",
             "જય માતાજી અલ્પેશ સાહેબ (Alpesh Sir),",
             "",
-            "આપના લેપટોપના તમામ ૨૦ એજન્ટ્સ (Agents) માટે લાઈવ લિંક તૈયાર છે:",
+            "આપના લેપટોપના તમામ ૨૧ એજન્ટ્સ (Agents) માટે લાઈવ લિંક્સ તૈયાર છે:",
             f"📅 *સમય:* {timestamp}",
             f"🔔 *કારણ:* {reason}",
             ""
         ]
 
+        if lan_url:
+            lines.extend([
+                "📶 *૧. વાઇફાઇ / હોટસ્પોટ ડાયરેક્ટ લિંક (મોબાઈલમાં ૧૦૦% સુપરફાસ્ટ ખુલશે):*",
+                f"{lan_url}",
+                "*(ફોન અને લેપટોપ એક જ Wi-Fi અથવા હોટસ્પોટ પર હોય ત્યારે આ લિંક વાપરો)*",
+                ""
+            ])
+
+        lines.extend([
+            "🌐 *૨. ઇન્ટરનેટ ઓનલાઇન લિંક (દૂરથી ગમે ત્યાંથી એક્સેસ કરવા):*",
+            f"{public_url}",
+            ""
+        ])
+
         if permanent_cloud_url:
             lines.extend([
-                "☁️ *૨૪/૭ કાયમી ક્લાઉડ લિંક (લેપટોપ બંધ હોય ત્યારે પણ ચાલુ રહેશે):*",
+                "☁️ *૩. ૨૪/૭ ક્લાઉડ લિંક (GitHub Codespaces - લેપટોપ બંધ હોય તો પણ):*",
                 f"{permanent_cloud_url}",
                 ""
             ])
 
         lines.extend([
-            "🌐 *લાઈવ મોબાઈલ લિંક (Online Direct Link):*",
-            f"{public_url}",
+            "⚡ *સક્રિય એજન્ટ્સ:* Aradhya (CEO), Bhairav (Parts), Ramesh (Service), Restomod & Dyno Studio, Jarvis, Web2APK, Web2IPA, YouTube Agent.",
             "",
-            "🏠 *કાયમી લોકલ લિંક (Wi-Fi Permanent Link):*",
-            f"{mdns_url}",
-            "",
-            "⚡ *સક્રિય એજન્ટ્સ:* Aradhya (CEO), Bhairav (Parts), Ramesh (Service), Restomod & Dyno Studio, Kalpavriksha (Growth Engine).",
-            "",
-            "💡 *ટિપ:* મોબાઈલમાં લિંક ખોલી 'Add to Home Screen' કરવાથી એપ તરીકે સેવ થઈ જશે (ઓફલાઇન પણ ખુલશે).",
+            "💡 *મોબાઈલ ટિપ:* લિંક ખોલીને 'Add to Home Screen' કરવાથી તમારા ફોનમાં સીધી એપ બની જશે.",
             "",
             "— *Aradhya (CEO)*, Chamunda Automobile",
             f"Helpline: {OFFICIAL_WHATSAPP_PHONE}"
@@ -154,6 +163,7 @@ class WhatsAppDispatchEngine:
         recipient: str = OFFICIAL_WHATSAPP_INTL,
         trigger_reason: str = "AUTOMATIC_TUNNEL_SYNC",
         mdns_url: str = DEFAULT_MDNS_URL,
+        lan_url: str = "",
         permanent_cloud_url: str = ""
     ) -> Dict[str, Any]:
         """
@@ -169,7 +179,12 @@ class WhatsAppDispatchEngine:
         if not clean_phone:
             clean_phone = OFFICIAL_WHATSAPP_INTL
 
-        message = self.format_link_notification(public_url, mdns_url=mdns_url, permanent_cloud_url=permanent_cloud_url)
+        message = self.format_link_notification(
+            public_url,
+            mdns_url=mdns_url,
+            lan_url=lan_url,
+            permanent_cloud_url=permanent_cloud_url
+        )
         wa_click_url = self.generate_click_to_chat_url(message, clean_phone)
 
         record = {

@@ -200,9 +200,13 @@ class WhatsAppWebSender:
                 pane_seen_tick = 0
                 for tick in range(80):
                     time.sleep(1)
-                    qr = driver.find_elements(By.CSS_SELECTOR, "canvas[aria-label='Scan me!']")
-                    if qr and tick > 25:
-                        logger.warning("WhatsApp Web requires pairing. Saving QR screenshot...")
+                    # Check for modern WhatsApp Web QR login indicators
+                    qr = driver.find_elements(
+                        By.XPATH,
+                        "//canvas | //*[@data-testid='qrcode'] | //*[contains(text(), 'Scan to log in')] | //*[contains(text(), 'Link with phone number')]"
+                    )
+                    if qr and tick > 4:
+                        logger.warning("📱 WhatsApp Web requires pairing scan. Saving QR screenshot...")
                         driver.save_screenshot(str(QR_SCREENSHOT))
                         self.mark_session_paired(False)
                         return {
@@ -210,7 +214,7 @@ class WhatsAppWebSender:
                             "channel": "WhatsApp_Web",
                             "status": "QR_PAIRING_REQUIRED",
                             "qr_image": str(QR_SCREENSHOT),
-                            "details": "WhatsApp Web needs a one-time device pairing scan."
+                            "details": "WhatsApp Web needs a one-time device pairing scan. Run 'aradhya-pair' to link on screen."
                         }
 
                     if driver.find_elements(By.ID, "main"):
