@@ -81,6 +81,8 @@ class CloudflareSecurityAuditor:
         created in user workspace or external storage.
         """
         known_resolved_paths = {str(a["path"].resolve()): a for a in self.known_agents if a["path"].exists()}
+        known_agent_names = {a["path"].name.lower() for a in self.known_agents}
+        known_agent_names.update({a["id"].lower() for a in self.known_agents})
         agents_map = dict(known_resolved_paths)
 
         search_roots = [
@@ -95,7 +97,7 @@ class CloudflareSecurityAuditor:
                 for item in root.iterdir():
                     if item.is_dir() and not item.name.startswith("."):
                         item_resolved = str(item.resolve())
-                        if item_resolved in known_resolved_paths:
+                        if item_resolved in known_resolved_paths or item.name.lower() in known_agent_names:
                             continue
 
                         # Check if directory name suggests an agent
