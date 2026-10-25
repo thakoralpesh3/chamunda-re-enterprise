@@ -234,12 +234,14 @@ class Chhaya247Watchdog:
                 self._last_dispatch_time = now
                 try:
                     from whatsapp_dispatch_engine import get_whatsapp_dispatch_engine
+                    active_lan_ip = get_local_lan_ip()
                     get_whatsapp_dispatch_engine().send_link_update(
                         pub_url,
                         recipient="917874719139",
                         trigger_reason=trigger_reason,
                         mdns_url=f"http://alpesh-Inspiron-3542.local:{self.port}",
-                        permanent_cloud_url=cf_cfg.get("permanent_cloud_url", "")
+                        lan_url=f"http://{active_lan_ip}:{self.port}",
+                        permanent_cloud_url=cf_cfg.get("permanent_cloud_url", "https://github.com/thakoralpesh3/chamunda-re-enterprise")
                     )
                 except Exception as we:
                     logger.error("WhatsApp dispatch trigger error: %s", we)
