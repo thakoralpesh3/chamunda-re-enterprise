@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-25 15:56:40",
+  "timestamp": "2026-10-25 16:09:49",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 80,
+  "overall_score": 85,
   "grade": "B (Hardened with Warnings)",
   "total_agents_audited": 9,
   "threats_summary": {
-    "total_threats": 6,
+    "total_threats": 5,
     "critical": 0,
-    "high": 1,
+    "high": 0,
     "medium": 5,
     "low": 0
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 16,
+    "active_listening_sockets": 20,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
@@ -41,7 +41,7 @@
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8550)",
-        "details": "Port 8550 (python3 (PID 14631)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "details": "Port 8550 (python3 (PID 27232)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       },
       {
@@ -54,19 +54,10 @@
     ]
   },
   "github_cloud_audit": {
-    "status": "WARNING",
+    "status": "PASS",
     "total_repositories_audited": 9,
-    "findings_count": 1,
-    "findings": [
-      {
-        "severity": "HIGH",
-        "category": "GITHUB_PUSH_PROTECTION",
-        "title": "Missing Pre-Push Secret Hook: YouTube Production & Growth Agent",
-        "repo": "YouTube Production & Growth Agent",
-        "details": "Repository YouTube Production & Growth Agent lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-        "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-      }
-    ],
+    "findings_count": 0,
+    "findings": [],
     "repositories": [
       {
         "agent_id": "chamunda_re_enterprise",
@@ -135,19 +126,10 @@
         "agent_id": "youtube_agent",
         "name": "YouTube Production & Growth Agent",
         "remote_url": "https://github.com/thakoralpesh3/youtube-agent.git",
-        "has_pre_push_hook": false,
+        "has_pre_push_hook": true,
         "has_dependabot": true,
-        "findings_count": 1,
-        "findings": [
-          {
-            "severity": "HIGH",
-            "category": "GITHUB_PUSH_PROTECTION",
-            "title": "Missing Pre-Push Secret Hook: YouTube Production & Growth Agent",
-            "repo": "YouTube Production & Growth Agent",
-            "details": "Repository YouTube Production & Growth Agent lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-            "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-          }
-        ]
+        "findings_count": 0,
+        "findings": []
       },
       {
         "agent_id": "microcorp_agent",
@@ -249,18 +231,7 @@
         "Service Bound to All Interfaces (0.0.0.0:8899)"
       ],
       "can_autofix": true
-    },
-    {
-      "id": "SOL-GH-PREPUSH-HOOK",
-      "severity": "HIGH",
-      "title": "Cloudflare Pre-Push Secret Guard Hook Enforcement",
-      "solution_gu": "\u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0a97\u0ac0\u0a9f\u0ab9\u0aac \u0aaa\u0ab0 \u0aaa\u0ac1\u0ab6 \u0a95\u0ab0\u0aa4\u0abe\u0a82 \u0aaa\u0ab9\u0ac7\u0ab2\u0abe\u0a82 \u0a95\u0acd\u0ab0\u0ac7\u0aa1\u0ac7\u0aa8\u0acd\u0ab6\u0abf\u0aaf\u0ab2\u0acd\u0ab8 \u0a86\u0aaa\u0acb\u0a86\u0aaa \u0aac\u0acd\u0ab2\u0acb\u0a95 \u0a95\u0ab0\u0ab5\u0abe \u0aaa\u0acd\u0ab0\u0ac0-\u0aaa\u0ac1\u0ab6 \u0ab9\u0ac2\u0a95 \u0a87\u0aa8\u0acd\u0ab8\u0acd\u0a9f\u0acb\u0ab2 \u0a95\u0ab0\u0acb.",
-      "action_required": "Install executable .git/hooks/pre-push script across all repositories to intercept secrets.",
-      "affected_items": [
-        "Missing Pre-Push Secret Hook: YouTube Production & Growth Agent"
-      ],
-      "can_autofix": true
     }
   ],
-  "duration_seconds": 0.47
+  "duration_seconds": 3.74
 }
