@@ -12,6 +12,8 @@ import json
 import logging
 import urllib.parse
 import threading
+import shutil
+import socket
 from pathlib import Path
 from typing import Optional, Dict, Any
 
@@ -22,6 +24,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
+try:
+    import qrcode
+except ImportError:
+    qrcode = None
 
 logging.basicConfig(
     level=logging.INFO,
@@ -53,14 +60,62 @@ def get_gecko_path() -> Optional[Path]:
             return p
     return None
 
+def get_lan_ip() -> str:
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        ip = s.getsockname()[0]
+        s.close()
+        return ip
+    except Exception:
+        return "127.0.0.1"
+
 def clean_locks(profile_dir: Path = PROFILE_DIR):
-    for lock_name in ["lock", ".parentlock", ".agent_browser.lock"]:
+    """Deep cleanup of locks, crash logs, and disk cache thrashing."""
+    for lock_name in ["lock", ".parentlock", ".agent_browser.lock", "user.js"]:
         lp = profile_dir / lock_name
         if lp.is_symlink() or lp.exists():
             try:
                 lp.unlink()
             except Exception:
                 pass
+    for b in profile_dir.glob("user.geckodriver_backup*"):
+        try:
+            b.unlink()
+        except Exception:
+            pass
+    for junk in ["cache2", "startupCache", "sessionstore-backups", "minidumps", "crashes"]:
+        jp = profile_dir / junk
+        if jp.exists():
+            try:
+                if jp.is_dir():
+                    shutil.rmtree(jp, ignore_errors=True)
+                else:
+                    jp.unlink()
+            except Exception:
+                pass
+    wa_cache = profile_dir / "storage" / "default" / "https+++web.whatsapp.com" / "cache"
+    if wa_cache.exists():
+        try:
+            shutil.rmtree(wa_cache, ignore_errors=True)
+        except Exception:
+            pass
+
+def print_terminal_qr(token: str):
+    """Print high-contrast ANSI QR code directly inside the terminal screen."""
+    if not qrcode:
+        return
+    try:
+        qr = qrcode.QRCode(box_size=1, border=2)
+        qr.add_data(token)
+        qr.make(fit=True)
+        print("\n" + "=" * 65)
+        print(" 📱 SCAN THIS QR CODE DIRECTLY WITH WHATSAPP ON YOUR PHONE:")
+        print("=" * 65)
+        qr.print_ascii(invert=True)
+        print("=" * 65 + "\n")
+    except Exception as e:
+        logger.debug("Terminal ANSI QR print exception: %s", e)
 
 class WhatsAppWebSender:
     """
@@ -93,13 +148,23 @@ class WhatsAppWebSender:
         except Exception as e:
             logger.error("Failed to write session state: %s", e)
 
-    def launch_pairing_wizard(self, timeout_seconds: int = 120) -> Dict[str, Any]:
+    def launch_pairing_wizard(self, timeout_seconds: int = 360, phone_number: Optional[str] = None) -> Dict[str, Any]:
         """
-        Launch visible Firefox window on screen (:0) to let Alpesh Sir scan the QR code.
+        Launch visible Firefox window and interactive terminal wizard to pair WhatsApp Web.
+        Supports:
+          1. Dynamic QR code detection with auto-refresh (never times out prematurely)
+          2. ANSI QR code printed directly in terminal for instant phone scanning
+          3. Mobile QR URL at http://<LAN_IP>:8081/static/whatsapp_pair_qr.png
+          4. 8-digit phone pairing code alternative (--phone / phone_number)
         """
+        print("\n======================================================================")
+        print(" 🤖 CHAMUNDA ARADHYA • WHATSAPP WEB PAIRING WIZARD")
+        print("======================================================================")
+        print("[1/4] 🧹 Sanitizing Firefox profile & optimizing cache...")
         clean_locks(self.profile_dir)
         gecko = get_gecko_path()
         if not gecko:
+            print("❌ Error: geckodriver not found!")
             return {"success": False, "error": "geckodriver not found"}
 
         display = os.environ.get("DISPLAY", ":0")
@@ -108,36 +173,140 @@ class WhatsAppWebSender:
         options = Options()
         options.add_argument("-profile")
         options.add_argument(str(self.profile_dir))
+        options.page_load_strategy = 'eager'
+
+        # Optimize memory usage and disable disk cache thrashing
+        options.set_preference("browser.cache.disk.enable", False)
+        options.set_preference("browser.cache.memory.enable", True)
+        options.set_preference("browser.sessionstore.resume_from_crash", False)
+        options.set_preference("browser.sessionstore.max_tabs_undo", 0)
         options.set_preference("dom.serviceWorkers.enabled", True)
-        options.set_preference("general.useragent.override", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0")
+        options.set_preference("browser.startup.homepage", "about:blank")
+        options.set_preference("browser.startup.page", 0)
 
         service = Service(executable_path=str(gecko))
-        logger.info("🚀 Launching interactive WhatsApp Web Pairing Wizard on display %s...", display)
+        print(f"[2/4] 🚀 Booting Firefox browser on screen ({display})...")
+        t0 = time.time()
         driver = webdriver.Firefox(service=service, options=options)
         driver.set_window_size(1280, 850)
+        print(f"      Browser initialized in {time.time() - t0:.1f}s.")
 
         try:
+            print("[3/4] 🌐 Connecting to WhatsApp Web (https://web.whatsapp.com)...")
             driver.get("https://web.whatsapp.com")
-            logger.info("👉 Alpesh Sir: Scan QR Code on screen with your phone (WhatsApp -> Linked Devices -> Link a Device)")
+            lan_ip = get_lan_ip()
 
-            paired = False
             start_time = time.time()
+            qr_printed = False
+            phone_code_requested = bool(phone_number)
+            phone_code_retrieved = False
+
+            print(f"[4/4] ⏳ Waiting for WhatsApp authentication screen ({timeout_seconds}s timer)...")
+
             while time.time() - start_time < timeout_seconds:
                 time.sleep(2)
-                # Check for logged-in indicators
+                elapsed = int(time.time() - start_time)
+                remaining = max(0, timeout_seconds - elapsed)
+
+                # A. Check for already logged-in indicators
                 chats = driver.find_elements(
                     By.XPATH,
-                    "//div[@role='navigation'] | //*[@data-testid='chat-list'] | //*[@aria-label='Chat list'] | //div[@contenteditable='true']"
+                    "//div[@role='navigation'] | //*[@data-testid='chat-list'] | //*[@aria-label='Chat list'] | //div[@id='main']"
                 )
                 if chats:
+                    print("\n🎉 [SUCCESS] WhatsApp Web is paired and active with Aradhya CEO!")
                     logger.info("🎉 [SUCCESS] WhatsApp Web is paired and active!")
                     self.mark_session_paired(True)
-                    paired = True
-                    break
+                    return {"success": True, "paired": True}
 
-            return {"success": paired, "paired": paired}
+                # B. Handle Phone Number Pairing Code (if requested)
+                if phone_code_requested and not phone_code_retrieved:
+                    phone_links = driver.find_elements(
+                        By.XPATH,
+                        "//*[contains(text(), 'Log in with phone number') or contains(text(), 'phone number')]"
+                    )
+                    if phone_links:
+                        print(f"👉 Requesting 8-digit Pairing Code for +91 {phone_number}...")
+                        try:
+                            driver.execute_script("arguments[0].click();", phone_links[-1])
+                            time.sleep(2)
+                            # Locate phone input
+                            inputs = driver.find_elements(By.XPATH, "//input[@type='text'] | //input[contains(@aria-label, 'phone')]")
+                            if inputs:
+                                inputs[-1].clear()
+                                inputs[-1].send_keys(phone_number)
+                                time.sleep(1)
+                                next_btn = driver.find_elements(By.XPATH, "//button[contains(., 'Next')] | //div[@role='button'][contains(., 'Next')]")
+                                if next_btn:
+                                    driver.execute_script("arguments[0].click();", next_btn[0])
+                                else:
+                                    inputs[-1].send_keys(Keys.ENTER)
+                                time.sleep(3)
+                                # Extract code elements
+                                code_spans = driver.find_elements(By.XPATH, "//div[@data-testid='link-device-code']//span | //span[@dir='ltr']")
+                                code_text = "".join(s.text for s in code_spans if len(s.text.strip()) == 1 or '-' in s.text)
+                                if code_text:
+                                    print("\n" + "=" * 65)
+                                    print(f" 📱 WHATSAPP 8-DIGIT PAIRING CODE:  {code_text}")
+                                    print("=" * 65)
+                                    print(" 👉 Check your phone now! Tap WhatsApp notification")
+                                    print(f"    'Enter code to link device' and enter: {code_text}")
+                                    print("=" * 65 + "\n")
+                                    phone_code_retrieved = True
+                        except Exception as p_err:
+                            logger.warning("Phone code click attempt: %s", p_err)
+
+                # C. Auto-reload expired/dimmed QR code
+                reload_btns = driver.find_elements(
+                    By.XPATH,
+                    "//button[contains(@aria-label, 'Reload QR')] | "
+                    "//span[contains(text(), 'Click to reload')] | "
+                    "//div[@role='button'][contains(., 'Reload')] | "
+                    "//div[@role='button'][contains(., 'click to reload')]"
+                )
+                if reload_btns:
+                    try:
+                        driver.execute_script("arguments[0].click();", reload_btns[0])
+                        print("🔄 Auto-reloaded expired QR code...")
+                        time.sleep(1)
+                    except Exception:
+                        pass
+
+                # D. Detect QR code and render in terminal + screenshot
+                if not qr_printed:
+                    data_refs = driver.find_elements(By.XPATH, "//*[@data-ref]")
+                    canvases = driver.find_elements(By.TAG_NAME, "canvas")
+
+                    if data_refs:
+                        token = data_refs[0].get_attribute("data-ref")
+                        if token and len(token) > 20:
+                            driver.save_screenshot(str(QR_SCREENSHOT))
+                            print("\n" + "=" * 65)
+                            print(" 📷 WHATSAPP QR CODE DETECTED AND READY!")
+                            print("=" * 65)
+                            print(f" 👉 1. Scan from terminal below:")
+                            print_terminal_qr(token)
+                            print(f" 👉 2. Or scan from Firefox window open on screen ({display})")
+                            print(f" 👉 3. Or open on phone: http://{lan_ip}:8081/static/whatsapp_pair_qr.png")
+                            print("=" * 65 + "\n")
+                            qr_printed = True
+                    elif canvases:
+                        driver.save_screenshot(str(QR_SCREENSHOT))
+                        print(f"📷 QR Code rendered on screen ({display}) and saved to:")
+                        print(f"   {QR_SCREENSHOT}")
+                        print(f"   Mobile link: http://{lan_ip}:8081/static/whatsapp_pair_qr.png")
+                        qr_printed = True
+
+                # Progress indicator
+                if elapsed > 0 and elapsed % 15 == 0:
+                    status_note = "QR ready on screen/terminal" if qr_printed else "Loading QR scanner"
+                    print(f"[{status_note} • {remaining}s remaining...]")
+
+            print("\n❌ Pairing timed out. You can run 'aradhya-pair' again or use phone code.")
+            return {"success": False, "paired": False, "details": "Timeout waiting for user pairing scan"}
         except Exception as e:
             logger.error("Error in pairing wizard: %s", e)
+            print(f"❌ Error during pairing: {e}")
             return {"success": False, "error": str(e)}
         finally:
             driver.quit()
