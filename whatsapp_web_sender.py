@@ -329,13 +329,13 @@ class WhatsAppWebSender:
             options = Options()
             options.add_argument("-profile")
             options.add_argument(str(self.profile_dir))
+            options.page_load_strategy = 'eager'
             if headless:
                 options.add_argument("-headless")
             options.set_preference("dom.serviceWorkers.enabled", True)
-            options.set_preference("general.useragent.override", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0")
             options.set_preference("browser.startup.homepage", "about:blank")
             options.set_preference("browser.startup.page", 0)
-            options.set_preference("browser.cache.disk.enable", True)
+            options.set_preference("browser.cache.disk.enable", False)
             options.set_preference("browser.cache.memory.enable", True)
 
             service = Service(executable_path=str(gecko))
@@ -566,9 +566,32 @@ def get_whatsapp_web_sender() -> WhatsAppWebSender:
 
 if __name__ == "__main__":
     sender = get_whatsapp_web_sender()
-    if len(sys.argv) > 1 and sys.argv[1] == "--pair":
-        res = sender.launch_pairing_wizard()
+    phone_target = None
+    timeout_val = 360
+
+    if "--phone" in sys.argv:
+        idx = sys.argv.index("--phone")
+        if idx + 1 < len(sys.argv) and not sys.argv[idx + 1].startswith("--"):
+            phone_target = sys.argv[idx + 1]
+        else:
+            phone_target = "7874719139"
+    elif "--code" in sys.argv:
+        phone_target = "7874719139"
+
+    if "--timeout" in sys.argv:
+        try:
+            t_idx = sys.argv.index("--timeout")
+            timeout_val = int(sys.argv[t_idx + 1])
+        except Exception:
+            pass
+
+    if len(sys.argv) > 1 and ("--pair" in sys.argv or "--phone" in sys.argv or "--code" in sys.argv):
+        res = sender.launch_pairing_wizard(timeout_seconds=timeout_val, phone_number=phone_target)
         print("Pairing result:", res)
     else:
         info = sender.get_session_info()
         print("WhatsApp Web Sender Info:", info)
+        print("\nUsage:")
+        print("  python3 whatsapp_web_sender.py --pair              # Launch Interactive QR pairing (Screen + Terminal)")
+        print("  python3 whatsapp_web_sender.py --phone 7874719139   # Pair via 8-digit phone code to +91 78747 19139")
+        print("  python3 whatsapp_web_sender.py --code              # Shortcut for phone code pairing")
