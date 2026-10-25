@@ -76,6 +76,66 @@ SUSPICIOUS_PORTS = {
     23: "Insecure Telnet Plaintext Service"
 }
 
+PRE_PUSH_HOOK_SCRIPT = """#!/usr/bin/env bash
+# Chamunda Enterprise • Cloudflare Zero-Trust Pre-Push Security Guard
+# Author: Aradhya CEO & Alpesh Sir (Master Tech)
+# Standard: Cloudflare Zero Trust & OWASP Top 10
+
+echo "🛡️ [Cloudflare Zero-Trust Guard] Verifying outgoing commits before GitHub push..."
+
+# 1. Block pushing unencrypted environment / secret files
+FORBIDDEN_FILES=(".env" "id_rsa" "id_ed25519" "*.pem" "*.key" "secrets.json" "service_account.json")
+for pattern in "${FORBIDDEN_FILES[@]}"; do
+    git diff --cached --name-only 2>/dev/null | grep -E "$pattern" > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "❌ [BLOCK] Attempted to push sensitive file matching '$pattern' to GitHub!"
+        echo "👉 Action: Remove sensitive file from git tracking, add to .gitignore, and push again."
+        exit 1
+    fi
+done
+
+# 2. Block outgoing diffs containing hardcoded API keys
+SECRET_PATTERNS=(
+    "AIza[0-9A-Za-z\-_]{35}"
+    "sk_live_[0-9a-zA-Z]{24}"
+    "ghp_[0-9a-zA-Z]{36}"
+    "-----BEGIN[ A-Z0-9_-]*PRIVATE KEY-----"
+)
+
+while read -r local_ref local_oid remote_ref remote_oid; do
+    if [ "$local_oid" = "0000000000000000000000000000000000000000" ]; then
+        continue
+    fi
+    if [ "$remote_oid" = "0000000000000000000000000000000000000000" ]; then
+        RANGE="$local_oid"
+    else
+        RANGE="$remote_oid..$local_oid"
+    fi
+
+    for pat in "${SECRET_PATTERNS[@]}"; do
+        MATCHES=$(git log -p "$RANGE" 2>/dev/null | grep -E "^\+[^+]" | grep -E "$pat" | grep -v "DUMMY" | grep -v "EXAMPLE" | grep -v "1234567890")
+        if [ -n "$MATCHES" ]; then
+            echo "🚨 [BLOCK] Hardcoded credential detected in outgoing commits matching: $pat"
+            echo "👉 Action: Redact secret from commit history before pushing to public GitHub!"
+            exit 1
+        fi
+    done
+done
+
+echo "✅ [Cloudflare Zero-Trust Guard] Outgoing commits verified clean. Safe to push to GitHub."
+exit 0
+"""
+
+DEPENDABOT_TEMPLATE = """# Cloudflare & GitHub Zero-Trust Supply Chain Security
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+"""
+
 
 class CloudflareSecurityAuditor:
     """
