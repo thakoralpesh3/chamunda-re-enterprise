@@ -491,15 +491,18 @@ class Chhaya247Watchdog:
                 except Exception as e:
                     logger.debug("Model updater auto-discovery error: %s", e)
 
-            # 8. Autonomous Git Cloud Auto-Sync to GitHub (Runs every 60s)
+            # 8. Omni-Agent Autonomous Git Cloud Auto-Sync to GitHub (Runs every 60s)
             if iteration % 12 == 0:
                 try:
-                    from git_auto_sync import get_git_sync_engine
-                    synced, sync_msg = get_git_sync_engine().sync_changes(reason="Autonomous Watchdog Auto-Sync")
-                    if synced and "Working directory clean" not in sync_msg and "No staged" not in sync_msg:
-                        logger.info("☁️ [Git Cloud Auto-Sync] %s", sync_msg)
+                    from omni_git_sync import get_omni_sync_engine
+                    sync_summary = get_omni_sync_engine().sync_all(reason="Autonomous Watchdog Auto-Sync")
+                    if sync_summary.get("synced_count", 0) > 0:
+                        logger.info(
+                            "☁️ [Omni-Agent Cloud Auto-Sync] Pushed updates for %d agent repository(ies) to GitHub!",
+                            sync_summary["synced_count"]
+                        )
                 except Exception as ge:
-                    logger.debug("Git auto-sync loop error: %s", ge)
+                    logger.debug("Omni-agent git auto-sync error: %s", ge)
 
 
 
