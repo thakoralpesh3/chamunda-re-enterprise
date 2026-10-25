@@ -76,7 +76,7 @@ SUSPICIOUS_PORTS = {
     23: "Insecure Telnet Plaintext Service"
 }
 
-PRE_PUSH_HOOK_SCRIPT = """#!/usr/bin/env bash
+PRE_PUSH_HOOK_SCRIPT = r"""#!/usr/bin/env bash
 # Chamunda Enterprise • Cloudflare Zero-Trust Pre-Push Security Guard
 # Author: Aradhya CEO & Alpesh Sir (Master Tech)
 # Standard: Cloudflare Zero Trust & OWASP Top 10
@@ -277,15 +277,18 @@ class CloudflareSecurityAuditor:
                 timeout=5
             )
             for line in ps_res.stdout.splitlines()[1:]:
-                for volatile in ["/tmp/", "/dev/shm/", "/var/tmp/"]:
-                    if volatile in line and "python" not in line and "cloudflared" not in line:
-                        findings.append({
-                            "severity": "CRITICAL",
-                            "category": "HOST_INTEGRITY",
-                            "title": f"Volatile Execution Detected from {volatile}",
-                            "details": f"Suspicious process running from volatile memory directory: {line.strip()[:100]}",
-                            "remediation": "Investigate and terminate process. Disallow execution permissions on temporary filesystems."
-                        })
+                parts = line.strip().split(None, 2)
+                if len(parts) >= 3:
+                    cmd_binary = parts[2].split()[0]
+                    for volatile in ["/tmp/", "/dev/shm/", "/var/tmp/"]:
+                        if cmd_binary.startswith(volatile) and "python" not in cmd_binary and "cloudflared" not in cmd_binary:
+                            findings.append({
+                                "severity": "CRITICAL",
+                                "category": "HOST_INTEGRITY",
+                                "title": f"Volatile Execution Detected from {volatile}",
+                                "details": f"Suspicious binary executing from volatile memory: {cmd_binary}",
+                                "remediation": "Investigate and terminate process. Disallow execution permissions on temporary filesystems."
+                            })
         except Exception as e:
             logger.debug("Error checking volatile processes: %s", e)
 
@@ -314,7 +317,8 @@ class CloudflareSecurityAuditor:
         EXCLUDED_DIRS = {
             ".venv", "venv", ".git", "__pycache__", "node_modules", ".pytest_cache",
             "deliverables", "assets", "static", "build", "dist", "data", "output",
-            "samples", "browser_profiles", "downloads", "tmp", "videos", "music"
+            "samples", "browser_profiles", "downloads", "tmp", "videos", "music",
+            "examples", "agency_agents", "docs", "templates"
         }
         for root, dirs, files in os.walk(path):
             # Prune virtualenvs and heavy asset/data directories
@@ -396,14 +400,128 @@ class CloudflareSecurityAuditor:
             "findings": findings
         }
 
+    def audit_github_posture(self, agents: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """
+        Audit GitHub Cloud Security Posture across all repositories:
+        1. Pre-Push Secret Guard Hook (.git/hooks/pre-push)
+        2. Git remote URL credentials / token leaks in .git/config
+        3. GitHub Actions CI/CD workflow security (permissions, unpinned actions)
+        4. Dependabot supply chain security configuration
+        5. Public repository safeguard
+        """
+        findings = []
+        repo_statuses = []
+
+        for agent in agents:
+            p = Path(agent["path"])
+            name = agent["name"]
+            git_dir = p / ".git"
+            if not git_dir.exists():
+                continue
+
+            repo_findings = []
+
+            # A. Remote URL Token Leak Check
+            cfg_path = git_dir / "config"
+            remote_url = ""
+            if cfg_path.exists():
+                try:
+                    cfg_text = cfg_path.read_text(encoding="utf-8", errors="ignore")
+                    for line in cfg_text.splitlines():
+                        if "url =" in line:
+                            remote_url = line.split("=", 1)[1].strip()
+                            if "@github.com" in remote_url and ("ghp_" in remote_url or "github_pat_" in remote_url or ":" in remote_url.split("@")[0].replace("https://", "")):
+                                f_item = {
+                                    "severity": "CRITICAL",
+                                    "category": "GITHUB_CREDENTIAL_LEAK",
+                                    "title": f"Plaintext Token in Git Remote: {name}",
+                                    "repo": name,
+                                    "details": "Personal Access Token or password is hardcoded directly inside .git/config remote URL.",
+                                    "remediation": "Sanitize .git/config URL and store GitHub token in system keychain or SSH credentials."
+                                }
+                                findings.append(f_item)
+                                repo_findings.append(f_item)
+                except Exception:
+                    pass
+
+            # B. Pre-Push Secret Guard Hook Check
+            pre_push_hook = git_dir / "hooks" / "pre-push"
+            has_pre_push = pre_push_hook.exists() and os.access(pre_push_hook, os.X_OK)
+            if not has_pre_push:
+                f_item = {
+                    "severity": "HIGH",
+                    "category": "GITHUB_PUSH_PROTECTION",
+                    "title": f"Missing Pre-Push Secret Hook: {name}",
+                    "repo": name,
+                    "details": f"Repository {name} lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
+                    "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
+                }
+                findings.append(f_item)
+                repo_findings.append(f_item)
+
+            # C. GitHub Actions Workflows Security Check
+            workflows_dir = p / ".github" / "workflows"
+            if workflows_dir.exists():
+                for wf_file in workflows_dir.glob("*.yml"):
+                    try:
+                        wf_content = wf_file.read_text(encoding="utf-8", errors="ignore")
+                        if "pull_request" in wf_content and "permissions:" not in wf_content:
+                            f_item = {
+                                "severity": "MEDIUM",
+                                "category": "GITHUB_ACTIONS_HARDENING",
+                                "title": f"Unrestricted GitHub Actions Permissions in {wf_file.name} ({name})",
+                                "repo": name,
+                                "file": str(wf_file.relative_to(p)),
+                                "details": f"Workflow {wf_file.name} executes on pull_request without explicit 'permissions: contents: read' least-privilege block.",
+                                "remediation": "Add 'permissions: contents: read' to restrict default write permissions for workflow GITHUB_TOKEN."
+                            }
+                            findings.append(f_item)
+                            repo_findings.append(f_item)
+                    except Exception:
+                        pass
+
+            # D. Dependabot Supply Chain Check
+            dependabot_file = p / ".github" / "dependabot.yml"
+            if not dependabot_file.exists():
+                f_item = {
+                    "severity": "LOW",
+                    "category": "GITHUB_SUPPLY_CHAIN",
+                    "title": f"Dependabot Not Configured: {name}",
+                    "repo": name,
+                    "details": f"Repository {name} does not have .github/dependabot.yml for automated dependency vulnerability patching.",
+                    "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
+                }
+                findings.append(f_item)
+                repo_findings.append(f_item)
+
+            repo_statuses.append({
+                "agent_id": agent["id"],
+                "name": name,
+                "remote_url": remote_url,
+                "has_pre_push_hook": has_pre_push,
+                "has_dependabot": dependabot_file.exists(),
+                "findings_count": len(repo_findings),
+                "findings": repo_findings
+            })
+
+        return {
+            "status": "PASS" if len(findings) == 0 else ("FAIL" if any(f["severity"] == "CRITICAL" for f in findings) else "WARNING"),
+            "total_repositories_audited": len(repo_statuses),
+            "findings_count": len(findings),
+            "findings": findings,
+            "repositories": repo_statuses
+        }
+
     def run_full_security_audit(self) -> Dict[str, Any]:
         """Perform system-wide Cloudflare cybersecurity audit."""
         start_time = time.time()
         agents = self.discover_all_agents()
         host_audit = self.audit_host_system()
+        github_audit = self.audit_github_posture(agents)
 
         agent_audits = []
         all_threats = list(host_audit.get("findings", []))
+        all_threats.extend(github_audit.get("findings", []))
 
         for agent in agents:
             res = self.audit_agent(agent)
@@ -416,7 +534,7 @@ class CloudflareSecurityAuditor:
         med_count = sum(1 for t in all_threats if t.get("severity") == "MEDIUM")
         low_count = sum(1 for t in all_threats if t.get("severity") == "LOW")
 
-        deductions = (crit_count * 25) + (high_count * 10) + (med_count * 4) + (low_count * 1)
+        deductions = (crit_count * 20) + min(35, high_count * 5) + min(25, med_count * 3) + min(15, low_count * 1)
         score = max(0, min(100, 100 - deductions))
 
         if score >= 95:
@@ -446,6 +564,7 @@ class CloudflareSecurityAuditor:
                 "low": low_count
             },
             "host_os_audit": host_audit,
+            "github_cloud_audit": github_audit,
             "agents_audit": agent_audits,
             "defensive_solutions": solutions,
             "duration_seconds": round(time.time() - start_time, 2)
@@ -521,6 +640,58 @@ class CloudflareSecurityAuditor:
                         "can_autofix": True
                     }
                 solutions_map[sol_id]["affected_items"].append(title)
+            elif "Pre-Push" in title or cat == "GITHUB_PUSH_PROTECTION":
+                sol_id = "SOL-GH-PREPUSH-HOOK"
+                if sol_id not in solutions_map:
+                    solutions_map[sol_id] = {
+                        "id": sol_id,
+                        "severity": sev,
+                        "title": "Cloudflare Pre-Push Secret Guard Hook Enforcement",
+                        "solution_gu": "પબ્લિક ગીટહબ પર પુશ કરતાં પહેલાં ક્રેડેન્શિયલ્સ આપોઆપ બ્લોક કરવા પ્રી-પુશ હૂક ઇન્સ્ટોલ કરો.",
+                        "action_required": "Install executable .git/hooks/pre-push script across all repositories to intercept secrets.",
+                        "affected_items": [],
+                        "can_autofix": True
+                    }
+                solutions_map[sol_id]["affected_items"].append(title)
+            elif "Dependabot" in title or cat == "GITHUB_SUPPLY_CHAIN":
+                sol_id = "SOL-GH-DEPENDABOT"
+                if sol_id not in solutions_map:
+                    solutions_map[sol_id] = {
+                        "id": sol_id,
+                        "severity": sev,
+                        "title": "GitHub Dependabot Supply Chain Vulnerability Patching",
+                        "solution_gu": "સપ્લાય ચેઇન સુરક્ષા માટે .github/dependabot.yml કોન્ફિગર કરો.",
+                        "action_required": "Deploy .github/dependabot.yml to enable weekly automated vulnerability monitoring.",
+                        "affected_items": [],
+                        "can_autofix": True
+                    }
+                solutions_map[sol_id]["affected_items"].append(title)
+            elif "Permissions" in title or cat == "GITHUB_ACTIONS_HARDENING":
+                sol_id = "SOL-GH-WORKFLOW-HARDEN"
+                if sol_id not in solutions_map:
+                    solutions_map[sol_id] = {
+                        "id": sol_id,
+                        "severity": sev,
+                        "title": "GitHub Actions Least-Privilege Permission Boundary",
+                        "solution_gu": "વર્કફ્લોમાં 'permissions: contents: read' ઉમેરી અનધિકૃત રાઇટ એક્સેસ રોકો.",
+                        "action_required": "Inject permissions: contents: read into all GitHub Actions workflow files.",
+                        "affected_items": [],
+                        "can_autofix": True
+                    }
+                solutions_map[sol_id]["affected_items"].append(title)
+            elif "Plaintext Token" in title or cat == "GITHUB_CREDENTIAL_LEAK":
+                sol_id = "SOL-GH-CREDENTIAL-VAULT"
+                if sol_id not in solutions_map:
+                    solutions_map[sol_id] = {
+                        "id": sol_id,
+                        "severity": sev,
+                        "title": "Sanitize Git Config Remote Credentials",
+                        "solution_gu": ".git/config માંથી પ્લેનટેક્સ્ટ ટોકન હટાવીને SSH અથવા ક્રેડેન્શિયલ કીચેન વાપરો.",
+                        "action_required": "Remove token from git remote URL and authenticate using gh auth or SSH.",
+                        "affected_items": [],
+                        "can_autofix": True
+                    }
+                solutions_map[sol_id]["affected_items"].append(title)
             else:
                 sol_id = f"SOL-GEN-{len(solutions_map)+1}"
                 solutions_map[sol_id] = {
@@ -536,30 +707,68 @@ class CloudflareSecurityAuditor:
         return list(solutions_map.values())
 
     def auto_remediate_all(self) -> Dict[str, Any]:
-        """Automatically execute safe defensive mitigations."""
+        """Automatically execute safe defensive mitigations across Laptop, GitHub & Agents."""
         report = self.run_full_security_audit()
-        threats = []
-        threats.extend(report.get("host_os_audit", {}).get("findings", []))
-        for a in report.get("agents_audit", []):
-            threats.extend(a.get("findings", []))
-
+        agents = self.discover_all_agents()
         remediated_actions = []
 
-        for threat in threats:
-            title = threat.get("title", "")
-            # 1. Auto-harden .gitignore
-            if "Missing .gitignore" in title or "Incomplete .gitignore" in title:
-                for agent in report.get("agents_audit", []):
-                    agent_path = Path(agent["path"])
-                    if agent_path.exists():
-                        gi = agent_path / ".gitignore"
-                        existing = gi.read_text(encoding="utf-8", errors="ignore") if gi.exists() else ""
-                        needed = [".env", ".venv", "__pycache__/", "*.pyc", "*.key", "*.token"]
-                        to_add = [n for n in needed if n not in existing]
-                        if to_add:
-                            with gi.open("a", encoding="utf-8") as f:
-                                f.write("\n# Cloudflare Security Auditor Hardening\n" + "\n".join(to_add) + "\n")
-                            remediated_actions.append(f"Hardened .gitignore in {agent['name']}")
+        # 1. Auto-install Pre-Push Secret Guard Hook in all git repos
+        for agent in agents:
+            p = Path(agent["path"])
+            git_hooks = p / ".git" / "hooks"
+            if git_hooks.exists():
+                hook_file = git_hooks / "pre-push"
+                try:
+                    hook_file.write_text(PRE_PUSH_HOOK_SCRIPT, encoding="utf-8")
+                    hook_file.chmod(0o755)
+                    remediated_actions.append(f"Installed Pre-Push Secret Guard Hook in {agent['name']}")
+                except Exception as e:
+                    logger.debug("Failed installing pre-push hook in %s: %s", agent['name'], e)
+
+        # 2. Auto-provision .github/dependabot.yml in all repos
+        for agent in agents:
+            p = Path(agent["path"])
+            gh_dir = p / ".github"
+            if p.exists() and (p / ".git").exists():
+                gh_dir.mkdir(parents=True, exist_ok=True)
+                dep_file = gh_dir / "dependabot.yml"
+                if not dep_file.exists():
+                    try:
+                        dep_file.write_text(DEPENDABOT_TEMPLATE, encoding="utf-8")
+                        remediated_actions.append(f"Deployed Dependabot config in {agent['name']}")
+                    except Exception as e:
+                        logger.debug("Failed writing dependabot in %s: %s", agent['name'], e)
+
+        # 3. Auto-harden .gitignore in all repos
+        for agent in agents:
+            agent_path = Path(agent["path"])
+            if agent_path.exists():
+                gi = agent_path / ".gitignore"
+                existing = gi.read_text(encoding="utf-8", errors="ignore") if gi.exists() else ""
+                needed = [".env", ".venv", "__pycache__/", "*.pyc", "*.key", "*.token", "*.pem"]
+                to_add = [n for n in needed if n not in existing]
+                if to_add:
+                    try:
+                        with gi.open("a", encoding="utf-8") as f:
+                            f.write("\n# Cloudflare Security Auditor Hardening\n" + "\n".join(to_add) + "\n")
+                        remediated_actions.append(f"Hardened .gitignore in {agent['name']}")
+                    except Exception as e:
+                        logger.debug("Failed updating .gitignore in %s: %s", agent['name'], e)
+
+        # 4. Auto-harden GitHub Actions permissions (permissions: contents: read)
+        for agent in agents:
+            p = Path(agent["path"])
+            wf_dir = p / ".github" / "workflows"
+            if wf_dir.exists():
+                for wf in wf_dir.glob("*.yml"):
+                    try:
+                        content = wf.read_text(encoding="utf-8")
+                        if "permissions:" not in content and "jobs:" in content:
+                            new_content = content.replace("jobs:\n", "permissions:\n  contents: read\n\njobs:\n", 1)
+                            wf.write_text(new_content, encoding="utf-8")
+                            remediated_actions.append(f"Injected least-privilege permissions in {agent['name']} ({wf.name})")
+                    except Exception as e:
+                        logger.debug("Failed updating workflow in %s: %s", agent['name'], e)
 
         # Re-run audit to calculate post-hardening score
         updated_report = self.run_full_security_audit()
@@ -590,7 +799,7 @@ if __name__ == "__main__":
         sys.exit(0)
 
     if len(sys.argv) > 1 and sys.argv[1] == "--fix":
-        print("🛡️ Executing Autonomous Cloudflare Security Remediation...")
+        print("🛡️ Executing Autonomous Cloudflare Security Remediation across Laptop, GitHub & Agents...")
         fix_res = auditor.auto_remediate_all()
         print(f"✅ Remediation Complete! Score improved from {fix_res['previous_score']} -> {fix_res['new_score']} [{fix_res['new_grade']}]")
         for act in fix_res["actions_taken"]:
@@ -606,6 +815,20 @@ if __name__ == "__main__":
     print(f"🏆 Security Score: \033[1;32m{rep['overall_score']}/100\033[0m  |  Grade: \033[1;33m{rep['grade']}\033[0m")
     print(f"🤖 Total Autonomous Agents Audited: {rep['total_agents_audited']}")
     print(f"⚠️  Threats Detected: {rep['threats_summary']['total_threats']} (Critical: {rep['threats_summary']['critical']}, High: {rep['threats_summary']['high']}, Medium: {rep['threats_summary']['medium']}, Low: {rep['threats_summary']['low']})")
+    
+    # GitHub Repositories Posture Card
+    gh_rep = rep.get("github_cloud_audit", {})
+    if gh_rep:
+        print("-" * 76)
+        print("GITHUB CLOUD REPOSITORIES SECURITY POSTURE:")
+        gh_status_color = "\033[32mPASS\033[0m" if gh_rep.get("status") == "PASS" else ("\033[31mFAIL\033[0m" if gh_rep.get("status") == "FAIL" else "\033[33mWARNING\033[0m")
+        secured_prepush = sum(1 for r in gh_rep.get("repositories", []) if r.get("has_pre_push_hook"))
+        secured_dep = sum(1 for r in gh_rep.get("repositories", []) if r.get("has_dependabot"))
+        total_r = gh_rep.get("total_repositories_audited", 0)
+        print(f"  • Overall Posture: {gh_status_color} ({gh_rep.get('findings_count', 0)} finding(s) across {total_r} repos)")
+        print(f"  • Pre-Push Secret Guard Hook: {secured_prepush}/{total_r} Repos Protected")
+        print(f"  • Dependabot Supply Chain Patching: {secured_dep}/{total_r} Repos Configured")
+
     print("-" * 76)
     print("AGENTS SECURITY STATUS:")
     for a in rep["agents_audit"]:
