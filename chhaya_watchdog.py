@@ -506,6 +506,27 @@ class Chhaya247Watchdog:
                 except Exception as ge:
                     logger.debug("Omni-agent git auto-sync error: %s", ge)
 
+            # 9. Cloudflare-Standard Autonomous Security Posture Audit & Zero-Trust Defense (Runs on startup & every 5m)
+            if iteration == 1 or iteration % 60 == 0:
+                try:
+                    from cloudflare_security_auditor import get_cloudflare_auditor
+                    auditor = get_cloudflare_auditor()
+                    audit_res = auditor.run_full_security_audit()
+                    logger.info(
+                        "🛡️ [Cloudflare Security Posture] Audit Score: %d/100 (%s) | Audited Agents: %d | Threats: %d",
+                        audit_res.get("overall_score", 0),
+                        audit_res.get("grade", "N/A"),
+                        audit_res.get("total_agents_audited", 0),
+                        audit_res.get("threats_summary", {}).get("total_threats", 0)
+                    )
+                    # Auto-heal boundaries if needed
+                    if audit_res.get("threats_summary", {}).get("critical", 0) > 0 or audit_res.get("overall_score", 100) < 70:
+                        fix_res = auditor.auto_remediate_all()
+                        if fix_res.get("actions_taken"):
+                            logger.info("🛡️ [Cloudflare Auto-Defense] Remediations applied: %s", ", ".join(fix_res["actions_taken"]))
+                except Exception as se:
+                    logger.debug("Cloudflare security audit watchdog error: %s", se)
+
 
 
 

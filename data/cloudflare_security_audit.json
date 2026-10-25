@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-25 15:36:35",
+  "timestamp": "2026-10-25 15:38:56",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
   "overall_score": 80,
   "grade": "B (Hardened with Warnings)",
@@ -13,14 +13,14 @@
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 17,
+    "active_listening_sockets": 16,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8081)",
-        "details": "Port 8081 (python3 (PID 7875)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "details": "Port 8081 (python3 (PID 18999)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       },
       {
@@ -144,5 +144,5 @@
       "can_autofix": true
     }
   ],
-  "duration_seconds": 1.15
+  "duration_seconds": 1.11
 }
