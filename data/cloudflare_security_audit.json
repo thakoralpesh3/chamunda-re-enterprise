@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-26 18:13:49",
+  "timestamp": "2026-10-26 18:19:23",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
   "overall_score": 76,
   "grade": "C (Remediation Required)",
-  "total_agents_audited": 9,
+  "total_agents_audited": 7,
   "threats_summary": {
     "total_threats": 10,
     "critical": 0,
@@ -13,7 +13,7 @@
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 20,
+    "active_listening_sockets": 18,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
@@ -55,7 +55,7 @@
   },
   "github_cloud_audit": {
     "status": "WARNING",
-    "total_repositories_audited": 9,
+    "total_repositories_audited": 7,
     "findings_count": 2,
     "findings": [
       {
@@ -89,24 +89,6 @@
         "agent_id": "jarvis_agent",
         "name": "Jarvis Mark VII System Commander",
         "remote_url": "https://github.com/thakoralpesh3/jarvis-agent.git",
-        "has_pre_push_hook": true,
-        "has_dependabot": true,
-        "findings_count": 0,
-        "findings": []
-      },
-      {
-        "agent_id": "web_to_apk_agent",
-        "name": "Web2APK Autonomous Android Packager",
-        "remote_url": "https://github.com/thakoralpesh3/web-to-apk-agent.git",
-        "has_pre_push_hook": true,
-        "has_dependabot": true,
-        "findings_count": 0,
-        "findings": []
-      },
-      {
-        "agent_id": "web_to_ipa_agent",
-        "name": "Web2IPA Autonomous iOS Packager",
-        "remote_url": "https://github.com/thakoralpesh3/web-to-ipa-agent.git",
         "has_pre_push_hook": true,
         "has_dependabot": true,
         "findings_count": 0,
@@ -189,22 +171,6 @@
       "agent_id": "jarvis_agent",
       "name": "Jarvis Mark VII System Commander",
       "path": "/home/alpesh/jarvis-agent",
-      "status": "PASS",
-      "findings_count": 0,
-      "findings": []
-    },
-    {
-      "agent_id": "web_to_apk_agent",
-      "name": "Web2APK Autonomous Android Packager",
-      "path": "/home/alpesh/web-to-apk-agent",
-      "status": "PASS",
-      "findings_count": 0,
-      "findings": []
-    },
-    {
-      "agent_id": "web_to_ipa_agent",
-      "name": "Web2IPA Autonomous iOS Packager",
-      "path": "/home/alpesh/web-to-ipa-agent",
       "status": "PASS",
       "findings_count": 0,
       "findings": []
@@ -334,5 +300,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 0.47
+  "duration_seconds": 0.32
 }
