@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-10-26 18:30:11",
+  "timestamp": "2026-10-26 18:35:36",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 76,
-  "grade": "C (Remediation Required)",
-  "total_agents_audited": 6,
+  "overall_score": 83,
+  "grade": "B (Hardened with Warnings)",
+  "total_agents_audited": 7,
   "threats_summary": {
-    "total_threats": 10,
+    "total_threats": 7,
     "critical": 0,
-    "high": 1,
+    "high": 0,
     "medium": 5,
-    "low": 4
+    "low": 2
   },
   "host_os_audit": {
     "status": "WARNING",
@@ -54,27 +54,10 @@
     ]
   },
   "github_cloud_audit": {
-    "status": "WARNING",
-    "total_repositories_audited": 6,
-    "findings_count": 2,
-    "findings": [
-      {
-        "severity": "HIGH",
-        "category": "GITHUB_PUSH_PROTECTION",
-        "title": "Missing Pre-Push Secret Hook: \u2728 Auto-Discovered: Agent Town",
-        "repo": "\u2728 Auto-Discovered: Agent Town",
-        "details": "Repository \u2728 Auto-Discovered: Agent Town lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-        "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-      },
-      {
-        "severity": "LOW",
-        "category": "GITHUB_SUPPLY_CHAIN",
-        "title": "Dependabot Not Configured: \u2728 Auto-Discovered: Agent Town",
-        "repo": "\u2728 Auto-Discovered: Agent Town",
-        "details": "Repository \u2728 Auto-Discovered: Agent Town does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-        "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-      }
-    ],
+    "status": "PASS",
+    "total_repositories_audited": 7,
+    "findings_count": 0,
+    "findings": [],
     "repositories": [
       {
         "agent_id": "chamunda_re_enterprise",
@@ -122,30 +105,22 @@
         "findings": []
       },
       {
+        "agent_id": "mint_agent_os",
+        "name": "\u2728 Auto-Discovered: mint-agent-os",
+        "remote_url": "https://github.com/thakoralpesh3/mint-agent-os.git",
+        "has_pre_push_hook": true,
+        "has_dependabot": true,
+        "findings_count": 0,
+        "findings": []
+      },
+      {
         "agent_id": "agent_town",
         "name": "\u2728 Auto-Discovered: Agent Town",
         "remote_url": "https://github.com/thakoralpesh3/agent-town.git",
-        "has_pre_push_hook": false,
-        "has_dependabot": false,
-        "findings_count": 2,
-        "findings": [
-          {
-            "severity": "HIGH",
-            "category": "GITHUB_PUSH_PROTECTION",
-            "title": "Missing Pre-Push Secret Hook: \u2728 Auto-Discovered: Agent Town",
-            "repo": "\u2728 Auto-Discovered: Agent Town",
-            "details": "Repository \u2728 Auto-Discovered: Agent Town lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-            "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-          },
-          {
-            "severity": "LOW",
-            "category": "GITHUB_SUPPLY_CHAIN",
-            "title": "Dependabot Not Configured: \u2728 Auto-Discovered: Agent Town",
-            "repo": "\u2728 Auto-Discovered: Agent Town",
-            "details": "Repository \u2728 Auto-Discovered: Agent Town does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-            "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-          }
-        ]
+        "has_pre_push_hook": true,
+        "has_dependabot": true,
+        "findings_count": 0,
+        "findings": []
       }
     ]
   },
@@ -191,26 +166,28 @@
       "findings": []
     },
     {
+      "agent_id": "mint_agent_os",
+      "name": "\u2728 Auto-Discovered: mint-agent-os",
+      "path": "/home/alpesh/mint-agent-os",
+      "status": "WARNING",
+      "findings_count": 1,
+      "findings": [
+        {
+          "severity": "LOW",
+          "category": "EDGE_CONTAINER",
+          "title": "Codespaces Sandbox Not Configured",
+          "details": "\u2728 Auto-Discovered: mint-agent-os does not have a .devcontainer configuration for isolated cloud sandbox execution.",
+          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
+        }
+      ]
+    },
+    {
       "agent_id": "agent_town",
       "name": "\u2728 Auto-Discovered: Agent Town",
       "path": "/media/alpesh/Software & Work/Agents/Agent Town",
       "status": "WARNING",
-      "findings_count": 3,
+      "findings_count": 1,
       "findings": [
-        {
-          "severity": "LOW",
-          "category": "ORIGIN_CLOAKING",
-          "title": "Incomplete .gitignore: Missing .env",
-          "details": ".gitignore does not explicitly exclude .env.",
-          "remediation": "Add .env to \u2728 Auto-Discovered: Agent Town/.gitignore."
-        },
-        {
-          "severity": "LOW",
-          "category": "ORIGIN_CLOAKING",
-          "title": "Incomplete .gitignore: Missing .venv",
-          "details": ".gitignore does not explicitly exclude .venv.",
-          "remediation": "Add .venv to \u2728 Auto-Discovered: Agent Town/.gitignore."
-        },
         {
           "severity": "LOW",
           "category": "EDGE_CONTAINER",
@@ -238,41 +215,18 @@
       "can_autofix": true
     },
     {
-      "id": "SOL-GH-PREPUSH-HOOK",
-      "severity": "HIGH",
-      "title": "Cloudflare Pre-Push Secret Guard Hook Enforcement",
-      "solution_gu": "\u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0a97\u0ac0\u0a9f\u0ab9\u0aac \u0aaa\u0ab0 \u0aaa\u0ac1\u0ab6 \u0a95\u0ab0\u0aa4\u0abe\u0a82 \u0aaa\u0ab9\u0ac7\u0ab2\u0abe\u0a82 \u0a95\u0acd\u0ab0\u0ac7\u0aa1\u0ac7\u0aa8\u0acd\u0ab6\u0abf\u0aaf\u0ab2\u0acd\u0ab8 \u0a86\u0aaa\u0acb\u0a86\u0aaa \u0aac\u0acd\u0ab2\u0acb\u0a95 \u0a95\u0ab0\u0ab5\u0abe \u0aaa\u0acd\u0ab0\u0ac0-\u0aaa\u0ac1\u0ab6 \u0ab9\u0ac2\u0a95 \u0a87\u0aa8\u0acd\u0ab8\u0acd\u0a9f\u0acb\u0ab2 \u0a95\u0ab0\u0acb.",
-      "action_required": "Install executable .git/hooks/pre-push script across all repositories to intercept secrets.",
-      "affected_items": [
-        "Missing Pre-Push Secret Hook: \u2728 Auto-Discovered: Agent Town"
-      ],
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-GH-DEPENDABOT",
+      "id": "SOL-GEN-2",
       "severity": "LOW",
-      "title": "GitHub Dependabot Supply Chain Vulnerability Patching",
-      "solution_gu": "\u0ab8\u0aaa\u0acd\u0ab2\u0abe\u0aaf \u0a9a\u0ac7\u0a87\u0aa8 \u0ab8\u0ac1\u0ab0\u0a95\u0acd\u0ab7\u0abe \u0aae\u0abe\u0a9f\u0ac7 .github/dependabot.yml \u0a95\u0acb\u0aa8\u0acd\u0aab\u0abf\u0a97\u0ab0 \u0a95\u0ab0\u0acb.",
-      "action_required": "Deploy .github/dependabot.yml to enable weekly automated vulnerability monitoring.",
+      "title": "Zero-Trust Defensive Policy Enforcement",
+      "solution_gu": "\u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0ab2\u0abe\u0a97\u0ac1 \u0a95\u0ab0\u0ac0 \u0aa5\u0acd\u0ab0\u0ac7\u0a9f \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
+      "action_required": "Generate .devcontainer/devcontainer.json for secure cloud runtime.",
       "affected_items": [
-        "Dependabot Not Configured: \u2728 Auto-Discovered: Agent Town"
+        "Codespaces Sandbox Not Configured"
       ],
-      "can_autofix": true
+      "can_autofix": false
     },
     {
-      "id": "SOL-GITIGNORE-HARDEN",
-      "severity": "LOW",
-      "title": "Automated .gitignore Hardening",
-      "solution_gu": ".gitignore \u0aae\u0abe\u0a82 \u0a9c\u0ab0\u0ac2\u0ab0\u0ac0 \u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0a89\u0aae\u0ac7\u0ab0\u0acb.",
-      "action_required": "Inject standard rules (.env, .venv, *.key) into repository .gitignore.",
-      "affected_items": [
-        "Incomplete .gitignore: Missing .env",
-        "Incomplete .gitignore: Missing .venv"
-      ],
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-GEN-5",
+      "id": "SOL-GEN-3",
       "severity": "LOW",
       "title": "Zero-Trust Defensive Policy Enforcement",
       "solution_gu": "\u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0ab2\u0abe\u0a97\u0ac1 \u0a95\u0ab0\u0ac0 \u0aa5\u0acd\u0ab0\u0ac7\u0a9f \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
@@ -283,5 +237,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 0.41
+  "duration_seconds": 0.31
 }
