@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-26 18:08:22",
+  "timestamp": "2026-10-26 18:13:49",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
   "overall_score": 76,
   "grade": "C (Remediation Required)",
-  "total_agents_audited": 10,
+  "total_agents_audited": 9,
   "threats_summary": {
     "total_threats": 10,
     "critical": 0,
@@ -55,7 +55,7 @@
   },
   "github_cloud_audit": {
     "status": "WARNING",
-    "total_repositories_audited": 10,
+    "total_repositories_audited": 9,
     "findings_count": 2,
     "findings": [
       {
@@ -107,15 +107,6 @@
         "agent_id": "web_to_ipa_agent",
         "name": "Web2IPA Autonomous iOS Packager",
         "remote_url": "https://github.com/thakoralpesh3/web-to-ipa-agent.git",
-        "has_pre_push_hook": true,
-        "has_dependabot": true,
-        "findings_count": 0,
-        "findings": []
-      },
-      {
-        "agent_id": "apk_tv_converter_agent",
-        "name": "APK TV Converter Agent",
-        "remote_url": "https://github.com/thakoralpesh3/apk-tv-converter-agent.git",
         "has_pre_push_hook": true,
         "has_dependabot": true,
         "findings_count": 0,
@@ -214,14 +205,6 @@
       "agent_id": "web_to_ipa_agent",
       "name": "Web2IPA Autonomous iOS Packager",
       "path": "/home/alpesh/web-to-ipa-agent",
-      "status": "PASS",
-      "findings_count": 0,
-      "findings": []
-    },
-    {
-      "agent_id": "apk_tv_converter_agent",
-      "name": "APK TV Converter Agent",
-      "path": "/home/alpesh/apk-tv-converter-agent",
       "status": "PASS",
       "findings_count": 0,
       "findings": []
@@ -351,5 +334,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 0.64
+  "duration_seconds": 0.47
 }
