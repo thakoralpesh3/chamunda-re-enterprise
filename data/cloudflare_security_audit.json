@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-10-26 21:24:39",
+  "timestamp": "2026-10-26 21:30:07",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 79,
+  "overall_score": 86,
   "grade": "B (Hardened with Warnings)",
-  "total_agents_audited": 8,
+  "total_agents_audited": 7,
   "threats_summary": {
-    "total_threats": 9,
+    "total_threats": 6,
     "critical": 0,
-    "high": 1,
+    "high": 0,
     "medium": 4,
-    "low": 4
+    "low": 2
   },
   "host_os_audit": {
     "status": "WARNING",
@@ -47,27 +47,10 @@
     ]
   },
   "github_cloud_audit": {
-    "status": "WARNING",
-    "total_repositories_audited": 8,
-    "findings_count": 2,
-    "findings": [
-      {
-        "severity": "HIGH",
-        "category": "GITHUB_PUSH_PROTECTION",
-        "title": "Missing Pre-Push Secret Hook: \u2728 Auto-Discovered: social-media-agent",
-        "repo": "\u2728 Auto-Discovered: social-media-agent",
-        "details": "Repository \u2728 Auto-Discovered: social-media-agent lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-        "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-      },
-      {
-        "severity": "LOW",
-        "category": "GITHUB_SUPPLY_CHAIN",
-        "title": "Dependabot Not Configured: \u2728 Auto-Discovered: social-media-agent",
-        "repo": "\u2728 Auto-Discovered: social-media-agent",
-        "details": "Repository \u2728 Auto-Discovered: social-media-agent does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-        "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-      }
-    ],
+    "status": "PASS",
+    "total_repositories_audited": 7,
+    "findings_count": 0,
+    "findings": [],
     "repositories": [
       {
         "agent_id": "chamunda_re_enterprise",
@@ -122,32 +105,6 @@
         "has_dependabot": true,
         "findings_count": 0,
         "findings": []
-      },
-      {
-        "agent_id": "social_media_agent",
-        "name": "\u2728 Auto-Discovered: social-media-agent",
-        "remote_url": "https://github.com/thakoralpesh3/social-media-agent.git",
-        "has_pre_push_hook": false,
-        "has_dependabot": false,
-        "findings_count": 2,
-        "findings": [
-          {
-            "severity": "HIGH",
-            "category": "GITHUB_PUSH_PROTECTION",
-            "title": "Missing Pre-Push Secret Hook: \u2728 Auto-Discovered: social-media-agent",
-            "repo": "\u2728 Auto-Discovered: social-media-agent",
-            "details": "Repository \u2728 Auto-Discovered: social-media-agent lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
-            "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
-          },
-          {
-            "severity": "LOW",
-            "category": "GITHUB_SUPPLY_CHAIN",
-            "title": "Dependabot Not Configured: \u2728 Auto-Discovered: social-media-agent",
-            "repo": "\u2728 Auto-Discovered: social-media-agent",
-            "details": "Repository \u2728 Auto-Discovered: social-media-agent does not have .github/dependabot.yml for automated dependency vulnerability patching.",
-            "remediation": "Add .github/dependabot.yml to enable weekly dependency audits."
-          }
-        ]
       },
       {
         "agent_id": "agent_town",
@@ -218,22 +175,6 @@
       ]
     },
     {
-      "agent_id": "social_media_agent",
-      "name": "\u2728 Auto-Discovered: social-media-agent",
-      "path": "/home/alpesh/social-media-agent",
-      "status": "WARNING",
-      "findings_count": 1,
-      "findings": [
-        {
-          "severity": "LOW",
-          "category": "EDGE_CONTAINER",
-          "title": "Codespaces Sandbox Not Configured",
-          "details": "\u2728 Auto-Discovered: social-media-agent does not have a .devcontainer configuration for isolated cloud sandbox execution.",
-          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
-        }
-      ]
-    },
-    {
       "agent_id": "agent_town",
       "name": "\u2728 Auto-Discovered: Agent Town",
       "path": "/media/alpesh/Software & Work/Agents/Agent Town",
@@ -266,29 +207,7 @@
       "can_autofix": true
     },
     {
-      "id": "SOL-GH-PREPUSH-HOOK",
-      "severity": "HIGH",
-      "title": "Cloudflare Pre-Push Secret Guard Hook Enforcement",
-      "solution_gu": "\u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0a97\u0ac0\u0a9f\u0ab9\u0aac \u0aaa\u0ab0 \u0aaa\u0ac1\u0ab6 \u0a95\u0ab0\u0aa4\u0abe\u0a82 \u0aaa\u0ab9\u0ac7\u0ab2\u0abe\u0a82 \u0a95\u0acd\u0ab0\u0ac7\u0aa1\u0ac7\u0aa8\u0acd\u0ab6\u0abf\u0aaf\u0ab2\u0acd\u0ab8 \u0a86\u0aaa\u0acb\u0a86\u0aaa \u0aac\u0acd\u0ab2\u0acb\u0a95 \u0a95\u0ab0\u0ab5\u0abe \u0aaa\u0acd\u0ab0\u0ac0-\u0aaa\u0ac1\u0ab6 \u0ab9\u0ac2\u0a95 \u0a87\u0aa8\u0acd\u0ab8\u0acd\u0a9f\u0acb\u0ab2 \u0a95\u0ab0\u0acb.",
-      "action_required": "Install executable .git/hooks/pre-push script across all repositories to intercept secrets.",
-      "affected_items": [
-        "Missing Pre-Push Secret Hook: \u2728 Auto-Discovered: social-media-agent"
-      ],
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-GH-DEPENDABOT",
-      "severity": "LOW",
-      "title": "GitHub Dependabot Supply Chain Vulnerability Patching",
-      "solution_gu": "\u0ab8\u0aaa\u0acd\u0ab2\u0abe\u0aaf \u0a9a\u0ac7\u0a87\u0aa8 \u0ab8\u0ac1\u0ab0\u0a95\u0acd\u0ab7\u0abe \u0aae\u0abe\u0a9f\u0ac7 .github/dependabot.yml \u0a95\u0acb\u0aa8\u0acd\u0aab\u0abf\u0a97\u0ab0 \u0a95\u0ab0\u0acb.",
-      "action_required": "Deploy .github/dependabot.yml to enable weekly automated vulnerability monitoring.",
-      "affected_items": [
-        "Dependabot Not Configured: \u2728 Auto-Discovered: social-media-agent"
-      ],
-      "can_autofix": true
-    },
-    {
-      "id": "SOL-GEN-4",
+      "id": "SOL-GEN-2",
       "severity": "LOW",
       "title": "Zero-Trust Defensive Policy Enforcement",
       "solution_gu": "\u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0ab2\u0abe\u0a97\u0ac1 \u0a95\u0ab0\u0ac0 \u0aa5\u0acd\u0ab0\u0ac7\u0a9f \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
@@ -299,18 +218,7 @@
       "can_autofix": false
     },
     {
-      "id": "SOL-GEN-5",
-      "severity": "LOW",
-      "title": "Zero-Trust Defensive Policy Enforcement",
-      "solution_gu": "\u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0ab2\u0abe\u0a97\u0ac1 \u0a95\u0ab0\u0ac0 \u0aa5\u0acd\u0ab0\u0ac7\u0a9f \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
-      "action_required": "Generate .devcontainer/devcontainer.json for secure cloud runtime.",
-      "affected_items": [
-        "Codespaces Sandbox Not Configured"
-      ],
-      "can_autofix": false
-    },
-    {
-      "id": "SOL-GEN-6",
+      "id": "SOL-GEN-3",
       "severity": "LOW",
       "title": "Zero-Trust Defensive Policy Enforcement",
       "solution_gu": "\u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0ab2\u0abe\u0a97\u0ac1 \u0a95\u0ab0\u0ac0 \u0aa5\u0acd\u0ab0\u0ac7\u0a9f \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
@@ -321,5 +229,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 0.33
+  "duration_seconds": 0.31
 }
