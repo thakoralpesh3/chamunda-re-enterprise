@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-26 18:19:23",
+  "timestamp": "2026-10-26 18:24:46",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
   "overall_score": 76,
   "grade": "C (Remediation Required)",
-  "total_agents_audited": 7,
+  "total_agents_audited": 6,
   "threats_summary": {
     "total_threats": 10,
     "critical": 0,
@@ -55,7 +55,7 @@
   },
   "github_cloud_audit": {
     "status": "WARNING",
-    "total_repositories_audited": 7,
+    "total_repositories_audited": 6,
     "findings_count": 2,
     "findings": [
       {
@@ -116,15 +116,6 @@
         "agent_id": "youtube_agent",
         "name": "YouTube Production & Growth Agent",
         "remote_url": "https://github.com/thakoralpesh3/youtube-agent.git",
-        "has_pre_push_hook": true,
-        "has_dependabot": true,
-        "findings_count": 0,
-        "findings": []
-      },
-      {
-        "agent_id": "microcorp_agent",
-        "name": "MicroCorp AI Autonomous Enterprise",
-        "remote_url": "https://github.com/thakoralpesh3/microcorp-agent.git",
         "has_pre_push_hook": true,
         "has_dependabot": true,
         "findings_count": 0,
@@ -195,14 +186,6 @@
       "agent_id": "youtube_agent",
       "name": "YouTube Production & Growth Agent",
       "path": "/home/alpesh/youtube-agent",
-      "status": "PASS",
-      "findings_count": 0,
-      "findings": []
-    },
-    {
-      "agent_id": "microcorp_agent",
-      "name": "MicroCorp AI Autonomous Enterprise",
-      "path": "/media/alpesh/Software & Work/Agents/microcorp-agent",
       "status": "PASS",
       "findings_count": 0,
       "findings": []
@@ -300,5 +283,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 0.32
+  "duration_seconds": 0.27
 }
