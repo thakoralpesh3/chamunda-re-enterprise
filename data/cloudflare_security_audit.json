@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-26 23:54:49",
+  "timestamp": "2026-10-27 00:08:24",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
   "overall_score": 86,
   "grade": "B (Hardened with Warnings)",
@@ -41,7 +41,7 @@
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8550)",
-        "details": "Port 8550 (python3 (PID 1207)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "details": "Port 8550 (python3 (PID 120901)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       }
     ]
@@ -229,5 +229,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 0.37
+  "duration_seconds": 11.81
 }
