@@ -1,28 +1,21 @@
 {
-  "timestamp": "2026-10-26 21:13:43",
+  "timestamp": "2026-10-26 21:19:15",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 76,
-  "grade": "C (Remediation Required)",
+  "overall_score": 79,
+  "grade": "B (Hardened with Warnings)",
   "total_agents_audited": 8,
   "threats_summary": {
-    "total_threats": 10,
+    "total_threats": 9,
     "critical": 0,
     "high": 1,
-    "medium": 5,
+    "medium": 4,
     "low": 4
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 18,
+    "active_listening_sockets": 17,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
-      {
-        "severity": "MEDIUM",
-        "category": "ORIGIN_EXPOSURE",
-        "title": "Service Bound to All Interfaces (0.0.0.0:8085)",
-        "details": "Port 8085 (python3 (PID 1100)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
-        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
-      },
       {
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
@@ -265,7 +258,6 @@
       "solution_gu": "\u0ab8\u0ab0\u0acd\u0ab5\u0abf\u0ab8\u0aa8\u0ac7 127.0.0.1 \u0aaa\u0ab0 \u0aac\u0abe\u0a87\u0aa8\u0acd\u0aa1 \u0a95\u0ab0\u0ac0 \u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0aaa\u0acb\u0ab0\u0acd\u0a9f \u0a8f\u0a95\u0acd\u0ab8\u0aaa\u0acb\u0a9d\u0ab0 \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
       "action_required": "Configure microservices to bind strictly to 127.0.0.1 and expose securely via Cloudflare Tunnel.",
       "affected_items": [
-        "Service Bound to All Interfaces (0.0.0.0:8085)",
         "Service Bound to All Interfaces (0.0.0.0:8080)",
         "Service Bound to All Interfaces (0.0.0.0:8081)",
         "Service Bound to All Interfaces (0.0.0.0:8899)",
@@ -329,5 +321,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 0.31
+  "duration_seconds": 0.35
 }
