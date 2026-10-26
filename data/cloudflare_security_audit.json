@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-26 17:44:47",
+  "timestamp": "2026-10-26 17:50:38",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
   "overall_score": 76,
   "grade": "C (Remediation Required)",
@@ -351,5 +351,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 11.33
+  "duration_seconds": 8.27
 }
