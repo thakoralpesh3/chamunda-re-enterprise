@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-10-26 18:46:26",
+  "timestamp": "2026-10-26 18:52:11",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 83,
+  "overall_score": 82,
   "grade": "B (Hardened with Warnings)",
-  "total_agents_audited": 7,
+  "total_agents_audited": 8,
   "threats_summary": {
-    "total_threats": 7,
+    "total_threats": 8,
     "critical": 0,
     "high": 0,
     "medium": 5,
-    "low": 2
+    "low": 3
   },
   "host_os_audit": {
     "status": "WARNING",
@@ -182,6 +182,22 @@
       ]
     },
     {
+      "agent_id": "social_media_agent",
+      "name": "\u2728 Auto-Discovered: social-media-agent",
+      "path": "/home/alpesh/social-media-agent",
+      "status": "WARNING",
+      "findings_count": 1,
+      "findings": [
+        {
+          "severity": "LOW",
+          "category": "EDGE_CONTAINER",
+          "title": "Codespaces Sandbox Not Configured",
+          "details": "\u2728 Auto-Discovered: social-media-agent does not have a .devcontainer configuration for isolated cloud sandbox execution.",
+          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
+        }
+      ]
+    },
+    {
       "agent_id": "agent_town",
       "name": "\u2728 Auto-Discovered: Agent Town",
       "path": "/media/alpesh/Software & Work/Agents/Agent Town",
@@ -235,7 +251,18 @@
         "Codespaces Sandbox Not Configured"
       ],
       "can_autofix": false
+    },
+    {
+      "id": "SOL-GEN-4",
+      "severity": "LOW",
+      "title": "Zero-Trust Defensive Policy Enforcement",
+      "solution_gu": "\u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0ab2\u0abe\u0a97\u0ac1 \u0a95\u0ab0\u0ac0 \u0aa5\u0acd\u0ab0\u0ac7\u0a9f \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
+      "action_required": "Generate .devcontainer/devcontainer.json for secure cloud runtime.",
+      "affected_items": [
+        "Codespaces Sandbox Not Configured"
+      ],
+      "can_autofix": false
     }
   ],
-  "duration_seconds": 0.5
+  "duration_seconds": 4.62
 }
