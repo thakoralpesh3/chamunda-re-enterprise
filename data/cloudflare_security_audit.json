@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-27 21:33:23",
+  "timestamp": "2026-10-27 21:39:55",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 90,
-  "grade": "A (Zero Trust Compliant)",
+  "overall_score": 87,
+  "grade": "B (Hardened with Warnings)",
   "total_agents_audited": 6,
   "threats_summary": {
-    "total_threats": 4,
+    "total_threats": 5,
     "critical": 0,
     "high": 0,
-    "medium": 3,
+    "medium": 4,
     "low": 1
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 10,
+    "active_listening_sockets": 17,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
@@ -21,6 +21,13 @@
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8081)",
         "details": "Port 8081 (python3 (PID 1103)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
+      },
+      {
+        "severity": "MEDIUM",
+        "category": "ORIGIN_EXPOSURE",
+        "title": "Service Bound to All Interfaces (0.0.0.0:8080)",
+        "details": "Port 8080 (python3 (PID 1535)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       },
       {
@@ -168,6 +175,7 @@
       "action_required": "Configure microservices to bind strictly to 127.0.0.1 and expose securely via Cloudflare Tunnel.",
       "affected_items": [
         "Service Bound to All Interfaces (0.0.0.0:8081)",
+        "Service Bound to All Interfaces (0.0.0.0:8080)",
         "Service Bound to All Interfaces (0.0.0.0:8550)",
         "Service Bound to All Interfaces (0.0.0.0:8899)"
       ],
@@ -185,5 +193,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 19.1
+  "duration_seconds": 12.02
 }
