@@ -1,47 +1,5 @@
 [
   {
-    "timestamp": "2026-10-27 05:41:09",
-    "trigger_source": "autonomous_watchdog",
-    "duration_seconds": 1.06,
-    "freed_memory_mb": 2.1,
-    "temp_files_deleted": 0,
-    "temp_space_freed_mb": 0.0,
-    "closed_processes_count": 0,
-    "ram_after_percent": 78.1,
-    "reasons": [
-      "Laptop Performance Acceleration"
-    ],
-    "status": "COMPLETED"
-  },
-  {
-    "timestamp": "2026-10-27 19:24:04",
-    "trigger_source": "autonomous_watchdog",
-    "duration_seconds": 24.43,
-    "freed_memory_mb": 0.0,
-    "temp_files_deleted": 6,
-    "temp_space_freed_mb": 2.32,
-    "closed_processes_count": 1,
-    "ram_after_percent": 39.5,
-    "reasons": [
-      "Laptop Performance Acceleration"
-    ],
-    "status": "COMPLETED"
-  },
-  {
-    "timestamp": "2026-10-27 20:47:06",
-    "trigger_source": "autonomous_watchdog",
-    "duration_seconds": 0.99,
-    "freed_memory_mb": 0.0,
-    "temp_files_deleted": 9,
-    "temp_space_freed_mb": 0.53,
-    "closed_processes_count": 0,
-    "ram_after_percent": 57.2,
-    "reasons": [
-      "Laptop Performance Acceleration"
-    ],
-    "status": "COMPLETED"
-  },
-  {
     "timestamp": "2026-10-27 20:50:52",
     "trigger_source": "autonomous_watchdog",
     "duration_seconds": 7.74,
@@ -694,6 +652,48 @@
     "temp_space_freed_mb": 0.0,
     "closed_processes_count": 0,
     "ram_after_percent": 75.7,
+    "reasons": [
+      "Laptop Performance Acceleration"
+    ],
+    "status": "COMPLETED"
+  },
+  {
+    "timestamp": "2026-10-28 01:53:33",
+    "trigger_source": "autonomous_watchdog",
+    "duration_seconds": 376.21,
+    "freed_memory_mb": 0.0,
+    "temp_files_deleted": 0,
+    "temp_space_freed_mb": 0.0,
+    "closed_processes_count": 0,
+    "ram_after_percent": 81.1,
+    "reasons": [
+      "Laptop Performance Acceleration"
+    ],
+    "status": "COMPLETED"
+  },
+  {
+    "timestamp": "2026-10-28 02:02:48",
+    "trigger_source": "autonomous_watchdog",
+    "duration_seconds": 528.56,
+    "freed_memory_mb": 0.0,
+    "temp_files_deleted": 0,
+    "temp_space_freed_mb": 0.0,
+    "closed_processes_count": 0,
+    "ram_after_percent": 82.6,
+    "reasons": [
+      "Laptop Performance Acceleration"
+    ],
+    "status": "COMPLETED"
+  },
+  {
+    "timestamp": "2026-10-28 02:05:41",
+    "trigger_source": "autonomous_watchdog",
+    "duration_seconds": 136.19,
+    "freed_memory_mb": 583.2,
+    "temp_files_deleted": 0,
+    "temp_space_freed_mb": 0.0,
+    "closed_processes_count": 0,
+    "ram_after_percent": 66.3,
     "reasons": [
       "Laptop Performance Acceleration"
     ],
