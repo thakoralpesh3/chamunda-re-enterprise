@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": "2026-10-26 21:18:20",
-    "trigger_source": "autonomous_watchdog",
-    "duration_seconds": 1.3,
-    "freed_memory_mb": 0.0,
-    "temp_files_deleted": 0,
-    "temp_space_freed_mb": 0.0,
-    "closed_processes_count": 0,
-    "ram_after_percent": 72.1,
-    "reasons": [
-      "Laptop Performance Acceleration"
-    ],
-    "status": "COMPLETED"
-  },
-  {
-    "timestamp": "2026-10-26 21:27:41",
-    "trigger_source": "autonomous_watchdog",
-    "duration_seconds": 1.27,
-    "freed_memory_mb": 6.6,
-    "temp_files_deleted": 0,
-    "temp_space_freed_mb": 0.0,
-    "closed_processes_count": 0,
-    "ram_after_percent": 61.3,
-    "reasons": [
-      "Laptop Performance Acceleration"
-    ],
-    "status": "COMPLETED"
-  },
-  {
     "timestamp": "2026-10-26 21:31:32",
     "trigger_source": "autonomous_watchdog",
     "duration_seconds": 0.88,
@@ -694,6 +666,34 @@
     "temp_space_freed_mb": 0.65,
     "closed_processes_count": 0,
     "ram_after_percent": 75.3,
+    "reasons": [
+      "Laptop Performance Acceleration"
+    ],
+    "status": "COMPLETED"
+  },
+  {
+    "timestamp": "2026-10-27 23:36:29",
+    "trigger_source": "autonomous_watchdog",
+    "duration_seconds": 160.08,
+    "freed_memory_mb": 0.0,
+    "temp_files_deleted": 3,
+    "temp_space_freed_mb": 0.0,
+    "closed_processes_count": 0,
+    "ram_after_percent": 65.4,
+    "reasons": [
+      "Laptop Performance Acceleration"
+    ],
+    "status": "COMPLETED"
+  },
+  {
+    "timestamp": "2026-10-27 23:37:04",
+    "trigger_source": "autonomous_watchdog",
+    "duration_seconds": 1.27,
+    "freed_memory_mb": 0.0,
+    "temp_files_deleted": 0,
+    "temp_space_freed_mb": 0.0,
+    "closed_processes_count": 0,
+    "ram_after_percent": 66.8,
     "reasons": [
       "Laptop Performance Acceleration"
     ],
