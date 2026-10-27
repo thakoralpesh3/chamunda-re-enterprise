@@ -87,7 +87,11 @@ class HermesRelayAgent:
             "optimize laptop", "kill process", "running process", "disk usage",
             "security audit", "hacker", "firewall", "backdoor", "stay awake",
             "reboot", "shutdown", "laptop", "cpu", "ram", "memory", "storage",
-            "લેપટોપ", "બેટરી", "સ્ક્રીન", "અવાજ", "હેંગ", "વાયરસ"
+            "reverse engineer", "reverse engineering", "decompile", "disassemble",
+            "rea", "apk decompil", "binary audit", "jadx", "ghidra",
+            "strix", "penetration test", "pentest", "owasp", "appsec",
+            "vulnerability scan", "security test", "idor", "xss", "ssrf", "sql injection",
+            "લેપટોપ", "બેટરી", "સ્ક્રીન", "અવાજ", "હેંગ", "વાયરસ", "સિક્યોરિટી", "રિવર્સ એન્જિનિયરિંગ", "ડીકમ્પાઈલ"
         ]
         for kw in jarvis_keywords:
             if kw in t:
@@ -204,6 +208,37 @@ class HermesRelayAgent:
                     "voice_ready": self._clean_for_voice(reply_text),
                     "action_executed": jarvis_res.get("action_executed")
                 }
+
+        low_msg = user_message.lower()
+        if any(k in low_msg for k in ["reverse engineer", "rea", "decompile", "disassemble", "apk decompil", "રિવર્સ એન્જિનિયરિંગ"]):
+            reply_text = (
+                "⚡ [REA • Reverse Engineer Anything] સક્રિય છે, અલ્પેશ સાહેબ!\\n"
+                "- સમર્થિત ટાર્ગેટ્સ: Android APK/AAR (Jadx/Fernflower), Native ELF/PE Binaries, Electron Apps, Managed .NET, અને Firmware.\\n"
+                "- ક્ષમતાઓ: Decompilation, Call Graph Tracing, API Endpoint Extraction, અને AgentEnv Bundle Generation.\\n"
+                "- મોડ: ૧૦૦% ઓફલાઇન એર-ગેપ્ડ એક્ઝિક્યુશન ઉપલબ્ધ."
+            )
+            return {
+                "agent": "jarvis-commander",
+                "mode": "offline",
+                "model": "rea-reverse-engine",
+                "reply": f"⚡ [ઓફલાઇન મોડ] {reply_text}",
+                "voice_ready": self._clean_for_voice(reply_text)
+            }
+
+        if any(k in low_msg for k in ["strix", "penetration test", "pentest", "owasp", "appsec", "vulnerability scan", "પેનટેસ્ટ", "સિક્યોરિટી"]):
+            reply_text = (
+                "🛡️ [Strix • Autonomous Security Agent] સક્રિય છે, અલ્પેશ સાહેબ!\\n"
+                "- ઓડિટ મોડ્સ: Web App Pentesting, API Security (REST/GraphQL), OWASP Top 10, Codebase Vulnerability Discovery, અને CI/CD Gates.\\n"
+                "- વર્કફ્લો: ડાયનેમિક એક્સ્પ્લોઇટેશન પ્રૂફ-ઓફ-કન્સેપ્ટ (PoC) + ઓટોમેટેડ PR ફિક્સ જનરેશન.\\n"
+                "- સ્કેનર: OSS Local Sandbox & Strix Cloud સપોર્ટેડ."
+            )
+            return {
+                "agent": "jarvis-commander",
+                "mode": "offline",
+                "model": "strix-security-core",
+                "reply": f"⚡ [ઓફલાઇન મોડ] {reply_text}",
+                "voice_ready": self._clean_for_voice(reply_text)
+            }
 
         synth_res = self.offline_engine.synthesize(user_message)
         has_gujarati = any('\u0A80' <= c <= '\u0AFF' for c in user_message)
