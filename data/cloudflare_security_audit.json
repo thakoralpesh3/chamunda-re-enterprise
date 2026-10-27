@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-27 19:23:29",
+  "timestamp": "2026-10-27 19:30:59",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 90,
-  "grade": "A (Zero Trust Compliant)",
-  "total_agents_audited": 6,
+  "overall_score": 86,
+  "grade": "B (Hardened with Warnings)",
+  "total_agents_audited": 7,
   "threats_summary": {
-    "total_threats": 4,
+    "total_threats": 6,
     "critical": 0,
     "high": 0,
-    "medium": 3,
-    "low": 1
+    "medium": 4,
+    "low": 2
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 9,
+    "active_listening_sockets": 16,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
@@ -33,6 +33,13 @@
       {
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
+        "title": "Service Bound to All Interfaces (0.0.0.0:8080)",
+        "details": "Port 8080 (python3 (PID 1644)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
+      },
+      {
+        "severity": "MEDIUM",
+        "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8081)",
         "details": "Port 8081 (python3 (PID 1105)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
@@ -41,7 +48,7 @@
   },
   "github_cloud_audit": {
     "status": "PASS",
-    "total_repositories_audited": 6,
+    "total_repositories_audited": 7,
     "findings_count": 0,
     "findings": [],
     "repositories": [
@@ -94,6 +101,15 @@
         "agent_id": "mint_agent_os",
         "name": "\u2728 Auto-Discovered: mint-agent-os",
         "remote_url": "https://github.com/thakoralpesh3/mint-agent-os.git",
+        "has_pre_push_hook": true,
+        "has_dependabot": true,
+        "findings_count": 0,
+        "findings": []
+      },
+      {
+        "agent_id": "agent_town",
+        "name": "\u2728 Auto-Discovered: Agent Town",
+        "remote_url": "https://github.com/thakoralpesh3/agent-town.git",
         "has_pre_push_hook": true,
         "has_dependabot": true,
         "findings_count": 0,
@@ -157,6 +173,22 @@
           "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
         }
       ]
+    },
+    {
+      "agent_id": "agent_town",
+      "name": "\u2728 Auto-Discovered: Agent Town",
+      "path": "/media/alpesh/Software & Work/Agents/Agent Town",
+      "status": "WARNING",
+      "findings_count": 1,
+      "findings": [
+        {
+          "severity": "LOW",
+          "category": "EDGE_CONTAINER",
+          "title": "Codespaces Sandbox Not Configured",
+          "details": "\u2728 Auto-Discovered: Agent Town does not have a .devcontainer configuration for isolated cloud sandbox execution.",
+          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
+        }
+      ]
     }
   ],
   "defensive_solutions": [
@@ -169,6 +201,7 @@
       "affected_items": [
         "Service Bound to All Interfaces (0.0.0.0:8550)",
         "Service Bound to All Interfaces (0.0.0.0:8899)",
+        "Service Bound to All Interfaces (0.0.0.0:8080)",
         "Service Bound to All Interfaces (0.0.0.0:8081)"
       ],
       "can_autofix": true
@@ -183,7 +216,18 @@
         "Codespaces Sandbox Not Configured"
       ],
       "can_autofix": false
+    },
+    {
+      "id": "SOL-GEN-3",
+      "severity": "LOW",
+      "title": "Zero-Trust Defensive Policy Enforcement",
+      "solution_gu": "\u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0ab2\u0abe\u0a97\u0ac1 \u0a95\u0ab0\u0ac0 \u0aa5\u0acd\u0ab0\u0ac7\u0a9f \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
+      "action_required": "Generate .devcontainer/devcontainer.json for secure cloud runtime.",
+      "affected_items": [
+        "Codespaces Sandbox Not Configured"
+      ],
+      "can_autofix": false
     }
   ],
-  "duration_seconds": 18.14
+  "duration_seconds": 8.78
 }
