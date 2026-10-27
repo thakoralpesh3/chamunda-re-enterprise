@@ -141,7 +141,7 @@ async def serve_openwebui():
     return HTMLResponse(content=INDEX_HTML)
 
 
-INDEX_HTML = """<!DOCTYPE html>
+INDEX_HTML = r"""<!DOCTYPE html>
 <html lang="gu" class="dark">
 <head>
     <meta charset="UTF-8">
