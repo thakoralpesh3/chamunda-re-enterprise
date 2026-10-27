@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-27 23:23:43",
+  "timestamp": "2026-10-27 23:30:09",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 76,
+  "overall_score": 73,
   "grade": "C (Remediation Required)",
   "total_agents_audited": 9,
   "threats_summary": {
-    "total_threats": 8,
+    "total_threats": 9,
     "critical": 0,
     "high": 2,
-    "medium": 4,
+    "medium": 5,
     "low": 2
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 19,
+    "active_listening_sockets": 20,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
@@ -28,6 +28,13 @@
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8081)",
         "details": "Port 8081 (python3 (PID 1112)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
+      },
+      {
+        "severity": "MEDIUM",
+        "category": "ORIGIN_EXPOSURE",
+        "title": "Service Bound to All Interfaces (0.0.0.0:3000)",
+        "details": "Port 3000 (python3 (PID 11711)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       },
       {
@@ -270,6 +277,7 @@
       "affected_items": [
         "Service Bound to All Interfaces (0.0.0.0:8080)",
         "Service Bound to All Interfaces (0.0.0.0:8081)",
+        "Service Bound to All Interfaces (0.0.0.0:3000)",
         "Service Bound to All Interfaces (0.0.0.0:8899)",
         "Service Bound to All Interfaces (0.0.0.0:8550)"
       ],
@@ -310,5 +318,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 61.63
+  "duration_seconds": 31.72
 }
