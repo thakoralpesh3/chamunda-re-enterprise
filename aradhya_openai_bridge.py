@@ -22,7 +22,7 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional
 
 from fastapi import APIRouter, Request, UploadFile, File, Form, HTTPException
-from fastapi.responses import JSONResponse, StreamingResponse, Response
+from fastapi.responses import JSONResponse, StreamingResponse, Response, FileResponse
 from pydantic import BaseModel
 
 BASE_DIR = Path("/home/alpesh/chamunda_re_enterprise")
