@@ -3,17 +3,6 @@
 Chamunda Automobile Enterprise • Project "Chhaya" (પ્રોજેક્ટ છાયા)
 Hermes Multi-Agent Relay & Intent Dispatcher (હર્મિસ રિલે એજન્ટ)
 Author: Aradhya (CEO), reporting to Alpesh Sir (Founder, Chairman & Master Tech)
-
-Architectural Role:
-1. Intelligent Message Broker & Dispatcher between Open WebUI and internal agents:
-   - Aradhya CEO (Royal Enfield Dealership, Workshop Engineering, DMS, CRM, Sales)
-   - Jarvis Commander (Linux OS Administration, Security Audits, Laptop Hardware, Performance)
-   - Online GitHub Skills (Dynamic remote skill execution from thakoralpesh3/jarvis-agent)
-2. Network Resilience & Autonomous Air-Gapped Fallback:
-   - Actively probes network health (socket heartbeat to 8.8.8.8:53).
-   - If online: Routes through frontier/adaptive LLMs and GitHub-synced tools.
-   - If offline: Instantly and seamlessly routes to Aradhya's Offline Cognitive Knowledge
-     Engine (AOCKRE v2.0) and Jarvis's Offline Commander. Zero failure popups!
 """
 
 import os
@@ -34,15 +23,8 @@ if str(BASE_DIR) not in sys.path:
 if str(JARVIS_DIR) not in sys.path:
     sys.path.insert(0, str(JARVIS_DIR))
 
-# Import Aradhya Offline Cognitive Knowledge & LLM engines
-from aradhya_offline_knowledge import (
-    generate_offline_dealership_response,
-    lookup_part_by_query,
-    get_platform_specs,
-    calculate_on_road_price,
-    RE_PLATFORMS,
-    WORKSHOP_SCHEDULE,
-)
+# Import Aradhya Offline Cognitive Knowledge Engine
+from aradhya_offline_knowledge import get_offline_cognitive_engine
 
 try:
     from chamunda_llm_engine import get_llm_engine
@@ -71,12 +53,11 @@ class HermesRelayAgent:
     def __init__(self):
         self.last_online_check = 0.0
         self.cached_online_status = True
-        self.check_interval = 5.0  # seconds
+        self.check_interval = 5.0
+        self.offline_engine = get_offline_cognitive_engine()
 
     def is_online(self, force_refresh: bool = False) -> bool:
-        """
-        Microsecond socket probe to verify real internet connectivity.
-        """
+        """Microsecond socket probe to verify real internet connectivity."""
         now = time.time()
         if not force_refresh and (now - self.last_online_check < self.check_interval):
             return self.cached_online_status
@@ -97,15 +78,9 @@ class HermesRelayAgent:
         return False
 
     def classify_intent(self, text: str) -> str:
-        """
-        Classifies user prompt into the best specialized agent:
-        - 'aradhya': Dealership, Royal Enfield bikes, engineering, workshop, billing, parts
-        - 'jarvis': Laptop OS control, battery, brightness, volume, processes, security
-        - 'relay': Combined or general conversation
-        """
+        """Classify user prompt into aradhya, jarvis, or relay."""
         t = text.lower()
 
-        # Jarvis laptop hardware & OS keywords
         jarvis_keywords = [
             "battery", "brightness", "volume", "sound", "mute", "unmute",
             "screen", "lock screen", "lag", "hang", "sluggish", "turbo",
@@ -118,7 +93,6 @@ class HermesRelayAgent:
             if kw in t:
                 return "jarvis"
 
-        # Aradhya Royal Enfield & dealership keywords
         aradhya_keywords = [
             "royal enfield", "classic", "bullet", "meteor", "hunter", "interceptor",
             "continental", "himalayan", "guerrilla", "shotgun", "bear 650",
@@ -140,23 +114,18 @@ class HermesRelayAgent:
         preferred_model: str = "auto",
         voice_mode: bool = False
     ) -> Dict[str, Any]:
-        """
-        Processes a user message through the Hermes relay pipeline.
-        Guarantees automatic offline fallback if internet drops or fails.
-        """
+        """Processes user message with automatic offline fallback."""
         online = self.is_online()
         intent = self.classify_intent(user_message)
         logger.info("Hermes dispatching query [Online=%s, Intent=%s]: '%s'", online, intent, user_message[:60])
 
-        # If offline or offline requested, execute air-gapped deterministic intelligence
         if not online or preferred_model == "aradhya-offline":
             return self._execute_offline(user_message, intent, voice_mode)
 
-        # Online execution with automatic try-catch fallback
         try:
             return self._execute_online(user_message, intent, preferred_model, voice_mode)
         except Exception as e:
-            logger.warning("Online execution encountered failure (%s). Triggering Auto-Fallback to Offline Mode...", e)
+            logger.warning("Online execution error (%s). Falling back to Offline Mode...", e)
             res = self._execute_offline(user_message, intent, voice_mode)
             res["fallback_triggered"] = True
             res["fallback_reason"] = str(e)
@@ -169,10 +138,6 @@ class HermesRelayAgent:
         preferred_model: str,
         voice_mode: bool
     ) -> Dict[str, Any]:
-        """
-        Dispatches request to online models or online Jarvis GitHub skills.
-        """
-        # A. Jarvis System Administration Intent
         if intent == "jarvis" and jarvis_offline_commander:
             jarvis_res = jarvis_offline_commander.execute_offline_command(user_message)
             if jarvis_res.get("recognized"):
@@ -188,7 +153,6 @@ class HermesRelayAgent:
                     "action_executed": jarvis_res.get("action_executed")
                 }
 
-        # B. Aradhya LLM Engine Execution
         if get_llm_engine:
             llm = get_llm_engine()
             target_model = "gemini-3.5-flash" if preferred_model in ["auto", "aradhya-ceo", "hermes-relay"] else preferred_model
@@ -217,7 +181,6 @@ class HermesRelayAgent:
                     "voice_ready": self._clean_for_voice(reply)
                 }
 
-        # If LLM returned empty, fallback
         raise RuntimeError("Online LLM response was empty.")
 
     def _execute_offline(
@@ -226,10 +189,7 @@ class HermesRelayAgent:
         intent: str,
         voice_mode: bool
     ) -> Dict[str, Any]:
-        """
-        100% Offline Air-Gapped Execution using AOCKRE v2.0 and Jarvis Offline Commander.
-        """
-        # A. Jarvis Laptop OS & Security Intent Offline
+        """100% Offline Air-Gapped Execution using AOCKRE v2.0 & Jarvis."""
         if intent == "jarvis" and jarvis_offline_commander:
             jarvis_res = jarvis_offline_commander.execute_offline_command(user_message)
             if jarvis_res.get("recognized"):
@@ -245,9 +205,12 @@ class HermesRelayAgent:
                     "action_executed": jarvis_res.get("action_executed")
                 }
 
-        # B. Aradhya Dealership & Royal Enfield Engineering Offline
-        offline_result = generate_offline_dealership_response(user_message)
-        reply = offline_result.get("response", "")
+        synth_res = self.offline_engine.synthesize(user_message)
+        has_gujarati = any('\u0A80' <= c <= '\u0AFF' for c in user_message)
+        reply = synth_res.get("response_gu") if has_gujarati else synth_res.get("response_en")
+        if not reply:
+            reply = synth_res.get("response_en") or synth_res.get("response_gu") or ""
+
         if not reply:
             reply = (
                 "જય માતાજી અલ્પેશ સાહેબ! હાલમાં ઇન્ટરનેટ ઉપલબ્ધ નથી, પરંતુ આરાધ્યા ઓફલાઇન સિસ્ટમ સક્રિય છે. "
@@ -255,8 +218,7 @@ class HermesRelayAgent:
                 "સ્પેરપાર્ટ્સ, સર્વિસ શિડ્યુલ અને લેપટોપ કંટ્રોલ ઉપલબ્ધ છે. હું આપને શું મદદ કરી શકું?"
             )
 
-        note_prefix = "📱 [૧૦૦% ઓફલાઇન મોડ] "
-        formatted_reply = f"{note_prefix}{reply}"
+        formatted_reply = f"📱 [૧૦૦% ઓફલાઇન મોડ] {reply}"
 
         return {
             "agent": "aradhya-offline",
@@ -264,13 +226,10 @@ class HermesRelayAgent:
             "model": "aradhya-cognitive-core-v2",
             "reply": formatted_reply,
             "voice_ready": self._clean_for_voice(reply),
-            "data_matched": offline_result.get("matched_platform") or offline_result.get("matched_part")
+            "category": synth_res.get("category")
         }
 
     def _clean_for_voice(self, text: str) -> str:
-        """
-        Strip markdown symbols, code fences, and links for smooth neural TTS voice output.
-        """
         import re
         t = re.sub(r"```[\s\S]*?```", "", text)
         t = re.sub(r"`([^`]+)`", r"\1", t)
@@ -295,8 +254,8 @@ if __name__ == "__main__":
     print("Online status:", relay.is_online())
     test_queries = [
         "What is the oil capacity and tappet clearance of Royal Enfield Classic 350?",
-        "Check laptop battery status and optimize performance",
-        "જય માતાજી આરાધ્યા, હાલની સિસ્ટમ સ્થિતિ શું છે?"
+        "Check laptop battery status",
+        "જય માતાજી આરાધ્યા, J-Series 350 ની વિગતો આપો"
     ]
     for q in test_queries:
         res = relay.process_message(q)
