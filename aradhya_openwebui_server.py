@@ -135,7 +135,7 @@ async def sync_jarvis():
     return JSONResponse(res)
 
 
-@app.get("/", response_class=HTMLResponse)
+@app.api_route("/", methods=["GET", "HEAD"], response_class=HTMLResponse)
 async def serve_openwebui():
     """Serves the complete Open WebUI Voice-First & Text Interface."""
     return HTMLResponse(content=INDEX_HTML)
