@@ -67,6 +67,10 @@ app = FastAPI(
     version="3.0.0"
 )
 
+# Mount OpenAI-Compatible Gateway Bridge for Open WebUI (/v1)
+from aradhya_openai_bridge import router as openai_router
+app.include_router(openai_router)
+
 @app.middleware("http")
 async def add_cloudflare_security_headers(request: Request, call_next):
     response = await call_next(request)
