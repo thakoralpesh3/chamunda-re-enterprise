@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-28 00:04:11",
+  "timestamp": "2026-10-28 00:20:53",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 75,
-  "grade": "C (Remediation Required)",
+  "overall_score": 78,
+  "grade": "B (Hardened with Warnings)",
   "total_agents_audited": 8,
   "threats_summary": {
-    "total_threats": 9,
+    "total_threats": 8,
     "critical": 0,
     "high": 1,
-    "medium": 6,
+    "medium": 5,
     "low": 2
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 21,
+    "active_listening_sockets": 20,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
@@ -40,13 +40,6 @@
       {
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
-        "title": "Service Bound to All Interfaces (0.0.0.0:8893)",
-        "details": "Port 8893 (python3 (PID 27913)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
-        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
-      },
-      {
-        "severity": "MEDIUM",
-        "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8899)",
         "details": "Port 8899 (uvicorn (PID 1152)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
@@ -55,7 +48,7 @@
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8550)",
-        "details": "Port 8550 (python3 (PID 26422)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "details": "Port 8550 (python3 (PID 34326)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       }
     ]
@@ -251,7 +244,6 @@
         "Service Bound to All Interfaces (0.0.0.0:8080)",
         "Service Bound to All Interfaces (0.0.0.0:8081)",
         "Service Bound to All Interfaces (0.0.0.0:3000)",
-        "Service Bound to All Interfaces (0.0.0.0:8893)",
         "Service Bound to All Interfaces (0.0.0.0:8899)",
         "Service Bound to All Interfaces (0.0.0.0:8550)"
       ],
@@ -291,5 +283,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 242.53
+  "duration_seconds": 63.33
 }
