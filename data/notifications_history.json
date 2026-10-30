@@ -1,5 +1,17 @@
 [
   {
+    "id": "NOTIF-1793382707",
+    "timestamp": "2026-10-30 23:21:47",
+    "title": "⚠️ સિસ્ટમ સૂચના (System Alert): કન્ટેનર મેમરી વોર્નિંગ",
+    "message": "ધ્યાન આપો અલ્પેશ સાહેબ! સિસ્ટમમાં સમસ્યા જણાઈ છે:\nRAM વપરાશ ૮૫% પહોંચ્યો",
+    "category": "WARNING",
+    "details": "RAM વપરાશ ૮૫% પહોંચ્યો",
+    "solution": "કમાન્ડ ચલાવો: 'aradhya heal' અથવા સિસ્ટમ બૂસ્ટ કરો.",
+    "dispatched_channels": [
+      "desktop_banner"
+    ]
+  },
+  {
     "id": "NOTIF-1793208837",
     "timestamp": "2026-10-28 23:03:57",
     "title": "🚨 ગંભીર ખામી (Critical Alert): 🚨 ગંભીર સુરક્ષા ચેતવણી: અનધિકૃત એક્સેસ પ્રયાસ",
