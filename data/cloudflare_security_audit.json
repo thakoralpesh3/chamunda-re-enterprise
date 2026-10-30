@@ -1,26 +1,47 @@
 {
-  "timestamp": "2026-10-30 22:50:25",
+  "timestamp": "2026-10-30 23:06:01",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 85,
-  "grade": "B (Hardened with Warnings)",
-  "total_agents_audited": 9,
+  "overall_score": 70,
+  "grade": "C (Remediation Required)",
+  "total_agents_audited": 11,
   "threats_summary": {
-    "total_threats": 5,
+    "total_threats": 10,
     "critical": 0,
-    "high": 1,
-    "medium": 3,
-    "low": 1
+    "high": 2,
+    "medium": 6,
+    "low": 2
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 10,
+    "active_listening_sockets": 15,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
         "severity": "MEDIUM",
         "category": "ORIGIN_EXPOSURE",
+        "title": "Service Bound to All Interfaces (0.0.0.0:8080)",
+        "details": "Port 8080 (python3 (PID 1650)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
+      },
+      {
+        "severity": "MEDIUM",
+        "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:8081)",
         "details": "Port 8081 (python3 (PID 1281)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
+      },
+      {
+        "severity": "MEDIUM",
+        "category": "ORIGIN_EXPOSURE",
+        "title": "Service Bound to All Interfaces (0.0.0.0:8085)",
+        "details": "Port 8085 (python3 (PID 1254)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
+      },
+      {
+        "severity": "MEDIUM",
+        "category": "ORIGIN_EXPOSURE",
+        "title": "Service Bound to All Interfaces (0.0.0.0:8550)",
+        "details": "Port 8550 (python3 (PID 1367)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       },
       {
@@ -41,8 +62,8 @@
   },
   "github_cloud_audit": {
     "status": "WARNING",
-    "total_repositories_audited": 9,
-    "findings_count": 1,
+    "total_repositories_audited": 11,
+    "findings_count": 2,
     "findings": [
       {
         "severity": "HIGH",
@@ -50,6 +71,14 @@
         "title": "Missing Pre-Push Secret Hook: APK TV Converter Agent",
         "repo": "APK TV Converter Agent",
         "details": "Repository APK TV Converter Agent lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
+        "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
+      },
+      {
+        "severity": "HIGH",
+        "category": "GITHUB_PUSH_PROTECTION",
+        "title": "Missing Pre-Push Secret Hook: MicroCorp AI Autonomous Enterprise",
+        "repo": "MicroCorp AI Autonomous Enterprise",
+        "details": "Repository MicroCorp AI Autonomous Enterprise lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
         "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
       }
     ],
@@ -136,9 +165,36 @@
         "findings": []
       },
       {
+        "agent_id": "microcorp_agent",
+        "name": "MicroCorp AI Autonomous Enterprise",
+        "remote_url": "https://github.com/thakoralpesh3/microcorp-agent.git",
+        "has_pre_push_hook": false,
+        "has_dependabot": true,
+        "findings_count": 1,
+        "findings": [
+          {
+            "severity": "HIGH",
+            "category": "GITHUB_PUSH_PROTECTION",
+            "title": "Missing Pre-Push Secret Hook: MicroCorp AI Autonomous Enterprise",
+            "repo": "MicroCorp AI Autonomous Enterprise",
+            "details": "Repository MicroCorp AI Autonomous Enterprise lacks an active pre-push secret blocking hook. Pushes to public GitHub can accidentally leak credentials.",
+            "remediation": "Install executable .git/hooks/pre-push script to intercept secret leaks prior to git push."
+          }
+        ]
+      },
+      {
         "agent_id": "mint_agent_os",
         "name": "\u2728 Auto-Discovered: mint-agent-os",
         "remote_url": "https://github.com/thakoralpesh3/mint-agent-os.git",
+        "has_pre_push_hook": true,
+        "has_dependabot": true,
+        "findings_count": 0,
+        "findings": []
+      },
+      {
+        "agent_id": "agent_town",
+        "name": "\u2728 Auto-Discovered: Agent Town",
+        "remote_url": "https://github.com/thakoralpesh3/agent-town.git",
         "has_pre_push_hook": true,
         "has_dependabot": true,
         "findings_count": 0,
@@ -212,6 +268,14 @@
       "findings": []
     },
     {
+      "agent_id": "microcorp_agent",
+      "name": "MicroCorp AI Autonomous Enterprise",
+      "path": "/media/alpesh/Software & Work/Agents/microcorp-agent",
+      "status": "PASS",
+      "findings_count": 0,
+      "findings": []
+    },
+    {
       "agent_id": "mint_agent_os",
       "name": "\u2728 Auto-Discovered: mint-agent-os",
       "path": "/home/alpesh/mint-agent-os",
@@ -226,6 +290,22 @@
           "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
         }
       ]
+    },
+    {
+      "agent_id": "agent_town",
+      "name": "\u2728 Auto-Discovered: Agent Town",
+      "path": "/media/alpesh/Software & Work/Agents/Agent Town",
+      "status": "WARNING",
+      "findings_count": 1,
+      "findings": [
+        {
+          "severity": "LOW",
+          "category": "EDGE_CONTAINER",
+          "title": "Codespaces Sandbox Not Configured",
+          "details": "\u2728 Auto-Discovered: Agent Town does not have a .devcontainer configuration for isolated cloud sandbox execution.",
+          "remediation": "Generate .devcontainer/devcontainer.json for secure cloud runtime."
+        }
+      ]
     }
   ],
   "defensive_solutions": [
@@ -236,7 +316,10 @@
       "solution_gu": "\u0ab8\u0ab0\u0acd\u0ab5\u0abf\u0ab8\u0aa8\u0ac7 127.0.0.1 \u0aaa\u0ab0 \u0aac\u0abe\u0a87\u0aa8\u0acd\u0aa1 \u0a95\u0ab0\u0ac0 \u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0aaa\u0acb\u0ab0\u0acd\u0a9f \u0a8f\u0a95\u0acd\u0ab8\u0aaa\u0acb\u0a9d\u0ab0 \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
       "action_required": "Configure microservices to bind strictly to 127.0.0.1 and expose securely via Cloudflare Tunnel.",
       "affected_items": [
+        "Service Bound to All Interfaces (0.0.0.0:8080)",
         "Service Bound to All Interfaces (0.0.0.0:8081)",
+        "Service Bound to All Interfaces (0.0.0.0:8085)",
+        "Service Bound to All Interfaces (0.0.0.0:8550)",
         "Service Bound to All Interfaces (0.0.0.0:8899)",
         "Service Bound to All Interfaces (0.0.0.0:3000)"
       ],
@@ -249,7 +332,8 @@
       "solution_gu": "\u0aaa\u0aac\u0acd\u0ab2\u0abf\u0a95 \u0a97\u0ac0\u0a9f\u0ab9\u0aac \u0aaa\u0ab0 \u0aaa\u0ac1\u0ab6 \u0a95\u0ab0\u0aa4\u0abe\u0a82 \u0aaa\u0ab9\u0ac7\u0ab2\u0abe\u0a82 \u0a95\u0acd\u0ab0\u0ac7\u0aa1\u0ac7\u0aa8\u0acd\u0ab6\u0abf\u0aaf\u0ab2\u0acd\u0ab8 \u0a86\u0aaa\u0acb\u0a86\u0aaa \u0aac\u0acd\u0ab2\u0acb\u0a95 \u0a95\u0ab0\u0ab5\u0abe \u0aaa\u0acd\u0ab0\u0ac0-\u0aaa\u0ac1\u0ab6 \u0ab9\u0ac2\u0a95 \u0a87\u0aa8\u0acd\u0ab8\u0acd\u0a9f\u0acb\u0ab2 \u0a95\u0ab0\u0acb.",
       "action_required": "Install executable .git/hooks/pre-push script across all repositories to intercept secrets.",
       "affected_items": [
-        "Missing Pre-Push Secret Hook: APK TV Converter Agent"
+        "Missing Pre-Push Secret Hook: APK TV Converter Agent",
+        "Missing Pre-Push Secret Hook: MicroCorp AI Autonomous Enterprise"
       ],
       "can_autofix": true
     },
@@ -263,7 +347,18 @@
         "Codespaces Sandbox Not Configured"
       ],
       "can_autofix": false
+    },
+    {
+      "id": "SOL-GEN-4",
+      "severity": "LOW",
+      "title": "Zero-Trust Defensive Policy Enforcement",
+      "solution_gu": "\u0ab8\u0abf\u0a95\u0acd\u0aaf\u0acb\u0ab0\u0abf\u0a9f\u0ac0 \u0aa8\u0abf\u0aaf\u0aae\u0acb \u0ab2\u0abe\u0a97\u0ac1 \u0a95\u0ab0\u0ac0 \u0aa5\u0acd\u0ab0\u0ac7\u0a9f \u0a85\u0a9f\u0a95\u0abe\u0ab5\u0acb.",
+      "action_required": "Generate .devcontainer/devcontainer.json for secure cloud runtime.",
+      "affected_items": [
+        "Codespaces Sandbox Not Configured"
+      ],
+      "can_autofix": false
     }
   ],
-  "duration_seconds": 27.7
+  "duration_seconds": 63.14
 }
