@@ -83,6 +83,12 @@ class AradhyaSecuritySentry:
     ]
 
     TEMP_EXEC_DIRS = ("/tmp", "/dev/shm", "/var/tmp")
+    SAFE_KEYWORDS_WHITELIST = (
+        "vscode", "cursor", "antigravity", "aapt", "apktool", "jadx",
+        "java", "jvm", "brut_util", "python", "node", "npm", "git",
+        "rea", "strix", "chrome", "chromium", "pip", "ffmpeg",
+        "ollama", "systemd", "cinnamon", "mint", "open-webui"
+    )
 
     def __init__(self):
         self.compiled_shell_patterns = [
@@ -567,7 +573,8 @@ class AradhyaSecuritySentry:
 
                     # Check for reverse shell pattern
                     is_rev_shell = any(pattern.search(cmdline) for pattern in self.compiled_shell_patterns)
-                    is_temp_binary = any(exe.startswith(d) for d in self.TEMP_EXEC_DIRS) and not any(kw in exe for kw in ["vscode", "cursor", "antigravity"])
+                    is_whitelisted = any(kw in exe.lower() or kw in pname.lower() or kw in cmdline.lower() for kw in self.SAFE_KEYWORDS_WHITELIST)
+                    is_temp_binary = any(exe.startswith(d) for d in self.TEMP_EXEC_DIRS) and not is_whitelisted
 
                     if is_rev_shell or is_temp_binary:
                         threat_type = "REVERSE_SHELL_ATTACK" if is_rev_shell else "MALICIOUS_TEMP_EXECUTION"
@@ -648,9 +655,9 @@ class AradhyaSecuritySentry:
                 first_name = first_rec.get("name", "process")
                 title = f"🛡️ Aradhya Cyber-Defense: {count} Threat(s) Neutralized!"
                 body = (
-                    f"Blocked: {first_type} ({first_name})\n"
-                    f"Action: Terminated & Secured ✅\n"
-                    f"👉 Click here or 'View Threat Details' to inspect."
+                    f"જોખમ: {first_type} ({first_name})\n"
+                    f"પગલાં: Terminated & Secured ✅\n"
+                    f"💡 ઉકેલ: પ્રમાણિત ટૂલ હોય તો 'aradhya-security allow' કરો અથવા વિગતો જુઓ."
                 )
 
                 env = dict(os.environ)

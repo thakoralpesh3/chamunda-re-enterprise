@@ -84,11 +84,13 @@ class AradhyaNotifier:
         title: str,
         message: str,
         category: str = "INFO",
-        details: Optional[str] = None
+        details: Optional[str] = None,
+        solution: Optional[str] = None
     ) -> Dict[str, Any]:
         """
         Broadcast notification across configured channels (Telegram, Desktop Banner).
         Categories: WORK_DONE, ISSUE, WARNING, CRITICAL, STARTUP_SYNC, INFO.
+        Always includes actionable solution for issues and warnings.
         """
         timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
         record = {
@@ -98,12 +100,13 @@ class AradhyaNotifier:
             "message": message,
             "category": category,
             "details": details or "",
+            "solution": solution or "",
             "dispatched_channels": []
         }
 
         # 1. Desktop Notification (/usr/bin/notify-send)
         if self.config.get("channels", {}).get("desktop_banner", {}).get("enabled", True):
-            dt_ok = self._send_desktop_notification(title, message, category)
+            dt_ok = self._send_desktop_notification(title, message, category, solution=solution)
             if dt_ok:
                 record["dispatched_channels"].append("desktop_banner")
 
@@ -113,7 +116,7 @@ class AradhyaNotifier:
             token = tg_cfg.get("bot_token") or os.getenv("TELEGRAM_BOT_TOKEN", "")
             chat_id = tg_cfg.get("chat_id") or os.getenv("TELEGRAM_CHAT_ID", "") or os.getenv("ALPESH_TELEGRAM_CHAT_ID", "")
             if token and chat_id:
-                tg_ok = self._send_telegram(token, chat_id, title, message, category, details)
+                tg_ok = self._send_telegram(token, chat_id, title, message, category, details, solution=solution)
                 if tg_ok:
                     record["dispatched_channels"].append("telegram")
             else:
@@ -124,38 +127,40 @@ class AradhyaNotifier:
         logger.info("📢 Dispatched [%s] '%s' via: %s", category, title, ", ".join(record["dispatched_channels"]) or "log only")
         return record
 
-    def notify_work_done(self, task_name: str, details: str = "", agent: str = "Aradhya CEO") -> Dict[str, Any]:
+    def notify_work_done(self, task_name: str, details: str = "", agent: str = "Aradhya CEO", solution: str = "") -> Dict[str, Any]:
         """Specific helper for completed work."""
         title = f"✅ કામ પૂર્ણ (Work Done): {task_name}"
         msg = f"જય માતાજી અલ્પેશ સાહેબ! {agent} દ્વારા આપનું સોંપેલું કામ સફળતાપૂર્વક પૂર્ણ થઈ ગયું છે."
-        return self.send_notification(title=title, message=msg, category="WORK_DONE", details=details)
+        return self.send_notification(title=title, message=msg, category="WORK_DONE", details=details, solution=solution)
 
-    def notify_issue(self, issue_title: str, error_details: str = "", severity: str = "WARNING") -> Dict[str, Any]:
-        """Specific helper for system issues or alerts."""
+    def notify_issue(self, issue_title: str, error_details: str = "", severity: str = "WARNING", solution: str = "") -> Dict[str, Any]:
+        """Specific helper for system issues or alerts with clear solution."""
         prefix = "🚨 ગંભીર ખામી (Critical Alert)" if severity == "CRITICAL" else "⚠️ સિસ્ટમ સૂચના (System Alert)"
         title = f"{prefix}: {issue_title}"
         msg = f"ધ્યાન આપો અલ્પેશ સાહેબ! સિસ્ટમમાં સમસ્યા જણાઈ છે:\n{error_details}"
-        return self.send_notification(title=title, message=msg, category=severity, details=error_details)
+        return self.send_notification(title=title, message=msg, category=severity, details=error_details, solution=solution)
 
-    def notify_startup_sync(self, synced_repos_count: int, details: str = "") -> Dict[str, Any]:
+    def notify_startup_sync(self, synced_repos_count: int, details: str = "", solution: str = "") -> Dict[str, Any]:
         """Specific helper for laptop startup sync."""
         title = "💻 લેપટોપ શરૂ થયું • GitHub Auto-Sync પૂર્ણ"
         msg = (
             f"જય માતાજી અલ્પેશ સાહેબ! લેપટોપ શરૂ થતાં GitHub પરથી {synced_repos_count} "
             f"રિપોઝીટરીઝ 100% ઓટો-સિન્ક થઈ ગઈ છે. તમામ એજન્ટ્સ અને સર્વિસીસ સક્રિય છે."
         )
-        return self.send_notification(title=title, message=msg, category="STARTUP_SYNC", details=details)
+        return self.send_notification(title=title, message=msg, category="STARTUP_SYNC", details=details, solution=solution)
 
-    def _send_desktop_notification(self, title: str, message: str, category: str) -> bool:
-        """Invokes Linux Mint desktop notification."""
+    def _send_desktop_notification(self, title: str, message: str, category: str, solution: Optional[str] = None) -> bool:
+        """Invokes Linux Mint desktop notification with solution."""
         urgency = "critical" if category in ["CRITICAL", "ISSUE", "WARNING"] else "normal"
         full_text = f"{message}"
+        if solution:
+            full_text += f"\n\n💡 ઉકેલ (Solution):\n{solution}"
         try:
             cmd = [
                 "/usr/bin/notify-send",
                 "-a", "Aradhya CEO",
                 "-u", urgency,
-                "-t", "8000",
+                "-t", "10000",
                 title,
                 full_text
             ]
@@ -172,9 +177,10 @@ class AradhyaNotifier:
         title: str,
         message: str,
         category: str,
-        details: Optional[str]
+        details: Optional[str],
+        solution: Optional[str] = None
     ) -> bool:
-        """Sends formatted message via Telegram Bot API."""
+        """Sends formatted message via Telegram Bot API with solution block."""
         url = f"https://api.telegram.org/bot{token}/sendMessage"
         icon_map = {
             "WORK_DONE": "✅",
@@ -194,8 +200,10 @@ class AradhyaNotifier:
         )
         if details:
             text += f"\n```\n{details[:500]}\n```"
+        if solution:
+            text += f"\n\n💡 *ઉકેલ / સમાધાન (Solution):*\n`{solution}`"
 
-        text += f"\n_Timestamp: {time.strftime('%Y-%m-%d %H:%M:%S')}_"
+        text += f"\n\n_Timestamp: {time.strftime('%Y-%m-%d %H:%M:%S')}_"
 
         try:
             payload = json.dumps({
