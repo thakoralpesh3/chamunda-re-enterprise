@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "authorized_user": "Alpesh Sir (Founder, Chairman & Master Tech)",
+  "github_username": "thakoralpesh3",
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "bot_token": "",
+      "chat_id": "",
+      "bot_username": "@AradhyaCeoBot",
+      "env_token_var": "TELEGRAM_BOT_TOKEN",
+      "env_chat_id_var": "TELEGRAM_CHAT_ID"
+    },
+    "desktop_banner": {
+      "enabled": true,
+      "urgency_map": {
+        "INFO": "normal",
+        "WORK_DONE": "normal",
+        "WARNING": "critical",
+        "CRITICAL": "critical"
+      }
+    },
+    "github_mobile_push": {
+      "enabled": true,
+      "repo": "thakoralpesh3/chamunda-re-enterprise"
+    }
+  },
+  "notification_preferences": {
+    "work_done": true,
+    "system_issues": true,
+    "startup_sync": true,
+    "threat_neutralized": true,
+    "battery_alert_threshold": 15
+  }
+}

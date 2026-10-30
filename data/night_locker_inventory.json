@@ -49,7 +49,7 @@
       "price_inr": 480.0,
       "units_inside": 2,
       "max_capacity": 4,
-      "status": "Reserved",
+      "status": "Available",
       "solenoid_relay_id": "RELAY_03",
       "door_state": "OPEN_UNLOCKED",
       "last_accessed": "2026-09-17 23:08:17"
@@ -63,7 +63,7 @@
       "price_inr": 380.0,
       "units_inside": 2,
       "max_capacity": 4,
-      "status": "Reserved",
+      "status": "Available",
       "solenoid_relay_id": "RELAY_04",
       "door_state": "OPEN_UNLOCKED",
       "last_accessed": "2026-09-14 23:12:32"
@@ -125,40 +125,7 @@
       "last_accessed": "2026-09-14 00:13:20"
     }
   ],
-  "active_reservations": [
-    {
-      "reservation_id": "NLK-20260917-6230",
-      "box_id": "BOX-03",
-      "item_name": "Twin Spark Plugs Set (NGK Laser Platinum CPR8EA-9 x2)",
-      "item_name_gu": "ટ્વિન સ્પાર્ક પ્લગ સેટ (NGK પ્લેટિનમ x2)",
-      "part_number": "574050/C",
-      "customer_name": "Commander Rider",
-      "phone": "+91 98765 43210",
-      "vehicle_reg": "GJ-02-BQ-1234",
-      "amount_payable": 480.0,
-      "otp_code": "186893",
-      "upi_payload": "upi://pay?pa=7874719139@upi&pn=ChamundaAutomobile&am=480.00&cu=INR&tn=NLK-20260917-6230",
-      "created_at": "2026-09-17 23:08:18",
-      "created_timestamp": 1789666698.9562047,
-      "status": "Reserved"
-    },
-    {
-      "reservation_id": "NLK-20260917-2875",
-      "box_id": "BOX-04",
-      "item_name": "12V 30A Main Starter & Lighting Heavy Relay Pair",
-      "item_name_gu": "૧૨V ૩૦A મેઇન સ્ટાર્ટર અને લાઇટિંગ રિલે પેર",
-      "part_number": "581023/A",
-      "customer_name": "CEO Tool Rider",
-      "phone": "+91 98250 11223",
-      "vehicle_reg": "GJ-02-ZZ-0001",
-      "amount_payable": 380.0,
-      "otp_code": "478040",
-      "upi_payload": "upi://pay?pa=7874719139@upi&pn=ChamundaAutomobile&am=380.00&cu=INR&tn=NLK-20260917-2875",
-      "created_at": "2026-09-17 23:08:19",
-      "created_timestamp": 1789666699.7316246,
-      "status": "Reserved"
-    }
-  ],
+  "active_reservations": [],
   "completed_transactions": [
     {
       "transaction_id": "TXN-NLK-1789324744",

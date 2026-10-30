@@ -1,0 +1,57 @@
+[
+  {
+    "id": "NOTIF-1793208837",
+    "timestamp": "2026-10-28 23:03:57",
+    "title": "🚨 ગંભીર ખામી (Critical Alert): 🚨 ગંભીર સુરક્ષા ચેતવણી: અનધિકૃત એક્સેસ પ્રયાસ",
+    "message": "ધ્યાન આપો અલ્પેશ સાહેબ! સિસ્ટમમાં સમસ્યા જણાઈ છે:\nBlocked unauthorized GitHub actor 'unauthorized_hacker'. Only Alpesh Sir (thakoralpesh3) has access.",
+    "category": "CRITICAL",
+    "details": "Blocked unauthorized GitHub actor 'unauthorized_hacker'. Only Alpesh Sir (thakoralpesh3) has access.",
+    "dispatched_channels": [
+      "desktop_banner"
+    ]
+  },
+  {
+    "id": "NOTIF-1793208678",
+    "timestamp": "2026-10-28 23:01:18",
+    "title": "✅ કામ પૂર્ણ (Work Done): Check Classic 350 clutch plate stock",
+    "message": "જય માતાજી અલ્પેશ સાહેબ! Jayesh Prajapati (જયેશ) દ્વારા આપનું સોંપેલું કામ સફળતાપૂર્વક પૂર્ણ થઈ ગયું છે.",
+    "category": "WORK_DONE",
+    "details": "જયેશ (ક્લાઉડ શેડો): સાહેબ, ૪,૪૬૯ સ્પેરપાર્ટ્સ કેટલોગ મુજબ Classic 350 ક્લચ પ્લેટ (574012/A) ના ૧૪ સેટ રાધનપુર રોડ ગોડાઉન બિન A-04 માં હાજર છે. MRP ₹૧,૨૫૦ છે.\n\n[English]: Jayesh (Cloud Shadow): Confirmed via 4,469 SKU master catalog. Classic 350 Clutch Plates (574012/A) currently 14 sets in stock at Radhanpur Road Bin A-04 (MRP: ₹1,250). Reorder alert: Normal.\n\n[Assigned Agent: Jayesh Prajapati (જયેશ)]",
+    "dispatched_channels": [
+      "desktop_banner"
+    ]
+  },
+  {
+    "id": "NOTIF-1793202769",
+    "timestamp": "2026-10-28 21:22:49",
+    "title": "⚠️ સિસ્ટમ સૂચના (System Alert): Test Warning Alert",
+    "message": "ધ્યાન આપો અલ્પેશ સાહેબ! સિસ્ટમમાં સમસ્યા જણાઈ છે:\nDisk space threshold at 80%",
+    "category": "WARNING",
+    "details": "Disk space threshold at 80%",
+    "dispatched_channels": [
+      "desktop_banner"
+    ]
+  },
+  {
+    "id": "NOTIF-1793202769",
+    "timestamp": "2026-10-28 21:22:49",
+    "title": "✅ કામ પૂર્ણ (Work Done): Test Task Execution",
+    "message": "જય માતાજી અલ્પેશ સાહેબ! Aradhya CEO દ્વારા આપનું સોંપેલું કામ સફળતાપૂર્વક પૂર્ણ થઈ ગયું છે.",
+    "category": "WORK_DONE",
+    "details": "Unit test validation passed.",
+    "dispatched_channels": [
+      "desktop_banner"
+    ]
+  },
+  {
+    "id": "NOTIF-1793202737",
+    "timestamp": "2026-10-28 21:22:17",
+    "title": "✅ કામ પૂર્ણ (Work Done): GST Invoice Generation Batch",
+    "message": "જય માતાજી અલ્પેશ સાહેબ! Aradhya CEO દ્વારા આપનું સોંપેલું કામ સફળતાપૂર્વક પૂર્ણ થઈ ગયું છે.",
+    "category": "WORK_DONE",
+    "details": "Processed 45 DMS job cards for Classic 350.",
+    "dispatched_channels": [
+      "desktop_banner"
+    ]
+  }
+]

