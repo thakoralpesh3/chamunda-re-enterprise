@@ -698,7 +698,7 @@ class AradhyaSecuritySentry:
                     subprocess.run(
                         ["notify-send", "-u", "critical", "-t", "8000",
                          "🛡️ Aradhya Cyber-Defense Shield: Threat Blocked!",
-                         f"Neutralized {len(records)} malicious hacker attempt(s). Laptop is safe."],
+                         f"Neutralized {len(records)} malicious attempt(s). Laptop is safe.\n\n💡 ઉકેલ: 'aradhya-threat-viewer' પર વિગતો જુઓ."],
                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
                     )
                 except Exception:
