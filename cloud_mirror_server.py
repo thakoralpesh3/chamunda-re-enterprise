@@ -71,6 +71,10 @@ app = FastAPI(
 from aradhya_openai_bridge import router as openai_router
 app.include_router(openai_router)
 
+# Mount Aradhya Remote PC Access Router (/remote & /api/remote/*)
+from aradhya_remote_router import router as remote_router
+app.include_router(remote_router)
+
 @app.middleware("http")
 async def add_cloudflare_security_headers(request: Request, call_next):
     response = await call_next(request)
@@ -321,11 +325,14 @@ async def cloud_mirror_home():
                     <span class="badge bg-dark border border-secondary text-muted" id="totalAgentsHeaderBadge">19 AGENTS</span>
                 </div>
                 <div class="d-flex gap-2">
+                    <a href="/remote" class="btn btn-sm btn-info fw-bold text-dark" title="Open Antigravity-Style Remote PC Companion">
+                        <i class="fa-solid fa-laptop-code me-1"></i> Remote PC
+                    </a>
                     <button class="btn btn-sm btn-outline-warning" id="navHubBtn" onclick="showHubView()">
                         <i class="fa-solid fa-th-large me-1"></i> All Agents Hub
                     </button>
                     <button class="btn btn-sm btn-success fw-bold" onclick="sendLinkToWhatsApp()" id="sendWaBtn" title="Send live link to WhatsApp 7874719139">
-                        <i class="fa-brands fa-whatsapp me-1"></i> Send Link to 7874719139
+                        <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
                     </button>
                 </div>
             </div>
