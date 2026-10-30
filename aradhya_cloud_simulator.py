@@ -79,7 +79,8 @@ class AradhyaCloudSimulator:
                 self.notifier.notify_issue(
                     "🚨 ગંભીર સુરક્ષા ચેતવણી: અનધિકૃત એક્સેસ પ્રયાસ",
                     f"Blocked unauthorized GitHub actor '{self.actor}'. Only Alpesh Sir ({AUTHORIZED_GITHUB_ACTOR}) has access.",
-                    severity="CRITICAL"
+                    severity="CRITICAL",
+                    solution=f"જો આપ પોતે જ છો તો સાચું GitHub એકાઉન્ટ '{AUTHORIZED_GITHUB_ACTOR}' વાપરો. સિસ્ટમ માત્ર આપના માટે સુરક્ષિત છે."
                 )
             raise PermissionError(f"Access Denied: Only Alpesh Sir ({AUTHORIZED_GITHUB_ACTOR}) has authorized access.")
         return True

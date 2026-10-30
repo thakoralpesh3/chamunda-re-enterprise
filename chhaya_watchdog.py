@@ -93,9 +93,20 @@ class Chhaya247Watchdog:
         self.last_tunnel_url = ""
         self.tunnel_fail_count = 0
         self._last_dispatch_time = 0.0
-        self._min_dispatch_interval = 60.0  # Minimum 60 seconds debounce between automated WhatsApp link updates
         DATA_DIR.mkdir(parents=True, exist_ok=True)
         STATIC_DIR.mkdir(parents=True, exist_ok=True)
+
+        # Start Aradhya 24/7 Telegram Bot worker in background thread if configured
+        try:
+            from aradhya_telegram_bot import get_aradhya_telegram_bot
+            tg_bot = get_aradhya_telegram_bot()
+            if tg_bot.get_token():
+                import threading
+                t = threading.Thread(target=tg_bot.run_polling, daemon=True)
+                t.start()
+                logger.info("📱 Aradhya 24/7 Telegram Bot polling thread started.")
+        except Exception as e:
+            logger.debug("Telegram bot startup note: %s", e)
 
     def get_cf_config(self) -> Dict[str, Any]:
         """Read persistent Cloudflare Zero Trust / Cloud Mirror config."""
@@ -408,6 +419,16 @@ class Chhaya247Watchdog:
                     logger.warning("⚠️ Cloud Mirror Server is truly crashed! Auto-restarting immediately...")
                     server_fail_count = 0
                     self.start_mirror_server()
+                    try:
+                        from aradhya_notifier import get_aradhya_notifier
+                        get_aradhya_notifier().notify_issue(
+                            issue_title="Cloud Mirror Server ક્રેશ થયું (Auto-Restarted)",
+                            error_details=f"Port {self.port} unresponsive. Auto-restarted within 3 seconds.",
+                            severity="WARNING",
+                            solution="વોચડોગ દ્વારા સર્વર આપમેળે પુનઃજીવિત કરવામાં આવ્યું છે. કોઈ મેન્યુઅલ પગલાંની જરૂર નથી."
+                        )
+                    except Exception:
+                        pass
             else:
                 server_fail_count = 0
                 self.update_heartbeat_in_state()
@@ -446,10 +467,33 @@ class Chhaya247Watchdog:
                         if self.tunnel_fail_count >= 3:
                             logger.error("❌ Public tunnel is DEAD (consecutive failures / edge revoked). Auto-restarting fresh tunnel...")
                             self.restart_public_tunnel(reason="probe_failed_or_revoked")
+                            try:
+                                from aradhya_notifier import get_aradhya_notifier
+                                get_aradhya_notifier().notify_issue(
+                                    issue_title="પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
+                                    error_details="Edge tunnel probe failed or revoked. Fresh tunnel spawned.",
+                                    severity="WARNING",
+                                    solution="વોચડોગ દ્વારા નવી SSH સુરક્ષિત ટનલ આપમેળે બનાવી દેવામાં આવી છે."
+                                )
+                            except Exception:
+                                pass
 
-            # 4. Trim memory every 2 minutes
+            # 4. Trim memory and check battery every 2 minutes
             if iteration % 24 == 0:
                 trim_process_memory()
+                try:
+                    import psutil
+                    bat = psutil.sensors_battery()
+                    if bat and not bat.power_plugged and bat.percent <= 15:
+                        from aradhya_notifier import get_aradhya_notifier
+                        get_aradhya_notifier().notify_issue(
+                            issue_title=f"🚨 બેટરી ગંભીર રીતે ઓછી છે ({bat.percent}%)",
+                            error_details=f"લેપટોપ અનપ્લગ્ડ છે અને બેટરી લેવલ {bat.percent}% છે.",
+                            severity="CRITICAL",
+                            solution="કૃપા કરીને ચાર્જર કનેક્ટ કરો જેથી વર્કશોપ એજન્ટ્સ અને સર્વિસીસ અવિરત ચાલુ રહે."
+                        )
+                except Exception:
+                    pass
 
             # 5. Autonomous Laptop Sluggishness Watcher & Auto-Healer (Runs every 15s)
             if iteration % 3 == 0:
