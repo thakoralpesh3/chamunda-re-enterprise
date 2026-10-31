@@ -50,10 +50,33 @@ class RemoteFileRequest(BaseModel):
 class RemoteKillRequest(BaseModel):
     pid: int
 
+class RemoteTaskRequest(BaseModel):
+    directive: str
+    preferred_model: Optional[str] = "auto"
+    max_steps: Optional[int] = 8
+
 
 # -----------------------------------------------------------------------------
 # REST API Endpoints
 # -----------------------------------------------------------------------------
+
+@router.post("/api/remote/task")
+async def api_remote_task(req: RemoteTaskRequest):
+    """
+    Execute an autonomous multi-step mission like Antigravity.
+    Executes Python scripts, shell commands, code verification, self-healing,
+    and returns deliverable artifacts and step telemetry.
+    """
+    from aradhya_autonomous_core import get_aradhya_engine
+    core = get_aradhya_engine()
+    res = await asyncio.to_thread(
+        core.execute_mission,
+        mission_directive=req.directive,
+        preferred_model=req.preferred_model or "auto",
+        max_steps=req.max_steps or 8
+    )
+    return JSONResponse(content=res)
+
 
 @router.get("/api/remote/status")
 async def api_remote_status():
@@ -278,6 +301,11 @@ async def remote_pc_dashboard():
                 </button>
             </li>
             <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tasks-tab" data-bs-toggle="tab" data-bs-target="#tab-tasks" type="button">
+                    <i class="fa-solid fa-wand-magic-sparkles me-1 text-warning"></i>Autonomous Tasks
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
                 <button class="nav-link" id="screen-tab" data-bs-toggle="tab" data-bs-target="#tab-screen" type="button" onclick="refreshScreenshot()">
                     <i class="fa-solid fa-desktop me-1"></i>Screen
                 </button>
@@ -322,6 +350,74 @@ Type commands below or use quick chips above.
                         <button class="btn btn-info fw-bold" onclick="executeCommand()">
                             <i class="fa-solid fa-paper-plane"></i>
                         </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB: AUTONOMOUS TASKS (ANTIGRAVITY PARITY) -->
+            <div class="tab-pane fade" id="tab-tasks" role="tabpanel">
+                <div class="card card-custom p-3 mb-3 border-warning">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h6 class="text-warning mb-0 fw-bold">
+                            <i class="fa-solid fa-wand-magic-sparkles me-2"></i>Antigravity Autonomous Task Engine
+                        </h6>
+                        <span class="badge bg-warning text-dark font-mono">Plan • Act • Verify</span>
+                    </div>
+                    <p class="text-muted small mb-2">
+                        Give Aradhya a high-level task directive from your phone. She writes code, executes tools, tests herself, auto-fixes bugs, and produces verified deliverables.
+                    </p>
+
+                    <!-- Quick Task Directives -->
+                    <div class="d-flex gap-1 overflow-auto pb-2 mb-2">
+                        <button class="quick-cmd-btn" onclick="setTaskDirective('Analyze battery drain and top 5 RAM consumers, then optimize laptop')">⚡ System Diagnostic</button>
+                        <button class="quick-cmd-btn" onclick="setTaskDirective('Audit disk space in /home/alpesh and list top 10 largest files')">📂 Storage Audit</button>
+                        <button class="quick-cmd-btn" onclick="setTaskDirective('Check all active git repositories status and uncommitted changes')">🌿 Git Scan</button>
+                        <button class="quick-cmd-btn" onclick="setTaskDirective('Create a monthly Royal Enfield sales performance chart and export PNG')">📊 Sales Chart</button>
+                    </div>
+
+                    <!-- Task Input Group -->
+                    <div class="mb-2">
+                        <textarea id="taskDirectiveInput" class="form-control bg-dark text-light border-secondary font-mono" rows="2" placeholder="Describe task to complete autonomously (e.g., 'Check database health, clean RAM, and summarize in Gujarati')..."></textarea>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="text-muted small">Model:</span>
+                            <select id="taskModelSelect" class="form-select form-select-sm bg-dark text-light border-secondary" style="width: auto;">
+                                <option value="auto" selected>Auto (Hybrid Gemini + Local)</option>
+                                <option value="gemini-4-argon">Gemini 4 Argon (Frontier)</option>
+                                <option value="gemini-3.5-flash">Gemini 3.5 Flash</option>
+                                <option value="offline">100% Offline Cognitive Matrix</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-warning fw-bold text-dark px-3" id="launchTaskBtn" onclick="launchAutonomousTask()">
+                            <i class="fa-solid fa-rocket me-1"></i> Execute Task
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Live Task Execution Telemetry Box -->
+                <div class="card card-custom p-3 border-secondary" id="taskTelemetryCard" style="display:none;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="text-info font-mono small fw-bold" id="taskStatusBadge">
+                            <i class="fa-solid fa-spinner fa-spin me-1"></i> EXECUTING AUTONOMOUS WORKER...
+                        </span>
+                        <span class="badge bg-secondary font-mono" id="taskTimeElapsed">0s</span>
+                    </div>
+
+                    <div class="terminal-window mb-2" id="taskExecutionConsole" style="height: 220px; font-size: 0.82rem;">
+Initializing Autonomous Agent Environment...
+                    </div>
+
+                    <div id="taskDeliverablesBox" class="mt-2" style="display:none;">
+                        <h6 class="text-success small fw-bold"><i class="fa-solid fa-folder-check me-1"></i>Artifacts & Deliverables Created:</h6>
+                        <ul id="taskArtifactsList" class="small text-light mb-2 ps-3 font-mono"></ul>
+                    </div>
+
+                    <div id="taskSummaryBox" class="mt-2 p-2 rounded bg-dark border border-secondary" style="display:none;">
+                        <h6 class="text-warning small fw-bold mb-1"><i class="fa-solid fa-file-lines me-1"></i>Executive Resolution:</h6>
+                        <div id="taskSummaryGu" class="small text-info mb-1"></div>
+                        <div id="taskSummaryEn" class="small text-light"></div>
                     </div>
                 </div>
             </div>
