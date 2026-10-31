@@ -3,11 +3,6 @@
   "learned_habits": {},
   "recent_actions": [
     {
-      "action": "ONLINE_GEMINI_INTELLIGENCE",
-      "details": "Tell me about Royal Enfield Hunter 350 engine",
-      "timestamp": "2026-10-11 20:56:48"
-    },
-    {
       "action": "OFFLINE_COGNITIVE_REASONING",
       "details": "Explain Royal Enfield Super Meteor 650 engine oil capacity and grade",
       "timestamp": "2026-10-12 00:14:52"
@@ -151,6 +146,11 @@
       "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "does the openwebui is still working in this project ?",
       "timestamp": "2026-10-31 20:52:25"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "then make aradhya bydefault working with voice mode",
+      "timestamp": "2026-10-31 20:53:08"
     }
   ],
   "custom_aliases": {},

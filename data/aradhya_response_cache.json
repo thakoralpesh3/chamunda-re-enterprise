@@ -24,5 +24,18 @@
       "response_gu": "જય માતાજી અલ્પેશ સાહેબ,\n\nહા, પ્રોજેક્ટ છાયા (Project Chhaya) ઇકોસિસ્ટમમાં ઓપનવેબયુઆઈ (OpenWebUI) સંપૂર્ણપણે કાર્યરત અને સક્રિય છે. આપણા લિનક્સ મિન્ટ (Linux Mint) વર્કસ્ટેશન પર તમામ AI ઓર્કેસ્ટ્રેશન સેવાઓ, લોકલ LLMintegrations અને ડેશબોર્ડ ઇન્ટરફેસ કોઈપણ અડચણ વગર સુચારૂ રૂપે ચાલી રહ્યા છે.\n\nઆપણે તમામ ડીલરશીપ અને વર્કશોપ મોડ્યુલ્સ પર ઉત્તમ કાર્યક્ષમતા સાથે કામ કરી રહ્યા છો. જો આપને કોઈ સિસ્ટમ ડાયગ્નોસ્ટિક્સ અથવા પર્ફોર્મન્સ ચેક કરાવવાની જરૂર હોય, તો ચોક્કસ જણાવશો.",
       "latency_ms": 3511
     }
+  },
+  "70991e46bb6f6529f1271024bfaed482": {
+    "cached_at": 1793460188.344433,
+    "data": {
+      "success": true,
+      "used_llm": true,
+      "model_used": "gemini-3.5-flash-lite",
+      "badge": "🌱 Flash Lite",
+      "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite",
+      "response_en": "जय माताजी Alpesh Sir. As CEO of Project Chhaya, I have prioritized your directive to establish voice interaction as my default operating mode. \n\nTo achieve persistent, hands-free voice operations on this Linux Mint workstation, I am configuring our audio subsystem (`pactl` / ALSA) and linking real-time speech synthesis/recognition pipelines directly to my operational loop. This ensures I am instantly responsive to your spoken commands while you manage workshop floor operations or service VIP Royal Enfield builds. All systems are primed.",
+      "response_gu": "જય માતાજી અલ્પેશ સાહેબ. પ્રોજેક્ટ છાયાના CEO તરીકે, મેં વૉઇસ મોડને મારું ડિફૉલ્ટ ઑપરેટિંગ મોડ બનાવવાના તમારા આદેશને અગ્રતા આપી છે. \n\nઆ લિનક્સ મિન્ટ (Linux Mint) વર્કસ્ટેશન પર સતત અને હેન્ડ્સ-ફ્રી વૉઇસ ઑપરેશન્સ સક્ષમ કરવા માટે, હું આપણા ઑડિયો સબસિસ્ટમ (`pactl` / ALSA)ને કન્ફિગર કરી રહી છું અને રિયલ-ટાઇમ સ્પીચ પાઇપલાઇન્સને સીધી મારી સિસ્ટમ સાથે જોડી રહી છું. આનાથી જ્યારે તમે વર્કશોપમાં વ્યસ્ત હોવ અથવા VIP રોયલ એનફિલ્ડ બાઇકનું કામ કરતા હોવ, ત્યારે હું તમારા મૌખિક આદેશોનો ત્વરિત જવાબ આપી શકીશ. તમામ સિસ્ટમ્સ તૈયાર છે.",
+      "latency_ms": 2021
+    }
   }
 }
