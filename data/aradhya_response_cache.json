@@ -37,5 +37,31 @@
       "response_gu": "જય માતાજી અલ્પેશ સાહેબ. પ્રોજેક્ટ છાયાના CEO તરીકે, મેં વૉઇસ મોડને મારું ડિફૉલ્ટ ઑપરેટિંગ મોડ બનાવવાના તમારા આદેશને અગ્રતા આપી છે. \n\nઆ લિનક્સ મિન્ટ (Linux Mint) વર્કસ્ટેશન પર સતત અને હેન્ડ્સ-ફ્રી વૉઇસ ઑપરેશન્સ સક્ષમ કરવા માટે, હું આપણા ઑડિયો સબસિસ્ટમ (`pactl` / ALSA)ને કન્ફિગર કરી રહી છું અને રિયલ-ટાઇમ સ્પીચ પાઇપલાઇન્સને સીધી મારી સિસ્ટમ સાથે જોડી રહી છું. આનાથી જ્યારે તમે વર્કશોપમાં વ્યસ્ત હોવ અથવા VIP રોયલ એનફિલ્ડ બાઇકનું કામ કરતા હોવ, ત્યારે હું તમારા મૌખિક આદેશોનો ત્વરિત જવાબ આપી શકીશ. તમામ સિસ્ટમ્સ તૈયાર છે.",
       "latency_ms": 2021
     }
+  },
+  "eda918e254e06fbd0d90635d3107dcef": {
+    "cached_at": 1793460259.8672996,
+    "data": {
+      "success": true,
+      "used_llm": true,
+      "model_used": "gemini-3.5-flash-lite",
+      "badge": "🌱 Flash Lite",
+      "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite",
+      "response_en": "Jaimataji Alpesh Sir, \n\nIf the Dell Inspiron 3542 is still sluggish, we need to inspect resource consumption immediately using native Linux Mint diagnostics. Please open your terminal (`Ctrl+Alt+T`) and execute `top` or `htop` to identify any rogue background processes consuming CPU or RAM, and check disk utilization using `df -h`. \n\nAs Project Chhaya's CEO, I recommend checking if swap memory or disk I/O is bottlenecking our workshop management software. Tell me the exact symptom (e.g., freezing, slow boot, network lag), and I will provide the precise Linux command to resolve it instantly.",
+      "response_gu": "જય માતાજી અલ્પેશ સાહેબ,\n\nજો ડેલ ઇન્સપિરોન ૩૫૪૨ લેપટોપ હજુ પણ ધીમું કામ કરી રહ્યું છે, તો આપણે તરત જ લિનક્સ મિન્ટના ટૂલ્સ દ્વારા તેની તપાસ કરવી પડશે. કૃપા કરીને ટર્મિનલ ખોલીને (`Ctrl+Alt+T`) `top` અથવા `htop` આદેશ ચલાવો જેથી ખબર પડે કે કઈ પ્રોસેસ રેમ કે સીપીયુ રોકી રહી છે, અને `df -h` થી હાર્ડ ડિસ્ક સ્પેસ ચેક કરો.\n\nપ્રોજેક્ટ છાયાના સીઈઓ તરીકે, હું સૂચવું છું કે આપણે આ સિસ્ટમની સ્પીડ સમસ્યાને તાત્કાલિક ઉકેલીએ. લેપટોપમાં ચોક્કસ શું સમસ્યા આવી રહી છે (દા.ત. હેંગ થવું કે ધીમું ચાલવું) તે જણાવો, એટલે હું તમને તરત જ યોગ્ય લિનક્સ કમાન્ડ આપું.",
+      "latency_ms": 2115
+    }
+  },
+  "d1e1df8a460a6934a79ef040b3d9b118": {
+    "cached_at": 1793460321.6559846,
+    "data": {
+      "success": true,
+      "used_llm": true,
+      "model_used": "gemini-3.5-flash-lite",
+      "badge": "🌱 Flash Lite",
+      "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite",
+      "response_en": "Jai Mataji Alpesh Sir. As CEO of Project Chhaya, I have noted your directive. To make Aradhya operate by default in voice mode with interactive Gujarati voice prompts, we will integrate a native Linux-based speech-to-text (STT) and text-to-speech (TTS) pipeline using tools like `espeak-ng`, `alsa-utils`, or Python's `speech_recognition` and `gTTS` libraries directly on our Linux Mint workstation. I am ready to deploy and configure this voice-interactive loop immediately upon your command.",
+      "response_gu": "જય માતાજી અલ્પેશ સાહેબ. પ્રોજેક્ટ છાયાના સીઈઓ તરીકે, મેં આપનો આ આદેશ નોંધી લીધો છે. આરાધ્યાને ડિફોલ્ટ રૂપે વોઈસ મોડમાં સક્રિય કરવા અને ગુજરાતીમાં અવાજ દ્વારા કામ વિશે પૂછવા માટે, આપણે આપણા લિનક્સ મિન્ટ (Linux Mint) સિસ્ટમ પર `espeak-ng`, `alsa-utils` અથવા પાયથોન આધારિત સ્પીચ-ટુ-ટેક્સ્ટ અને ટેક્સ્ટ-ટુ-સ્પીચ ટૂલ્સનો ઉપયોગ કરીને આ સેટઅપ ગોઠવી શકીએ છીએ. આપની આજ્ઞા મળતા જ હું આ વોઈસ-ઇન્ટરેક્ટિવ સિસ્ટમ તુરંત જ સક્રિય કરવા માટે તૈયાર છું.",
+      "latency_ms": 1841
+    }
   }
 }
