@@ -4,16 +4,6 @@
   "recent_actions": [
     {
       "action": "OFFLINE_COGNITIVE_REASONING",
-      "details": "Himalayan 450 tappet clearance cold valve lash",
-      "timestamp": "2026-10-13 00:58:28"
-    },
-    {
-      "action": "OFFLINE_COGNITIVE_REASONING",
-      "details": "J-series 350 cylinder head torque specification",
-      "timestamp": "2026-10-13 00:58:28"
-    },
-    {
-      "action": "OFFLINE_COGNITIVE_REASONING",
       "details": "EFI MIL blink code P0117 engine coolant temperature",
       "timestamp": "2026-10-13 00:58:28"
     },
@@ -151,6 +141,16 @@
       "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "make aradhya bydefault working with voice mode and able to ask for work in gujarati with voice",
       "timestamp": "2026-10-31 20:55:21"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "yes do it",
+      "timestamp": "2026-10-31 20:55:50"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "make aradhya speaking in this laptop for forever",
+      "timestamp": "2026-10-31 20:56:25"
     }
   ],
   "custom_aliases": {},
