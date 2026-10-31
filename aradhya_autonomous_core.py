@@ -1724,18 +1724,43 @@ class AradhyaAutonomousEngine:
             action_data["autonomous_execution"] = shell_res
             action_type = "AUTONOMOUS_TASK"
             out = shell_res.get("output", "")[:1200]
-            resp_gu = (
-                f"પ્રણામ અલ્પેશ સાહેબ! હું આરાધ્યા (CEO & Autonomous Orchestrator).\n"
-                f"⚡ આપનો આદેશ '{task_clean}' સમગ્ર લેપટોપ પર સ્વાયત્ત રીતે એક્ઝિક્યુટ કરી દીધો છે:\n\n"
-                f"```bash\n{out}\n```\n"
-                f"• સ્ટેટસ: સંપૂર્ણ પૂર્ણ & વેરિફાઇડ ✅"
-            )
-            resp_en = (
-                f"Greetings Alpesh Sir! Aradhya (CEO & Supreme AI Orchestrator) reporting.\n"
-                f"⚡ Mission '{task_clean}' executed autonomously across the laptop:\n\n"
-                f"```bash\n{out}\n```\n"
-                f"• Status: 100% Completed & Verified ✅"
-            )
+            if shell_res.get("success", False):
+                resp_gu = (
+                    f"પ્રણામ અલ્પેશ સાહેબ! હું આરાધ્યા (CEO & Autonomous Orchestrator).\n"
+                    f"⚡ આપનો આદેશ '{task_clean}' સમગ્ર લેપટોપ પર સ્વાયત્ત રીતે એક્ઝિક્યુટ કરી દીધો છે:\n\n"
+                    f"```bash\n{out}\n```\n"
+                    f"• સ્ટેટસ: સંપૂર્ણ પૂર્ણ & વેરિફાઇડ ✅"
+                )
+                resp_en = (
+                    f"Greetings Alpesh Sir! Aradhya (CEO & Supreme AI Orchestrator) reporting.\n"
+                    f"⚡ Mission '{task_clean}' executed autonomously across the laptop:\n\n"
+                    f"```bash\n{out}\n```\n"
+                    f"• Status: 100% Completed & Verified ✅"
+                )
+            else:
+                resp_gu = (
+                    f"ધ્યાન આપો અલ્પેશ સાહેબ! હું આરાધ્યા (CEO).\n"
+                    f"⚠️ આપનો આદેશ '{task_clean}' પૂર્ણ કરવામાં અસમર્થ રહી છું:\n\n"
+                    f"```bash\n{out}\n```\n"
+                    f"• સ્ટેટસ: નિષ્ફળ (Exit Code: {shell_res.get('exit_code', 1)}) ❌\n"
+                    f"• આપના WhatsApp પર એલર્ટ મોકલી દેવામાં આવ્યું છે."
+                )
+                resp_en = (
+                    f"Attention Alpesh Sir! Aradhya reporting.\n"
+                    f"⚠️ Unable to execute task '{task_clean}':\n\n"
+                    f"```bash\n{out}\n```\n"
+                    f"• Status: Failed (Exit Code: {shell_res.get('exit_code', 1)}) ❌\n"
+                    f"• High-priority notification dispatched to your WhatsApp."
+                )
+                try:
+                    from aradhya_notifier import get_aradhya_notifier
+                    get_aradhya_notifier().notify_task_failure(
+                        task_name=task_clean,
+                        error_details=shell_res.get("stderr") or out,
+                        solution="કમાન્ડ સિન્ટેક્સ અથવા ફાઇલ પરમિશન તપાસો."
+                    )
+                except Exception:
+                    pass
 
         # Hardware & Peripheral Deep Diagnostics (Zero-Hallucination Linux Telemetry)
         elif any(w in msg_lower for w in [

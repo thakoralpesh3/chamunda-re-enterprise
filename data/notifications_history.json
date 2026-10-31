@@ -1,5 +1,30 @@
 [
   {
+    "id": "NOTIF-1793476405",
+    "timestamp": "2026-11-01 01:23:25",
+    "title": "🚨 કાર્ય પૂર્ણ ન થઈ શક્યું (Task Incomplete): GST e-Way Bill Auto-Generation",
+    "message": "ધ્યાન આપો અલ્પેશ સાહેબ! Aradhya CEO આપનું સોંપેલું કાર્ય પૂર્ણ કરવામાં અસમર્થ રહી છે:\n• કાર્ય: GST e-Way Bill Auto-Generation\n• વિગત/ભૂલ: Connection timeout while authenticating with NIC portal credentials. Retries exceeded.",
+    "category": "TASK_FAILURE",
+    "details": "Connection timeout while authenticating with NIC portal credentials. Retries exceeded.",
+    "solution": "Check NIC e-Way bill API gateway credentials in enterprise config.",
+    "dispatched_channels": [
+      "whatsapp"
+    ]
+  },
+  {
+    "id": "NOTIF-1793476371",
+    "timestamp": "2026-11-01 01:22:51",
+    "title": "🚨 કાર્ય પૂર્ણ ન થઈ શક્યું (Task Incomplete): WhatsApp Alert Pipeline Verification",
+    "message": "ધ્યાન આપો અલ્પેશ સાહેબ! Aradhya CEO આપનું સોંપેલું કાર્ય પૂર્ણ કરવામાં અસમર્થ રહી છે:\n• કાર્ય: WhatsApp Alert Pipeline Verification\n• વિગત/ભૂલ: Unit test verification: simulated task failure to confirm WhatsApp dispatch.",
+    "category": "TASK_FAILURE",
+    "details": "Unit test verification: simulated task failure to confirm WhatsApp dispatch.",
+    "solution": "WhatsApp dispatch verified. Check whatsapp_outbox.json and click-to-chat link.",
+    "dispatched_channels": [
+      "desktop_banner",
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1793474756",
     "timestamp": "2026-11-01 00:55:56",
     "title": "💻 લેપટોપ શરૂ થયું • GitHub Auto-Sync પૂર્ણ",
