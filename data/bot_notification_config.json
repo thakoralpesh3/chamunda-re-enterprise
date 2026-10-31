@@ -23,11 +23,20 @@
     "github_mobile_push": {
       "enabled": true,
       "repo": "thakoralpesh3/chamunda-re-enterprise"
+    },
+    "whatsapp": {
+      "enabled": true,
+      "target_phone": "917874719139",
+      "callmebot_api_key": "",
+      "custom_webhook_url": "",
+      "notify_on_task_failure": true,
+      "notify_on_critical_issues": true
     }
   },
   "notification_preferences": {
     "work_done": true,
     "system_issues": true,
+    "task_failures": true,
     "startup_sync": true,
     "threat_neutralized": true,
     "battery_alert_threshold": 15

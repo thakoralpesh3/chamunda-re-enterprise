@@ -151,6 +151,54 @@ class WhatsAppDispatchEngine:
         ])
         return "\n".join(lines)
 
+    def format_task_failure_message(
+        self,
+        task_name: str,
+        error_details: str = "",
+        solution: str = "",
+        agent: str = "Aradhya CEO"
+    ) -> str:
+        """Format high-priority task failure WhatsApp message for Alpesh Sir."""
+        timestamp = time.strftime("%d-%m-%Y %I:%M %p")
+        lines = [
+            "🚨 *CHAMUNDA AUTOMOBILE • ARADHYA TASK FAILURE ALERT* 🚨",
+            "જય માતાજી અલ્પેશ સાહેબ (Alpesh Sir),",
+            "",
+            f"ધ્યાન આપો! *{agent}* આપનું સોંપેલું કાર્ય પૂર્ણ કરવામાં અસમર્થ રહી છે:",
+            "",
+            f"📋 *કાર્ય / Task:*",
+            f"_{task_name}_",
+            ""
+        ]
+        if error_details:
+            lines.extend([
+                "❌ *ખામીની વિગત (Error / Failure):*",
+                f"```{error_details[:600]}```",
+                ""
+            ])
+        if solution:
+            lines.extend([
+                "💡 *સૂચિત ઉકેલ / સમાધાન (Recommended Action):*",
+                f"_{solution}_",
+                ""
+            ])
+        else:
+            lines.extend([
+                "💡 *સૂચિત ઉકેલ / સમાધાન:*",
+                "_કૃપા કરીને ટર્મિનલમાં `aradhya` ચલાવી વિગતવાર સ્થિતિ તપાસો અથવા રીસ્ટાર્ટ કરો._",
+                ""
+            ])
+
+        lines.extend([
+            f"📅 *સમય:* {timestamp}",
+            f"🤖 *એજન્ટ:* {agent}",
+            f"👑 *અધિકારી:* અલ્પેશ સાહેબ (Founder & Chairman)",
+            "",
+            "— *Aradhya Autonomous AI Engine*, Chamunda RE Enterprise",
+            f"Helpline / Alert Sync: {OFFICIAL_WHATSAPP_PHONE}"
+        ])
+        return "\n".join(lines)
+
     def generate_click_to_chat_url(self, text: str, recipient: str = OFFICIAL_WHATSAPP_INTL) -> str:
         """Generate official WhatsApp Click-to-Chat URI (wa.me scheme)."""
         clean_phone = "".join(c for c in recipient if c.isdigit())
@@ -358,6 +406,240 @@ class WhatsAppDispatchEngine:
         logger.info(
             "✅ [WhatsApp Alert] Link dispatched for %s | Status: %s | URL: %s",
             OFFICIAL_WHATSAPP_PHONE, record["status"], public_url
+        )
+        return record
+
+    def send_task_failure_alert(
+        self,
+        task_name: str,
+        error_details: str = "",
+        solution: str = "",
+        agent: str = "Aradhya CEO",
+        recipient: str = OFFICIAL_WHATSAPP_INTL
+    ) -> Dict[str, Any]:
+        """
+        Dispatches a high-priority WhatsApp alert to Alpesh Sir when Aradhya is unable to perform a task.
+        """
+        clean_phone = "".join(c for c in recipient if c.isdigit())
+        if not clean_phone:
+            clean_phone = OFFICIAL_WHATSAPP_INTL
+
+        message = self.format_task_failure_message(
+            task_name=task_name,
+            error_details=error_details,
+            solution=solution,
+            agent=agent
+        )
+        title = f"🚨 આરાધ્યા એજન્ટ કાર્ય પૂર્ણ ન કરી શકી (Task Failed): {task_name}"
+        desktop_text = f"કાર્ય: {task_name}\nભૂલ: {error_details[:140]}"
+        if solution:
+            desktop_text += f"\n💡 ઉકેલ: {solution[:100]}"
+
+        return self._dispatch_alert(
+            message=message,
+            clean_phone=clean_phone,
+            alert_type="TASK_FAILURE",
+            title=title,
+            desktop_banner_text=desktop_text,
+            task_name=task_name
+        )
+
+    def send_custom_alert(
+        self,
+        title: str,
+        message: str,
+        recipient: str = OFFICIAL_WHATSAPP_INTL,
+        category: str = "ALERT",
+        details: str = "",
+        solution: str = ""
+    ) -> Dict[str, Any]:
+        """Dispatches an arbitrary alert message across WhatsApp channels."""
+        clean_phone = "".join(c for c in recipient if c.isdigit())
+        if not clean_phone:
+            clean_phone = OFFICIAL_WHATSAPP_INTL
+
+        timestamp = time.strftime("%d-%m-%Y %I:%M %p")
+        full_text = (
+            f"📢 *CHAMUNDA AUTOMOBILE • {title}* 📢\n"
+            f"જય માતાજી અલ્પેશ સાહેબ,\n\n"
+            f"{message}\n"
+        )
+        if details:
+            full_text += f"\n📋 *વિગત (Details):*\n```{details[:500]}```\n"
+        if solution:
+            full_text += f"\n💡 *સમાધાન (Solution):*\n_{solution}_\n"
+        full_text += f"\n_સમય: {timestamp}_"
+
+        desktop_text = f"{message[:140]}"
+        if solution:
+            desktop_text += f"\n💡 {solution[:100]}"
+
+        return self._dispatch_alert(
+            message=full_text,
+            clean_phone=clean_phone,
+            alert_type=category,
+            title=title,
+            desktop_banner_text=desktop_text
+        )
+
+    def _dispatch_alert(
+        self,
+        message: str,
+        clean_phone: str,
+        alert_type: str,
+        title: str,
+        desktop_banner_text: str,
+        task_name: str = ""
+    ) -> Dict[str, Any]:
+        """Unified internal dispatcher for WhatsApp alerts across all active channels."""
+        wa_click_url = self.generate_click_to_chat_url(message, clean_phone)
+        dispatch_id = f"WA-{alert_type}-{int(time.time())}"
+        timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+
+        record = {
+            "dispatch_id": dispatch_id,
+            "timestamp": timestamp,
+            "alert_type": alert_type,
+            "title": title,
+            "task_name": task_name,
+            "recipient_raw": clean_phone,
+            "recipient_formatted": OFFICIAL_WHATSAPP_PHONE if clean_phone.endswith(OFFICIAL_WHATSAPP_RAW) else f"+{clean_phone}",
+            "message": message,
+            "wa_click_url": wa_click_url,
+            "status": "QUEUED_AND_READY",
+            "channels_attempted": []
+        }
+
+        cfg = self.get_config()
+
+        # Channel 1: CallMeBot API (Direct WhatsApp push)
+        callmebot_key = cfg.get("callmebot_api_key", "").strip()
+        if callmebot_key:
+            try:
+                cm_url = (
+                    f"https://api.callmebot.com/whatsapp.php?"
+                    f"phone=+{clean_phone}&text={urllib.parse.quote(message)}&apikey={callmebot_key}"
+                )
+                req = urllib.request.Request(cm_url, headers={"User-Agent": "ChamundaChhaya/1.0"})
+                with urllib.request.urlopen(req, timeout=8.0) as resp:
+                    resp_body = resp.read().decode("utf-8", errors="ignore")
+                    record["channels_attempted"].append({
+                        "channel": "CallMeBot_API",
+                        "success": True,
+                        "response": resp_body[:100]
+                    })
+                    record["status"] = "SENT_VIA_CALLMEBOT"
+                    logger.info("WhatsApp alert dispatched via CallMeBot API to %s", clean_phone)
+            except Exception as e:
+                logger.warning("CallMeBot alert dispatch error: %s", e)
+                record["channels_attempted"].append({
+                    "channel": "CallMeBot_API",
+                    "success": False,
+                    "error": str(e)
+                })
+
+        # Channel 2: Custom Webhook
+        webhook_url = cfg.get("custom_webhook_url", "").strip()
+        if webhook_url:
+            try:
+                payload = json.dumps({
+                    "phone": clean_phone,
+                    "title": title,
+                    "alert_type": alert_type,
+                    "task_name": task_name,
+                    "message": message,
+                    "timestamp": timestamp
+                }).encode("utf-8")
+                req = urllib.request.Request(
+                    webhook_url,
+                    data=payload,
+                    headers={"Content-Type": "application/json", "User-Agent": "ChamundaChhaya/1.0"}
+                )
+                with urllib.request.urlopen(req, timeout=5.0) as resp:
+                    record["channels_attempted"].append({
+                        "channel": "Custom_Webhook",
+                        "success": True,
+                        "code": resp.getcode()
+                    })
+                    if record["status"] != "SENT_VIA_CALLMEBOT":
+                        record["status"] = "SENT_VIA_WEBHOOK"
+                    logger.info("WhatsApp alert dispatched via Webhook to %s", clean_phone)
+            except Exception as e:
+                logger.warning("Webhook alert dispatch error: %s", e)
+                record["channels_attempted"].append({
+                    "channel": "Custom_Webhook",
+                    "success": False,
+                    "error": str(e)
+                })
+
+        # Channel 3: Autonomous WhatsApp Web Headless Dispatcher (if paired)
+        try:
+            from whatsapp_web_sender import get_whatsapp_web_sender
+            web_sender = get_whatsapp_web_sender()
+            session_info = web_sender.get_session_info()
+            if session_info.get("paired", False):
+                def _do_web_alert_dispatch():
+                    try:
+                        web_res = web_sender.send_message(clean_phone, message, headless=True)
+                        logger.info("WhatsApp Web automated alert dispatch result: %s", web_res)
+                        self._update_outbox_channel_result(dispatch_id, "WhatsApp_Web_Headless", web_res)
+                    except Exception as we:
+                        logger.warning("WhatsApp Web alert thread error: %s", we)
+                        self._update_outbox_channel_result(dispatch_id, "WhatsApp_Web_Headless", {"success": False, "error": str(we)})
+
+                t = threading.Thread(target=_do_web_alert_dispatch, daemon=True)
+                t.start()
+                record["channels_attempted"].append({
+                    "channel": "WhatsApp_Web_Headless",
+                    "success": True,
+                    "status": "DISPATCH_STARTED"
+                })
+                if record["status"] not in ["SENT_VIA_CALLMEBOT", "SENT_VIA_WEBHOOK"]:
+                    record["status"] = "DISPATCHING_VIA_WHATSAPP_WEB"
+            else:
+                record["channels_attempted"].append({
+                    "channel": "WhatsApp_Web_Headless",
+                    "success": False,
+                    "status": "NOT_YET_PAIRED",
+                    "details": "Run 'aradhya-pair' or 'python3 whatsapp_web_sender.py --pair' to link WhatsApp Web."
+                })
+        except Exception as e:
+            logger.warning("WhatsApp Web sender alert integration error: %s", e)
+
+        # Channel 4: Desktop UI Critical Notification on Laptop
+        try:
+            subprocess.Popen(
+                [
+                    "/usr/bin/notify-send",
+                    "-u", "critical",
+                    "-t", "15000",
+                    "-a", "Aradhya CEO",
+                    "-i", str(BASE_DIR / "static" / "icons" / "icon-192.png"),
+                    title,
+                    f"📱 WhatsApp Alert (+{clean_phone}):\n{desktop_banner_text}"
+                ],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL
+            )
+            record["channels_attempted"].append({
+                "channel": "Desktop_Notification",
+                "success": True
+            })
+        except Exception:
+            pass
+
+        # Channel 5: Click-to-Chat Ready URL (Always guaranteed functional)
+        record["channels_attempted"].append({
+            "channel": "WhatsApp_Click_To_Chat",
+            "success": True,
+            "url": wa_click_url
+        })
+
+        # Save to outbox
+        self._record_in_outbox(record)
+        logger.info(
+            "📢 [WhatsApp Alert] Dispatched for %s | Status: %s | Title: %s",
+            OFFICIAL_WHATSAPP_PHONE, record["status"], title
         )
         return record
 

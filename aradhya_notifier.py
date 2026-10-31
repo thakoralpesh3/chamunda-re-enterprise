@@ -55,11 +55,18 @@ class AradhyaNotifier:
                 },
                 "desktop_banner": {
                     "enabled": True
+                },
+                "whatsapp": {
+                    "enabled": True,
+                    "target_phone": "917874719139",
+                    "callmebot_api_key": os.getenv("CALLMEBOT_API_KEY", ""),
+                    "custom_webhook_url": os.getenv("WHATSAPP_WEBHOOK_URL", "")
                 }
             },
             "notification_preferences": {
                 "work_done": True,
                 "system_issues": True,
+                "task_failures": True,
                 "startup_sync": True,
                 "threat_neutralized": True
             }
@@ -74,6 +81,14 @@ class AradhyaNotifier:
                         t_cfg["bot_token"] = os.getenv("TELEGRAM_BOT_TOKEN", "")
                     if not t_cfg.get("chat_id"):
                         t_cfg["chat_id"] = os.getenv("TELEGRAM_CHAT_ID", "") or os.getenv("ALPESH_TELEGRAM_CHAT_ID", "")
+
+                    wa_cfg = cfg.setdefault("channels", {}).setdefault("whatsapp", {})
+                    if not wa_cfg.get("target_phone"):
+                        wa_cfg["target_phone"] = "917874719139"
+                    if not wa_cfg.get("callmebot_api_key"):
+                        wa_cfg["callmebot_api_key"] = os.getenv("CALLMEBOT_API_KEY", "")
+                    if not wa_cfg.get("custom_webhook_url"):
+                        wa_cfg["custom_webhook_url"] = os.getenv("WHATSAPP_WEBHOOK_URL", "")
                     return cfg
             except Exception as e:
                 logger.debug("Config load error: %s", e)
@@ -88,9 +103,9 @@ class AradhyaNotifier:
         solution: Optional[str] = None
     ) -> Dict[str, Any]:
         """
-        Broadcast notification across configured channels (Telegram, Desktop Banner).
-        Categories: WORK_DONE, ISSUE, WARNING, CRITICAL, STARTUP_SYNC, INFO.
-        Always includes actionable solution for issues and warnings.
+        Broadcast notification across configured channels (WhatsApp, Telegram, Desktop Banner).
+        Categories: WORK_DONE, ISSUE, WARNING, CRITICAL, TASK_FAILURE, STARTUP_SYNC, INFO.
+        Always includes actionable solution for issues, task failures, and warnings.
         """
         timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
         record = {
@@ -122,7 +137,16 @@ class AradhyaNotifier:
             else:
                 logger.debug("Telegram credentials not set; skipping mobile push.")
 
-        # 3. Append to History
+        # 3. WhatsApp Notification (CallMeBot API / Custom Webhook / Headless Browser / wa.me link)
+        wa_cfg = self.config.get("channels", {}).get("whatsapp", {})
+        if wa_cfg.get("enabled", True):
+            # Prioritize task failures, critical errors, and system warnings for WhatsApp dispatch
+            if category in ["TASK_FAILURE", "CRITICAL", "ISSUE", "WARNING", "ERROR"] or self.config.get("notification_preferences", {}).get("notify_all_to_whatsapp", False):
+                wa_ok = self._send_whatsapp(title, message, category, details, solution=solution)
+                if wa_ok:
+                    record["dispatched_channels"].append("whatsapp")
+
+        # 4. Append to History
         self._record_history(record)
         logger.info("📢 Dispatched [%s] '%s' via: %s", category, title, ", ".join(record["dispatched_channels"]) or "log only")
         return record
@@ -148,6 +172,32 @@ class AradhyaNotifier:
             f"રિપોઝીટરીઝ 100% ઓટો-સિન્ક થઈ ગઈ છે. તમામ એજન્ટ્સ અને સર્વિસીસ સક્રિય છે."
         )
         return self.send_notification(title=title, message=msg, category="STARTUP_SYNC", details=details, solution=solution)
+
+    def notify_task_failure(
+        self,
+        task_name: str,
+        error_details: str = "",
+        solution: str = "",
+        agent: str = "Aradhya CEO"
+    ) -> Dict[str, Any]:
+        """
+        High-priority notification explicitly dispatched to WhatsApp (and all channels)
+        when Aradhya Agent is unable to perform an assigned task or mission.
+        """
+        title = f"🚨 કાર્ય પૂર્ણ ન થઈ શક્યું (Task Incomplete): {task_name}"
+        msg = (
+            f"ધ્યાન આપો અલ્પેશ સાહેબ! {agent} આપનું સોંપેલું કાર્ય પૂર્ણ કરવામાં અસમર્થ રહી છે:\n"
+            f"• કાર્ય: {task_name}\n"
+            f"• વિગત/ભૂલ: {error_details[:300] if error_details else 'Execution halted or retries exhausted.'}"
+        )
+        sol = solution or "કૃપા કરીને ટર્મિનલમાં `aradhya` ચલાવી વિગતવાર સ્થિતિ તપાસો અથવા કમાન્ડ રી-ટ્રાય કરો."
+        return self.send_notification(
+            title=title,
+            message=msg,
+            category="TASK_FAILURE",
+            details=error_details,
+            solution=sol
+        )
 
     def _send_desktop_notification(self, title: str, message: str, category: str, solution: Optional[str] = None) -> bool:
         """Invokes Linux Mint desktop notification with solution."""
@@ -221,6 +271,49 @@ class AradhyaNotifier:
                 return bool(data.get("ok"))
         except Exception as e:
             logger.warning("Telegram dispatch failed: %s", e)
+            return False
+
+    def _send_whatsapp(
+        self,
+        title: str,
+        message: str,
+        category: str,
+        details: Optional[str],
+        solution: Optional[str] = None
+    ) -> bool:
+        """Sends formatted alert via WhatsAppDispatchEngine directly to Alpesh Sir's WhatsApp."""
+        try:
+            from whatsapp_dispatch_engine import get_whatsapp_dispatch_engine, OFFICIAL_WHATSAPP_INTL
+            wa_engine = get_whatsapp_dispatch_engine()
+            wa_cfg = self.config.get("channels", {}).get("whatsapp", {})
+            target_phone = wa_cfg.get("target_phone") or OFFICIAL_WHATSAPP_INTL
+
+            if category == "TASK_FAILURE":
+                clean_title = re.sub(r'^🚨\s*(?:કાર્ય પૂર્ણ ન થઈ શક્યું|Task Incomplete|Task Failed)\s*:\s*', '', title).strip()
+                res = wa_engine.send_task_failure_alert(
+                    task_name=clean_title or title,
+                    error_details=details or message,
+                    solution=solution or "",
+                    agent="Aradhya CEO",
+                    recipient=target_phone
+                )
+            else:
+                res = wa_engine.send_custom_alert(
+                    title=title,
+                    message=message,
+                    recipient=target_phone,
+                    category=category,
+                    details=details or "",
+                    solution=solution or ""
+                )
+            return bool(res and res.get("status") in [
+                "SENT_VIA_CALLMEBOT",
+                "SENT_VIA_WEBHOOK",
+                "DISPATCHING_VIA_WHATSAPP_WEB",
+                "QUEUED_AND_READY"
+            ])
+        except Exception as e:
+            logger.warning("WhatsApp dispatch attempt failed: %s", e)
             return False
 
     def _record_history(self, record: Dict[str, Any]):
