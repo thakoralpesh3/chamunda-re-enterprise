@@ -932,11 +932,23 @@ class AradhyaAutonomousEngine:
         """
         from aradhya_independent_worker import get_independent_worker
         worker = get_independent_worker()
-        return worker.execute_mission(
-            mission_directive=directive,
-            preferred_model=preferred_model,
-            on_step_callback=on_step_callback
-        )
+        try:
+            return worker.execute_mission(
+                mission_directive=directive,
+                preferred_model=preferred_model,
+                on_step_callback=on_step_callback
+            )
+        except Exception as e:
+            try:
+                from aradhya_notifier import get_aradhya_notifier
+                get_aradhya_notifier().notify_task_failure(
+                    task_name=directive,
+                    error_details=f"Autonomous mission crashed: {e}",
+                    solution="કૃપા કરીને આદેશ તપાસો અથવા એન્જિન રીસ્ટાર્ટ કરો."
+                )
+            except Exception:
+                pass
+            raise
 
     def query_gemini_brain(
         self,

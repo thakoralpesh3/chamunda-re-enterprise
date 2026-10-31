@@ -369,6 +369,19 @@ class AradhyaIndependentWorkerEngine:
         out_snippet = exec_res.get("stdout", "")[:1200]
         err_snippet = exec_res.get("stderr", "")[:500]
 
+        # Dispatch WhatsApp notification if Aradhya is unable to perform the task
+        if not final_success:
+            try:
+                from aradhya_notifier import get_aradhya_notifier
+                fail_details = err_snippet or out_snippet or f"Execution failed with exit code {exec_res.get('exit_code', 1)}."
+                get_aradhya_notifier().notify_task_failure(
+                    task_name=mission_directive,
+                    error_details=fail_details,
+                    solution=f"{attempts} વખત આપમેળે સુધારાના પ્રયાસો છતાં એરર રહી છે. ટર્મિનલમાં `aradhya` ચલાવી વિગત તપાસો."
+                )
+            except Exception:
+                pass
+
         art_list_str = "\n".join([f"• `{a}`" for a in artifacts]) if artifacts else "• All memory/data operations verified."
 
         resp_en = (

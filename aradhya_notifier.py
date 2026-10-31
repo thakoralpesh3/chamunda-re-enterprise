@@ -14,6 +14,7 @@ import os
 import sys
 import json
 import time
+import re
 import urllib.request
 import subprocess
 import logging
