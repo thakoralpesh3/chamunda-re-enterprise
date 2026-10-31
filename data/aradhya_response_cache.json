@@ -11,5 +11,18 @@
       "response_gu": "જય માતાજી અલ્પેશ સાહેબ. આપના `-v` કમાન્ડ ફ્લેગ ઇનપુટ સંદર્ભે: ચામુંડા ઓટોમોબાઈલ પાર્ટ્સ એન્ડ સર્વિસ (પ્રોજેક્ટ છાયા) ના ચીફ એક્ઝિક્યુટિવ ઓફિસર તરીકે, હું સંપૂર્ણ ડાયગ્નોસ્ટિક અને એડમિનિસ્ટ્રેટિવ મોડમાં કાર્યરત છું. આપણું લિનક્સ મિન્ટ વર્કસ્ટેશન, વર્કશોપ ઓપરેશન્સ અને ઓનલાઈન લિંક સંપૂર્ણપણે ઓપ્ટિમાઇઝ્ડ અને સિન્ક્રોનાઇઝ્ડ છે.\n\nરોયલ એનફિલ્ડ સર્વિસ પ્રોટોકોલ્સ અને સિસ્ટમ ચેક્સ સામાન્ય સ્થિતિમાં છે. આપના આગામી આદેશની રાહ જોઉં છું, સાહેબ.",
       "latency_ms": 4368
     }
+  },
+  "b2c0bfeb42baf81fd67cec0ef11530ca": {
+    "cached_at": 1793460145.681833,
+    "data": {
+      "success": true,
+      "used_llm": true,
+      "model_used": "gemini-3.5-flash-lite",
+      "badge": "🌱 Flash Lite",
+      "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite",
+      "response_en": "Jai Mataji Alpesh Sir,\n\nYes, OpenWebUI is fully operational and active within our Project Chhaya ecosystem. All AI orchestration services, local LLM integrations, and dashboard interfaces are running smoothly on our Linux Mint workstation without any interruptions. \n\nWe are operating at peak efficiency across all dealership and workshop modules. Let me know if you need any further system diagnostics or performance checks.",
+      "response_gu": "જય માતાજી અલ્પેશ સાહેબ,\n\nહા, પ્રોજેક્ટ છાયા (Project Chhaya) ઇકોસિસ્ટમમાં ઓપનવેબયુઆઈ (OpenWebUI) સંપૂર્ણપણે કાર્યરત અને સક્રિય છે. આપણા લિનક્સ મિન્ટ (Linux Mint) વર્કસ્ટેશન પર તમામ AI ઓર્કેસ્ટ્રેશન સેવાઓ, લોકલ LLMintegrations અને ડેશબોર્ડ ઇન્ટરફેસ કોઈપણ અડચણ વગર સુચારૂ રૂપે ચાલી રહ્યા છે.\n\nઆપણે તમામ ડીલરશીપ અને વર્કશોપ મોડ્યુલ્સ પર ઉત્તમ કાર્યક્ષમતા સાથે કામ કરી રહ્યા છો. જો આપને કોઈ સિસ્ટમ ડાયગ્નોસ્ટિક્સ અથવા પર્ફોર્મન્સ ચેક કરાવવાની જરૂર હોય, તો ચોક્કસ જણાવશો.",
+      "latency_ms": 3511
+    }
   }
 }
