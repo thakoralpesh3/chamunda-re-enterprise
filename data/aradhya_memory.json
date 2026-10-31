@@ -4,36 +4,6 @@
   "recent_actions": [
     {
       "action": "OFFLINE_COGNITIVE_REASONING",
-      "details": "Write a python script to monitor cpu and memory",
-      "timestamp": "2026-10-13 00:58:29"
-    },
-    {
-      "action": "OFFLINE_COGNITIVE_REASONING",
-      "details": "જે-સિરીઝ ૩૫૦ એન્જિન ઓઇલ કેટલું જોઈએ?",
-      "timestamp": "2026-10-13 00:58:29"
-    },
-    {
-      "action": "OFFLINE_COGNITIVE_REASONING",
-      "details": "Himalayan 450 tappet clearance",
-      "timestamp": "2026-10-13 00:59:16"
-    },
-    {
-      "action": "AUTONOMOUS_WORKER_MISSION",
-      "details": "create a chart comparing Royal Enfield bike sales",
-      "timestamp": "2026-10-14 00:48:40"
-    },
-    {
-      "action": "OFFLINE_COGNITIVE_REASONING",
-      "details": "What is your architecture and active model?",
-      "timestamp": "2026-10-15 00:10:43"
-    },
-    {
-      "action": "OFFLINE_COGNITIVE_REASONING",
-      "details": "fix inbuilt camera",
-      "timestamp": "2026-10-15 22:54:41"
-    },
-    {
-      "action": "OFFLINE_COGNITIVE_REASONING",
       "details": "fix inbuilt camera in this laptop",
       "timestamp": "2026-10-15 22:55:01"
     },
@@ -151,6 +121,36 @@
       "action": "PROCESS_MANAGEMENT",
       "details": "download required files to make it work with showing process that how much it will take time",
       "timestamp": "2026-10-31 20:58:40"
+    },
+    {
+      "action": "PROCESS_MANAGEMENT",
+      "details": "download required files to make aradhya speaking forever in this laptop work with showing process that how much it will ",
+      "timestamp": "2026-10-31 20:59:16"
+    },
+    {
+      "action": "PROCESS_MANAGEMENT",
+      "details": "download required files to make aradhya speaking forever in this laptop work with showing process that how much it will ",
+      "timestamp": "2026-10-31 20:59:22"
+    },
+    {
+      "action": "PROCESS_MANAGEMENT",
+      "details": "download required files to make aradhya speaking forever in this laptop work with showing process that how much it will ",
+      "timestamp": "2026-10-31 20:59:26"
+    },
+    {
+      "action": "PROCESS_MANAGEMENT",
+      "details": "download required files to make aradhya speaking forever in this laptop work with showing process that how much it will ",
+      "timestamp": "2026-10-31 20:59:27"
+    },
+    {
+      "action": "PROCESS_MANAGEMENT",
+      "details": "download required files to make aradhya speaking forever in this laptop work with showing process that how much it will ",
+      "timestamp": "2026-10-31 20:59:31"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "do you even understand what i am asking to do ?",
+      "timestamp": "2026-10-31 20:59:52"
     }
   ],
   "custom_aliases": {},

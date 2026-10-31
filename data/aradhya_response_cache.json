@@ -102,5 +102,18 @@
       "response_gu": "જય માતાજી અલ્પેશ સાહેબ! આપણા લિનક્સ મિન્ટ (Linux Mint) વર્કસ્ટેશન પર વૉઇસ એલર્ટ અને સિસ્ટમ અપડેટ્સ માટે ટેક્સ્ટ-ટુ-સ્પીચ (TTS) સક્રિય કરી રહ્યું છું. \n\nવર્કશોપના એલર્ટ્સ અને કસ્ટમર અપડેટ્સ સીધા સ્પીકર અથવા હેડસેટ દ્વારા સાંભળી શકાય તે માટે પલ્સઓડિયો (PulseAudio) સાથે સિવાય સ્પીચ સિન્થેસિસ એન્જિન સેટઅપ કરી દીધું છે.",
       "latency_ms": 1920
     }
+  },
+  "ae303e6e72d2f035a391e8b00430a8fc": {
+    "cached_at": 1793460592.3879397,
+    "data": {
+      "success": true,
+      "used_llm": true,
+      "model_used": "gemini-3.5-flash-lite",
+      "badge": "🌱 Flash Lite",
+      "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite",
+      "response_en": "Jaye Mataji Alpesh Sir, yes, I understand completely. As your CEO and AI Orchestrator at Chamunda Automobile Parts & Service, my role is to ensure our workshop operations, inventory management, customer service, and system performance run with absolute precision. Please let me know your exact command regarding Project Chhaya or workshop operations, and I will execute it immediately.",
+      "response_gu": "જય માતાજી અલ્પેશ સાહેબ, હા, હું પૂરી રીતે સમજુ છું. ચામુંડા ઓટોમોબાઈલ પાર્ટ્સ એન્ડ સર્વિસ (પ્રોજેક્ટ છાયા) પર તમારા CEO અને AI ઓર્કેસ્ટ્રેટર તરીકે, મારી જવાબદારી આપણી વર્કશોપની કામગીરી, ઇન્વેન્ટરી મેનેજમેન્ટ, ગ્રાહક સેવા અને સિસ્ટમની ઝડપને સંપૂર્ણ સચોટતા સાથે ચલાવવાની છે. પ્રોજેક્ટ છાયા કે વર્કશોપ સંબંધિત તમારો જે પણ આદેશ હોય, તે જણાવો જેથી હું તેને તાત્કાલિક અમલમાં મૂકી શકું.",
+      "latency_ms": 1815
+    }
   }
 }
