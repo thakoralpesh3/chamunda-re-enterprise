@@ -1323,7 +1323,9 @@ class AradhyaAutonomousEngine:
                 resp_en = f"Greetings Alpesh Sir! Custom Synthesized Skill `{matched_skill}` Execution ({res.get('duration_ms')}ms):\n`{res.get('result')}`"
             else:
                 resp_gu = f"પ્રણામ અલ્પેશ સાહેબ! સ્કિલ `{matched_skill}` એક્ઝિક્યુટ કરવામાં ખામી: {res.get('error')}"
-            # Mode Switch: Switch to Text-Based Mode
+                resp_en = f"Greetings Alpesh Sir! Skill `{matched_skill}` failed: {res.get('error')}"
+
+        # Mode Switch: Switch to Text-Based Mode
         elif any(w in msg_lower for w in ["switch to text", "text mode", "ટેક્સ્ટ મોડ", "લખાણ મોડ", "change to text"]):
             cfg = self.set_interface_mode("text")
             action_data["interface_mode"] = cfg
