@@ -3,11 +3,6 @@
   "learned_habits": {},
   "recent_actions": [
     {
-      "action": "GENERAL_EXECUTIVE",
-      "details": "Calculate GST for 15000 parts and 2500 labor",
-      "timestamp": "2026-10-13 00:58:29"
-    },
-    {
       "action": "OFFLINE_COGNITIVE_REASONING",
       "details": "Write a python script to monitor cpu and memory",
       "timestamp": "2026-10-13 00:58:29"
@@ -151,6 +146,11 @@
       "action": "HARDWARE_DIAGNOSTIC",
       "details": "make it speaking through speaker now",
       "timestamp": "2026-10-31 20:57:50"
+    },
+    {
+      "action": "PROCESS_MANAGEMENT",
+      "details": "download required files to make it work with showing process that how much it will take time",
+      "timestamp": "2026-10-31 20:58:40"
     }
   ],
   "custom_aliases": {},
