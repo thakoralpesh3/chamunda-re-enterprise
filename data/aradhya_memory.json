@@ -3,11 +3,6 @@
   "learned_habits": {},
   "recent_actions": [
     {
-      "action": "OFFLINE_COGNITIVE_REASONING",
-      "details": "fix inbuilt camera in this laptop",
-      "timestamp": "2026-10-15 22:55:01"
-    },
-    {
       "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "status",
       "timestamp": "2026-10-16 03:11:01"
@@ -151,6 +146,11 @@
       "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "do you even understand what i am asking to do ?",
       "timestamp": "2026-10-31 20:59:52"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "status",
+      "timestamp": "2026-11-01 01:34:42"
     }
   ],
   "custom_aliases": {},
