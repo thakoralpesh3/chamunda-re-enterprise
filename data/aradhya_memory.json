@@ -4,16 +4,6 @@
   "recent_actions": [
     {
       "action": "ONLINE_GEMINI_INTELLIGENCE",
-      "details": "status",
-      "timestamp": "2026-10-16 03:11:01"
-    },
-    {
-      "action": "ONLINE_GEMINI_INTELLIGENCE",
-      "details": "fix inbuilt camera in this laptop",
-      "timestamp": "2026-10-18 13:39:32"
-    },
-    {
-      "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "fix inbuilt camera in this laptop",
       "timestamp": "2026-10-18 13:45:10"
     },
@@ -151,6 +141,16 @@
       "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "status",
       "timestamp": "2026-11-01 01:34:42"
+    },
+    {
+      "action": "REMOTE_ACCESS_DIRECTIVE",
+      "details": "remote access",
+      "timestamp": "2026-11-01 01:46:12"
+    },
+    {
+      "action": "REMOTE_ACCESS_DIRECTIVE",
+      "details": "remote access",
+      "timestamp": "2026-11-01 01:46:25"
     }
   ],
   "custom_aliases": {},

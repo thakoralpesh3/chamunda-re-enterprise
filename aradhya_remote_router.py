@@ -71,9 +71,8 @@ async def api_remote_task(req: RemoteTaskRequest):
     core = get_aradhya_engine()
     res = await asyncio.to_thread(
         core.execute_mission,
-        mission_directive=req.directive,
-        preferred_model=req.preferred_model or "auto",
-        max_steps=req.max_steps or 8
+        directive=req.directive,
+        preferred_model=req.preferred_model or "auto"
     )
     return JSONResponse(content=res)
 
@@ -748,6 +747,119 @@ Initializing Autonomous Agent Environment...
             const div = document.createElement('div');
             div.textContent = text;
             return div.innerHTML;
+        }
+
+        // Autonomous Tasks (Antigravity Parity)
+        function setTaskDirective(text) {
+            document.getElementById('taskDirectiveInput').value = text;
+        }
+
+        let taskTimerInterval = null;
+
+        async function launchAutonomousTask() {
+            const directiveInput = document.getElementById('taskDirectiveInput');
+            const directive = directiveInput.value.trim();
+            if (!directive) {
+                alert('Please enter a task directive for Aradhya to execute.');
+                return;
+            }
+
+            const model = document.getElementById('taskModelSelect').value;
+            const launchBtn = document.getElementById('launchTaskBtn');
+            const telemetryCard = document.getElementById('taskTelemetryCard');
+            const consoleBox = document.getElementById('taskExecutionConsole');
+            const statusBadge = document.getElementById('taskStatusBadge');
+            const timerBadge = document.getElementById('taskTimeElapsed');
+            const deliverablesBox = document.getElementById('taskDeliverablesBox');
+            const artifactsList = document.getElementById('taskArtifactsList');
+            const summaryBox = document.getElementById('taskSummaryBox');
+            const summaryGu = document.getElementById('taskSummaryGu');
+            const summaryEn = document.getElementById('taskSummaryEn');
+
+            // Reset UI
+            launchBtn.disabled = true;
+            launchBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin me-1"></i> Working...';
+            telemetryCard.style.display = 'block';
+            deliverablesBox.style.display = 'none';
+            summaryBox.style.display = 'none';
+            artifactsList.innerHTML = '';
+            statusBadge.className = 'text-warning font-mono small fw-bold';
+            statusBadge.innerHTML = '<i class="fa-solid fa-spinner fa-spin me-1"></i> DECOMPOSING TASK & SYNTHESIZING CODE...';
+
+            consoleBox.innerHTML = `[ARADHYA AUTONOMOUS AGENT]\nDirective: "${directive}"\nPreferred Model: ${model}\nPlan-Act-Verify Sandbox: INITIALIZED\n------------------------------------------------------------\n`;
+
+            const startTime = Date.now();
+            if (taskTimerInterval) clearInterval(taskTimerInterval);
+            taskTimerInterval = setInterval(() => {
+                const sec = Math.floor((Date.now() - startTime) / 1000);
+                timerBadge.innerText = `${sec}s`;
+            }, 1000);
+
+            try {
+                const res = await fetch('/api/remote/task', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        directive: directive,
+                        preferred_model: model,
+                        max_steps: 8
+                    })
+                });
+                const data = await res.json();
+                clearInterval(taskTimerInterval);
+
+                if (data.success || data.status === 'COMPLETED_SUCCESSFULLY' || data.response_en) {
+                    statusBadge.className = 'text-success font-mono small fw-bold';
+                    statusBadge.innerHTML = '<i class="fa-solid fa-circle-check me-1"></i> MISSION COMPLETED & VERIFIED';
+
+                    // Display steps log
+                    if (data.steps && data.steps.length > 0) {
+                        data.steps.forEach(s => {
+                            consoleBox.innerHTML += `[${s.timestamp}] Step ${s.step} [${s.action}]: ${escapeHtml(typeof s.details === 'string' ? s.details : JSON.stringify(s.details))}\n`;
+                        });
+                    }
+
+                    if (data.execution && data.execution.stdout) {
+                        consoleBox.innerHTML += `\n--- Standard Output ---\n${escapeHtml(data.execution.stdout)}\n`;
+                    }
+                    consoleBox.scrollTop = consoleBox.scrollHeight;
+
+                    // Deliverables & Artifacts
+                    const artifacts = data.artifacts || (data.execution && data.execution.generated_files) || [];
+                    if (artifacts.length > 0) {
+                        deliverablesBox.style.display = 'block';
+                        artifacts.forEach(a => {
+                            const li = document.createElement('li');
+                            li.innerHTML = `<i class="fa-solid fa-file-code text-info me-1"></i> <a href="javascript:void(0)" onclick="viewFile('${escapeHtml(a)}')" class="text-info text-decoration-none">${escapeHtml(a)}</a>`;
+                            artifactsList.appendChild(li);
+                        });
+                    }
+
+                    // Summary
+                    if (data.response_gu || data.response_en) {
+                        summaryBox.style.display = 'block';
+                        summaryGu.innerText = data.response_gu || '';
+                        summaryEn.innerText = data.response_en || '';
+                    }
+
+                } else {
+                    statusBadge.className = 'text-danger font-mono small fw-bold';
+                    statusBadge.innerHTML = '<i class="fa-solid fa-triangle-exclamation me-1"></i> TASK EXECUTION ISSUE';
+                    consoleBox.innerHTML += `\nExecution Error: ${escapeHtml(data.error || 'Task completed with errors')}\n`;
+                    if (data.response_en) {
+                        summaryBox.style.display = 'block';
+                        summaryEn.innerText = data.response_en;
+                    }
+                }
+            } catch(e) {
+                clearInterval(taskTimerInterval);
+                statusBadge.className = 'text-danger font-mono small fw-bold';
+                statusBadge.innerHTML = '<i class="fa-solid fa-triangle-exclamation me-1"></i> CONNECTION ERROR';
+                consoleBox.innerHTML += `\nNetwork/Server Error: ${escapeHtml(e.toString())}\n`;
+            } finally {
+                launchBtn.disabled = false;
+                launchBtn.innerHTML = '<i class="fa-solid fa-rocket me-1"></i> Execute Task';
+            }
         }
 
         // Initialize on load

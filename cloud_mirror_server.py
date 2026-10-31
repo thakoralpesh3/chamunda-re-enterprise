@@ -415,10 +415,14 @@ async def cloud_mirror_home():
                 </div>
                 <div class="text-light">
                     <img src="/static/chhaya_mobile_qr.png" alt="Scan QR Code" style="max-width: 170px; border-radius: 12px; margin: 10px auto; display: block; border: 2px solid #f39c12;">
-                    <small class="text-muted d-block">Scan with any phone camera or tap link above to access all 20 agents</small>
-                </div>
                 <div class="mt-2 pt-2 border-top border-secondary text-muted">
+                    <div class="mb-2">
+                        <a href="/remote" class="btn btn-sm btn-info text-dark fw-bold px-3 shadow-sm">
+                            <i class="fa-solid fa-laptop-code me-1"></i> Open Antigravity Remote PC Companion (/remote)
+                        </a>
+                    </div>
                     Local Wi-Fi (Offline): <a href="http://{local_ip}:8081" target="_blank" class="text-info text-decoration-none"><code>http://{local_ip}:8081</code></a> &bull;
+                    Remote PC: <a href="http://{local_ip}:8081/remote" target="_blank" class="text-warning text-decoration-none"><code>/remote</code></a> &bull;
                     Main DMS: <a href="http://{local_ip}:8080" target="_blank" class="text-info text-decoration-none"><code>http://{local_ip}:8080</code></a><br>
                     Official Customer WhatsApp Helpline: <strong class="text-success">{OFFICIAL_WHATSAPP_HELPLINE}</strong>
                 </div>

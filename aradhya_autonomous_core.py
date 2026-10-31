@@ -1421,6 +1421,50 @@ class AradhyaAutonomousEngine:
                 f"• Power Subsystem: 100% Operational & Energy-Efficient ⚡"
             )
 
+        # Mobile Remote PC Access (Antigravity Remote Parity)
+        elif any(w in msg_lower for w in [
+            "remote access", "remote pc", "access from mobile", "mobile access", "phone access",
+            "મોબાઇલ એક્સેસ", "રિમોટ એક્સેસ", "મોબાઇલમાંથી પીસી", "ફોનમાંથી કંટ્રોલ", "મોબાઈલ કંટ્રોલ"
+        ]):
+            pub_url = ""
+            pub_file = DATA_DIR / "chhaya_public_url.txt"
+            if pub_file.exists():
+                try:
+                    pub_url = pub_file.read_text(encoding="utf-8").strip()
+                except Exception:
+                    pass
+            wifi_url = f"http://{socket.gethostname()}.local:8081/remote"
+            direct_url = f"{pub_url}/remote" if pub_url else wifi_url
+            action_data["remote_access"] = {
+                "mobile_remote_url": direct_url,
+                "wifi_url": wifi_url,
+                "public_tunnel_url": f"{pub_url}/remote" if pub_url else None
+            }
+            action_type = "REMOTE_ACCESS_DIRECTIVE"
+            badge = "📱 Aradhya Remote PC Matrix (Antigravity Parity)"
+            resp_gu = (
+                f"જય માતાજી અલ્પેશ સાહેબ! 📱 આરાધ્યા રિમોટ પીસી કંટ્રોલર સંપૂર્ણ તૈયાર છે:\n\n"
+                f"• **મોબાઇલ રિમોટ લિંક**: {direct_url}\n"
+                f"• **લોકલ Wi-Fi લિંક**: {wifi_url}\n\n"
+                f"આ લિંક તમારા ફોનમાં ખોલીને આપ:\n"
+                f"૧. 🚀 **Antigravity Tasks**: ફોનમાંથી જ કોઈપણ મલ્ટી-સ્ટેપ મિશન પૂર્ણ કરાવો\n"
+                f"૨. 💻 **લાઇવ ટર્મિનલ**: સમગ્ર લેપટોપ પર શેલ કમાન્ડ્સ ચલાવો\n"
+                f"૩. 👁️ **લાઇવ સ્ક્રીન**: લેપટોપની સ્ક્રીન રીઅલ-ટાઇમમાં જુઓ\n"
+                f"૪. 🔒 **હાર્ડવેર કંટ્રોલ**: સ્ક્રીન લૉક, સ્પીકર વોલ્યુમ, ટર્બો સ્પીડ અને બેટરી કંટ્રોલ કરો\n"
+                f"૫. 📂 **ફાઇલ એક્સપ્લોરર**: લેપટોપની બધી ફાઇલો અને કોડ ફોનમાંથી બ્રાઉઝ કરો."
+            )
+            resp_en = (
+                f"Greetings Alpesh Sir! 📱 Aradhya Remote PC Companion is active with Antigravity parity:\n\n"
+                f"• **Primary Mobile Link**: {direct_url}\n"
+                f"• **Local Wi-Fi Link**: {wifi_url}\n\n"
+                f"From your phone, you can:\n"
+                f"1. 🚀 **Autonomous Tasks**: Execute end-to-end multi-step missions with code synthesis & verification\n"
+                f"2. 💻 **Live Shell Terminal**: Run bash commands directly on this laptop\n"
+                f"3. 👁️ **Screen Mirror**: Capture and view real-time desktop screenshots\n"
+                f"4. 🔒 **Hardware Control**: Lock screen, adjust volume, clean RAM & monitor battery\n"
+                f"5. 📂 **File Explorer**: Browse and view files across `/home/alpesh`"
+            )
+
         # Lock Screen
         elif any(w in msg_lower for w in ["lock screen", "સ્ક્રીન લોક", "લોક કરો", "lock laptop"]):
             res = self.lock_screen()
