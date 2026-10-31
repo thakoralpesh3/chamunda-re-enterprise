@@ -1,0 +1,7 @@
+{
+  "default_mode": "voice",
+  "voice_output_enabled": true,
+  "listening_duration_seconds": 5,
+  "auto_listen_after_response": true,
+  "last_updated": "2026-11-01 01:29:00"
+}

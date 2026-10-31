@@ -43,6 +43,7 @@ STATIC_DIR.mkdir(parents=True, exist_ok=True)
 SCREENSHOTS_DIR.mkdir(parents=True, exist_ok=True)
 
 OFFICIAL_WHATSAPP_HELPLINE = "+91 78747 19139"
+INTERFACE_CONFIG_FILE = DATA_DIR / "aradhya_interface_config.json"
 
 
 class AradhyaAutonomousEngine:
@@ -1053,6 +1054,35 @@ class AradhyaAutonomousEngine:
         """Capture microphone input and transcribe via Gemini multimodal audio."""
         return self.voice.listen_and_transcribe(duration_seconds=duration_seconds)
 
+    def get_interface_mode(self) -> str:
+        """Returns the default interaction mode ('voice' or 'text')."""
+        if INTERFACE_CONFIG_FILE.exists():
+            try:
+                cfg = json.loads(INTERFACE_CONFIG_FILE.read_text(encoding="utf-8"))
+                return cfg.get("default_mode", "voice")
+            except Exception:
+                pass
+        return "voice"
+
+    def set_interface_mode(self, mode: str) -> Dict[str, Any]:
+        """Sets default interaction mode ('voice' or 'text') persistently."""
+        mode_clean = "text" if "text" in mode.lower() else "voice"
+        cfg = {
+            "default_mode": mode_clean,
+            "voice_output_enabled": (mode_clean == "voice"),
+            "listening_duration_seconds": 5,
+            "auto_listen_after_response": (mode_clean == "voice"),
+            "last_updated": time.strftime("%Y-%m-%d %H:%M:%S")
+        }
+        if INTERFACE_CONFIG_FILE.exists():
+            try:
+                existing = json.loads(INTERFACE_CONFIG_FILE.read_text(encoding="utf-8"))
+                cfg = {**existing, **cfg}
+            except Exception:
+                pass
+        INTERFACE_CONFIG_FILE.write_text(json.dumps(cfg, indent=2, ensure_ascii=False), encoding="utf-8")
+        return cfg
+
     def process_command(
         self,
         raw_message: str = "",
@@ -1293,7 +1323,21 @@ class AradhyaAutonomousEngine:
                 resp_en = f"Greetings Alpesh Sir! Custom Synthesized Skill `{matched_skill}` Execution ({res.get('duration_ms')}ms):\n`{res.get('result')}`"
             else:
                 resp_gu = f"પ્રણામ અલ્પેશ સાહેબ! સ્કિલ `{matched_skill}` એક્ઝિક્યુટ કરવામાં ખામી: {res.get('error')}"
-                resp_en = f"Greetings Alpesh Sir! Skill `{matched_skill}` failed: {res.get('error')}"
+            # Mode Switch: Switch to Text-Based Mode
+        elif any(w in msg_lower for w in ["switch to text", "text mode", "ટેક્સ્ટ મોડ", "લખાણ મોડ", "change to text"]):
+            cfg = self.set_interface_mode("text")
+            action_data["interface_mode"] = cfg
+            action_type = "INTERFACE_MODE_SWITCH"
+            resp_gu = "જય માતાજી અલ્પેશ સાહેબ! ટેક્સ્ટ-બેઝ્ડ મોડ સક્રિય થઈ ગયો છે. હવે આપ ટાઇપ કરીને આદેશ આપી શકો છો. વૉઇસ મોડ માટે '/voice' ટાઇપ કરો."
+            resp_en = "Greetings Alpesh Sir! Switched to Text-Based Mode. You can now type your commands directly. Type '/voice' anytime to return to Voice Command Mode."
+
+        # Mode Switch: Switch to Voice Command Mode
+        elif any(w in msg_lower for w in ["switch to voice", "voice mode", "વૉઇસ મોડ", "વાણી મોડ", "change to voice"]):
+            cfg = self.set_interface_mode("voice")
+            action_data["interface_mode"] = cfg
+            action_type = "INTERFACE_MODE_SWITCH"
+            resp_gu = "જય માતાજી અલ્પેશ સાહેબ! વૉઇસ કમાન્ડ મોડ સક્રિય થઈ ગયો છે. હું આપના બોલેલા આદેશ સાંભળવા ૧૦૦% તૈયાર છું."
+            resp_en = "Greetings Alpesh Sir! Switched to Voice Command Mode. I am ready to listen and execute your spoken commands."
 
         # Volume Mute / Unmute
         elif any(w in msg_lower for w in ["mute", "મ્યૂટ", "અવાજ બંધ", "શાંત", "unmute"]):
