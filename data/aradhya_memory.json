@@ -3,11 +3,6 @@
   "learned_habits": {},
   "recent_actions": [
     {
-      "action": "AI_MODEL_SELF_UPDATE",
-      "details": "update ai models",
-      "timestamp": "2026-10-11 20:37:32"
-    },
-    {
       "action": "HACKER_DEFENSE_SHIELD",
       "details": "hacker defense scan",
       "timestamp": "2026-10-11 20:37:39"
@@ -151,6 +146,11 @@
       "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "-v",
       "timestamp": "2026-10-30 22:51:58"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "/voice",
+      "timestamp": "2026-10-31 20:50:53"
     }
   ],
   "custom_aliases": {},
