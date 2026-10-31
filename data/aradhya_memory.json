@@ -3,26 +3,6 @@
   "learned_habits": {},
   "recent_actions": [
     {
-      "action": "OFFLINE_COGNITIVE_REASONING",
-      "details": "EFI MIL blink code P0117 engine coolant temperature",
-      "timestamp": "2026-10-13 00:58:28"
-    },
-    {
-      "action": "OFFLINE_COGNITIVE_REASONING",
-      "details": "Hunter 350 clutch free play adjustment",
-      "timestamp": "2026-10-13 00:58:28"
-    },
-    {
-      "action": "OFFLINE_COGNITIVE_REASONING",
-      "details": "ABS brake fluid DOT 4 bleeding procedure",
-      "timestamp": "2026-10-13 00:58:28"
-    },
-    {
-      "action": "OFFLINE_COGNITIVE_REASONING",
-      "details": "Continental GT 650 tyre pressure and chain slack",
-      "timestamp": "2026-10-13 00:58:28"
-    },
-    {
       "action": "GENERAL_EXECUTIVE",
       "details": "Calculate GST for 15000 parts and 2500 labor",
       "timestamp": "2026-10-13 00:58:29"
@@ -151,6 +131,26 @@
       "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "make aradhya speaking in this laptop for forever",
       "timestamp": "2026-10-31 20:56:25"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "make it speaking",
+      "timestamp": "2026-10-31 20:56:58"
+    },
+    {
+      "action": "HARDWARE_DIAGNOSTIC",
+      "details": "make it speaking through speaker naow",
+      "timestamp": "2026-10-31 20:57:27"
+    },
+    {
+      "action": "HARDWARE_DIAGNOSTIC",
+      "details": "make it speaking through speaker now",
+      "timestamp": "2026-10-31 20:57:39"
+    },
+    {
+      "action": "HARDWARE_DIAGNOSTIC",
+      "details": "make it speaking through speaker now",
+      "timestamp": "2026-10-31 20:57:50"
     }
   ],
   "custom_aliases": {},
