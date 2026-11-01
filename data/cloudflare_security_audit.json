@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-11-01 23:31:22",
+  "timestamp": "2026-11-01 23:47:33",
   "audit_standard": "Cloudflare Zero Trust & OWASP Top 10",
-  "overall_score": 73,
+  "overall_score": 70,
   "grade": "C (Remediation Required)",
   "total_agents_audited": 11,
   "threats_summary": {
-    "total_threats": 9,
+    "total_threats": 10,
     "critical": 0,
     "high": 2,
-    "medium": 5,
+    "medium": 6,
     "low": 2
   },
   "host_os_audit": {
     "status": "WARNING",
-    "active_listening_sockets": 23,
+    "active_listening_sockets": 21,
     "cloudflared_edge_tunnel_active": true,
     "findings": [
       {
@@ -49,6 +49,13 @@
         "category": "ORIGIN_EXPOSURE",
         "title": "Service Bound to All Interfaces (0.0.0.0:3000)",
         "details": "Port 3000 (python3 (PID 1149)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
+        "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
+      },
+      {
+        "severity": "MEDIUM",
+        "category": "ORIGIN_EXPOSURE",
+        "title": "Service Bound to All Interfaces (0.0.0.0:8550)",
+        "details": "Port 8550 (python3 (PID 31537)) accepts connections from all local network interfaces (0.0.0.0) instead of binding to loopback (127.0.0.1) or routing through Cloudflare Zero Trust.",
         "remediation": "Bind service to 127.0.0.1 and tunnel externally via Cloudflare Tunnel."
       }
     ]
@@ -313,7 +320,8 @@
         "Service Bound to All Interfaces (0.0.0.0:8080)",
         "Service Bound to All Interfaces (0.0.0.0:8085)",
         "Service Bound to All Interfaces (0.0.0.0:8899)",
-        "Service Bound to All Interfaces (0.0.0.0:3000)"
+        "Service Bound to All Interfaces (0.0.0.0:3000)",
+        "Service Bound to All Interfaces (0.0.0.0:8550)"
       ],
       "can_autofix": true
     },
@@ -352,5 +360,5 @@
       "can_autofix": false
     }
   ],
-  "duration_seconds": 1537.19
+  "duration_seconds": 27.18
 }
