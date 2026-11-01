@@ -107,6 +107,21 @@ VAULT_CLIPS = {
         "voice": "gu-IN-DhwaniNeural",
         "keywords": ["ટાસ્ક સફળતાપૂર્વક પૂર્ણ થઈ ગયો છે", "task_completed"]
     },
+    "startup_ask_work": {
+        "text": "જય માતાજી અલ્પેશ સાહેબ! હું આરાધ્યા. બોલો સાહેબ, આપનું શું કામ છે? હું આપના આદેશ માટે તૈયાર છું.",
+        "voice": "gu-IN-DhwaniNeural",
+        "keywords": ["બોલો સાહેબ, આપનું શું કામ છે", "startup_ask_work", "આપનું શું કામ છે"]
+    },
+    "hey_aradhya_ack": {
+        "text": "હા અલ્પેશ સાહેબ, બોલો! હું સાંભળી રહી છું.",
+        "voice": "gu-IN-DhwaniNeural",
+        "keywords": ["હા અલ્પેશ સાહેબ, બોલો", "hey_aradhya_ack", "હું સાંભળી રહી છું"]
+    },
+    "task_done_whatsapp": {
+        "text": "અલ્પેશ સાહેબ, આપનો આદેશ સફળતાપૂર્વક પૂર્ણ થઈ ગયો છે અને મેં આપને વ્હોટ્સએપ પર પણ જાણ કરી દીધી છે.",
+        "voice": "gu-IN-DhwaniNeural",
+        "keywords": ["વ્હોટ્સએપ પર પણ જાણ કરી દીધી છે", "task_done_whatsapp", "આદેશ સફળતાપૂર્વક પૂર્ણ"]
+    },
     "help": {
         "text": "હા અલ્પેશ સાહેબ, હું આપના સમગ્ર લેપટોપને નિયંત્રિત કરી શકું છું, ફાઇલો જોઈ શકું છું અને સિસ્ટમ કંટ્રોલ કરી શકું છું.",
         "voice": "gu-IN-DhwaniNeural",
