@@ -3,11 +3,6 @@
   "learned_habits": {},
   "recent_actions": [
     {
-      "action": "ONLINE_GEMINI_INTELLIGENCE",
-      "details": "fix inbuilt camera in this laptop",
-      "timestamp": "2026-10-18 13:45:10"
-    },
-    {
       "action": "HARDWARE_DIAGNOSTIC",
       "details": "fix inbuilt camera in this laptop",
       "timestamp": "2026-10-18 13:53:09"
@@ -151,6 +146,11 @@
       "action": "REMOTE_ACCESS_DIRECTIVE",
       "details": "remote access",
       "timestamp": "2026-11-01 01:46:25"
+    },
+    {
+      "action": "BATTERY_TELEMETRY",
+      "details": "check battery",
+      "timestamp": "2026-11-01 19:11:52"
     }
   ],
   "custom_aliases": {},
