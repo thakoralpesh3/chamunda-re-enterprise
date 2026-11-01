@@ -347,26 +347,43 @@ class AradhyaVoiceEngine:
             static_file = STATIC_VOICE_DIR / f"{cache_key}.mp3"
 
             if not cache_file.exists():
+                edge_success = False
                 try:
                     asyncio.run(self._generate_edge_tts(clean, voice_name, cache_file, pitch="+3Hz", rate="+0%"))
-                    # Copy to static dir for mobile web streaming
-                    if cache_file.exists():
-                        import shutil
-                        shutil.copy2(cache_file, static_file)
+                    if cache_file.exists() and cache_file.stat().st_size > 100:
+                        edge_success = True
                 except Exception as e:
-                    # Fall back instantly to offline vault or spd-say if online generation fails
-                    if vault_match:
-                        clip_name, vault_file = vault_match
-                        self._play_audio_file(vault_file, blocking=blocking)
-                        return {
-                            "success": True,
-                            "mode": "OFFLINE_NEURAL_VAULT",
-                            "engine": f"Pre-Rendered Neural Vault ({clip_name})",
-                            "voice": "gu-IN-DhwaniNeural (Offline Real Girl Voice)",
-                            "audio_file": str(vault_file),
-                            "language": lang,
-                            "text": clean[:100]
-                        }
+                    edge_success = False
+
+                # Fallback to gTTS (Google Text-to-Speech) if Edge TTS is blocked or failed
+                if not edge_success:
+                    try:
+                        import gtts
+                        gtts_lang = "gu" if lang.startswith("gu") else ("hi" if lang.startswith("hi") else "en")
+                        g_tts = gtts.gTTS(clean, lang=gtts_lang)
+                        g_tts.save(str(cache_file))
+                        if cache_file.exists() and cache_file.stat().st_size > 100:
+                            edge_success = True
+                    except Exception:
+                        pass
+
+                # Copy to static dir for mobile web streaming
+                if cache_file.exists():
+                    import shutil
+                    shutil.copy2(cache_file, static_file)
+                elif vault_match:
+                    clip_name, vault_file = vault_match
+                    self._play_audio_file(vault_file, blocking=blocking)
+                    return {
+                        "success": True,
+                        "mode": "OFFLINE_NEURAL_VAULT",
+                        "engine": f"Pre-Rendered Neural Vault ({clip_name})",
+                        "voice": "gu-IN-DhwaniNeural (Offline Real Girl Voice)",
+                        "audio_file": str(vault_file),
+                        "language": lang,
+                        "text": clean[:100]
+                    }
+                else:
                     return self.speak_offline(clean, language=lang)
 
             if cache_file.exists():
