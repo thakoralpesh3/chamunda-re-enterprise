@@ -59,6 +59,12 @@ if ! pgrep -f "aradhya_jarvis_daemon.py" >/dev/null 2>&1; then
     log "🎙️ Real-Time Jarvis Wake-Word Daemon dispatched"
 fi
 
+# 5.2 Launch Aradhya 2D Chibi Desktop Robot Girl Companion
+if ! pgrep -f "aradhya_desktop_companion.py" >/dev/null 2>&1; then
+    python3 "$BASE_DIR/aradhya_desktop_companion.py" >> "$BASE_DIR/data/aradhya_companion.log" 2>&1 &
+    log "🌸 Aradhya 2D Desktop Companion dispatched"
+fi
+
 # 6. Run Daily YouTube Shorts pipeline quietly in background if due for today
 if [ -d "/home/alpesh/jarvis-agent" ]; then
     python3 -c "
