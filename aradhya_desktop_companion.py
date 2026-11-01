@@ -48,13 +48,13 @@ import cairo
 
 SPRITES_DIR = BASE_DIR / "data" / "aradhya_pet" / "sprites"
 
-# Voice greetings when clicked
+# Voice greetings when clicked (BGMI Lobby Bot & Tactical Cyber Girl)
 CLICK_GREETINGS = [
-    "જય માતાજી અલ્પેશ સાહેબ! હું અહીં આપની સાથે છું.",
-    "હા સાહેબ! આરાધ્યા આપની સેવામાં હાજર છે.",
-    "બોલો અલ્પેશ સાહેબ! આજે આપણી સિસ્ટમ માટે શું કાર્ય કરવું છે?",
-    "હું આપના સમગ્ર લેપટોપનું રક્ષણ અને સંચાલન કરી રહી છું, સાહેબ!",
-    "પ્રણામ સાહેબ! આપ ડબલ-ક્લિક કરીને કમાન્ડ કન્સોલ પણ ખોલી શકો છો."
+    "જય માતાજી અલ્પેશ સાહેબ! BGMI લોબીમાં આરાધ્યા આપની સાથે તૈયાર છે!",
+    "વિનર વિનર ચિકન ડિનર! બોલો સાહેબ, કયું મિશન સ્ટાર્ટ કરવું છે?",
+    "હા સાહેબ! લેવલ ૩ સાયબર પ્રોટેક્શન સમગ્ર લેપટોપ પર સક્રિય છે.",
+    "બોલો અલ્પેશ સાહેબ! ડબલ-ક્લિક કરીને કમાન્ડ સેન્ટર લૉન્ચ કરો.",
+    "આરાધ્યા આપની સર્વોચ્ચ એક્ઝિક્યુટિવ એજન્ટ છે, સાહેબ!"
 ]
 
 class AradhyaDesktopPet(Gtk.Window):
@@ -205,6 +205,12 @@ class AradhyaDesktopPet(Gtk.Window):
             key = frames[self.frame_idx % len(frames)]
             self.current_pixbuf = self.sprites.get(key)
 
+        elif self.state == "GAMING":
+            # Playing BGMI on smartphone in lobby!
+            frames = ["game_0", "game_1", "game_2", "game_3"]
+            key = frames[self.frame_idx % len(frames)]
+            self.current_pixbuf = self.sprites.get(key)
+
         elif self.state == "WAVING":
             frames = ["wave_0", "wave_1", "wave_2", "wave_3"]
             key = frames[self.frame_idx % len(frames)]
@@ -227,19 +233,15 @@ class AradhyaDesktopPet(Gtk.Window):
                 self.x = new_x
             self.move(int(self.x), int(self.y))
 
-        elif self.state == "CHEERING":
-            frames = ["cheer_0", "cheer_1"]
+        elif self.state == "AIRDROP":
+            frames = ["airdrop_0", "airdrop_1"]
             key = frames[self.frame_idx % len(frames)]
             self.current_pixbuf = self.sprites.get(key)
 
-        elif self.state == "FLOATING":
-            frames = ["float_0", "float_1", "float_2", "float_1"]
+        elif self.state == "VICTORY":
+            frames = ["dance_0", "dance_1"]
             key = frames[self.frame_idx % len(frames)]
             self.current_pixbuf = self.sprites.get(key)
-            # Gentle hover floating
-            hover_step = math.sin(self.frame_idx * 0.4) * 2
-            self.y += hover_step
-            self.move(int(self.x), int(self.y))
 
         self.queue_draw()
         return True
@@ -251,16 +253,20 @@ class AradhyaDesktopPet(Gtk.Window):
         self.state_timer += 1
         if self.state_timer >= self.target_state_duration:
             self.state_timer = 0
-            # Switch to a random cute behavior
-            choices = ["IDLE", "WAVING", "WALKING", "CHEERING", "FLOATING"]
-            weights = [40, 20, 20, 10, 10]
+            # Switch to a random cute BGMI Lobby behavior
+            choices = ["IDLE", "GAMING", "WAVING", "WALKING", "AIRDROP", "VICTORY"]
+            weights = [30, 25, 15, 15, 8, 7]
             self.state = random.choices(choices, weights=weights)[0]
-            self.target_state_duration = random.randint(5, 18)
+            self.target_state_duration = random.randint(6, 16)
 
-            if self.state == "WAVING":
-                self.say("પ્રણામ સાહેબ! 👋", duration=4)
-            elif self.state == "CHEERING":
-                self.say("આરાધ્યા ૧૦૦% તૈયાર છે! 💖", duration=4)
+            if self.state == "GAMING":
+                self.say(random.choice(["BGMI લોબી મેચિંગ... 🎮", "ચિકન ડિનર કરીશું આજે! 🍗", "પ્લેઇંગ મોડ ઓન... 🕹️"]), duration=5)
+            elif self.state == "WAVING":
+                self.say("પ્રણામ અલ્પેશ સાહેબ! 👋", duration=4)
+            elif self.state == "AIRDROP":
+                self.say("એરડ્રોપ લૂંટ રેડી સાહેબ! 📦🔥", duration=4)
+            elif self.state == "VICTORY":
+                self.say("Winner Winner Chicken Dinner! 🏆", duration=4)
             elif self.state == "WALKING":
                 self.direction = random.choice([1, -1])
 
