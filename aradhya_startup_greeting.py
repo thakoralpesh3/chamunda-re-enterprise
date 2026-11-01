@@ -69,29 +69,19 @@ def run_startup_sequence():
     except Exception:
         pass
 
-    # 3. Spoken Voice Announcement
-    if is_online:
-        spoken_greeting = (
-            f"જય માતાજી અલ્પેશ સાહેબ! હું આરાધ્યા. "
-            f"લેપટોપ સિસ્ટમ સફળતાપૂર્વક ઓનલાઇન થઈ ગઈ છે. "
-            f"બેટરી {bat_pct} ટકા છે, અને ઇન્ટરનેટ કનેક્શન જીવંત છે. "
-            f"સમગ્ર લેપટોપ પર તમામ કંટ્રોલ્સ સક્રિય છે, અને હું આપના આદેશ માટે તૈયાર છું!"
-        )
-    else:
-        spoken_greeting = (
-            f"જય માતાજી અલ્પેશ સાહેબ! હું આરાધ્યા. "
-            f"લેપટોપ ઓફલાઇન એર-ગેપ્ડ ડિફેન્સ મોડમાં સક્રિય છે. "
-            f"બેટરી {bat_pct} ટકા છે. "
-            f"૧૦૦% ઓફલાઇન કંટ્રોલ સક્રિય છે, અને હું આપના આદેશ માટે તૈયાર છું!"
-        )
+    # 3. Spoken Voice Announcement: Direct Gujarati Voice Asking for Work (Real-Time Jarvis)
+    spoken_greeting = (
+        "જય માતાજી અલ્પેશ સાહેબ! હું આરાધ્યા. "
+        "બોલો સાહેબ, આપનું શું કામ છે? હું આપના આદેશ માટે તૈયાર છું."
+    )
 
-    # 3. Spoken Voice Announcement (Instant Pre-rendered Neural Vault First)
     try:
         subprocess.run(["pactl", "set-sink-mute", "@DEFAULT_SINK@", "0"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     except Exception:
         pass
 
-    vault_file = BASE_DIR / "data" / "aradhya_offline_voice_vault" / ("startup_online.mp3" if is_online else "startup_offline.mp3")
+    # Instant Pre-rendered Neural Vault First (startup_ask_work.mp3)
+    vault_file = BASE_DIR / "data" / "aradhya_offline_voice_vault" / "startup_ask_work.mp3"
     played = False
     if vault_file.exists():
         try:
@@ -109,7 +99,7 @@ def run_startup_sequence():
     if not played:
         try:
             voice.speak(spoken_greeting, language="gu", blocking=True)
-        except Exception as e:
+        except Exception:
             voice.speak_offline(spoken_greeting, language="gu")
 
     # 4. Log event
