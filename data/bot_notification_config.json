@@ -30,7 +30,8 @@
       "callmebot_api_key": "",
       "custom_webhook_url": "",
       "notify_on_task_failure": true,
-      "notify_on_critical_issues": true
+      "notify_on_critical_issues": true,
+      "notify_on_work_done": true
     }
   },
   "notification_preferences": {
@@ -39,6 +40,7 @@
     "task_failures": true,
     "startup_sync": true,
     "threat_neutralized": true,
+    "notify_all_to_whatsapp": true,
     "battery_alert_threshold": 15
   }
 }

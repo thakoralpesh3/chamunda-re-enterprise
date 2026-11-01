@@ -1,5 +1,18 @@
 [
   {
+    "id": "NOTIF-1793540688",
+    "timestamp": "2026-11-01 19:14:48",
+    "title": "✅ કામ પૂર્ણ (Work Done): ટેસ્ટ ટાસ્ક (Test Task)",
+    "message": "જય માતાજી અલ્પેશ સાહેબ! Aradhya CEO દ્વારા આપનું સોંપેલું કામ સફળતાપૂર્વક પૂર્ણ થઈ ગયું છે.",
+    "category": "WORK_DONE",
+    "details": "આરાધ્યા જારવિસ કમાન્ડ ટેસ્ટિંગ પૂર્ણ.",
+    "solution": "કાર્ય સફળ થયેલ છે.",
+    "dispatched_channels": [
+      "desktop_banner",
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1793540542",
     "timestamp": "2026-11-01 19:12:22",
     "title": "✅ કામ પૂર્ણ (Work Done): check battery",
