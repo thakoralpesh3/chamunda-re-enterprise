@@ -240,7 +240,7 @@ class AradhyaDesktopPet(Gtk.Window):
             self.current_pixbuf = self.sprites.get(key)
 
         elif self.state == "VICTORY":
-            frames = ["dance_0", "dance_1"]
+            frames = ["dance_0", "dance_1", "dance_2", "dance_3"]
             key = frames[self.frame_idx % len(frames)]
             self.current_pixbuf = self.sprites.get(key)
 
