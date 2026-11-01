@@ -79,7 +79,7 @@ class AradhyaDesktopPet(Gtk.Window):
         self.screen_height = screen.get_height()
 
         # Window dimension
-        self.pet_w = 140
+        self.pet_w = 150
         self.pet_h = 160
         self.set_size_request(self.pet_w, self.pet_h)
 
