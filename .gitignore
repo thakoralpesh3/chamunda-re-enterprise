@@ -29,6 +29,8 @@ data/*.pid
 data/chhaya_public_url.txt
 data/whatsapp_last_delivery.png
 data/whatsapp_outbox.json
+data/system_autonomous_healing.json
+data/cloudflare_security_audit.json
 
 # Browser Profiles & Session Cookies
 data/whatsapp_bot_firefox/
@@ -36,6 +38,8 @@ data/whatsapp_bot_session.json
 
 # Audio Caches & Dynamic Media
 data/aradhya_voice_cache/
+static/voice_cache/
+static/whatsapp_pair_qr.png
 data/recordings/
 data/invoices/
 data/pos_receipts/

@@ -211,16 +211,16 @@ class OmniGitSyncEngine:
                 logger.info("🚀 [%s] Successfully pushed updates to GitHub origin/main!", name)
                 return True, f"Successfully pushed {name} updates at {timestamp}"
             else:
-                # Attempt auto-rebase if remote has new commits
-                rebase_res = subprocess.run(
-                    [self.git_bin, "pull", "--rebase", "origin", "main"],
+                # Attempt auto-merge if remote has new commits from GitHub Actions / Cloud Simulator
+                merge_res = subprocess.run(
+                    [self.git_bin, "pull", "--no-rebase", "-s", "ort", "-X", "theirs", "origin", "main", "-m", f"🤖 Auto-merge upstream cloud updates into {name}"],
                     cwd=str(repo_dir),
                     env=self.env,
                     capture_output=True,
                     text=True,
                     timeout=60
                 )
-                if rebase_res.returncode == 0:
+                if merge_res.returncode == 0:
                     retry_push = subprocess.run(
                         [self.git_bin, "push", "origin", "main"],
                         cwd=str(repo_dir),
@@ -230,10 +230,8 @@ class OmniGitSyncEngine:
                         timeout=60
                     )
                     if retry_push.returncode == 0:
-                        logger.info("🚀 [%s] Successfully rebased and pushed updates to GitHub origin/main!", name)
-                        return True, f"Successfully rebased and pushed {name} updates at {timestamp}"
-                else:
-                    subprocess.run([self.git_bin, "rebase", "--abort"], cwd=str(repo_dir), env=self.env)
+                        logger.info("🚀 [%s] Successfully merged and pushed updates to GitHub origin/main!", name)
+                        return True, f"Successfully merged and pushed {name} updates at {timestamp}"
                 logger.warning("Push warning for %s: %s", name, push_res.stderr)
                 return False, f"Push error: {push_res.stderr.strip()}"
 
