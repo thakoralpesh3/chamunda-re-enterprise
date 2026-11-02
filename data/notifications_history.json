@@ -1,5 +1,17 @@
 [
   {
+    "id": "NOTIF-1793627066",
+    "timestamp": "2026-11-02 19:14:26",
+    "title": "💻 લેપટોપ શરૂ થયું (Offline Air-Gap Mode)",
+    "message": "જય માતાજી અલ્પેશ સાહેબ! ઇન્ટરનેટ કનેક્શન ન હોવાથી આરાધ્યા ૧૦૦% ઓફલાઇન મોડમાં સક્રિય છે.",
+    "category": "INFO",
+    "details": "Offline AI Models, Voice Vault, and Dealership ERP running locally.",
+    "solution": "જ્યારે Wi-Fi / હોટસ્પોટ કનેક્ટ થશે ત્યારે સિસ્ટમ આપમેળે GitHub સાથે સિન્ક કરી લેશે.",
+    "dispatched_channels": [
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1793553607",
     "timestamp": "2026-11-01 22:50:07",
     "title": "💻 લેપટોપ શરૂ થયું • GitHub Auto-Sync પૂર્ણ",
