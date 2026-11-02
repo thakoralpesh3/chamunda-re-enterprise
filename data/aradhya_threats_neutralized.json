@@ -325,5 +325,19 @@
     "port": 8888,
     "threat_type": "BACKDOOR_LISTENER_EXPOSED",
     "action_taken": "PORT_LISTENER_KILLED"
+  },
+  {
+    "timestamp": "2026-11-03 00:53:03",
+    "pid": 203077,
+    "port": 8888,
+    "threat_type": "BACKDOOR_LISTENER_EXPOSED",
+    "action_taken": "PORT_LISTENER_KILLED"
+  },
+  {
+    "timestamp": "2026-11-03 00:53:34",
+    "pid": 203424,
+    "port": 8888,
+    "threat_type": "BACKDOOR_LISTENER_EXPOSED",
+    "action_taken": "PORT_LISTENER_KILLED"
   }
 ]
