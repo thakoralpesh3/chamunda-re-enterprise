@@ -288,6 +288,22 @@ class AradhyaJarvisDaemon:
         log("Aradhya Real-Time Jarvis Daemon Stopped.")
 
 def main():
+    # Enforce strict single-instance daemon
+    if PID_FILE.exists():
+        try:
+            old_pid = int(PID_FILE.read_text().strip())
+            if old_pid != os.getpid() and Path(f"/proc/{old_pid}").exists():
+                try:
+                    cmdline = Path(f"/proc/{old_pid}/cmdline").read_text()
+                    if "aradhya_jarvis_daemon.py" in cmdline:
+                        log(f"⚠️ Terminating existing duplicate Jarvis daemon (PID: {old_pid})...")
+                        os.kill(old_pid, signal.SIGTERM)
+                        time.sleep(1)
+                except Exception:
+                    pass
+        except Exception:
+            pass
+
     daemon = AradhyaJarvisDaemon()
 
     def _sig_handler(sig, frame):
