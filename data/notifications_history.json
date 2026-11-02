@@ -1,5 +1,18 @@
 [
   {
+    "id": "NOTIF-1793642221",
+    "timestamp": "2026-11-02 23:27:01",
+    "title": "સિસ્ટમ તપાસ",
+    "message": "આરાધ્યા એજન્ટ સફળતાપૂર્વક તપાસવામાં આવ્યો છે.",
+    "category": "INFO",
+    "details": "",
+    "solution": "",
+    "dispatched_channels": [
+      "desktop_banner",
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1793640221",
     "timestamp": "2026-11-02 22:53:41",
     "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
