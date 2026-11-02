@@ -121,7 +121,7 @@ def draw_aradhya_sprite(
 
     # --- 5. Arms & Prop Hands based on Action ---
     if action == "phone":
-        # Holding glowing cyber smartphone in both hands playing BGMI!
+        # Holding glowing cyber smartphone in both hands inspecting data
         d.polygon([(cx - 22, cy + 16), (cx - 12, cy + 28), (cx - 6, cy + 36), (cx - 20, cy + 30)], fill=C_ARMOR_GREY)
         d.polygon([(cx + 22, cy + 16), (cx + 12, cy + 28), (cx + 6, cy + 36), (cx + 20, cy + 30)], fill=C_ARMOR_GREY)
         # Phone Body
@@ -129,7 +129,7 @@ def draw_aradhya_sprite(
         px, py = cx + phone_tilt, cy + 30
         d.rounded_rectangle([px - 16, py - 4, px + 16, py + 12], radius=3, fill=C_PHONE_BODY, outline=C_GOLD, width=1)
         d.rectangle([px - 14, py - 2, px + 14, py + 10], fill=C_PHONE_SCREEN)
-        # Screen Mini Joystick & Action Buttons (playing BGMI)
+        # Screen Mini Status Indicators
         d.ellipse([px - 11, py + 1, px - 6, py + 6], fill=(0, 100, 255, 255))
         d.ellipse([px + 7, py + 2, px + 11, py + 6], fill=C_NEON_ORANGE)
         # Thumbs tapping
@@ -150,10 +150,10 @@ def draw_aradhya_sprite(
         d.ellipse([cx + 19, cy + 34, cx + 30, cy + 42], fill=C_SKIN)
 
     elif action == "airdrop":
-        # Holding Mini Glowing Airdrop Crate like a trophy!
+        # Holding Mini Glowing Secure Package Crate like a trophy!
         d.polygon([(cx - 22, cy + 16), (cx - 10, cy + 26), (cx - 6, cy + 36), (cx - 20, cy + 30)], fill=C_ARMOR_GREY)
         d.polygon([(cx + 22, cy + 16), (cx + 10, cy + 26), (cx + 6, cy + 36), (cx + 20, cy + 30)], fill=C_ARMOR_GREY)
-        # Airdrop Crate (Red top, Blue bottom, iconic BGMI)
+        # Secure Crate
         ax, ay = cx, cy + 30
         d.rectangle([ax - 12, ay - 6, ax + 12, ay + 1], fill=C_AIRDROP_RED)    # Red Roof
         d.rectangle([ax - 12, ay + 1, ax + 12, ay + 12], fill=C_AIRDROP_BLUE) # Blue Box
