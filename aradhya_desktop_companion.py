@@ -49,13 +49,13 @@ import cairo
 
 SPRITES_DIR = BASE_DIR / "data" / "aradhya_pet" / "sprites"
 
-# Voice greetings when clicked (BGMI Lobby Bot & Tactical Cyber Girl)
+# Voice greetings when clicked (Aradhya Autonomous Companion)
 CLICK_GREETINGS = [
-    "જય માતાજી અલ્પેશ સાહેબ! BGMI લોબીમાં આરાધ્યા આપની સાથે તૈયાર છે!",
-    "વિનર વિનર ચિકન ડિનર! બોલો સાહેબ, કયું મિશન સ્ટાર્ટ કરવું છે?",
-    "હા સાહેબ! લેવલ ૩ સાયબર પ્રોટેક્શન સમગ્ર લેપટોપ પર સક્રિય છે.",
+    "જય માતાજી અલ્પેશ સાહેબ! હું અહીં આપની સાથે તૈયાર છું.",
+    "પ્રણામ અલ્પેશ સાહેબ! બોલો સાહેબ, આપનું શું કામ છે?",
+    "હા સાહેબ! સાયબર પ્રોટેક્શન સમગ્ર લેપટોપ પર સક્રિય છે.",
     "બોલો અલ્પેશ સાહેબ! ડબલ-ક્લિક કરીને કમાન્ડ સેન્ટર લૉન્ચ કરો.",
-    "આરાધ્યા આપની સર્વોચ્ચ એક્ઝિક્યુટિવ એજન્ટ છે, સાહેબ!"
+    "આરાધ્યા આપની સેવામાં ૧૦૦% હાજર છે, સાહેબ!"
 ]
 
 class AradhyaDesktopPet(Gtk.Window):
@@ -207,7 +207,7 @@ class AradhyaDesktopPet(Gtk.Window):
             self.current_pixbuf = self.sprites.get(key)
 
         elif self.state == "GAMING":
-            # Playing BGMI on smartphone in lobby!
+            # Interactive smartphone inspection
             frames = ["game_0", "game_1", "game_2", "game_3"]
             key = frames[self.frame_idx % len(frames)]
             self.current_pixbuf = self.sprites.get(key)
@@ -254,20 +254,20 @@ class AradhyaDesktopPet(Gtk.Window):
         self.state_timer += 1
         if self.state_timer >= self.target_state_duration:
             self.state_timer = 0
-            # Switch to a random cute BGMI Lobby behavior
+            # Switch to a random cute autonomous behavior
             choices = ["IDLE", "GAMING", "WAVING", "WALKING", "AIRDROP", "VICTORY"]
             weights = [30, 25, 15, 15, 8, 7]
             self.state = random.choices(choices, weights=weights)[0]
             self.target_state_duration = random.randint(6, 16)
 
             if self.state == "GAMING":
-                self.say(random.choice(["BGMI લોબી મેચિંગ... 🎮", "ચિકન ડિનર કરીશું આજે! 🍗", "પ્લેઇંગ મોડ ઓન... 🕹️"]), duration=5)
+                self.say(random.choice(["સિસ્ટમ મોનિટરિંગ... 📱", "ડેટા પ્રોસેસિંગ મોડ... ⚡", "આરાધ્યા સ્ટેન્ડબાય... ✨"]), duration=5)
             elif self.state == "WAVING":
                 self.say("પ્રણામ અલ્પેશ સાહેબ! 👋", duration=4)
             elif self.state == "AIRDROP":
-                self.say("એરડ્રોપ લૂંટ રેડી સાહેબ! 📦🔥", duration=4)
+                self.say("સુરક્ષા પેકેજ તૈયાર છે સાહેબ! 📦✨", duration=4)
             elif self.state == "VICTORY":
-                self.say("Winner Winner Chicken Dinner! 🏆", duration=4)
+                self.say("તમામ સિસ્ટમ સફળતાપૂર્વક સક્રિય છે! 🌟", duration=4)
             elif self.state == "WALKING":
                 self.direction = random.choice([1, -1])
 
