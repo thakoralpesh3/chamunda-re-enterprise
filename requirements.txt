@@ -8,3 +8,5 @@ qrcode[pil]>=7.4.2
 pillow>=10.2.0
 pytz>=2024.1
 selenium>=4.18.0
+python-multipart>=0.0.9
+
