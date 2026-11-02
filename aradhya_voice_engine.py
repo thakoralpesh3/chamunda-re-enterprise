@@ -496,10 +496,11 @@ class AradhyaVoiceEngine:
 
             audio_bytes = wav_file.read_bytes()
             prompt = """
-Listen to this audio command from Alpesh Sir.
+Listen to this microphone audio from Alpesh Sir.
 Transcribe the user's spoken words verbatim.
-The language is likely Gujarati, Hindi, or Indian English.
-Return ONLY the transcribed text. Do not add explanations or quotes.
+The language is likely Gujarati, Hindi, or Indian English (for example: 'Hey Aradhya', 'હે આરાધ્યા', or a system/business command).
+If there is no clear speech, or only background ambient silence/noise/hum, return EXACTLY: [SILENCE]
+Do NOT return timestamps like '00:01', do not add explanations or quotes. Return ONLY the spoken words.
 """
             models_to_try = ["gemini-3.5-flash-lite", "gemini-3.5-flash"]
             last_e = None
@@ -522,6 +523,8 @@ Return ONLY the transcribed text. Do not add explanations or quotes.
                         )
                         text = (response.text or "").strip()
                         if text:
+                            if text == "[SILENCE]" or any(h in text.lower() for h in ["00:01", "subtitles by", "translated by"]):
+                                text = ""
                             return {
                                 "success": True,
                                 "transcribed_text": text,
