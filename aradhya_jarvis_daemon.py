@@ -40,9 +40,11 @@ PID_FILE = Path("/tmp/aradhya_jarvis.pid")
 
 # Wake-word triggers in English and Gujarati scripts
 WAKE_WORDS = [
-    "hey aradhya", "hey radhya", "hey aaradhya", "hello aradhya", "hi aradhya",
-    "aradhya", "aaradhya", "radhya", "aradhya ji",
-    "હે આરાધ્યા", "આરાધ્યા", "ઓ આરાધ્યા", "નમસ્તે આરાધ્યા", "જય માતાજી આરાધ્યા"
+    "hey aradhya", "hey radhya", "hey aaradhya", "hello aradhya", "hi aradhya", "ok aradhya",
+    "aradhya", "aaradhya", "radhya", "aradhya ji", "hey aradhya ji",
+    "હે આરાધ્યા", "આરાધ્યા", "ઓ આરાધ્યા", "નમસ્તે આરાધ્યા", "જય માતાજી આરાધ્યા",
+    "સુનો આરાધ્યા", "બોલો આરાધ્યા", "આરાધ્યાજી", "હેય આરાધ્યા", "અરાધ્યા",
+    "hey jarvis", "jarvis", "જારવિસ", "હે જારવિસ"
 ]
 
 def log(msg: str):
@@ -67,8 +69,8 @@ class AradhyaJarvisDaemon:
         # Audio parameters
         self.sample_rate = 16000
         self.channels = 1
-        self.chunk_duration = 3  # seconds per listening frame
-        self.energy_threshold = 400  # RMS threshold for voice activity detection
+        self.chunk_duration = 3.5  # seconds per listening frame
+        self.energy_threshold = 200  # RMS threshold for voice activity detection
 
     def calculate_rms(self, wav_path: Path) -> float:
         """Calculate Root Mean Square (audio energy level) of WAV file."""
@@ -157,6 +159,15 @@ class AradhyaJarvisDaemon:
 
         try:
             log("⚡ Wake Word Detected! Acknowledging Alpesh Sir...")
+            try:
+                subprocess.run(
+                    ["notify-send", "-u", "normal", "-t", "5000", "⚡ આરાધ્યા એક્ટિવ (Jarvis Mode)", "હા અલ્પેશ સાહેબ, બોલો! હું સાંભળી રહી છું..."],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL
+                )
+            except Exception:
+                pass
+
             self.speak_acknowledgement()
 
             # Check if command was spoken in the same utterance as the wake word
@@ -164,11 +175,21 @@ class AradhyaJarvisDaemon:
 
             if not command:
                 log("🎙️ Listening for Alpesh Sir's direct command (6s)...")
+                try:
+                    subprocess.run(
+                        ["notify-send", "-u", "low", "-t", "6000", "🎙️ આરાધ્યા સાંભળી રહી છે...", "બોલો અલ્પેશ સાહેબ, આપનો આદેશ શું છે?"],
+                        stdout=subprocess.DEVNULL,
+                        stderr=subprocess.DEVNULL
+                    )
+                except Exception:
+                    pass
                 cmd_wav = Path("/tmp/aradhya_jarvis_cmd.wav")
                 if self.record_chunk(cmd_wav, duration=6):
                     trans_res = self.voice.transcribe_audio(cmd_wav)
                     if trans_res.get("success"):
                         command = trans_res.get("transcribed_text", "").strip()
+                        if command == "[SILENCE]":
+                            command = ""
 
             if not command:
                 log("⚠️ No actionable command captured. Returning to standby.")
@@ -226,7 +247,7 @@ class AradhyaJarvisDaemon:
                 time.sleep(0.5)
                 continue
 
-            # Record a sliding 3-second audio chunk
+            # Record audio chunk
             rec_ok = self.record_chunk(chunk_path, duration=self.chunk_duration)
             if not rec_ok:
                 time.sleep(0.2)
@@ -246,6 +267,10 @@ class AradhyaJarvisDaemon:
                 continue
 
             text = trans.get("transcribed_text", "").strip()
+            if not text or text == "[SILENCE]":
+                time.sleep(0.1)
+                continue
+
             log(f"Audio detected (RMS {int(rms)}): \"{text}\"")
 
             if self.check_wake_word(text):
