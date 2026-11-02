@@ -1,5 +1,18 @@
 [
   {
+    "id": "NOTIF-1793639937",
+    "timestamp": "2026-11-02 22:48:57",
+    "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
+    "message": "ધ્યાન આપો અલ્પેશ સાહેબ! સિસ્ટમમાં સમસ્યા જણાઈ છે:\nEdge tunnel probe failed or revoked. Fresh tunnel spawned.",
+    "category": "WARNING",
+    "details": "Edge tunnel probe failed or revoked. Fresh tunnel spawned.",
+    "solution": "વોચડોગ દ્વારા નવી SSH સુરક્ષિત ટનલ આપમેળે બનાવી દેવામાં આવી છે.",
+    "dispatched_channels": [
+      "desktop_banner",
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1793627066",
     "timestamp": "2026-11-02 19:14:26",
     "title": "💻 લેપટોપ શરૂ થયું (Offline Air-Gap Mode)",
