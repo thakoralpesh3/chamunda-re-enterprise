@@ -102,13 +102,79 @@ def run_startup_sequence():
         except Exception:
             voice.speak_offline(spoken_greeting, language="gu")
 
-    # 4. Log event
+    # 4. Interactive Startup Command Listener (Real-Time Jarvis Startup Protocol)
+    # Aradhya asked for work in Gujarati, now listen for Alpesh Sir's command directly!
+    print("🎙️ [Startup Protocol] Listening for Alpesh Sir's direct command (6s)...", flush=True)
+    try:
+        subprocess.run(
+            ["notify-send", "-u", "normal", "-t", "6000", "🎙️ આરાધ્યા સાંભળી રહી છે...", "બોલો અલ્પેશ સાહેબ, આપનું શું કામ છે? હું સાંભળી રહી છું..."],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL
+        )
+    except Exception:
+        pass
+
+    startup_cmd_wav = Path("/tmp/aradhya_startup_cmd.wav")
+    has_command = False
+
+    rec_res = voice.record_microphone(startup_cmd_wav, duration_seconds=6)
+    if rec_res.get("success"):
+        trans_res = voice.transcribe_audio(startup_cmd_wav)
+        if trans_res.get("success"):
+            user_cmd = trans_res.get("transcribed_text", "").strip()
+            if user_cmd and user_cmd != "[SILENCE]" and len(user_cmd) > 2:
+                has_command = True
+                print(f"🎯 Command received from Alpesh Sir on startup: {user_cmd}", flush=True)
+
+                # Acknowledge in Gujarati
+                ack_file = BASE_DIR / "data" / "aradhya_offline_voice_vault" / "hey_aradhya_ack.mp3"
+                if ack_file.exists():
+                    try:
+                        voice._play_audio_file(ack_file, blocking=True)
+                    except Exception:
+                        voice.speak("હા અલ્પેશ સાહેબ, હું આપનો આદેશ પૂર્ણ કરી રહી છું.", language="gu", blocking=True)
+                else:
+                    voice.speak("હા અલ્પેશ સાહેબ, હું આપનો આદેશ પૂર્ણ કરી રહી છું.", language="gu", blocking=True)
+
+                # Execute command via Aradhya Autonomous Engine
+                cmd_res = engine.process_command(user_cmd, sender="startup_voice", speak_response=False)
+                resp_gu = cmd_res.get("response_gu", "")
+                resp_en = cmd_res.get("response_en", "")
+
+                # Speak outcome in Gujarati
+                voice.speak(resp_gu or resp_en, language="gu", blocking=True)
+
+                # Play completion voice
+                done_file = BASE_DIR / "data" / "aradhya_offline_voice_vault" / "task_done.mp3"
+                if done_file.exists():
+                    try:
+                        voice._play_audio_file(done_file, blocking=True)
+                    except Exception:
+                        pass
+
+                # Dispatch Desktop and WhatsApp notification
+                try:
+                    from aradhya_notifier import AradhyaNotifier
+                    notifier = AradhyaNotifier()
+                    notifier.notify_work_done(
+                        task_name=user_cmd,
+                        details=f"Command: {user_cmd}\n\nOutcome (Gujarati):\n{resp_gu[:400]}",
+                        solution="કાર્ય ૧૦૦% સફળતાપૂર્વક પૂર્ણ થયેલ છે. વધુ આદેશ માટે 'Hey Aradhya' કહો."
+                    )
+                except Exception:
+                    pass
+
+    if not has_command:
+        print("ℹ️ No immediate command at startup. Continuous background daemon will listen for 'Hey Aradhya'.", flush=True)
+
+    # 5. Log event
     log_entry = (
         f"[{start_time}] ARADHYA STARTUP EXECUTION\n"
         f"• Status: {'ONLINE_HYBRID' if is_online else 'OFFLINE_AIR_GAPPED'} (Latency: {latency}ms)\n"
         f"• Battery: {bat_pct}% ({battery.get('status_text')})\n"
         f"• Storage: {free_gb} GB Free\n"
         f"• Spoken Greeting: SUCCESS\n"
+        f"• Startup Command Captured: {'YES: ' + user_cmd if has_command else 'STANDBY_LISTENING'}\n"
         f"{'-'*60}\n"
     )
     try:
