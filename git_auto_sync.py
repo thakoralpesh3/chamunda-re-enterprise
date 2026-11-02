@@ -142,6 +142,30 @@ class GitAutoSyncEngine:
                 logger.info("🚀 Successfully pushed updates to GitHub origin/main!")
                 return True, f"Synchronized successfully with GitHub at {timestamp}"
             else:
+                # Attempt auto-rebase if remote has new commits
+                rebase_res = subprocess.run(
+                    [self.git_bin, "pull", "--rebase", "origin", "main"],
+                    cwd=str(self.repo_dir),
+                    env=self.env,
+                    capture_output=True,
+                    text=True,
+                    timeout=60
+                )
+                if rebase_res.returncode == 0:
+                    retry_push = subprocess.run(
+                        [self.git_bin, "push", "origin", "main"],
+                        cwd=str(self.repo_dir),
+                        env=self.env,
+                        capture_output=True,
+                        text=True,
+                        timeout=60
+                    )
+                    if retry_push.returncode == 0:
+                        self.last_sync_time = time.time()
+                        logger.info("🚀 Successfully rebased and pushed updates to GitHub origin/main!")
+                        return True, f"Synchronized successfully with GitHub at {timestamp}"
+                else:
+                    subprocess.run([self.git_bin, "rebase", "--abort"], cwd=str(self.repo_dir), env=self.env)
                 logger.warning("Git push warning: %s", push_res.stderr)
                 return False, f"Push error: {push_res.stderr.strip()}"
 
