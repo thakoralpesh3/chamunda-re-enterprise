@@ -11,5 +11,18 @@
       "response_gu": "જય માતાજી અલ્પેશ સાહેબ. પ્રાયોજક છાયા (Project Chhaya) વર્કસ્ટેશન પરથી આરાધ્યા હાજર છે. 00:00:02 ના સમય પર આપના આદેશની રાહ જોઉં છું. ડેલ ઇન્સપિરોન 3542 પર તમામ રોયલ એનફિલ્ડ વર્કશોપ ઓપરેશન્સ, ઇન્વેન્ટરી સિન્ક અને લિનક્સ સિસ્ટમ પેરામીટર્સ ઉત્તમ સ્થિતિમાં ચાલી રહ્યા છે. વ્યાપાર વૃદ્ધિ, વીઆઇપી સર્વિસ શેડ્યૂલ અથવા સિસ્ટમ ઓપ્ટિમાઇઝેશન માટે આપના આદેશની પ્રતીક્ષા છે. આપણો આગામી ઓપરેશનલ હેતુ શું છે?",
       "latency_ms": 1726
     }
+  },
+  "4debe874a740e365636dc7b51469c515": {
+    "cached_at": 1793627260.9204948,
+    "data": {
+      "success": true,
+      "used_llm": true,
+      "model_used": "gemini-3.5-flash-lite",
+      "badge": "🌱 Flash Lite",
+      "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite",
+      "response_en": "Jai Mataji, Alpesh Sir. Aradhya here, CEO of Project Chhaya. Monitoring systems at Chamunda Automobile Parts & Service. All digital diagnostics, inventory pipelines, and workshop operations are running at peak efficiency on our Linux Mint infrastructure. Awaiting your command for today's Royal Enfield service scheduling or business analytics.",
+      "response_gu": "જય માતાજી અલ્પેશ સાહેબ. પ્રોજેક્ટ છાયાના CEO આરાધ્યા. ચામુંડા ઓટોમોબાઈલ પાર્ટ્સ એન્ડ સર્વિસ પર સિસ્ટમ્સનું સંચાલન સંપૂર્ણપણે સક્રિય છે. આપણી લિનક્સ મિન્ટ સિસ્ટમ પર તમામ ડિજિટલ ડાયગ્નોસ્ટિક્સ અને વર્કશોપ ઓપરેશન્સ ઉત્તમ રીતે ચાલી રહ્યા છે. આજની રોયલ એનફિલ્ડ સર્વિસ અથવા બિઝનેસ એનાલિટિક્સ માટે આપનો આદેશ શું છે?",
+      "latency_ms": 6379
+    }
   }
 }
