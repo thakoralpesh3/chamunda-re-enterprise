@@ -1245,6 +1245,6 @@ INDEX_HTML = r"""<!DOCTYPE html>
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 3000))
-    host = os.environ.get("HOST", "0.0.0.0")
+    host = os.environ.get("HOST", "127.0.0.1")
     logger.info("Starting Open WebUI on http://%s:%s (Voice-First & Text)", host, port)
     uvicorn.run(app, host=host, port=port, log_level="warning")
