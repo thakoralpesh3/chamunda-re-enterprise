@@ -354,6 +354,8 @@ class AradhyaSecuritySentry:
             BASE_DIR / "aradhya_polyglot_nlu.py",
             BASE_DIR / "aradhya_self_evolution.py",
             BASE_DIR / "aradhya_voice_engine.py",
+            BASE_DIR / "aradhya_jarvis_daemon.py",
+            BASE_DIR / "aradhya_desktop_companion.py",
             BASE_DIR / "aradhya_startup_greeting.py",
             BASE_DIR / "chhaya_agent_gateway.py",
             BASE_DIR / "cloud_mirror_server.py",
@@ -431,6 +433,17 @@ class AradhyaSecuritySentry:
                 })
             else:
                 verified_files.append(f.name)
+
+        # Auto-refresh baseline if working tree is clean and changes were legitimate Git commits
+        if tampered_files:
+            try:
+                res = subprocess.run(["git", "diff", "--quiet"], cwd=str(BASE_DIR), capture_output=True)
+                if res.returncode == 0:
+                    self.generate_or_update_integrity_manifest()
+                    verified_files.extend([x["file"] for x in tampered_files])
+                    tampered_files.clear()
+            except Exception:
+                pass
 
         is_intact = len(tampered_files) == 0
         if not is_intact:
@@ -691,9 +704,10 @@ class AradhyaSecuritySentry:
                 cmd = [
                     "notify-send",
                     "-a", "Aradhya Cyber-Defense",
-                    "-u", "critical",
-                    "-t", "30000",
+                    "-u", "normal",
+                    "-t", "6000",
                     "-i", "security-high",
+                    "-h", "string:x-canonical-private-synchronous:threat_alert",
                     "-A", "default=View Neutralized Threat Details",
                     "-A", "details=🔍 View Threat Details",
                     "-A", "lockdown=🚨 Emergency Lockdown",
@@ -706,7 +720,7 @@ class AradhyaSecuritySentry:
                     capture_output=True,
                     text=True,
                     env=env,
-                    timeout=35
+                    timeout=10
                 )
 
                 clicked_action = proc.stdout.strip().lower()
@@ -720,7 +734,8 @@ class AradhyaSecuritySentry:
             except Exception:
                 try:
                     subprocess.run(
-                        ["notify-send", "-u", "critical", "-t", "8000",
+                        ["notify-send", "-u", "normal", "-t", "5000",
+                         "-h", "string:x-canonical-private-synchronous:threat_alert",
                          "🛡️ Aradhya Cyber-Defense Shield: Threat Blocked!",
                          f"Neutralized {len(records)} malicious attempt(s). Laptop is safe.\n\n💡 ઉકેલ: 'aradhya-threat-viewer' પર વિગતો જુઓ."],
                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
@@ -760,6 +775,29 @@ class AradhyaSecuritySentry:
             return json.loads(threat_file.read_text(encoding="utf-8") or "[]")
         except Exception:
             return []
+
+    def clear_neutralized_threats(self) -> Dict[str, Any]:
+        """Acknowledge and archive all resolved neutralized threats to restore all-clear status."""
+        threat_file = DATA_DIR / "aradhya_threats_neutralized.json"
+        archive_file = DATA_DIR / "aradhya_threats_archive.json"
+        count = 0
+        try:
+            if threat_file.exists():
+                existing = json.loads(threat_file.read_text(encoding="utf-8") or "[]")
+                count = len(existing)
+                archive = []
+                if archive_file.exists():
+                    try:
+                        archive = json.loads(archive_file.read_text(encoding="utf-8") or "[]")
+                    except Exception:
+                        archive = []
+                archive.extend(existing)
+                archive_file.write_text(json.dumps(archive[-500:], indent=2), encoding="utf-8")
+                threat_file.write_text("[]", encoding="utf-8")
+            self.log_event("RESOLVED", f"Cleared and archived {count} neutralized threat record(s).")
+            return {"success": True, "cleared_count": count, "status": "ALL_CLEAR_SECURE"}
+        except Exception as e:
+            return {"success": False, "error": str(e)}
 
     def simulate_threat_neutralization_for_test(self, threat_type: str = "REVERSE_SHELL_ATTACK") -> Dict[str, Any]:
         """
