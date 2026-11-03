@@ -470,19 +470,39 @@ class AradhyaVoiceEngine:
         except Exception as e:
             return {"success": False, "error": str(e)}
 
+    def transcribe_offline_vosk(self, wav_file: Path) -> Dict[str, Any]:
+        """Transcribe audio using local Vosk model (100% offline)."""
+        model_path = Path("/home/alpesh/.cache/vosk/vosk-model-small-en-us-0.15")
+        if not model_path.exists():
+            return {"success": False, "error": "Vosk model not found."}
+        try:
+            import json
+            import wave
+            from vosk import Model, KaldiRecognizer
+            m = Model(str(model_path))
+            with wave.open(str(wav_file), "rb") as wf:
+                r = KaldiRecognizer(m, wf.getframerate())
+                while True:
+                    data = wf.readframes(4000)
+                    if len(data) == 0:
+                        break
+                    r.AcceptWaveform(data)
+                res = json.loads(r.FinalResult())
+                text = res.get("text", "").strip()
+                return {"success": True, "transcribed_text": text, "model_used": "vosk-offline"}
+        except Exception as e:
+            return {"success": False, "error": str(e)}
+
     def transcribe_audio(self, wav_file: Path) -> Dict[str, Any]:
         """
         Transcribe recorded audio file.
-        Uses Google Gemini Multimodal Audio (gemini-3.5-flash) when online.
+        Uses Google Gemini Multimodal Audio when online, falling back to local Vosk offline.
         """
         if not wav_file.exists():
             return {"success": False, "error": "Audio file does not exist."}
 
         if not self.check_internet():
-            return {
-                "success": False,
-                "error": "Offline Mode: Gemini audio transcription requires internet connectivity."
-            }
+            return self.transcribe_offline_vosk(wav_file)
 
         try:
             from google import genai
@@ -492,7 +512,7 @@ class AradhyaVoiceEngine:
             pool = get_api_key_pool()
             candidate_keys = pool.get_candidate_keys()
             if not candidate_keys:
-                return {"success": False, "error": "No API keys configured."}
+                return self.transcribe_offline_vosk(wav_file)
 
             audio_bytes = wav_file.read_bytes()
             prompt = """
@@ -537,8 +557,15 @@ Do NOT return timestamps like '00:01', do not add explanations or quotes. Return
                             pool.mark_model_exhausted(key, model_candidate, cooldown_seconds=3600)
                         continue
 
+            # Fall back to local Vosk
+            vosk_res = self.transcribe_offline_vosk(wav_file)
+            if vosk_res.get("success"):
+                return vosk_res
             return {"success": False, "error": f"Audio transcription limit reached: {last_e}"}
         except Exception as e:
+            vosk_res = self.transcribe_offline_vosk(wav_file)
+            if vosk_res.get("success"):
+                return vosk_res
             return {"success": False, "error": str(e)}
 
     def listen_and_transcribe(self, duration_seconds: int = 5) -> Dict[str, Any]:
