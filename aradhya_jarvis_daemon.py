@@ -18,8 +18,11 @@ import os
 import sys
 import time
 import re
+import json
 import wave
 import signal
+import fcntl
+import queue
 import struct
 import math
 import subprocess
@@ -37,6 +40,8 @@ from aradhya_notifier import AradhyaNotifier
 DAEMON_LOG = BASE_DIR / "data" / "aradhya_jarvis_daemon.log"
 DAEMON_LOG.parent.mkdir(parents=True, exist_ok=True)
 PID_FILE = Path("/tmp/aradhya_jarvis.pid")
+LOCK_FILE = Path("/tmp/aradhya_jarvis.lock")
+VOSK_MODEL_PATH = Path("/home/alpesh/.cache/vosk/vosk-model-small-en-us-0.15")
 
 # Wake-word triggers in English and Gujarati scripts
 WAKE_WORDS = [
@@ -44,8 +49,15 @@ WAKE_WORDS = [
     "aradhya", "aaradhya", "radhya", "aradhya ji", "hey aradhya ji",
     "હે આરાધ્યા", "આરાધ્યા", "ઓ આરાધ્યા", "નમસ્તે આરાધ્યા", "જય માતાજી આરાધ્યા",
     "સુનો આરાધ્યા", "બોલો આરાધ્યા", "આરાધ્યાજી", "હેય આરાધ્યા", "અરાધ્યા",
-    "hey jarvis", "jarvis", "જારવિસ", "હે જારવિસ"
+    "hey jarvis", "jarvis", "જારવિસ", "હે જારવિસ",
+    "hey radha", "radha", "radia", "aradia", "hey alpesh", "alpesh"
 ]
+
+WAKE_REGEX = re.compile(
+    r"\b(?:hey\s+|hello\s+|hi\s+|ok\s+)?(?:aradhya|radhya|radha|radia|aradia|jarvis|alpesh)\b"
+    r"|(?:હે\s+|ઓ\s+|નમસ્તે\s+)?(?:આરાધ્યા|જારવિસ|અરાધ્યા)",
+    re.IGNORECASE
+)
 
 def log(msg: str):
     timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
