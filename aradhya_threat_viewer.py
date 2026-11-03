@@ -242,6 +242,10 @@ class AradhyaThreatViewerGTK:
         btn_rescan.connect("clicked", self._on_rescan)
         bottom_box.pack_start(btn_rescan, False, False, 0)
 
+        btn_clear = Gtk.Button(label="✅ Clear & Archive Resolved")
+        btn_clear.connect("clicked", self._on_clear_resolved)
+        bottom_box.pack_start(btn_clear, False, False, 0)
+
         lbl_helpline = Gtk.Label()
         lbl_helpline.set_markup("<span color='#888888'>Helpline: +91 78747 19139 | 100% Offline Autonomous Shield</span>")
         lbl_helpline.set_xalign(0.5)
@@ -332,6 +336,20 @@ class AradhyaThreatViewerGTK:
         except Exception:
             pass
 
+    def _on_clear_resolved(self, btn):
+        try:
+            from aradhya_security_sentry import get_security_sentry
+            res = get_security_sentry().clear_neutralized_threats()
+            self.records = []
+            self._populate_liststore()
+            self._display_no_threats()
+            # Update header badge to clean
+            badge_text = "<span background='#113355' color='#55aaff' weight='bold'>  0 ATTACKS DETECTED (CLEAN)  </span>"
+            # Refresh window
+            self.window.queue_draw()
+        except Exception:
+            pass
+
     def show(self):
         self.window.show_all()
         import gi
@@ -396,5 +414,10 @@ def launch_threat_viewer(mode: str = "auto"):
 
 
 if __name__ == "__main__":
+    if "--clear" in sys.argv or "-k" in sys.argv:
+        from aradhya_security_sentry import get_security_sentry
+        res = get_security_sentry().clear_neutralized_threats()
+        print(f"✅ Resolved neutralized threats cleared and archived. (Count: {res.get('cleared_count', 0)})")
+        sys.exit(0)
     mode_arg = "cli" if "--cli" in sys.argv or "-c" in sys.argv else "auto"
     launch_threat_viewer(mode_arg)
