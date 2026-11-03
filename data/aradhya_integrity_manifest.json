@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-10-24 22:44:51",
+  "updated_at": "2026-11-03 06:21:08",
   "files": {
     "/home/alpesh/chamunda_re_enterprise/aradhya_autonomous_core.py": {
-      "sha256": "cbea2f1aa1c925182c857376927e51f66c1f849e53982546059acd81197e5c36",
-      "size_bytes": 114897,
-      "mtime": 1792312496.490599
+      "sha256": "00863d9d2633623fc90ef275f1a6f79a1e23462ec0bba0c4cb2fde568d4aea18",
+      "size_bytes": 123587,
+      "mtime": 1793628814.701614
     },
     "/home/alpesh/chamunda_re_enterprise/aradhya_security_sentry.py": {
-      "sha256": "64d1326cf9ea0a1a9eb4e0bb686ff98bf1b1752c83b8f727cc54a5a3208f00ce",
-      "size_bytes": 33195,
-      "mtime": 1792312942.3603795
+      "sha256": "4874e5c6c2895d4a30dcdcd35ef7d6d9d597e7d3e484294f61c8ae30a97770e4",
+      "size_bytes": 35076,
+      "mtime": 1793666948.218528
     },
     "/home/alpesh/chamunda_re_enterprise/aradhya_polyglot_nlu.py": {
       "sha256": "6b0046d572eaadaa78432d31e6bcd15a3768c3aa540e6f90f495cf9818e809ce",
@@ -22,14 +22,14 @@
       "mtime": 1791661893.8864918
     },
     "/home/alpesh/chamunda_re_enterprise/aradhya_voice_engine.py": {
-      "sha256": "f785fe0de95c0f080072c85c880b16ed139dca013dd946a8b392ce88b8c50f21",
-      "size_bytes": 24362,
-      "mtime": 1791743649.990099
+      "sha256": "02abf8e46ecc51d9d937a220194efec49d7066d8067558a83d8c8de5349af6ae",
+      "size_bytes": 26836,
+      "mtime": 1793629162.2456841
     },
     "/home/alpesh/chamunda_re_enterprise/aradhya_startup_greeting.py": {
-      "sha256": "c423bc974800ffd9fd6591a782a8390be861dc957e74ec026cabf7d428af1178",
-      "size_bytes": 5580,
-      "mtime": 1792019784.2648168
+      "sha256": "6f1a22695abd6fe715253e7c864c025ca57a6f81a81df70d0b2b7befb36a7caa",
+      "size_bytes": 8352,
+      "mtime": 1793629223.8909357
     },
     "/home/alpesh/chamunda_re_enterprise/chhaya_agent_gateway.py": {
       "sha256": "b6312ec32255d925d0c0f60340389461bd406b5a83f728c93e2463fc1688a172",
@@ -37,24 +37,24 @@
       "mtime": 1791662370.6891806
     },
     "/home/alpesh/chamunda_re_enterprise/cloud_mirror_server.py": {
-      "sha256": "0fd5abbc38a192b2111b73d1a4f1de5dc4bc40d789d01b9626006bb186937588",
-      "size_bytes": 76877,
-      "mtime": 1791726444.74173
+      "sha256": "13c3de40eb3fe00e4c061623029170a07922ef6c6562ec493988a6167c9fe7ec",
+      "size_bytes": 79010,
+      "mtime": 1793628814.703613
     },
     "/home/alpesh/chamunda_re_enterprise/chhaya_watchdog.py": {
-      "sha256": "77a78e5928be7571b4204c2e14a8f1c6de2486632ea9cdf3036662ff36e7bdee",
-      "size_bytes": 23662,
-      "mtime": 1792859075.428181
+      "sha256": "cc5016caa4d157ad253dd6ddb5d3903af8951b97f36d9b468b79fbbf36a00b98",
+      "size_bytes": 28443,
+      "mtime": 1793384972.071073
     },
     "/home/alpesh/chamunda_re_enterprise/whatsapp_dispatch_engine.py": {
-      "sha256": "a16451113817bdca6ba31b0097670d52545059556db710e0b9a7cfd391fa7202",
-      "size_bytes": 18260,
-      "mtime": 1791728439.736035
+      "sha256": "7c60598c02e05ce42d795e5220e31c16cea26320e71f8a8954fce3c39de34060",
+      "size_bytes": 30545,
+      "mtime": 1793628813.886966
     },
     "/home/alpesh/chamunda_re_enterprise/whatsapp_web_sender.py": {
-      "sha256": "a39ab52522fdced7d307f1eecd09ca9a207c237374643b1feaf42e32a0fdeda3",
-      "size_bytes": 17983,
-      "mtime": 1792313490.7260923
+      "sha256": "a1ae790a1693925197d04be23538ee53d112ecf18bc38bc01cb94b6088a4aef1",
+      "size_bytes": 27789,
+      "mtime": 1792939741.4163451
     },
     "/home/alpesh/chamunda_re_enterprise/aradhya_model_updater.py": {
       "sha256": "1f1aaa2834409b48da6a0cde3a9549437557c192f18a2b5bcad74cb53ad4c704",
@@ -72,9 +72,9 @@
       "mtime": 1791832521.1024292
     },
     "/home/alpesh/chamunda_re_enterprise/aradhya_independent_worker.py": {
-      "sha256": "006e78cde006d15318772abc3cd9b1a59c5321eb3f08c4c5ee9653891c68b5cd",
-      "size_bytes": 32272,
-      "mtime": 1792311609.8266563
+      "sha256": "cc46e73acccb4410db3555bb9514f77772fe56b18d9c65b01cd2c159665cdc28",
+      "size_bytes": 33069,
+      "mtime": 1793628813.9509385
     },
     "/home/alpesh/chamunda_re_enterprise/aradhya_resource_downloader.py": {
       "sha256": "c21c102e7e160faa67ebfe182cbd0d8f22ec825fdaed22d52e2cb8601bed0aa4",
@@ -82,19 +82,19 @@
       "mtime": 1791917437.194184
     },
     "/home/alpesh/chamunda_re_enterprise/aradhya_autostart_boot.sh": {
-      "sha256": "2f26afbe72cf025aa5f4c6a3d4f6f58b0877ed4b3a0010b92b579e85905ccab7",
-      "size_bytes": 4591,
-      "mtime": 1792100651.1482155
+      "sha256": "fe6afffc6212c3ebaba8a758819d5a1c29c88a31e1ab619e4cad947d5adf232e",
+      "size_bytes": 5178,
+      "mtime": 1793628821.6806102
     },
     "/home/alpesh/chamunda_re_enterprise/aradhya_reboot_guardian.sh": {
-      "sha256": "b2abfb2f2238470de4739ecff5804498bcfcaaa0235633ed65cc0cbab7caa3f7",
-      "size_bytes": 1693,
-      "mtime": 1792086887.0012376
+      "sha256": "98851fca3e07f93d196e6d1a4f5dc1a5ac8929fff441a947ec30575f6dfa42f6",
+      "size_bytes": 1859,
+      "mtime": 1793195830.1235058
     },
     "/home/alpesh/bin/aradhya": {
-      "sha256": "2ed6f0b6f88512525a66d781efe5a7bd7b3ddd284be9b312ef8485df25385bd7",
-      "size_bytes": 17123,
-      "mtime": 1792312556.4822607
+      "sha256": "ac59c2cf989bd118c2d6ea832def38706b6715f8cec94c666fa56c9aac4d4a5a",
+      "size_bytes": 26995,
+      "mtime": 1793542286.44187
     }
   }
 }

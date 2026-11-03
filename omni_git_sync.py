@@ -213,7 +213,7 @@ class OmniGitSyncEngine:
             else:
                 # Attempt auto-merge if remote has new commits from GitHub Actions / Cloud Simulator
                 merge_res = subprocess.run(
-                    [self.git_bin, "pull", "--no-rebase", "-s", "ort", "-X", "theirs", "origin", "main", "-m", f"🤖 Auto-merge upstream cloud updates into {name}"],
+                    [self.git_bin, "pull", "--no-rebase", "-s", "ort", "-X", "theirs", "--no-edit", "origin", "main"],
                     cwd=str(repo_dir),
                     env=self.env,
                     capture_output=True,

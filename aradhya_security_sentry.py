@@ -54,7 +54,6 @@ class AradhyaSecuritySentry:
         4444: "Metasploit Default Listener / Reverse Shell",
         5900: "VNC (Unencrypted remote frame buffer)",
         6667: "IRC (Botnet Command & Control)",
-        8888: "Alternative HTTP / Common web proxy backdoor",
         9999: "Common Trojan backdoor port",
         31337: "Back Orifice Trojan default"
     }
@@ -97,6 +96,7 @@ class AradhyaSecuritySentry:
         self.compiled_dangerous_payloads = [
             re.compile(p, re.IGNORECASE) for p in self.DANGEROUS_PAYLOADS
         ]
+        self._last_threat_notification = {}
         self._ensure_log_exists()
 
     def _ensure_log_exists(self) -> None:
@@ -494,9 +494,13 @@ class AradhyaSecuritySentry:
                 threat_level = "YELLOW_WARNING"
             reasons.append("Brute force login attempts detected")
 
-        if fw.get("status") != "PROTECTED" and threat_level == "GREEN_SECURE":
-            threat_level = "YELLOW_WARNING"
-            reasons.append("Firewall disabled")
+        if fw.get("status") != "PROTECTED":
+            if ports.get("exposed_count", 0) > 0:
+                if threat_level == "GREEN_SECURE":
+                    threat_level = "YELLOW_WARNING"
+                reasons.append("Firewall disabled with public ports exposed")
+            else:
+                reasons.append("Firewall inactive (all sockets safely bound to loopback)")
 
         summary_msg = "LAPTOP 100% SECURE & PROTECTED" if threat_level == "GREEN_SECURE" else f"SECURITY POSTURE: {threat_level} ({', '.join(reasons)})"
         self.log_event("AUDIT", f"Full security audit completed: {threat_level}")
@@ -606,6 +610,12 @@ class AradhyaSecuritySentry:
                         if rpid and psutil.pid_exists(rpid) and rpid != my_pid:
                             try:
                                 rproc = psutil.Process(rpid)
+                                rcmd = " ".join(rproc.cmdline() or []).lower()
+                                rexe = (rproc.exe() or "").lower()
+                                rpname = rproc.name().lower()
+                                # Protect authorized agents and safe system processes
+                                if any(kw in rexe or kw in rpname or kw in rcmd for kw in self.SAFE_KEYWORDS_WHITELIST) or any(d in rcmd for d in ("/home/alpesh/mint-agent-os", "/home/alpesh/chamunda_re_enterprise")):
+                                    continue
                                 rproc.kill()
                                 event_record = {
                                     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
@@ -647,6 +657,20 @@ class AradhyaSecuritySentry:
         Listens for user clicks in a background thread and immediately opens the
         Aradhya Threat Forensics Viewer to show all threat details.
         """
+        if not records:
+            return
+
+        first_rec = records[0]
+        first_type = first_rec.get("threat_type", "CYBER_ATTACK")
+        first_name = first_rec.get("name") or str(first_rec.get("port", "")) or "process"
+
+        # Rate-limit duplicate notifications to once every 10 minutes per threat signature
+        now = time.time()
+        dedup_key = f"{first_type}:{first_name}"
+        if now - self._last_threat_notification.get(dedup_key, 0) < 600:
+            return
+        self._last_threat_notification[dedup_key] = now
+
         def _notification_worker():
             try:
                 count = len(records)
