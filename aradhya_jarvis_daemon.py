@@ -44,18 +44,19 @@ PID_FILE = Path("/tmp/aradhya_jarvis.pid")
 LOCK_FILE = Path("/tmp/aradhya_jarvis.lock")
 VOSK_MODEL_PATH = Path("/home/alpesh/.cache/vosk/vosk-model-small-en-us-0.15")
 
-# Wake-word triggers in English and Gujarati scripts
+# Wake-word triggers in English, phonetics, and Gujarati scripts
 WAKE_WORDS = [
     "hey aradhya", "hey radhya", "hey aaradhya", "hello aradhya", "hi aradhya", "ok aradhya",
     "aradhya", "aaradhya", "radhya", "aradhya ji", "hey aradhya ji",
     "હે આરાધ્યા", "આરાધ્યા", "ઓ આરાધ્યા", "નમસ્તે આરાધ્યા", "જય માતાજી આરાધ્યા",
     "સુનો આરાધ્યા", "બોલો આરાધ્યા", "આરાધ્યાજી", "હેય આરાધ્યા", "અરાધ્યા",
     "hey jarvis", "jarvis", "જારવિસ", "હે જારવિસ",
-    "hey radha", "radha", "radia", "aradia", "hey alpesh", "alpesh"
+    "hey radha", "radha", "radia", "aradia", "hey alpesh", "alpesh",
+    "hey rajya", "rajya", "a rajya", "hey raja", "raja", "aradhana", "aradh", "arjan"
 ]
 
 WAKE_REGEX = re.compile(
-    r"\b(?:hey\s+|hello\s+|hi\s+|ok\s+)?(?:aradhya|radhya|radha|radia|aradia|jarvis|alpesh)\b"
+    r"\b(?:hey\s+|hello\s+|hi\s+|ok\s+)?(?:aradhya|radhya|radha|radia|aradia|jarvis|alpesh|rajya|raja|aradhana|aradh|arjan)\b"
     r"|(?:હે\s+|ઓ\s+|નમસ્તે\s+)?(?:આરાધ્યા|જારવિસ|અરાધ્યા)",
     re.IGNORECASE
 )
