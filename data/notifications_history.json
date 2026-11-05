@@ -1,5 +1,18 @@
 [
   {
+    "id": "NOTIF-1793904427",
+    "timestamp": "2026-11-06 00:17:07",
+    "title": "⚠️ સિસ્ટમ સૂચના (System Alert): લેપટોપ ટેસ્ટ એરર (Laptop Test Issue)",
+    "message": "ધ્યાન આપો અલ્પેશ સાહેબ! સિસ્ટમમાં સમસ્યા જણાઈ છે:\nCPU તાપમાન અથવા કોઈ સર્વિસ અટકી ગઈ છે.",
+    "category": "WARNING",
+    "details": "CPU તાપમાન અથવા કોઈ સર્વિસ અટકી ગઈ છે.",
+    "solution": "સિસ્ટમ ઓટોમેટિકલી રિસ્ટાર્ટ થશે.",
+    "dispatched_channels": [
+      "desktop_banner",
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1793904315",
     "timestamp": "2026-11-06 00:15:15",
     "title": "✅ કામ પૂર્ણ (Work Done): Test Diagnostic Task",
