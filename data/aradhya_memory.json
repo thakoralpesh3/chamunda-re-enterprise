@@ -4,11 +4,6 @@
   "recent_actions": [
     {
       "action": "ONLINE_GEMINI_INTELLIGENCE",
-      "details": "-v",
-      "timestamp": "2026-10-30 22:51:58"
-    },
-    {
-      "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "/voice",
       "timestamp": "2026-10-31 20:50:53"
     },
@@ -151,6 +146,11 @@
       "action": "OFFLINE_COGNITIVE_REASONING",
       "details": "huh",
       "timestamp": "2026-11-04 20:21:30"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "huh",
+      "timestamp": "2026-11-05 20:45:53"
     }
   ],
   "custom_aliases": {},

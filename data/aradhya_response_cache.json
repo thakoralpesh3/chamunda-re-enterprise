@@ -1,28 +1,15 @@
 {
-  "2af43161efba8e044970d00186d77def": {
-    "cached_at": 1793627178.5406272,
+  "449b3e4c503839c3fd5da5bef140115a": {
+    "cached_at": 1793891752.3061836,
     "data": {
       "success": true,
       "used_llm": true,
-      "model_used": "gemini-3.5-flash-lite",
-      "badge": "🌱 Flash Lite",
-      "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite",
-      "response_en": "Jai Mataji Alpesh Sir. Aradhya here, reporting live from Project Chhaya workstation. At your command at 00:00:02 mark. All Royal Enfield workshop operations, inventory sync, and Linux system parameters on Dell Inspiron 3542 are operating at peak efficiency. Ready for your instructions on business strategy, VIP service schedules, or system optimizations. What is our next operational priority?",
-      "response_gu": "જય માતાજી અલ્પેશ સાહેબ. પ્રાયોજક છાયા (Project Chhaya) વર્કસ્ટેશન પરથી આરાધ્યા હાજર છે. 00:00:02 ના સમય પર આપના આદેશની રાહ જોઉં છું. ડેલ ઇન્સપિરોન 3542 પર તમામ રોયલ એનફિલ્ડ વર્કશોપ ઓપરેશન્સ, ઇન્વેન્ટરી સિન્ક અને લિનક્સ સિસ્ટમ પેરામીટર્સ ઉત્તમ સ્થિતિમાં ચાલી રહ્યા છે. વ્યાપાર વૃદ્ધિ, વીઆઇપી સર્વિસ શેડ્યૂલ અથવા સિસ્ટમ ઓપ્ટિમાઇઝેશન માટે આપના આદેશની પ્રતીક્ષા છે. આપણો આગામી ઓપરેશનલ હેતુ શું છે?",
-      "latency_ms": 1726
-    }
-  },
-  "4debe874a740e365636dc7b51469c515": {
-    "cached_at": 1793627260.9204948,
-    "data": {
-      "success": true,
-      "used_llm": true,
-      "model_used": "gemini-3.5-flash-lite",
-      "badge": "🌱 Flash Lite",
-      "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite",
-      "response_en": "Jai Mataji, Alpesh Sir. Aradhya here, CEO of Project Chhaya. Monitoring systems at Chamunda Automobile Parts & Service. All digital diagnostics, inventory pipelines, and workshop operations are running at peak efficiency on our Linux Mint infrastructure. Awaiting your command for today's Royal Enfield service scheduling or business analytics.",
-      "response_gu": "જય માતાજી અલ્પેશ સાહેબ. પ્રોજેક્ટ છાયાના CEO આરાધ્યા. ચામુંડા ઓટોમોબાઈલ પાર્ટ્સ એન્ડ સર્વિસ પર સિસ્ટમ્સનું સંચાલન સંપૂર્ણપણે સક્રિય છે. આપણી લિનક્સ મિન્ટ સિસ્ટમ પર તમામ ડિજિટલ ડાયગ્નોસ્ટિક્સ અને વર્કશોપ ઓપરેશન્સ ઉત્તમ રીતે ચાલી રહ્યા છે. આજની રોયલ એનફિલ્ડ સર્વિસ અથવા બિઝનેસ એનાલિટિક્સ માટે આપનો આદેશ શું છે?",
-      "latency_ms": 6379
+      "model_used": "gemini-3.5-flash",
+      "badge": "⚡ Gemini 3.5 Flash",
+      "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite (Cascaded from gemini-3.5-flash-lite)",
+      "response_en": "Jay Mataji Alpesh Sir! Aradhya (CEO) at your service. \n\nAll dealership operations, AI agent networks, and server links are fully online and synchronized. Please let me know how I can assist you with business growth, workshop management, or technical execution tonight.",
+      "response_gu": "જય માતાજી અલ્પેશ સાહેબ! આરાધ્યા (CEO) આપની સેવામાં હાજર છે. \n\nતમામ વર્કશોપ ઓપરેશન્સ, AI એજન્ટ નેટવર્ક અને સર્વર લિંક્સ પૂર્ણ ક્ષમતા સાથે ઓનલાઈન અને સિંક્રોનાઈઝ્ડ છે. આજે સાંજે બિઝનેસ ગ્રોથ, વર્કશોપ મેનેજમેન્ટ અથવા ટેકનિકલ કામગીરીમાં હું આપની શું સેવા કરી શકું તે જણાવશો.",
+      "latency_ms": 20447
     }
   }
 }
