@@ -412,5 +412,14 @@
     "badge": "👑 Gemini 4 Argon",
     "source": "google_genai_api",
     "discovered_at": "2026-10-15 00:30:57"
+  },
+  "gemini-omni-1.2-flash": {
+    "model_id": "gemini-omni-1.2-flash",
+    "name": "Gemini Omni 1.2 Flash (Auto-Discovered)",
+    "tag": "FLASH_THROUGHPUT",
+    "description": "Gemini Omni 1.2 Flash",
+    "badge": "⚡ Gemini Omni 1.2 Flash",
+    "source": "google_genai_api",
+    "discovered_at": "2026-11-05 22:21:14"
   }
 }
