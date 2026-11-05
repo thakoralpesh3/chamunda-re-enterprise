@@ -1,5 +1,18 @@
 [
   {
+    "id": "NOTIF-1793904315",
+    "timestamp": "2026-11-06 00:15:15",
+    "title": "✅ કામ પૂર્ણ (Work Done): Test Diagnostic Task",
+    "message": "જય માતાજી અલ્પેશ સાહેબ! Aradhya CEO દ્વારા આપનું સોંપેલું કામ સફળતાપૂર્વક પૂર્ણ થઈ ગયું છે.",
+    "category": "WORK_DONE",
+    "details": "All system checks verified 100%",
+    "solution": "",
+    "dispatched_channels": [
+      "desktop_banner",
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1793899156",
     "timestamp": "2026-11-05 22:49:16",
     "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
