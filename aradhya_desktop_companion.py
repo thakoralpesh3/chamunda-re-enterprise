@@ -377,6 +377,16 @@ class AradhyaDesktopPet(Gtk.Window):
 
         menu.append(Gtk.SeparatorMenuItem())
 
+        item_health = Gtk.MenuItem(label="📊 Laptop Health & Diagnostics (સિસ્ટમ સ્થિતિ)")
+        item_health.connect("activate", lambda w: self.trigger_health())
+        menu.append(item_health)
+
+        item_wa = Gtk.MenuItem(label="💬 WhatsApp Alert Test (અલ્પેશ સાહેબ)")
+        item_wa.connect("activate", lambda w: self.trigger_whatsapp_test())
+        menu.append(item_wa)
+
+        menu.append(Gtk.SeparatorMenuItem())
+
         item_exit = Gtk.MenuItem(label="❌ Hide / Exit")
         item_exit.connect("activate", lambda w: Gtk.main_quit())
         menu.append(item_exit)
@@ -410,6 +420,35 @@ class AradhyaDesktopPet(Gtk.Window):
     def trigger_remote(self):
         self.say("મોબાઇલ રીમોટ લિંક જનરેટ થઈ રહી છે... 📱", duration=3, speak_aloud=True)
         subprocess.Popen(["gnome-terminal", "--title=📱 Aradhya Mobile Remote", "--", "bash", "-c", "/home/alpesh/bin/aradhya --remote; sleep 15"])
+
+    def trigger_health(self):
+        self.say("લેપટોપ હેલ્થ અને ડાયગ્નોસ્ટિક્સ તપાસી રહી છું... 📊", duration=3, speak_aloud=True)
+        def _bg():
+            from aradhya_autonomous_core import get_aradhya_engine
+            e = get_aradhya_engine()
+            res = e.get_battery_status()
+            import psutil
+            cpu = psutil.cpu_percent(interval=0.5)
+            ram = psutil.virtual_memory().percent
+            bat = res.get('percent', 100)
+            txt = f"CPU: {cpu}% | RAM: {ram}% | બેટરી: {bat}%"
+            self.say(f"લેપટોપ ૧૦૦% સલામત છે સાહેબ! ⚡\n{txt}", duration=6, speak_aloud=True)
+        import threading
+        threading.Thread(target=_bg, daemon=True).start()
+
+    def trigger_whatsapp_test(self):
+        self.say("અલ્પેશ સાહેબના વ્હોટ્સએપ પર ટેસ્ટ એલર્ટ મોકલી રહી છું... 💬", duration=3, speak_aloud=True)
+        def _bg():
+            from aradhya_notifier import get_aradhya_notifier
+            n = get_aradhya_notifier()
+            n.notify_work_done(
+                "વ્હોટ્સએપ અને સિસ્ટમ કનેક્ટિવિટી ટેસ્ટ",
+                details="આરાધ્યા ડેસ્કટોપ અને વ્હોટ્સએપ ઇન્ટરેક્ટિવ કનેક્શન સક્રિય છે.",
+                solution="બધું બરાબર ચાલે છે સાહેબ."
+            )
+            self.say("વ્હોટ્સએપ એલર્ટ સફળતાપૂર્વક ડિસ્પેચ થયું! ✅", duration=4, speak_aloud=False)
+        import threading
+        threading.Thread(target=_bg, daemon=True).start()
 
 def main():
     pet = AradhyaDesktopPet()

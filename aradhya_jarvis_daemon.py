@@ -391,7 +391,7 @@ class AradhyaJarvisDaemon:
                     res = json.loads(recognizer.Result())
                     text = res.get("text", "").strip()
                     if text:
-                        if text not in ["huh", "that", "the"]:
+                        if text not in ["huh", "that", "the", "a", "oh", "um", "ah", "an", "i"]:
                             log(f"Microphone heard: \"{text}\"")
                         if self.check_wake_word(text):
                             self.handle_wake_interaction(text)
