@@ -335,7 +335,7 @@ class WhatsAppWebSender:
             options.set_preference("dom.serviceWorkers.enabled", True)
             options.set_preference("browser.startup.homepage", "about:blank")
             options.set_preference("browser.startup.page", 0)
-            options.set_preference("browser.cache.disk.enable", False)
+            options.set_preference("browser.cache.disk.enable", True)
             options.set_preference("browser.cache.memory.enable", True)
 
             service = Service(executable_path=str(gecko))
@@ -551,6 +551,11 @@ class WhatsAppWebSender:
                 if driver:
                     try:
                         driver.quit()
+                    except Exception:
+                        pass
+                if service and getattr(service, "process", None):
+                    try:
+                        service.stop()
                     except Exception:
                         pass
                 clean_locks(self.profile_dir)

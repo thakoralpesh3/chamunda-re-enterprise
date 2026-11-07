@@ -141,8 +141,14 @@ class AradhyaNotifier:
         # 3. WhatsApp Notification (CallMeBot API / Custom Webhook / Headless Browser / wa.me link)
         wa_cfg = self.config.get("channels", {}).get("whatsapp", {})
         if wa_cfg.get("enabled", True):
-            # Prioritize task failures, critical errors, and system warnings for WhatsApp dispatch
-            if category in ["TASK_FAILURE", "CRITICAL", "ISSUE", "WARNING", "ERROR"] or self.config.get("notification_preferences", {}).get("notify_all_to_whatsapp", False):
+            prefs = self.config.get("notification_preferences", {})
+            should_wa = (
+                category in ["TASK_FAILURE", "CRITICAL", "ISSUE", "WARNING", "ERROR"]
+                or (category == "WORK_DONE" and prefs.get("work_done", True))
+                or (category == "STARTUP_SYNC" and prefs.get("startup_sync", True))
+                or prefs.get("notify_all_to_whatsapp", False)
+            )
+            if should_wa:
                 wa_ok = self._send_whatsapp(title, message, category, details, solution=solution)
                 if wa_ok:
                     record["dispatched_channels"].append("whatsapp")
