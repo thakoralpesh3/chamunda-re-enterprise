@@ -4,16 +4,6 @@
   "recent_actions": [
     {
       "action": "ONLINE_GEMINI_INTELLIGENCE",
-      "details": "does the openwebui is still working in this project ?",
-      "timestamp": "2026-10-31 20:52:25"
-    },
-    {
-      "action": "ONLINE_GEMINI_INTELLIGENCE",
-      "details": "then make aradhya bydefault working with voice mode",
-      "timestamp": "2026-10-31 20:53:08"
-    },
-    {
-      "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "then laptop is still not working like it ?",
       "timestamp": "2026-10-31 20:54:19"
     },
@@ -151,6 +141,16 @@
       "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "huh",
       "timestamp": "2026-11-08 16:40:03"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "huh",
+      "timestamp": "2026-11-08 17:14:59"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "huh",
+      "timestamp": "2026-11-08 17:17:51"
     }
   ],
   "custom_aliases": {},
