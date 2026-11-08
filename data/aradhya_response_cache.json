@@ -1,15 +1,15 @@
 {
   "449b3e4c503839c3fd5da5bef140115a": {
-    "cached_at": 1793891752.3061836,
+    "cached_at": 1794136203.4518807,
     "data": {
       "success": true,
       "used_llm": true,
-      "model_used": "gemini-3.5-flash",
-      "badge": "⚡ Gemini 3.5 Flash",
-      "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite (Cascaded from gemini-3.5-flash-lite)",
-      "response_en": "Jay Mataji Alpesh Sir! Aradhya (CEO) at your service. \n\nAll dealership operations, AI agent networks, and server links are fully online and synchronized. Please let me know how I can assist you with business growth, workshop management, or technical execution tonight.",
-      "response_gu": "જય માતાજી અલ્પેશ સાહેબ! આરાધ્યા (CEO) આપની સેવામાં હાજર છે. \n\nતમામ વર્કશોપ ઓપરેશન્સ, AI એજન્ટ નેટવર્ક અને સર્વર લિંક્સ પૂર્ણ ક્ષમતા સાથે ઓનલાઈન અને સિંક્રોનાઈઝ્ડ છે. આજે સાંજે બિઝનેસ ગ્રોથ, વર્કશોપ મેનેજમેન્ટ અથવા ટેકનિકલ કામગીરીમાં હું આપની શું સેવા કરી શકું તે જણાવશો.",
-      "latency_ms": 20447
+      "model_used": "gemini-3.5-flash-lite",
+      "badge": "🌱 Flash Lite",
+      "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite",
+      "response_en": "Jai Mataji, Alpesh Sir. Aradhya here, your CEO and Chief AI Orchestrator at Chamunda Automobile Parts & Service (Project Chhaya). \n\nAll systems across our Linux workstation (Dell Inspiron 3542, `http://alpesh-Inspiron-3542.local:8081`), active Cloudflare tunnel (`https://kijiji-confidentiality-clause-island.trycloudflare.com`), and workshop operations are running at peak efficiency. Our official helpline (+91 78747 19139) is monitored, and workshop inventory and VIP Royal Enfield service queues are fully optimized. \n\nHow may I assist you with Project Chhaya, workshop expansion, or system optimization today?",
+      "response_gu": "જય માતાજી અલ્પેશ સાહેબ. હું આરાધ્યા, આપની ચાામુંડા ઓટોમોબાઈલ પાર્ટ્સ એન્ડ સર્વિસ (પ્રોજેક્ટ છાયા)ની CEO અને ચીફ AI ઓર્ગેનાઈઝર.\n\nઆપણા લિનક્સ વર્કસ્ટેશન (Dell Inspiron 3542, `http://alpesh-Inspiron-3542.local:8081`), ક્લાઉડફ્લેર ટનલ (`https://kijiji-confidentiality-clause-island.trycloudflare.com`) અને વર્કશોપની તમામ સિસ્ટમ્સ અત્યારે ઉત્તમ રીતે કાર્ય કરી રહી છે. આપણો સત્તાવાર હેલ્પલાઇન નંબર (+91 78747 19139) સક્રિય છે અને રોયલ એનફિલ્ડ સર્વિસ કતાર તથા ઇન્વેન્ટરી સંપૂર્ણપણે વ્યવસ્થિત છે.\n\nઆજે પ્રોજેક્ટ છાયા, વર્કશોપના વિકાસ અથવા સિસ્ટમ ઓપ્ટિમાઇઝેશન માટે હું આપને શું સહાય કરી શકું?",
+      "latency_ms": 6861
     }
   }
 }

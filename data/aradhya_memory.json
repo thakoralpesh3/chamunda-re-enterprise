@@ -4,11 +4,6 @@
   "recent_actions": [
     {
       "action": "ONLINE_GEMINI_INTELLIGENCE",
-      "details": "/voice",
-      "timestamp": "2026-10-31 20:50:53"
-    },
-    {
-      "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "does the openwebui is still working in this project ?",
       "timestamp": "2026-10-31 20:52:25"
     },
@@ -151,6 +146,11 @@
       "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "huh",
       "timestamp": "2026-11-05 20:45:53"
+    },
+    {
+      "action": "ONLINE_GEMINI_INTELLIGENCE",
+      "details": "huh",
+      "timestamp": "2026-11-08 16:40:03"
     }
   ],
   "custom_aliases": {},
