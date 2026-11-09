@@ -4,11 +4,6 @@
   "recent_actions": [
     {
       "action": "ONLINE_GEMINI_INTELLIGENCE",
-      "details": "then laptop is still not working like it ?",
-      "timestamp": "2026-10-31 20:54:19"
-    },
-    {
-      "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "make aradhya bydefault working with voice mode and able to ask for work in gujarati with voice",
       "timestamp": "2026-10-31 20:55:21"
     },
@@ -151,6 +146,11 @@
       "action": "OFFLINE_COGNITIVE_REASONING",
       "details": "huh",
       "timestamp": "2026-11-08 17:17:51"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "huh",
+      "timestamp": "2026-11-09 23:06:08"
     }
   ],
   "custom_aliases": {},
