@@ -421,5 +421,14 @@
     "badge": "⚡ Gemini Omni 1.2 Flash",
     "source": "google_genai_api",
     "discovered_at": "2026-11-05 22:21:14"
+  },
+  "gemini-4-carbon": {
+    "model_id": "gemini-4-carbon",
+    "name": "Gemini 4 Carbon (Auto-Discovered)",
+    "tag": "FRONTIER_ARGON",
+    "description": "Gemini 4 Carbon",
+    "badge": "👑 Gemini 4 Carbon",
+    "source": "google_genai_api",
+    "discovered_at": "2026-11-10 21:55:05"
   }
 }
