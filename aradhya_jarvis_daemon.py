@@ -344,13 +344,13 @@ class AradhyaJarvisDaemon:
         import numpy as np
         from vosk import KaldiRecognizer
 
-        # Auto-calibrate hardware input levels to eliminate distortion and noise spikes
+        # Auto-calibrate hardware input levels: unity Digital gain (0dB), +10dB preamp boost, 100% volume
         try:
-            subprocess.run(["amixer", "-c", "1", "sset", "Capture", "45"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
-            subprocess.run(["amixer", "-c", "1", "sset", "Internal Mic Boost", "0"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
-            subprocess.run(["amixer", "-c", "1", "sset", "Digital", "0"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
-            subprocess.run(["pactl", "set-source-volume", "alsa_input.pci-0000_00_1b.0.analog-stereo", "45%"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
-            log("🎛️ Microphone hardware gain calibrated (Capture: 45%, Boost: 0dB, Noise Floor: Stable).")
+            subprocess.run(["amixer", "-c", "1", "sset", "Capture", "100%", "unmute"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
+            subprocess.run(["amixer", "-c", "1", "sset", "Internal Mic Boost", "1"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
+            subprocess.run(["amixer", "-c", "1", "sset", "Digital", "60"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
+            subprocess.run(["pactl", "set-source-volume", "alsa_input.pci-0000_00_1b.0.analog-stereo", "100%"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
+            log("🎛️ Microphone hardware gain calibrated (Digital: 0dB, Boost: +10dB, Capture: 100%, Ready for Speech).")
         except Exception:
             pass
 

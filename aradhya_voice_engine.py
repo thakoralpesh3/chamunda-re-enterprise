@@ -444,13 +444,16 @@ class AradhyaVoiceEngine:
 
     def record_microphone(self, output_wav: Path, duration_seconds: int = 5) -> Dict[str, Any]:
         """
-        Record audio from laptop microphone via ALSA arecord.
+        Record audio from laptop microphone via ALSA arecord (16kHz 16-bit Mono).
         """
+        output_wav = Path(output_wav)
         output_wav.parent.mkdir(parents=True, exist_ok=True)
         cmd = [
             "arecord",
             "-d", str(duration_seconds),
-            "-f", "cd",
+            "-f", "S16_LE",
+            "-r", "16000",
+            "-c", "1",
             "-t", "wav",
             str(output_wav)
         ]
@@ -472,6 +475,7 @@ class AradhyaVoiceEngine:
 
     def transcribe_offline_vosk(self, wav_file: Path) -> Dict[str, Any]:
         """Transcribe audio using local Vosk model (100% offline)."""
+        wav_file = Path(wav_file)
         model_path = Path("/home/alpesh/.cache/vosk/vosk-model-small-en-us-0.15")
         if not model_path.exists():
             return {"success": False, "error": "Vosk model not found."}
@@ -498,6 +502,7 @@ class AradhyaVoiceEngine:
         Transcribe recorded audio file.
         Uses Google Gemini Multimodal Audio when online, falling back to local Vosk offline.
         """
+        wav_file = Path(wav_file)
         if not wav_file.exists():
             return {"success": False, "error": "Audio file does not exist."}
 
