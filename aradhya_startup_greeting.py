@@ -122,7 +122,7 @@ def run_startup_sequence():
         trans_res = voice.transcribe_audio(startup_cmd_wav)
         if trans_res.get("success"):
             user_cmd = trans_res.get("transcribed_text", "").strip()
-            if user_cmd and user_cmd != "[SILENCE]" and len(user_cmd) > 2:
+            if user_cmd and user_cmd != "[SILENCE]" and len(user_cmd) > 2 and user_cmd.lower() not in {"huh", "the", "that", "mmm", "uh", "um", "ah", "oh", "hmm"}:
                 has_command = True
                 print(f"🎯 Command received from Alpesh Sir on startup: {user_cmd}", flush=True)
 

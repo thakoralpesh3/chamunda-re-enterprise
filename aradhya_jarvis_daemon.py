@@ -42,9 +42,15 @@ DAEMON_LOG = BASE_DIR / "data" / "aradhya_jarvis_daemon.log"
 DAEMON_LOG.parent.mkdir(parents=True, exist_ok=True)
 PID_FILE = Path("/tmp/aradhya_jarvis.pid")
 LOCK_FILE = Path("/tmp/aradhya_jarvis.lock")
-VOSK_MODEL_PATH = Path("/home/alpesh/.cache/vosk/vosk-model-small-en-us-0.15")
+VOSK_MODEL_CANDIDATES = [
+    Path("/home/alpesh/.cache/vosk/vosk-model-small-en-in-0.4"),
+    Path("/home/alpesh/.cache/vosk/vosk-model-small-en-us-0.15"),
+]
+VOSK_MODEL_PATH = next((p for p in VOSK_MODEL_CANDIDATES if p.exists()), VOSK_MODEL_CANDIDATES[-1])
 
-# Wake-word triggers in English, phonetics, and Gujarati scripts
+NOISE_TOKENS = {"huh", "that", "the", "a", "oh", "um", "ah", "an", "i", "uh", "mmm", "hmm"}
+
+# Wake-word triggers in English, phonetics (for Vosk lexicon), and Gujarati scripts
 WAKE_WORDS = [
     "hey aradhya", "hey radhya", "hey aaradhya", "hello aradhya", "hi aradhya", "ok aradhya",
     "aradhya", "aaradhya", "radhya", "aradhya ji", "hey aradhya ji",
@@ -52,11 +58,16 @@ WAKE_WORDS = [
     "સુનો આરાધ્યા", "બોલો આરાધ્યા", "આરાધ્યાજી", "હેય આરાધ્યા", "અરાધ્યા",
     "hey jarvis", "jarvis", "જારવિસ", "હે જારવિસ",
     "hey radha", "radha", "radia", "aradia", "hey alpesh", "alpesh",
-    "hey rajya", "rajya", "a rajya", "hey raja", "raja", "aradhana", "aradh", "arjan"
+    "hey rajya", "rajya", "a rajya", "hey raja", "raja", "aradhana", "aradh", "arjan",
+    "hey aria", "aria", "hey aurora", "aurora", "hey audio", "hey radio", "hey area",
+    "hey already", "hey our idea", "our idea", "hey claudia", "hey nadia", "hey lydia",
+    "hey maria", "hey laura", "hey rather", "hey ready", "hey roger", "hey arthur",
+    "ok radha", "ok jarvis", "hello radha", "hello jarvis", "hi jarvis"
 ]
 
 WAKE_REGEX = re.compile(
-    r"\b(?:hey\s+|hello\s+|hi\s+|ok\s+)?(?:aradhya|radhya|radha|radia|aradia|jarvis|alpesh|rajya|raja|aradhana|aradh|arjan)\b"
+    r"\b(?:hey\s+|hello\s+|hi\s+|ok\s+)?(?:aradhya|radhya|radha|radia|aradia|jarvis|alpesh|rajya|raja|aradhana|aradh|arjan|aria|aurora|claudia|nadia|lydia)\b"
+    r"|\b(?:hey|hello|ok)\s+[a-z]{3,}\b"
     r"|(?:હે\s+|ઓ\s+|નમસ્તે\s+)?(?:આરાધ્યા|જારવિસ|અરાધ્યા)",
     re.IGNORECASE
 )
@@ -66,8 +77,10 @@ def log(msg: str):
     formatted = f"[{timestamp}] [JarvisDaemon] {msg}"
     print(formatted, flush=True)
     try:
-        with open(DAEMON_LOG, "a", encoding="utf-8") as f:
-            f.write(formatted + "\n")
+        # Skip duplicate write when stdout is already redirected to DAEMON_LOG
+        if not (DAEMON_LOG.exists() and os.fstat(1).st_ino == DAEMON_LOG.stat().st_ino):
+            with open(DAEMON_LOG, "a", encoding="utf-8") as f:
+                f.write(formatted + "\n")
     except Exception:
         pass
 
@@ -289,7 +302,7 @@ class AradhyaJarvisDaemon:
                     trans_res = self.voice.transcribe_audio(cmd_wav)
                     if trans_res.get("success"):
                         command = trans_res.get("transcribed_text", "").strip()
-                        if command == "[SILENCE]":
+                        if command == "[SILENCE]" or command.lower() in NOISE_TOKENS:
                             command = ""
 
             if not command:
@@ -344,13 +357,13 @@ class AradhyaJarvisDaemon:
         import numpy as np
         from vosk import KaldiRecognizer
 
-        # Auto-calibrate hardware input levels: unity Digital gain (0dB), +10dB preamp boost, 100% volume
+        # Auto-calibrate hardware input levels: +30dB Capture, +20dB preamp Boost, +5dB Digital (clean speech SNR without clipping)
         try:
-            subprocess.run(["amixer", "-c", "1", "sset", "Capture", "100%", "unmute"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
-            subprocess.run(["amixer", "-c", "1", "sset", "Internal Mic Boost", "1"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
-            subprocess.run(["amixer", "-c", "1", "sset", "Digital", "60"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
-            subprocess.run(["pactl", "set-source-volume", "alsa_input.pci-0000_00_1b.0.analog-stereo", "100%"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
-            log("🎛️ Microphone hardware gain calibrated (Digital: 0dB, Boost: +10dB, Capture: 100%, Ready for Speech).")
+            subprocess.run(["pactl", "set-source-mute", "alsa_input.pci-0000_00_1b.0.analog-stereo", "0"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
+            subprocess.run(["amixer", "-c", "1", "sset", "Capture", "63", "unmute"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
+            subprocess.run(["amixer", "-c", "1", "sset", "Internal Mic Boost", "2"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
+            subprocess.run(["amixer", "-c", "1", "sset", "Digital", "70"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
+            log(f"🎛️ Microphone hardware gain calibrated (Capture: +30dB, Boost: +20dB, Digital: +5dB, Model: {VOSK_MODEL_PATH.name}).")
         except Exception:
             pass
 
@@ -391,7 +404,7 @@ class AradhyaJarvisDaemon:
                     res = json.loads(recognizer.Result())
                     text = res.get("text", "").strip()
                     if text:
-                        if text not in ["huh", "that", "the", "a", "oh", "um", "ah", "an", "i"]:
+                        if text.lower() not in NOISE_TOKENS:
                             log(f"Microphone heard: \"{text}\"")
                         if self.check_wake_word(text):
                             self.handle_wake_interaction(text)

@@ -347,28 +347,40 @@ class AradhyaVoiceEngine:
             static_file = STATIC_VOICE_DIR / f"{cache_key}.mp3"
 
             if not cache_file.exists():
-                edge_success = False
-                try:
-                    asyncio.run(self._generate_edge_tts(clean, voice_name, cache_file, pitch="+3Hz", rate="+0%"))
-                    if cache_file.exists() and cache_file.stat().st_size > 100:
-                        edge_success = True
-                except Exception as e:
+                now = time.time()
+                # Skip blocked/hanging online TTS for 1 hour after failure so speech stays responsive
+                if now >= getattr(type(self), "_tts_fail_until", 0.0):
                     edge_success = False
-
-                # Fallback to gTTS (Google Text-to-Speech) if Edge TTS is blocked or failed
-                if not edge_success:
                     try:
-                        import gtts
-                        gtts_lang = "gu" if lang.startswith("gu") else ("hi" if lang.startswith("hi") else "en")
-                        g_tts = gtts.gTTS(clean, lang=gtts_lang)
-                        g_tts.save(str(cache_file))
+                        asyncio.run(asyncio.wait_for(
+                            self._generate_edge_tts(clean, voice_name, cache_file, pitch="+3Hz", rate="+0%"),
+                            timeout=3.0,
+                        ))
                         if cache_file.exists() and cache_file.stat().st_size > 100:
                             edge_success = True
                     except Exception:
-                        pass
+                        edge_success = False
+
+                    if not edge_success:
+                        def _run_gtts():
+                            try:
+                                import gtts
+                                gtts_lang = "gu" if lang.startswith("gu") else ("hi" if lang.startswith("hi") else "en")
+                                gtts.gTTS(clean, lang=gtts_lang).save(str(cache_file))
+                            except Exception:
+                                pass
+
+                        t = threading.Thread(target=_run_gtts, daemon=True)
+                        t.start()
+                        t.join(timeout=3.5)
+                        if cache_file.exists() and cache_file.stat().st_size > 100:
+                            edge_success = True
+
+                    if not edge_success:
+                        type(self)._tts_fail_until = now + 3600
 
                 # Copy to static dir for mobile web streaming
-                if cache_file.exists():
+                if cache_file.exists() and cache_file.stat().st_size > 100:
                     import shutil
                     shutil.copy2(cache_file, static_file)
                 elif vault_match:
@@ -458,7 +470,7 @@ class AradhyaVoiceEngine:
             str(output_wav)
         ]
         try:
-            r = subprocess.run(cmd, capture_output=True, text=True, timeout=duration_seconds + 3)
+            r = subprocess.run(cmd, capture_output=True, text=True, timeout=duration_seconds + 6)
             if output_wav.exists() and output_wav.stat().st_size > 1000:
                 return {
                     "success": True,
@@ -476,8 +488,14 @@ class AradhyaVoiceEngine:
     def transcribe_offline_vosk(self, wav_file: Path) -> Dict[str, Any]:
         """Transcribe audio using local Vosk model (100% offline)."""
         wav_file = Path(wav_file)
-        model_path = Path("/home/alpesh/.cache/vosk/vosk-model-small-en-us-0.15")
-        if not model_path.exists():
+        model_path = next(
+            (p for p in (
+                Path("/home/alpesh/.cache/vosk/vosk-model-small-en-in-0.4"),
+                Path("/home/alpesh/.cache/vosk/vosk-model-small-en-us-0.15"),
+            ) if p.exists()),
+            None,
+        )
+        if not model_path:
             return {"success": False, "error": "Vosk model not found."}
         try:
             import json
@@ -493,6 +511,8 @@ class AradhyaVoiceEngine:
                     r.AcceptWaveform(data)
                 res = json.loads(r.FinalResult())
                 text = res.get("text", "").strip()
+                if text.lower() in {"huh", "the", "that", "a", "oh", "um", "ah", "an", "i", "uh", "mmm", "hmm"}:
+                    text = ""
                 return {"success": True, "transcribed_text": text, "model_used": "vosk-offline"}
         except Exception as e:
             return {"success": False, "error": str(e)}
@@ -527,7 +547,7 @@ The language is likely Gujarati, Hindi, or Indian English (for example: 'Hey Ara
 If there is no clear speech, or only background ambient silence/noise/hum, return EXACTLY: [SILENCE]
 Do NOT return timestamps like '00:01', do not add explanations or quotes. Return ONLY the spoken words.
 """
-            models_to_try = ["gemini-3.5-flash-lite", "gemini-3.5-flash"]
+            models_to_try = ["gemini-3.5-flash-lite"]
             last_e = None
 
             for key in candidate_keys:

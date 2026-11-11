@@ -17,11 +17,11 @@ echo "============================================================" >> "$LOG_FIL
 # 1. Clean up stale lock and temp files from previous sessions
 rm -f /tmp/aradhya_desktop_boot_done /tmp/aradhya_startup.lock /tmp/chhaya_mirror.pid.stale /tmp/aradhya_user_dismissed
 
-# 1b. Calibrate ALSA & PipeWire mic gain (unity gain 0dB, +10dB preamp boost, 100% volume)
-amixer -c 1 sset Capture 100% unmute >> "$LOG_FILE" 2>&1 || true
-amixer -c 1 sset "Internal Mic Boost" 1 >> "$LOG_FILE" 2>&1 || true
-amixer -c 1 sset Digital 60 >> "$LOG_FILE" 2>&1 || true
-pactl set-source-volume alsa_input.pci-0000_00_1b.0.analog-stereo 100% >> "$LOG_FILE" 2>&1 || true
+# 1b. Calibrate ALSA & PipeWire mic gain (+30dB Capture, +20dB preamp Boost, +5dB Digital)
+pactl set-source-mute alsa_input.pci-0000_00_1b.0.analog-stereo 0 >> "$LOG_FILE" 2>&1 || true
+amixer -c 1 sset Capture 63 unmute >> "$LOG_FILE" 2>&1 || true
+amixer -c 1 sset "Internal Mic Boost" 2 >> "$LOG_FILE" 2>&1 || true
+amixer -c 1 sset Digital 70 >> "$LOG_FILE" 2>&1 || true
 
 # 2. Ensure 'Software & Work' partition (/media/alpesh/Software & Work/Agents) is mounted
 /home/alpesh/bin/ensure_software_work_mount.sh >> "$LOG_FILE" 2>&1 || true
