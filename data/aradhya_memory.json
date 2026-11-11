@@ -4,11 +4,6 @@
   "recent_actions": [
     {
       "action": "ONLINE_GEMINI_INTELLIGENCE",
-      "details": "make aradhya speaking in this laptop for forever",
-      "timestamp": "2026-10-31 20:56:25"
-    },
-    {
-      "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "make it speaking",
       "timestamp": "2026-10-31 20:56:58"
     },
@@ -151,6 +146,11 @@
       "action": "OFFLINE_COGNITIVE_REASONING",
       "details": "huh",
       "timestamp": "2026-11-10 21:57:47"
+    },
+    {
+      "action": "OFFLINE_COGNITIVE_REASONING",
+      "details": "huh",
+      "timestamp": "2026-11-11 22:18:49"
     }
   ],
   "custom_aliases": {},
