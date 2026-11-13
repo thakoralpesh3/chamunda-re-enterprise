@@ -1,5 +1,17 @@
 [
   {
+    "id": "NOTIF-1794550035",
+    "timestamp": "2026-11-13 11:37:15",
+    "title": "💻 લેપટોપ શરૂ થયું • GitHub Auto-Sync પૂર્ણ",
+    "message": "જય માતાજી અલ્પેશ સાહેબ! લેપટોપ શરૂ થતાં GitHub પરથી 5 રિપોઝીટરીઝ 100% ઓટો-સિન્ક થઈ ગઈ છે. તમામ એજન્ટ્સ અને સર્વિસીસ સક્રિય છે.",
+    "category": "STARTUP_SYNC",
+    "details": "• Jarvis Mark VII System Assistant: Up-to-date\n• Web2APK Autonomous Android Packager: Up-to-date\n• Web2IPA Autonomous iOS Packager: Up-to-date\n• APK TV Converter Agent: Up-to-date\n• YouTube Production & Growth Agent: Up-to-date\n\nWarnings:\nChamunda RE Enterprise (Aradhya CEO): Command '['/home/alpesh/.local/bin/git', 'pull', '--rebase',\nPublisheR AI Book Publishing Agent: error: cannot pull with rebase: You have unstaged changes.\ne",
+    "solution": "અનિચ્છનીય સર્વિસીસ (chamunda-app.service) આપમેળે પુનઃજીવિત કરવામાં આવી છે.",
+    "dispatched_channels": [
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1794548284",
     "timestamp": "2026-11-13 11:08:04",
     "title": "💻 લેપટોપ શરૂ થયું • GitHub Auto-Sync પૂર્ણ",
