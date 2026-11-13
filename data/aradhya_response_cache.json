@@ -1,15 +1,15 @@
 {
-  "449b3e4c503839c3fd5da5bef140115a": {
-    "cached_at": 1794136203.4518807,
+  "c9089c7f0dbf8ed78c90186aac47c652": {
+    "cached_at": 1794569916.5132358,
     "data": {
       "success": true,
       "used_llm": true,
       "model_used": "gemini-3.5-flash-lite",
       "badge": "🌱 Flash Lite",
       "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite",
-      "response_en": "Jai Mataji, Alpesh Sir. Aradhya here, your CEO and Chief AI Orchestrator at Chamunda Automobile Parts & Service (Project Chhaya). \n\nAll systems across our Linux workstation (Dell Inspiron 3542, `http://alpesh-Inspiron-3542.local:8081`), active Cloudflare tunnel (`https://kijiji-confidentiality-clause-island.trycloudflare.com`), and workshop operations are running at peak efficiency. Our official helpline (+91 78747 19139) is monitored, and workshop inventory and VIP Royal Enfield service queues are fully optimized. \n\nHow may I assist you with Project Chhaya, workshop expansion, or system optimization today?",
-      "response_gu": "જય માતાજી અલ્પેશ સાહેબ. હું આરાધ્યા, આપની ચાામુંડા ઓટોમોબાઈલ પાર્ટ્સ એન્ડ સર્વિસ (પ્રોજેક્ટ છાયા)ની CEO અને ચીફ AI ઓર્ગેનાઈઝર.\n\nઆપણા લિનક્સ વર્કસ્ટેશન (Dell Inspiron 3542, `http://alpesh-Inspiron-3542.local:8081`), ક્લાઉડફ્લેર ટનલ (`https://kijiji-confidentiality-clause-island.trycloudflare.com`) અને વર્કશોપની તમામ સિસ્ટમ્સ અત્યારે ઉત્તમ રીતે કાર્ય કરી રહી છે. આપણો સત્તાવાર હેલ્પલાઇન નંબર (+91 78747 19139) સક્રિય છે અને રોયલ એનફિલ્ડ સર્વિસ કતાર તથા ઇન્વેન્ટરી સંપૂર્ણપણે વ્યવસ્થિત છે.\n\nઆજે પ્રોજેક્ટ છાયા, વર્કશોપના વિકાસ અથવા સિસ્ટમ ઓપ્ટિમાઇઝેશન માટે હું આપને શું સહાય કરી શકું?",
-      "latency_ms": 6861
+      "response_en": "Jaimataji Alpesh Sir,\n\nRegarding the recent system alerts on our Linux Mint workstation (Dell Inspiron 3542), here are the immediate, authoritative solutions to maintain peak workshop performance and connectivity for Project Chhaya:\n\n1. **Network & Cloudflare Tunnel Stability:**\n   - If the online link (`kijiji-confidentiality-clause-island.trycloudflare.com`) drops, restart the daemon via terminal: `systemctl --user restart cloudflared`.\n   - Verify local Wi-Fi binding (`http://alpesh-Inspiron-3542.local:8081`) using: `ip addr show`.\n\n2. **System Performance & Resource Optimization:**\n   - Clear system caches and check memory usage to keep multitasking smooth during parts invoicing: `free -h` and `sudo apt clean`.\n   - Check background logs for any hardware warnings: `journalctl -p 3 -b`.\n\n3. **Workshop Operations & Helpline Protocol:**\n   - All customer communications remain anchored to our official helpline: **+91 78747 19139**.\n\nAll systems are fully under command. Ready for your further orders, Sir.",
+      "response_gu": "જય માતાજી અલ્પેશ સાહેબ,\n\nપ્રોજેક્ટ છાયા માટે આપણા લિનક્સ મિન્ટ (Dell Inspiron 3542) વર્કસ્ટેશન પર આવેલા સિસ્ટમ એલર્ટ્સને ઉકેલવા માટેના તાત્કાલિક અને સચોટ પગલાં નીચે મુજબ છે:\n\n૧. **નેટવર્ક અને ક્લાઉડફ્લેર ટનલ સ્ટેબિલિટી:**\n   - જો ઓનલાઈન લિંક બંધ થાય, તો ટર્મિનલમાંથી ડેમન રિસ્ટાર્ટ કરો: `systemctl --user restart cloudflared`.\n   - લોકલ Wi-Fi લિંક ચકાસવા માટે આ કમાન્ડ વાપરો: `ip addr show`.\n\n૨. **સિસ્ટમ પર્ફોર્મન્સ અને સ્પીડ ઓપ્ટિમાઇઝેશન:**\n   - બિલિંગ અને ઇન્વેન્ટરી વખતે સ્પીડ જાળવવા મેમરી સ્ટેટસ અને કેશ ક્લીયર કરો: `free -h` અને `sudo apt clean`.\n   - હાર્ડવેર સંબંધિત કોઈ એરર હોય તો લોગ ચકાસો: `journalctl -p 3 -b`.\n\n૩. **વર્કશોપ ઓપરેશન્સ અને હેલ્પલાઇન:**\n   - ગ્રાહક સંપ માટે આપણો સત્તાવાર હેલ્પલાઇન નંબર **+91 78747 19139** જ કાર્યરત રહેશે.\n\nબધી સિસ્ટમ્સ સંપૂર્ણ નિયંત્રણ હેઠળ છે. આપના આગામી આદેશોની રાહ જોઉં છું સાહેબ.",
+      "latency_ms": 3213
     }
   }
 }
