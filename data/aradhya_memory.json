@@ -3,11 +3,6 @@
   "learned_habits": {},
   "recent_actions": [
     {
-      "action": "ONLINE_GEMINI_INTELLIGENCE",
-      "details": "make it speaking",
-      "timestamp": "2026-10-31 20:56:58"
-    },
-    {
       "action": "HARDWARE_DIAGNOSTIC",
       "details": "make it speaking through speaker naow",
       "timestamp": "2026-10-31 20:57:27"
@@ -151,6 +146,11 @@
       "action": "OFFLINE_COGNITIVE_REASONING",
       "details": "huh",
       "timestamp": "2026-11-11 22:18:49"
+    },
+    {
+      "action": "MULTI_AGENT_ORCHESTRATION",
+      "details": "status of openjarvis",
+      "timestamp": "2026-11-13 14:33:02"
     }
   ],
   "custom_aliases": {},

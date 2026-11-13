@@ -736,6 +736,23 @@ class AradhyaAutonomousEngine:
             if ipa_dir.exists():
                 return {"success": True, "agent": "Web-to-IPA Agent", "summary": "Web-to-IPA Xcode Engine ready at /home/alpesh/web-to-ipa-agent."}
 
+        if "openjarvis" in target or "open-jarvis" in target:
+            from aradhya_openjarvis_bridge import get_openjarvis_bridge
+            oj = get_openjarvis_bridge()
+            if oj.available:
+                tool_list = oj.list_tools()
+                return {
+                    "success": True,
+                    "agent": "OpenJarvis AI Framework",
+                    "tools_count": len(tool_list),
+                    "summary": f"OpenJarvis Core online at /home/alpesh/OpenJarvis with {len(tool_list)} tools active."
+                }
+            return {
+                "success": False,
+                "agent": "OpenJarvis AI Framework",
+                "summary": "OpenJarvis repository present but registry initialization failed."
+            }
+
         if "jarvis" in target:
             j_dir = HOME_DIR / "jarvis-agent"
             if j_dir.exists():
@@ -1765,8 +1782,8 @@ class AradhyaAutonomousEngine:
                 resp_en = f"Greetings Alpesh Sir! Top active CPU & RAM consumer processes:\n\n{joined_procs}"
 
         # Subagent Orchestration
-        elif any(w in msg_lower for w in ["youtube", "web2apk", "web2ipa", "apk-tv", "jarvis"]):
-            target_agent = "youtube" if "youtube" in msg_lower else ("web2apk" if "apk" in msg_lower else ("web2ipa" if "ipa" in msg_lower else "jarvis"))
+        elif any(w in msg_lower for w in ["openjarvis", "open-jarvis", "youtube", "web2apk", "web2ipa", "apk-tv", "jarvis"]):
+            target_agent = "openjarvis" if ("openjarvis" in msg_lower or "open-jarvis" in msg_lower) else ("youtube" if "youtube" in msg_lower else ("web2apk" if "apk" in msg_lower else ("web2ipa" if "ipa" in msg_lower else "jarvis")))
             res = self.orchestrate_subagent(target_agent, message)
             action_data["subagent"] = res
             action_type = "MULTI_AGENT_ORCHESTRATION"
