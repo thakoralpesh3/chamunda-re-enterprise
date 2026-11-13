@@ -430,5 +430,14 @@
     "badge": "👑 Gemini 4 Carbon",
     "source": "google_genai_api",
     "discovered_at": "2026-11-10 21:55:05"
+  },
+  "gemini-4-hydrogen": {
+    "model_id": "gemini-4-hydrogen",
+    "name": "Gemini 4 Hydrogen (Auto-Discovered)",
+    "tag": "FRONTIER_ARGON",
+    "description": "Gemini 4 Hydrogen",
+    "badge": "👑 Gemini 4 Hydrogen",
+    "source": "google_genai_api",
+    "discovered_at": "2026-11-13 11:06:57"
   }
 }
