@@ -28,7 +28,7 @@ if not os.environ.get("GEMINI_API_KEY") and not os.environ.get("GOOGLE_API_KEY")
         if keys:
             os.environ["GEMINI_API_KEY"] = keys[0]
             os.environ["GOOGLE_API_KEY"] = keys[0]
-    except Exception as e:
+    except Exception:
         pass
 
 logging.basicConfig(
@@ -39,16 +39,12 @@ logger = logging.getLogger("AradhyaOpenJarvisServer")
 
 
 def start_server(host: str = "127.0.0.1", port: int = 8000):
-    from openjarvis.cli.serve import serve
-    from click.testing import CliRunner
-
     logger.info("Starting OpenJarvis server for Aradhya on http://%s:%d ...", host, port)
-    import uvicorn
     from openjarvis.core.config import load_config
     from openjarvis.server.daemon import run_server
-    from openjarvis.server import create_app
+    from openjarvis.server.app import create_app
     from openjarvis.engine import get_engine
-    from openjarvis.event import EventBus
+    from openjarvis.core.events import EventBus
     from openjarvis.security import setup_security
 
     config = load_config()
@@ -57,12 +53,12 @@ def start_server(host: str = "127.0.0.1", port: int = 8000):
     if not resolved:
         resolved = get_engine(config, None, model=None)
 
-    engine_name, engine = resolved if resolved else ("offline", None)
+    engine_name, engine = resolved if resolved else ("nim", None)
     sec = setup_security(config, engine, bus)
 
     app = create_app(
-        engine=sec.engine if sec else engine,
-        default_model=config.intelligence.default_model or "gemini-3.5-flash-lite",
+        sec.engine if sec else engine,
+        config.intelligence.default_model or "gemini-3.5-flash-lite",
         agent=None,
         bus=bus,
         engine_name=engine_name,

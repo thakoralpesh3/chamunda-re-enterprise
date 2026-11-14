@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14 18:29:39",
+  "updated_at": "2026-11-14 19:26:48",
   "files": {
     "/home/alpesh/chamunda_re_enterprise/aradhya_autonomous_core.py": {
       "sha256": "a2138e9979c45b31223294826ba2fe4025643af513057483c5cd1add48a7f6c1",
@@ -92,9 +92,9 @@
       "mtime": 1791917437.194184
     },
     "/home/alpesh/chamunda_re_enterprise/aradhya_autostart_boot.sh": {
-      "sha256": "fe6afffc6212c3ebaba8a758819d5a1c29c88a31e1ab619e4cad947d5adf232e",
-      "size_bytes": 5178,
-      "mtime": 1793628821.6806102
+      "sha256": "f75a933b610606c3351d807fb6d976f9672864b2c08c275cbf4b984868896353",
+      "size_bytes": 5485,
+      "mtime": 1794664581.439317
     },
     "/home/alpesh/chamunda_re_enterprise/aradhya_reboot_guardian.sh": {
       "sha256": "d878a194eb17efbcde8f11c733806077fc549f990c27d64514ce6e93661a16a4",

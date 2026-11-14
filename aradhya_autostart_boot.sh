@@ -65,6 +65,12 @@ if ! pgrep -f "aradhya_desktop_companion.py" >/dev/null 2>&1; then
     log "🌸 Aradhya 2D Desktop Companion dispatched"
 fi
 
+# 5.3 Launch OpenJarvis API Server Daemon (127.0.0.1:8000)
+if ! pgrep -f "aradhya_openjarvis_server.py" >/dev/null 2>&1; then
+    python3 "$BASE_DIR/aradhya_openjarvis_server.py" >> "$BASE_DIR/data/aradhya_openjarvis_server.log" 2>&1 &
+    log "⚡ OpenJarvis API Server Daemon dispatched on port 8000"
+fi
+
 # 6. Run Daily YouTube Shorts pipeline quietly in background if due for today
 if [ -d "/home/alpesh/jarvis-agent" ]; then
     python3 -c "
