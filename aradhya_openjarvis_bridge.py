@@ -27,6 +27,7 @@ class AradhyaOpenJarvisBridge:
     def __init__(self):
         self.available = False
         self.registry = None
+        self.config = None
         self._init_openjarvis()
 
     def _init_openjarvis(self) -> None:
@@ -35,12 +36,28 @@ class AradhyaOpenJarvisBridge:
         try:
             import openjarvis.tools
             from openjarvis.core.registry import ToolRegistry
+            from openjarvis.core.config import load_config
             self.registry = ToolRegistry
+            self.config = load_config()
             self.available = True
             logger.info("OpenJarvis ToolRegistry loaded successfully (%d tools available).", len(self.registry.keys()))
         except Exception as e:
             logger.warning("Could not initialize OpenJarvis registry: %s", e)
             self.available = False
+
+    def get_config_summary(self) -> Dict[str, Any]:
+        """Return a structured summary of active OpenJarvis settings."""
+        if not self.config:
+            return {"configured": False}
+        return {
+            "configured": True,
+            "default_model": getattr(self.config.intelligence, "default_model", ""),
+            "objective": getattr(self.config.agent, "objective", ""),
+            "voice_id": getattr(self.config.speech, "voice_id", ""),
+            "tts_backend": getattr(self.config.speech, "tts_backend", ""),
+            "enabled_tools": getattr(self.config.tools, "enabled", ""),
+            "allowed_dirs": getattr(self.config.security, "allowed_dirs", [])
+        }
 
     def list_tools(self) -> List[str]:
         """List all registered OpenJarvis tools."""
