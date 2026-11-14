@@ -741,11 +741,15 @@ class AradhyaAutonomousEngine:
             oj = get_openjarvis_bridge()
             if oj.available:
                 tool_list = oj.list_tools()
+                cfg_sum = oj.get_config_summary()
+                model_str = f" | Model: {cfg_sum.get('default_model')}" if cfg_sum.get("default_model") else ""
+                voice_str = f" | Voice: {cfg_sum.get('voice_id')}" if cfg_sum.get("voice_id") else ""
                 return {
                     "success": True,
                     "agent": "OpenJarvis AI Framework",
                     "tools_count": len(tool_list),
-                    "summary": f"OpenJarvis Core online at /home/alpesh/OpenJarvis with {len(tool_list)} tools active."
+                    "config": cfg_sum,
+                    "summary": f"OpenJarvis Core online at /home/alpesh/OpenJarvis with {len(tool_list)} tools active{model_str}{voice_str}."
                 }
             return {
                 "success": False,
