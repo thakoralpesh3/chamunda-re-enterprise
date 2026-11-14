@@ -18,48 +18,6 @@
   ],
   "cloud_execution_history": [
     {
-      "timestamp": "2026-10-30 22:00:00",
-      "actor": "thakoralpesh3",
-      "tasks_processed": 0,
-      "system_mode": "24/7_CLOUD_SIMULATOR_ACTIVE",
-      "snapshot": {
-        "total_parts_skus": 4469,
-        "inventory_valuation_inr": 269709534,
-        "active_job_cards_count": 106,
-        "night_locker_available_bays": 4,
-        "active_subagents": 6,
-        "generated_at": "2026-10-30 22:00:00"
-      }
-    },
-    {
-      "timestamp": "2026-10-31 01:30:26",
-      "actor": "thakoralpesh3",
-      "tasks_processed": 0,
-      "system_mode": "24/7_CLOUD_SIMULATOR_ACTIVE",
-      "snapshot": {
-        "total_parts_skus": 4469,
-        "inventory_valuation_inr": 269709534,
-        "active_job_cards_count": 106,
-        "night_locker_available_bays": 4,
-        "active_subagents": 6,
-        "generated_at": "2026-10-31 01:30:26"
-      }
-    },
-    {
-      "timestamp": "2026-10-31 08:05:39",
-      "actor": "thakoralpesh3",
-      "tasks_processed": 0,
-      "system_mode": "24/7_CLOUD_SIMULATOR_ACTIVE",
-      "snapshot": {
-        "total_parts_skus": 4469,
-        "inventory_valuation_inr": 269709534,
-        "active_job_cards_count": 106,
-        "night_locker_available_bays": 4,
-        "active_subagents": 6,
-        "generated_at": "2026-10-31 08:05:39"
-      }
-    },
-    {
       "timestamp": "2026-10-31 15:37:49",
       "actor": "thakoralpesh3",
       "tasks_processed": 0,
@@ -701,6 +659,62 @@
         "night_locker_available_bays": 4,
         "active_subagents": 6,
         "generated_at": "2026-11-13 02:27:08"
+      }
+    },
+    {
+      "timestamp": "2026-11-13 11:56:06",
+      "actor": "thakoralpesh3",
+      "tasks_processed": 0,
+      "system_mode": "24/7_CLOUD_SIMULATOR_ACTIVE",
+      "snapshot": {
+        "total_parts_skus": 4469,
+        "inventory_valuation_inr": 269709534,
+        "active_job_cards_count": 106,
+        "night_locker_available_bays": 4,
+        "active_subagents": 6,
+        "generated_at": "2026-11-13 11:56:06"
+      }
+    },
+    {
+      "timestamp": "2026-11-13 19:23:32",
+      "actor": "thakoralpesh3",
+      "tasks_processed": 0,
+      "system_mode": "24/7_CLOUD_SIMULATOR_ACTIVE",
+      "snapshot": {
+        "total_parts_skus": 4469,
+        "inventory_valuation_inr": 269709534,
+        "active_job_cards_count": 106,
+        "night_locker_available_bays": 4,
+        "active_subagents": 6,
+        "generated_at": "2026-11-13 19:23:32"
+      }
+    },
+    {
+      "timestamp": "2026-11-14 00:44:18",
+      "actor": "thakoralpesh3",
+      "tasks_processed": 0,
+      "system_mode": "24/7_CLOUD_SIMULATOR_ACTIVE",
+      "snapshot": {
+        "total_parts_skus": 4469,
+        "inventory_valuation_inr": 269709534,
+        "active_job_cards_count": 106,
+        "night_locker_available_bays": 4,
+        "active_subagents": 6,
+        "generated_at": "2026-11-14 00:44:18"
+      }
+    },
+    {
+      "timestamp": "2026-11-14 08:42:31",
+      "actor": "thakoralpesh3",
+      "tasks_processed": 0,
+      "system_mode": "24/7_CLOUD_SIMULATOR_ACTIVE",
+      "snapshot": {
+        "total_parts_skus": 4469,
+        "inventory_valuation_inr": 269709534,
+        "active_job_cards_count": 106,
+        "night_locker_available_bays": 4,
+        "active_subagents": 6,
+        "generated_at": "2026-11-14 08:42:31"
       }
     }
   ]
