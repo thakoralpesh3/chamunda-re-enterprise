@@ -63,23 +63,51 @@ async def health():
 
 @app.get("/api/models")
 async def list_models():
+    models_list = [
+        {"id": "aradhya-ceo", "name": "👑 Aradhya CEO (Royal Enfield Dealership & Technical Mastermind)"},
+        {"id": "jarvis-commander", "name": "⚡ Jarvis Mark VII (Linux OS Control & Security)"},
+        {"id": "hermes-relay", "name": "🕊️ Hermes Relay Agent (Smart Intent Router & Fallback)"},
+        {"id": "aradhya-offline", "name": "📱 100% Offline Cognitive Core (AOCKRE v2.0 - Air-Gapped)"}
+    ]
+    # Ingest dynamically discovered models if available
+    try:
+        from aradhya_model_updater import get_model_updater
+        updater = get_model_updater()
+        discovered = updater.discovered_models
+        for m_id, m_meta in discovered.items():
+            if not any(x["id"] == m_id for x in models_list):
+                models_list.append({
+                    "id": m_id,
+                    "name": f"✨ {m_id} ({m_meta.get('tier', 'Frontier Model')})"
+                })
+    except Exception:
+        pass
+
     import urllib.request
     try:
         req = urllib.request.Request(f"{GATEWAY_URL}/models", headers={"User-Agent": "OpenWebUI-Local/3.0"})
         with urllib.request.urlopen(req, timeout=2) as resp:
             data = json.loads(resp.read().decode("utf-8"))
-            return data
+            gateway_models = data.get("data", [])
+            for gm in gateway_models:
+                if not any(x["id"] == gm.get("id") for x in models_list):
+                    models_list.append(gm)
     except Exception as e:
-        logger.warning("Could not reach gateway for models: %s", e)
-        return {
-            "object": "list",
-            "data": [
-                {"id": "aradhya-ceo", "name": "👑 Aradhya CEO (Royal Enfield Dealership & Technical Mastermind)"},
-                {"id": "jarvis-commander", "name": "⚡ Jarvis Mark VII (Linux OS Control & Security)"},
-                {"id": "hermes-relay", "name": "🕊️ Hermes Relay Agent (Smart Intent Router & Fallback)"},
-                {"id": "aradhya-offline", "name": "📱 100% Offline Cognitive Core (AOCKRE v2.0 - Air-Gapped)"}
-            ]
-        }
+        logger.debug("Gateway models query offline or fallback: %s", e)
+
+    return {
+        "object": "list",
+        "data": models_list
+    }
+
+
+@app.post("/api/system/update")
+async def auto_update_system():
+    """Trigger full self-healing, model discovery, bug fixing & autoupdate cycle."""
+    from aradhya_openwebui_updater import get_openwebui_updater
+    updater = get_openwebui_updater()
+    res = updater.run_full_update_cycle()
+    return JSONResponse(res)
 
 
 @app.post("/api/chat/completions")
@@ -113,8 +141,15 @@ async def chat_completions(request: Request):
         logger.error("Error communicating with Aradhya Gateway (%s). Triggering emergency offline reply.", e)
         # Direct local fallback
         user_msg = payload.get("messages", [{}])[-1].get("content", "")
-        fallback_res = relay.process_message(user_msg, preferred_model="aradhya-offline")
-        reply_text = fallback_res.get("reply", "ક્ષમા કરશો સાહેબ, ઓફલાઇન પ્રક્રિયામાં સમસ્યા આવી છે.")
+        chosen_model = payload.get("model", "aradhya-offline")
+        try:
+            from aradhya_autonomous_core import get_aradhya_engine
+            core = get_aradhya_engine()
+            core_res = core.process_command(user_msg, preferred_model=chosen_model, speak_response=False)
+            reply_text = core_res.get("response_gu") or core_res.get("response_en") or "આદેશ સફળતાપૂર્વક ચલાવાયો છે."
+        except Exception as core_err:
+            fallback_res = relay.process_message(user_msg, preferred_model="aradhya-offline")
+            reply_text = fallback_res.get("reply", "ક્ષમા કરશો સાહેબ, ઓફલાઇન પ્રક્રિયામાં સમસ્યા આવી છે.")
         return JSONResponse({
             "id": "chatcmpl-emergency-offline",
             "object": "chat.completion",
