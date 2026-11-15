@@ -1,7 +1,7 @@
 {
-  "default_mode": "voice",
-  "voice_output_enabled": true,
+  "default_mode": "text",
+  "voice_output_enabled": false,
   "listening_duration_seconds": 5,
-  "auto_listen_after_response": true,
-  "last_updated": "2026-11-01 01:34:49"
+  "auto_listen_after_response": false,
+  "last_updated": "2026-11-15 13:39:31"
 }
