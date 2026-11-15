@@ -157,7 +157,7 @@ class AradhyaOpenWebUIUpdater:
                     ["git", "-C", str(self.base_dir), "pull", "--ff-only"],
                     capture_output=True,
                     text=True,
-                    timeout=15
+                    timeout=4
                 )
                 log_entries.append(f"Git sync: {git_pull.stdout.strip() or 'Already up to date.'}")
             except Exception as e:
