@@ -18,6 +18,7 @@ import datetime
 import subprocess
 import socket
 import json
+import urllib.parse
 import math
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Tuple
@@ -1340,6 +1341,130 @@ class AradhyaAutonomousEngine:
             action_type = "INTERFACE_MODE_SWITCH"
             resp_gu = "જય માતાજી અલ્પેશ સાહેબ! વૉઇસ કમાન્ડ મોડ સક્રિય થઈ ગયો છે. હું આપના બોલેલા આદેશ સાંભળવા ૧૦૦% તૈયાર છું."
             resp_en = "Greetings Alpesh Sir! Switched to Voice Command Mode. I am ready to listen and execute your spoken commands."
+
+        # WhatsApp Messaging & Autonomous Dispatch
+        elif any(w in msg_lower for w in [
+            "whatsapp", "whats app", "વાટ્સએપ", "વોટ્સએપ", "વોટ્સેપ", "વ્હોટ્સએપ", "વ્હોટ્સેપ"
+        ]) or (
+            any(w in msg_lower for w in ["send ", "મોકલો ", "લખો "]) and any(w in msg_lower for w in ["message", "મેસેજ", "ટેક્સ્ટ", "sms"])
+        ):
+            phone_match = re.search(r'(?:\+?91|0)?[6-9]\d{9}', message)
+            if phone_match:
+                raw_phone = phone_match.group(0)
+                clean_phone = "".join(c for c in raw_phone if c.isdigit())
+                if len(clean_phone) == 10:
+                    clean_phone = "91" + clean_phone
+                elif len(clean_phone) > 10 and clean_phone.startswith("0"):
+                    clean_phone = "91" + clean_phone[1:]
+            else:
+                clean_phone = "917874719139"
+
+            msg_text = ""
+            if ":" in message:
+                msg_text = message.split(":", 1)[1].strip()
+            elif " saying " in msg_lower:
+                msg_text = message[msg_lower.index(" saying ") + 8:].strip()
+            elif " that " in msg_lower:
+                msg_text = message[msg_lower.index(" that ") + 6:].strip()
+            elif " text " in msg_lower:
+                msg_text = message[msg_lower.index(" text ") + 6:].strip()
+            elif " message " in msg_lower:
+                parts = message.split("message", 1)
+                after = parts[1].strip()
+                after_clean = re.sub(r'^(?:to\s+[^\s]+\s+)?(?:on\s+whatsapp\s+)?(?:saying\s+|that\s+)?', '', after, flags=re.IGNORECASE).strip()
+                if after_clean and after_clean.lower() not in ["to someone", "on whatsapp", "to someone on whatsapp"]:
+                    msg_text = after_clean
+            elif " મેસેજ " in message:
+                parts = message.split("મેસેજ", 1)
+                after = parts[1].strip()
+                after_clean = re.sub(r'^(?:મોકલો|કરો|આપો)?\s*(?:કે\s*)?', '', after, flags=re.IGNORECASE).strip()
+                if after_clean:
+                    msg_text = after_clean
+
+            if msg_text.startswith(('"', "'")) and msg_text.endswith(('"', "'")) and len(msg_text) > 1:
+                msg_text = msg_text[1:-1].strip()
+
+            env_desk = dict(os.environ)
+            env_desk.setdefault("DISPLAY", ":0")
+            env_desk.setdefault("XAUTHORITY", "/home/alpesh/.Xauthority")
+
+            if msg_text:
+                from whatsapp_dispatch_engine import get_whatsapp_dispatch_engine
+                wa_eng = get_whatsapp_dispatch_engine()
+                disp_rec = wa_eng.send_custom_alert(
+                    title="Aradhya WhatsApp Dispatch",
+                    message=msg_text,
+                    recipient=clean_phone,
+                    category="USER_DISPATCH"
+                )
+                wa_url = f"https://web.whatsapp.com/send?phone={clean_phone}&text={urllib.parse.quote(msg_text)}"
+                try:
+                    subprocess.Popen(["xdg-open", wa_url], env=env_desk)
+                except Exception:
+                    pass
+                try:
+                    subprocess.Popen([
+                        "notify-send", "-a", "Aradhya CEO", "-i", "emblem-mail",
+                        "👑 WhatsApp ડિસ્પેચ સફળ",
+                        f"પ્રાપ્તકર્તા: +{clean_phone}\nસંદેશ: {msg_text[:50]}"
+                    ], env=env_desk)
+                except Exception:
+                    pass
+
+                action_data["whatsapp_dispatch"] = {
+                    "recipient": clean_phone,
+                    "message": msg_text,
+                    "dispatch_id": disp_rec.get("dispatch_id"),
+                    "status": "DISPATCHED"
+                }
+                action_type = "WHATSAPP_DISPATCH"
+                badge = "💬 Aradhya WhatsApp Dispatch Engine"
+                model_used = "offline-autonomous-aradhya"
+                resp_gu = (
+                    f"જય માતાજી અલ્પેશ સાહેબ! 💬 WhatsApp પર સંદેશ સફળતાપૂર્વક ડિસ્પેચ કરી દેવાયો છે:\n"
+                    f"• પ્રાપ્તકર્તા: +{clean_phone}\n"
+                    f"• સંદેશ: \"{msg_text}\"\n"
+                    f"• સિસ્ટમ ક્રિયા: ડેસ્કટોપ બ્રાઉઝરમાં WhatsApp Web ચેટ ઓપન કરી દેવામાં આવી છે અને આઉટબોક્સમાં નોંધાઈ ગયું છે ✅"
+                )
+                resp_en = (
+                    f"Greetings Alpesh Sir! 💬 WhatsApp message dispatched successfully:\n"
+                    f"• Recipient: +{clean_phone}\n"
+                    f"• Message: \"{msg_text}\"\n"
+                    f"• System Action: Opened WhatsApp Web chat on desktop and logged to dispatch outbox ✅"
+                )
+            else:
+                try:
+                    subprocess.Popen(["xdg-open", "https://web.whatsapp.com"], env=env_desk)
+                except Exception:
+                    pass
+                try:
+                    subprocess.Popen([
+                        "notify-send", "-a", "Aradhya CEO", "-i", "emblem-mail",
+                        "👑 WhatsApp Web ડેસ્કટોપ સક્રિય",
+                        "ડેસ્કટોપ પર WhatsApp ખૂલી ગયું છે."
+                    ], env=env_desk)
+                except Exception:
+                    pass
+
+                action_data["whatsapp_dispatch"] = {
+                    "recipient": clean_phone,
+                    "status": "WEB_OPENED"
+                }
+                action_type = "WHATSAPP_OPEN"
+                badge = "💬 Aradhya WhatsApp Engine"
+                model_used = "offline-autonomous-aradhya"
+                resp_gu = (
+                    f"જય માતાજી અલ્પેશ સાહેબ! 💬 સમગ્ર લેપટોપ પર WhatsApp Web ખોલી દેવામાં આવ્યું છે 🚀\n"
+                    f"• કોઈપણ વ્યક્તિને સીધો સંદેશ મોકલવા માટે આ રીતે આદેશ આપો:\n"
+                    f"  👉 `send message to 7874719139 on whatsapp: [તમારો સંદેશ]`\n"
+                    f"• અથવા આપના રજીસ્ટર્ડ મોબાઈલ (+91 78747 19139) પર સંદેશ મોકલવા માટે ફક્ત સંદેશ લખો."
+                )
+                resp_en = (
+                    f"Greetings Alpesh Sir! 💬 WhatsApp Web has been launched on your desktop 🚀\n"
+                    f"• To dispatch a message directly to anyone, command:\n"
+                    f"  👉 `send message to 7874719139 on whatsapp: [your message]`\n"
+                    f"• Or simply provide the message to send to your registered number (+91 78747 19139)."
+                )
 
         # Volume Mute / Unmute
         elif any(w in msg_lower for w in ["mute", "મ્યૂટ", "અવાજ બંધ", "શાંત", "unmute"]):
