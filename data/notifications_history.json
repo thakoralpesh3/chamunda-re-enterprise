@@ -1,5 +1,18 @@
 [
   {
+    "id": "NOTIF-1795361829",
+    "timestamp": "2026-11-22 21:07:09",
+    "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
+    "message": "ધ્યાન આપો અલ્પેશ સાહેબ! સિસ્ટમમાં સમસ્યા જણાઈ છે:\nEdge tunnel probe failed or revoked. Fresh tunnel spawned.",
+    "category": "WARNING",
+    "details": "Edge tunnel probe failed or revoked. Fresh tunnel spawned.",
+    "solution": "વોચડોગ દ્વારા નવી SSH સુરક્ષિત ટનલ આપમેળે બનાવી દેવામાં આવી છે.",
+    "dispatched_channels": [
+      "desktop_banner",
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1795361497",
     "timestamp": "2026-11-22 21:01:37",
     "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
@@ -1252,17 +1265,5 @@
     "details": "• Jarvis Mark VII System Assistant: Up-to-date\n• Web2APK Autonomous Android Packager: Up-to-date\n• Web2IPA Autonomous iOS Packager: Up-to-date\n• APK TV Converter Agent: Up-to-date\n• YouTube Production & Growth Agent: Up-to-date\n\nWarnings:\nChamunda RE Enterprise (Aradhya CEO): Command '['/home/alpesh/.local/bin/git', 'pull', '--rebase',\nPublisheR AI Book Publishing Agent: error: cannot pull with rebase: You have unstaged changes.\ne",
     "solution": "કોઈ મેન્યુઅલ પગલાંની જરૂર નથી, તમામ એજન્ટ્સ અને સર્વિસીસ સામાન્ય રીતે કાર્યરત છે.",
     "dispatched_channels": []
-  },
-  {
-    "id": "NOTIF-1793385104",
-    "timestamp": "2026-10-31 00:01:44",
-    "title": "✅ કામ પૂર્ણ (Work Done): ૨૪/૭ GitHub Simulator & Auto-Sync સક્રિય",
-    "message": "જય માતાજી અલ્પેશ સાહેબ! Aradhya CEO દ્વારા આપનું સોંપેલું કામ સફળતાપૂર્વક પૂર્ણ થઈ ગયું છે.",
-    "category": "WORK_DONE",
-    "details": "હવે આરાધ્યા ૨૪/૭ ક્લાઉડમાં કાર્યરત છે અને લેપટોપ શરૂ થતાં ઓટો-સિન્ક થશે.",
-    "solution": "",
-    "dispatched_channels": [
-      "desktop_banner"
-    ]
   }
 ]
