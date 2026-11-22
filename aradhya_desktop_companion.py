@@ -212,6 +212,7 @@ class AradhyaChatWindow(Gtk.Window):
         chips_box.get_style_context().add_class("chips-container")
         chips = [
             ("⚡ ટર્બો બૂસ્ટ", "turbo clean ram"),
+            ("💬 WhatsApp", "open whatsapp"),
             ("🛡️ સાયબર સ્કેન", "hacker defense scan"),
             ("📊 સિસ્ટમ હેલ્થ", "check battery and system status"),
             ("🌐 OpenWebUI", "open_webui")
@@ -331,12 +332,23 @@ class AradhyaChatWindow(Gtk.Window):
         def _bg_worker():
             reply_text = ""
             try:
-                from hermes_relay_agent import get_hermes_relay
-                relay = get_hermes_relay()
-                res = relay.process_message(user_message=cmd, preferred_model="auto", voice_mode=False)
-                reply_text = res.get("reply") or res.get("response_gu") or res.get("response_en") or ""
-            except Exception:
-                pass
+                from hermes_relay_agent import is_laptop_action
+                from aradhya_autonomous_core import get_aradhya_engine
+                if is_laptop_action(cmd):
+                    core = get_aradhya_engine()
+                    res = core.process_command(cmd, speak_response=False)
+                    reply_text = res.get("response_gu") or res.get("response_en") or ""
+            except Exception as e:
+                logger.warning("Companion core physical execution error: %s", e)
+
+            if not reply_text:
+                try:
+                    from hermes_relay_agent import get_hermes_relay
+                    relay = get_hermes_relay()
+                    res = relay.process_message(user_message=cmd, preferred_model="auto", voice_mode=False)
+                    reply_text = res.get("reply") or res.get("response_gu") or res.get("response_en") or ""
+                except Exception as e:
+                    logger.warning("Companion relay error: %s", e)
 
             if not reply_text:
                 try:
