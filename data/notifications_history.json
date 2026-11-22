@@ -1,5 +1,18 @@
 [
   {
+    "id": "NOTIF-1795359602",
+    "timestamp": "2026-11-22 20:30:02",
+    "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
+    "message": "ધ્યાન આપો અલ્પેશ સાહેબ! સિસ્ટમમાં સમસ્યા જણાઈ છે:\nEdge tunnel probe failed or revoked. Fresh tunnel spawned.",
+    "category": "WARNING",
+    "details": "Edge tunnel probe failed or revoked. Fresh tunnel spawned.",
+    "solution": "વોચડોગ દ્વારા નવી SSH સુરક્ષિત ટનલ આપમેળે બનાવી દેવામાં આવી છે.",
+    "dispatched_channels": [
+      "desktop_banner",
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1795357737",
     "timestamp": "2026-11-22 19:58:57",
     "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
@@ -1246,17 +1259,6 @@
     "category": "WARNING",
     "details": "RAM વપરાશ ૮૫% પહોંચ્યો",
     "solution": "કમાન્ડ ચલાવો: 'aradhya heal' અથવા સિસ્ટમ બૂસ્ટ કરો.",
-    "dispatched_channels": [
-      "desktop_banner"
-    ]
-  },
-  {
-    "id": "NOTIF-1793208837",
-    "timestamp": "2026-10-28 23:03:57",
-    "title": "🚨 ગંભીર ખામી (Critical Alert): 🚨 ગંભીર સુરક્ષા ચેતવણી: અનધિકૃત એક્સેસ પ્રયાસ",
-    "message": "ધ્યાન આપો અલ્પેશ સાહેબ! સિસ્ટમમાં સમસ્યા જણાઈ છે:\nBlocked unauthorized GitHub actor 'unauthorized_hacker'. Only Alpesh Sir (thakoralpesh3) has access.",
-    "category": "CRITICAL",
-    "details": "Blocked unauthorized GitHub actor 'unauthorized_hacker'. Only Alpesh Sir (thakoralpesh3) has access.",
     "dispatched_channels": [
       "desktop_banner"
     ]
