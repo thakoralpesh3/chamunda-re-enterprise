@@ -613,22 +613,12 @@ class AradhyaDesktopPet(Gtk.Window):
 
         # Left Click (Button 1)
         if event.button == 1:
-            # Check Double Click (within 350ms) -> Launch Terminal
-            if now - self.last_click_time < 0.35:
-                self.say("કમાન્ડ સેન્ટર લોન્ચિંગ... 🚀", duration=3, speak_aloud=False)
-                self.launch_aradhya_terminal()
-                self.last_click_time = 0
-                return True
-
-            self.last_click_time = now
-            self.dragging = True
+            self.press_x = event.x_root
+            self.press_y = event.y_root
+            self.has_dragged = False
             self.drag_offset_x = int(event.x)
             self.drag_offset_y = int(event.y)
-
-            # Trigger a cute reaction on single click
-            self.state = "WAVING"
-            greet = random.choice(CLICK_GREETINGS)
-            self.say(greet, duration=5, speak_aloud=True)
+            self.last_click_time = now
 
         # Right Click (Button 3) -> Context Menu
         elif event.button == 3:
@@ -638,19 +628,58 @@ class AradhyaDesktopPet(Gtk.Window):
 
     def on_button_release(self, widget, event):
         if event.button == 1:
+            if not getattr(self, "has_dragged", False):
+                # Clicked on anime girl -> Open small chat screen for commands/work!
+                self.toggle_chat_screen()
             self.dragging = False
+            self.has_dragged = False
             self.state = "IDLE"
         return True
 
     def on_motion_notify(self, widget, event):
-        if self.dragging:
-            root_x, root_y = self.get_position()
-            new_x = int(event.x_root - self.drag_offset_x)
-            new_y = int(event.y_root - self.drag_offset_y)
-            self.x = max(0, min(self.screen_width - self.pet_w, new_x))
-            self.y = max(0, min(self.screen_height - self.pet_h, new_y))
-            self.move(int(self.x), int(self.y))
+        if hasattr(self, "press_x"):
+            dx = abs(event.x_root - self.press_x)
+            dy = abs(event.y_root - self.press_y)
+            if dx > 6 or dy > 6:
+                self.has_dragged = True
+                self.dragging = True
+                new_x = int(event.x_root - self.drag_offset_x)
+                new_y = int(event.y_root - self.drag_offset_y)
+                self.x = max(0, min(self.screen_width - self.pet_w, new_x))
+                self.y = max(0, min(self.screen_height - self.pet_h, new_y))
+                self.move(int(self.x), int(self.y))
         return True
+
+    def toggle_chat_screen(self):
+        """Opens or toggles the small compact chat screen for asking commands or work."""
+        if self.chat_window is None:
+            self.chat_window = AradhyaChatWindow(self)
+
+        if self.chat_window.get_visible():
+            self.chat_window.hide()
+        else:
+            chat_w = 380
+            chat_h = 520
+            target_x = int(self.x - chat_w - 12)
+            if target_x < 15:
+                target_x = int(self.x + self.pet_w + 12)
+            if target_x + chat_w > self.screen_width - 15:
+                target_x = max(15, self.screen_width - chat_w - 20)
+
+            target_y = int(self.y + self.pet_h - chat_h)
+            if target_y < 40:
+                target_y = 40
+            if target_y + chat_h > self.screen_height - 40:
+                target_y = max(40, self.screen_height - chat_h - 40)
+
+            self.chat_window.move(target_x, target_y)
+            self.chat_window.show_all()
+            self.chat_window.present()
+            self.chat_window.entry.grab_focus()
+
+            self.state = "WAVING"
+            greet = random.choice(CLICK_GREETINGS)
+            self.say(greet, duration=4, speak_aloud=False)
 
     def launch_aradhya_terminal(self):
         """Launches the global terminal console."""
@@ -671,7 +700,11 @@ class AradhyaDesktopPet(Gtk.Window):
     def show_context_menu(self, event):
         menu = Gtk.Menu()
 
-        item_launch = Gtk.MenuItem(label="🚀 Launch Aradhya Console (ડબલ ક્લિક)")
+        item_chat = Gtk.MenuItem(label="💬 આરાધ્યા કમાન્ડ ચેટ (Click Anime Girl)")
+        item_chat.connect("activate", lambda w: self.toggle_chat_screen())
+        menu.append(item_chat)
+
+        item_launch = Gtk.MenuItem(label="🚀 Full Terminal Console")
         item_launch.connect("activate", lambda w: self.launch_aradhya_terminal())
         menu.append(item_launch)
 
