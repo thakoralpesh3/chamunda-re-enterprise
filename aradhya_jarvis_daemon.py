@@ -266,38 +266,43 @@ class AradhyaJarvisDaemon:
 
         return None
 
+    def format_for_voice_speech(self, text: str, max_sentences: int = 3) -> str:
+        """
+        Produce a crisp, natural conversational response for voice speaking (1-3 sentences).
+        Strips markdown and complex artifacts while leaving clear speech.
+        """
+        clean = self.voice.clean_text_for_speech(text).strip()
+        if not clean:
+            return ""
+        sentences = [s.strip() for s in re.split(r'(?<=[.!?।])\s+', clean) if s.strip()]
+        if len(sentences) <= max_sentences:
+            return clean
+        return " ".join(sentences[:max_sentences])
+
     def handle_wake_interaction(self, initial_transcription: str):
-        """Full interaction flow: Wake -> Acknowledge -> Fast/Deep Command -> Execute -> Speak & WhatsApp Notify."""
+        """Full interaction flow: Wake -> Conversational Dialog Loop -> Execute -> Voice Response."""
         with self._lock:
             self.is_processing = True
 
         try:
-            log("⚡ Wake Word Detected! Acknowledging Alpesh Sir (<50ms)...")
-            try:
-                subprocess.run(
-                    ["notify-send", "-u", "normal", "-t", "5000", "⚡ આરાધ્યા એક્ટિવ (Jarvis Mode)", "હા અલ્પેશ સાહેબ, બોલો! હું સાંભળી રહી છું..."],
-                    stdout=subprocess.DEVNULL,
-                    stderr=subprocess.DEVNULL
-                )
-            except Exception:
-                pass
-
-            # Instant spoken ack (<50ms)
-            self.speak_acknowledgement()
-
-            # Check if command was spoken in the same utterance as the wake word
+            # Check if command was already spoken in the same utterance as the wake word
             command = self.extract_command(initial_transcription)
 
             if not command:
-                log("🎙️ Listening for Alpesh Sir's direct command (5s)...")
+                log("⚡ Wake Word Detected! Acknowledging Alpesh Sir (<50ms)...")
                 try:
                     subprocess.run(
-                        ["notify-send", "-u", "low", "-t", "5000", "🎙️ આરાધ્યા સાંભળી રહી છે...", "બોલો અલ્પેશ સાહેબ, આપનો આદેશ શું છે?"],
+                        ["notify-send", "-u", "normal", "-t", "4000", "⚡ આરાધ્યા એક્ટિવ (Jarvis Mode)", "હા અલ્પેશ સાહેબ, બોલો! હું સાંભળી રહી છું..."],
                         stdout=subprocess.DEVNULL,
                         stderr=subprocess.DEVNULL
                     )
                 except Exception:
                     pass
+
+                # Instant spoken ack (<50ms)
+                self.speak_acknowledgement()
+
+                log("🎙️ Listening for Alpesh Sir's direct command (5s)...")
                 cmd_wav = Path("/tmp/aradhya_jarvis_cmd.wav")
                 if self.record_chunk(cmd_wav, duration=5):
                     trans_res = self.voice.transcribe_audio(cmd_wav)
@@ -311,43 +316,126 @@ class AradhyaJarvisDaemon:
                 self.voice.speak("અલ્પેશ સાહેબ, આપનો અવાજ સ્પષ્ટ ન મળ્યો. આપ ફરીથી 'Hey Aradhya' કહી શકો છો.", language="gu", blocking=False)
                 return
 
-            log(f"🎯 Executing Command from Alpesh Sir: \"{command}\"")
+            current_cmd = command
+            # Conversational multi-turn loop (real-time Jarvis dialogue)
+            while self.running and current_cmd:
+                log(f"🎯 Processing Voice Command from Alpesh Sir: \"{current_cmd}\"")
 
-            # Check Local Fast-Path First (<50ms)
-            fast_res = self.execute_fast_path(command)
-            if fast_res:
-                resp_gu = fast_res["resp_gu"]
-                resp_en = fast_res["resp_en"]
-                log("⚡ Fast-Path Executed Locally!")
-            else:
-                # Deep Autonomous Execution
-                res = self.engine.process_command(command, sender="jarvis_voice", speak_response=False)
-                resp_gu = res.get("response_gu", "")
-                resp_en = res.get("response_en", "")
+                # Check Local Fast-Path First (<50ms)
+                fast_res = self.execute_fast_path(current_cmd)
+                is_task = False
+                action_type = "FAST_PATH"
+                if fast_res:
+                    resp_gu = fast_res["resp_gu"]
+                    resp_en = fast_res["resp_en"]
+                    log("⚡ Fast-Path Executed Locally!")
+                else:
+                    # Deep Autonomous Execution with conversational history
+                    res = self.engine.process_command(
+                        current_cmd,
+                        sender="jarvis_voice",
+                        speak_response=False,
+                        chat_history=self.conversation_history
+                    )
+                    resp_gu = res.get("response_gu", "")
+                    resp_en = res.get("response_en", "")
+                    action_type = res.get("action_type", "GENERAL_EXECUTIVE")
+                    is_task = (
+                        action_type in ["EMERGENCY_LOCKDOWN", "SECURITY_BLOCK", "AUTONOMOUS_MISSION", "TURBO_CLEAN"]
+                        or any(w in current_cmd.lower() for w in [
+                            "lockdown", "clean ram", "turbo boost", "mission", "backup",
+                            "whatsapp", "મોકલો", "વ્હોટ્સએપ", "સિક્યુરિટી સ્કેન"
+                        ])
+                    )
 
-            # Speak result back in Gujarati
-            log("🔊 Speaking response in Gujarati...")
-            self.voice.speak(resp_gu or resp_en, language="gu", blocking=True)
+                # Detect user language preference
+                is_gujarati = bool(re.search(r'[\u0A80-\u0AFF]', current_cmd)) or any(
+                    w in current_cmd.lower() for w in ["કેમ છો", "નમસ્તે", "જય માતાજી", "આરાધ્યા", "સાહેબ", "બોલો", "શું", "કેવી રીતે", "બેટરી", "અવાજ", "ચાર્જ"]
+                )
 
-            # Play completion notification & dispatch WhatsApp report
-            self.speak_task_done()
-            log("📱 Dispatching Task Completion Notification to WhatsApp and Desktop...")
+                spoken_full = resp_gu if is_gujarati else (resp_en or resp_gu)
+                voice_lang = "gu" if is_gujarati else "en"
 
-            summary_details = f"Command: {command}\n\nOutcome (Gujarati):\n{resp_gu[:400]}"
-            self.notifier.notify_work_done(
-                task_name=command,
-                details=summary_details,
-                solution="કાર્ય ૧૦૦% સફળતાપૂર્વક પૂર્ણ થયેલ છે. કોઈ વધુ આદેશ હોય તો 'Hey Aradhya' બોલો."
-            )
-            log("✅ Real-Time Jarvis Task Completed & WhatsApp Notification Dispatched!")
+                # Keep voice response concise, natural, and friendly for voice interaction
+                spoken_text = self.format_for_voice_speech(spoken_full, max_sentences=3)
+
+                # Show desktop notification with the response
+                try:
+                    display_title = "👑 આરાધ્યા (Jarvis)" if is_gujarati else "👑 Aradhya (Jarvis)"
+                    subprocess.run(
+                        ["notify-send", "-u", "normal", "-t", "6000", display_title, spoken_text],
+                        stdout=subprocess.DEVNULL,
+                        stderr=subprocess.DEVNULL
+                    )
+                except Exception:
+                    pass
+
+                # Speak response naturally
+                log(f"🔊 Speaking response ({voice_lang.upper()}): \"{spoken_text[:80]}...\"")
+                self.voice.speak(spoken_text, language=voice_lang, blocking=True)
+
+                # Record turn in conversational history
+                self.conversation_history.append({"role": "user", "text": current_cmd, "time": time.time()})
+                self.conversation_history.append({"role": "assistant", "text": spoken_text, "time": time.time()})
+                if len(self.conversation_history) > 10:
+                    self.conversation_history = self.conversation_history[-10:]
+
+                # Only dispatch task done audio and WhatsApp for actual system tasks/missions!
+                if is_task:
+                    self.speak_task_done()
+                    log("📱 Dispatching Task Completion Notification to WhatsApp...")
+                    summary_details = f"Command: {current_cmd}\n\nOutcome:\n{spoken_full[:400]}"
+                    self.notifier.notify_work_done(
+                        task_name=current_cmd,
+                        details=summary_details,
+                        solution="કાર્ય સફળતાપૂર્વક પૂર્ણ થયેલ છે. કોઈ વધુ આદેશ હોય તો જણાવો."
+                    )
+
+                # =============================================================
+                # REAL-TIME CONVERSATIONAL FOLLOW-UP WINDOW (Jarvis Experience)
+                # Listen for 5s for Alpesh Sir's follow-up without needing wake-word
+                # =============================================================
+                log("👂 Conversational Follow-up Window open (5s)... Listening for next remark...")
+                followup_wav = Path("/tmp/aradhya_jarvis_followup.wav")
+                followup_detected = False
+
+                if self.record_chunk(followup_wav, duration=5):
+                    rms = self.calculate_rms(followup_wav)
+                    if rms >= 160:
+                        trans_res = self.voice.transcribe_audio(followup_wav)
+                        if trans_res.get("success"):
+                            next_text = trans_res.get("transcribed_text", "").strip()
+                            if next_text and next_text != "[SILENCE]" and next_text.lower() not in NOISE_TOKENS:
+                                # Check exit phrases
+                                if any(exit_w in next_text.lower() for exit_w in [
+                                    "thank you", "thanks", "bye", "goodbye", "that's all", "that is all",
+                                    "nothing", "stop", "exit", "બસ", "આભાર", "ચાલશે", "કંઈ નહિ", "શાંતિ"
+                                ]):
+                                    closing = "જય માતાજી અલ્પેશ સાહેબ! હું સ્ટેન્ડબાય પર છું." if is_gujarati else "Always here for you, Alpesh Sir. Standing by."
+                                    log(f"👋 User concluded conversation: \"{next_text}\". Returning to wake-word mode.")
+                                    self.voice.speak(closing, language=voice_lang, blocking=False)
+                                    break
+                                else:
+                                    log(f"🗣️ Continuous Follow-up Speech Captured: \"{next_text}\"")
+                                    current_cmd = next_text
+                                    followup_detected = True
+
+                if not followup_detected:
+                    log("💤 No follow-up remark detected. Gracefully returning to 24/7 background standby.")
+                    break
+
+            log("✅ Real-Time Jarvis Voice Interaction Loop Complete.")
 
         except Exception as e:
             log(f"❌ Error during Jarvis command execution: {e}")
-            self.notifier.notify_task_failure(
-                task_name=command or "Voice Command",
-                error_details=str(e),
-                solution="ટર્મિનલમાં 'aradhya' રન કરી વિગતવાર સ્ટેટસ ચકાસો."
-            )
+            try:
+                self.notifier.notify_task_failure(
+                    task_name=command or "Voice Command",
+                    error_details=str(e),
+                    solution="ટર્મિનલમાં 'aradhya' રન કરી વિગતવાર સ્ટેટસ ચકાસો."
+                )
+            except Exception:
+                pass
         finally:
             with self._lock:
                 self.is_processing = False
@@ -361,9 +449,9 @@ class AradhyaJarvisDaemon:
         # Auto-calibrate hardware input levels: +30dB Capture, +20dB preamp Boost, +5dB Digital (clean speech SNR without clipping)
         try:
             subprocess.run(["pactl", "set-source-mute", "alsa_input.pci-0000_00_1b.0.analog-stereo", "0"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
-            subprocess.run(["amixer", "-c", "1", "sset", "Capture", "63", "unmute"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
-            subprocess.run(["amixer", "-c", "1", "sset", "Internal Mic Boost", "2"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
-            subprocess.run(["amixer", "-c", "1", "sset", "Digital", "70"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
+            subprocess.run(["amixer", "-c", "0", "sset", "Capture", "63", "unmute"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
+            subprocess.run(["amixer", "-c", "0", "sset", "Internal Mic Boost", "2"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
+            subprocess.run(["amixer", "-c", "0", "sset", "Digital", "70"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=2)
             log(f"🎛️ Microphone hardware gain calibrated (Capture: +30dB, Boost: +20dB, Digital: +5dB, Model: {VOSK_MODEL_PATH.name}).")
         except Exception:
             pass
