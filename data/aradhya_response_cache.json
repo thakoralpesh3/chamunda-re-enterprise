@@ -11,5 +11,18 @@
       "response_gu": "જય માતાજી અલ્પેશ સાહેબ. હું આરાધ્યા, પ્રોજેક્ટ છાયાની CEO. ચામુડા ઓટોમોબાઈલ પાર્ટ્સ એન્ડ સર્વિસની તમામ સિસ્ટમ્સ આપણા લિનક્સ મિન્ટ ઇન્ફ્રાસ્ટ્રક્ચર પર શ્રેષ્ઠ પ્રદર્શન સાથે ચાલી રહી છે. વર્કશોપ ઓપરેશન્સ, ઇન્વેન્ટરી ટ્રેકિંગ અને VIP ગ્રાહકો સાથેના સંચાર સંપૂર્ણપણે સિન્ક થયેલા છે. આજના વ્યૂહાત્મક લક્ષ્યો માટે આપના આદેશની રાહ જોઈ રહી છું.",
       "latency_ms": 15106
     }
+  },
+  "cb744ce8fc426879af3f2cad90470367": {
+    "cached_at": 1795342031.173096,
+    "data": {
+      "success": true,
+      "used_llm": true,
+      "model_used": "gemini-3.5-flash-lite",
+      "badge": "🌱 Flash Lite",
+      "routing_reason": "User explicitly requested Gemini 3.5 Flash (Cascaded from gemini-3.5-flash)",
+      "response_en": "Alpesh Sir, to send an email from your Linux Mint workstation, you can use the command line via `mailutils` or `sendmail`, a terminal-based email client like `mutt`, or a graphical client such as Thunderbird. \n\nIf you want a quick command-line method using your terminal, install and configure `mailutils`:\n```bash\nsudo apt update && sudo apt install mailutils\n```\nThen send an email using:\n```bash\necho \"Message body\" | mail -s \"Subject Line\" recipient@example.com\n```\nFor regular correspondence, Thunderbird is pre-installed or easily available via Software Manager. Let me know if you need to configure an SMTP relay or a specific script!",
+      "response_gu": "જય માતાજી અલ્પેશ સાહેબ, તમારા લિનક્સ મિન્ટ (Linux Mint) વૉર્કસ્ટેશનથી ઇમેઇલ મોકલવા માટે તમે ટર્મિનલ આધારિત સાધનો જેમ કે `mailutils` અથવા ગ્રાફિકલ ક્લાયન્ટ જેમ કે થંડરબર્ડ (Thunderbird) નો ઉપયોગ કરી શકો છો.\n\nટર્મિનલ દ્વારા ઝડપથી ઇમેઇલ મોકલવા માટે નીચેના આદેશોનો ઉપયોગ કરો:\n```bash\nsudo apt update && sudo apt install mailutils\n```\nત્યારબાદ આ આદેશથી ઇમેઇલ મોકલી શકાય:\n```bash\necho \"Message body\" | mail -s \"Subject Line\" recipient@example.com\n```\nજો કોઈ ચોક્કસ SMTP સેટિંગ્સ કે ઓટોમેશન સ્ક્રિપ્ટ જોતી હોય, તો ચોક્કસ જણાવજો!",
+      "latency_ms": 17387
+    }
   }
 }
