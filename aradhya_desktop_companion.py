@@ -44,17 +44,331 @@ import gi
 gi.require_version('Gtk', '3.0')
 gi.require_version('Gdk', '3.0')
 gi.require_version('GdkPixbuf', '2.0')
-from gi.repository import Gtk, Gdk, GdkPixbuf, GLib
+gi.require_version('Pango', '1.0')
+from gi.repository import Gtk, Gdk, GdkPixbuf, GLib, Pango
 import cairo
 
 SPRITES_DIR = BASE_DIR / "data" / "aradhya_pet" / "sprites"
+
+CHAT_CSS = b"""
+window.aradhya-chat-window {
+    background-color: #0d1117;
+    border: 2px solid #30363d;
+    border-radius: 14px;
+}
+.chat-header {
+    background-color: #161b22;
+    padding: 10px 14px;
+    border-bottom: 1px solid #30363d;
+    border-radius: 12px 12px 0 0;
+}
+.chat-header-title {
+    color: #f59e0b;
+    font-size: 13px;
+    font-weight: bold;
+}
+.chat-header-sub {
+    color: #8b949e;
+    font-size: 10px;
+}
+.chat-close-btn {
+    background: transparent;
+    border: none;
+    color: #8b949e;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+.chat-close-btn:hover {
+    color: #ff7b72;
+    background: rgba(248, 81, 73, 0.15);
+}
+.chips-container {
+    background-color: #161b22;
+    padding: 6px 10px;
+    border-bottom: 1px solid #21262d;
+}
+.chip-btn {
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    color: #38bdf8;
+    border-radius: 12px;
+    padding: 3px 10px;
+    font-size: 11px;
+}
+.chip-btn:hover {
+    background-color: #30363d;
+    color: #7dd3fc;
+}
+.chat-scrolled {
+    background-color: #0d1117;
+}
+.msg-user-box {
+    background-color: #1f6feb;
+    border-radius: 12px 12px 2px 12px;
+    padding: 8px 12px;
+}
+.msg-user-label {
+    color: #ffffff;
+    font-size: 12px;
+}
+.msg-aradhya-box {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px 12px 12px 2px;
+    padding: 8px 12px;
+}
+.msg-aradhya-title {
+    color: #f59e0b;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.msg-aradhya-label {
+    color: #f0f6fc;
+    font-size: 12px;
+}
+.input-container {
+    background-color: #161b22;
+    padding: 8px 10px;
+    border-top: 1px solid #30363d;
+    border-radius: 0 0 12px 12px;
+}
+.chat-entry {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #f0f6fc;
+    padding: 6px 8px;
+    font-size: 12px;
+}
+.chat-entry:focus {
+    border-color: #38bdf8;
+}
+.chat-send-btn {
+    background-color: #238636;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 6px 12px;
+    font-weight: bold;
+    font-size: 11px;
+}
+.chat-send-btn:hover {
+    background-color: #2ea043;
+}
+"""
+
+class AradhyaChatWindow(Gtk.Window):
+    def __init__(self, pet):
+        super().__init__(type=Gtk.WindowType.TOPLEVEL)
+        self.pet = pet
+        self.set_title("👑 આરાધ્યા કમાન્ડ સેન્ટર")
+        self.set_default_size(380, 520)
+        self.set_keep_above(True)
+        self.set_skip_taskbar_hint(False)
+        self.set_decorated(False)
+        self.get_style_context().add_class("aradhya-chat-window")
+
+        # Load CSS style provider
+        try:
+            provider = Gtk.CssProvider()
+            provider.load_from_data(CHAT_CSS)
+            screen = Gdk.Screen.get_default()
+            Gtk.StyleContext.add_provider_for_screen(screen, provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
+        except Exception:
+            pass
+
+        main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
+        self.add(main_box)
+
+        # 1. Header Bar
+        header = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
+        header.get_style_context().add_class("chat-header")
+
+        title_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=2)
+        title_lbl = Gtk.Label()
+        title_lbl.set_markup("<b>👑 આરાધ્યા કમાન્ડ સેન્ટર</b>")
+        title_lbl.set_halign(Gtk.Align.START)
+        title_lbl.get_style_context().add_class("chat-header-title")
+
+        sub_lbl = Gtk.Label(label="જય માતાજી અલ્પેશ સાહેબ! બોલો આપનું શું કામ છે?")
+        sub_lbl.set_halign(Gtk.Align.START)
+        sub_lbl.get_style_context().add_class("chat-header-sub")
+
+        title_box.pack_start(title_lbl, False, False, 0)
+        title_box.pack_start(sub_lbl, False, False, 0)
+        header.pack_start(title_box, True, True, 0)
+
+        close_btn = Gtk.Button(label="✕")
+        close_btn.get_style_context().add_class("chat-close-btn")
+        close_btn.connect("clicked", lambda w: self.hide())
+        header.pack_end(close_btn, False, False, 0)
+        header.connect("button-press-event", self._on_header_press)
+        main_box.pack_start(header, False, False, 0)
+
+        # 2. Quick Action Chips
+        chips_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
+        chips_box.get_style_context().add_class("chips-container")
+        chips = [
+            ("⚡ ટર્બો બૂસ્ટ", "turbo clean ram"),
+            ("🛡️ સાયબર સ્કેન", "hacker defense scan"),
+            ("📊 સિસ્ટમ હેલ્થ", "check battery and system status"),
+            ("🌐 OpenWebUI", "open_webui")
+        ]
+        for label, cmd in chips:
+            btn = Gtk.Button(label=label)
+            btn.get_style_context().add_class("chip-btn")
+            btn.connect("clicked", self._on_chip_clicked, cmd)
+            chips_box.pack_start(btn, False, False, 0)
+
+        chips_scroll = Gtk.ScrolledWindow()
+        chips_scroll.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.NEVER)
+        chips_scroll.add(chips_box)
+        main_box.pack_start(chips_scroll, False, False, 0)
+
+        # 3. Message List
+        self.scrolled = Gtk.ScrolledWindow()
+        self.scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
+        self.scrolled.get_style_context().add_class("chat-scrolled")
+
+        self.msg_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=8)
+        self.msg_box.set_margin_top(8)
+        self.msg_box.set_margin_bottom(8)
+        self.msg_box.set_margin_start(10)
+        self.msg_box.set_margin_end(10)
+        self.scrolled.add(self.msg_box)
+        main_box.pack_start(self.scrolled, True, True, 0)
+
+        # 4. Input Area
+        input_container = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
+        input_container.get_style_context().add_class("input-container")
+
+        self.entry = Gtk.Entry()
+        self.entry.set_placeholder_text("આદેશ અથવા પ્રશ્ન લખો... (Type command)")
+        self.entry.get_style_context().add_class("chat-entry")
+        self.entry.connect("activate", self.on_send)
+        input_container.pack_start(self.entry, True, True, 0)
+
+        send_btn = Gtk.Button(label="મોકલો ➤")
+        send_btn.get_style_context().add_class("chat-send-btn")
+        send_btn.connect("clicked", self.on_send)
+        input_container.pack_end(send_btn, False, False, 0)
+        main_box.pack_start(input_container, False, False, 0)
+
+        self.add_message("aradhya", "પ્રણામ અલ્પેશ સાહેબ! આરાધ્યા કમાન્ડ ચેટ સક્રિય છે. આપ કોઈપણ કાર્ય, ટેકનિકલ પ્રશ્ન કે સિસ્ટમ આદેશ આપી શકો છો.")
+        self.connect("key-press-event", self._on_key_press)
+
+    def _on_header_press(self, widget, event):
+        if event.button == 1:
+            self.begin_move_drag(event.button, int(event.x_root), int(event.y_root), event.time)
+        return True
+
+    def _on_key_press(self, widget, event):
+        if event.keyval == Gdk.KEY_Escape:
+            self.hide()
+            return True
+        return False
+
+    def _on_chip_clicked(self, widget, cmd):
+        if cmd == "open_webui":
+            subprocess.Popen(["xdg-open", "http://127.0.0.1:3000"])
+            self.add_message("aradhya", "🌐 OpenWebUI બ્રાઉઝરમાં લૉન્ચ કરવામાં આવ્યું છે.")
+            return
+        self.entry.set_text(cmd)
+        self.on_send(self.entry)
+
+    def add_message(self, role: str, text: str):
+        row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
+        if role == "user":
+            row.set_halign(Gtk.Align.END)
+            bubble = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
+            bubble.get_style_context().add_class("msg-user-box")
+            lbl = Gtk.Label(label=text)
+            lbl.set_line_wrap(True)
+            lbl.set_line_wrap_mode(Pango.WrapMode.WORD_CHAR)
+            lbl.set_max_width_chars(32)
+            lbl.set_selectable(True)
+            lbl.get_style_context().add_class("msg-user-label")
+            bubble.pack_start(lbl, False, False, 0)
+            row.pack_start(bubble, False, False, 0)
+        else:
+            row.set_halign(Gtk.Align.START)
+            bubble = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=2)
+            bubble.get_style_context().add_class("msg-aradhya-box")
+            title = Gtk.Label(label="👑 આરાધ્યા (CEO)")
+            title.set_halign(Gtk.Align.START)
+            title.get_style_context().add_class("msg-aradhya-title")
+            bubble.pack_start(title, False, False, 0)
+            lbl = Gtk.Label(label=text)
+            lbl.set_line_wrap(True)
+            lbl.set_line_wrap_mode(Pango.WrapMode.WORD_CHAR)
+            lbl.set_max_width_chars(34)
+            lbl.set_selectable(True)
+            lbl.get_style_context().add_class("msg-aradhya-label")
+            bubble.pack_start(lbl, False, False, 0)
+            row.pack_start(bubble, False, False, 0)
+            row._content_label = lbl
+
+        self.msg_box.pack_start(row, False, False, 0)
+        self.msg_box.show_all()
+        GLib.idle_add(self._scroll_bottom)
+        return row
+
+    def _scroll_bottom(self):
+        adj = self.scrolled.get_vadjustment()
+        adj.set_value(adj.get_upper() - adj.get_page_size())
+        return False
+
+    def on_send(self, widget):
+        cmd = self.entry.get_text().strip()
+        if not cmd:
+            return
+        self.entry.set_text("")
+        self.add_message("user", cmd)
+        loading_row = self.add_message("aradhya", "પ્રક્રિયા કરી રહી છું... ⏳")
+
+        def _bg_worker():
+            reply_text = ""
+            try:
+                from hermes_relay_agent import get_hermes_relay
+                relay = get_hermes_relay()
+                res = relay.process_message(user_message=cmd, preferred_model="auto", voice_mode=False)
+                reply_text = res.get("reply") or res.get("response_gu") or res.get("response_en") or ""
+            except Exception:
+                pass
+
+            if not reply_text:
+                try:
+                    from aradhya_autonomous_core import get_aradhya_engine
+                    core = get_aradhya_engine()
+                    res = core.process_command(cmd, speak_response=False)
+                    reply_text = res.get("response_gu") or res.get("response_en") or "આદેશ સફળતાપૂર્વક ચલાવાયો છે."
+                except Exception as e:
+                    reply_text = f"ક્ષમા કરશો સાહેબ, ક્ષતિ આવી છે: {e}"
+
+            GLib.idle_add(self._deliver_reply, loading_row, reply_text)
+
+        import threading
+        threading.Thread(target=_bg_worker, daemon=True).start()
+
+    def _deliver_reply(self, loading_row, reply_text):
+        if hasattr(loading_row, "_content_label"):
+            loading_row._content_label.set_text(reply_text)
+        self._scroll_bottom()
+        if self.pet:
+            clean_short = reply_text.split("\n")[0][:25]
+            self.pet.say(clean_short, duration=4, speak_aloud=False)
+            self.pet.state = "WAVING"
+        return False
+
 
 # Voice greetings when clicked (Aradhya Autonomous Companion)
 CLICK_GREETINGS = [
     "જય માતાજી અલ્પેશ સાહેબ! હું અહીં આપની સાથે તૈયાર છું.",
     "પ્રણામ અલ્પેશ સાહેબ! બોલો સાહેબ, આપનું શું કામ છે?",
     "હા સાહેબ! સાયબર પ્રોટેક્શન સમગ્ર લેપટોપ પર સક્રિય છે.",
-    "બોલો અલ્પેશ સાહેબ! ડબલ-ક્લિક કરીને કમાન્ડ સેન્ટર લૉન્ચ કરો.",
+    "બોલો અલ્પેશ સાહેબ! આપનો આદેશ આપો.",
     "આરાધ્યા આપની સેવામાં ૧૦૦% હાજર છે, સાહેબ!"
 ]
 
@@ -88,11 +402,15 @@ class AradhyaDesktopPet(Gtk.Window):
         self.y = self.screen_height - 240
         self.move(int(self.x), int(self.y))
 
-        # Mouse Drag State
+        # Mouse Drag & Click State
         self.dragging = False
+        self.has_dragged = False
         self.drag_offset_x = 0
         self.drag_offset_y = 0
+        self.press_x = 0
+        self.press_y = 0
         self.last_click_time = 0
+        self.chat_window = None
 
         # Animation states
         self.state = "IDLE"  # IDLE, WAVING, WALKING, CHEERING, FLOATING
