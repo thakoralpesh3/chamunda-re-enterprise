@@ -3,16 +3,6 @@
   "learned_habits": {},
   "recent_actions": [
     {
-      "action": "PROCESS_MANAGEMENT",
-      "details": "download required files to make aradhya speaking forever in this laptop work with showing process that how much it will ",
-      "timestamp": "2026-10-31 20:59:27"
-    },
-    {
-      "action": "PROCESS_MANAGEMENT",
-      "details": "download required files to make aradhya speaking forever in this laptop work with showing process that how much it will ",
-      "timestamp": "2026-10-31 20:59:31"
-    },
-    {
       "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "do you even understand what i am asking to do ?",
       "timestamp": "2026-10-31 20:59:52"
@@ -151,6 +141,16 @@
       "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "કેમ છો",
       "timestamp": "2026-11-22 14:57:05"
+    },
+    {
+      "action": "WHATSAPP_DISPATCH",
+      "details": "send message to 7874719139 on whatsapp: જય માતાજી અલ્પેશ સાહેબ! ઓટોનોમસ સિસ્ટમ સક્રિય છે.",
+      "timestamp": "2026-11-22 16:10:27"
+    },
+    {
+      "action": "WHATSAPP_OPEN",
+      "details": "send message to someone on whatsapp",
+      "timestamp": "2026-11-22 16:10:39"
     }
   ],
   "custom_aliases": {},

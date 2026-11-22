@@ -31,12 +31,39 @@ try:
 except ImportError:
     get_llm_engine = None
 
-# Import Jarvis Offline Commander
+# Import Aradhya Autonomous Engine for whole-laptop physical execution
 try:
-    from core.offline_commander import OfflineAutonomousCommander
-    jarvis_offline_commander = OfflineAutonomousCommander()
-except Exception:
-    jarvis_offline_commander = None
+    from aradhya_autonomous_core import get_aradhya_engine
+except ImportError:
+    get_aradhya_engine = None
+
+def is_laptop_action(text: str) -> bool:
+    """Determines if a command requires real physical execution on the laptop."""
+    t = text.lower().strip()
+    if any(w in t for w in ["whatsapp", "whats app", "વાટ્સએપ", "વોટ્સએપ", "વોટ્સેપ", "વ્હોટ્સએપ"]) or (
+        any(w in t for w in ["send ", "મોકલો "]) and any(w in t for w in ["message", "મેસેજ", "ટેક્સ્ટ"])
+    ):
+        return True
+    action_words = [
+        "battery", "brightness", "volume", "sound", "mute", "unmute",
+        "screen", "lock screen", "lock laptop", "lag", "hang", "sluggish", "turbo",
+        "optimize laptop", "kill process", "running process", "disk usage",
+        "security audit", "hacker", "firewall", "backdoor", "stay awake",
+        "reboot", "shutdown", "laptop", "cpu", "ram", "memory", "storage",
+        "free ram", "clean ram", "screenshot", "camera", "webcam", "remote access", "remote pc",
+        "લેપટોપ", "બેટરી", "સ્ક્રીન", "અવાજ", "વોલ્યુમ", "બ્રાઇટનેસ", "હેંગ", "વાયરસ", "સિક્યોરિટી", "કચરો સાફ", "લોક કરો"
+    ]
+    if any(kw in t for kw in action_words):
+        return True
+    if t.startswith(("$ ", "run ", "exec ", "bash ", "shell ", "cmd ", "open ", "launch ", "start ", "kill ", "terminate ", "stop ", "કમાન્ડ ", "શેલ ", "ખોલો ", "ચાલુ કરો ", "બંધ કરો ")):
+        return True
+    if any(t == s for s in ["uptime", "free -m", "df -h", "whoami", "git status", "top cpu", "ps aux"]):
+        return True
+    if re.search(r'(?:find|search|locate|શોધો)\s+(?:file|files|ફાઇલ)', t) or t.startswith(("read ", "cat ", "view file ", "વાંચો ", "ફાઇલ વાંચો ")):
+        return True
+    if t.startswith(("work ", "/work ", "mission ", "મિશન ", "કામ ")):
+        return True
+    return False
 
 logging.basicConfig(
     level=logging.INFO,
