@@ -4,11 +4,6 @@
   "recent_actions": [
     {
       "action": "ONLINE_GEMINI_INTELLIGENCE",
-      "details": "do you even understand what i am asking to do ?",
-      "timestamp": "2026-10-31 20:59:52"
-    },
-    {
-      "action": "ONLINE_GEMINI_INTELLIGENCE",
       "details": "status",
       "timestamp": "2026-11-01 01:34:42"
     },
@@ -151,6 +146,11 @@
       "action": "WHATSAPP_OPEN",
       "details": "send message to someone on whatsapp",
       "timestamp": "2026-11-22 16:10:39"
+    },
+    {
+      "action": "WHATSAPP_DISPATCH",
+      "details": "send message to 7874719139 on whatsapp: હેલ્લો અલ્પેશ સાહેબ",
+      "timestamp": "2026-11-22 16:12:06"
     }
   ],
   "custom_aliases": {},

@@ -9,6 +9,7 @@ import os
 import sys
 import time
 import json
+import re
 import socket
 import logging
 from pathlib import Path
@@ -104,26 +105,15 @@ class HermesRelayAgent:
         self.cached_online_status = False
         return False
 
+    def is_laptop_action(self, text: str) -> bool:
+        return is_laptop_action(text)
+
     def classify_intent(self, text: str) -> str:
-        """Classify user prompt into aradhya, jarvis, or relay."""
+        """Classify user prompt into action, aradhya, or relay."""
+        if self.is_laptop_action(text):
+            return "action"
+
         t = text.lower()
-
-        jarvis_keywords = [
-            "battery", "brightness", "volume", "sound", "mute", "unmute",
-            "screen", "lock screen", "lag", "hang", "sluggish", "turbo",
-            "optimize laptop", "kill process", "running process", "disk usage",
-            "security audit", "hacker", "firewall", "backdoor", "stay awake",
-            "reboot", "shutdown", "laptop", "cpu", "ram", "memory", "storage",
-            "reverse engineer", "reverse engineering", "decompile", "disassemble",
-            "rea", "apk decompil", "binary audit", "jadx", "ghidra",
-            "strix", "penetration test", "pentest", "owasp", "appsec",
-            "vulnerability scan", "security test", "idor", "xss", "ssrf", "sql injection",
-            "લેપટોપ", "બેટરી", "સ્ક્રીન", "અવાજ", "હેંગ", "વાયરસ", "સિક્યોરિટી", "રિવર્સ એન્જિનિયરિંગ", "ડીકમ્પાઈલ"
-        ]
-        for kw in jarvis_keywords:
-            if kw in t:
-                return "jarvis"
-
         aradhya_keywords = [
             "royal enfield", "classic", "bullet", "meteor", "hunter", "interceptor",
             "continental", "himalayan", "guerrilla", "shotgun", "bear 650",
@@ -173,20 +163,25 @@ class HermesRelayAgent:
         preferred_model: str,
         voice_mode: bool
     ) -> Dict[str, Any]:
-        if intent == "jarvis" and jarvis_offline_commander:
-            jarvis_res = jarvis_offline_commander.execute_offline_command(user_message)
-            if jarvis_res.get("recognized"):
-                reply_text = jarvis_res.get("feedback_message", "Command executed successfully.")
-                if voice_mode and "voice_message" in jarvis_res:
-                    reply_text = jarvis_res["voice_message"]
-                return {
-                    "agent": "jarvis-commander",
-                    "mode": "online-local-hybrid",
-                    "model": "jarvis-mark7",
-                    "reply": reply_text,
-                    "voice_ready": self._clean_for_voice(reply_text),
-                    "action_executed": jarvis_res.get("action_executed")
-                }
+        # Direct Whole-Laptop Physical Execution
+        if (intent == "action" or self.is_laptop_action(user_message)) and get_aradhya_engine:
+            try:
+                core = get_aradhya_engine()
+                core_res = core.process_command(user_message, preferred_model=preferred_model, speak_response=voice_mode)
+                if core_res.get("action_type") not in ["ONLINE_GEMINI_INTELLIGENCE"]:
+                    reply_text = core_res.get("response_gu") or core_res.get("response_en") or "આદેશ સફળતાપૂર્વક પૂર્ણ થયો છે."
+                    return {
+                        "agent": "aradhya-commander",
+                        "mode": "online-physical-execution",
+                        "model": core_res.get("model_used", "offline-autonomous-aradhya"),
+                        "reply": reply_text,
+                        "response_gu": core_res.get("response_gu", reply_text),
+                        "response_en": core_res.get("response_en", reply_text),
+                        "voice_ready": self._clean_for_voice(reply_text),
+                        "action_executed": core_res.get("action_type")
+                    }
+            except Exception as e:
+                logger.warning("Core execution in online mode failed: %s", e)
 
         if get_llm_engine:
             llm = get_llm_engine()
@@ -224,21 +219,25 @@ class HermesRelayAgent:
         intent: str,
         voice_mode: bool
     ) -> Dict[str, Any]:
-        """100% Offline Air-Gapped Execution using AOCKRE v2.0 & Jarvis."""
-        if intent == "jarvis" and jarvis_offline_commander:
-            jarvis_res = jarvis_offline_commander.execute_offline_command(user_message)
-            if jarvis_res.get("recognized"):
-                reply_text = jarvis_res.get("feedback_message", "ઓફલાઇન આદેશ સફળતાપૂર્વક ચલાવાયો છે.")
-                if voice_mode and "voice_message" in jarvis_res:
-                    reply_text = jarvis_res["voice_message"]
+        """100% Offline Air-Gapped Execution using Aradhya Autonomous Core & AOCKRE v2.0."""
+        # Direct Whole-Laptop Physical Execution
+        if (intent == "action" or self.is_laptop_action(user_message)) and get_aradhya_engine:
+            try:
+                core = get_aradhya_engine()
+                core_res = core.process_command(user_message, preferred_model="offline", speak_response=voice_mode)
+                reply_text = core_res.get("response_gu") or core_res.get("response_en") or "ઓફલાઇન આદેશ સફળતાપૂર્વક ચલાવાયો છે."
                 return {
-                    "agent": "jarvis-commander",
-                    "mode": "offline",
-                    "model": "jarvis-offline-core",
+                    "agent": "aradhya-commander",
+                    "mode": "offline-physical-execution",
+                    "model": core_res.get("model_used", "offline-autonomous-aradhya"),
                     "reply": f"⚡ [ઓફલાઇન મોડ] {reply_text}",
+                    "response_gu": core_res.get("response_gu", reply_text),
+                    "response_en": core_res.get("response_en", reply_text),
                     "voice_ready": self._clean_for_voice(reply_text),
-                    "action_executed": jarvis_res.get("action_executed")
+                    "action_executed": core_res.get("action_type")
                 }
+            except Exception as e:
+                logger.warning("Core execution in offline mode failed: %s", e)
 
         low_msg = user_message.lower()
         if any(k in low_msg for k in ["reverse engineer", "rea", "decompile", "disassemble", "apk decompil", "રિવર્સ એન્જિનિયરિંગ"]):
