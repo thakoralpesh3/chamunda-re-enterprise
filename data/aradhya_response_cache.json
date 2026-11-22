@@ -24,5 +24,18 @@
       "response_gu": "જય માતાજી અલ્પેશ સાહેબ, તમારા લિનક્સ મિન્ટ (Linux Mint) વૉર્કસ્ટેશનથી ઇમેઇલ મોકલવા માટે તમે ટર્મિનલ આધારિત સાધનો જેમ કે `mailutils` અથવા ગ્રાફિકલ ક્લાયન્ટ જેમ કે થંડરબર્ડ (Thunderbird) નો ઉપયોગ કરી શકો છો.\n\nટર્મિનલ દ્વારા ઝડપથી ઇમેઇલ મોકલવા માટે નીચેના આદેશોનો ઉપયોગ કરો:\n```bash\nsudo apt update && sudo apt install mailutils\n```\nત્યારબાદ આ આદેશથી ઇમેઇલ મોકલી શકાય:\n```bash\necho \"Message body\" | mail -s \"Subject Line\" recipient@example.com\n```\nજો કોઈ ચોક્કસ SMTP સેટિંગ્સ કે ઓટોમેશન સ્ક્રિપ્ટ જોતી હોય, તો ચોક્કસ જણાવજો!",
       "latency_ms": 17387
     }
+  },
+  "75716126217a0d242d5c8c754fe36878": {
+    "cached_at": 1795346130.1019466,
+    "data": {
+      "success": true,
+      "used_llm": true,
+      "model_used": "gemini-3.5-flash-lite",
+      "badge": "🌱 Flash Lite",
+      "routing_reason": "Domain task for 'aradhya_ceo' prioritized to Gemini 3.5 Flash Lite",
+      "response_en": "Jai Mataji Alpesh Sir, I am fully operational and performing at peak efficiency today. All systems across Project Chhaya and our workshop operations are running smoothly. I am standing by for your strategic commands, cash flow analysis, or system tasks. How may I assist you today?",
+      "response_gu": "જય માતાજી અલ્પેશ સાહેબ, હું આજે સંપૂર્ણપણે સક્રિય છું અને ઉત્તમ કાર્યક્ષમતા સાથે કામ કરી રહી છું. પ્રોજેક્ટ છાયા અને આપણી વર્કશોપની તમામ સિસ્ટમ્સ એકદમ સુચારૂ રૂપે ચાલી રહી છે. હું આપના વ્યૂહાત્મક આદેશો, કેશ ફ્લો વિશ્લેષણ અથવા સિસ્ટમ કાર્યો માટે સંપૂર્ણપણે તૈયાર છું. આજે હું આપને કેવી રીતે સહાય કરી શકું?",
+      "latency_ms": 9485
+    }
   }
 }
