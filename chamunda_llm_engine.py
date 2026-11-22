@@ -687,6 +687,25 @@ Format your response strictly as:
             "latency_ms": latency
         }
 
+    def generate_ai_response(
+        self,
+        prompt: str,
+        model_name: str = "gemini-3.5-flash",
+        system_prompt: Optional[str] = None
+    ) -> Dict[str, Any]:
+        """Convenience bridge for Hermes Relay & external agent callers."""
+        res = self.generate_agent_response(
+            agent_id="aradhya",
+            message=prompt,
+            preferred_model=model_name
+        )
+        reply = res.get("response_gu") or res.get("response_en") or ""
+        return {
+            "reply": reply,
+            "model_used": res.get("model_used", model_name),
+            "raw": res
+        }
+
 
 _ai_engine: Optional[ChamundaAIEngine] = None
 
@@ -695,3 +714,6 @@ def get_chamunda_ai_engine() -> ChamundaAIEngine:
     if _ai_engine is None:
         _ai_engine = ChamundaAIEngine()
     return _ai_engine
+
+# Universal alias for Hermes relay & multi-agent integrations
+get_llm_engine = get_chamunda_ai_engine
