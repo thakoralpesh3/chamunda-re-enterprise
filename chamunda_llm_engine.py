@@ -80,10 +80,10 @@ MODEL_CATALOG = {
 
 # Cascades prioritizing robust high-quota free tier models
 HIGH_QUOTA_FALLBACKS = [
+    "gemini-3.5-flash-lite",
+    "gemini-3.5-flash",
     "gemini-3.8-flash",
     "gemini-3.7-flash",
-    "gemini-3.5-flash",
-    "gemini-3.5-flash-lite",
     "gemini-3.6-flash",
     "gemini-3.1-flash-lite"
 ]
@@ -520,7 +520,8 @@ Guidelines:
         agent_id: str,
         message: str,
         preferred_model: Optional[str] = "auto",
-        ground_truth: Optional[Dict[str, Any]] = None
+        ground_truth: Optional[Dict[str, Any]] = None,
+        chat_history: Optional[List[Dict[str, str]]] = None
     ) -> Dict[str, Any]:
         """
         Executes query with multi-key rotation, high-capacity model cascading,
@@ -551,11 +552,24 @@ Guidelines:
                 candidate_models.append(m)
 
         sys_instruction = self.get_agent_system_prompt(agent_id, gt)
+
+        history_str = ""
+        if chat_history:
+            recent_turns = chat_history[-6:]
+            formatted = []
+            for t in recent_turns:
+                spk = "Alpesh Sir" if t.get("role") == "user" else "Aradhya"
+                txt = t.get("text", "").strip()
+                if txt:
+                    formatted.append(f"{spk}: {txt}")
+            if formatted:
+                history_str = "Conversation Context so far:\n" + "\n".join(formatted) + "\n\n"
+
         user_prompt = f"""
 Agent Context: {agent_id}
-Alpesh Sir's Query: "{message}"
+{history_str}Alpesh Sir's Query: "{message}"
 
-Please respond concisely and authoritatively.
+Please respond naturally, concisely (1-3 sentences for real-time voice), and warmly like JARVIS.
 Format your response strictly as:
 [ENGLISH]
 <English response>

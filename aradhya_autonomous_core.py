@@ -955,10 +955,11 @@ class AradhyaAutonomousEngine:
     def query_gemini_brain(
         self,
         prompt: str,
-        preferred_model: Optional[str] = "auto"
+        preferred_model: Optional[str] = "auto",
+        chat_history: Optional[List[Dict[str, str]]] = None
     ) -> Dict[str, Any]:
         """
-        Query Gemini Cloud LLM Engine (gemini-3.6-flash, gemini-3.5-flash, etc.)
+        Query Gemini Cloud LLM Engine (gemini-3.5-flash-lite, gemini-3.5-flash, etc.)
         Falls back automatically if offline or API exhausted.
         """
         net = self.check_internet_connection()
@@ -978,7 +979,8 @@ class AradhyaAutonomousEngine:
             res = engine.generate_agent_response(
                 agent_id="aradhya_ceo",
                 message=prompt,
-                preferred_model=preferred_model
+                preferred_model=preferred_model,
+                chat_history=chat_history
             )
             if res.get("success"):
                 return res
@@ -1091,6 +1093,7 @@ class AradhyaAutonomousEngine:
         sender: str = "Alpesh Sir (Remote Mobile)",
         preferred_model: Optional[str] = "auto",
         speak_response: bool = False,
+        chat_history: Optional[List[Dict[str, str]]] = None,
         **kwargs
     ) -> Dict[str, Any]:
         """
@@ -2038,7 +2041,7 @@ class AradhyaAutonomousEngine:
             # If online and not explicitly forced offline, consult Gemini Brain
             gemini_handled = False
             if is_online and preferred_model not in ["offline", "local", "offline-deterministic"]:
-                gemini_res = self.query_gemini_brain(message, preferred_model=preferred_model)
+                gemini_res = self.query_gemini_brain(message, preferred_model=preferred_model, chat_history=chat_history)
                 if gemini_res.get("success"):
                     resp_en = gemini_res.get("response_en", "")
                     resp_gu = gemini_res.get("response_gu", "")
@@ -2046,10 +2049,11 @@ class AradhyaAutonomousEngine:
                     if "device manager" in resp_en.lower():
                         resp_en = re.sub(r'in Device Manager', 'in the Linux Terminal (using `lsusb` and `v4l2-ctl`)', resp_en, flags=re.IGNORECASE)
                         resp_en = re.sub(r'Device Manager', 'Linux Terminal (`lsusb`)', resp_en, flags=re.IGNORECASE)
-                    if "alpesh" not in resp_en.lower():
-                        resp_en = f"Greetings Alpesh Sir! {resp_en}"
-                    if "અલ્પેશ" not in resp_gu:
-                        resp_gu = f"જય માતાજી અલ્પેશ સાહેબ! {resp_gu}"
+                    if not chat_history:
+                        if "alpesh" not in resp_en.lower():
+                            resp_en = f"Greetings Alpesh Sir! {resp_en}"
+                        if "અલ્પેશ" not in resp_gu:
+                            resp_gu = f"જય માતાજી અલ્પેશ સાહેબ! {resp_gu}"
                     action_type = "ONLINE_GEMINI_INTELLIGENCE"
                     model_used = gemini_res.get("model_used", "gemini-3.6-flash")
                     badge = gemini_res.get("badge", "⚡ Gemini 3.6 Flash")
