@@ -582,7 +582,8 @@ Format your response strictly as:
         config = types.GenerateContentConfig(
             system_instruction=sys_instruction,
             temperature=0.7,
-            max_output_tokens=2048
+            max_output_tokens=2048,
+            http_options=types.HttpOptions(timeout=6000)
         )
 
         candidate_keys = self.key_pool.get_candidate_keys()
