@@ -5,7 +5,7 @@ Author: Aradhya (CEO), reporting to Alpesh Sir (Founder, Chairman & Master Tech)
 
 Features:
 1. Online / Offline Autonomous Diagnostics & Recovery:
-   - Probes OpenWebUI (port 3000), Gateway (port 8081), and OpenJarvis (port 8000).
+   - Probes OpenWebUI (port 3000) and Gateway (port 8081).
    - In offline mode, ensures seamless fallback to local cognitive core without hangs.
 2. AI Model Discovery & Dynamic Ingestion:
    - Synchronizes discovered frontier & local models into OpenWebUI's /api/models catalog.

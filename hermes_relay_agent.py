@@ -119,11 +119,15 @@ class HermesRelayAgent:
         voice_mode: bool = False
     ) -> Dict[str, Any]:
         """Processes user message with automatic offline fallback."""
+        if preferred_model in ["aradhya-offline", "offline", "local", "offline-deterministic"]:
+            intent = self.classify_intent(user_message)
+            return self._execute_offline(user_message, intent, voice_mode)
+
         online = self.is_online()
         intent = self.classify_intent(user_message)
         logger.info("Hermes dispatching query [Online=%s, Intent=%s]: '%s'", online, intent, user_message[:60])
 
-        if not online or preferred_model == "aradhya-offline":
+        if not online:
             return self._execute_offline(user_message, intent, voice_mode)
 
         try:

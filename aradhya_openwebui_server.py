@@ -64,10 +64,13 @@ async def health():
 @app.get("/api/models")
 async def list_models():
     models_list = [
+        {"id": "gemini-3.5-flash", "name": "⚡ Google Gemini 3.5 Flash (Online Adaptive Flagship)"},
+        {"id": "gemini-3.8-flash", "name": "⚡ Google Gemini 3.8 Flash (Online Frontier Intelligence)"},
+        {"id": "gemini-4-argon", "name": "👑 Google Gemini 4 Argon (Online Frontier Reasoning)"},
+        {"id": "aradhya-offline", "name": "📱 100% Offline Cognitive Core (AOCKRE v2.0 - Air-Gapped)"},
         {"id": "aradhya-ceo", "name": "👑 Aradhya CEO (Royal Enfield Dealership & Technical Mastermind)"},
         {"id": "jarvis-commander", "name": "⚡ Jarvis Mark VII (Linux OS Control & Security)"},
-        {"id": "hermes-relay", "name": "🕊️ Hermes Relay Agent (Smart Intent Router & Fallback)"},
-        {"id": "aradhya-offline", "name": "📱 100% Offline Cognitive Core (AOCKRE v2.0 - Air-Gapped)"}
+        {"id": "hermes-relay", "name": "🕊️ Hermes Relay Agent (Smart Intent Router & Fallback)"}
     ]
     # Ingest dynamically discovered models if available
     try:
@@ -82,18 +85,6 @@ async def list_models():
                 })
     except Exception:
         pass
-
-    import urllib.request
-    try:
-        req = urllib.request.Request(f"{GATEWAY_URL}/models", headers={"User-Agent": "OpenWebUI-Local/3.0"})
-        with urllib.request.urlopen(req, timeout=2) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            gateway_models = data.get("data", [])
-            for gm in gateway_models:
-                if not any(x["id"] == gm.get("id") for x in models_list):
-                    models_list.append(gm)
-    except Exception as e:
-        logger.debug("Gateway models query offline or fallback: %s", e)
 
     return {
         "object": "list",
@@ -114,46 +105,68 @@ async def auto_update_system():
 async def chat_completions(request: Request):
     body = await request.body()
     relay = get_hermes_relay()
-    payload = json.loads(body.decode("utf-8"))
+    payload = json.loads(body.decode("utf-8")) if body else {}
     stream = payload.get("stream", False)
+    user_msg = payload.get("messages", [{}])[-1].get("content", "")
+    chosen_model = payload.get("model", "auto")
 
-    import urllib.request
-    try:
-        req = urllib.request.Request(
-            f"{GATEWAY_URL}/chat/completions",
-            data=body,
-            headers={"Content-Type": "application/json", "User-Agent": "OpenWebUI-Local/3.0"}
-        )
-        if stream:
-            resp = urllib.request.urlopen(req, timeout=30)
-            def sse_stream():
-                try:
-                    for line in resp:
-                        yield line
-                finally:
-                    resp.close()
-            return StreamingResponse(sse_stream(), media_type="text/event-stream")
-        else:
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                return JSONResponse(data)
-    except Exception as e:
-        logger.error("Error communicating with Aradhya Gateway (%s). Triggering emergency offline reply.", e)
-        # Direct local fallback
-        user_msg = payload.get("messages", [{}])[-1].get("content", "")
-        chosen_model = payload.get("model", "aradhya-offline")
+    # Offline-First: If offline or offline model requested, immediately execute locally via core
+    is_offline = (not relay.is_online()) or (chosen_model in ["aradhya-offline", "offline", "local", "offline-deterministic"])
+    if is_offline:
         try:
             from aradhya_autonomous_core import get_aradhya_engine
             core = get_aradhya_engine()
-            core_res = core.process_command(user_msg, preferred_model=chosen_model, speak_response=False)
+            core_res = core.process_command(user_msg, preferred_model="aradhya-offline", speak_response=False)
             reply_text = core_res.get("response_gu") or core_res.get("response_en") or "આદેશ સફળતાપૂર્વક ચલાવાયો છે."
-        except Exception as core_err:
-            fallback_res = relay.process_message(user_msg, preferred_model="aradhya-offline")
-            reply_text = fallback_res.get("reply", "ક્ષમા કરશો સાહેબ, ઓફલાઇન પ્રક્રિયામાં સમસ્યા આવી છે.")
+        except Exception:
+            fallback_res = relay.process_message(user_msg, preferred_model="aradhya-offline", voice_mode=False)
+            reply_text = fallback_res.get("reply", "જય માતાજી અલ્પેશ સાહેબ! ઓફલાઇન કોગ્નિટિવ સિસ્ટમ સક્રિય છે.")
+
         return JSONResponse({
-            "id": "chatcmpl-emergency-offline",
+            "id": f"chatcmpl-offline-{int(time.time())}",
             "object": "chat.completion",
             "created": int(time.time()),
+            "model": "aradhya-offline",
+            "choices": [{
+                "index": 0,
+                "message": {"role": "assistant", "content": reply_text},
+                "finish_reason": "stop"
+            }]
+        })
+
+    # Online: Execute with Gemini models via Hermes Relay / Chamunda LLM Engine
+    target_model = chosen_model if (chosen_model and chosen_model.startswith("gemini-")) else "gemini-3.5-flash"
+    try:
+        online_res = relay.process_message(
+            user_message=user_msg,
+            preferred_model=target_model,
+            voice_mode=False
+        )
+        reply_text = online_res.get("reply", "")
+        model_used = online_res.get("model", target_model)
+        if not reply_text:
+            raise RuntimeError("Empty response from Gemini online engine")
+
+        return JSONResponse({
+            "id": f"chatcmpl-gemini-{int(time.time())}",
+            "object": "chat.completion",
+            "created": int(time.time()),
+            "model": model_used,
+            "choices": [{
+                "index": 0,
+                "message": {"role": "assistant", "content": reply_text},
+                "finish_reason": "stop"
+            }]
+        })
+    except Exception as e:
+        logger.warning("Online Gemini execution error (%s). Falling back seamlessly to offline core.", e)
+        fallback_res = relay.process_message(user_msg, preferred_model="aradhya-offline", voice_mode=False)
+        reply_text = fallback_res.get("reply", "ક્ષમા કરશો સાહેબ, ઓફલાઇન મોડમાં પ્રક્રિયા કરવામાં આવી છે.")
+        return JSONResponse({
+            "id": f"chatcmpl-fallback-{int(time.time())}",
+            "object": "chat.completion",
+            "created": int(time.time()),
+            "model": "aradhya-offline",
             "choices": [{
                 "index": 0,
                 "message": {"role": "assistant", "content": reply_text},
@@ -794,11 +807,25 @@ INDEX_HTML = r"""<!DOCTYPE html>
             <div class="sidebar-content">
                 <div class="section-label">Select Model / Agent</div>
                 <div class="model-list">
-                    <button class="model-btn active" data-model="aradhya-ceo" onclick="selectModel('aradhya-ceo')">
+                    <button class="model-btn active" data-model="gemini-3.5-flash" onclick="selectModel('gemini-3.5-flash')">
+                        <span>⚡</span>
+                        <div>
+                            <div>Gemini 3.5 Flash</div>
+                            <small style="color:var(--text-muted);font-size:0.75rem;">Google Online Intelligence</small>
+                        </div>
+                    </button>
+                    <button class="model-btn" data-model="aradhya-offline" onclick="selectModel('aradhya-offline')">
+                        <span>📱</span>
+                        <div>
+                            <div>100% Offline Core</div>
+                            <small style="color:var(--text-muted);font-size:0.75rem;">AOCKRE v2.0 Air-Gapped</small>
+                        </div>
+                    </button>
+                    <button class="model-btn" data-model="gemini-4-argon" onclick="selectModel('gemini-4-argon')">
                         <span>👑</span>
                         <div>
-                            <div>Aradhya CEO</div>
-                            <small style="color:var(--text-muted);font-size:0.75rem;">Royal Enfield & Dealership</small>
+                            <div>Gemini 4 Argon</div>
+                            <small style="color:var(--text-muted);font-size:0.75rem;">Frontier Deep Reasoning</small>
                         </div>
                     </button>
                     <button class="model-btn" data-model="jarvis-commander" onclick="selectModel('jarvis-commander')">
@@ -808,18 +835,18 @@ INDEX_HTML = r"""<!DOCTYPE html>
                             <small style="color:var(--text-muted);font-size:0.75rem;">OS Control & Security</small>
                         </div>
                     </button>
+                    <button class="model-btn" data-model="aradhya-ceo" onclick="selectModel('aradhya-ceo')">
+                        <span>👑</span>
+                        <div>
+                            <div>Aradhya CEO</div>
+                            <small style="color:var(--text-muted);font-size:0.75rem;">Royal Enfield & Dealership</small>
+                        </div>
+                    </button>
                     <button class="model-btn" data-model="hermes-relay" onclick="selectModel('hermes-relay')">
                         <span>🕊️</span>
                         <div>
                             <div>Hermes Relay</div>
                             <small style="color:var(--text-muted);font-size:0.75rem;">Smart Router & Fallback</small>
-                        </div>
-                    </button>
-                    <button class="model-btn" data-model="aradhya-offline" onclick="selectModel('aradhya-offline')">
-                        <span>📱</span>
-                        <div>
-                            <div>100% Offline Core</div>
-                            <small style="color:var(--text-muted);font-size:0.75rem;">AOCKRE v2.0 Air-Gapped</small>
                         </div>
                     </button>
                 </div>
@@ -923,8 +950,8 @@ INDEX_HTML = r"""<!DOCTYPE html>
     <!-- Script Logic -->
     <script>
         // State
-        let currentMode = "voice"; // "voice" or "text"
-        let activeModel = "aradhya-ceo";
+        let currentMode = "text"; // Default text mode, voice toggleable
+        let activeModel = "gemini-3.5-flash";
         let isListening = false;
         let isSpeaking = false;
         let isMuted = false;
@@ -1213,16 +1240,20 @@ INDEX_HTML = r"""<!DOCTYPE html>
             }
         }
 
-        function selectModel(modelId) {
+        function selectModel(modelId, manual = true) {
+            if (manual) window._userSelectedModel = true;
             activeModel = modelId;
             document.querySelectorAll(".model-btn").forEach(btn => {
                 btn.classList.toggle("active", btn.getAttribute("data-model") === modelId);
             });
             const nameMap = {
+                "gemini-3.5-flash": "⚡ Gemini 3.5 Flash",
+                "gemini-3.8-flash": "⚡ Gemini 3.8 Flash",
+                "gemini-4-argon": "👑 Gemini 4 Argon",
+                "aradhya-offline": "📱 100% Offline Core",
                 "aradhya-ceo": "👑 Aradhya CEO",
                 "jarvis-commander": "⚡ Jarvis Mark VII",
-                "hermes-relay": "🕊️ Hermes Relay",
-                "aradhya-offline": "📱 100% Offline Core"
+                "hermes-relay": "🕊️ Hermes Relay"
             };
             currentModelBadge.textContent = nameMap[modelId] || modelId;
         }
@@ -1249,29 +1280,32 @@ INDEX_HTML = r"""<!DOCTYPE html>
                 const data = await res.json();
                 if (data.online) {
                     networkDot.className = "dot-green";
-                    networkText.textContent = "Online • Cloud & GitHub Active";
+                    networkText.textContent = "Online • Gemini Active";
+                    if (!window._userSelectedModel) {
+                        selectModel("gemini-3.5-flash", false);
+                    }
                 } else {
                     networkDot.className = "dot-orange";
-                    networkText.textContent = "100% Offline • Air-Gapped Core Active";
+                    networkText.textContent = "100% Offline • OpenWebUI Core Active";
+                    if (!window._userSelectedModel) {
+                        selectModel("aradhya-offline", false);
+                    }
                 }
             } catch (e) {
                 networkDot.className = "dot-orange";
-                networkText.textContent = "Offline Mode";
+                networkText.textContent = "100% Offline • OpenWebUI Core Active";
+                if (!window._userSelectedModel) {
+                    selectModel("aradhya-offline", false);
+                }
             }
         }
 
         // Initialize on Load
         window.addEventListener("DOMContentLoaded", () => {
             initSpeechRecognition();
+            setMode("text"); // Voice mode off by default
             checkNetworkHealth();
-            setInterval(checkNetworkHealth, 10000);
-
-            // Greet Alpesh Sir automatically on load in Call Mode
-            setTimeout(() => {
-                if (currentMode === "voice") {
-                    startListening();
-                }
-            }, 1000);
+            setInterval(checkNetworkHealth, 8000);
         });
     </script>
 </body>
