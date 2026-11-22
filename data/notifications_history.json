@@ -1,5 +1,18 @@
 [
   {
+    "id": "NOTIF-1795331269",
+    "timestamp": "2026-11-22 12:37:49",
+    "title": "💻 લેપટોપ શરૂ થયું • GitHub Auto-Sync પૂર્ણ",
+    "message": "જય માતાજી અલ્પેશ સાહેબ! લેપટોપ શરૂ થતાં GitHub પરથી 7 રિપોઝીટરીઝ 100% ઓટો-સિન્ક થઈ ગઈ છે. તમામ એજન્ટ્સ અને સર્વિસીસ સક્રિય છે.",
+    "category": "STARTUP_SYNC",
+    "details": "• Chamunda RE Enterprise (Aradhya CEO): Synced new commits from GitHub\n• Jarvis Mark VII System Assistant: Up-to-date\n• Web2APK Autonomous Android Packager: Up-to-date\n• Web2IPA Autonomous iOS Packager: Up-to-date\n• APK TV Converter Agent: Up-to-date\n• PublisheR AI Book Publishing Agent: Up-to-date\n\nWarnings:\nKidsPlay AI Studio: error: cannot pull with rebase: You have unstaged changes.\ne\nMicroCorp AI Autonomous Enterprise: Command '['/home/alpesh/.local/bin/git', 'pull', '--rebase',",
+    "solution": "કોઈ મેન્યુઅલ પગલાંની જરૂર નથી, તમામ એજન્ટ્સ અને સર્વિસીસ સામાન્ય રીતે કાર્યરત છે.",
+    "dispatched_channels": [
+      "desktop_banner",
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1795292841",
     "timestamp": "2026-11-22 01:57:21",
     "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
@@ -1240,17 +1253,6 @@
     "message": "ધ્યાન આપો અલ્પેશ સાહેબ! સિસ્ટમમાં સમસ્યા જણાઈ છે:\nDisk space threshold at 80%",
     "category": "WARNING",
     "details": "Disk space threshold at 80%",
-    "dispatched_channels": [
-      "desktop_banner"
-    ]
-  },
-  {
-    "id": "NOTIF-1793202769",
-    "timestamp": "2026-10-28 21:22:49",
-    "title": "✅ કામ પૂર્ણ (Work Done): Test Task Execution",
-    "message": "જય માતાજી અલ્પેશ સાહેબ! Aradhya CEO દ્વારા આપનું સોંપેલું કામ સફળતાપૂર્વક પૂર્ણ થઈ ગયું છે.",
-    "category": "WORK_DONE",
-    "details": "Unit test validation passed.",
     "dispatched_channels": [
       "desktop_banner"
     ]
