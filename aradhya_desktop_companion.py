@@ -417,6 +417,7 @@ class AradhyaDesktopPet(Gtk.Window):
         # Mouse Drag & Click State
         self.dragging = False
         self.has_dragged = False
+        self.is_pressed = False
         self.drag_offset_x = 0
         self.drag_offset_y = 0
         self.press_x = 0
@@ -625,6 +626,7 @@ class AradhyaDesktopPet(Gtk.Window):
 
         # Left Click (Button 1)
         if event.button == 1:
+            self.is_pressed = True
             self.press_x = event.x_root
             self.press_y = event.y_root
             self.has_dragged = False
@@ -640,16 +642,24 @@ class AradhyaDesktopPet(Gtk.Window):
 
     def on_button_release(self, widget, event):
         if event.button == 1:
-            if not getattr(self, "has_dragged", False):
-                # Clicked on anime girl -> Open small chat screen for commands/work!
-                self.toggle_chat_screen()
+            was_dragged = getattr(self, "has_dragged", False)
+            self.is_pressed = False
             self.dragging = False
             self.has_dragged = False
             self.state = "IDLE"
+            if not was_dragged:
+                # Clicked on anime girl -> Open small chat screen for commands/work!
+                self.toggle_chat_screen()
         return True
 
     def on_motion_notify(self, widget, event):
-        if hasattr(self, "press_x"):
+        # Hover protection: Only move/drag if mouse button 1 is actively pressed down
+        if not (event.state & Gdk.ModifierType.BUTTON1_MASK):
+            self.is_pressed = False
+            self.dragging = False
+            return True
+
+        if getattr(self, "is_pressed", False):
             dx = abs(event.x_root - self.press_x)
             dy = abs(event.y_root - self.press_y)
             if dx > 6 or dy > 6:
