@@ -53,11 +53,12 @@ sleep 1
 python3 "$BASE_DIR/aradhya_startup_greeting.py" >> "$BOOT_LOG" 2>&1 &
 log "🔊 Voice greeting and desktop notification dispatched"
 
-# 5.1 Launch 24/7 Real-Time Jarvis Wake-Word Daemon ("Hey Aradhya")
+# 5.1 Launch and verify 24/7 Real-Time Jarvis Wake-Word Daemon ("Hey Aradhya") via systemd
+systemctl --user restart aradhya-jarvis.service >> "$BOOT_LOG" 2>&1 || true
 if ! pgrep -f "aradhya_jarvis_daemon.py" >/dev/null 2>&1; then
     python3 "$BASE_DIR/aradhya_jarvis_daemon.py" >> "$BASE_DIR/data/aradhya_jarvis_daemon.log" 2>&1 &
-    log "🎙️ Real-Time Jarvis Wake-Word Daemon dispatched"
 fi
+log "🎙️ Real-Time Jarvis Wake-Word Daemon active"
 
 # 5.2 Launch Aradhya 2D Chibi Desktop Robot Girl Companion
 if ! pgrep -f "aradhya_desktop_companion.py" >/dev/null 2>&1; then
@@ -94,7 +95,7 @@ launch_terminal() {
     log "Attempt 1: Launching via gnome-terminal..."
     gnome-terminal --title="👑 Aradhya Autonomous AI Orchestrator" \
                    --geometry=115x32 \
-                   -- bash -c "/home/alpesh/bin/aradhya" >> "$BOOT_LOG" 2>&1 &
+                   -- bash -c "/home/alpesh/bin/aradhya --voice" >> "$BOOT_LOG" 2>&1 &
     
     sleep 3
     if pgrep -f "/home/alpesh/bin/aradhya" >/dev/null 2>&1; then
@@ -106,7 +107,7 @@ launch_terminal() {
     # Attempt 2: Fallback via x-terminal-emulator
     log "Attempt 2: Fallback to x-terminal-emulator..."
     x-terminal-emulator -title "👑 Aradhya Autonomous AI Orchestrator" \
-                        -e bash -c "/home/alpesh/bin/aradhya" >> "$BOOT_LOG" 2>&1 &
+                        -e bash -c "/home/alpesh/bin/aradhya --voice" >> "$BOOT_LOG" 2>&1 &
 
     sleep 3
     if pgrep -f "/home/alpesh/bin/aradhya" >/dev/null 2>&1; then
@@ -118,7 +119,7 @@ launch_terminal() {
     # Attempt 3: Direct binary invocation of gnome-terminal.real
     log "Attempt 3: Direct invocation via gnome-terminal.real..."
     /usr/bin/gnome-terminal.real --title="👑 Aradhya Autonomous AI Orchestrator" \
-                                 -- bash -c "/home/alpesh/bin/aradhya" >> "$BOOT_LOG" 2>&1 &
+                                 -- bash -c "/home/alpesh/bin/aradhya --voice" >> "$BOOT_LOG" 2>&1 &
 
     sleep 2
     if pgrep -f "/home/alpesh/bin/aradhya" >/dev/null 2>&1; then

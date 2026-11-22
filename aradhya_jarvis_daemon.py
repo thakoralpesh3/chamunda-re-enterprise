@@ -93,6 +93,7 @@ class AradhyaJarvisDaemon:
         self.is_processing = False
         self._lock = threading.Lock()
         self.audio_queue = queue.Queue(maxsize=100)
+        self.conversation_history: List[Dict[str, Any]] = []
 
         # Audio parameters
         self.sample_rate = 16000
