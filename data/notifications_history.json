@@ -1,5 +1,18 @@
 [
   {
+    "id": "NOTIF-1795368461",
+    "timestamp": "2026-11-22 22:57:41",
+    "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
+    "message": "ધ્યાન આપો અલ્પેશ સાહેબ! સિસ્ટમમાં સમસ્યા જણાઈ છે:\nEdge tunnel probe failed or revoked. Fresh tunnel spawned.",
+    "category": "WARNING",
+    "details": "Edge tunnel probe failed or revoked. Fresh tunnel spawned.",
+    "solution": "વોચડોગ દ્વારા નવી SSH સુરક્ષિત ટનલ આપમેળે બનાવી દેવામાં આવી છે.",
+    "dispatched_channels": [
+      "desktop_banner",
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1795365677",
     "timestamp": "2026-11-22 22:11:17",
     "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
@@ -1263,15 +1276,5 @@
       "desktop_banner",
       "whatsapp"
     ]
-  },
-  {
-    "id": "NOTIF-1793533430",
-    "timestamp": "2026-11-01 17:13:50",
-    "title": "💻 લેપટોપ શરૂ થયું (Offline Air-Gap Mode)",
-    "message": "જય માતાજી અલ્પેશ સાહેબ! ઇન્ટરનેટ કનેક્શન ન હોવાથી આરાધ્યા ૧૦૦% ઓફલાઇન મોડમાં સક્રિય છે.",
-    "category": "INFO",
-    "details": "Offline AI Models, Voice Vault, and Dealership ERP running locally.",
-    "solution": "જ્યારે Wi-Fi / હોટસ્પોટ કનેક્ટ થશે ત્યારે સિસ્ટમ આપમેળે GitHub સાથે સિન્ક કરી લેશે.",
-    "dispatched_channels": []
   }
 ]
