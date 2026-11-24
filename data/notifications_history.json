@@ -1,5 +1,18 @@
 [
   {
+    "id": "NOTIF-1795521963",
+    "timestamp": "2026-11-24 17:36:03",
+    "title": "💻 લેપટોપ શરૂ થયું • GitHub Auto-Sync પૂર્ણ",
+    "message": "જય માતાજી અલ્પેશ સાહેબ! લેપટોપ શરૂ થતાં GitHub પરથી 5 રિપોઝીટરીઝ 100% ઓટો-સિન્ક થઈ ગઈ છે. તમામ એજન્ટ્સ અને સર્વિસીસ સક્રિય છે.",
+    "category": "STARTUP_SYNC",
+    "details": "• Chamunda RE Enterprise (Aradhya CEO): Synced new commits from GitHub\n• Jarvis Mark VII System Assistant: Up-to-date\n• Web2APK Autonomous Android Packager: Up-to-date\n• Web2IPA Autonomous iOS Packager: Up-to-date\n• APK TV Converter Agent: Up-to-date\n\nWarnings:\nPublisheR AI Book Publishing Agent: error: cannot pull with rebase: You have unstaged changes.\ne\nPublisheR AI Book Publishing Agent: Command '['/home/alpesh/.local/bin/git', 'push', 'origin', '",
+    "solution": "કોઈ મેન્યુઅલ પગલાંની જરૂર નથી, તમામ એજન્ટ્સ અને સર્વિસીસ સામાન્ય રીતે કાર્યરત છે.",
+    "dispatched_channels": [
+      "desktop_banner",
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1795487758",
     "timestamp": "2026-11-24 08:05:58",
     "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
@@ -1262,19 +1275,6 @@
     "details": "Edge tunnel probe failed or revoked. Fresh tunnel spawned.",
     "solution": "વોચડોગ દ્વારા નવી SSH સુરક્ષિત ટનલ આપમેળે બનાવી દેવામાં આવી છે.",
     "dispatched_channels": [
-      "whatsapp"
-    ]
-  },
-  {
-    "id": "NOTIF-1793540688",
-    "timestamp": "2026-11-01 19:14:48",
-    "title": "✅ કામ પૂર્ણ (Work Done): ટેસ્ટ ટાસ્ક (Test Task)",
-    "message": "જય માતાજી અલ્પેશ સાહેબ! Aradhya CEO દ્વારા આપનું સોંપેલું કામ સફળતાપૂર્વક પૂર્ણ થઈ ગયું છે.",
-    "category": "WORK_DONE",
-    "details": "આરાધ્યા જારવિસ કમાન્ડ ટેસ્ટિંગ પૂર્ણ.",
-    "solution": "કાર્ય સફળ થયેલ છે.",
-    "dispatched_channels": [
-      "desktop_banner",
       "whatsapp"
     ]
   }
