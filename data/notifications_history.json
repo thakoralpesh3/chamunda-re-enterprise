@@ -1,5 +1,17 @@
 [
   {
+    "id": "NOTIF-1795538520",
+    "timestamp": "2026-11-24 22:12:00",
+    "title": "💻 લેપટોપ શરૂ થયું • GitHub Auto-Sync પૂર્ણ",
+    "message": "જય માતાજી અલ્પેશ સાહેબ! લેપટોપ શરૂ થતાં GitHub પરથી 6 રિપોઝીટરીઝ 100% ઓટો-સિન્ક થઈ ગઈ છે. તમામ એજન્ટ્સ અને સર્વિસીસ સક્રિય છે.",
+    "category": "STARTUP_SYNC",
+    "details": "• Chamunda RE Enterprise (Aradhya CEO): Up-to-date\n• Jarvis Mark VII System Assistant: Up-to-date\n• Web2APK Autonomous Android Packager: Up-to-date\n• Web2IPA Autonomous iOS Packager: Up-to-date\n• APK TV Converter Agent: Up-to-date\n• YouTube Production & Growth Agent: Up-to-date\n\nWarnings:\nPublisheR AI Book Publishing Agent: error: cannot pull with rebase: You have unstaged changes.\ne\nKidsPlay AI Studio: error: cannot pull with rebase: You have unstaged changes.\ne",
+    "solution": "કોઈ મેન્યુઅલ પગલાંની જરૂર નથી, તમામ એજન્ટ્સ અને સર્વિસીસ સામાન્ય રીતે કાર્યરત છે.",
+    "dispatched_channels": [
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1795532406",
     "timestamp": "2026-11-24 20:30:06",
     "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
@@ -1263,18 +1275,6 @@
     "category": "INFO",
     "details": "Offline AI Models, Voice Vault, and Dealership ERP running locally.",
     "solution": "જ્યારે Wi-Fi / હોટસ્પોટ કનેક્ટ થશે ત્યારે સિસ્ટમ આપમેળે GitHub સાથે સિન્ક કરી લેશે.",
-    "dispatched_channels": [
-      "whatsapp"
-    ]
-  },
-  {
-    "id": "NOTIF-1793553607",
-    "timestamp": "2026-11-01 22:50:07",
-    "title": "💻 લેપટોપ શરૂ થયું • GitHub Auto-Sync પૂર્ણ",
-    "message": "જય માતાજી અલ્પેશ સાહેબ! લેપટોપ શરૂ થતાં GitHub પરથી 4 રિપોઝીટરીઝ 100% ઓટો-સિન્ક થઈ ગઈ છે. તમામ એજન્ટ્સ અને સર્વિસીસ સક્રિય છે.",
-    "category": "STARTUP_SYNC",
-    "details": "• Jarvis Mark VII System Assistant: Up-to-date\n• Web2APK Autonomous Android Packager: Up-to-date\n• Web2IPA Autonomous iOS Packager: Up-to-date\n• APK TV Converter Agent: Up-to-date\n\nWarnings:\nChamunda RE Enterprise (Aradhya CEO): Command '['/home/alpesh/.local/bin/git', 'pull', '--rebase',\nPublisheR AI Book Publishing Agent: error: cannot pull with rebase: You have unstaged changes.\ne",
-    "solution": "કોઈ મેન્યુઅલ પગલાંની જરૂર નથી, તમામ એજન્ટ્સ અને સર્વિસીસ સામાન્ય રીતે કાર્યરત છે.",
     "dispatched_channels": [
       "whatsapp"
     ]
