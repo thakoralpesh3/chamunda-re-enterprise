@@ -1,5 +1,18 @@
 [
   {
+    "id": "NOTIF-1795487758",
+    "timestamp": "2026-11-24 08:05:58",
+    "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
+    "message": "ધ્યાન આપો અલ્પેશ સાહેબ! સિસ્ટમમાં સમસ્યા જણાઈ છે:\nEdge tunnel probe failed or revoked. Fresh tunnel spawned.",
+    "category": "WARNING",
+    "details": "Edge tunnel probe failed or revoked. Fresh tunnel spawned.",
+    "solution": "વોચડોગ દ્વારા નવી SSH સુરક્ષિત ટનલ આપમેળે બનાવી દેવામાં આવી છે.",
+    "dispatched_channels": [
+      "desktop_banner",
+      "whatsapp"
+    ]
+  },
+  {
     "id": "NOTIF-1795477333",
     "timestamp": "2026-11-24 05:12:13",
     "title": "⚠️ સિસ્ટમ સૂચના (System Alert): પબ્લિક ટનલ ડિસ્કનેક્ટ થઈ (Tunnel Reconnected)",
@@ -1263,18 +1276,6 @@
     "dispatched_channels": [
       "desktop_banner",
       "whatsapp"
-    ]
-  },
-  {
-    "id": "NOTIF-1793540542",
-    "timestamp": "2026-11-01 19:12:22",
-    "title": "✅ કામ પૂર્ણ (Work Done): check battery",
-    "message": "જય માતાજી અલ્પેશ સાહેબ! Aradhya CEO દ્વારા આપનું સોંપેલું કામ સફળતાપૂર્વક પૂર્ણ થઈ ગયું છે.",
-    "category": "WORK_DONE",
-    "details": "Command: check battery\n\nOutcome (Gujarati):\nપ્રણામ અલ્પેશ સાહેબ! લાઈવ બેટરી & પાવર ટેલિમેટ્રી:\n• ચાર્જિંગ ટકાવારી: 100%\n• ચાર્જર સ્થિતિ: AC Power ⚡\n• અંદાજિત સમય: Continuous AC power\n• પાવર મેનેજમેન્ટ: ૧૦૦% ઓપ્ટિમાઇઝ્ડ છે ⚡",
-    "solution": "કાર્ય ૧૦૦% સફળતાપૂર્વક પૂર્ણ થયેલ છે. કોઈ વધુ આદેશ હોય તો 'Hey Aradhya' બોલો.",
-    "dispatched_channels": [
-      "desktop_banner"
     ]
   }
 ]
